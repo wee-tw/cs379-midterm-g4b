@@ -1,0 +1,85 @@
+{
+ "args": {
+  "model": "brevitas",
+  "bits": [
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   8,
+   8
+  ],
+  "epochs": 10,
+  "batch": 128,
+  "lr": 0.02,
+  "wd": 0.0001,
+  "data": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/cifar_hf/cifar10.npz",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/runs/brev_w4a4_ft.pt",
+  "save": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/runs/brev_w2a2_g4w8a8_ft.pt",
+  "log": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/runs/brev_w2a2_g4w8a8_ft.json"
+ },
+ "history": [
+  {
+   "epoch": 1,
+   "sec": 29.3,
+   "loss": 1.772,
+   "test_acc": 31.64
+  },
+  {
+   "epoch": 2,
+   "sec": 26.8,
+   "loss": 1.708,
+   "test_acc": 34.7
+  },
+  {
+   "epoch": 3,
+   "sec": 29.5,
+   "loss": 1.501,
+   "test_acc": 30.36
+  },
+  {
+   "epoch": 4,
+   "sec": 26.8,
+   "loss": 1.334,
+   "test_acc": 42.94
+  },
+  {
+   "epoch": 5,
+   "sec": 26.6,
+   "loss": 1.208,
+   "test_acc": 47.63
+  },
+  {
+   "epoch": 6,
+   "sec": 27.1,
+   "loss": 1.341,
+   "test_acc": 43.29
+  },
+  {
+   "epoch": 7,
+   "sec": 26.7,
+   "loss": 1.162,
+   "test_acc": 48.12
+  },
+  {
+   "epoch": 8,
+   "sec": 26.1,
+   "loss": 1.205,
+   "test_acc": 46.33
+  },
+  {
+   "epoch": 9,
+   "sec": 27.0,
+   "loss": 1.244,
+   "test_acc": 48.63
+  },
+  {
+   "epoch": 10,
+   "sec": 27.4,
+   "loss": 1.057,
+   "test_acc": 58.03
+  }
+ ]
+}

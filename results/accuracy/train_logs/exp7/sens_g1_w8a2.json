@@ -1,0 +1,83 @@
+{
+ "args": {
+  "model": "brevitas",
+  "bits": [
+   8,
+   2,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4
+  ],
+  "recipe": "lowbit",
+  "amid": null,
+  "epochs": 8,
+  "batch": 256,
+  "lr": 0.02,
+  "wd": 0.0001,
+  "data": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/cifar_hf/cifar10.npz",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "reinit_act": false,
+  "teacher": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/runs/float_rn8.pt",
+  "kd_alpha": 0.7,
+  "kd_t": 4.0,
+  "seed": 2,
+  "save": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp7\\sens_g1_w8a2.pt",
+  "log": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp7\\sens_g1_w8a2.json"
+ },
+ "history": [
+  {
+   "epoch": 1,
+   "sec": 28.2,
+   "loss": 0.86,
+   "test_acc": 80.32
+  },
+  {
+   "epoch": 2,
+   "sec": 20.2,
+   "loss": 0.68,
+   "test_acc": 80.62
+  },
+  {
+   "epoch": 3,
+   "sec": 19.8,
+   "loss": 0.721,
+   "test_acc": 81.66
+  },
+  {
+   "epoch": 4,
+   "sec": 11.3,
+   "loss": 0.742,
+   "test_acc": 81.36
+  },
+  {
+   "epoch": 5,
+   "sec": 18.0,
+   "loss": 0.699,
+   "test_acc": 81.74
+  },
+  {
+   "epoch": 6,
+   "sec": 20.1,
+   "loss": 0.779,
+   "test_acc": 81.69
+  },
+  {
+   "epoch": 7,
+   "sec": 20.1,
+   "loss": 0.695,
+   "test_acc": 82.42
+  },
+  {
+   "epoch": 8,
+   "sec": 20.1,
+   "loss": 0.763,
+   "test_acc": 82.48
+  }
+ ],
+ "final_acc": 82.48,
+ "best_acc": 82.48,
+ "wall_sec": 166.0
+}

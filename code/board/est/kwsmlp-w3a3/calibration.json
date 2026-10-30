@@ -1,0 +1,14 @@
+{
+ "model": "MLP_W3A3_python_speech_features_pre-processing_QONNX_opset-11.onnx",
+ "folding": "D:/115-1/embedded sys midterm report/code/board/finn_examples_folding/kwsmlp-w3a3_folding_config.json",
+ "clk_ns": 10.0,
+ "estimate_finn_v0101": {
+  "LUT": 31603.0,
+  "BRAM_18K": 72.0,
+  "DSP": 0.0,
+  "latency_ms": 0.013,
+  "throughput_fps": 255102.04081632654,
+  "max_cycles": 392,
+  "critical_path_cycles": 1300
+ }
+}

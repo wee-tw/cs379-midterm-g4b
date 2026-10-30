@@ -1,0 +1,356 @@
+{
+ "0.6024": {
+  "design": {
+   "II": 16384.0,
+   "L": 181619.9856,
+   "U": 0.8152435064935064
+  },
+  "L_over_II": 11.09,
+  "sqrt_rule": 3.33,
+  "sqrt_rule_agreement": 0.922,
+  "cells_checked": 7626,
+  "slice_300fps": [
+   {
+    "D_ms": 0.1,
+    "stream_mJ": null,
+    "stream_MHz": null,
+    "halt_mJ": null,
+    "halt_k": null
+   },
+   {
+    "D_ms": 0.186,
+    "stream_mJ": null,
+    "stream_MHz": null,
+    "halt_mJ": null,
+    "halt_k": null
+   },
+   {
+    "D_ms": 0.345,
+    "stream_mJ": null,
+    "stream_MHz": null,
+    "halt_mJ": null,
+    "halt_k": null
+   },
+   {
+    "D_ms": 0.641,
+    "stream_mJ": null,
+    "stream_MHz": null,
+    "halt_mJ": null,
+    "halt_k": null
+   },
+   {
+    "D_ms": 1.19,
+    "stream_mJ": null,
+    "stream_MHz": null,
+    "halt_mJ": null,
+    "halt_k": null
+   },
+   {
+    "D_ms": 2.211,
+    "stream_mJ": 1.2198,
+    "stream_MHz": 83.33333333333333,
+    "halt_mJ": 0.8137,
+    "halt_k": 1
+   },
+   {
+    "D_ms": 4.106,
+    "stream_mJ": 0.6866,
+    "stream_MHz": 45.45454545454545,
+    "halt_mJ": 0.8137,
+    "halt_k": 1
+   },
+   {
+    "D_ms": 7.627,
+    "stream_mJ": 0.3901,
+    "stream_MHz": 24.390243902439025,
+    "halt_mJ": 0.4648,
+    "halt_k": 2
+   },
+   {
+    "D_ms": 14.166,
+    "stream_mJ": 0.2272,
+    "stream_MHz": 12.820512820512821,
+    "halt_mJ": 0.2904,
+    "halt_k": 4
+   },
+   {
+    "D_ms": 26.313,
+    "stream_mJ": 0.1445,
+    "stream_MHz": 6.944444444444445,
+    "halt_mJ": 0.2032,
+    "halt_k": 8
+   },
+   {
+    "D_ms": 48.874,
+    "stream_mJ": 0.1161,
+    "stream_MHz": 4.926108374384237,
+    "halt_mJ": 0.1658,
+    "halt_k": 14
+   },
+   {
+    "D_ms": 90.779,
+    "stream_mJ": 0.1161,
+    "stream_MHz": 4.926108374384237,
+    "halt_mJ": 0.1428,
+    "halt_k": 26
+   },
+   {
+    "D_ms": 168.613,
+    "stream_mJ": 0.1161,
+    "stream_MHz": 4.926108374384237,
+    "halt_mJ": 0.1302,
+    "halt_k": 49
+   },
+   {
+    "D_ms": 313.183,
+    "stream_mJ": 0.1161,
+    "stream_MHz": 4.926108374384237,
+    "halt_mJ": 0.1268,
+    "halt_k": 64
+   },
+   {
+    "D_ms": 581.709,
+    "stream_mJ": 0.1161,
+    "stream_MHz": 4.926108374384237,
+    "halt_mJ": 0.1268,
+    "halt_k": 64
+   }
+  ]
+ },
+ "0.25": {
+  "design": {
+   "II": 16384.0,
+   "L": 75373.5,
+   "U": 0.8152435064935064
+  },
+  "L_over_II": 4.6,
+  "sqrt_rule": 2.14,
+  "sqrt_rule_agreement": 0.945,
+  "cells_checked": 8147,
+  "slice_300fps": [
+   {
+    "D_ms": 0.1,
+    "stream_mJ": null,
+    "stream_MHz": null,
+    "halt_mJ": null,
+    "halt_k": null
+   },
+   {
+    "D_ms": 0.186,
+    "stream_mJ": null,
+    "stream_MHz": null,
+    "halt_mJ": null,
+    "halt_k": null
+   },
+   {
+    "D_ms": 0.345,
+    "stream_mJ": null,
+    "stream_MHz": null,
+    "halt_mJ": null,
+    "halt_k": null
+   },
+   {
+    "D_ms": 0.641,
+    "stream_mJ": 1.8063,
+    "stream_MHz": 125.0,
+    "halt_mJ": 0.365,
+    "halt_k": 1
+   },
+   {
+    "D_ms": 1.19,
+    "stream_mJ": 0.9852,
+    "stream_MHz": 66.66666666666667,
+    "halt_mJ": 0.365,
+    "halt_k": 1
+   },
+   {
+    "D_ms": 2.211,
+    "stream_mJ": 0.5321,
+    "stream_MHz": 34.48275862068966,
+    "halt_mJ": 0.365,
+    "halt_k": 1
+   },
+   {
+    "D_ms": 4.106,
+    "stream_mJ": 0.3074,
+    "stream_MHz": 18.51851851851852,
+    "halt_mJ": 0.2405,
+    "halt_k": 2
+   },
+   {
+    "D_ms": 7.627,
+    "stream_mJ": 0.1875,
+    "stream_MHz": 10.0,
+    "halt_mJ": 0.199,
+    "halt_k": 3
+   },
+   {
+    "D_ms": 14.166,
+    "stream_mJ": 0.122,
+    "stream_MHz": 5.347593582887701,
+    "halt_mJ": 0.1782,
+    "halt_k": 4
+   },
+   {
+    "D_ms": 26.313,
+    "stream_mJ": 0.1161,
+    "stream_MHz": 4.926108374384237,
+    "halt_mJ": 0.1471,
+    "halt_k": 8
+   },
+   {
+    "D_ms": 48.874,
+    "stream_mJ": 0.1161,
+    "stream_MHz": 4.926108374384237,
+    "halt_mJ": 0.1337,
+    "halt_k": 14
+   },
+   {
+    "D_ms": 90.779,
+    "stream_mJ": 0.1161,
+    "stream_MHz": 4.926108374384237,
+    "halt_mJ": 0.1252,
+    "halt_k": 27
+   },
+   {
+    "D_ms": 168.613,
+    "stream_mJ": 0.1161,
+    "stream_MHz": 4.926108374384237,
+    "halt_mJ": 0.121,
+    "halt_k": 49
+   },
+   {
+    "D_ms": 313.183,
+    "stream_mJ": 0.1161,
+    "stream_MHz": 4.926108374384237,
+    "halt_mJ": 0.1198,
+    "halt_k": 64
+   },
+   {
+    "D_ms": 581.709,
+    "stream_mJ": 0.1161,
+    "stream_MHz": 4.926108374384237,
+    "halt_mJ": 0.1198,
+    "halt_k": 64
+   }
+  ]
+ },
+ "1.0": {
+  "design": {
+   "II": 16384.0,
+   "L": 301494.0,
+   "U": 0.8152435064935064
+  },
+  "L_over_II": 18.4,
+  "sqrt_rule": 4.29,
+  "sqrt_rule_agreement": 0.906,
+  "cells_checked": 7205,
+  "slice_300fps": [
+   {
+    "D_ms": 0.1,
+    "stream_mJ": null,
+    "stream_MHz": null,
+    "halt_mJ": null,
+    "halt_k": null
+   },
+   {
+    "D_ms": 0.186,
+    "stream_mJ": null,
+    "stream_MHz": null,
+    "halt_mJ": null,
+    "halt_k": null
+   },
+   {
+    "D_ms": 0.345,
+    "stream_mJ": null,
+    "stream_MHz": null,
+    "halt_mJ": null,
+    "halt_k": null
+   },
+   {
+    "D_ms": 0.641,
+    "stream_mJ": null,
+    "stream_MHz": null,
+    "halt_mJ": null,
+    "halt_k": null
+   },
+   {
+    "D_ms": 1.19,
+    "stream_mJ": null,
+    "stream_MHz": null,
+    "halt_mJ": null,
+    "halt_k": null
+   },
+   {
+    "D_ms": 2.211,
+    "stream_mJ": null,
+    "stream_MHz": null,
+    "halt_mJ": null,
+    "halt_k": null
+   },
+   {
+    "D_ms": 4.106,
+    "stream_mJ": 1.1295,
+    "stream_MHz": 76.92307692307692,
+    "halt_mJ": 1.3199,
+    "halt_k": 1
+   },
+   {
+    "D_ms": 7.627,
+    "stream_mJ": 0.6098,
+    "stream_MHz": 40.0,
+    "halt_mJ": 0.7179,
+    "halt_k": 2
+   },
+   {
+    "D_ms": 14.166,
+    "stream_mJ": 0.3528,
+    "stream_MHz": 21.73913043478261,
+    "halt_mJ": 0.4169,
+    "halt_k": 4
+   },
+   {
+    "D_ms": 26.313,
+    "stream_mJ": 0.2085,
+    "stream_MHz": 11.494252873563218,
+    "halt_mJ": 0.2879,
+    "halt_k": 7
+   },
+   {
+    "D_ms": 48.874,
+    "stream_mJ": 0.1336,
+    "stream_MHz": 6.172839506172839,
+    "halt_mJ": 0.2019,
+    "halt_k": 14
+   },
+   {
+    "D_ms": 90.779,
+    "stream_mJ": 0.1161,
+    "stream_MHz": 4.926108374384237,
+    "halt_mJ": 0.1622,
+    "halt_k": 26
+   },
+   {
+    "D_ms": 168.613,
+    "stream_mJ": 0.1161,
+    "stream_MHz": 4.926108374384237,
+    "halt_mJ": 0.141,
+    "halt_k": 48
+   },
+   {
+    "D_ms": 313.183,
+    "stream_mJ": 0.1161,
+    "stream_MHz": 4.926108374384237,
+    "halt_mJ": 0.1347,
+    "halt_k": 64
+   },
+   {
+    "D_ms": 581.709,
+    "stream_mJ": 0.1161,
+    "stream_MHz": 4.926108374384237,
+    "halt_mJ": 0.1347,
+    "halt_k": 64
+   }
+  ]
+ }
+}

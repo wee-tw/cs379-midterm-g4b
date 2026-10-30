@@ -1,0 +1,37 @@
+== start 19:38:03
+wrote C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/cost/tables_sv2_all095.json: 126516 entries scaled, MVAU_rtl x1.0, MVAU_hls x1.0, all x0.95
+wrote C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/cost/tables_sv2_all105.json: 126516 entries scaled, MVAU_rtl x1.0, MVAU_hls x1.0, all x1.05
+all105 done 19:44:14
+all095 done 19:44:21
+wrote C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/cost/tables_sv2_all090.json: 126516 entries scaled, MVAU_rtl x1.0, MVAU_hls x1.0, all x0.9
+wrote C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/cost/tables_sv2_all110.json: 126516 entries scaled, MVAU_rtl x1.0, MVAU_hls x1.0, all x1.1
+all110 done 19:50:57
+all090 done 19:51:05
+| scenario | margin | A' bits | B1 / B2 / B3 / B4 above A' |
+|---|---|---|---|
+| calibrated | 1 | 44444448 | +15.8% / +24.9% / +0.0% / +0.0% |
+| calibrated | 2 | 44242448 | +26.4% / +50.0% / +1.4% / +1.4% |
+| calibrated | 3 | 24244448 | +31.4% / +54.7% / +5.4% / +1.6% |
+| calibrated | 5 | 24222448 | +1.2% / +21.3% / +1.3% / +1.1% |
+| calibrated | 8 | 22222448 | +2.5% / +19.9% / +1.3% / +1.0% |
+| all LUT x0.90 | 1 | 44444448 | +28.9% / +42.1% / +0.0% / +0.0% |
+| all LUT x0.90 | 2 | 44242448 | +10.8% / +50.2% / +1.2% / +1.2% |
+| all LUT x0.90 | 3 | 24244448 | +15.0% / +54.8% / +4.9% / +1.6% |
+| all LUT x0.90 | 5 | 24222448 | +1.1% / +21.3% / +1.1% / +0.9% |
+| all LUT x0.90 | 8 | 22222448 | +2.3% / +20.0% / +1.1% / +0.9% |
+| all LUT x0.95 | 1 | 44444448 | +14.2% / +24.3% / +0.0% / +0.0% |
+| all LUT x0.95 | 2 | 44242448 | +26.8% / +50.1% / +1.3% / +1.3% |
+| all LUT x0.95 | 3 | 24244448 | +31.8% / +54.8% / +5.1% / +1.7% |
+| all LUT x0.95 | 5 | 24222448 | +1.1% / +21.3% / +1.1% / +1.0% |
+| all LUT x0.95 | 8 | 22222448 | +2.4% / +20.0% / +1.2% / +0.9% |
+| all LUT x1.05 | 1 | 44444448 | +63.7% / +133.5% / +0.0% / +0.0% |
+| all LUT x1.05 | 2 | 44242448 | +26.0% / +49.9% / +1.4% / +1.4% |
+| all LUT x1.05 | 3 | 24244448 | +31.1% / +54.7% / +5.7% / +1.7% |
+| all LUT x1.05 | 5 | 24222448 | +1.2% / +21.3% / +1.3% / +1.1% |
+| all LUT x1.05 | 8 | 22222448 | +2.5% / +19.8% / +1.3% / +1.1% |
+| all LUT x1.10 | 1 | 44444448 | +65.0% / +134.0% / +0.0% / +0.0% |
+| all LUT x1.10 | 2 | 44242448 | +25.6% / +49.8% / +1.5% / +1.5% |
+| all LUT x1.10 | 3 | 24244448 | +30.7% / +54.6% / +5.9% / +1.7% |
+| all LUT x1.10 | 5 | 24222448 | +1.2% / +21.3% / +1.4% / +1.2% |
+| all LUT x1.10 | 8 | 22222448 | +2.7% / +19.9% / +1.4% / +1.1% |
+== done 19:51:06

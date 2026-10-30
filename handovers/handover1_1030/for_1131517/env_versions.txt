@@ -1,0 +1,14 @@
+我們訓練用的環境（Windows 11 + NVIDIA GPU；10/30 從 venv 讀出）
+
+Python        3.10.22
+torch         1.13.1+cu116   （WSL / CPU 請裝 1.13.1+cpu）
+torchvision   0.14.1+cu116   （WSL / CPU 請裝 0.14.1+cpu）
+numpy         1.24.1
+brevitas      0.10.0         （git commit 84f42259ec869eb151af4cb8a8b23ad925f493db，FINN v0.10.1 鎖定的版本）
+onnx          1.13.0
+protobuf      3.20.3
+setuptools    68.2.2         （一定要這版，新版沒有 pkg_resources）
+dependencies  2.0.1          （brevitas 會自動裝）
+sympy         1.14.0         （brevitas 會自動裝）
+
+安裝指令見 README_training.md 的「環境」。

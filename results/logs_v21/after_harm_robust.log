@@ -1,0 +1,49 @@
+wrote C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/cost/tables_ref_lut090.json: 90276 entries scaled, MVAU_rtl x1.0, MVAU_hls x1.0, all x0.9
+== truth LUT x090 23:01:03
+== nominal | biased model 'finn': tau(all) 0.988, tau(dsp designs) 0.9742; 639 of 130072 feasible-looking points infeasible; Pareto front 22 designs, 6 infeasible, ADRS 3.16%
+   margin 1: biased opt 44444488 lut ok; failed builds 0; then 44444488 lut regret 18.39% surprise -1.74% | truth opt 44444448 lut | top1/10/100 0.0/0.6/0.66
+   margin 2: biased opt 84242448 dspc INFEASIBLE; failed builds 25; then 44242488 lut regret 0.01% surprise 3.93% | truth opt 44242448 lut | top1/10/100 0.0/0.0/0.32
+   margin 3: biased opt 84222448 dspc INFEASIBLE; failed builds 36; then 24248488 dspc regret 2.77% surprise 5.64% | truth opt 24244448 lut | top1/10/100 0.0/0.0/0.16
+   margin 5: biased opt 84222244 dspc INFEASIBLE; failed builds 36; then 24222448 dspc regret 0.0% surprise -0.19% | truth opt 24222448 dspc | top1/10/100 0.0/0.0/0.3
+   margin 8: biased opt 22222484 dspc ok; failed builds 0; then 22222484 dspc regret 0.01% surprise -1.28% | truth opt 22222448 dspc | top1/10/100 0.0/0.7/0.76
+== nominal | biased model 'finn_raw': tau(all) 0.9316, tau(dsp designs) 0.9609; 22668 of 152997 feasible-looking points infeasible; Pareto front 25 designs, 14 infeasible, ADRS 17.47%
+   margin 1: biased opt 44444448 lut ok; failed builds 0; then 44444448 lut regret 18.38% surprise -4.05% | truth opt 44444448 lut | top1/10/100 0.0/0.2/0.63
+   margin 2: biased opt 84242448 dspc INFEASIBLE; failed builds 28; then 44242448 lut regret 25.5% surprise 29.64% | truth opt 44242448 lut | top1/10/100 0.0/0.0/0.18
+   margin 3: biased opt 84222448 dspc INFEASIBLE; failed builds 58; then 24248448 dspc regret 2.76% surprise 5.37% | truth opt 24244448 lut | top1/10/100 0.0/0.0/0.2
+   margin 5: biased opt 84222244 dspc INFEASIBLE; failed builds 78; then 42222448 dspc regret 1.48% surprise 0.77% | truth opt 24222448 dspc | top1/10/100 0.0/0.0/0.14
+   margin 8: biased opt 84222244 dspc INFEASIBLE; failed builds 42; then 22222448 lut regret 0.07% surprise -1.82% | truth opt 22222448 dspc | top1/10/100 0.0/0.0/0.18
+| finn | 1 | 100% | 100% | 100% | 0.6 |
+| finn | 2 | 0% | 0% | 32% | 0.0 |
+| finn | 3 | 0% | 0% | 20% | 0.0 |
+| finn | 5 | 0% | 0% | 30% | 0.0 |
+| finn | 8 | 100% | 100% | 76% | 0.8 |
+| finn_raw | 1 | 100% | 100% | 64% | 0.2 |
+| finn_raw | 2 | 0% | 0% | 59% | 0.0 |
+| finn_raw | 3 | 0% | 0% | 22% | 0.0 |
+| finn_raw | 5 | 0% | 0% | 16% | 0.0 |
+| finn_raw | 8 | 0% | 0% | 18% | 0.0 |
+wrote C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/cost/tables_ref_lut110.json: 90276 entries scaled, MVAU_rtl x1.0, MVAU_hls x1.0, all x1.1
+== truth LUT x110 23:04:47
+== nominal | biased model 'finn': tau(all) 0.991, tau(dsp designs) 0.9783; 8210 of 130072 feasible-looking points infeasible; Pareto front 22 designs, 12 infeasible, ADRS 7.27%
+   margin 1: biased opt 44444488 lut ok; failed builds 0; then 44444488 lut regret 0.01% surprise 1.84% | truth opt 44444448 lut | top1/10/100 0.0/0.8/0.78
+   margin 2: biased opt 84242448 dspc INFEASIBLE; failed builds 25; then 44242488 lut regret 0.0% surprise 9.36% | truth opt 44242448 lut | top1/10/100 0.0/0.0/0.04
+   margin 3: biased opt 84222448 dspc INFEASIBLE; failed builds 36; then 24248488 dspc regret 1.62% surprise 8.25% | truth opt 24244448 lut | top1/10/100 0.0/0.0/0.2
+   margin 5: biased opt 84222244 dspc INFEASIBLE; failed builds 36; then 24222448 dspc regret 0.0% surprise 2.74% | truth opt 24222448 dspc | top1/10/100 0.0/0.0/0.3
+   margin 8: biased opt 22222484 dspc ok; failed builds 0; then 22222484 dspc regret 0.01% surprise 1.39% | truth opt 22222448 dspc | top1/10/100 0.0/0.7/0.76
+== nominal | biased model 'finn_raw': tau(all) 0.926, tau(dsp designs) 0.9641; 33294 of 152997 feasible-looking points infeasible; Pareto front 25 designs, 21 infeasible, ADRS 16.59%
+   margin 1: biased opt 44444448 lut ok; failed builds 0; then 44444448 lut regret 0.0% surprise -0.56% | truth opt 44444448 lut | top1/10/100 1.0/0.2/0.24
+   margin 2: biased opt 84242448 dspc INFEASIBLE; failed builds 28; then 44242448 lut regret 22.85% surprise 33.54% | truth opt 44242448 lut | top1/10/100 0.0/0.0/0.39
+   margin 3: biased opt 84222448 dspc INFEASIBLE; failed builds 58; then 24248448 dspc regret 1.61% surprise 7.97% | truth opt 24244448 lut | top1/10/100 0.0/0.0/0.2
+   margin 5: biased opt 84222244 dspc INFEASIBLE; failed builds 78; then 42222448 dspc regret 1.58% surprise 3.83% | truth opt 24222448 dspc | top1/10/100 0.0/0.0/0.14
+   margin 8: biased opt 84222244 dspc INFEASIBLE; failed builds 42; then 22222448 lut regret 0.1% surprise 0.86% | truth opt 22222448 dspc | top1/10/100 0.0/0.0/0.18
+| finn | 1 | 100% | 80% | 78% | 0.8 |
+| finn | 2 | 0% | 0% | 4% | 0.0 |
+| finn | 3 | 0% | 0% | 20% | 0.0 |
+| finn | 5 | 0% | 0% | 30% | 0.0 |
+| finn | 8 | 100% | 100% | 76% | 0.8 |
+| finn_raw | 1 | 100% | 20% | 24% | 0.2 |
+| finn_raw | 2 | 0% | 0% | 45% | 0.0 |
+| finn_raw | 3 | 0% | 0% | 20% | 0.0 |
+| finn_raw | 5 | 0% | 0% | 16% | 0.0 |
+| finn_raw | 8 | 0% | 0% | 18% | 0.0 |
+== done 23:04:52

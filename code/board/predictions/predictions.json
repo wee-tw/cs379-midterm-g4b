@@ -1,0 +1,1786 @@
+{
+ "cnv-w1a1": {
+  "U_est": 0.5666,
+  "U_cal": 0.5078,
+  "max_cycles": 32768,
+  "by_set": {
+   "bismo_fit": {
+    "U_est": {
+     "idle_slope_mW_per_MHz": 6.233,
+     "cont_slope_mW_per_MHz": 9.179,
+     "at": {
+      "25": {
+       "clock_power_W": 0.1558,
+       "P_idle_W": 1.6008,
+       "P_cont_W": 1.6745,
+       "fps_est": 762.9,
+       "E_cont_mJ": 2.1948
+      },
+      "50": {
+       "clock_power_W": 0.3117,
+       "P_idle_W": 1.7567,
+       "P_cont_W": 1.904,
+       "fps_est": 1525.9,
+       "E_cont_mJ": 1.2478
+      },
+      "100": {
+       "clock_power_W": 0.6233,
+       "P_idle_W": 2.0683,
+       "P_cont_W": 2.3629,
+       "fps_est": 3051.8,
+       "E_cont_mJ": 0.7743
+      },
+      "200": {
+       "clock_power_W": 1.2466,
+       "P_idle_W": 2.6916,
+       "P_cont_W": 3.2809,
+       "fps_est": 6103.5,
+       "E_cont_mJ": 0.5375
+      }
+     }
+    },
+    "U_cal": {
+     "idle_slope_mW_per_MHz": 6.063,
+     "cont_slope_mW_per_MHz": 8.703,
+     "at": {
+      "25": {
+       "clock_power_W": 0.1516,
+       "P_idle_W": 1.5966,
+       "P_cont_W": 1.6626,
+       "fps_est": 762.9,
+       "E_cont_mJ": 2.1792
+      },
+      "50": {
+       "clock_power_W": 0.3031,
+       "P_idle_W": 1.7481,
+       "P_cont_W": 1.8802,
+       "fps_est": 1525.9,
+       "E_cont_mJ": 1.2322
+      },
+      "100": {
+       "clock_power_W": 0.6063,
+       "P_idle_W": 2.0513,
+       "P_cont_W": 2.3153,
+       "fps_est": 3051.8,
+       "E_cont_mJ": 0.7587
+      },
+      "200": {
+       "clock_power_W": 1.2125,
+       "P_idle_W": 2.6575,
+       "P_cont_W": 3.1856,
+       "fps_est": 6103.5,
+       "E_cont_mJ": 0.5219
+      }
+     }
+    }
+   },
+   "nominal": {
+    "U_est": {
+     "idle_slope_mW_per_MHz": 3.85,
+     "cont_slope_mW_per_MHz": 5.833,
+     "at": {
+      "25": {
+       "clock_power_W": 0.0962,
+       "P_idle_W": 1.6962,
+       "P_cont_W": 1.7458,
+       "fps_est": 762.9,
+       "E_cont_mJ": 2.2883
+      },
+      "50": {
+       "clock_power_W": 0.1925,
+       "P_idle_W": 1.7925,
+       "P_cont_W": 1.8917,
+       "fps_est": 1525.9,
+       "E_cont_mJ": 1.2397
+      },
+      "100": {
+       "clock_power_W": 0.385,
+       "P_idle_W": 1.985,
+       "P_cont_W": 2.1833,
+       "fps_est": 3051.8,
+       "E_cont_mJ": 0.7154
+      },
+      "200": {
+       "clock_power_W": 0.77,
+       "P_idle_W": 2.37,
+       "P_cont_W": 2.7666,
+       "fps_est": 6103.5,
+       "E_cont_mJ": 0.4533
+      }
+     }
+    },
+    "U_cal": {
+     "idle_slope_mW_per_MHz": 3.762,
+     "cont_slope_mW_per_MHz": 5.539,
+     "at": {
+      "25": {
+       "clock_power_W": 0.094,
+       "P_idle_W": 1.694,
+       "P_cont_W": 1.7385,
+       "fps_est": 762.9,
+       "E_cont_mJ": 2.2787
+      },
+      "50": {
+       "clock_power_W": 0.1881,
+       "P_idle_W": 1.7881,
+       "P_cont_W": 1.877,
+       "fps_est": 1525.9,
+       "E_cont_mJ": 1.2301
+      },
+      "100": {
+       "clock_power_W": 0.3762,
+       "P_idle_W": 1.9762,
+       "P_cont_W": 2.1539,
+       "fps_est": 3051.8,
+       "E_cont_mJ": 0.7058
+      },
+      "200": {
+       "clock_power_W": 0.7523,
+       "P_idle_W": 2.3523,
+       "P_cont_W": 2.7078,
+       "fps_est": 6103.5,
+       "E_cont_mJ": 0.4436
+      }
+     }
+    }
+   },
+   "flat": {
+    "U_est": {
+     "idle_slope_mW_per_MHz": 1.0,
+     "cont_slope_mW_per_MHz": 1.737,
+     "at": {
+      "25": {
+       "clock_power_W": 0.025,
+       "P_idle_W": 1.825,
+       "P_cont_W": 1.8434,
+       "fps_est": 762.9,
+       "E_cont_mJ": 2.4162
+      },
+      "50": {
+       "clock_power_W": 0.05,
+       "P_idle_W": 1.85,
+       "P_cont_W": 1.8868,
+       "fps_est": 1525.9,
+       "E_cont_mJ": 1.2366
+      },
+      "100": {
+       "clock_power_W": 0.1,
+       "P_idle_W": 1.9,
+       "P_cont_W": 1.9737,
+       "fps_est": 3051.8,
+       "E_cont_mJ": 0.6467
+      },
+      "200": {
+       "clock_power_W": 0.2,
+       "P_idle_W": 2.0,
+       "P_cont_W": 2.1473,
+       "fps_est": 6103.5,
+       "E_cont_mJ": 0.3518
+      }
+     }
+    },
+    "U_cal": {
+     "idle_slope_mW_per_MHz": 1.0,
+     "cont_slope_mW_per_MHz": 1.66,
+     "at": {
+      "25": {
+       "clock_power_W": 0.025,
+       "P_idle_W": 1.825,
+       "P_cont_W": 1.8415,
+       "fps_est": 762.9,
+       "E_cont_mJ": 2.4137
+      },
+      "50": {
+       "clock_power_W": 0.05,
+       "P_idle_W": 1.85,
+       "P_cont_W": 1.883,
+       "fps_est": 1525.9,
+       "E_cont_mJ": 1.234
+      },
+      "100": {
+       "clock_power_W": 0.1,
+       "P_idle_W": 1.9,
+       "P_cont_W": 1.966,
+       "fps_est": 3051.8,
+       "E_cont_mJ": 0.6442
+      },
+      "200": {
+       "clock_power_W": 0.2,
+       "P_idle_W": 2.0,
+       "P_cont_W": 2.132,
+       "fps_est": 6103.5,
+       "E_cont_mJ": 0.3493
+      }
+     }
+    }
+   },
+   "z2_anchor": {
+    "U_est": {
+     "idle_slope_mW_per_MHz": 3.567,
+     "cont_slope_mW_per_MHz": 4.303,
+     "at": {
+      "25": {
+       "clock_power_W": 0.0892,
+       "P_idle_W": 1.3392,
+       "P_cont_W": 1.3576,
+       "fps_est": 762.9,
+       "E_cont_mJ": 1.7794
+      },
+      "50": {
+       "clock_power_W": 0.1783,
+       "P_idle_W": 1.4283,
+       "P_cont_W": 1.4652,
+       "fps_est": 1525.9,
+       "E_cont_mJ": 0.9602
+      },
+      "100": {
+       "clock_power_W": 0.3567,
+       "P_idle_W": 1.6067,
+       "P_cont_W": 1.6803,
+       "fps_est": 3051.8,
+       "E_cont_mJ": 0.5506
+      },
+      "200": {
+       "clock_power_W": 0.7133,
+       "P_idle_W": 1.9633,
+       "P_cont_W": 2.1106,
+       "fps_est": 6103.5,
+       "E_cont_mJ": 0.3458
+      }
+     }
+    },
+    "U_cal": {
+     "idle_slope_mW_per_MHz": 3.508,
+     "cont_slope_mW_per_MHz": 4.168,
+     "at": {
+      "25": {
+       "clock_power_W": 0.0877,
+       "P_idle_W": 1.3377,
+       "P_cont_W": 1.3542,
+       "fps_est": 762.9,
+       "E_cont_mJ": 1.775
+      },
+      "50": {
+       "clock_power_W": 0.1754,
+       "P_idle_W": 1.4254,
+       "P_cont_W": 1.4584,
+       "fps_est": 1525.9,
+       "E_cont_mJ": 0.9558
+      },
+      "100": {
+       "clock_power_W": 0.3508,
+       "P_idle_W": 1.6008,
+       "P_cont_W": 1.6668,
+       "fps_est": 3051.8,
+       "E_cont_mJ": 0.5462
+      },
+      "200": {
+       "clock_power_W": 0.7016,
+       "P_idle_W": 1.9516,
+       "P_cont_W": 2.0836,
+       "fps_est": 6103.5,
+       "E_cont_mJ": 0.3414
+      }
+     }
+    }
+   }
+  },
+  "fixed_rate": {
+   "bismo_fit": {
+    "100": {
+     "rate": 26.6618,
+     "rate_halt": 15.4472,
+     "rate_slow": 15.4614,
+     "jit": 14.7451
+    },
+    "1000": {
+     "rate": 2.744,
+     "rate_halt": 2.4422,
+     "rate_slow": 2.4426,
+     "jit": 1.7401
+    }
+   },
+   "nominal": {
+    "100": {
+     "rate": 23.5816,
+     "rate_halt": 16.6233,
+     "rate_slow": 16.6321,
+     "jit": 16.1877
+    },
+    "1000": {
+     "rate": 2.4106,
+     "rate_halt": 2.2233,
+     "rate_slow": 2.2235,
+     "jit": 1.7877
+    }
+   },
+   "flat": {
+    "100": {
+     "rate": 20.0216,
+     "rate_halt": 18.1718,
+     "rate_slow": 18.1742,
+     "jit": 18.056
+    },
+    "1000": {
+     "rate": 2.0216,
+     "rate_halt": 1.9718,
+     "rate_slow": 1.9719,
+     "jit": 1.856
+    }
+   },
+   "z2_anchor": {
+    "100": {
+     "rate": 19.5372,
+     "rate_halt": 13.0486,
+     "rate_slow": 13.0567,
+     "jit": 12.6423
+    },
+    "1000": {
+     "rate": 1.9732,
+     "rate_halt": 1.7986,
+     "rate_slow": 1.7988,
+     "jit": 1.3923
+    }
+   }
+  },
+  "batched_halt_1000fps": {
+   "bismo_fit": {
+    "1": 0.9972,
+    "2": 0.6412,
+    "4": 0.4632,
+    "8": 0.3742
+   },
+   "nominal": {
+    "1": 0.6233,
+    "2": 0.4024,
+    "4": 0.292,
+    "8": 0.2367
+   },
+   "flat": {
+    "1": 0.1718,
+    "2": 0.1131,
+    "4": 0.0838,
+    "8": 0.0691
+   },
+   "z2_anchor": {
+    "1": 0.5486,
+    "2": 0.3426,
+    "4": 0.2396,
+    "8": 0.1881
+   }
+  },
+  "policy_crossover_300fps": {
+   "jit streaming": {
+    "MHz": 10.417,
+    "cycles_over_II": 1.06,
+    "latency_ms": 14.42,
+    "nominal": 0.1889,
+    "z2_anchor": 0.1434
+   },
+   "streaming, 2-period deadline clock": {
+    "MHz": 22.727,
+    "cycles_over_II": 2.31,
+    "latency_ms": 6.61,
+    "nominal": 0.3432,
+    "z2_anchor": 0.2874
+   },
+   "batched halt k = 2": {
+    "MHz": 200.0,
+    "cycles_over_II": 2.79,
+    "latency_ms": 4.25,
+    "nominal": 0.4024,
+    "z2_anchor": 0.3426
+   },
+   "streaming, 1.3-period deadline clock": {
+    "MHz": 35.714,
+    "cycles_over_II": 3.63,
+    "latency_ms": 4.21,
+    "nominal": 0.5061,
+    "z2_anchor": 0.4392
+   },
+   "one-frame halt k = 1": {
+    "MHz": 200.0,
+    "cycles_over_II": 4.58,
+    "latency_ms": 0.75,
+    "nominal": 0.6233,
+    "z2_anchor": 0.5486
+   }
+  }
+ },
+ "cnv-w1a2": {
+  "U_est": 0.5344,
+  "U_cal": 0.4671,
+  "max_cycles": 115200,
+  "by_set": {
+   "bismo_fit": {
+    "U_est": {
+     "idle_slope_mW_per_MHz": 6.14,
+     "cont_slope_mW_per_MHz": 8.919,
+     "at": {
+      "25": {
+       "clock_power_W": 0.1535,
+       "P_idle_W": 1.5985,
+       "P_cont_W": 1.668,
+       "fps_est": 217.0,
+       "E_cont_mJ": 7.686
+      },
+      "50": {
+       "clock_power_W": 0.307,
+       "P_idle_W": 1.752,
+       "P_cont_W": 1.8909,
+       "fps_est": 434.0,
+       "E_cont_mJ": 4.3567
+      },
+      "100": {
+       "clock_power_W": 0.614,
+       "P_idle_W": 2.059,
+       "P_cont_W": 2.3369,
+       "fps_est": 868.1,
+       "E_cont_mJ": 2.6921
+      },
+      "200": {
+       "clock_power_W": 1.228,
+       "P_idle_W": 2.673,
+       "P_cont_W": 3.2287,
+       "fps_est": 1736.1,
+       "E_cont_mJ": 1.8597
+      }
+     }
+    },
+    "U_cal": {
+     "idle_slope_mW_per_MHz": 5.945,
+     "cont_slope_mW_per_MHz": 8.374,
+     "at": {
+      "25": {
+       "clock_power_W": 0.1486,
+       "P_idle_W": 1.5936,
+       "P_cont_W": 1.6543,
+       "fps_est": 217.0,
+       "E_cont_mJ": 7.6232
+      },
+      "50": {
+       "clock_power_W": 0.2972,
+       "P_idle_W": 1.7422,
+       "P_cont_W": 1.8637,
+       "fps_est": 434.0,
+       "E_cont_mJ": 4.2939
+      },
+      "100": {
+       "clock_power_W": 0.5945,
+       "P_idle_W": 2.0395,
+       "P_cont_W": 2.2824,
+       "fps_est": 868.1,
+       "E_cont_mJ": 2.6293
+      },
+      "200": {
+       "clock_power_W": 1.1889,
+       "P_idle_W": 2.6339,
+       "P_cont_W": 3.1197,
+       "fps_est": 1736.1,
+       "E_cont_mJ": 1.7969
+      }
+     }
+    }
+   },
+   "nominal": {
+    "U_est": {
+     "idle_slope_mW_per_MHz": 3.802,
+     "cont_slope_mW_per_MHz": 5.672,
+     "at": {
+      "25": {
+       "clock_power_W": 0.095,
+       "P_idle_W": 1.695,
+       "P_cont_W": 1.7418,
+       "fps_est": 217.0,
+       "E_cont_mJ": 8.0262
+      },
+      "50": {
+       "clock_power_W": 0.1901,
+       "P_idle_W": 1.7901,
+       "P_cont_W": 1.8836,
+       "fps_est": 434.0,
+       "E_cont_mJ": 4.3398
+      },
+      "100": {
+       "clock_power_W": 0.3802,
+       "P_idle_W": 1.9802,
+       "P_cont_W": 2.1672,
+       "fps_est": 868.1,
+       "E_cont_mJ": 2.4966
+      },
+      "200": {
+       "clock_power_W": 0.7603,
+       "P_idle_W": 2.3603,
+       "P_cont_W": 2.7344,
+       "fps_est": 1736.1,
+       "E_cont_mJ": 1.575
+      }
+     }
+    },
+    "U_cal": {
+     "idle_slope_mW_per_MHz": 3.701,
+     "cont_slope_mW_per_MHz": 5.335,
+     "at": {
+      "25": {
+       "clock_power_W": 0.0925,
+       "P_idle_W": 1.6925,
+       "P_cont_W": 1.7334,
+       "fps_est": 217.0,
+       "E_cont_mJ": 7.9874
+      },
+      "50": {
+       "clock_power_W": 0.185,
+       "P_idle_W": 1.785,
+       "P_cont_W": 1.8668,
+       "fps_est": 434.0,
+       "E_cont_mJ": 4.301
+      },
+      "100": {
+       "clock_power_W": 0.3701,
+       "P_idle_W": 1.9701,
+       "P_cont_W": 2.1336,
+       "fps_est": 868.1,
+       "E_cont_mJ": 2.4578
+      },
+      "200": {
+       "clock_power_W": 0.7401,
+       "P_idle_W": 2.3401,
+       "P_cont_W": 2.6671,
+       "fps_est": 1736.1,
+       "E_cont_mJ": 1.5362
+      }
+     }
+    }
+   },
+   "flat": {
+    "U_est": {
+     "idle_slope_mW_per_MHz": 1.0,
+     "cont_slope_mW_per_MHz": 1.695,
+     "at": {
+      "25": {
+       "clock_power_W": 0.025,
+       "P_idle_W": 1.825,
+       "P_cont_W": 1.8424,
+       "fps_est": 217.0,
+       "E_cont_mJ": 8.4896
+      },
+      "50": {
+       "clock_power_W": 0.05,
+       "P_idle_W": 1.85,
+       "P_cont_W": 1.8847,
+       "fps_est": 434.0,
+       "E_cont_mJ": 4.3424
+      },
+      "100": {
+       "clock_power_W": 0.1,
+       "P_idle_W": 1.9,
+       "P_cont_W": 1.9695,
+       "fps_est": 868.1,
+       "E_cont_mJ": 2.2688
+      },
+      "200": {
+       "clock_power_W": 0.2,
+       "P_idle_W": 2.0,
+       "P_cont_W": 2.1389,
+       "fps_est": 1736.1,
+       "E_cont_mJ": 1.232
+      }
+     }
+    },
+    "U_cal": {
+     "idle_slope_mW_per_MHz": 1.0,
+     "cont_slope_mW_per_MHz": 1.607,
+     "at": {
+      "25": {
+       "clock_power_W": 0.025,
+       "P_idle_W": 1.825,
+       "P_cont_W": 1.8402,
+       "fps_est": 217.0,
+       "E_cont_mJ": 8.4796
+      },
+      "50": {
+       "clock_power_W": 0.05,
+       "P_idle_W": 1.85,
+       "P_cont_W": 1.8804,
+       "fps_est": 434.0,
+       "E_cont_mJ": 4.3324
+      },
+      "100": {
+       "clock_power_W": 0.1,
+       "P_idle_W": 1.9,
+       "P_cont_W": 1.9607,
+       "fps_est": 868.1,
+       "E_cont_mJ": 2.2588
+      },
+      "200": {
+       "clock_power_W": 0.2,
+       "P_idle_W": 2.0,
+       "P_cont_W": 2.1214,
+       "fps_est": 1736.1,
+       "E_cont_mJ": 1.222
+      }
+     }
+    }
+   },
+   "z2_anchor": {
+    "U_est": {
+     "idle_slope_mW_per_MHz": 3.534,
+     "cont_slope_mW_per_MHz": 4.229,
+     "at": {
+      "25": {
+       "clock_power_W": 0.0884,
+       "P_idle_W": 1.3384,
+       "P_cont_W": 1.3557,
+       "fps_est": 217.0,
+       "E_cont_mJ": 6.2472
+      },
+      "50": {
+       "clock_power_W": 0.1767,
+       "P_idle_W": 1.4267,
+       "P_cont_W": 1.4615,
+       "fps_est": 434.0,
+       "E_cont_mJ": 3.3672
+      },
+      "100": {
+       "clock_power_W": 0.3534,
+       "P_idle_W": 1.6034,
+       "P_cont_W": 1.6729,
+       "fps_est": 868.1,
+       "E_cont_mJ": 1.9272
+      },
+      "200": {
+       "clock_power_W": 0.7069,
+       "P_idle_W": 1.9569,
+       "P_cont_W": 2.0958,
+       "fps_est": 1736.1,
+       "E_cont_mJ": 1.2072
+      }
+     }
+    },
+    "U_cal": {
+     "idle_slope_mW_per_MHz": 3.467,
+     "cont_slope_mW_per_MHz": 4.074,
+     "at": {
+      "25": {
+       "clock_power_W": 0.0867,
+       "P_idle_W": 1.3367,
+       "P_cont_W": 1.3519,
+       "fps_est": 217.0,
+       "E_cont_mJ": 6.2294
+      },
+      "50": {
+       "clock_power_W": 0.1734,
+       "P_idle_W": 1.4234,
+       "P_cont_W": 1.4537,
+       "fps_est": 434.0,
+       "E_cont_mJ": 3.3494
+      },
+      "100": {
+       "clock_power_W": 0.3467,
+       "P_idle_W": 1.5967,
+       "P_cont_W": 1.6574,
+       "fps_est": 868.1,
+       "E_cont_mJ": 1.9094
+      },
+      "200": {
+       "clock_power_W": 0.6934,
+       "P_idle_W": 1.9434,
+       "P_cont_W": 2.0649,
+       "fps_est": 1736.1,
+       "E_cont_mJ": 1.1894
+      }
+     }
+    }
+   }
+  },
+  "fixed_rate": {
+   "bismo_fit": {
+    "100": {
+     "rate": 26.619,
+     "rate_halt": 17.309,
+     "rate_slow": 17.3207,
+     "jit": 15.4489
+    },
+    "1000": {
+     "rate": 2.9137,
+     "rate_halt": 2.9137,
+     "rate_slow": 2.9137,
+     "jit": 2.4439
+    }
+   },
+   "nominal": {
+    "100": {
+     "rate": 23.5896,
+     "rate_halt": 17.7939,
+     "rate_slow": 17.8013,
+     "jit": 16.636
+    },
+    "1000": {
+     "rate": 2.5285,
+     "rate_halt": 2.5285,
+     "rate_slow": 2.5285,
+     "jit": 2.236
+    }
+   },
+   "flat": {
+    "100": {
+     "rate": 20.07,
+     "rate_halt": 18.5038,
+     "rate_slow": 18.5058,
+     "jit": 18.1909
+    },
+    "1000": {
+     "rate": 2.07,
+     "rate_halt": 2.07,
+     "rate_slow": 2.07,
+     "jit": 1.9909
+    }
+   },
+   "z2_anchor": {
+    "100": {
+     "rate": 19.5042,
+     "rate_halt": 14.0742,
+     "rate_slow": 14.0811,
+     "jit": 12.9893
+    },
+    "1000": {
+     "rate": 2.0134,
+     "rate_halt": 2.0134,
+     "rate_slow": 2.0134,
+     "jit": 1.7393
+    }
+   }
+  },
+  "batched_halt_1000fps": {
+   "bismo_fit": {
+    "1": 2.859,
+    "2": 1.9118,
+    "4": 1.4382,
+    "8": 1.2014
+   },
+   "nominal": {
+    "1": 1.7939,
+    "2": 1.2043,
+    "4": 0.9095,
+    "8": 0.7621
+   },
+   "flat": {
+    "1": 0.5038,
+    "2": 0.3445,
+    "4": 0.2648,
+    "8": 0.225
+   },
+   "z2_anchor": {
+    "1": 1.5742,
+    "2": 1.0218,
+    "4": 0.7456,
+    "8": 0.6075
+   }
+  }
+ },
+ "cnv-w2a2": {
+  "U_est": 0.5335,
+  "U_cal": 0.4663,
+  "max_cycles": 115200,
+  "by_set": {
+   "bismo_fit": {
+    "U_est": {
+     "idle_slope_mW_per_MHz": 6.137,
+     "cont_slope_mW_per_MHz": 8.911,
+     "at": {
+      "25": {
+       "clock_power_W": 0.1534,
+       "P_idle_W": 1.5984,
+       "P_cont_W": 1.6678,
+       "fps_est": 217.0,
+       "E_cont_mJ": 7.6851
+      },
+      "50": {
+       "clock_power_W": 0.3069,
+       "P_idle_W": 1.7519,
+       "P_cont_W": 1.8906,
+       "fps_est": 434.0,
+       "E_cont_mJ": 4.3559
+      },
+      "100": {
+       "clock_power_W": 0.6137,
+       "P_idle_W": 2.0587,
+       "P_cont_W": 2.3361,
+       "fps_est": 868.1,
+       "E_cont_mJ": 2.6912
+      },
+      "200": {
+       "clock_power_W": 1.2274,
+       "P_idle_W": 2.6724,
+       "P_cont_W": 3.2273,
+       "fps_est": 1736.1,
+       "E_cont_mJ": 1.8589
+      }
+     }
+    },
+    "U_cal": {
+     "idle_slope_mW_per_MHz": 5.942,
+     "cont_slope_mW_per_MHz": 8.367,
+     "at": {
+      "25": {
+       "clock_power_W": 0.1486,
+       "P_idle_W": 1.5936,
+       "P_cont_W": 1.6542,
+       "fps_est": 217.0,
+       "E_cont_mJ": 7.6224
+      },
+      "50": {
+       "clock_power_W": 0.2971,
+       "P_idle_W": 1.7421,
+       "P_cont_W": 1.8634,
+       "fps_est": 434.0,
+       "E_cont_mJ": 4.2932
+      },
+      "100": {
+       "clock_power_W": 0.5942,
+       "P_idle_W": 2.0392,
+       "P_cont_W": 2.2817,
+       "fps_est": 868.1,
+       "E_cont_mJ": 2.6285
+      },
+      "200": {
+       "clock_power_W": 1.1885,
+       "P_idle_W": 2.6335,
+       "P_cont_W": 3.1184,
+       "fps_est": 1736.1,
+       "E_cont_mJ": 1.7962
+      }
+     }
+    }
+   },
+   "nominal": {
+    "U_est": {
+     "idle_slope_mW_per_MHz": 3.8,
+     "cont_slope_mW_per_MHz": 5.667,
+     "at": {
+      "25": {
+       "clock_power_W": 0.095,
+       "P_idle_W": 1.695,
+       "P_cont_W": 1.7417,
+       "fps_est": 217.0,
+       "E_cont_mJ": 8.0257
+      },
+      "50": {
+       "clock_power_W": 0.19,
+       "P_idle_W": 1.79,
+       "P_cont_W": 1.8834,
+       "fps_est": 434.0,
+       "E_cont_mJ": 4.3393
+      },
+      "100": {
+       "clock_power_W": 0.38,
+       "P_idle_W": 1.98,
+       "P_cont_W": 2.1667,
+       "fps_est": 868.1,
+       "E_cont_mJ": 2.4961
+      },
+      "200": {
+       "clock_power_W": 0.7601,
+       "P_idle_W": 2.3601,
+       "P_cont_W": 2.7335,
+       "fps_est": 1736.1,
+       "E_cont_mJ": 1.5745
+      }
+     }
+    },
+    "U_cal": {
+     "idle_slope_mW_per_MHz": 3.699,
+     "cont_slope_mW_per_MHz": 5.331,
+     "at": {
+      "25": {
+       "clock_power_W": 0.0925,
+       "P_idle_W": 1.6925,
+       "P_cont_W": 1.7333,
+       "fps_est": 217.0,
+       "E_cont_mJ": 7.987
+      },
+      "50": {
+       "clock_power_W": 0.185,
+       "P_idle_W": 1.785,
+       "P_cont_W": 1.8666,
+       "fps_est": 434.0,
+       "E_cont_mJ": 4.3006
+      },
+      "100": {
+       "clock_power_W": 0.3699,
+       "P_idle_W": 1.9699,
+       "P_cont_W": 2.1332,
+       "fps_est": 868.1,
+       "E_cont_mJ": 2.4574
+      },
+      "200": {
+       "clock_power_W": 0.7399,
+       "P_idle_W": 2.3399,
+       "P_cont_W": 2.6663,
+       "fps_est": 1736.1,
+       "E_cont_mJ": 1.5358
+      }
+     }
+    }
+   },
+   "flat": {
+    "U_est": {
+     "idle_slope_mW_per_MHz": 1.0,
+     "cont_slope_mW_per_MHz": 1.694,
+     "at": {
+      "25": {
+       "clock_power_W": 0.025,
+       "P_idle_W": 1.825,
+       "P_cont_W": 1.8423,
+       "fps_est": 217.0,
+       "E_cont_mJ": 8.4895
+      },
+      "50": {
+       "clock_power_W": 0.05,
+       "P_idle_W": 1.85,
+       "P_cont_W": 1.8847,
+       "fps_est": 434.0,
+       "E_cont_mJ": 4.3423
+      },
+      "100": {
+       "clock_power_W": 0.1,
+       "P_idle_W": 1.9,
+       "P_cont_W": 1.9694,
+       "fps_est": 868.1,
+       "E_cont_mJ": 2.2687
+      },
+      "200": {
+       "clock_power_W": 0.2,
+       "P_idle_W": 2.0,
+       "P_cont_W": 2.1387,
+       "fps_est": 1736.1,
+       "E_cont_mJ": 1.2319
+      }
+     }
+    },
+    "U_cal": {
+     "idle_slope_mW_per_MHz": 1.0,
+     "cont_slope_mW_per_MHz": 1.606,
+     "at": {
+      "25": {
+       "clock_power_W": 0.025,
+       "P_idle_W": 1.825,
+       "P_cont_W": 1.8402,
+       "fps_est": 217.0,
+       "E_cont_mJ": 8.4794
+      },
+      "50": {
+       "clock_power_W": 0.05,
+       "P_idle_W": 1.85,
+       "P_cont_W": 1.8803,
+       "fps_est": 434.0,
+       "E_cont_mJ": 4.3322
+      },
+      "100": {
+       "clock_power_W": 0.1,
+       "P_idle_W": 1.9,
+       "P_cont_W": 1.9606,
+       "fps_est": 868.1,
+       "E_cont_mJ": 2.2586
+      },
+      "200": {
+       "clock_power_W": 0.2,
+       "P_idle_W": 2.0,
+       "P_cont_W": 2.1212,
+       "fps_est": 1736.1,
+       "E_cont_mJ": 1.2218
+      }
+     }
+    }
+   },
+   "z2_anchor": {
+    "U_est": {
+     "idle_slope_mW_per_MHz": 3.534,
+     "cont_slope_mW_per_MHz": 4.227,
+     "at": {
+      "25": {
+       "clock_power_W": 0.0883,
+       "P_idle_W": 1.3383,
+       "P_cont_W": 1.3557,
+       "fps_est": 217.0,
+       "E_cont_mJ": 6.247
+      },
+      "50": {
+       "clock_power_W": 0.1767,
+       "P_idle_W": 1.4267,
+       "P_cont_W": 1.4614,
+       "fps_est": 434.0,
+       "E_cont_mJ": 3.367
+      },
+      "100": {
+       "clock_power_W": 0.3533,
+       "P_idle_W": 1.6034,
+       "P_cont_W": 1.6727,
+       "fps_est": 868.1,
+       "E_cont_mJ": 1.927
+      },
+      "200": {
+       "clock_power_W": 0.7067,
+       "P_idle_W": 1.9567,
+       "P_cont_W": 2.0954,
+       "fps_est": 1736.1,
+       "E_cont_mJ": 1.207
+      }
+     }
+    },
+    "U_cal": {
+     "idle_slope_mW_per_MHz": 3.466,
+     "cont_slope_mW_per_MHz": 4.072,
+     "at": {
+      "25": {
+       "clock_power_W": 0.0867,
+       "P_idle_W": 1.3367,
+       "P_cont_W": 1.3518,
+       "fps_est": 217.0,
+       "E_cont_mJ": 6.2292
+      },
+      "50": {
+       "clock_power_W": 0.1733,
+       "P_idle_W": 1.4233,
+       "P_cont_W": 1.4536,
+       "fps_est": 434.0,
+       "E_cont_mJ": 3.3492
+      },
+      "100": {
+       "clock_power_W": 0.3466,
+       "P_idle_W": 1.5966,
+       "P_cont_W": 1.6572,
+       "fps_est": 868.1,
+       "E_cont_mJ": 1.9092
+      },
+      "200": {
+       "clock_power_W": 0.6933,
+       "P_idle_W": 1.9433,
+       "P_cont_W": 2.0645,
+       "fps_est": 1736.1,
+       "E_cont_mJ": 1.1892
+      }
+     }
+    }
+   }
+  },
+  "fixed_rate": {
+   "bismo_fit": {
+    "100": {
+     "rate": 26.6139,
+     "rate_halt": 17.3075,
+     "rate_slow": 17.3193,
+     "jit": 15.4481
+    },
+    "1000": {
+     "rate": 2.9128,
+     "rate_halt": 2.9128,
+     "rate_slow": 2.9128,
+     "jit": 2.4431
+    }
+   },
+   "nominal": {
+    "100": {
+     "rate": 23.5869,
+     "rate_halt": 17.7931,
+     "rate_slow": 17.8004,
+     "jit": 16.6355
+    },
+    "1000": {
+     "rate": 2.5279,
+     "rate_halt": 2.5279,
+     "rate_slow": 2.5279,
+     "jit": 2.2355
+    }
+   },
+   "flat": {
+    "100": {
+     "rate": 20.0698,
+     "rate_halt": 18.5037,
+     "rate_slow": 18.5057,
+     "jit": 18.1908
+    },
+    "1000": {
+     "rate": 2.0698,
+     "rate_halt": 2.0698,
+     "rate_slow": 2.0698,
+     "jit": 1.9908
+    }
+   },
+   "z2_anchor": {
+    "100": {
+     "rate": 19.5024,
+     "rate_halt": 14.0738,
+     "rate_slow": 14.0806,
+     "jit": 12.9891
+    },
+    "1000": {
+     "rate": 2.0131,
+     "rate_halt": 2.0131,
+     "rate_slow": 2.0131,
+     "jit": 1.7391
+    }
+   }
+  },
+  "batched_halt_1000fps": {
+   "bismo_fit": {
+    "1": 2.8575,
+    "2": 1.9107,
+    "4": 1.4373,
+    "8": 1.2006
+   },
+   "nominal": {
+    "1": 1.7931,
+    "2": 1.2036,
+    "4": 0.9089,
+    "8": 0.7616
+   },
+   "flat": {
+    "1": 0.5037,
+    "2": 0.3444,
+    "4": 0.2647,
+    "8": 0.2249
+   },
+   "z2_anchor": {
+    "1": 1.5738,
+    "2": 1.0215,
+    "4": 0.7453,
+    "8": 0.6072
+   }
+  }
+ },
+ "kwsmlp-w3a3": {
+  "U_est": 0.6583,
+  "U_cal": 0.6086,
+  "max_cycles": 392,
+  "by_set": {
+   "bismo_fit": {
+    "U_est": {
+     "idle_slope_mW_per_MHz": 6.499,
+     "cont_slope_mW_per_MHz": 9.922,
+     "at": {
+      "25": {
+       "clock_power_W": 0.1625,
+       "P_idle_W": 1.6075,
+       "P_cont_W": 1.6931,
+       "fps_est": 63775.5,
+       "E_cont_mJ": 0.0265
+      },
+      "50": {
+       "clock_power_W": 0.325,
+       "P_idle_W": 1.77,
+       "P_cont_W": 1.9411,
+       "fps_est": 127551.0,
+       "E_cont_mJ": 0.0152
+      },
+      "100": {
+       "clock_power_W": 0.6499,
+       "P_idle_W": 2.0949,
+       "P_cont_W": 2.4372,
+       "fps_est": 255102.0,
+       "E_cont_mJ": 0.0096
+      }
+     }
+    },
+    "U_cal": {
+     "idle_slope_mW_per_MHz": 6.355,
+     "cont_slope_mW_per_MHz": 9.52,
+     "at": {
+      "25": {
+       "clock_power_W": 0.1589,
+       "P_idle_W": 1.6039,
+       "P_cont_W": 1.683,
+       "fps_est": 63775.5,
+       "E_cont_mJ": 0.0264
+      },
+      "50": {
+       "clock_power_W": 0.3177,
+       "P_idle_W": 1.7627,
+       "P_cont_W": 1.921,
+       "fps_est": 127551.0,
+       "E_cont_mJ": 0.0151
+      },
+      "100": {
+       "clock_power_W": 0.6355,
+       "P_idle_W": 2.0805,
+       "P_cont_W": 2.397,
+       "fps_est": 255102.0,
+       "E_cont_mJ": 0.0094
+      }
+     }
+    }
+   },
+   "nominal": {
+    "U_est": {
+     "idle_slope_mW_per_MHz": 3.987,
+     "cont_slope_mW_per_MHz": 6.292,
+     "at": {
+      "25": {
+       "clock_power_W": 0.0997,
+       "P_idle_W": 1.6997,
+       "P_cont_W": 1.7573,
+       "fps_est": 63775.5,
+       "E_cont_mJ": 0.0276
+      },
+      "50": {
+       "clock_power_W": 0.1994,
+       "P_idle_W": 1.7994,
+       "P_cont_W": 1.9146,
+       "fps_est": 127551.0,
+       "E_cont_mJ": 0.015
+      },
+      "100": {
+       "clock_power_W": 0.3987,
+       "P_idle_W": 1.9987,
+       "P_cont_W": 2.2292,
+       "fps_est": 255102.0,
+       "E_cont_mJ": 0.0087
+      }
+     }
+    },
+    "U_cal": {
+     "idle_slope_mW_per_MHz": 3.913,
+     "cont_slope_mW_per_MHz": 6.043,
+     "at": {
+      "25": {
+       "clock_power_W": 0.0978,
+       "P_idle_W": 1.6978,
+       "P_cont_W": 1.7511,
+       "fps_est": 63775.5,
+       "E_cont_mJ": 0.0275
+      },
+      "50": {
+       "clock_power_W": 0.1956,
+       "P_idle_W": 1.7956,
+       "P_cont_W": 1.9022,
+       "fps_est": 127551.0,
+       "E_cont_mJ": 0.0149
+      },
+      "100": {
+       "clock_power_W": 0.3913,
+       "P_idle_W": 1.9913,
+       "P_cont_W": 2.2043,
+       "fps_est": 255102.0,
+       "E_cont_mJ": 0.0086
+      }
+     }
+    }
+   },
+   "flat": {
+    "U_est": {
+     "idle_slope_mW_per_MHz": 1.0,
+     "cont_slope_mW_per_MHz": 1.856,
+     "at": {
+      "25": {
+       "clock_power_W": 0.025,
+       "P_idle_W": 1.825,
+       "P_cont_W": 1.8464,
+       "fps_est": 63775.5,
+       "E_cont_mJ": 0.029
+      },
+      "50": {
+       "clock_power_W": 0.05,
+       "P_idle_W": 1.85,
+       "P_cont_W": 1.8928,
+       "fps_est": 127551.0,
+       "E_cont_mJ": 0.0148
+      },
+      "100": {
+       "clock_power_W": 0.1,
+       "P_idle_W": 1.9,
+       "P_cont_W": 1.9856,
+       "fps_est": 255102.0,
+       "E_cont_mJ": 0.0078
+      }
+     }
+    },
+    "U_cal": {
+     "idle_slope_mW_per_MHz": 1.0,
+     "cont_slope_mW_per_MHz": 1.791,
+     "at": {
+      "25": {
+       "clock_power_W": 0.025,
+       "P_idle_W": 1.825,
+       "P_cont_W": 1.8448,
+       "fps_est": 63775.5,
+       "E_cont_mJ": 0.0289
+      },
+      "50": {
+       "clock_power_W": 0.05,
+       "P_idle_W": 1.85,
+       "P_cont_W": 1.8896,
+       "fps_est": 127551.0,
+       "E_cont_mJ": 0.0148
+      },
+      "100": {
+       "clock_power_W": 0.1,
+       "P_idle_W": 1.9,
+       "P_cont_W": 1.9791,
+       "fps_est": 255102.0,
+       "E_cont_mJ": 0.0078
+      }
+     }
+    }
+   },
+   "z2_anchor": {
+    "U_est": {
+     "idle_slope_mW_per_MHz": 3.658,
+     "cont_slope_mW_per_MHz": 4.514,
+     "at": {
+      "25": {
+       "clock_power_W": 0.0915,
+       "P_idle_W": 1.3415,
+       "P_cont_W": 1.3629,
+       "fps_est": 63775.5,
+       "E_cont_mJ": 0.0214
+      },
+      "50": {
+       "clock_power_W": 0.1829,
+       "P_idle_W": 1.4329,
+       "P_cont_W": 1.4757,
+       "fps_est": 127551.0,
+       "E_cont_mJ": 0.0116
+      },
+      "100": {
+       "clock_power_W": 0.3658,
+       "P_idle_W": 1.6158,
+       "P_cont_W": 1.7014,
+       "fps_est": 255102.0,
+       "E_cont_mJ": 0.0067
+      }
+     }
+    },
+    "U_cal": {
+     "idle_slope_mW_per_MHz": 3.609,
+     "cont_slope_mW_per_MHz": 4.4,
+     "at": {
+      "25": {
+       "clock_power_W": 0.0902,
+       "P_idle_W": 1.3402,
+       "P_cont_W": 1.36,
+       "fps_est": 63775.5,
+       "E_cont_mJ": 0.0213
+      },
+      "50": {
+       "clock_power_W": 0.1804,
+       "P_idle_W": 1.4304,
+       "P_cont_W": 1.47,
+       "fps_est": 127551.0,
+       "E_cont_mJ": 0.0115
+      },
+      "100": {
+       "clock_power_W": 0.3609,
+       "P_idle_W": 1.6109,
+       "P_cont_W": 1.69,
+       "fps_est": 255102.0,
+       "E_cont_mJ": 0.0066
+      }
+     }
+    }
+   }
+  },
+  "fixed_rate": {
+   "bismo_fit": {
+    "100": {
+     "rate": 20.8062,
+     "rate_halt": 14.4562,
+     "rate_slow": 14.4722,
+     "jit": 14.4673
+    },
+    "1000": {
+     "rate": 2.0817,
+     "rate_halt": 1.4512,
+     "rate_slow": 1.4528,
+     "jit": 1.4489
+    }
+   },
+   "nominal": {
+    "100": {
+     "rate": 19.9137,
+     "rate_halt": 16.0039,
+     "rate_slow": 16.0138,
+     "jit": 16.0107
+    },
+    "1000": {
+     "rate": 1.9921,
+     "rate_halt": 1.6039,
+     "rate_slow": 1.6049,
+     "jit": 1.6024
+    }
+   },
+   "flat": {
+    "100": {
+     "rate": 19.0003,
+     "rate_halt": 18.0011,
+     "rate_slow": 18.0036,
+     "jit": 18.0028
+    },
+    "1000": {
+     "rate": 1.9003,
+     "rate_halt": 1.8011,
+     "rate_slow": 1.8013,
+     "jit": 1.8007
+    }
+   },
+   "z2_anchor": {
+    "100": {
+     "rate": 16.1089,
+     "rate_halt": 12.5031,
+     "rate_slow": 12.5122,
+     "jit": 12.5094
+    },
+    "1000": {
+     "rate": 1.6112,
+     "rate_halt": 1.2531,
+     "rate_slow": 1.254,
+     "jit": 1.2518
+    }
+   }
+  }
+ },
+ "tfc-w1a1": {
+  "U_est": 0.183,
+  "U_cal": 0.1681,
+  "max_cycles": 64,
+  "by_set": {
+   "bismo_fit": {
+    "U_est": {
+     "idle_slope_mW_per_MHz": 5.121,
+     "cont_slope_mW_per_MHz": 6.072,
+     "at": {
+      "25": {
+       "clock_power_W": 0.128,
+       "P_idle_W": 1.573,
+       "P_cont_W": 1.5968,
+       "fps_est": 390625.0,
+       "E_cont_mJ": 0.0041
+      },
+      "50": {
+       "clock_power_W": 0.256,
+       "P_idle_W": 1.701,
+       "P_cont_W": 1.7486,
+       "fps_est": 781250.0,
+       "E_cont_mJ": 0.0022
+      },
+      "100": {
+       "clock_power_W": 0.5121,
+       "P_idle_W": 1.9571,
+       "P_cont_W": 2.0522,
+       "fps_est": 1562500.0,
+       "E_cont_mJ": 0.0013
+      },
+      "200": {
+       "clock_power_W": 1.0241,
+       "P_idle_W": 2.4691,
+       "P_cont_W": 2.6595,
+       "fps_est": 3125000.0,
+       "E_cont_mJ": 0.0009
+      }
+     }
+    },
+    "U_cal": {
+     "idle_slope_mW_per_MHz": 5.077,
+     "cont_slope_mW_per_MHz": 5.952,
+     "at": {
+      "25": {
+       "clock_power_W": 0.1269,
+       "P_idle_W": 1.5719,
+       "P_cont_W": 1.5938,
+       "fps_est": 390625.0,
+       "E_cont_mJ": 0.0041
+      },
+      "50": {
+       "clock_power_W": 0.2539,
+       "P_idle_W": 1.6989,
+       "P_cont_W": 1.7426,
+       "fps_est": 781250.0,
+       "E_cont_mJ": 0.0022
+      },
+      "100": {
+       "clock_power_W": 0.5077,
+       "P_idle_W": 1.9527,
+       "P_cont_W": 2.0402,
+       "fps_est": 1562500.0,
+       "E_cont_mJ": 0.0013
+      },
+      "200": {
+       "clock_power_W": 1.0155,
+       "P_idle_W": 2.4605,
+       "P_cont_W": 2.6353,
+       "fps_est": 3125000.0,
+       "E_cont_mJ": 0.0008
+      }
+     }
+    }
+   },
+   "nominal": {
+    "U_est": {
+     "idle_slope_mW_per_MHz": 3.275,
+     "cont_slope_mW_per_MHz": 3.915,
+     "at": {
+      "25": {
+       "clock_power_W": 0.0819,
+       "P_idle_W": 1.6819,
+       "P_cont_W": 1.6979,
+       "fps_est": 390625.0,
+       "E_cont_mJ": 0.0043
+      },
+      "50": {
+       "clock_power_W": 0.1637,
+       "P_idle_W": 1.7637,
+       "P_cont_W": 1.7957,
+       "fps_est": 781250.0,
+       "E_cont_mJ": 0.0023
+      },
+      "100": {
+       "clock_power_W": 0.3275,
+       "P_idle_W": 1.9275,
+       "P_cont_W": 1.9915,
+       "fps_est": 1562500.0,
+       "E_cont_mJ": 0.0013
+      },
+      "200": {
+       "clock_power_W": 0.6549,
+       "P_idle_W": 2.2549,
+       "P_cont_W": 2.383,
+       "fps_est": 3125000.0,
+       "E_cont_mJ": 0.0008
+      }
+     }
+    },
+    "U_cal": {
+     "idle_slope_mW_per_MHz": 3.252,
+     "cont_slope_mW_per_MHz": 3.841,
+     "at": {
+      "25": {
+       "clock_power_W": 0.0813,
+       "P_idle_W": 1.6813,
+       "P_cont_W": 1.696,
+       "fps_est": 390625.0,
+       "E_cont_mJ": 0.0043
+      },
+      "50": {
+       "clock_power_W": 0.1626,
+       "P_idle_W": 1.7626,
+       "P_cont_W": 1.792,
+       "fps_est": 781250.0,
+       "E_cont_mJ": 0.0023
+      },
+      "100": {
+       "clock_power_W": 0.3252,
+       "P_idle_W": 1.9252,
+       "P_cont_W": 1.9841,
+       "fps_est": 1562500.0,
+       "E_cont_mJ": 0.0013
+      },
+      "200": {
+       "clock_power_W": 0.6504,
+       "P_idle_W": 2.2504,
+       "P_cont_W": 2.3681,
+       "fps_est": 3125000.0,
+       "E_cont_mJ": 0.0008
+      }
+     }
+    }
+   },
+   "flat": {
+    "U_est": {
+     "idle_slope_mW_per_MHz": 1.0,
+     "cont_slope_mW_per_MHz": 1.238,
+     "at": {
+      "25": {
+       "clock_power_W": 0.025,
+       "P_idle_W": 1.825,
+       "P_cont_W": 1.8309,
+       "fps_est": 390625.0,
+       "E_cont_mJ": 0.0047
+      },
+      "50": {
+       "clock_power_W": 0.05,
+       "P_idle_W": 1.85,
+       "P_cont_W": 1.8619,
+       "fps_est": 781250.0,
+       "E_cont_mJ": 0.0024
+      },
+      "100": {
+       "clock_power_W": 0.1,
+       "P_idle_W": 1.9,
+       "P_cont_W": 1.9238,
+       "fps_est": 1562500.0,
+       "E_cont_mJ": 0.0012
+      },
+      "200": {
+       "clock_power_W": 0.2,
+       "P_idle_W": 2.0,
+       "P_cont_W": 2.0476,
+       "fps_est": 3125000.0,
+       "E_cont_mJ": 0.0007
+      }
+     }
+    },
+    "U_cal": {
+     "idle_slope_mW_per_MHz": 1.0,
+     "cont_slope_mW_per_MHz": 1.219,
+     "at": {
+      "25": {
+       "clock_power_W": 0.025,
+       "P_idle_W": 1.825,
+       "P_cont_W": 1.8305,
+       "fps_est": 390625.0,
+       "E_cont_mJ": 0.0047
+      },
+      "50": {
+       "clock_power_W": 0.05,
+       "P_idle_W": 1.85,
+       "P_cont_W": 1.8609,
+       "fps_est": 781250.0,
+       "E_cont_mJ": 0.0024
+      },
+      "100": {
+       "clock_power_W": 0.1,
+       "P_idle_W": 1.9,
+       "P_cont_W": 1.9219,
+       "fps_est": 1562500.0,
+       "E_cont_mJ": 0.0012
+      },
+      "200": {
+       "clock_power_W": 0.2,
+       "P_idle_W": 2.0,
+       "P_cont_W": 2.0437,
+       "fps_est": 3125000.0,
+       "E_cont_mJ": 0.0007
+      }
+     }
+    }
+   },
+   "z2_anchor": {
+    "U_est": {
+     "idle_slope_mW_per_MHz": 3.183,
+     "cont_slope_mW_per_MHz": 3.421,
+     "at": {
+      "25": {
+       "clock_power_W": 0.0796,
+       "P_idle_W": 1.3296,
+       "P_cont_W": 1.3355,
+       "fps_est": 390625.0,
+       "E_cont_mJ": 0.0034
+      },
+      "50": {
+       "clock_power_W": 0.1592,
+       "P_idle_W": 1.4091,
+       "P_cont_W": 1.421,
+       "fps_est": 781250.0,
+       "E_cont_mJ": 0.0018
+      },
+      "100": {
+       "clock_power_W": 0.3183,
+       "P_idle_W": 1.5683,
+       "P_cont_W": 1.5921,
+       "fps_est": 1562500.0,
+       "E_cont_mJ": 0.001
+      },
+      "200": {
+       "clock_power_W": 0.6366,
+       "P_idle_W": 1.8866,
+       "P_cont_W": 1.9342,
+       "fps_est": 3125000.0,
+       "E_cont_mJ": 0.0006
+      }
+     }
+    },
+    "U_cal": {
+     "idle_slope_mW_per_MHz": 3.168,
+     "cont_slope_mW_per_MHz": 3.387,
+     "at": {
+      "25": {
+       "clock_power_W": 0.0792,
+       "P_idle_W": 1.3292,
+       "P_cont_W": 1.3347,
+       "fps_est": 390625.0,
+       "E_cont_mJ": 0.0034
+      },
+      "50": {
+       "clock_power_W": 0.1584,
+       "P_idle_W": 1.4084,
+       "P_cont_W": 1.4193,
+       "fps_est": 781250.0,
+       "E_cont_mJ": 0.0018
+      },
+      "100": {
+       "clock_power_W": 0.3168,
+       "P_idle_W": 1.5668,
+       "P_cont_W": 1.5887,
+       "fps_est": 1562500.0,
+       "E_cont_mJ": 0.001
+      },
+      "200": {
+       "clock_power_W": 0.6336,
+       "P_idle_W": 1.8836,
+       "P_cont_W": 1.9273,
+       "fps_est": 3125000.0,
+       "E_cont_mJ": 0.0006
+      }
+     }
+    }
+   }
+  },
+  "fixed_rate": {
+   "bismo_fit": {
+    "100": {
+     "rate": 24.605,
+     "rate_halt": 14.4507,
+     "rate_slow": 14.4635,
+     "jit": 14.4628
+    },
+    "1000": {
+     "rate": 2.4606,
+     "rate_halt": 1.4457,
+     "rate_slow": 1.447,
+     "jit": 1.4463
+    }
+   },
+   "nominal": {
+    "100": {
+     "rate": 22.5043,
+     "rate_halt": 16.0005,
+     "rate_slow": 16.0087,
+     "jit": 16.0082
+    },
+    "1000": {
+     "rate": 2.2505,
+     "rate_halt": 1.6005,
+     "rate_slow": 1.6013,
+     "jit": 1.6009
+    }
+   },
+   "flat": {
+    "100": {
+     "rate": 20.0,
+     "rate_halt": 18.0002,
+     "rate_slow": 18.0027,
+     "jit": 18.0025
+    },
+    "1000": {
+     "rate": 2.0,
+     "rate_halt": 1.8002,
+     "rate_slow": 1.8004,
+     "jit": 1.8003
+    }
+   },
+   "z2_anchor": {
+    "100": {
+     "rate": 18.8362,
+     "rate_halt": 12.5004,
+     "rate_slow": 12.5084,
+     "jit": 12.508
+    },
+    "1000": {
+     "rate": 1.8836,
+     "rate_halt": 1.2504,
+     "rate_slow": 1.2512,
+     "jit": 1.2508
+    }
+   }
+  }
+ }
+}

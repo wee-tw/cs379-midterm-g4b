@@ -1,0 +1,8 @@
+config,target_fps,est_fps,est_latency_ms,LUT,BRAM18,DSP
+W2A2+standalone_thr,1000,1017.3,11.808,8475,21.0,0
+W2A2+standalone_thr,5000,5081.3,4.321,17704,45.0,0
+W8A8+standalone_thr,1000,1333.8,10.333,34406,79.0,54
+W8A8+standalone_thr,5000,2712.7,5.019,34478,127.0,143
+mix_4-4-2-8+standalone_thr,1000,1017.3,10.825,5661,28.0,51
+mix_4-4-2-8+standalone_thr,5000,5081.3,4.321,8640,74.0,162
+W4A4+standalone_thr,5000,5081.3,4.321,5060,86.0,224

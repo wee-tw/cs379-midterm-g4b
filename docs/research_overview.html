@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A′ 研究總覽</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one reading column like a lab report; tables scroll inside their own frames. */
+:root {
+  --paper: #f6f7f5;
+  --sheet: #ffffff;
+  --ink: #1c2630;
+  --muted: #56626e;
+  --rule: #d8dde1;
+  --accent: #0d6b66;
+  --accent-soft: #e1efed;
+  --ok: #1d7340;   --ok-bg: #e3f2e8;
+  --ver: #1f5b9e;  --ver-bg: #e3ecf7;
+  --est: #8a5a00;  --est-bg: #f7eedb;
+  --wip: #5d6670;  --wip-bg: #eceef0;
+  --warn: #a3361f; --warn-bg: #f8e6e1;
+  --display: "Noto Serif TC", "Songti TC", "PMingLiU", serif;
+  --body: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "Consolas", monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #12171b; --sheet: #182026; --ink: #e4e9ed; --muted: #a0abb5; --rule: #2b353e;
+    --accent: #5cbcb3; --accent-soft: #173733;
+    --ok: #6fd295; --ok-bg: #173323; --ver: #8db8ec; --ver-bg: #1a2a3f;
+    --est: #e2b45c; --est-bg: #3a2e14; --wip: #b3bcc5; --wip-bg: #262e35;
+    --warn: #f09a85; --warn-bg: #3d211b;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #12171b; --sheet: #182026; --ink: #e4e9ed; --muted: #a0abb5; --rule: #2b353e;
+  --accent: #5cbcb3; --accent-soft: #173733;
+  --ok: #6fd295; --ok-bg: #173323; --ver: #8db8ec; --ver-bg: #1a2a3f;
+  --est: #e2b45c; --est-bg: #3a2e14; --wip: #b3bcc5; --wip-bg: #262e35;
+  --warn: #f09a85; --warn-bg: #3d211b;
+  color-scheme: dark;
+}
+body { background: var(--paper); color: var(--ink); font-family: var(--body); font-size: 15.5px; line-height: 1.75; }
+.wrap { max-width: 880px; margin: 0 auto; padding-block: 40px 72px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: flex; flex-direction: column; gap: 44px; }
+header { display: flex; flex-direction: column; gap: 10px; border-bottom: 2px solid var(--ink); padding-bottom: 22px; }
+.eyebrow { font-family: var(--mono); font-size: 12.5px; letter-spacing: .06em; color: var(--muted); }
+h1 { font-family: var(--display); font-size: clamp(30px, 6vw, 42px); line-height: 1.2; margin: 0; text-wrap: balance; }
+h2 { font-family: var(--display); font-size: 25px; line-height: 1.3; margin: 0 0 14px; text-wrap: balance; }
+h3 { font-size: 17px; margin: 22px 0 8px; text-wrap: balance; }
+p { margin: 0 0 12px; max-width: 68ch; }
+ul, ol { margin: 0 0 12px; padding-left: 1.3em; }
+li { margin: 3px 0; max-width: 66ch; }
+.lede { font-size: 17px; color: var(--ink); max-width: 64ch; }
+.meta { color: var(--muted); font-size: 14px; }
+code, .mono { font-family: var(--mono); font-size: .92em; }
+.bits { font-family: var(--mono); font-weight: 500; letter-spacing: .04em; color: var(--accent); }
+.legend { display: flex; flex-wrap: wrap; gap: 8px 14px; font-size: 13.5px; color: var(--muted); }
+.chip { display: inline-block; font-size: 12.5px; font-weight: 500; line-height: 1.5; padding: 0 8px; border-radius: 999px; white-space: nowrap; vertical-align: 1px; }
+.ok { color: var(--ok); background: var(--ok-bg); }
+.ver { color: var(--ver); background: var(--ver-bg); }
+.est { color: var(--est); background: var(--est-bg); }
+.wip { color: var(--wip); background: var(--wip-bg); }
+.summary { background: var(--sheet); border: 1px solid var(--rule); border-radius: 10px; padding: 22px 24px; }
+.summary ol { padding-left: 1.2em; }
+.summary li { margin: 8px 0; }
+.contrib { display: flex; flex-direction: column; gap: 18px; }
+.c { background: var(--sheet); border: 1px solid var(--rule); border-radius: 10px; padding: 18px 22px; min-width: 0; }
+.c h3 { margin-top: 0; display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: baseline; }
+.c .tag { font-family: var(--mono); color: var(--accent); font-size: 14px; }
+.en { font-size: 14px; color: var(--muted); border-left: 3px solid var(--accent-soft); padding: 2px 0 2px 12px; margin-top: 10px; max-width: 70ch; }
+.timeline { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0; }
+.timeline li { display: grid; grid-template-columns: 118px 1fr; gap: 16px; padding: 12px 0; border-top: 1px solid var(--rule); max-width: none; }
+.timeline li:first-child { border-top: none; }
+.when { font-family: var(--mono); font-size: 13px; color: var(--accent); padding-top: 3px; }
+.what { min-width: 0; }
+.what b { display: block; margin-bottom: 2px; }
+.tbl { overflow-x: auto; margin: 6px 0 14px; border: 1px solid var(--rule); border-radius: 8px; background: var(--sheet); }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { text-align: left; padding: 8px 12px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { font-weight: 700; background: var(--accent-soft); white-space: nowrap; }
+tr:last-child td { border-bottom: none; }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.note { font-size: 13.5px; color: var(--muted); max-width: 70ch; }
+.box { border: 1px solid var(--warn); background: var(--warn-bg); border-radius: 10px; padding: 16px 20px; }
+.box h3 { margin-top: 0; color: var(--warn); }
+.two { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.two > div { min-width: 0; }
+footer { border-top: 1px solid var(--rule); padding-top: 16px; color: var(--muted); font-size: 13.5px; }
+@media (max-width: 560px) {
+  .timeline li { grid-template-columns: 1fr; gap: 2px; }
+  .summary, .c { padding: 16px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">CS379 期中 · 題目 1 · G4_B · 2026-10-30 21:45 版（9 個設計逐節點合成、第二版校正；不量功率）</div>
+  <h1>A′ 研究總覽</h1>
+  <p class="lede">MLPerf Tiny ResNet-8 在 PYNQ-Z2（Zynq-7020）上的能耗感知混合精度：工具鏈是 Brevitas 加 FINN v0.10.1。這份文件整理目前的研究曲線、主要貢獻、動機、主張、細節和下一步，給隊長規劃論文與簡報用。</p>
+  <div class="legend">
+    <span><span class="chip ok">實測</span> 在 GPU 或板子上量到的數字</span>
+    <span><span class="chip ver">工具驗證</span> 用 RTL 展開、Yosys、Vivado 或 Vitis HLS 確認</span>
+    <span><span class="chip est">估計</span> 成本模型或功耗模型算出的數字</span>
+    <span><span class="chip wip">進行中</span> 今天正在跑</span>
+  </div>
+</header>
+
+<section class="summary">
+  <h2>一頁摘要</h2>
+  <ol>
+    <li><b>我們做什麼：</b>在準確率門檻下，同時選每個 block 的權重和 activation 位元數、FINN 的平行度（folding）、記憶體與 DSP 的實作方式，以及 PL 時脈，讓每張圖的能耗最低。設計空間是 6,561 種位元組合 × 12 種 folding × 多種實作。</li>
+    <li><b>最強的發現：</b>FINN v0.10.1 的資源估計器和它自己產生的硬體不一致。我們用 Vivado 2022.2 合成 159 個 RTL 節點、Vitis HLS 合成 52 個 HLS 節點，再把 5 個被選中的設計逐節點合成（312 個 case），確認了以下幾點，上游和相關論文都沒有回報過： <span class="chip ver">工具驗證</span>
+      <ul>
+        <li>RTL MVU 少算一半 DSP（53 個單元全部吻合我們的規則）。</li>
+        <li>RTL MVU 的 LUT 估 0，實際是 40,255。</li>
+        <li>RTL MVU 內部的 replay buffer 要 401 個 BRAM18，完全沒算。</li>
+        <li>門檻記憶體有 4 個缺陷。</li>
+        <li>HLS MVU 預設的 resType auto：FINN 估 0 個 DSP，Vitis HLS 實際每個乘法用 1 個 DSP。FINN 預設流程產生的 ResNet-8 要 764 個 DSP，晶片只有 220 個。</li>
+      </ul>
+    </li>
+    <li><b>這些誤差會讓 DSE 失敗：</b>用合成校正的成本當真值（v2.1，5 個設計的留一設計誤差在 ±6.3% 內），FINN 的估計排序幾乎一樣（Kendall τ = 0.99）。但 5 個準確率門檻中有 3 個的「最佳設計」做不出來：Vivado 合成要 316 個 DSP，晶片只有 220 個，每個門檻要白跑 25–36 次綜合。被誤判的設計只佔 0.7%，卻是準確率限制內能耗前 10 名的全部（Feasible@10 = 0%）。 <span class="chip est">估計</span> <span class="chip ver">工具驗證</span></li>
+    <li><b>校正後的設計結果：</b>margin 1 的 A′ 是 <span class="bits">44444448</span> 的 DSP 實作，每張 0.305 mJ；5 個 margin 的 A′ 都逐節點合成過，確定放得下。能耗是模型估計，參數取自已發表的整板實測。最好的統一精度在 margin 1–3 多耗 16–31%，FINN 預設流程（B2）多耗 20–55%。選位元數用 BOPs 就夠（只差 0–5.4%），真正的代價來自硬體配置。 <span class="chip est">估計</span> <span class="chip ver">工具驗證</span> <span class="chip ok">準確率實測</span></li>
+    <li><b>時脈策略：</b>導出可停時脈的 FINN 加速器在「幀率 R、延遲上限 D」下的最省策略地圖，並事先寫下預測。沒有功率計，這部分是模型推導；板子只量時間（單張延遲和吞吐量的比值 L/II、各策略跟不跟得上）。 <span class="chip est">模型推導</span></li>
+  </ol>
+</section>
+
+<section>
+  <h2>動機</h2>
+  <ul>
+    <li><b>FPGA 上的成本不和位元數成正比。</b>FINN 的 dataflow 架構裡，每層有自己的硬體。BRAM 是整格使用，activation 用 2^A − 1 條門檻實作，≥ 4-bit 的乘法可以放進 DSP，速度由最慢的一層決定。所以 BOPs 或模型大小這類代理指標，看不到真正的資源和能耗。</li>
+    <li><b>能耗不只看運算。</b>整板待機功耗約 1.6 W，連續推論時能耗主要取決於「多快做完」；固定幀率時，時脈怎麼開關更重要。</li>
+    <li><b>DSE 完全依賴工具的估計器。</b>FINN、FINNAS 和新的 folding 最佳化器都用 FINN 的解析估計來決定設計。如果估計器的誤差有結構，最佳化器會被帶到做不出來的設計。過去的論文只用整體排序相關性來說明估計「夠用」，沒有人檢查誤差落在最佳化器會看的地方。</li>
+    <li><b>平台選擇：</b>PYNQ-Z2 是便宜、常見的 TinyML FPGA。FINN v0.10.1 是最後一個支援它的版本。ResNet-8 是 MLPerf Tiny 的標準模型，殘差結構也帶來簡單 CNN 沒有的硬體問題。</li>
+  </ul>
+</section>
+
+<section>
+  <h2>研究曲線</h2>
+  <p>研究從「能耗感知的混合精度」出發。建立成本模型時發現 FINN 的估計器在關鍵地方是錯的，於是延伸成兩條主線：估計器本身的缺陷，以及這種缺陷怎麼讓設計空間探索失敗。修正之後，原本的混合精度結果也跟著更新。</p>
+  <ol class="timeline">
+    <li><div class="when">10/29 白天</div><div class="what"><b>環境與基準</b>FINN v0.10.1 能完整轉換 ResNet-8，但要繞過一個分岔處的 streamlining bug（後來查到上游 #881 已回報，不算我們的貢獻）。FP32 86.25%、W8A8 84.81%、W4A4 83.74%；W2A2 看起來崩到 37%。</div></li>
+    <li><div class="when">10/29 深夜</div><div class="what"><b>兩個低位元訓練陷阱</b>池化後的尺度錯了 16–64 倍；2-bit 權重的 scale 讓 83% 的權重變成 0。修正後 W2A2（G4 保持 8-bit）從 37% 回到 74.53%。</div></li>
+    <li><div class="when">10/30 凌晨</div><div class="what"><b>成本表、能耗模型與第一版搜尋</b>FINN 成本表涵蓋 6,561 種配置，拼裝結果和直接跑 FINN 完全一致。建立 A′ 和 B1–B5 的比較。考慮單張延遲後，固定幀率下最省的是「剛好夠用的時脈（jit）」，不是一次一張的 race-to-halt（H2 改寫成 H2′）。上板工具組完成。</div></li>
+    <li><div class="when">10/30 08:15</div><div class="what"><b>時脈策略地圖</b>加入延遲上限 D，導出 jit、期限時脈、批次停時脈、一次一張停時脈四個區域的邊界。</div></li>
+    <li><div class="when">10/30 09:45</div><div class="what"><b>發現 FINN 少算 DSP</b>RTL MVU 在運算元超過 4 bit 時少算一半 DSP，LUT 估 0。用三種方法確認後修正設計空間，主結果改寫：原本 4/5 個 margin 的最佳設計需要 316 個 DSP，板子只有 220 個。H3 被推翻：BOPs 選位元其實夠用。</div></li>
+    <li><div class="when">10/30 10:15</div><div class="what"><b>量化對 DSE 的傷害</b>同一批設計用兩種成本各算一次，比較最佳解、白跑的綜合次數、regret 和 Pareto 前緣。加上隨機對照組、位元族群和對策的分析。</div></li>
+    <li><div class="when">10/30 11:00</div><div class="what"><b>估計器全面稽核</b>159 個 FINN 產生的 RTL 節點全部用 Yosys 合成。找出門檻記憶體的 4 個缺陷。用一致的成本重跑後，主結論不變，傷害更大，統一精度和 FINN 預設流程的差距也變大。</div></li>
+    <li><div class="when">10/30 12:00–15:00</div><div class="what"><b>Vivado 與 Vitis HLS 驗證</b>159 個 RTL 節點和 52 個 HLS 節點全部合成。DSP 規則 53/53 吻合；FINN 選的三個設計在 Vivado 要 316 個 DSP；另外發現 replay buffer 的 BRAM 沒算。用合成結果校正成本後，重跑主結果和 DSE 傷害：結論方向不變，數字變得比較保守（B1 +28%、B2 +49%、ADRS 2.55%）。新選的配置用 QAT 實測，seed 0 都通過。</div></li>
+    <li><div class="when">10/30 18:00–20:00</div><div class="what"><b>被選中的設計逐節點合成，第二版校正</b>5 個設計、312 個 case：v1 成本的 BRAM、DSP 完全對，LUT 低估 12–28%（FINN 估 0 的小運算子、DSP-aware refold 的 RTL MVU、HLS MVU 的輸入緩衝區）。找到第 6 個缺口：HLS resType auto 會用 DSP。第二版校正的第一版在完全沒用過的 B2 設計上高估 12%，查出原因（常數門檻）後補一項，5 個設計的留一設計誤差在 −5.2% 到 +6.3%。重跑主結果、DSE 傷害和敏感度：A′ 的位元數不變，margin 1 改用 DSP 實作。</div></li>
+    <li><div class="when">10/30 21:00–21:45</div><div class="what"><b>第三批合成；決定不量功率</b>margin 3、5、8 的 A′ 都放得下；margin 1 的 B1 合成是 LUT 預算的 101.9%，差距改寫成範圍；v2.1 對 2-bit 權重為主的設計高估 16–17%。沒有功率計，能耗維持模型估計，C4 改成模型推導，板子交給朋友只量時間。</div></li>
+  </ol>
+</section>
+
+<section>
+  <h2>主要貢獻</h2>
+  <div class="contrib">
+
+    <div class="c">
+      <h3><span class="tag">C1</span> FINN 資源估計器的系統性缺陷 <span class="chip ver">工具驗證</span></h3>
+      <ul>
+        <li><b>DSP：</b>RTL MVU 的估計是 ⌈PE/4⌉ × SIMD。但運算元超過 4 bit 時，RTL 每顆 DSP48 只放 2 條 lane，實際是 ⌈PE/2⌉ × SIMD，所以 PE ≥ 3 時少算一半。Vivado 合成的 53 個 MVU 全部吻合；FINN 選的設計估 172 個 DSP，實際要 316 個。</li>
+        <li><b>LUT：</b>RTL MVU 和 FMPadding 估 0，Vivado 合成是 40,255 和 1,210 LUT。各運算子的誤差方向相反（門檻高估 7.8 倍、SWG 高估 1.24 倍），所以全部加起來 FINN 是 Vivado 的 89%，看總數看不出問題。</li>
+        <li><b>BRAM：</b>RTL MVU 內部的 replay buffer（把每個輸入向量重送 NF 次）要 BRAM，FINN 完全沒算。53 個單元共 401 個 BRAM18，我們的規則 53/53 吻合。</li>
+        <li><b>門檻記憶體的 4 個缺陷：</b>
+          <ol>
+            <li>RTL 門檻的預設估計全部當 LUTRAM，但 RTL 交給合成工具決定。Vivado：49 個節點 FINN 估 34,078 LUT、0 BRAM，實際 4,393 LUT 加 200 個 BRAM18。</li>
+            <li>v0.10.1 中被選成 BRAM 的那一級整個從估計消失。</li>
+            <li>唯一能強制放 BRAM 的旋鈕（depth_trigger）被讀成「全部放 URAM」，而 Zynq-7020 沒有 URAM。</li>
+            <li>HLS MVAU 在預設設定下，門檻記憶體和比較器都不計成本。Vitis HLS 的結果：
+              <ul>
+                <li>auto 和 distributed 合成出來一樣，而 FINN 的 distributed 公式高估 1.7 倍。</li>
+                <li>block 每個節點要 15–255 個 BRAM18。margin 1 的 B2 設計合計 570 個，晶片只有 280 個。</li>
+              </ul>
+            </li>
+          </ol>
+        </li>
+        <li><b>HLS MVU 的 DSP（第 6 個缺口）：</b>resType 預設是 auto。FINN 估 0 個 DSP，LUT 照「乘法器用 LUT 做」來估；產生的程式交給 Vitis HLS 預設綁定，每個乘法都用 1 個 DSP48E1，4×4-bit 也一樣。FINN 預設流程的 B2 設計，9 個 HLS MVU 剛好用 PE × SIMD 個 DSP，加起來 764 個，晶片只有 220 個。</li>
+        <li><b>設計層級驗證：</b>5 個被選中的設計逐節點合成。BRAM、DSP 和我們修正後的成本完全一致；LUT 剩下的誤差來自 FINN 估 0 的小運算子（每個 56–200 LUT）、HLS MVU 的輸入緩衝區和常數門檻。第二版校正（v2.1）的留一設計誤差在 −5.2% 到 +6.3%。</li>
+        <li><b>證據：</b>slang 展開計數、FINN 自己的估計函式、Yosys 和 Vivado 2022.2 合成 159 個 RTL 節點、Vitis HLS 2022.2 合成 52 個 HLS 節點（三種門檻設定）、5 個被選中設計的逐節點合成（312 個 case）。圖：<code>results/figs/estimator_audit_vivado.png</code>。</li>
+        <li><b>新穎性：</b>Xilinx/finn 的 issue 和 PR、FINN+、FINNAS（ICECS 2026）、Arend 2025、Jentzsch &amp; Platzner（ICFPT 2025）、Berganski 2026 都沒有提過。
+          <ul>
+            <li>DSP 缺口、replay buffer 和門檻缺陷 3、4 在目前的 dev 和 FINN+ 仍然存在；缺陷 2 在 PR #1586 改寫時被順手修掉。</li>
+            <li>finn-plus#303 回報過 Zynq-7000 上 BRAM 總數少估，但原因是 FIFO 和其他記憶體，不是這幾個。</li>
+          </ul>
+        </li>
+      </ul>
+      <p class="en">We show that FINN's resource estimates disagree with the hardware FINN itself generates. Out-of-context Vivado and Vitis HLS synthesis of 159 RTL and 52 HLS operators confirms that the DSP count of its RTL matrix-vector unit is halved for operands wider than 4 bits, its LUT count is zero, the BRAM of its input replay buffer is not estimated at all, and threshold storage is mis-estimated in four ways. HLS units left at the default resource type bind every product to a DSP slice that FINN does not count, so FINN's default ResNet-8 needs 764 DSPs on a 220-DSP device. The LUT errors largely cancel in aggregate, which hides them from whole-design checks.</p>
+    </div>
+
+    <div class="c">
+      <h3><span class="tag">C2</span> 估計誤差如何讓設計空間探索失敗 <span class="chip est">估計</span></h3>
+      <ul>
+        <li><b>排序相關高，結果卻是錯的：</b>用合成校正的成本（v2.1）當真值，FINN 的估計 Kendall τ = 0.99。但 5 個準確率門檻中有 3 個的最佳設計做不出來：Vivado 合成要 316 個 DSP，晶片只有 220 個。</li>
+        <li><b>誤差集中在最前面：</b>FINN 誤判的設計只佔它認為可行的 0.7%。但在 margin 2、3、5 的準確率限制內，能耗排名前 10 名全部做不出來（Feasible@10 = 0%），前 100 名有 68–80% 做不出來。Feasible@K 是 NAS 文獻 P@topK 的硬體版本。</li>
+        <li><b>實際代價：</b>用「綜合失敗就換下一個」的做法，最佳解失效的門檻各要白跑 25–36 次。Pareto 前緣的 ADRS 是 3.51%（v1 真值 2.55%，LUT 上界當真值 25.9%）。</li>
+        <li><b>兩個缺口一起的傷害遠大於各自的和：</b>只剩 DSP 缺口時，margin 2 的最佳解做不出來、白跑 4 次；只剩 LUT 缺口時都做得出來；兩個同時出現時，3 個門檻做不出來、白跑 25–36 次。replay buffer 的 BRAM 缺口在這裡無害。</li>
+        <li><b>補救策略（同樣用合成次數比）：</b>逐一淘汰 26–37 次；前 10 名一起驗證（GNN-DSE 的做法）全部失敗；學習可行性（HyperMapper 的做法）12.5–13 次；根本原因校正 1 次。</li>
+        <li><b>端到端（FINN 使用者實際看到的估計，每個運算子都用 FINN 原估）：</b>τ 降到 0.93，FINN 認為可行的設計有 18% 其實放不下，5 個門檻中 4 個的最佳解做不出來（白跑 28–78 次）。錯誤有兩個方向：低估讓最佳化器挑到做不出來的設計；FINN 高估 HLS MVU 的 LUT，又把 margin 2 真正的前 5 名都判成放不下，所以淘汰再多次也找不回來，最後多耗 24.8%。只靠合成去淘汰修不了高估，要修估計器本身。</li>
+        <li><b>對照組：</b>隨機誤判同樣比例，最佳解失效的機率只有 0.5–2.5%；加隨機雜訊到相同的 τ，regret 不到 0.4%。所以關鍵是誤差和目標函數相關，不是誤差大小。</li>
+        <li><b>範圍：</b>傷害只出現在「8-bit 層放 DSP、2-bit 層放 LUT」的混合精度。統一 INT8、INT4，以及 {4, 8}、{2, 4} 族群都不受影響。</li>
+        <li><b>建議：</b>驗證 DSE 用的估計器時，要看排名最前面的設計，不能只看整體相關。</li>
+      </ul>
+      <p class="en">Using FINN's estimator gaps as a natural experiment, we show that a near-perfect global ranking (Kendall τ = 0.99 against synthesis-calibrated costs) still sends the optimizer to infeasible designs at three of five accuracy margins, each needing 316 DSP slices on a 220-DSP device as Vivado confirms, and costs 25–36 failed builds per margin. Within the accuracy constraint, the misjudged 0.7% of designs make up the whole top ten (Feasible@10 = 0). Unstructured errors of the same size are harmless, so estimators for DSE should be validated at the top of the ranking.</p>
+    </div>
+
+    <div class="c">
+      <h3><span class="tag">C3</span> 修正成本後的能耗感知聯合選擇（A′） <span class="chip est">估計</span> <span class="chip ok">準確率實測</span></h3>
+      <ul>
+        <li><b>成本（v2.1）：</b>DSP 照 RTL 規則，補上 replay buffer 的 BRAM。LUT 用逐節點合成擬合：RTL MVU 依通道數，HLS MVU 用四項模型，稽核過的組態直接用合成值；SWG、小運算子、權重記憶體也都校正。5 個被選中的設計輪流拿掉，整體 LUT 誤差在 −5.2% 到 +6.3%。</li>
+        <li><b>A′（margin 1）：</b><span class="bits">44444448</span>。
+          <ul>
+            <li>DSP 實作，125 MHz 時 7,629 FPS，每張 0.305 mJ。逐節點合成：15,297 LUT、53 BRAM18、212 DSP，放得下。</li>
+            <li>LUT 實作（10,173 FPS，0.256 mJ）合成要 48,405 LUT，超過 LUT 預算 42,560，所以不能選。這是 v1 成本看不到的。</li>
+            <li>margin 2 的 A′（<span class="bits">44242448</span> DSP 實作）也合成過：28,485 LUT、172 DSP。</li>
+          </ul>
+        </li>
+        <li><b>和統一精度比：</b>margin 2–3 多耗 26–32%，margin 5–8 只多 1–3%，這些主要由吞吐量決定，換功耗參數差不到 3 個百分點。margin 2–3 的差距有合成支持：統一 W4A4 要跑到快一級最少要 45,512 LUT，是預算的 106.9%，放不下（預算放寬到晶片的 86% 以上時差距降到約 +11%）。margin 1 的 B1 合成要 LUT 預算的 101.9%，卡在預算邊緣：接受的話是 +9.5% 到 +19%（看功耗參數），照嚴格預算要降速，約 +64%。</li>
+        <li><b>能耗怎麼來：</b>沒有功率計，能耗是模型估計。四組功耗參數都取自已發表的整板實測，其中 z2_anchor 用 MLPerf Tiny 在同一塊 PYNQ-Z2 上的 CNV-W1A1 實測值校準（1.67 W，模型 1.70 W）。</li>
+        <li><b>H3（代理指標）：</b>用 BOPs 選位元數只比最佳差 0–5.4%。
+          <ul>
+            <li>代理指標真正吃虧的是硬體配置：FINN 預設 folding（B2，resType 改成 lut）多耗 20–55%。</li>
+            <li>FINN 預設流程原封不動（resType auto）時要 764 個 DSP，根本做不出來。</li>
+            <li>B2 在 margin 1 合成 41,558 LUT，剛好放得下。只用模型的話會以為放不下，差距會被誇大成 +134%。</li>
+          </ul>
+        </li>
+        <li><b>H1：</b>連續推論時，能耗最佳 ≈ 最快的設計中資源最少的那個（差 0–1.6%）。</li>
+        <li><b>準確率驗證：</b>margin 3、5 的模型最佳解，三個 seed 平均都沒過門檻。改選三個 seed 都通過的配置：margin 3 的 <span class="bits">44242248</span> 多 2.9%，margin 5 的 <span class="bits">42222448</span> 多 1.5%。</li>
+        <li><b>敏感度：</b>所有 LUT 一起 ×0.90–1.10 時，A′ 的位元數 5 個門檻都不變。margin 1 的 B1、B2 卡在預算邊緣，差距會在 +14–65%、+24–134% 之間跳，所以用合成值定案。</li>
+      </ul>
+      <p class="en">With costs calibrated by per-node synthesis (design-level LUT error within ±6.3% in leave-one-design-out validation), joint selection saves 14–24% energy against the best uniform precision at strict accuracy targets. Choosing bit widths by BOPs is near-optimal (0–5.4% regret), while FINN's default folding of the same bits costs 20–55% more energy, and FINN's untouched default flow does not fit at all (764 DSPs on a 220-DSP device).</p>
+    </div>
+
+    <div class="c">
+      <h3><span class="tag">C4</span> 可停時脈 FINN 加速器的時脈策略地圖（H2′） <span class="chip est">模型推導</span></h3>
+      <ul>
+        <li><b>沒有功率計：</b>這一節是模型推導和事先寫下的預測，論文標成未實測、留給未來工作。板子只量時間：實測的 L/II（地圖的 r），以及各策略在時間上做不做得到。</li>
+        <li>令 x = D·R（延遲上限是幾個影格週期），r = L / II（單張延遲是幾個 II）。</li>
+        <li><b>四個區域：</b>x ≥ r 用剛好夠用的時脈串流（jit）；√r ≤ x &lt; r 用期限決定的時脈串流；x &lt; √r 時批次停時脈才可能勝出，而且只在剛超過整數個影格週期的帶狀區；x &lt; 1 時一次一張停時脈。</li>
+        <li>和精確評估在 91–95% 的格子一致。選錯策略會多耗 20–50% 的 PL 能耗。</li>
+        <li><b>上板前已寫下預測：</b>CNV-W1A1 在 300 FPS 時，期限 4.33 ms 下批次 k = 2 比 35.7 MHz 串流省 23%，期限 6.67 ms 下 22.7 MHz 串流比 k = 2 省 17%；批次停時脈的 PL 能耗應該是 a + b/k，斜率 b 就是 pipeline 填充的能耗。</li>
+      </ul>
+    </div>
+
+    <div class="c">
+      <h3><span class="tag">C5</span> 低位元 ResNet-8 的兩個訓練陷阱 <span class="chip ok">實測</span></h3>
+      <ul>
+        <li>Brevitas 的 <code>TruncAvgPool2d</code> 輸出的是「總和 ÷ 2^shift」，比真正的平均大 16–64 倍。修正後 FC 永遠看到真正的平均，FINN 仍能完整轉換。</li>
+        <li>2-bit 權重用最大絕對值當 scale 時，83% 的權重變成 0。改用可學習的 scale 初始化後降到約 41%。</li>
+        <li>結果：W2A2（G4 保持 8-bit）從 37% 回到 74.53%。早期「2-bit 會崩」的結論主要來自這兩個陷阱。</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>主張與目前的判定</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>主張</th><th>判定</th><th>關鍵證據</th><th>狀態</th></tr></thead>
+    <tbody>
+      <tr><td>FINN 的估計器在 RTL MVU、HLS MVU 和門檻記憶體上和實際硬體不一致</td><td>成立</td><td>Vivado 159 個 RTL 節點、Vitis HLS 52 個節點、5 個設計逐節點合成；DSP 規則 53/53 吻合；FINN 的選擇要 316 DSP，FINN 預設流程要 764 DSP</td><td><span class="chip ver">工具驗證</span></td></tr>
+      <tr><td>高排序相關不代表 DSE 結果可信</td><td>成立</td><td>τ 0.99，3/5 個門檻的最佳解做不出來（Vivado 證明），白跑 25–36 次；Feasible@10 = 0%；隨機對照組無害</td><td><span class="chip est">估計</span> <span class="chip ver">工具驗證</span></td></tr>
+      <tr><td>H1：連續推論時，能耗最佳 ≈ 延遲最佳</td><td>成立（平手時取資源最少）</td><td>B4 和 A′ 差 0–1.6%</td><td><span class="chip est">估計</span></td></tr>
+      <tr><td>H2：固定幀率時 race-to-halt 最省</td><td>修正成 H2′</td><td>考慮單張延遲後 jit 最省；一次一張停時脈多耗 10–24%；有延遲上限時看策略地圖</td><td><span class="chip est">估計</span>（模型推導；板上只驗證時間）</td></tr>
+      <tr><td>H3：代理指標會選錯位元數</td><td>推翻</td><td>BOPs 只差 0–5.4%；FINN 預設 folding 多耗 20–55%，代價在硬體配置</td><td><span class="chip est">估計</span></td></tr>
+      <tr><td>混合精度比統一精度省</td><td>嚴格門檻下成立</td><td>margin 1–3 省 14–24%（統一精度多耗 16–31%）；margin 5–8 只差 1–3%；LUT 誤差 ±10% 時 A′ 不變</td><td><span class="chip est">估計</span> <span class="chip ok">準確率實測</span></td></tr>
+      <tr><td>被選中的配置真的達到準確率門檻</td><td>大多成立</td><td>實測 11 個被選中的配置，9 個達到。兩個 G1 權重 2-bit 的選擇，三個 seed 平均都沒過（82.16 對 82.37、80.16 對 80.37）；改選三個 seed 都通過的配置，能耗多 1.5–2.9%</td><td><span class="chip ok">實測</span></td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section>
+  <h2>細節</h2>
+
+  <h3>平台與設定</h3>
+  <div class="tbl"><table>
+    <tbody>
+      <tr><th>板子</th><td>PYNQ-Z2：Zynq-7020，53,200 LUT、220 DSP48E1、280 BRAM18。預算折減 LUT 0.8、BRAM 0.7（留給 shell、FIFO 和寬度轉換器）</td></tr>
+      <tr><th>模型</th><td>MLPerf Tiny ResNet-8（CIFAR-10）：16/32/64 通道，77,360 個權重，約 1,250 萬次乘加</td></tr>
+      <tr><th>分組</th><td>G1 = stem + stack 1，G2 = stack 2，G3 = stack 3，G4 = 最後的 FC。配置寫成 8 個數字 W1 A1 W2 A2 W3 A3 W4 A4，例如 <span class="bits">44444448</span></td></tr>
+      <tr><th>工具</th><td>Brevitas（QAT）、官方 FINN v0.10.1（原始碼沒有修改，相依套件和官方釘選的版本相同）、Vivado / Vitis HLS 2022.2、Yosys 0.70、slang</td></tr>
+      <tr><th>準確率門檻</th><td>margin m 的門檻 = 統一 W8A8 的預測準確率 85.37% − m 個百分點（margin 1 = 84.37%）</td></tr>
+      <tr><th>能耗模型</th><td>P_idle = P0 + k_f·f + k_fU·f·U，P_active = P_idle + k_act·f·U，U 是使用率。四組參數都取自已發表的整板實測，結論要在四組都成立。沒有量功率</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>方法流程</h3>
+  <ol>
+    <li><b>QAT 與敏感度：</b>統一精度，以及逐 block 改權重或 activation 位元數的短訓練。 <span class="chip ok">實測</span></li>
+    <li><b>相加的準確率模型：</b>用 3 個 replicate，以驗證集的誤差報告準確度。 <span class="chip est">估計</span></li>
+    <li><b>FINN 成本表：</b>每個 group 依自己的 (W, A) 和前一組的 A 建表，再拼成全網路。隨機抽的驗證配置，拼裝結果和直接跑 FINN 完全相同。</li>
+    <li><b>修正與校正（v2.1）：</b>
+      <ul>
+        <li>DSP 照 RTL 規則計算（Vivado 53/53 吻合）。</li>
+        <li>RTL MVU 的 LUT：10.46 × PE × SIMD + 47（71 個單元，留一誤差中位數 15%）。</li>
+        <li>HLS MVU 的 LUT：一致估計、輸入緩衝區、權重位元、常數門檻四項（82 個單元，留一誤差中位數 9%）；稽核過的組態直接用合成值。</li>
+        <li>SWG 用 FINN 估計 × 0.74；FINN 估 0 的小運算子用合成的平均值；權重記憶體用 LUTRAM 公式。</li>
+        <li>5 個被選中的設計輪流拿掉，整體 LUT 誤差在 −5.2% 到 +6.3%。</li>
+        <li>補上 replay buffer 的 BRAM。</li>
+        <li>門檻用明確的 depth_trigger 變體，讓 RTL 照我們算的方式配置記憶體。</li>
+      </ul>
+    </li>
+    <li><b>搜尋：</b>在準確率門檻和資源預算下，對位元數、folding、實作變體和時脈取能耗最低者，並和 B1–B5 比較。</li>
+  </ol>
+  <div class="tbl"><table>
+    <thead><tr><th>基準</th><th>做法</th></tr></thead>
+    <tbody>
+      <tr><td>B1</td><td>最好的統一精度（每種統一位元數都調到最佳硬體配置）</td></tr>
+      <tr><td>B2</td><td>BOPs 選位元，配 FINN 預設 folding、100 MHz</td></tr>
+      <tr><td>B3</td><td>和 B2 同樣的位元，再做硬體搜尋（兩步做法）</td></tr>
+      <tr><td>B4</td><td>同樣的搜尋空間，但最大化吞吐量</td></tr>
+      <tr><td>B5</td><td>最快設計，一次一張、做完就停時脈</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>主結果（連續推論，nominal 參數，成本用 v2.1 校正） <span class="chip est">估計</span></h3>
+  <div class="tbl"><table>
+    <thead><tr><th>margin</th><th>門檻</th><th>A′（模型最佳）</th><th class="num">A′ 能耗（mJ）</th><th class="num">B1 多耗</th><th class="num">B2 多耗</th><th class="num">B3 / B4</th><th>驗證後的 A′（實測）</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td class="num">84.37%</td><td><span class="bits">44444448</span>（DSP 實作，已合成）</td><td class="num">0.305</td><td class="num">15.8%</td><td class="num">24.9%</td><td class="num">0%</td><td>同左（三個 seed 84.92%）</td></tr>
+      <tr><td>2</td><td class="num">83.37%</td><td><span class="bits">44242448</span>（DSP 實作，已合成）</td><td class="num">0.242</td><td class="num">26.4%</td><td class="num">50.0%</td><td class="num">1.4%</td><td>同左（三個 seed 83.75%）</td></tr>
+      <tr><td>3</td><td class="num">82.37%</td><td><span class="bits">24244448</span>（沒過）</td><td class="num">0.232</td><td class="num">31.4%</td><td class="num">54.7%</td><td class="num">1.6–5.4%</td><td><span class="bits">44242248</span>，+2.9%（三個 seed 82.99%）</td></tr>
+      <tr><td>5</td><td class="num">80.37%</td><td><span class="bits">24222448</span>（沒過）</td><td class="num">0.229</td><td class="num">1.2%</td><td class="num">21.3%</td><td class="num">1.1–1.3%</td><td><span class="bits">42222448</span>，+1.5%（三個 seed 81.20%）</td></tr>
+      <tr><td>8</td><td class="num">77.37%</td><td><span class="bits">22222448</span></td><td class="num">0.226</td><td class="num">2.5%</td><td class="num">19.9%</td><td class="num">1.0–1.3%</td><td>同左（79.02%）</td></tr>
+    </tbody>
+  </table></div>
+  <ul class="note">
+    <li>margin 1 的 LUT 實作（0.256 mJ）合成要 48,405 LUT，超過預算，所以 A′ 改用 DSP 實作。B2 本身的能耗沒變，差距從 +49% 變 +24.9% 是因為 A′ 變貴。</li>
+    <li>B1 在 margin 1 的設計合成要 LUT 預算的 101.9%（晶片的 81.5%），差距寫成 +9.5% 到 +64% 的範圍。margin 3、5、8 的 A′ 都合成過、放得下。</li>
+    <li>固定幀率（jit，整板，margin 1）：300 FPS 時 B1 +0.9%、B2 +0.4%；3000 FPS 時 B1 +7.7%、B2 +3.8%。一次一張停時脈的 B5 多耗 10–24%。</li>
+    <li>用 Vivado 功耗擬合的資源權重（w_BRAM 0.59、w_DSP 0.34）重跑：margin 1–3 的 A′ 位元數不變，B1、B2 最多差 3.2 點。</li>
+    <li>和之前的版本比：v1 校正時 margin 1 是 LUT 實作 0.256 mJ、B1 +28%、B2 +49%；用 LUT 上界（hi）時 B1 是 +97–101%；B2 用門檻公式時是 +567–627%，都不要再用。</li>
+  </ul>
+
+  <h3>被選中設計的逐節點合成（Vivado / Vitis HLS 2022.2，out of context） <span class="chip ver">工具驗證</span></h3>
+  <div class="tbl"><table>
+    <thead><tr><th>設計</th><th class="num">合成 LUT / BRAM18 / DSP</th><th class="num">v1 成本的 LUT 誤差</th><th class="num">v2.1 模型（留一設計）</th></tr></thead>
+    <tbody>
+      <tr><td>A′ m1 LUT 實作 <span class="bits">44444448</span></td><td class="num">48,405 / 159 / 55</td><td class="num">−12.1%</td><td class="num">+2.4%</td></tr>
+      <tr><td>A′ m1 DSP 實作 <span class="bits">44444448</span></td><td class="num">15,297 / 53 / 212</td><td class="num">−27.7%</td><td class="num">−3.5%</td></tr>
+      <tr><td>A′ m2 <span class="bits">44242448</span> DSP 實作</td><td class="num">28,485 / 31 / 172</td><td class="num">−25.3%</td><td class="num">+3.8%</td></tr>
+      <tr><td>B1 <span class="bits">84848484</span> LUT 實作（v1 的選擇）</td><td class="num">54,162 / 60 / 1</td><td class="num">−22.7%</td><td class="num">−5.2%</td></tr>
+      <tr><td>B2 FINN 預設 folding、resType lut</td><td class="num">41,558 / 89 / 1</td><td class="num">−2.5%</td><td class="num">+6.3%</td></tr>
+      <tr><td>B2 FINN 預設流程（resType auto）</td><td class="num">23,981 / 89 / <b>764</b></td><td class="num">不能比</td><td class="num">不能比</td></tr>
+      <tr><td>B1 m1 <span class="bits">84848484</span> LUT 實作（v2.1 的選擇）</td><td class="num">43,376 / 181 / 172</td><td class="num">樣本外</td><td class="num">−1.9%（預算的 101.9%）</td></tr>
+      <tr><td>A′ m3 <span class="bits">44242248</span> DSP 實作</td><td class="num">27,481 / 23 / 172</td><td class="num">樣本外</td><td class="num">−0.2%</td></tr>
+      <tr><td>A′ m5 <span class="bits">42222448</span> dspc</td><td class="num">25,980 / 26 / 28</td><td class="num">樣本外</td><td class="num">+15.7%</td></tr>
+      <tr><td>A′ m8 <span class="bits">22222448</span> dspc</td><td class="num">22,288 / 26 / 1</td><td class="num">樣本外</td><td class="num">+17.0%</td></tr>
+      <tr><td>B1 m2–3 的快一級：<span class="bits">44444444</span> LUT 實作，LUT 最少的組合</td><td class="num">45,512 / 171 / 215</td><td class="num">樣本外</td><td class="num">+1.5%（預算的 106.9%）</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">總和是各節點加權重 streamer，不含 FIFO 和寬度轉換器（FINN 的估計也不含，預算折減 20% 就是留給它們和 shell）。最後 5 列是第三、四批，沒有參與擬合；v2.1 對 2-bit 權重為主的設計高估 16–17%，對可行性是保守的。</p>
+
+  <h3>估計器稽核（FINN 估計 vs 合成，xc7z020，out of context） <span class="chip ver">工具驗證</span></h3>
+  <div class="tbl"><table>
+    <thead><tr><th>運算子（節點數）</th><th class="num">LUT：FINN / Yosys / Vivado</th><th class="num">BRAM18：FINN / Vivado</th><th class="num">DSP：FINN / Vivado</th></tr></thead>
+    <tbody>
+      <tr><td>RTL MVU（53）</td><td class="num">0 / 116,563 / 40,255</td><td class="num">0 / 401（replay buffer）</td><td class="num">2,896 / 3,040</td></tr>
+      <tr><td>RTL 門檻，預設設定（49）</td><td class="num">34,078 / 9,617 / 4,393</td><td class="num">0 / 200</td><td class="num">0 / 0</td></tr>
+      <tr><td>SWG（47）</td><td class="num">23,156 / 21,345 / 18,697</td><td class="num">0 / 0</td><td class="num">0 / 0</td></tr>
+      <tr><td>FMPadding（10）</td><td class="num">0 / 2,086 / 1,210</td><td class="num">0 / 0</td><td class="num">0 / 0</td></tr>
+      <tr><td>合計（159）</td><td class="num">57,234 / 149,611 / 64,555</td><td class="num">0 / 601</td><td class="num">2,896 / 3,040</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">FINN 的 MVU BRAM 估計（696）是權重記憶體，不在這個合成單元裡，所以表中不列。Yosys 的 LUT 是 Vivado 的 2.4 倍，所以之前用 Yosys 說「hi 上界接近合成」要改成：Vivado 只有 hi 的 0.30 倍。</p>
+  <div class="tbl"><table>
+    <thead><tr><th>B2 的設計（9 個有門檻的 HLS MVU）</th><th class="num">FINN 原估（門檻免費）</th><th class="num">FINN 的 distributed 公式</th><th class="num">Vitis HLS 合成（auto）</th><th class="num">block 的 BRAM18</th></tr></thead>
+    <tbody>
+      <tr><td><span class="bits">44444448</span>，T 25,000</td><td class="num">37,376</td><td class="num">74,798</td><td class="num">36,534</td><td class="num">570</td></tr>
+      <tr><td><span class="bits">44444448</span>，T 50,000</td><td class="num">19,745</td><td class="num">39,083</td><td class="num">21,165</td><td class="num">487</td></tr>
+      <tr><td><span class="bits">44242448</span>，T 25,000</td><td class="num">26,334</td><td class="num">49,698</td><td class="num">25,331</td><td class="num">392</td></tr>
+      <tr><td><span class="bits">44242448</span>，T 50,000</td><td class="num">13,737</td><td class="num">25,254</td><td class="num">15,040</td><td class="num">274</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">A4 的節點，FINN 高估乘加邏輯，剛好抵掉沒算的門檻，所以 FINN 原估接近實際；A8 的節點實際是 FINN 原估的 1.2–7.5 倍。圖：<code>results/figs/estimator_audit_vivado.png</code>。</p>
+
+  <h3>DSE 傷害（真值 = v2.1 校正的成本）</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>偏誤模型</th><th class="num">Kendall τ</th><th>最佳解做不出來</th><th class="num">白跑綜合（margin 2/3/5）</th><th class="num">Feasible@10（margin 2/3/5）</th><th class="num">ADRS</th></tr></thead>
+    <tbody>
+      <tr><td>FINN（DSP + LUT 缺口）</td><td class="num">0.990</td><td>3 / 5（margin 2、3、5）</td><td class="num">25 / 36 / 36</td><td class="num">0 / 0 / 0%</td><td class="num">3.51%</td></tr>
+      <tr><td>只剩 DSP 缺口</td><td class="num">1.000</td><td>1 / 5（margin 2）</td><td class="num">4 / 0 / 0</td><td class="num">40 / 100 / 100%</td><td class="num">0.17%</td></tr>
+      <tr><td>只剩 LUT 缺口</td><td class="num">0.990</td><td>0 / 5</td><td class="num">0</td><td class="num">100%</td><td class="num">0.13%</td></tr>
+      <tr><td>只剩 replay buffer 的 BRAM 缺口</td><td class="num">0.998</td><td>0 / 5</td><td class="num">0</td><td class="num">100%</td><td class="num">0.0%</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">做不出來的三個最佳解，就是 Vivado 合成要 316 個 DSP 的那三個設計。v1 真值時白跑 12–56 次、ADRS 2.55%；用 LUT 上界（hi）當真值時 τ 0.972、4/5 個 margin 做不出來、ADRS 25.9%。圖：<code>results/figs/estimator_error_concentration_nominal.png</code>。</p>
+
+  <h3>準確率（CIFAR-10 測試集） <span class="chip ok">實測</span></h3>
+  <div class="tbl"><table>
+    <thead><tr><th>配置</th><th>訓練流程</th><th class="num">top-1</th></tr></thead>
+    <tbody>
+      <tr><td>浮點（MLPerf 原版 / FINN 版）</td><td>從頭 40 epoch</td><td class="num">86.25 / 86.01%</td></tr>
+      <tr><td>統一 W8A8</td><td>從頭 30 epoch</td><td class="num">84.81%</td></tr>
+      <tr><td>統一 W4A4</td><td>從 W4A4 起點微調 8 epoch，KD，3 個 seed</td><td class="num">83.83 ± 0.16%</td></tr>
+      <tr><td><span class="bits">44444488</span>（A′ 的實測版本）</td><td>從浮點 30 epoch，KD，2 個 seed</td><td class="num">85.19 ± 0.08%</td></tr>
+      <tr><td><span class="bits">48484848</span>（統一 W4A8）</td><td>從浮點 30 epoch，KD，3 個 seed</td><td class="num">85.62 ± 0.09%</td></tr>
+      <tr><td><span class="bits">44242448</span>（margin 2 的 A′）</td><td>W4A4 → 30 epoch，KD，3 個 seed</td><td class="num">83.75 ± 0.09%</td></tr>
+      <tr><td>W2A2，G4 保持 8-bit</td><td>修正兩個陷阱後</td><td class="num">74.53%</td></tr>
+    </tbody>
+  </table></div>
+  <h3>被選中配置的實測（W4A4 → 30 epoch，KD；沒註明的是 1 個 seed） <span class="chip ok">實測</span></h3>
+  <div class="tbl"><table>
+    <thead><tr><th>配置</th><th>角色（校正後的成本）</th><th class="num">門檻</th><th class="num">預測</th><th class="num">實測</th><th>結果</th></tr></thead>
+    <tbody>
+      <tr><td><span class="bits">44444448</span></td><td>margin 1 的 A′</td><td class="num">84.37</td><td class="num">84.68</td><td class="num">84.92 ± 0.13（3 seed）</td><td>通過</td></tr>
+      <tr><td><span class="bits">84848484</span></td><td>margin 1 的 B1</td><td class="num">84.37</td><td class="num">84.80</td><td class="num">84.39 ± 0.20（3 seed）</td><td>平均勉強通過（seed 2 是 84.17）</td></tr>
+      <tr><td><span class="bits">44242448</span></td><td>margin 2 的 A′</td><td class="num">83.37</td><td class="num">83.52</td><td class="num">83.75 ± 0.09（3 seed）</td><td>通過</td></tr>
+      <tr><td><span class="bits">24244448</span></td><td>margin 3 的模型最佳解</td><td class="num">82.37</td><td class="num">82.50</td><td class="num">82.16 ± 0.21（3 seed）</td><td>沒過</td></tr>
+      <tr><td><span class="bits">44242248</span></td><td>margin 3 驗證後的 A′（+2.9%）</td><td class="num">82.37</td><td class="num">82.41</td><td class="num">82.99 ± 0.17（3 seed）</td><td>通過</td></tr>
+      <tr><td><span class="bits">42442488</span></td><td>margin 3 的候選（+4.0%）</td><td class="num">82.37</td><td class="num">82.44</td><td class="num">83.44</td><td>通過</td></tr>
+      <tr><td><span class="bits">24222448</span></td><td>margin 5 的模型最佳解</td><td class="num">80.37</td><td class="num">80.65</td><td class="num">80.16 ± 0.40（3 seed）</td><td>沒過</td></tr>
+      <tr><td><span class="bits">42222448</span></td><td>margin 5 驗證後的 A′（+1.5%）</td><td class="num">80.37</td><td class="num">80.54</td><td class="num">81.20 ± 0.21（3 seed）</td><td>通過</td></tr>
+      <tr><td><span class="bits">22222448</span></td><td>margin 8 的 A′</td><td class="num">77.37</td><td class="num">78.00</td><td class="num">79.02</td><td>通過</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">
+    相加的準確率模型在實測過的被選中配置上平均偏保守，但 G1 權重是 2-bit 時偏樂觀。margin 3、5 的模型最佳解正好是這種配置，三個 seed 平均都沒過。
+    附近的能耗很平，所以改選三個 seed 都通過的配置只多 1.5–2.9%。
+    舊成本模型選的 <span class="bits">44224448</span>、<span class="bits">44222248</span>、<span class="bits">44222244</span> 也都實測通過。
+  </p>
+
+  <h3>檔案在哪裡</h3>
+  <div class="two">
+    <div>
+      <ul>
+        <li><code>implementation_notes.md</code>：完整實驗紀錄（第 5–13 節；估計器在 12.21、12.27、12.31，DSE 傷害在 12.25–12.26、12.31–12.32，逐節點合成和第二版校正在 12.33，時脈策略在 12.22）</li>
+        <li><code>results_digest.md</code>：寫論文用的一頁總表</li>
+        <li><code>midterm_plan_A_prime.md</code> 第 9 節：可直接放進 Introduction 的英文貢獻條列</li>
+        <li><code>literature_notes.md</code>：約 50 篇文獻的筆記</li>
+      </ul>
+    </div>
+    <div>
+      <ul>
+        <li><code>code/cost_tables.py</code>、<code>energy_search.py</code>、<code>threshold_sweep.py</code>：成本表與搜尋</li>
+        <li><code>code/dse_harm.py</code>、<code>dse_families.py</code>、<code>dse_control.py</code>：DSE 傷害</li>
+        <li><code>code/audit_rtl_ops.py</code>、<code>audit_hls_thresholds.py</code>、<code>threshold_consistent.py</code>：估計器稽核</li>
+        <li><code>code/prove_infeasible.py</code>、<code>calib_mvu_vivado.py</code>、<code>calib_mvau_hls.py</code>、<code>replay_bram.py</code>：Vivado 證明與第一版校正；圖在 <code>results/figs/</code></li>
+        <li><code>code/verify_designs.py</code>、<code>calib_v2.py</code>、<code>feasible_at_k.py</code>、<code>dse_remedies.py</code>、<code>power_weights.py</code>：逐節點合成、第二版校正、Feasible@K、補救策略、功耗權重</li>
+        <li><code>results/audit_dataset/</code>：稽核資料集（CSV 加說明）</li>
+        <li><code>code/board/</code>：上板工具組；<code>finn_issue_draft_*.md</code>：兩份上游 issue 草稿（未發佈）</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="box">
+  <h3>Plan D 裡要更正的三點</h3>
+  <ol>
+    <li><b>「W2A2 約 37%，2-bit activation 會崩」已經過時。</b>那是兩個訓練陷阱造成的，修正後 W2A2（G4 保持 8-bit）是 74.53%。58% 和 79% 那組也受同一個問題影響。</li>
+    <li><b>「W8A8 的門檻層約 29,000 LUT」是 FINN 估計器的假象。</b>FINN 假設門檻全放 LUTRAM。Vivado 實際把 49 個門檻節點做成 4,393 LUT 加 200 個 BRAM18（FINN 估 34,078 LUT），其中 C = 64 的 A8 節點是 123 LUT 加 24 個 BRAM18（FINN 估 5,100 LUT）。</li>
+    <li><b>FINN 的估計不能當正確答案。</b>
+      <ul>
+        <li>RTL MVU 的 DSP 少算一半、LUT 估 0、replay buffer 的 BRAM 沒算；HLS MVAU 的門檻不計成本，預設 resType 用的 DSP 也沒算。</li>
+        <li>FINN 選的三個設計，Vivado 合成要 316 個 DSP，晶片只有 220 個。</li>
+        <li>成本模型和 FINN 對照時，出現差異可能是 FINN 錯，這本身就是可以寫進論文的結果。</li>
+      </ul>
+    </li>
+  </ol>
+</section>
+
+<section>
+  <h2>未來工作</h2>
+  <div class="two">
+    <div>
+      <h3>今天</h3>
+      <ul>
+        <li>已完成：Vivado 和 Vitis HLS 稽核、5 個被選中設計的逐節點合成、第二版校正與驗證、重跑主結果、DSE 傷害、補救策略、敏感度和論文的圖</li>
+        <li>已完成：第三批合成（5 個 margin 的 A′ 都放得下）。第四批也完成（統一 W4A4 的快一級設計是預算的 106.9%，確認 B1 在 margin 2–3 只能用慢一級）。跑中：用訓練好的權重做的 HLS 稽核</li>
+        <li>上板（朋友那邊，不需要功率計）：計時量測，包括各時脈的吞吐量和單張延遲、停時脈能不能用、各固定幀率策略跟不跟得上、CNV 準確率。交接包 <code>handovers/board_handover_1030.zip</code></li>
+      </ul>
+      <h3>期中報告前（11/1）</h3>
+      <ul>
+        <li>論文的圖已用 v2.1 重畫；計時量測的結果回來後補進「時間模型的驗證」</li>
+        <li>論文與簡報：準確率標「實測」，資源和能耗標「估計」或「工具驗證」</li>
+      </ul>
+    </div>
+    <div>
+      <h3>期末</h3>
+      <ul>
+        <li>買功率計，用 <code>run_session.py --plan h2prime</code> 量整板功率，校正功耗參數並檢驗 C4 的預測</li>
+        <li>用 FINN 做 A′ 和基準的完整 bitstream（需要 Linux 或 WSL2），實測延遲、能耗和資源，驗證成本模型</li>
+        <li>實測 DSP 和 LUT 的功耗比，決定 DSP 實作在什麼條件下划算</li>
+        <li>FIFO 深度、寬度轉換器和 shell 的實際成本（目前的合成是逐節點，不含它們）</li>
+        <li>把兩份 issue 回報給 FINN 上游（需要組內同意）</li>
+        <li>推廣到其他 MLPerf Tiny 模型，例如 KWS</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>所有能耗與資源數字除非標成「工具驗證」，都是模型估計；準確率是 CIFAR-10 測試集的實測值。細節與每個數字的出處見 <code>implementation_notes.md</code>。</footer>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,292 @@
+{
+ "nominal": {
+  "finn_raw": {
+   "margins": {
+    "1": {
+     "threshold": 84.37,
+     "biased_opt": {
+      "bits": "44444448",
+      "mode": "lut",
+      "T": 16667,
+      "E_promised_mJ": 0.3256,
+      "feasible_in_truth": true
+     },
+     "truth_opt": {
+      "bits": "44444448",
+      "mode": "lut",
+      "E_mJ": 0.3181
+     },
+     "failed_builds": 0,
+     "after_rejects": {
+      "bits": "44444448",
+      "mode": "lut",
+      "E_true_mJ": 0.3181,
+      "regret_pct": 0.0,
+      "surprise_pct": -2.3
+     },
+     "top1_overlap": 1.0,
+     "top10_overlap": 0.4,
+     "top100_overlap": 0.38
+    },
+    "2": {
+     "threshold": 83.37,
+     "biased_opt": {
+      "bits": "84242448",
+      "mode": "dspc",
+      "T": 12500,
+      "E_promised_mJ": 0.2323,
+      "feasible_in_truth": false
+     },
+     "truth_opt": {
+      "bits": "44242448",
+      "mode": "lut",
+      "E_mJ": 0.245
+     },
+     "failed_builds": 28,
+     "after_rejects": {
+      "bits": "44242448",
+      "mode": "lut",
+      "E_true_mJ": 0.3057,
+      "regret_pct": 24.81,
+      "surprise_pct": 31.6
+     },
+     "top1_overlap": 0.0,
+     "top10_overlap": 0.0,
+     "top100_overlap": 0.39
+    },
+    "3": {
+     "threshold": 82.37,
+     "biased_opt": {
+      "bits": "84222448",
+      "mode": "dspc",
+      "T": 12500,
+      "E_promised_mJ": 0.2289,
+      "feasible_in_truth": false
+     },
+     "truth_opt": {
+      "bits": "24244448",
+      "mode": "lut",
+      "E_mJ": 0.239
+     },
+     "failed_builds": 58,
+     "after_rejects": {
+      "bits": "24248448",
+      "mode": "dspc",
+      "E_true_mJ": 0.2442,
+      "regret_pct": 2.18,
+      "surprise_pct": 6.67
+     },
+     "top1_overlap": 0.0,
+     "top10_overlap": 0.0,
+     "top100_overlap": 0.2
+    },
+    "5": {
+     "threshold": 80.37,
+     "biased_opt": {
+      "bits": "84222244",
+      "mode": "dspc",
+      "T": 14286,
+      "E_promised_mJ": 0.227,
+      "feasible_in_truth": false
+     },
+     "truth_opt": {
+      "bits": "24222448",
+      "mode": "dspc",
+      "E_mJ": 0.2287
+     },
+     "failed_builds": 78,
+     "after_rejects": {
+      "bits": "42222448",
+      "mode": "dspc",
+      "E_true_mJ": 0.2322,
+      "regret_pct": 1.53,
+      "surprise_pct": 2.3
+     },
+     "top1_overlap": 0.0,
+     "top10_overlap": 0.0,
+     "top100_overlap": 0.14
+    },
+    "8": {
+     "threshold": 77.37,
+     "biased_opt": {
+      "bits": "84222244",
+      "mode": "dspc",
+      "T": 14286,
+      "E_promised_mJ": 0.227,
+      "feasible_in_truth": false
+     },
+     "truth_opt": {
+      "bits": "22222448",
+      "mode": "dspc",
+      "E_mJ": 0.2257
+     },
+     "failed_builds": 42,
+     "after_rejects": {
+      "bits": "22222448",
+      "mode": "lut",
+      "E_true_mJ": 0.2259,
+      "regret_pct": 0.08,
+      "surprise_pct": -0.48
+     },
+     "top1_overlap": 0.0,
+     "top10_overlap": 0.0,
+     "top100_overlap": 0.18
+    }
+   },
+   "kendall_tau_all": 0.9287,
+   "kendall_tau_dsp_designs": 0.9626,
+   "biased_feasible_points": 152997,
+   "of_which_infeasible_in_truth": 27665,
+   "pareto": {
+    "truth_front": 26,
+    "biased_front": 25,
+    "biased_front_infeasible": 17,
+    "ADRS_pct": 16.96
+   }
+  },
+  "finn_thr": {
+   "margins": {
+    "1": {
+     "threshold": 84.37,
+     "biased_opt": {
+      "bits": "44444448",
+      "mode": "lut",
+      "T": 16667,
+      "E_promised_mJ": 0.3336,
+      "feasible_in_truth": true
+     },
+     "truth_opt": {
+      "bits": "44444448",
+      "mode": "lut",
+      "E_mJ": 0.3181
+     },
+     "failed_builds": 0,
+     "after_rejects": {
+      "bits": "44444448",
+      "mode": "lut",
+      "E_true_mJ": 0.3181,
+      "regret_pct": 0.0,
+      "surprise_pct": -4.63
+     },
+     "top1_overlap": 1.0,
+     "top10_overlap": 0.8,
+     "top100_overlap": 0.38
+    },
+    "2": {
+     "threshold": 83.37,
+     "biased_opt": {
+      "bits": "84242448",
+      "mode": "dspc",
+      "T": 12500,
+      "E_promised_mJ": 0.2322,
+      "feasible_in_truth": false
+     },
+     "truth_opt": {
+      "bits": "44242448",
+      "mode": "lut",
+      "E_mJ": 0.245
+     },
+     "failed_builds": 54,
+     "after_rejects": {
+      "bits": "44242448",
+      "mode": "lut",
+      "E_true_mJ": 0.3057,
+      "regret_pct": 24.81,
+      "surprise_pct": 31.67
+     },
+     "top1_overlap": 0.0,
+     "top10_overlap": 0.0,
+     "top100_overlap": 0.46
+    },
+    "3": {
+     "threshold": 82.37,
+     "biased_opt": {
+      "bits": "84222448",
+      "mode": "dspc",
+      "T": 14286,
+      "E_promised_mJ": 0.2289,
+      "feasible_in_truth": false
+     },
+     "truth_opt": {
+      "bits": "24244448",
+      "mode": "lut",
+      "E_mJ": 0.239
+     },
+     "failed_builds": 78,
+     "after_rejects": {
+      "bits": "24248448",
+      "mode": "dspc",
+      "E_true_mJ": 0.2442,
+      "regret_pct": 2.18,
+      "surprise_pct": 6.7
+     },
+     "top1_overlap": 0.0,
+     "top10_overlap": 0.0,
+     "top100_overlap": 0.1
+    },
+    "5": {
+     "threshold": 80.37,
+     "biased_opt": {
+      "bits": "84222244",
+      "mode": "dspc",
+      "T": 14286,
+      "E_promised_mJ": 0.227,
+      "feasible_in_truth": false
+     },
+     "truth_opt": {
+      "bits": "24222448",
+      "mode": "dspc",
+      "E_mJ": 0.2287
+     },
+     "failed_builds": 78,
+     "after_rejects": {
+      "bits": "42222448",
+      "mode": "dspc",
+      "E_true_mJ": 0.2322,
+      "regret_pct": 1.53,
+      "surprise_pct": 2.3
+     },
+     "top1_overlap": 0.0,
+     "top10_overlap": 0.0,
+     "top100_overlap": 0.1
+    },
+    "8": {
+     "threshold": 77.37,
+     "biased_opt": {
+      "bits": "84222244",
+      "mode": "dspc",
+      "T": 12500,
+      "E_promised_mJ": 0.227,
+      "feasible_in_truth": false
+     },
+     "truth_opt": {
+      "bits": "22222448",
+      "mode": "dspc",
+      "E_mJ": 0.2257
+     },
+     "failed_builds": 42,
+     "after_rejects": {
+      "bits": "22222448",
+      "mode": "dspc",
+      "E_true_mJ": 0.2257,
+      "regret_pct": 0.0,
+      "surprise_pct": -0.56
+     },
+     "top1_overlap": 0.0,
+     "top10_overlap": 0.0,
+     "top100_overlap": 0.13
+    }
+   },
+   "kendall_tau_all": 0.9617,
+   "kendall_tau_dsp_designs": 0.9583,
+   "biased_feasible_points": 99172,
+   "of_which_infeasible_in_truth": 569,
+   "pareto": {
+    "truth_front": 26,
+    "biased_front": 22,
+    "biased_front_infeasible": 9,
+    "ADRS_pct": 18.51
+   }
+  }
+ }
+}

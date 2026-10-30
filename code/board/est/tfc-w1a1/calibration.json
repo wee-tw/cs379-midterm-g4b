@@ -1,0 +1,14 @@
+{
+ "net": "tfc_1w1a",
+ "folding": "D:\\115-1\\embedded sys midterm report\\code\\board\\finn_examples_folding\\tfc-w1a1_folding_config.json",
+ "clk_ns": 5.0,
+ "estimate_finn_v0101": {
+  "LUT": 8502.0,
+  "BRAM_18K": 26.0,
+  "DSP": 0.0,
+  "latency_ms": 0.00113,
+  "throughput_fps": 3125000.0,
+  "max_cycles": 64,
+  "critical_path_cycles": 226
+ }
+}

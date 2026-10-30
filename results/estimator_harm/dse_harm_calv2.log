@@ -1,0 +1,60 @@
+== nominal | biased model 'finn': tau(all) 0.9904, tau(dsp designs) 0.9765; 918 of 130072 feasible-looking points infeasible; Pareto front 22 designs, 6 infeasible, ADRS 3.51%
+   margin 1: biased opt 44444488 lut ok; failed builds 0; then 44444488 lut regret 0.01% surprise 0.06% | truth opt 44444448 lut | top1/10/100 0.0/1.0/1.0
+   margin 2: biased opt 84242448 dspc INFEASIBLE; failed builds 25; then 44242488 lut regret 0.01% surprise 6.08% | truth opt 44242448 lut | top1/10/100 0.0/0.0/0.32
+   margin 3: biased opt 84222448 dspc INFEASIBLE; failed builds 36; then 24248488 dspc regret 2.18% surprise 6.95% | truth opt 24244448 lut | top1/10/100 0.0/0.0/0.2
+   margin 5: biased opt 84222244 dspc INFEASIBLE; failed builds 36; then 24222448 dspc regret 0.0% surprise 1.28% | truth opt 24222448 dspc | top1/10/100 0.0/0.0/0.3
+   margin 8: biased opt 22222484 dspc ok; failed builds 0; then 22222484 dspc regret 0.01% surprise 0.06% | truth opt 22222448 dspc | top1/10/100 0.0/0.7/0.76
+== nominal | biased model 'lut_fixed': tau(all) 1.0, tau(dsp designs) 0.9998; 527 of 129681 feasible-looking points infeasible; Pareto front 27 designs, 3 infeasible, ADRS 0.17%
+   margin 1: biased opt 44444448 lut ok; failed builds 0; then 44444448 lut regret 0.0% surprise 0.0% | truth opt 44444448 lut | top1/10/100 1.0/1.0/1.0
+   margin 2: biased opt 84242448 dspc INFEASIBLE; failed builds 4; then 44242448 lut regret 0.0% surprise 0.13% | truth opt 44242448 lut | top1/10/100 0.0/0.4/0.5
+   margin 3: biased opt 24244448 lut ok; failed builds 0; then 24244448 lut regret 0.0% surprise 0.0% | truth opt 24244448 lut | top1/10/100 0.0/1.0/0.74
+   margin 5: biased opt 24222448 dspc ok; failed builds 0; then 24222448 dspc regret 0.0% surprise 0.0% | truth opt 24222448 dspc | top1/10/100 1.0/1.0/0.99
+   margin 8: biased opt 22222448 dspc ok; failed builds 0; then 22222448 dspc regret 0.0% surprise 0.0% | truth opt 22222448 dspc | top1/10/100 0.0/1.0/1.0
+== nominal | biased model 'dsp_fixed': tau(all) 0.9904, tau(dsp designs) 0.9767; 324 of 129478 feasible-looking points infeasible; Pareto front 25 designs, 0 infeasible, ADRS 0.13%
+   margin 1: biased opt 44444488 lut ok; failed builds 0; then 44444488 lut regret 0.01% surprise 0.06% | truth opt 44444448 lut | top1/10/100 0.0/1.0/1.0
+   margin 2: biased opt 44242488 lut ok; failed builds 0; then 44242488 lut regret 0.01% surprise 0.06% | truth opt 44242448 lut | top1/10/100 0.0/0.8/1.0
+   margin 3: biased opt 24248488 dspc ok; failed builds 0; then 24248488 dspc regret 2.18% surprise 3.29% | truth opt 24244448 lut | top1/10/100 0.0/0.4/0.88
+   margin 5: biased opt 24222488 dspc ok; failed builds 0; then 24222488 dspc regret 0.01% surprise 0.06% | truth opt 24222448 dspc | top1/10/100 0.0/1.0/0.93
+   margin 8: biased opt 22222448 dspc ok; failed builds 0; then 22222448 dspc regret 0.0% surprise 0.05% | truth opt 22222448 dspc | top1/10/100 0.0/0.8/0.98
+== nominal | biased model 'bram_gap': tau(all) 0.9984, tau(dsp designs) 0.9956; 62 of 129216 feasible-looking points infeasible; Pareto front 26 designs, 0 infeasible, ADRS 0.0%
+   margin 1: biased opt 44444448 lut ok; failed builds 0; then 44444448 lut regret 0.0% surprise 0.0% | truth opt 44444448 lut | top1/10/100 1.0/1.0/1.0
+   margin 2: biased opt 44242448 lut ok; failed builds 0; then 44242448 lut regret 0.0% surprise 0.0% | truth opt 44242448 lut | top1/10/100 0.0/0.9/1.0
+   margin 3: biased opt 24244448 lut ok; failed builds 0; then 24244448 lut regret 0.0% surprise 0.0% | truth opt 24244448 lut | top1/10/100 1.0/1.0/0.96
+   margin 5: biased opt 24222448 dspc ok; failed builds 0; then 24222448 dspc regret 0.0% surprise 0.0% | truth opt 24222448 dspc | top1/10/100 0.0/1.0/0.99
+   margin 8: biased opt 22222448 dspc ok; failed builds 0; then 22222448 dspc regret 0.0% surprise 0.0% | truth opt 22222448 dspc | top1/10/100 0.0/1.0/0.99
+== nominal | biased model 'finn_all': tau(all) 0.9885, tau(dsp designs) 0.9721; 963 of 130117 feasible-looking points infeasible; Pareto front 22 designs, 6 infeasible, ADRS 3.51%
+   margin 1: biased opt 44444488 lut ok; failed builds 0; then 44444488 lut regret 0.01% surprise 0.06% | truth opt 44444448 lut | top1/10/100 0.0/1.0/1.0
+   margin 2: biased opt 84242448 dspc INFEASIBLE; failed builds 25; then 44242448 lut regret 0.0% surprise 6.07% | truth opt 44242448 lut | top1/10/100 0.0/0.0/0.32
+   margin 3: biased opt 84222448 dspc INFEASIBLE; failed builds 36; then 24248488 dspc regret 2.18% surprise 6.95% | truth opt 24244448 lut | top1/10/100 0.0/0.0/0.2
+   margin 5: biased opt 84222244 dspc INFEASIBLE; failed builds 36; then 24222448 dspc regret 0.0% surprise 1.28% | truth opt 24222448 dspc | top1/10/100 0.0/0.0/0.3
+   margin 8: biased opt 22222448 dspc ok; failed builds 0; then 22222448 dspc regret 0.0% surprise 0.05% | truth opt 22222448 dspc | top1/10/100 1.0/0.8/0.76
+== z2_anchor | biased model 'finn': tau(all) 0.9904, tau(dsp designs) 0.9765; 918 of 130072 feasible-looking points infeasible; Pareto front 22 designs, 6 infeasible, ADRS 2.37%
+   margin 1: biased opt 44444488 lut ok; failed builds 0; then 44444488 lut regret 0.01% surprise 0.03% | truth opt 44444448 lut | top1/10/100 0.0/1.0/1.0
+   margin 2: biased opt 84242448 dspc INFEASIBLE; failed builds 25; then 44242488 lut regret 0.01% surprise 3.66% | truth opt 44242448 lut | top1/10/100 0.0/0.0/0.32
+   margin 3: biased opt 84222448 dspc INFEASIBLE; failed builds 36; then 24248488 dspc regret 1.33% surprise 4.16% | truth opt 24244448 lut | top1/10/100 0.0/0.0/0.2
+   margin 5: biased opt 84222244 dspc INFEASIBLE; failed builds 36; then 24222448 dspc regret 0.0% surprise 0.76% | truth opt 24222448 dspc | top1/10/100 0.0/0.0/0.28
+   margin 8: biased opt 22222448 dspc ok; failed builds 0; then 22222448 dspc regret 0.0% surprise 0.03% | truth opt 22222448 dspc | top1/10/100 1.0/0.8/0.76
+== z2_anchor | biased model 'lut_fixed': tau(all) 1.0, tau(dsp designs) 0.9998; 527 of 129681 feasible-looking points infeasible; Pareto front 27 designs, 3 infeasible, ADRS 0.11%
+   margin 1: biased opt 44444448 lut ok; failed builds 0; then 44444448 lut regret 0.0% surprise 0.0% | truth opt 44444448 lut | top1/10/100 1.0/1.0/1.0
+   margin 2: biased opt 84242448 dspc INFEASIBLE; failed builds 4; then 44242448 lut regret 0.0% surprise 0.08% | truth opt 44242448 lut | top1/10/100 0.0/0.4/0.5
+   margin 3: biased opt 24244448 lut ok; failed builds 0; then 24244448 lut regret 0.0% surprise 0.0% | truth opt 24244448 lut | top1/10/100 0.0/1.0/0.74
+   margin 5: biased opt 24222448 dspc ok; failed builds 0; then 24222448 dspc regret 0.0% surprise 0.0% | truth opt 24222448 dspc | top1/10/100 1.0/1.0/1.0
+   margin 8: biased opt 22222448 dspc ok; failed builds 0; then 22222448 dspc regret 0.0% surprise 0.0% | truth opt 22222448 dspc | top1/10/100 1.0/1.0/0.99
+== z2_anchor | biased model 'dsp_fixed': tau(all) 0.9905, tau(dsp designs) 0.9767; 324 of 129478 feasible-looking points infeasible; Pareto front 25 designs, 0 infeasible, ADRS 0.08%
+   margin 1: biased opt 44444488 lut ok; failed builds 0; then 44444488 lut regret 0.01% surprise 0.03% | truth opt 44444448 lut | top1/10/100 0.0/1.0/1.0
+   margin 2: biased opt 44242488 lut ok; failed builds 0; then 44242488 lut regret 0.01% surprise 0.04% | truth opt 44242448 lut | top1/10/100 0.0/0.8/1.0
+   margin 3: biased opt 24248488 dspc ok; failed builds 0; then 24248488 dspc regret 1.33% surprise 2.0% | truth opt 24244448 lut | top1/10/100 0.0/0.4/0.88
+   margin 5: biased opt 24222488 dspc ok; failed builds 0; then 24222488 dspc regret 0.01% surprise 0.03% | truth opt 24222448 dspc | top1/10/100 0.0/1.0/0.88
+   margin 8: biased opt 22222488 dspc ok; failed builds 0; then 22222488 dspc regret 0.01% surprise 0.04% | truth opt 22222448 dspc | top1/10/100 0.0/0.7/0.99
+== z2_anchor | biased model 'bram_gap': tau(all) 0.9984, tau(dsp designs) 0.9956; 62 of 129216 feasible-looking points infeasible; Pareto front 26 designs, 0 infeasible, ADRS 0.0%
+   margin 1: biased opt 44444448 lut ok; failed builds 0; then 44444448 lut regret 0.0% surprise 0.0% | truth opt 44444448 lut | top1/10/100 1.0/1.0/1.0
+   margin 2: biased opt 44242448 lut ok; failed builds 0; then 44242448 lut regret 0.0% surprise 0.0% | truth opt 44242448 lut | top1/10/100 0.0/0.9/1.0
+   margin 3: biased opt 24244448 lut ok; failed builds 0; then 24244448 lut regret 0.0% surprise 0.0% | truth opt 24244448 lut | top1/10/100 0.0/1.0/0.96
+   margin 5: biased opt 24222448 dspc ok; failed builds 0; then 24222448 dspc regret 0.0% surprise 0.0% | truth opt 24222448 dspc | top1/10/100 1.0/1.0/1.0
+   margin 8: biased opt 22222448 dspc ok; failed builds 0; then 22222448 dspc regret 0.0% surprise 0.0% | truth opt 22222448 dspc | top1/10/100 1.0/1.0/0.99
+== z2_anchor | biased model 'finn_all': tau(all) 0.9886, tau(dsp designs) 0.9721; 963 of 130117 feasible-looking points infeasible; Pareto front 22 designs, 6 infeasible, ADRS 2.37%
+   margin 1: biased opt 44444488 lut ok; failed builds 0; then 44444488 lut regret 0.01% surprise 0.03% | truth opt 44444448 lut | top1/10/100 0.0/1.0/1.0
+   margin 2: biased opt 84242448 dspc INFEASIBLE; failed builds 25; then 44242488 lut regret 0.01% surprise 3.66% | truth opt 44242448 lut | top1/10/100 0.0/0.0/0.32
+   margin 3: biased opt 84222448 dspc INFEASIBLE; failed builds 39; then 24248488 dspc regret 1.33% surprise 4.16% | truth opt 24244448 lut | top1/10/100 0.0/0.0/0.2
+   margin 5: biased opt 84222288 dspc INFEASIBLE; failed builds 36; then 24222448 dspc regret 0.0% surprise 0.76% | truth opt 24222448 dspc | top1/10/100 0.0/0.0/0.28
+   margin 8: biased opt 22222488 dspc ok; failed builds 0; then 22222488 dspc regret 0.01% surprise 0.04% | truth opt 22222448 dspc | top1/10/100 0.0/0.8/0.76

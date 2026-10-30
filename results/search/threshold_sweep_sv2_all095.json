@@ -1,0 +1,462 @@
+{
+ "1.0": {
+  "threshold": 84.37,
+  "n_pass": 315,
+  "nominal": {
+   "cont": {
+    "A_prime": 0.0,
+    "B1_uniform": 0.142,
+    "B4_latency": 0.0,
+    "B2_proxy": 0.2433,
+    "B3_sequential": 0.0
+   },
+   "cont_bits": {
+    "A_prime": "44444448",
+    "B1_uniform": "84848484",
+    "B4_latency": "44444448",
+    "B2_proxy": "44444448",
+    "B3_sequential": "44444448"
+   },
+   "run_300": {
+    "A_prime": 0.0,
+    "B1_uniform": 0.0075,
+    "B4_latency": 0.1708,
+    "B2_proxy": 0.1419,
+    "B3_sequential": 0.1708
+   },
+   "gated_300": {
+    "B1_uniform": 0.008,
+    "B4_latency": 0.0,
+    "B2_proxy": 0.004,
+    "B3_sequential": 0.0
+   },
+   "gated_300_vs_run_A": -0.087,
+   "run_3000": {
+    "A_prime": 0.0,
+    "B1_uniform": 0.069,
+    "B4_latency": 0.1522,
+    "B2_proxy": 0.1464,
+    "B3_sequential": 0.1522
+   },
+   "gated_3000": {
+    "B1_uniform": 0.0688,
+    "B4_latency": 0.0,
+    "B2_proxy": 0.0344,
+    "B3_sequential": 0.0
+   },
+   "gated_3000_vs_run_A": -0.0017
+  },
+  "z2_anchor": {
+   "cont": {
+    "A_prime": 0.0,
+    "B1_uniform": 0.0851,
+    "B4_latency": 0.0,
+    "B2_proxy": 0.2177,
+    "B3_sequential": 0.0
+   },
+   "cont_bits": {
+    "A_prime": "44444448",
+    "B1_uniform": "84848484",
+    "B4_latency": "44444448",
+    "B2_proxy": "44444448",
+    "B3_sequential": "44444448"
+   },
+   "run_300": {
+    "A_prime": 0.0,
+    "B1_uniform": 0.0039,
+    "B4_latency": 0.1973,
+    "B2_proxy": 0.1545,
+    "B3_sequential": 0.1973
+   },
+   "gated_300": {
+    "B1_uniform": 0.0047,
+    "B4_latency": 0.0,
+    "B2_proxy": 0.0023,
+    "B3_sequential": 0.0
+   },
+   "gated_300_vs_run_A": -0.1036,
+   "run_3000": {
+    "A_prime": 0.0,
+    "B1_uniform": 0.041,
+    "B4_latency": 0.1821,
+    "B2_proxy": 0.1509,
+    "B3_sequential": 0.1821
+   },
+   "gated_3000": {
+    "B1_uniform": 0.0407,
+    "B4_latency": 0.0,
+    "B2_proxy": 0.0203,
+    "B3_sequential": 0.0
+   },
+   "gated_3000_vs_run_A": -0.0021
+  }
+ },
+ "2.0": {
+  "threshold": 83.37,
+  "n_pass": 970,
+  "nominal": {
+   "cont": {
+    "A_prime": 0.0,
+    "B1_uniform": 0.268,
+    "B4_latency": 0.0129,
+    "B2_proxy": 0.501,
+    "B3_sequential": 0.0129
+   },
+   "cont_bits": {
+    "A_prime": "44242448",
+    "B1_uniform": "44444444",
+    "B4_latency": "44242448",
+    "B2_proxy": "44242448",
+    "B3_sequential": "44242448"
+   },
+   "run_300": {
+    "A_prime": 0.0,
+    "B1_uniform": 0.0007,
+    "B4_latency": 0.2,
+    "B2_proxy": 0.1219,
+    "B3_sequential": 0.2
+   },
+   "gated_300": {
+    "B1_uniform": 0.0022,
+    "B4_latency": 0.0007,
+    "B2_proxy": 0.0028,
+    "B3_sequential": 0.0007
+   },
+   "gated_300_vs_run_A": -0.0884,
+   "run_3000": {
+    "A_prime": 0.0,
+    "B1_uniform": 0.0026,
+    "B4_latency": 0.1867,
+    "B2_proxy": 0.1114,
+    "B3_sequential": 0.1867
+   },
+   "gated_3000": {
+    "B1_uniform": 0.0192,
+    "B4_latency": 0.0063,
+    "B2_proxy": 0.0247,
+    "B3_sequential": 0.0063
+   },
+   "gated_3000_vs_run_A": -0.018
+  },
+  "z2_anchor": {
+   "cont": {
+    "A_prime": 0.0,
+    "B1_uniform": 0.2931,
+    "B4_latency": 0.0055,
+    "B2_proxy": 0.5288,
+    "B3_sequential": 0.0055
+   },
+   "cont_bits": {
+    "A_prime": "44242448",
+    "B1_uniform": "44444444",
+    "B4_latency": "44242448",
+    "B2_proxy": "44242448",
+    "B3_sequential": "44242448"
+   },
+   "run_300": {
+    "A_prime": 0.0,
+    "B1_uniform": 0.0005,
+    "B4_latency": 0.2215,
+    "B2_proxy": 0.1384,
+    "B3_sequential": 0.2215
+   },
+   "gated_300": {
+    "B1_uniform": 0.0029,
+    "B4_latency": 0.0004,
+    "B2_proxy": 0.0032,
+    "B3_sequential": 0.0004
+   },
+   "gated_300_vs_run_A": -0.1057,
+   "run_3000": {
+    "A_prime": 0.0,
+    "B1_uniform": 0.0016,
+    "B4_latency": 0.2091,
+    "B2_proxy": 0.128,
+    "B3_sequential": 0.2091
+   },
+   "gated_3000": {
+    "B1_uniform": 0.0255,
+    "B4_latency": 0.0036,
+    "B2_proxy": 0.0287,
+    "B3_sequential": 0.0036
+   },
+   "gated_3000_vs_run_A": -0.0253
+  }
+ },
+ "3.0": {
+  "threshold": 82.37,
+  "n_pass": 1895,
+  "nominal": {
+   "cont": {
+    "A_prime": 0.0,
+    "B1_uniform": 0.3175,
+    "B4_latency": 0.0165,
+    "B2_proxy": 0.5479,
+    "B3_sequential": 0.0515
+   },
+   "cont_bits": {
+    "A_prime": "24244448",
+    "B1_uniform": "44444444",
+    "B4_latency": "24244448",
+    "B2_proxy": "42442448",
+    "B3_sequential": "42442448"
+   },
+   "run_300": {
+    "A_prime": 0.0,
+    "B1_uniform": 0.0015,
+    "B4_latency": 0.1856,
+    "B2_proxy": 0.1197,
+    "B3_sequential": 0.2006
+   },
+   "gated_300": {
+    "B1_uniform": 0.0039,
+    "B4_latency": 0.0009,
+    "B2_proxy": 0.004,
+    "B3_sequential": 0.0024
+   },
+   "gated_300_vs_run_A": -0.0892,
+   "run_3000": {
+    "A_prime": 0.0,
+    "B1_uniform": 0.0145,
+    "B4_latency": 0.1778,
+    "B2_proxy": 0.1191,
+    "B3_sequential": 0.2004
+   },
+   "gated_3000": {
+    "B1_uniform": 0.0344,
+    "B4_latency": 0.0077,
+    "B2_proxy": 0.0356,
+    "B3_sequential": 0.0213
+   },
+   "gated_3000_vs_run_A": -0.021
+  },
+  "z2_anchor": {
+   "cont": {
+    "A_prime": 0.0,
+    "B1_uniform": 0.3239,
+    "B4_latency": 0.0079,
+    "B2_proxy": 0.5578,
+    "B3_sequential": 0.0289
+   },
+   "cont_bits": {
+    "A_prime": "24244448",
+    "B1_uniform": "44444444",
+    "B4_latency": "24244448",
+    "B2_proxy": "42442448",
+    "B3_sequential": "42442448"
+   },
+   "run_300": {
+    "A_prime": 0.0,
+    "B1_uniform": 0.001,
+    "B4_latency": 0.2097,
+    "B2_proxy": 0.1365,
+    "B3_sequential": 0.2219
+   },
+   "gated_300": {
+    "B1_uniform": 0.0039,
+    "B4_latency": 0.0005,
+    "B2_proxy": 0.0039,
+    "B3_sequential": 0.0014
+   },
+   "gated_300_vs_run_A": -0.1061,
+   "run_3000": {
+    "A_prime": 0.0,
+    "B1_uniform": 0.0087,
+    "B4_latency": 0.2014,
+    "B2_proxy": 0.1322,
+    "B3_sequential": 0.2174
+   },
+   "gated_3000": {
+    "B1_uniform": 0.0347,
+    "B4_latency": 0.0045,
+    "B2_proxy": 0.0353,
+    "B3_sequential": 0.0123
+   },
+   "gated_3000_vs_run_A": -0.0271
+  }
+ },
+ "5.0": {
+  "threshold": 80.37,
+  "n_pass": 3879,
+  "nominal": {
+   "cont": {
+    "A_prime": 0.0,
+    "B1_uniform": 0.011,
+    "B4_latency": 0.0097,
+    "B2_proxy": 0.2127,
+    "B3_sequential": 0.0114
+   },
+   "cont_bits": {
+    "A_prime": "24222448",
+    "B1_uniform": "24242424",
+    "B4_latency": "24242248",
+    "B2_proxy": "24222448",
+    "B3_sequential": "24222448"
+   },
+   "run_300": {
+    "A_prime": 0.0,
+    "B1_uniform": 0.0029,
+    "B4_latency": 0.1773,
+    "B2_proxy": 0.1332,
+    "B3_sequential": 0.1782
+   },
+   "gated_300": {
+    "B1_uniform": 0.0005,
+    "B4_latency": 0.0006,
+    "B2_proxy": 0.0019,
+    "B3_sequential": 0.0007
+   },
+   "gated_300_vs_run_A": -0.0886,
+   "run_3000": {
+    "A_prime": 0.0,
+    "B1_uniform": 0.0063,
+    "B4_latency": 0.1713,
+    "B2_proxy": 0.136,
+    "B3_sequential": 0.1726
+   },
+   "gated_3000": {
+    "B1_uniform": 0.0041,
+    "B4_latency": 0.0051,
+    "B2_proxy": 0.0169,
+    "B3_sequential": 0.006
+   },
+   "gated_3000_vs_run_A": -0.02
+  },
+  "z2_anchor": {
+   "cont": {
+    "A_prime": 0.0,
+    "B1_uniform": 0.0063,
+    "B4_latency": 0.0034,
+    "B2_proxy": 0.1967,
+    "B3_sequential": 0.0046
+   },
+   "cont_bits": {
+    "A_prime": "24222448",
+    "B1_uniform": "24242424",
+    "B4_latency": "24242248",
+    "B2_proxy": "24222448",
+    "B3_sequential": "24222448"
+   },
+   "run_300": {
+    "A_prime": 0.0,
+    "B1_uniform": 0.0013,
+    "B4_latency": 0.2024,
+    "B2_proxy": 0.1475,
+    "B3_sequential": 0.2031
+   },
+   "gated_300": {
+    "B1_uniform": 0.0003,
+    "B4_latency": 0.0003,
+    "B2_proxy": 0.0011,
+    "B3_sequential": 0.0004
+   },
+   "gated_300_vs_run_A": -0.1059,
+   "run_3000": {
+    "A_prime": 0.0,
+    "B1_uniform": 0.0039,
+    "B4_latency": 0.1961,
+    "B2_proxy": 0.1458,
+    "B3_sequential": 0.1969
+   },
+   "gated_3000": {
+    "B1_uniform": 0.0023,
+    "B4_latency": 0.0028,
+    "B2_proxy": 0.0096,
+    "B3_sequential": 0.0032
+   },
+   "gated_3000_vs_run_A": -0.0264
+  }
+ },
+ "8.0": {
+  "threshold": 77.37,
+  "n_pass": 6004,
+  "nominal": {
+   "cont": {
+    "A_prime": 0.0,
+    "B1_uniform": 0.0241,
+    "B4_latency": 0.0094,
+    "B2_proxy": 0.1998,
+    "B3_sequential": 0.012
+   },
+   "cont_bits": {
+    "A_prime": "22222448",
+    "B1_uniform": "24242424",
+    "B4_latency": "24222244",
+    "B2_proxy": "22222448",
+    "B3_sequential": "22222448"
+   },
+   "run_300": {
+    "A_prime": 0.0,
+    "B1_uniform": 0.0039,
+    "B4_latency": 0.1732,
+    "B2_proxy": 0.1248,
+    "B3_sequential": 0.1742
+   },
+   "gated_300": {
+    "B1_uniform": 0.001,
+    "B4_latency": 0.0006,
+    "B2_proxy": 0.0012,
+    "B3_sequential": 0.0006
+   },
+   "gated_300_vs_run_A": -0.0881,
+   "run_3000": {
+    "A_prime": 0.0,
+    "B1_uniform": 0.0121,
+    "B4_latency": 0.1696,
+    "B2_proxy": 0.1265,
+    "B3_sequential": 0.1713
+   },
+   "gated_3000": {
+    "B1_uniform": 0.0088,
+    "B4_latency": 0.005,
+    "B2_proxy": 0.011,
+    "B3_sequential": 0.0058
+   },
+   "gated_3000_vs_run_A": -0.019
+  },
+  "z2_anchor": {
+   "cont": {
+    "A_prime": 0.0,
+    "B1_uniform": 0.0138,
+    "B4_latency": 0.0029,
+    "B2_proxy": 0.1884,
+    "B3_sequential": 0.0046
+   },
+   "cont_bits": {
+    "A_prime": "22222448",
+    "B1_uniform": "24242424",
+    "B4_latency": "24222244",
+    "B2_proxy": "22222448",
+    "B3_sequential": "22222448"
+   },
+   "run_300": {
+    "A_prime": 0.0,
+    "B1_uniform": 0.0019,
+    "B4_latency": 0.1988,
+    "B2_proxy": 0.1404,
+    "B3_sequential": 0.1996
+   },
+   "gated_300": {
+    "B1_uniform": 0.0006,
+    "B4_latency": 0.0003,
+    "B2_proxy": 0.0007,
+    "B3_sequential": 0.0004
+   },
+   "gated_300_vs_run_A": -0.1056,
+   "run_3000": {
+    "A_prime": 0.0,
+    "B1_uniform": 0.0071,
+    "B4_latency": 0.1942,
+    "B2_proxy": 0.1386,
+    "B3_sequential": 0.1952
+   },
+   "gated_3000": {
+    "B1_uniform": 0.0051,
+    "B4_latency": 0.0026,
+    "B2_proxy": 0.0062,
+    "B3_sequential": 0.0032
+   },
+   "gated_3000_vs_run_A": -0.026
+  }
+ }
+}

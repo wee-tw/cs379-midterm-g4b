@@ -1,0 +1,64 @@
+== margin 1: true optimum 0.3181 mJ
+   reject     {'syntheses': 1, 'regret_pct': 0.008470026468043734}
+   top10      {'syntheses': 10, 'found_feasible': True, 'regret_pct': 0.0}
+   top30      {'syntheses': 30, 'found_feasible': True, 'regret_pct': 0.0}
+   margin20   {'syntheses': 1, 'regret_pct': 0.008470026468043734}
+   margin35   {'syntheses': 1, 'regret_pct': 0.008470026468043734}
+   margin50   {'syntheses': 1, 'regret_pct': 0.008470026468043734}
+   learned    {'n0': 10, 'seeds': 10, 'syntheses_to_1pct': {'median': 11.0, 'max': 11}, 'median_regret_pct_by_budget': {20: 0.0, 50: 0.0}, 'share_found_within_1pct': {20: 1.0, 50: 1.0}}
+   calibrated {'sigma': 0.05, 'seeds': 10, 'median_syntheses': 1.0, 'max_syntheses': 1, 'median_regret_pct': 0.0}
+== margin 2: true optimum 0.2450 mJ
+   reject     {'syntheses': 26, 'regret_pct': 0.00825060595566196}
+   top10      {'syntheses': 10, 'found_feasible': False, 'regret_pct': None}
+   top30      {'syntheses': 30, 'found_feasible': True, 'regret_pct': 0.0}
+   margin20   {'syntheses': 26, 'regret_pct': 0.00825060595566196}
+   margin35   {'syntheses': 1, 'regret_pct': 0.00825060595566196}
+   margin50   {'syntheses': 1, 'regret_pct': 0.00825060595566196}
+   learned    {'n0': 10, 'seeds': 10, 'syntheses_to_1pct': {'median': 13.0, 'max': 14}, 'median_regret_pct_by_budget': {20: 0.0, 50: 0.0}, 'share_found_within_1pct': {20: 1.0, 50: 1.0}}
+   calibrated {'sigma': 0.05, 'seeds': 10, 'median_syntheses': 1.0, 'max_syntheses': 5, 'median_regret_pct': 0.0}
+== margin 3: true optimum 0.2390 mJ
+   reject     {'syntheses': 37, 'regret_pct': 2.1839387409247735}
+   top10      {'syntheses': 10, 'found_feasible': False, 'regret_pct': None}
+   top30      {'syntheses': 30, 'found_feasible': False, 'regret_pct': None}
+   margin20   {'syntheses': 59, 'regret_pct': 0.0}
+   margin35   {'syntheses': 1, 'regret_pct': 0.0}
+   margin50   {'syntheses': 1, 'regret_pct': 0.0}
+   learned    {'n0': 10, 'seeds': 10, 'syntheses_to_1pct': {'median': 13.0, 'max': 19}, 'median_regret_pct_by_budget': {20: 0.0, 50: 0.0}, 'share_found_within_1pct': {20: 1.0, 50: 1.0}}
+   calibrated {'sigma': 0.05, 'seeds': 10, 'median_syntheses': 1.0, 'max_syntheses': 1, 'median_regret_pct': 0.0}
+== margin 5: true optimum 0.2287 mJ
+   reject     {'syntheses': 37, 'regret_pct': 0.0}
+   top10      {'syntheses': 10, 'found_feasible': False, 'regret_pct': None}
+   top30      {'syntheses': 30, 'found_feasible': False, 'regret_pct': None}
+   margin20   {'syntheses': 37, 'regret_pct': 0.0}
+   margin35   {'syntheses': 1, 'regret_pct': 0.0}
+   margin50   {'syntheses': 1, 'regret_pct': 0.0}
+   learned    {'n0': 10, 'seeds': 10, 'syntheses_to_1pct': {'median': 12.5, 'max': 13}, 'median_regret_pct_by_budget': {20: 0.0, 50: 0.0}, 'share_found_within_1pct': {20: 1.0, 50: 1.0}}
+   calibrated {'sigma': 0.05, 'seeds': 10, 'median_syntheses': 1.0, 'max_syntheses': 1, 'median_regret_pct': 0.0}
+== margin 8: true optimum 0.2257 mJ
+   reject     {'syntheses': 1, 'regret_pct': 0.008952629379033183}
+   top10      {'syntheses': 10, 'found_feasible': True, 'regret_pct': 0.0}
+   top30      {'syntheses': 30, 'found_feasible': True, 'regret_pct': 0.0}
+   margin20   {'syntheses': 1, 'regret_pct': 0.008952629379033183}
+   margin35   {'syntheses': 1, 'regret_pct': 0.008952629379033183}
+   margin50   {'syntheses': 1, 'regret_pct': 0.008952629379033183}
+   learned    {'n0': 10, 'seeds': 10, 'syntheses_to_1pct': {'median': 11.0, 'max': 11}, 'median_regret_pct_by_budget': {20: 0.0, 50: 0.0}, 'share_found_within_1pct': {20: 1.0, 50: 1.0}}
+   calibrated {'sigma': 0.05, 'seeds': 10, 'median_syntheses': 1.0, 'max_syntheses': 1, 'median_regret_pct': 0.0}
+|--- logcyc <= 10
+|   |--- DSP_est <= 92
+|   |   |--- class: False
+|   |--- DSP_est >  92
+|   |   |--- mode_dspc <= 0
+|   |   |   |--- class: False
+|   |   |--- mode_dspc >  0
+|   |   |   |--- class: True
+|--- logcyc >  10
+|   |--- LUT_est <= 42496
+|   |   |--- class: False
+|   |--- LUT_est >  42496
+|   |   |--- mode_lut_finn <= 0
+|   |   |   |--- class: False
+|   |   |--- mode_lut_finn >  0
+|   |   |   |--- class: True
+
+misjudged by DSP slack: {'0-20': {'n': 2410, 'misjudged_pct': 3.2365145228215773}, '20-50': {'n': 4609, 'misjudged_pct': 14.14623562594923}, '50-100': {'n': 6444, 'misjudged_pct': 2.1260086902545003}, '100-inf': {'n': 116609, 'misjudged_pct': 0.04373590374670908}}
+misjudged by mode: {'lut': 0.007746833481814309, 'lut_finn': 0.07789678675754626, 'dspc': 1.8686486940455196}

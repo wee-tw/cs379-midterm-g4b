@@ -1,0 +1,11 @@
+config,target_fps,est_fps,bottleneck,LUT,BRAM18,DSP
+W2A2+wwidth_max1024,20000,8185.3,ConvolutionInputGenerator_rtl_7,28623,86.0,0
+W2A2+wwidth_max1024,5000,5081.3,ConvolutionInputGenerator_rtl_5,17391,45.0,0
+W4A4+wwidth_max1024,20000,8185.3,ConvolutionInputGenerator_rtl_7,75070,171.0,1
+W4A4+wwidth_max1024,5000,5081.3,ConvolutionInputGenerator_rtl_5,40846,86.0,1
+W8A8+wwidth_max1024,20000,8185.3,ConvolutionInputGenerator_rtl_7,220854,385.0,1
+W8A8+wwidth_max1024,5000,5081.3,ConvolutionInputGenerator_rtl_5,102748,171.0,1
+mix_4-4-2-8+wwidth_max1024,20000,8185.3,ConvolutionInputGenerator_rtl_7,61980,146.0,1
+mix_4-4-2-8+wwidth_max1024,5000,5081.3,ConvolutionInputGenerator_rtl_5,34127,74.0,1
+mix_8-4-2-8+wwidth_max1024,20000,8185.3,ConvolutionInputGenerator_rtl_7,115227,216.0,1
+mix_8-4-2-8+wwidth_max1024,5000,5081.3,ConvolutionInputGenerator_rtl_5,60930,109.0,1

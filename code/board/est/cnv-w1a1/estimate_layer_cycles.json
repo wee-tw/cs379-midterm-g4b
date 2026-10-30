@@ -1,0 +1,21 @@
+{
+  "Thresholding_rtl_0": 3072,
+  "ConvolutionInputGenerator_rtl_0": 8167,
+  "MVAU_hls_0": 32400,
+  "ConvolutionInputGenerator_rtl_1": 14238,
+  "MVAU_hls_1": 28224,
+  "StreamingMaxPool_hls_0": 980,
+  "ConvolutionInputGenerator_rtl_2": 2654,
+  "MVAU_hls_2": 20736,
+  "ConvolutionInputGenerator_rtl_3": 3708,
+  "MVAU_hls_3": 28800,
+  "StreamingMaxPool_hls_1": 125,
+  "ConvolutionInputGenerator_rtl_4": 376,
+  "MVAU_hls_4": 20736,
+  "ConvolutionInputGenerator_rtl_5": 144,
+  "MVAU_hls_5": 18432,
+  "MVAU_hls_6": 32768,
+  "MVAU_hls_7": 32768,
+  "MVAU_hls_8": 1024,
+  "LabelSelect_hls_0": 10
+}

@@ -1,0 +1,585 @@
+set,design,role,case,op,kind,f_MHz,pred_LUT,pred_BRAM_18K,pred_DSP,synth_LUT,synth_LUT_mem,synth_FF,synth_BRAM18,synth_DSP,synth_power_W,synthesized,synth_LUT_logic
+vd,44444448_lut_14286,A' margin 1,d0_00_FMPadding_rtl_0,FMPadding_rtl,rtl,125.0,0.0,0.0,0.0,60.0,0.0,113.0,0.0,0.0,0.001,True,
+vd,44444448_lut_14286,A' margin 1,d0_01_ConvolutionInputGenerator_rtl_0,ConvolutionInputGenerator_rtl,rtl,125.0,300.0,1.0,0.0,159.0,0.0,79.0,1.0,0.0,0.004,True,
+vd,44444448_lut_14286,A' margin 1,d0_02_MVAU_hls_0,MVAU_hls,hls,125.0,1808.1002151799926,0.0,54.0,1049.0,0.0,1569.0,0.0,54.0,0.102,True,1049.0
+vd,44444448_lut_14286,A' margin 1,d0_02_MVAU_hls_0_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,220.0,216.0,224.0,0.0,0.0,0.006,True,
+vd,44444448_lut_14286,A' margin 1,d0_03_DuplicateStreams_hls_0,DuplicateStreams_hls,hls,125.0,0.0,0.0,0.0,62.0,0.0,87.0,0.0,0.0,0.002,True,62.0
+vd,44444448_lut_14286,A' margin 1,d0_04_FMPadding_rtl_1,FMPadding_rtl,rtl,125.0,0.0,0.0,0.0,80.0,0.0,193.0,0.0,0.0,0.003,True,
+vd,44444448_lut_14286,A' margin 1,d0_05_ConvolutionInputGenerator_rtl_1,ConvolutionInputGenerator_rtl,rtl,125.0,300.0,2.0,0.0,159.0,0.0,79.0,2.0,0.0,0.005,True,
+vd,44444448_lut_14286,A' margin 1,d0_06_MVAU_hls_1,MVAU_hls,hls,125.0,8095.6131808619675,32.0,0.0,8741.0,0.0,8856.0,0.0,0.0,0.115,True,8741.0
+vd,44444448_lut_14286,A' margin 1,d0_06_MVAU_hls_1_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,21.0,0.0,53.0,32.0,0.0,0.062,True,
+vd,44444448_lut_14286,A' margin 1,d0_07_FMPadding_rtl_2,FMPadding_rtl,rtl,125.0,0.0,0.0,0.0,80.0,0.0,193.0,0.0,0.0,0.003,True,
+vd,44444448_lut_14286,A' margin 1,d0_08_ConvolutionInputGenerator_rtl_2,ConvolutionInputGenerator_rtl,rtl,125.0,300.0,2.0,0.0,159.0,0.0,79.0,2.0,0.0,0.005,True,
+vd,44444448_lut_14286,A' margin 1,d0_09_MVAU_hls_2,MVAU_hls,hls,125.0,8095.6131808619675,32.0,0.0,8745.0,0.0,8888.0,0.0,0.0,0.116,True,8745.0
+vd,44444448_lut_14286,A' margin 1,d0_09_MVAU_hls_2_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,21.0,0.0,53.0,32.0,0.0,0.062,True,
+vd,44444448_lut_14286,A' margin 1,d0_10_AddStreams_hls_0,AddStreams_hls,hls,125.0,0.0,0.0,0.0,65.0,0.0,93.0,0.0,0.0,0.002,True,65.0
+vd,44444448_lut_14286,A' margin 1,d0_11_Thresholding_rtl_0,Thresholding_rtl,rtl,125.0,40.0,0.0,0.0,38.0,12.0,113.0,0.0,0.0,0.002,True,
+vd,44444448_lut_14286,A' margin 1,d0_12_DuplicateStreams_hls_1,DuplicateStreams_hls,hls,125.0,0.0,0.0,0.0,62.0,0.0,87.0,0.0,0.0,0.002,True,62.0
+vd,44444448_lut_14286,A' margin 1,d0_13_FMPadding_rtl_3,FMPadding_rtl,rtl,125.0,0.0,0.0,0.0,80.0,0.0,193.0,0.0,0.0,0.003,True,
+vd,44444448_lut_14286,A' margin 1,d0_14_DownSampler_hls_0,DownSampler_hls,hls,125.0,0.0,0.0,0.0,75.0,0.0,94.0,0.0,0.0,0.001,True,75.0
+vd,44444448_lut_14286,A' margin 1,d0_15_ConvolutionInputGenerator_rtl_3,ConvolutionInputGenerator_rtl,rtl,125.0,300.0,1.0,0.0,163.0,0.0,92.0,1.0,0.0,0.003,True,
+vd,44444448_lut_14286,A' margin 1,d0_16_MVAU_hls_3,MVAU_hls,hls,125.0,801.3142155755289,2.0,0.0,729.0,0.0,702.0,0.0,0.0,0.024,True,729.0
+vd,44444448_lut_14286,A' margin 1,d0_16_MVAU_hls_3_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,5.0,0.0,12.0,2.0,0.0,0.004,True,
+vd,44444448_lut_14286,A' margin 1,d0_17_MVAU_hls_4,MVAU_hls,hls,125.0,4135.249273079555,16.0,0.0,4461.0,0.0,5460.0,0.0,0.0,0.067,True,4461.0
+vd,44444448_lut_14286,A' margin 1,d0_17_MVAU_hls_4_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,5.0,0.0,12.0,16.0,0.0,0.031,True,
+vd,44444448_lut_14286,A' margin 1,d0_18_FMPadding_rtl_4,FMPadding_rtl,rtl,125.0,0.0,0.0,0.0,104.0,0.0,312.0,0.0,0.0,0.005,True,
+vd,44444448_lut_14286,A' margin 1,d0_19_ConvolutionInputGenerator_rtl_4,ConvolutionInputGenerator_rtl,rtl,125.0,300.0,1.0,0.0,154.0,0.0,84.0,1.0,0.0,0.004,True,
+vd,44444448_lut_14286,A' margin 1,d0_20_MVAU_hls_5,MVAU_hls,hls,125.0,7861.067925062123,32.0,0.0,8680.0,0.0,10371.0,0.0,0.0,0.122,True,8680.0
+vd,44444448_lut_14286,A' margin 1,d0_20_MVAU_hls_5_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,22.0,0.0,87.0,32.0,0.0,0.062,True,
+vd,44444448_lut_14286,A' margin 1,d0_21_AddStreams_hls_1,AddStreams_hls,hls,125.0,0.0,0.0,0.0,55.0,0.0,62.0,0.0,0.0,0.001,True,55.0
+vd,44444448_lut_14286,A' margin 1,d0_22_Thresholding_rtl_1,Thresholding_rtl,rtl,125.0,40.0,0.0,0.0,27.0,6.0,66.0,0.0,0.0,0.002,True,
+vd,44444448_lut_14286,A' margin 1,d0_23_DuplicateStreams_hls_2,DuplicateStreams_hls,hls,125.0,0.0,0.0,0.0,56.0,0.0,59.0,0.0,0.0,0.001,True,56.0
+vd,44444448_lut_14286,A' margin 1,d0_24_FMPadding_rtl_5,FMPadding_rtl,rtl,125.0,0.0,0.0,0.0,104.0,0.0,312.0,0.0,0.0,0.005,True,
+vd,44444448_lut_14286,A' margin 1,d0_25_DownSampler_hls_1,DownSampler_hls,hls,125.0,0.0,0.0,0.0,209.0,0.0,216.0,0.0,0.0,0.003,True,209.0
+vd,44444448_lut_14286,A' margin 1,d0_26_ConvolutionInputGenerator_rtl_5,ConvolutionInputGenerator_rtl,rtl,125.0,300.0,1.0,0.0,178.0,0.0,96.0,1.0,0.0,0.004,True,
+vd,44444448_lut_14286,A' margin 1,d0_27_MVAU_hls_6,MVAU_hls,hls,125.0,821.2008457430968,2.0,0.0,916.0,0.0,969.0,0.0,0.0,0.035,True,916.0
+vd,44444448_lut_14286,A' margin 1,d0_27_MVAU_hls_6_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,7.0,0.0,16.0,2.0,0.0,0.004,True,
+vd,44444448_lut_14286,A' margin 1,d0_28_MVAU_hls_7,MVAU_hls,hls,125.0,2919.8252293087885,11.0,0.0,4002.0,0.0,4141.0,0.0,0.0,0.081,True,4002.0
+vd,44444448_lut_14286,A' margin 1,d0_28_MVAU_hls_7_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,13.0,0.0,19.0,11.0,0.0,0.027,True,
+vd,44444448_lut_14286,A' margin 1,d0_29_FMPadding_rtl_6,FMPadding_rtl,rtl,125.0,0.0,0.0,0.0,162.0,0.0,559.0,0.0,0.0,0.011,True,
+vd,44444448_lut_14286,A' margin 1,d0_30_ConvolutionInputGenerator_rtl_6,ConvolutionInputGenerator_rtl,rtl,125.0,300.0,1.0,0.0,156.0,0.0,88.0,1.0,0.0,0.003,True,
+vd,44444448_lut_14286,A' margin 1,d0_31_MVAU_hls_8,MVAU_hls,hls,125.0,5410.333207353024,22.0,0.0,7595.0,0.0,7888.0,0.0,0.0,0.149,True,7595.0
+vd,44444448_lut_14286,A' margin 1,d0_31_MVAU_hls_8_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,13.0,0.0,19.0,22.0,0.0,0.053,True,
+vd,44444448_lut_14286,A' margin 1,d0_32_AddStreams_hls_2,AddStreams_hls,hls,125.0,0.0,0.0,0.0,54.0,0.0,61.0,0.0,0.0,0.001,True,54.0
+vd,44444448_lut_14286,A' margin 1,d0_33_Thresholding_rtl_2,Thresholding_rtl,rtl,125.0,75.0,0.0,0.0,27.0,6.0,66.0,0.0,0.0,0.002,True,
+vd,44444448_lut_14286,A' margin 1,d0_34_ConvolutionInputGenerator_rtl_7,ConvolutionInputGenerator_rtl,rtl,125.0,300.0,1.0,0.0,145.0,0.0,92.0,1.0,0.0,0.004,True,
+vd,44444448_lut_14286,A' margin 1,d0_35_Pool_hls_0,Pool_hls,hls,125.0,0.0,0.0,0.0,122.0,0.0,102.0,0.0,0.0,0.002,True,122.0
+vd,44444448_lut_14286,A' margin 1,d0_36_MVAU_rtl_0,MVAU_rtl,rtl,125.0,0.0,0.0,1.0,66.0,12.0,118.0,0.0,1.0,0.004,True,
+vd,44444448_lut_14286,A' margin 1,d0_36_MVAU_rtl_0_wstrm,MVAU_rtl_wstrm,wstrm,125.0,0.0,0.0,0.0,51.0,40.0,27.0,0.0,0.0,0.001,True,
+vd,44444448_lut_14286,A' margin 1,d0_37_ChannelwiseOp_hls_0,ChannelwiseOp_hls,hls,125.0,34.0,0.0,0.0,78.0,0.0,167.0,0.0,0.0,0.003,True,78.0
+vd,44444448_lut_14286,A' margin 1,d0_38_LabelSelect_hls_0,LabelSelect_hls,hls,125.0,0.0,0.0,0.0,170.0,0.0,213.0,0.0,0.0,0.005,True,170.0
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_00_FMPadding_rtl_0,FMPadding_rtl,rtl,125.0,0.0,0.0,0.0,60.0,0.0,113.0,0.0,0.0,0.001,True,
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_01_ConvolutionInputGenerator_rtl_0,ConvolutionInputGenerator_rtl,rtl,125.0,300.0,1.0,0.0,159.0,0.0,79.0,1.0,0.0,0.004,True,
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_02_MVAU_rtl_0,MVAU_rtl,rtl,125.0,423.7884474196554,0.0,27.0,364.0,144.0,295.0,0.0,27.0,0.036,True,
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_02_MVAU_rtl_0_wstrm,MVAU_rtl_wstrm,wstrm,125.0,0.0,0.0,0.0,112.0,108.0,118.0,0.0,0.0,0.003,True,
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_03_Thresholding_rtl_0,Thresholding_rtl,rtl,125.0,75.0,0.0,0.0,78.0,4.0,199.0,0.0,0.0,0.004,True,
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_04_DuplicateStreams_hls_0,DuplicateStreams_hls,hls,125.0,0.0,0.0,0.0,52.0,0.0,60.0,0.0,0.0,0.001,True,52.0
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_05_FMPadding_rtl_1,FMPadding_rtl,rtl,125.0,0.0,0.0,0.0,80.0,0.0,193.0,0.0,0.0,0.003,True,
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_06_ConvolutionInputGenerator_rtl_1,ConvolutionInputGenerator_rtl,rtl,125.0,300.0,2.0,0.0,159.0,0.0,79.0,2.0,0.0,0.005,True,
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_07_MVAU_rtl_1,MVAU_rtl,rtl,125.0,1607.2186396564578,0.0,36.0,1683.0,96.0,1050.0,0.0,36.0,0.148,True,
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_07_MVAU_rtl_1_wstrm,MVAU_rtl_wstrm,wstrm,125.0,0.0,0.0,0.0,581.0,576.0,586.0,0.0,0.0,0.011,True,
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_08_Thresholding_rtl_1,Thresholding_rtl,rtl,125.0,65.0,0.0,0.0,86.0,4.0,196.0,0.0,0.0,0.005,True,
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_09_FMPadding_rtl_2,FMPadding_rtl,rtl,125.0,0.0,0.0,0.0,80.0,0.0,193.0,0.0,0.0,0.003,True,
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_10_ConvolutionInputGenerator_rtl_2,ConvolutionInputGenerator_rtl,rtl,125.0,300.0,2.0,0.0,159.0,0.0,79.0,2.0,0.0,0.005,True,
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_11_MVAU_rtl_2,MVAU_rtl,rtl,125.0,1607.2186396564578,0.0,36.0,1683.0,96.0,1050.0,0.0,36.0,0.148,True,
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_11_MVAU_rtl_2_wstrm,MVAU_rtl_wstrm,wstrm,125.0,0.0,0.0,0.0,581.0,576.0,586.0,0.0,0.0,0.011,True,
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_12_Thresholding_rtl_2,Thresholding_rtl,rtl,125.0,65.0,0.0,0.0,86.0,4.0,197.0,0.0,0.0,0.005,True,
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_13_AddStreams_hls_0,AddStreams_hls,hls,125.0,0.0,0.0,0.0,56.0,0.0,63.0,0.0,0.0,0.001,True,56.0
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_14_Thresholding_rtl_3,Thresholding_rtl,rtl,125.0,25.0,0.0,0.0,27.0,6.0,66.0,0.0,0.0,0.002,True,
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_15_DuplicateStreams_hls_1,DuplicateStreams_hls,hls,125.0,0.0,0.0,0.0,52.0,0.0,60.0,0.0,0.0,0.001,True,52.0
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_16_FMPadding_rtl_3,FMPadding_rtl,rtl,125.0,0.0,0.0,0.0,80.0,0.0,193.0,0.0,0.0,0.003,True,
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_17_DownSampler_hls_0,DownSampler_hls,hls,125.0,0.0,0.0,0.0,118.0,0.0,134.0,0.0,0.0,0.001,True,118.0
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_18_ConvolutionInputGenerator_rtl_3,ConvolutionInputGenerator_rtl,rtl,125.0,300.0,1.0,0.0,163.0,0.0,92.0,1.0,0.0,0.003,True,
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_19_MVAU_rtl_3,MVAU_rtl,rtl,125.0,129.2711821821104,0.0,2.0,167.0,8.0,255.0,0.0,2.0,0.012,True,
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_19_MVAU_rtl_3_wstrm,MVAU_rtl_wstrm,wstrm,125.0,0.0,0.0,0.0,38.0,32.0,46.0,0.0,0.0,0.001,True,
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_20_MVAU_rtl_4,MVAU_rtl,rtl,125.0,826.5827409803553,0.0,18.0,899.0,48.0,651.0,0.0,18.0,0.085,True,
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_20_MVAU_rtl_4_wstrm,MVAU_rtl_wstrm,wstrm,125.0,0.0,0.0,0.0,294.0,288.0,302.0,0.0,0.0,0.01,True,
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_21_Thresholding_rtl_4,Thresholding_rtl,rtl,125.0,88.0,0.0,0.0,114.0,4.0,186.0,0.0,0.0,0.005,True,
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_22_Thresholding_rtl_5,Thresholding_rtl,rtl,125.0,52.0,1.0,0.0,88.0,7.0,187.0,1.0,0.0,0.006,True,
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_23_FMPadding_rtl_4,FMPadding_rtl,rtl,125.0,0.0,0.0,0.0,104.0,0.0,312.0,0.0,0.0,0.005,True,
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_24_ConvolutionInputGenerator_rtl_4,ConvolutionInputGenerator_rtl,rtl,125.0,300.0,1.0,0.0,154.0,0.0,84.0,1.0,0.0,0.004,True,
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_25_MVAU_rtl_5,MVAU_rtl,rtl,125.0,1608.7739226830595,4.0,36.0,1619.0,0.0,924.0,4.0,36.0,0.162,True,
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_25_MVAU_rtl_5_wstrm,MVAU_rtl_wstrm,wstrm,125.0,0.0,0.0,0.0,583.0,576.0,590.0,0.0,0.0,0.01,True,
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_26_Thresholding_rtl_6,Thresholding_rtl,rtl,125.0,56.0,1.0,0.0,84.0,7.0,190.0,1.0,0.0,0.006,True,
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_27_AddStreams_hls_1,AddStreams_hls,hls,125.0,0.0,0.0,0.0,55.0,0.0,62.0,0.0,0.0,0.001,True,55.0
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_28_Thresholding_rtl_7,Thresholding_rtl,rtl,125.0,40.0,0.0,0.0,27.0,6.0,66.0,0.0,0.0,0.002,True,
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_29_DuplicateStreams_hls_2,DuplicateStreams_hls,hls,125.0,0.0,0.0,0.0,56.0,0.0,59.0,0.0,0.0,0.001,True,56.0
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_30_FMPadding_rtl_5,FMPadding_rtl,rtl,125.0,0.0,0.0,0.0,104.0,0.0,312.0,0.0,0.0,0.005,True,
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_31_DownSampler_hls_1,DownSampler_hls,hls,125.0,0.0,0.0,0.0,209.0,0.0,216.0,0.0,0.0,0.003,True,209.0
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_32_ConvolutionInputGenerator_rtl_5,ConvolutionInputGenerator_rtl,rtl,125.0,300.0,1.0,0.0,178.0,0.0,96.0,1.0,0.0,0.004,True,
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_33_MVAU_rtl_6,MVAU_rtl,rtl,125.0,98.82646520871216,1.0,2.0,188.0,8.0,276.0,0.0,2.0,0.013,True,
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_33_MVAU_rtl_6_wstrm,MVAU_rtl_wstrm,wstrm,125.0,0.0,0.0,0.0,8.0,0.0,18.0,1.0,0.0,0.002,True,
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_34_MVAU_rtl_7,MVAU_rtl,rtl,125.0,540.138024006957,10.0,18.0,875.0,0.0,600.0,2.0,18.0,0.085,True,
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_34_MVAU_rtl_7_wstrm,MVAU_rtl_wstrm,wstrm,125.0,0.0,0.0,0.0,8.0,0.0,18.0,8.0,0.0,0.016,True,
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_35_Thresholding_rtl_8,Thresholding_rtl,rtl,125.0,36.0,2.0,0.0,77.0,7.0,170.0,2.0,0.0,0.007,True,
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_36_Thresholding_rtl_9,Thresholding_rtl,rtl,125.0,42.0,2.0,0.0,84.0,7.0,186.0,2.0,0.0,0.007,True,
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_37_FMPadding_rtl_6,FMPadding_rtl,rtl,125.0,0.0,0.0,0.0,162.0,0.0,559.0,0.0,0.0,0.011,True,
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_38_ConvolutionInputGenerator_rtl_6,ConvolutionInputGenerator_rtl,rtl,125.0,300.0,1.0,0.0,156.0,0.0,88.0,1.0,0.0,0.003,True,
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_39_MVAU_rtl_8,MVAU_rtl,rtl,125.0,1034.7180264663116,20.0,36.0,1661.0,0.0,945.0,4.0,36.0,0.163,True,
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_39_MVAU_rtl_8_wstrm,MVAU_rtl_wstrm,wstrm,125.0,0.0,0.0,0.0,9.0,0.0,18.0,16.0,0.0,0.039,True,
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_40_Thresholding_rtl_10,Thresholding_rtl,rtl,125.0,45.0,2.0,0.0,84.0,7.0,191.0,2.0,0.0,0.007,True,
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_41_AddStreams_hls_2,AddStreams_hls,hls,125.0,0.0,0.0,0.0,54.0,0.0,61.0,0.0,0.0,0.001,True,54.0
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_42_Thresholding_rtl_11,Thresholding_rtl,rtl,125.0,75.0,0.0,0.0,27.0,6.0,66.0,0.0,0.0,0.002,True,
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_43_ConvolutionInputGenerator_rtl_7,ConvolutionInputGenerator_rtl,rtl,125.0,300.0,1.0,0.0,145.0,0.0,92.0,1.0,0.0,0.004,True,
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_44_Pool_hls_0,Pool_hls,hls,125.0,0.0,0.0,0.0,122.0,0.0,102.0,0.0,0.0,0.002,True,122.0
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_45_MVAU_rtl_9,MVAU_rtl,rtl,125.0,89.44622911410679,0.0,1.0,66.0,12.0,118.0,0.0,1.0,0.004,True,
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_45_MVAU_rtl_9_wstrm,MVAU_rtl_wstrm,wstrm,125.0,0.0,0.0,0.0,51.0,40.0,27.0,0.0,0.0,0.001,True,
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_46_ChannelwiseOp_hls_0,ChannelwiseOp_hls,hls,125.0,34.0,0.0,0.0,78.0,0.0,167.0,0.0,0.0,0.003,True,78.0
+vd,44444448_dsp4c_16667,"A' margin 1, 5% LUT headroom",d1_47_LabelSelect_hls_0,LabelSelect_hls,hls,125.0,0.0,0.0,0.0,170.0,0.0,213.0,0.0,0.0,0.005,True,170.0
+vd,44242448_dsp4c_14286,A' margin 2,d2_00_FMPadding_rtl_0,FMPadding_rtl,rtl,125.0,0.0,0.0,0.0,60.0,0.0,113.0,0.0,0.0,0.001,True,
+vd,44242448_dsp4c_14286,A' margin 2,d2_01_ConvolutionInputGenerator_rtl_0,ConvolutionInputGenerator_rtl,rtl,125.0,300.0,1.0,0.0,159.0,0.0,79.0,1.0,0.0,0.004,True,
+vd,44242448_dsp4c_14286,A' margin 2,d2_02_MVAU_rtl_0,MVAU_rtl,rtl,125.0,810.1841091813676,0.0,27.0,739.0,144.0,522.0,0.0,27.0,0.057,True,
+vd,44242448_dsp4c_14286,A' margin 2,d2_02_MVAU_rtl_0_wstrm,MVAU_rtl_wstrm,wstrm,125.0,0.0,0.0,0.0,220.0,216.0,224.0,0.0,0.0,0.006,True,
+vd,44242448_dsp4c_14286,A' margin 2,d2_03_Thresholding_rtl_0,Thresholding_rtl,rtl,125.0,120.0,0.0,0.0,117.0,8.0,334.0,0.0,0.0,0.008,True,
+vd,44242448_dsp4c_14286,A' margin 2,d2_04_DuplicateStreams_hls_0,DuplicateStreams_hls,hls,125.0,0.0,0.0,0.0,62.0,0.0,87.0,0.0,0.0,0.002,True,62.0
+vd,44242448_dsp4c_14286,A' margin 2,d2_05_FMPadding_rtl_1,FMPadding_rtl,rtl,125.0,0.0,0.0,0.0,80.0,0.0,193.0,0.0,0.0,0.003,True,
+vd,44242448_dsp4c_14286,A' margin 2,d2_06_ConvolutionInputGenerator_rtl_1,ConvolutionInputGenerator_rtl,rtl,125.0,300.0,2.0,0.0,159.0,0.0,79.0,2.0,0.0,0.005,True,
+vd,44242448_dsp4c_14286,A' margin 2,d2_07_MVAU_rtl_1,MVAU_rtl,rtl,125.0,3168.4904370086624,0.0,72.0,3187.0,192.0,1840.0,0.0,72.0,0.282,True,
+vd,44242448_dsp4c_14286,A' margin 2,d2_07_MVAU_rtl_1_wstrm,MVAU_rtl_wstrm,wstrm,125.0,0.0,0.0,0.0,1146.0,1142.0,1150.0,0.0,0.0,0.018,True,
+vd,44242448_dsp4c_14286,A' margin 2,d2_08_Thresholding_rtl_1,Thresholding_rtl,rtl,125.0,104.0,0.0,0.0,124.0,8.0,328.0,0.0,0.0,0.008,True,
+vd,44242448_dsp4c_14286,A' margin 2,d2_09_FMPadding_rtl_2,FMPadding_rtl,rtl,125.0,0.0,0.0,0.0,80.0,0.0,193.0,0.0,0.0,0.003,True,
+vd,44242448_dsp4c_14286,A' margin 2,d2_10_ConvolutionInputGenerator_rtl_2,ConvolutionInputGenerator_rtl,rtl,125.0,300.0,2.0,0.0,159.0,0.0,79.0,2.0,0.0,0.005,True,
+vd,44242448_dsp4c_14286,A' margin 2,d2_11_MVAU_rtl_2,MVAU_rtl,rtl,125.0,3168.4904370086624,0.0,72.0,3187.0,192.0,1840.0,0.0,72.0,0.282,True,
+vd,44242448_dsp4c_14286,A' margin 2,d2_11_MVAU_rtl_2_wstrm,MVAU_rtl_wstrm,wstrm,125.0,0.0,0.0,0.0,1146.0,1142.0,1150.0,0.0,0.0,0.018,True,
+vd,44242448_dsp4c_14286,A' margin 2,d2_12_Thresholding_rtl_2,Thresholding_rtl,rtl,125.0,104.0,0.0,0.0,126.0,8.0,332.0,0.0,0.0,0.008,True,
+vd,44242448_dsp4c_14286,A' margin 2,d2_13_AddStreams_hls_0,AddStreams_hls,hls,125.0,0.0,0.0,0.0,65.0,0.0,93.0,0.0,0.0,0.002,True,65.0
+vd,44242448_dsp4c_14286,A' margin 2,d2_14_Thresholding_rtl_3,Thresholding_rtl,rtl,125.0,40.0,0.0,0.0,38.0,12.0,113.0,0.0,0.0,0.002,True,
+vd,44242448_dsp4c_14286,A' margin 2,d2_15_DuplicateStreams_hls_1,DuplicateStreams_hls,hls,125.0,0.0,0.0,0.0,62.0,0.0,87.0,0.0,0.0,0.002,True,62.0
+vd,44242448_dsp4c_14286,A' margin 2,d2_16_FMPadding_rtl_3,FMPadding_rtl,rtl,125.0,0.0,0.0,0.0,80.0,0.0,193.0,0.0,0.0,0.003,True,
+vd,44242448_dsp4c_14286,A' margin 2,d2_17_DownSampler_hls_0,DownSampler_hls,hls,125.0,0.0,0.0,0.0,75.0,0.0,94.0,0.0,0.0,0.001,True,75.0
+vd,44242448_dsp4c_14286,A' margin 2,d2_18_ConvolutionInputGenerator_rtl_3,ConvolutionInputGenerator_rtl,rtl,125.0,300.0,1.0,0.0,163.0,0.0,92.0,1.0,0.0,0.003,True,
+vd,44242448_dsp4c_14286,A' margin 2,d2_19_MVAU_hls_0,MVAU_hls,hls,125.0,394.05364922719156,0.0,0.0,325.0,0.0,488.0,0.0,0.0,0.009,True,325.0
+vd,44242448_dsp4c_14286,A' margin 2,d2_19_MVAU_hls_0_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,37.0,32.0,44.0,0.0,0.0,0.001,True,
+vd,44242448_dsp4c_14286,A' margin 2,d2_20_MVAU_hls_1,MVAU_hls,hls,125.0,2133.3622993728422,0.0,0.0,2249.0,0.0,4025.0,0.0,0.0,0.049,True,2249.0
+vd,44242448_dsp4c_14286,A' margin 2,d2_20_MVAU_hls_1_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,285.0,280.0,292.0,0.0,0.0,0.009,True,
+vd,44242448_dsp4c_14286,A' margin 2,d2_21_Thresholding_rtl_4,Thresholding_rtl,rtl,125.0,64.0,0.0,0.0,84.0,4.0,153.0,0.0,0.0,0.004,True,
+vd,44242448_dsp4c_14286,A' margin 2,d2_22_Thresholding_rtl_5,Thresholding_rtl,rtl,125.0,80.0,0.0,0.0,94.0,4.0,171.0,0.0,0.0,0.004,True,
+vd,44242448_dsp4c_14286,A' margin 2,d2_23_FMPadding_rtl_4,FMPadding_rtl,rtl,125.0,0.0,0.0,0.0,104.0,0.0,312.0,0.0,0.0,0.005,True,
+vd,44242448_dsp4c_14286,A' margin 2,d2_24_ConvolutionInputGenerator_rtl_4,ConvolutionInputGenerator_rtl,rtl,125.0,300.0,1.0,0.0,154.0,0.0,84.0,1.0,0.0,0.004,True,
+vd,44242448_dsp4c_14286,A' margin 2,d2_25_MVAU_hls_2,MVAU_hls,hls,125.0,4089.499629899418,0.0,0.0,4431.0,0.0,7902.0,0.0,0.0,0.078,True,4431.0
+vd,44242448_dsp4c_14286,A' margin 2,d2_25_MVAU_hls_2_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,555.0,550.0,562.0,0.0,0.0,0.01,True,
+vd,44242448_dsp4c_14286,A' margin 2,d2_26_Thresholding_rtl_6,Thresholding_rtl,rtl,125.0,88.0,0.0,0.0,94.0,4.0,180.0,0.0,0.0,0.004,True,
+vd,44242448_dsp4c_14286,A' margin 2,d2_27_AddStreams_hls_1,AddStreams_hls,hls,125.0,0.0,0.0,0.0,55.0,0.0,62.0,0.0,0.0,0.001,True,55.0
+vd,44242448_dsp4c_14286,A' margin 2,d2_28_Thresholding_rtl_7,Thresholding_rtl,rtl,125.0,40.0,0.0,0.0,27.0,6.0,66.0,0.0,0.0,0.002,True,
+vd,44242448_dsp4c_14286,A' margin 2,d2_29_DuplicateStreams_hls_2,DuplicateStreams_hls,hls,125.0,0.0,0.0,0.0,56.0,0.0,59.0,0.0,0.0,0.001,True,56.0
+vd,44242448_dsp4c_14286,A' margin 2,d2_30_FMPadding_rtl_5,FMPadding_rtl,rtl,125.0,0.0,0.0,0.0,104.0,0.0,312.0,0.0,0.0,0.005,True,
+vd,44242448_dsp4c_14286,A' margin 2,d2_31_DownSampler_hls_1,DownSampler_hls,hls,125.0,0.0,0.0,0.0,209.0,0.0,216.0,0.0,0.0,0.003,True,209.0
+vd,44242448_dsp4c_14286,A' margin 2,d2_32_ConvolutionInputGenerator_rtl_5,ConvolutionInputGenerator_rtl,rtl,125.0,300.0,1.0,0.0,178.0,0.0,96.0,1.0,0.0,0.004,True,
+vd,44242448_dsp4c_14286,A' margin 2,d2_33_MVAU_hls_3,MVAU_hls,hls,125.0,362.63855011447293,1.0,0.0,449.0,0.0,609.0,0.0,0.0,0.015,True,449.0
+vd,44242448_dsp4c_14286,A' margin 2,d2_33_MVAU_hls_3_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,7.0,0.0,16.0,1.0,0.0,0.002,True,
+vd,44242448_dsp4c_14286,A' margin 2,d2_34_MVAU_hls_4,MVAU_hls,hls,125.0,1290.2913573427861,6.0,0.0,2317.0,0.0,3261.0,0.0,0.0,0.047,True,2317.0
+vd,44242448_dsp4c_14286,A' margin 2,d2_34_MVAU_hls_4_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,13.0,0.0,19.0,6.0,0.0,0.015,True,
+vd,44242448_dsp4c_14286,A' margin 2,d2_35_Thresholding_rtl_8,Thresholding_rtl,rtl,125.0,63.0,1.0,0.0,87.0,7.0,150.0,1.0,0.0,0.005,True,
+vd,44242448_dsp4c_14286,A' margin 2,d2_36_Thresholding_rtl_9,Thresholding_rtl,rtl,125.0,77.0,1.0,0.0,96.0,7.0,165.0,1.0,0.0,0.005,True,
+vd,44242448_dsp4c_14286,A' margin 2,d2_37_FMPadding_rtl_6,FMPadding_rtl,rtl,125.0,0.0,0.0,0.0,162.0,0.0,559.0,0.0,0.0,0.011,True,
+vd,44242448_dsp4c_14286,A' margin 2,d2_38_ConvolutionInputGenerator_rtl_6,ConvolutionInputGenerator_rtl,rtl,125.0,300.0,1.0,0.0,156.0,0.0,88.0,1.0,0.0,0.003,True,
+vd,44242448_dsp4c_14286,A' margin 2,d2_39_MVAU_hls_5,MVAU_hls,hls,125.0,2402.1879440647426,11.0,0.0,4106.0,0.0,6166.0,0.0,0.0,0.094,True,4106.0
+vd,44242448_dsp4c_14286,A' margin 2,d2_39_MVAU_hls_5_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,13.0,0.0,19.0,11.0,0.0,0.027,True,
+vd,44242448_dsp4c_14286,A' margin 2,d2_40_Thresholding_rtl_10,Thresholding_rtl,rtl,125.0,77.0,1.0,0.0,91.0,7.0,164.0,1.0,0.0,0.005,True,
+vd,44242448_dsp4c_14286,A' margin 2,d2_41_AddStreams_hls_2,AddStreams_hls,hls,125.0,0.0,0.0,0.0,54.0,0.0,61.0,0.0,0.0,0.001,True,54.0
+vd,44242448_dsp4c_14286,A' margin 2,d2_42_Thresholding_rtl_11,Thresholding_rtl,rtl,125.0,75.0,0.0,0.0,27.0,6.0,66.0,0.0,0.0,0.002,True,
+vd,44242448_dsp4c_14286,A' margin 2,d2_43_ConvolutionInputGenerator_rtl_7,ConvolutionInputGenerator_rtl,rtl,125.0,300.0,1.0,0.0,145.0,0.0,92.0,1.0,0.0,0.004,True,
+vd,44242448_dsp4c_14286,A' margin 2,d2_44_Pool_hls_0,Pool_hls,hls,125.0,0.0,0.0,0.0,122.0,0.0,102.0,0.0,0.0,0.002,True,122.0
+vd,44242448_dsp4c_14286,A' margin 2,d2_45_MVAU_rtl_3,MVAU_rtl,rtl,125.0,89.44622911410679,0.0,1.0,66.0,12.0,118.0,0.0,1.0,0.004,True,
+vd,44242448_dsp4c_14286,A' margin 2,d2_45_MVAU_rtl_3_wstrm,MVAU_rtl_wstrm,wstrm,125.0,0.0,0.0,0.0,51.0,40.0,27.0,0.0,0.0,0.001,True,
+vd,44242448_dsp4c_14286,A' margin 2,d2_46_ChannelwiseOp_hls_0,ChannelwiseOp_hls,hls,125.0,34.0,0.0,0.0,78.0,0.0,167.0,0.0,0.0,0.003,True,78.0
+vd,44242448_dsp4c_14286,A' margin 2,d2_47_LabelSelect_hls_0,LabelSelect_hls,hls,125.0,0.0,0.0,0.0,170.0,0.0,213.0,0.0,0.0,0.005,True,170.0
+vd,84848484_lut_16667,B1 margin 1,d3_00_FMPadding_rtl_0,FMPadding_rtl,rtl,125.0,0.0,0.0,0.0,60.0,0.0,113.0,0.0,0.0,0.001,True,
+vd,84848484_lut_16667,B1 margin 1,d3_01_ConvolutionInputGenerator_rtl_0,ConvolutionInputGenerator_rtl,rtl,125.0,300.0,1.0,0.0,159.0,0.0,79.0,1.0,0.0,0.004,True,
+vd,84848484_lut_16667,B1 margin 1,d3_02_MVAU_hls_0,MVAU_hls,hls,125.0,2725.22480643724,0.0,0.0,2726.0,0.0,2195.0,0.0,0.0,0.057,True,2726.0
+vd,84848484_lut_16667,B1 margin 1,d3_02_MVAU_hls_0_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,220.0,216.0,226.0,0.0,0.0,0.007,True,
+vd,84848484_lut_16667,B1 margin 1,d3_03_DuplicateStreams_hls_0,DuplicateStreams_hls,hls,125.0,0.0,0.0,0.0,52.0,0.0,60.0,0.0,0.0,0.001,True,52.0
+vd,84848484_lut_16667,B1 margin 1,d3_04_FMPadding_rtl_1,FMPadding_rtl,rtl,125.0,0.0,0.0,0.0,80.0,0.0,193.0,0.0,0.0,0.003,True,
+vd,84848484_lut_16667,B1 margin 1,d3_05_ConvolutionInputGenerator_rtl_1,ConvolutionInputGenerator_rtl,rtl,125.0,300.0,2.0,0.0,159.0,0.0,79.0,2.0,0.0,0.005,True,
+vd,84848484_lut_16667,B1 margin 1,d3_06_MVAU_hls_1,MVAU_hls,hls,125.0,7217.422201108201,0.0,0.0,7231.0,0.0,8007.0,0.0,0.0,0.139,True,7231.0
+vd,84848484_lut_16667,B1 margin 1,d3_06_MVAU_hls_1_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,1157.0,1152.0,1162.0,0.0,0.0,0.019,True,
+vd,84848484_lut_16667,B1 margin 1,d3_07_FMPadding_rtl_2,FMPadding_rtl,rtl,125.0,0.0,0.0,0.0,80.0,0.0,193.0,0.0,0.0,0.003,True,
+vd,84848484_lut_16667,B1 margin 1,d3_08_ConvolutionInputGenerator_rtl_2,ConvolutionInputGenerator_rtl,rtl,125.0,300.0,2.0,0.0,159.0,0.0,79.0,2.0,0.0,0.005,True,
+vd,84848484_lut_16667,B1 margin 1,d3_09_MVAU_hls_2,MVAU_hls,hls,125.0,7217.422201108201,0.0,0.0,7234.0,0.0,8011.0,0.0,0.0,0.139,True,7234.0
+vd,84848484_lut_16667,B1 margin 1,d3_09_MVAU_hls_2_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,1157.0,1152.0,1162.0,0.0,0.0,0.019,True,
+vd,84848484_lut_16667,B1 margin 1,d3_10_AddStreams_hls_0,AddStreams_hls,hls,125.0,0.0,0.0,0.0,56.0,0.0,63.0,0.0,0.0,0.001,True,56.0
+vd,84848484_lut_16667,B1 margin 1,d3_11_Thresholding_rtl_0,Thresholding_rtl,rtl,125.0,25.0,0.0,0.0,27.0,6.0,66.0,0.0,0.0,0.002,True,
+vd,84848484_lut_16667,B1 margin 1,d3_12_DuplicateStreams_hls_1,DuplicateStreams_hls,hls,125.0,0.0,0.0,0.0,52.0,0.0,60.0,0.0,0.0,0.001,True,52.0
+vd,84848484_lut_16667,B1 margin 1,d3_13_FMPadding_rtl_3,FMPadding_rtl,rtl,125.0,0.0,0.0,0.0,80.0,0.0,193.0,0.0,0.0,0.003,True,
+vd,84848484_lut_16667,B1 margin 1,d3_14_DownSampler_hls_0,DownSampler_hls,hls,125.0,0.0,0.0,0.0,118.0,0.0,134.0,0.0,0.0,0.001,True,118.0
+vd,84848484_lut_16667,B1 margin 1,d3_15_ConvolutionInputGenerator_rtl_3,ConvolutionInputGenerator_rtl,rtl,125.0,300.0,1.0,0.0,163.0,0.0,92.0,1.0,0.0,0.003,True,
+vd,84848484_lut_16667,B1 margin 1,d3_16_MVAU_hls_3,MVAU_hls,hls,125.0,839.578576535147,0.0,0.0,813.0,0.0,997.0,0.0,0.0,0.035,True,813.0
+vd,84848484_lut_16667,B1 margin 1,d3_16_MVAU_hls_3_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,70.0,64.0,78.0,0.0,0.0,0.002,True,
+vd,84848484_lut_16667,B1 margin 1,d3_17_MVAU_hls_4,MVAU_hls,hls,125.0,3861.97318474695,0.0,0.0,4176.0,0.0,4084.0,0.0,0.0,0.101,True,4176.0
+vd,84848484_lut_16667,B1 margin 1,d3_17_MVAU_hls_4_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,583.0,576.0,590.0,0.0,0.0,0.01,True,
+vd,84848484_lut_16667,B1 margin 1,d3_18_FMPadding_rtl_4,FMPadding_rtl,rtl,125.0,0.0,0.0,0.0,104.0,0.0,312.0,0.0,0.0,0.005,True,
+vd,84848484_lut_16667,B1 margin 1,d3_19_ConvolutionInputGenerator_rtl_4,ConvolutionInputGenerator_rtl,rtl,125.0,300.0,1.0,0.0,154.0,0.0,84.0,1.0,0.0,0.004,True,
+vd,84848484_lut_16667,B1 margin 1,d3_20_MVAU_hls_5,MVAU_hls,hls,125.0,7237.308831275769,0.0,0.0,8025.0,0.0,7607.0,0.0,0.0,0.189,True,8025.0
+vd,84848484_lut_16667,B1 margin 1,d3_20_MVAU_hls_5_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,1159.0,1152.0,1166.0,0.0,0.0,0.018,True,
+vd,84848484_lut_16667,B1 margin 1,d3_21_AddStreams_hls_1,AddStreams_hls,hls,125.0,0.0,0.0,0.0,55.0,0.0,62.0,0.0,0.0,0.001,True,55.0
+vd,84848484_lut_16667,B1 margin 1,d3_22_Thresholding_rtl_1,Thresholding_rtl,rtl,125.0,40.0,0.0,0.0,27.0,6.0,66.0,0.0,0.0,0.002,True,
+vd,84848484_lut_16667,B1 margin 1,d3_23_DuplicateStreams_hls_2,DuplicateStreams_hls,hls,125.0,0.0,0.0,0.0,56.0,0.0,59.0,0.0,0.0,0.001,True,56.0
+vd,84848484_lut_16667,B1 margin 1,d3_24_FMPadding_rtl_5,FMPadding_rtl,rtl,125.0,0.0,0.0,0.0,104.0,0.0,312.0,0.0,0.0,0.005,True,
+vd,84848484_lut_16667,B1 margin 1,d3_25_DownSampler_hls_1,DownSampler_hls,hls,125.0,0.0,0.0,0.0,209.0,0.0,216.0,0.0,0.0,0.003,True,209.0
+vd,84848484_lut_16667,B1 margin 1,d3_26_ConvolutionInputGenerator_rtl_5,ConvolutionInputGenerator_rtl,rtl,125.0,300.0,1.0,0.0,178.0,0.0,96.0,1.0,0.0,0.004,True,
+vd,84848484_lut_16667,B1 margin 1,d3_27_MVAU_hls_6,MVAU_hls,hls,125.0,795.4652067027149,2.0,0.0,927.0,0.0,1072.0,0.0,0.0,0.023,True,927.0
+vd,84848484_lut_16667,B1 margin 1,d3_27_MVAU_hls_6_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,8.0,0.0,18.0,2.0,0.0,0.004,True,
+vd,84848484_lut_16667,B1 margin 1,d3_28_MVAU_hls_7,MVAU_hls,hls,125.0,3305.8598149145178,16.0,0.0,4617.0,0.0,4682.0,0.0,0.0,0.113,True,4617.0
+vd,84848484_lut_16667,B1 margin 1,d3_28_MVAU_hls_7_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,9.0,0.0,18.0,16.0,0.0,0.039,True,
+vd,84848484_lut_16667,B1 margin 1,d3_29_FMPadding_rtl_6,FMPadding_rtl,rtl,125.0,0.0,0.0,0.0,162.0,0.0,559.0,0.0,0.0,0.011,True,
+vd,84848484_lut_16667,B1 margin 1,d3_30_ConvolutionInputGenerator_rtl_6,ConvolutionInputGenerator_rtl,rtl,125.0,300.0,1.0,0.0,156.0,0.0,88.0,1.0,0.0,0.003,True,
+vd,84848484_lut_16667,B1 margin 1,d3_31_MVAU_hls_8,MVAU_hls,hls,125.0,6105.195461443336,32.0,0.0,10825.0,0.0,7061.0,0.0,0.0,0.245,True,10825.0
+vd,84848484_lut_16667,B1 margin 1,d3_31_MVAU_hls_8_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,26.0,0.0,138.0,32.0,0.0,0.08,True,
+vd,84848484_lut_16667,B1 margin 1,d3_32_AddStreams_hls_2,AddStreams_hls,hls,125.0,0.0,0.0,0.0,54.0,0.0,61.0,0.0,0.0,0.001,True,54.0
+vd,84848484_lut_16667,B1 margin 1,d3_33_Thresholding_rtl_2,Thresholding_rtl,rtl,125.0,75.0,0.0,0.0,27.0,6.0,66.0,0.0,0.0,0.002,True,
+vd,84848484_lut_16667,B1 margin 1,d3_34_ConvolutionInputGenerator_rtl_7,ConvolutionInputGenerator_rtl,rtl,125.0,300.0,1.0,0.0,145.0,0.0,92.0,1.0,0.0,0.004,True,
+vd,84848484_lut_16667,B1 margin 1,d3_35_Pool_hls_0,Pool_hls,hls,125.0,0.0,0.0,0.0,120.0,0.0,90.0,0.0,0.0,0.002,True,120.0
+vd,84848484_lut_16667,B1 margin 1,d3_36_MVAU_rtl_0,MVAU_rtl,rtl,125.0,0.0,0.0,1.0,60.0,6.0,114.0,0.0,1.0,0.004,True,
+vd,84848484_lut_16667,B1 margin 1,d3_36_MVAU_rtl_0_wstrm,MVAU_rtl_wstrm,wstrm,125.0,0.0,0.0,0.0,95.0,80.0,31.0,0.0,0.0,0.002,True,
+vd,84848484_lut_16667,B1 margin 1,d3_37_ChannelwiseOp_hls_0,ChannelwiseOp_hls,hls,125.0,34.0,0.0,0.0,78.0,0.0,167.0,0.0,0.0,0.003,True,78.0
+vd,84848484_lut_16667,B1 margin 1,d3_38_LabelSelect_hls_0,LabelSelect_hls,hls,125.0,0.0,0.0,0.0,170.0,0.0,213.0,0.0,0.0,0.005,True,170.0
+vd,44444448_lut_finn_16667,B2 margin 1,d4_00_FMPadding_rtl_0,FMPadding_rtl,rtl,100.0,0.0,0.0,0.0,60.0,0.0,113.0,0.0,0.0,0.001,True,
+vd,44444448_lut_finn_16667,B2 margin 1,d4_01_ConvolutionInputGenerator_rtl_0,ConvolutionInputGenerator_rtl,rtl,100.0,348.0,0.0,0.0,237.0,64.0,103.0,0.0,0.0,0.003,True,
+vd,44444448_lut_finn_16667,B2 margin 1,d4_02_MVAU_hls_0,MVAU_hls,hls,100.0,1569.0,3.0,0.0,642.0,0.0,1203.0,0.0,27.0,0.043,True,642.0
+vd,44444448_lut_finn_16667,B2 margin 1,d4_02_MVAU_hls_0_wstrm,MVAU_hls_wstrm,wstrm,100.0,0.0,0.0,0.0,4.0,0.0,10.0,4.0,0.0,0.006,True,
+vd,44444448_lut_finn_16667,B2 margin 1,d4_03_DuplicateStreams_hls_0,DuplicateStreams_hls,hls,100.0,0.0,0.0,0.0,52.0,0.0,60.0,0.0,0.0,0.001,True,52.0
+vd,44444448_lut_finn_16667,B2 margin 1,d4_04_FMPadding_rtl_1,FMPadding_rtl,rtl,100.0,0.0,0.0,0.0,80.0,0.0,193.0,0.0,0.0,0.003,True,
+vd,44444448_lut_finn_16667,B2 margin 1,d4_05_ConvolutionInputGenerator_rtl_1,ConvolutionInputGenerator_rtl,rtl,100.0,428.0,0.0,0.0,365.0,172.0,143.0,0.0,0.0,0.005,True,
+vd,44444448_lut_finn_16667,B2 margin 1,d4_06_MVAU_hls_1,MVAU_hls,hls,100.0,6089.0,16.0,0.0,2842.0,0.0,2650.0,0.0,144.0,0.202,True,2842.0
+vd,44444448_lut_finn_16667,B2 margin 1,d4_06_MVAU_hls_1_wstrm,MVAU_hls_wstrm,wstrm,100.0,0.0,0.0,0.0,5.0,0.0,10.0,16.0,0.0,0.024,True,
+vd,44444448_lut_finn_16667,B2 margin 1,d4_07_FMPadding_rtl_2,FMPadding_rtl,rtl,100.0,0.0,0.0,0.0,80.0,0.0,193.0,0.0,0.0,0.003,True,
+vd,44444448_lut_finn_16667,B2 margin 1,d4_08_ConvolutionInputGenerator_rtl_2,ConvolutionInputGenerator_rtl,rtl,100.0,428.0,0.0,0.0,365.0,172.0,143.0,0.0,0.0,0.005,True,
+vd,44444448_lut_finn_16667,B2 margin 1,d4_09_MVAU_hls_2,MVAU_hls,hls,100.0,6089.0,16.0,0.0,3015.0,0.0,2650.0,0.0,144.0,0.204,True,3015.0
+vd,44444448_lut_finn_16667,B2 margin 1,d4_09_MVAU_hls_2_wstrm,MVAU_hls_wstrm,wstrm,100.0,0.0,0.0,0.0,5.0,0.0,10.0,16.0,0.0,0.024,True,
+vd,44444448_lut_finn_16667,B2 margin 1,d4_10_AddStreams_hls_0,AddStreams_hls,hls,100.0,0.0,0.0,0.0,,,,,,,True,
+vd,44444448_lut_finn_16667,B2 margin 1,d4_11_Thresholding_rtl_0,Thresholding_rtl,rtl,100.0,25.0,0.0,0.0,27.0,6.0,66.0,0.0,0.0,0.001,True,
+vd,44444448_lut_finn_16667,B2 margin 1,d4_12_DuplicateStreams_hls_1,DuplicateStreams_hls,hls,100.0,0.0,0.0,0.0,52.0,0.0,60.0,0.0,0.0,0.001,True,52.0
+vd,44444448_lut_finn_16667,B2 margin 1,d4_13_FMPadding_rtl_3,FMPadding_rtl,rtl,100.0,0.0,0.0,0.0,80.0,0.0,193.0,0.0,0.0,0.003,True,
+vd,44444448_lut_finn_16667,B2 margin 1,d4_14_DownSampler_hls_0,DownSampler_hls,hls,100.0,0.0,0.0,0.0,,,,,,,True,
+vd,44444448_lut_finn_16667,B2 margin 1,d4_15_ConvolutionInputGenerator_rtl_3,ConvolutionInputGenerator_rtl,rtl,100.0,476.0,0.0,0.0,333.0,132.0,108.0,0.0,0.0,0.003,True,
+vd,44444448_lut_finn_16667,B2 margin 1,d4_16_MVAU_hls_3,MVAU_hls,hls,100.0,584.0,1.0,0.0,446.0,0.0,576.0,0.0,8.0,0.02,True,446.0
+vd,44444448_lut_finn_16667,B2 margin 1,d4_16_MVAU_hls_3_wstrm,MVAU_hls_wstrm,wstrm,100.0,0.0,0.0,0.0,6.0,0.0,14.0,1.0,0.0,0.002,True,
+vd,44444448_lut_finn_16667,B2 margin 1,d4_17_MVAU_hls_4,MVAU_hls,hls,100.0,3465.0,8.0,0.0,1852.0,0.0,2150.0,0.0,72.0,0.108,True,1852.0
+vd,44444448_lut_finn_16667,B2 margin 1,d4_17_MVAU_hls_4_wstrm,MVAU_hls_wstrm,wstrm,100.0,0.0,0.0,0.0,6.0,0.0,14.0,8.0,0.0,0.012,True,
+vd,44444448_lut_finn_16667,B2 margin 1,d4_18_FMPadding_rtl_4,FMPadding_rtl,rtl,100.0,0.0,0.0,0.0,104.0,0.0,312.0,0.0,0.0,0.005,True,
+vd,44444448_lut_finn_16667,B2 margin 1,d4_19_ConvolutionInputGenerator_rtl_4,ConvolutionInputGenerator_rtl,rtl,100.0,460.0,0.0,0.0,320.0,132.0,116.0,0.0,0.0,0.003,True,
+vd,44444448_lut_finn_16667,B2 margin 1,d4_20_MVAU_hls_5,MVAU_hls,hls,100.0,6747.0,16.0,0.0,3489.0,0.0,4021.0,0.0,144.0,0.207,True,3489.0
+vd,44444448_lut_finn_16667,B2 margin 1,d4_20_MVAU_hls_5_wstrm,MVAU_hls_wstrm,wstrm,100.0,0.0,0.0,0.0,7.0,0.0,14.0,16.0,0.0,0.031,True,
+vd,44444448_lut_finn_16667,B2 margin 1,d4_21_AddStreams_hls_1,AddStreams_hls,hls,100.0,0.0,0.0,0.0,55.0,0.0,62.0,0.0,0.0,0.001,True,55.0
+vd,44444448_lut_finn_16667,B2 margin 1,d4_22_Thresholding_rtl_1,Thresholding_rtl,rtl,100.0,40.0,0.0,0.0,38.0,14.0,70.0,1.0,0.0,0.003,True,
+vd,44444448_lut_finn_16667,B2 margin 1,d4_23_DuplicateStreams_hls_2,DuplicateStreams_hls,hls,100.0,0.0,0.0,0.0,56.0,0.0,59.0,0.0,0.0,0.001,True,56.0
+vd,44444448_lut_finn_16667,B2 margin 1,d4_24_FMPadding_rtl_5,FMPadding_rtl,rtl,100.0,0.0,0.0,0.0,104.0,0.0,312.0,0.0,0.0,0.005,True,
+vd,44444448_lut_finn_16667,B2 margin 1,d4_25_DownSampler_hls_1,DownSampler_hls,hls,100.0,0.0,0.0,0.0,209.0,0.0,216.0,0.0,0.0,0.002,True,209.0
+vd,44444448_lut_finn_16667,B2 margin 1,d4_26_ConvolutionInputGenerator_rtl_5,ConvolutionInputGenerator_rtl,rtl,100.0,468.0,0.0,0.0,366.0,144.0,104.0,0.0,0.0,0.004,True,
+vd,44444448_lut_finn_16667,B2 margin 1,d4_27_MVAU_hls_6,MVAU_hls,hls,100.0,683.0,1.0,0.0,543.0,0.0,673.0,0.0,8.0,0.023,True,543.0
+vd,44444448_lut_finn_16667,B2 margin 1,d4_27_MVAU_hls_6_wstrm,MVAU_hls_wstrm,wstrm,100.0,0.0,0.0,0.0,8.0,0.0,18.0,1.0,0.0,0.002,True,
+vd,44444448_lut_finn_16667,B2 margin 1,d4_28_MVAU_hls_7,MVAU_hls,hls,100.0,3806.0,8.0,0.0,2205.0,0.0,3194.0,0.0,72.0,0.125,True,2205.0
+vd,44444448_lut_finn_16667,B2 margin 1,d4_28_MVAU_hls_7_wstrm,MVAU_hls_wstrm,wstrm,100.0,0.0,0.0,0.0,8.0,0.0,18.0,8.0,0.0,0.013,True,
+vd,44444448_lut_finn_16667,B2 margin 1,d4_29_FMPadding_rtl_6,FMPadding_rtl,rtl,100.0,0.0,0.0,0.0,162.0,0.0,559.0,0.0,0.0,0.011,True,
+vd,44444448_lut_finn_16667,B2 margin 1,d4_30_ConvolutionInputGenerator_rtl_6,ConvolutionInputGenerator_rtl,rtl,100.0,460.0,0.0,0.0,326.0,132.0,104.0,0.0,0.0,0.003,True,
+vd,44444448_lut_finn_16667,B2 margin 1,d4_31_MVAU_hls_8,MVAU_hls,hls,100.0,7502.0,16.0,0.0,4121.0,0.0,5220.0,0.0,144.0,0.221,True,4121.0
+vd,44444448_lut_finn_16667,B2 margin 1,d4_31_MVAU_hls_8_wstrm,MVAU_hls_wstrm,wstrm,100.0,0.0,0.0,0.0,9.0,0.0,18.0,16.0,0.0,0.032,True,
+vd,44444448_lut_finn_16667,B2 margin 1,d4_32_AddStreams_hls_2,AddStreams_hls,hls,100.0,0.0,0.0,0.0,54.0,0.0,61.0,0.0,0.0,0.001,True,54.0
+vd,44444448_lut_finn_16667,B2 margin 1,d4_33_Thresholding_rtl_2,Thresholding_rtl,rtl,100.0,75.0,0.0,0.0,40.0,15.0,72.0,1.0,0.0,0.003,True,
+vd,44444448_lut_finn_16667,B2 margin 1,d4_34_ConvolutionInputGenerator_rtl_7,ConvolutionInputGenerator_rtl,rtl,100.0,732.0,0.0,0.0,670.0,384.0,100.0,0.0,0.0,0.007,True,
+vd,44444448_lut_finn_16667,B2 margin 1,d4_35_Pool_hls_0,Pool_hls,hls,100.0,0.0,0.0,0.0,122.0,0.0,102.0,0.0,0.0,0.001,True,122.0
+vd,44444448_lut_finn_16667,B2 margin 1,d4_36_MVAU_rtl_0,MVAU_rtl,rtl,100.0,0.0,1.0,1.0,66.0,12.0,118.0,0.0,1.0,0.004,True,
+vd,44444448_lut_finn_16667,B2 margin 1,d4_36_MVAU_rtl_0_wstrm,MVAU_rtl_wstrm,wstrm,100.0,0.0,0.0,0.0,7.0,0.0,23.0,1.0,0.0,0.001,True,
+vd,44444448_lut_finn_16667,B2 margin 1,d4_37_ChannelwiseOp_hls_0,ChannelwiseOp_hls,hls,100.0,34.0,0.0,0.0,78.0,0.0,167.0,0.0,0.0,0.002,True,78.0
+vd,44444448_lut_finn_16667,B2 margin 1,d4_38_LabelSelect_hls_0,LabelSelect_hls,hls,100.0,0.0,0.0,0.0,260.0,0.0,188.0,0.0,0.0,0.004,True,260.0
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_00_FMPadding_rtl_0,FMPadding_rtl,rtl,100.0,0.0,0.0,0.0,60.0,0.0,113.0,0.0,0.0,0.001,True,
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_01_ConvolutionInputGenerator_rtl_0,ConvolutionInputGenerator_rtl,rtl,100.0,348.0,0.0,0.0,237.0,64.0,103.0,0.0,0.0,0.003,True,
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_02_MVAU_hls_0,MVAU_hls,hls,100.0,1569.0,3.0,0.0,1569.0,0.0,1599.0,0.0,0.0,0.028,True,1569.0
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_02_MVAU_hls_0_wstrm,MVAU_hls_wstrm,wstrm,100.0,0.0,0.0,0.0,4.0,0.0,10.0,4.0,0.0,0.006,True,
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_03_DuplicateStreams_hls_0,DuplicateStreams_hls,hls,100.0,0.0,0.0,0.0,52.0,0.0,60.0,0.0,0.0,0.001,True,52.0
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_04_FMPadding_rtl_1,FMPadding_rtl,rtl,100.0,0.0,0.0,0.0,80.0,0.0,193.0,0.0,0.0,0.002,True,
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_05_ConvolutionInputGenerator_rtl_1,ConvolutionInputGenerator_rtl,rtl,100.0,428.0,0.0,0.0,365.0,172.0,143.0,0.0,0.0,0.005,True,
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_06_MVAU_hls_1,MVAU_hls,hls,100.0,6089.0,16.0,0.0,6089.0,0.0,3223.0,0.0,0.0,0.093,True,6089.0
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_06_MVAU_hls_1_wstrm,MVAU_hls_wstrm,wstrm,100.0,0.0,0.0,0.0,5.0,0.0,10.0,16.0,0.0,0.024,True,
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_07_FMPadding_rtl_2,FMPadding_rtl,rtl,100.0,0.0,0.0,0.0,80.0,0.0,193.0,0.0,0.0,0.002,True,
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_08_ConvolutionInputGenerator_rtl_2,ConvolutionInputGenerator_rtl,rtl,100.0,428.0,0.0,0.0,365.0,172.0,143.0,0.0,0.0,0.005,True,
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_09_MVAU_hls_2,MVAU_hls,hls,100.0,6089.0,16.0,0.0,6113.0,0.0,3223.0,0.0,0.0,0.093,True,6113.0
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_09_MVAU_hls_2_wstrm,MVAU_hls_wstrm,wstrm,100.0,0.0,0.0,0.0,5.0,0.0,10.0,16.0,0.0,0.024,True,
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_10_AddStreams_hls_0,AddStreams_hls,hls,100.0,0.0,0.0,0.0,56.0,0.0,63.0,0.0,0.0,0.001,True,56.0
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_11_Thresholding_rtl_0,Thresholding_rtl,rtl,100.0,25.0,0.0,0.0,27.0,6.0,66.0,0.0,0.0,0.001,True,
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_12_DuplicateStreams_hls_1,DuplicateStreams_hls,hls,100.0,0.0,0.0,0.0,52.0,0.0,60.0,0.0,0.0,0.001,True,52.0
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_13_FMPadding_rtl_3,FMPadding_rtl,rtl,100.0,0.0,0.0,0.0,80.0,0.0,193.0,0.0,0.0,0.002,True,
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_14_DownSampler_hls_0,DownSampler_hls,hls,100.0,0.0,0.0,0.0,118.0,0.0,134.0,0.0,0.0,0.001,True,118.0
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_15_ConvolutionInputGenerator_rtl_3,ConvolutionInputGenerator_rtl,rtl,100.0,476.0,0.0,0.0,333.0,132.0,108.0,0.0,0.0,0.003,True,
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_16_MVAU_hls_3,MVAU_hls,hls,100.0,584.0,1.0,0.0,584.0,0.0,562.0,0.0,0.0,0.015,True,584.0
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_16_MVAU_hls_3_wstrm,MVAU_hls_wstrm,wstrm,100.0,0.0,0.0,0.0,6.0,0.0,14.0,1.0,0.0,0.002,True,
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_17_MVAU_hls_4,MVAU_hls,hls,100.0,3465.0,8.0,0.0,3465.0,0.0,2545.0,0.0,0.0,0.063,True,3465.0
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_17_MVAU_hls_4_wstrm,MVAU_hls_wstrm,wstrm,100.0,0.0,0.0,0.0,6.0,0.0,14.0,8.0,0.0,0.012,True,
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_18_FMPadding_rtl_4,FMPadding_rtl,rtl,100.0,0.0,0.0,0.0,104.0,0.0,312.0,0.0,0.0,0.004,True,
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_19_ConvolutionInputGenerator_rtl_4,ConvolutionInputGenerator_rtl,rtl,100.0,460.0,0.0,0.0,320.0,132.0,116.0,0.0,0.0,0.003,True,
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_20_MVAU_hls_5,MVAU_hls,hls,100.0,6747.0,16.0,0.0,6747.0,0.0,4891.0,0.0,0.0,0.125,True,6747.0
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_20_MVAU_hls_5_wstrm,MVAU_hls_wstrm,wstrm,100.0,0.0,0.0,0.0,7.0,0.0,14.0,16.0,0.0,0.031,True,
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_21_AddStreams_hls_1,AddStreams_hls,hls,100.0,0.0,0.0,0.0,55.0,0.0,62.0,0.0,0.0,0.001,True,55.0
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_22_Thresholding_rtl_1,Thresholding_rtl,rtl,100.0,40.0,0.0,0.0,38.0,14.0,70.0,1.0,0.0,0.003,True,
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_23_DuplicateStreams_hls_2,DuplicateStreams_hls,hls,100.0,0.0,0.0,0.0,56.0,0.0,59.0,0.0,0.0,0.001,True,56.0
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_24_FMPadding_rtl_5,FMPadding_rtl,rtl,100.0,0.0,0.0,0.0,104.0,0.0,312.0,0.0,0.0,0.004,True,
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_25_DownSampler_hls_1,DownSampler_hls,hls,100.0,0.0,0.0,0.0,209.0,0.0,216.0,0.0,0.0,0.002,True,209.0
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_26_ConvolutionInputGenerator_rtl_5,ConvolutionInputGenerator_rtl,rtl,100.0,468.0,0.0,0.0,366.0,144.0,104.0,0.0,0.0,0.004,True,
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_27_MVAU_hls_6,MVAU_hls,hls,100.0,683.0,1.0,0.0,683.0,0.0,693.0,0.0,0.0,0.016,True,683.0
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_27_MVAU_hls_6_wstrm,MVAU_hls_wstrm,wstrm,100.0,0.0,0.0,0.0,8.0,0.0,18.0,1.0,0.0,0.002,True,
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_28_MVAU_hls_7,MVAU_hls,hls,100.0,3806.0,8.0,0.0,3806.0,0.0,3592.0,0.0,0.0,0.071,True,3806.0
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_28_MVAU_hls_7_wstrm,MVAU_hls_wstrm,wstrm,100.0,0.0,0.0,0.0,8.0,0.0,18.0,8.0,0.0,0.013,True,
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_29_FMPadding_rtl_6,FMPadding_rtl,rtl,100.0,0.0,0.0,0.0,162.0,0.0,559.0,0.0,0.0,0.009,True,
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_30_ConvolutionInputGenerator_rtl_6,ConvolutionInputGenerator_rtl,rtl,100.0,460.0,0.0,0.0,326.0,132.0,104.0,0.0,0.0,0.003,True,
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_31_MVAU_hls_8,MVAU_hls,hls,100.0,7502.0,16.0,0.0,7502.0,0.0,6095.0,0.0,0.0,0.12,True,7502.0
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_31_MVAU_hls_8_wstrm,MVAU_hls_wstrm,wstrm,100.0,0.0,0.0,0.0,9.0,0.0,18.0,16.0,0.0,0.032,True,
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_32_AddStreams_hls_2,AddStreams_hls,hls,100.0,0.0,0.0,0.0,54.0,0.0,61.0,0.0,0.0,0.001,True,54.0
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_33_Thresholding_rtl_2,Thresholding_rtl,rtl,100.0,75.0,0.0,0.0,40.0,15.0,72.0,1.0,0.0,0.003,True,
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_34_ConvolutionInputGenerator_rtl_7,ConvolutionInputGenerator_rtl,rtl,100.0,732.0,0.0,0.0,670.0,384.0,100.0,0.0,0.0,0.007,True,
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_35_Pool_hls_0,Pool_hls,hls,100.0,0.0,0.0,0.0,122.0,0.0,102.0,0.0,0.0,0.001,True,122.0
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_36_MVAU_rtl_0,MVAU_rtl,rtl,100.0,0.0,1.0,1.0,66.0,12.0,118.0,0.0,1.0,0.003,True,
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_36_MVAU_rtl_0_wstrm,MVAU_rtl_wstrm,wstrm,100.0,0.0,0.0,0.0,7.0,0.0,23.0,1.0,0.0,0.001,True,
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_37_ChannelwiseOp_hls_0,ChannelwiseOp_hls,hls,100.0,34.0,0.0,0.0,78.0,0.0,167.0,0.0,0.0,0.002,True,78.0
+vd2,44444448_lut_finn_16667,"B2 margin 1, resType lut",d0_38_LabelSelect_hls_0,LabelSelect_hls,hls,100.0,0.0,0.0,0.0,260.0,0.0,188.0,0.0,0.0,0.004,True,260.0
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_00_FMPadding_rtl_0,FMPadding_rtl,rtl,125.0,95.71428571428571,0.0,0.0,60.0,0.0,113.0,0.0,0.0,0.001,True,
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_01_ConvolutionInputGenerator_rtl_0,ConvolutionInputGenerator_rtl,rtl,125.0,221.17900683913174,1.0,0.0,159.0,0.0,79.0,1.0,0.0,0.004,True,
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_02_MVAU_hls_0,MVAU_hls,hls,125.0,921.9997174531754,6.0,27.0,918.0,0.0,1450.0,0.0,27.0,0.066,True,918.0
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_02_MVAU_hls_0_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,4.0,0.0,10.0,6.0,0.0,0.012,True,
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_03_DuplicateStreams_hls_0,DuplicateStreams_hls,hls,125.0,55.55555555555556,0.0,0.0,52.0,0.0,60.0,0.0,0.0,0.001,True,52.0
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_04_FMPadding_rtl_1,FMPadding_rtl,rtl,125.0,95.71428571428571,0.0,0.0,80.0,0.0,193.0,0.0,0.0,0.003,True,
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_05_ConvolutionInputGenerator_rtl_1,ConvolutionInputGenerator_rtl,rtl,125.0,221.17900683913174,2.0,0.0,159.0,0.0,79.0,2.0,0.0,0.005,True,
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_06_MVAU_hls_1,MVAU_hls,hls,125.0,6969.840556251282,32.0,0.0,7231.0,0.0,8007.0,0.0,0.0,0.139,True,7231.0
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_06_MVAU_hls_1_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,22.0,0.0,70.0,32.0,0.0,0.062,True,
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_07_FMPadding_rtl_2,FMPadding_rtl,rtl,125.0,95.71428571428571,0.0,0.0,80.0,0.0,193.0,0.0,0.0,0.003,True,
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_08_ConvolutionInputGenerator_rtl_2,ConvolutionInputGenerator_rtl,rtl,125.0,221.17900683913174,2.0,0.0,159.0,0.0,79.0,2.0,0.0,0.005,True,
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_09_MVAU_hls_2,MVAU_hls,hls,125.0,6969.840556251282,32.0,0.0,7234.0,0.0,8011.0,0.0,0.0,0.139,True,7234.0
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_09_MVAU_hls_2_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,22.0,0.0,70.0,32.0,0.0,0.062,True,
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_10_AddStreams_hls_0,AddStreams_hls,hls,125.0,56.0,0.0,0.0,56.0,0.0,63.0,0.0,0.0,0.001,True,56.0
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_11_Thresholding_rtl_0,Thresholding_rtl,rtl,125.0,25.0,0.0,0.0,27.0,6.0,66.0,0.0,0.0,0.002,True,
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_12_DuplicateStreams_hls_1,DuplicateStreams_hls,hls,125.0,55.55555555555556,0.0,0.0,52.0,0.0,60.0,0.0,0.0,0.001,True,52.0
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_13_FMPadding_rtl_3,FMPadding_rtl,rtl,125.0,95.71428571428571,0.0,0.0,80.0,0.0,193.0,0.0,0.0,0.003,True,
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_14_DownSampler_hls_0,DownSampler_hls,hls,125.0,159.8181818181818,0.0,0.0,118.0,0.0,134.0,0.0,0.0,0.001,True,118.0
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_15_ConvolutionInputGenerator_rtl_3,ConvolutionInputGenerator_rtl,rtl,125.0,221.17900683913174,1.0,0.0,163.0,0.0,92.0,1.0,0.0,0.003,True,
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_16_MVAU_hls_3,MVAU_hls,hls,125.0,911.6250590483348,0.0,0.0,813.0,0.0,997.0,0.0,0.0,0.035,True,813.0
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_16_MVAU_hls_3_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,70.0,64.0,78.0,0.0,0.0,0.002,True,
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_17_MVAU_hls_4,MVAU_hls,hls,125.0,4629.121761615654,16.0,0.0,4176.0,0.0,4084.0,0.0,0.0,0.101,True,4176.0
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_17_MVAU_hls_4_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,7.0,0.0,14.0,16.0,0.0,0.039,True,
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_18_FMPadding_rtl_4,FMPadding_rtl,rtl,125.0,95.71428571428571,0.0,0.0,104.0,0.0,312.0,0.0,0.0,0.005,True,
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_19_ConvolutionInputGenerator_rtl_4,ConvolutionInputGenerator_rtl,rtl,125.0,221.17900683913174,1.0,0.0,154.0,0.0,84.0,1.0,0.0,0.004,True,
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_20_MVAU_hls_5,MVAU_hls,hls,125.0,4116.214312931112,32.0,144.0,3309.0,0.0,6192.0,0.0,144.0,0.104,True,3309.0
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_20_MVAU_hls_5_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,23.0,0.0,104.0,32.0,0.0,0.078,True,
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_21_AddStreams_hls_1,AddStreams_hls,hls,125.0,56.0,0.0,0.0,55.0,0.0,62.0,0.0,0.0,0.001,True,55.0
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_22_Thresholding_rtl_1,Thresholding_rtl,rtl,125.0,20.0,1.0,0.0,38.0,14.0,70.0,1.0,0.0,0.003,True,
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_23_DuplicateStreams_hls_2,DuplicateStreams_hls,hls,125.0,55.55555555555556,0.0,0.0,56.0,0.0,59.0,0.0,0.0,0.001,True,56.0
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_24_FMPadding_rtl_5,FMPadding_rtl,rtl,125.0,95.71428571428571,0.0,0.0,104.0,0.0,312.0,0.0,0.0,0.005,True,
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_25_DownSampler_hls_1,DownSampler_hls,hls,125.0,159.8181818181818,0.0,0.0,209.0,0.0,216.0,0.0,0.0,0.003,True,209.0
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_26_ConvolutionInputGenerator_rtl_5,ConvolutionInputGenerator_rtl,rtl,125.0,221.17900683913174,1.0,0.0,178.0,0.0,96.0,1.0,0.0,0.004,True,
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_27_MVAU_hls_6,MVAU_hls,hls,125.0,873.8256809884645,2.0,0.0,927.0,0.0,1072.0,0.0,0.0,0.023,True,927.0
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_27_MVAU_hls_6_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,8.0,0.0,18.0,2.0,0.0,0.004,True,
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_28_MVAU_hls_7,MVAU_hls,hls,125.0,4645.322383555783,16.0,0.0,4617.0,0.0,4682.0,0.0,0.0,0.113,True,4617.0
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_28_MVAU_hls_7_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,9.0,0.0,18.0,16.0,0.0,0.039,True,
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_29_FMPadding_rtl_6,FMPadding_rtl,rtl,125.0,95.71428571428571,0.0,0.0,162.0,0.0,559.0,0.0,0.0,0.011,True,
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_30_ConvolutionInputGenerator_rtl_6,ConvolutionInputGenerator_rtl,rtl,125.0,221.17900683913174,1.0,0.0,156.0,0.0,88.0,1.0,0.0,0.003,True,
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_31_MVAU_hls_8,MVAU_hls,hls,125.0,8868.005396518854,32.0,0.0,10825.0,0.0,7061.0,0.0,0.0,0.245,True,10825.0
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_31_MVAU_hls_8_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,26.0,0.0,138.0,32.0,0.0,0.08,True,
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_32_AddStreams_hls_2,AddStreams_hls,hls,125.0,56.0,0.0,0.0,54.0,0.0,61.0,0.0,0.0,0.001,True,54.0
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_33_Thresholding_rtl_2,Thresholding_rtl,rtl,125.0,35.0,1.0,0.0,40.0,15.0,72.0,1.0,0.0,0.003,True,
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_34_ConvolutionInputGenerator_rtl_7,ConvolutionInputGenerator_rtl,rtl,125.0,221.17900683913174,1.0,0.0,145.0,0.0,92.0,1.0,0.0,0.004,True,
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_35_Pool_hls_0,Pool_hls,hls,125.0,121.66666666666667,0.0,0.0,120.0,0.0,90.0,0.0,0.0,0.002,True,120.0
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_36_MVAU_rtl_0,MVAU_rtl,rtl,125.0,67.79867899737297,1.0,1.0,60.0,6.0,114.0,0.0,1.0,0.004,True,
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_36_MVAU_rtl_0_wstrm,MVAU_rtl_wstrm,wstrm,125.0,0.0,0.0,0.0,7.0,0.0,23.0,1.0,0.0,0.001,True,
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_37_ChannelwiseOp_hls_0,ChannelwiseOp_hls,hls,125.0,78.0,0.0,0.0,78.0,0.0,167.0,0.0,0.0,0.003,True,78.0
+vd3,84848484_lut_16667,"B1 margin 1 (v2.1 variant choices, 99.97% of the LUT budget)",d0_38_LabelSelect_hls_0,LabelSelect_hls,hls,125.0,200.0,0.0,0.0,170.0,0.0,213.0,0.0,0.0,0.005,True,170.0
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_00_FMPadding_rtl_0,FMPadding_rtl,rtl,125.0,95.71428571428571,0.0,0.0,60.0,0.0,113.0,0.0,0.0,0.001,True,
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_01_ConvolutionInputGenerator_rtl_0,ConvolutionInputGenerator_rtl,rtl,125.0,256.56764793339283,0.0,0.0,237.0,64.0,103.0,0.0,0.0,0.003,True,
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_02_MVAU_rtl_0,MVAU_rtl,rtl,125.0,828.3061246836367,0.0,27.0,739.0,144.0,522.0,0.0,27.0,0.057,True,
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_02_MVAU_rtl_0_wstrm,MVAU_rtl_wstrm,wstrm,125.0,0.0,0.0,0.0,220.0,216.0,224.0,0.0,0.0,0.006,True,
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_03_Thresholding_rtl_0,Thresholding_rtl,rtl,125.0,120.0,0.0,0.0,117.0,8.0,334.0,0.0,0.0,0.008,True,
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_04_DuplicateStreams_hls_0,DuplicateStreams_hls,hls,125.0,55.55555555555556,0.0,0.0,62.0,0.0,87.0,0.0,0.0,0.002,True,62.0
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_05_FMPadding_rtl_1,FMPadding_rtl,rtl,125.0,95.71428571428571,0.0,0.0,80.0,0.0,193.0,0.0,0.0,0.003,True,
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_06_ConvolutionInputGenerator_rtl_1,ConvolutionInputGenerator_rtl,rtl,125.0,315.54871642382795,0.0,0.0,365.0,172.0,143.0,0.0,0.0,0.006,True,
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_07_MVAU_rtl_1,MVAU_rtl,rtl,125.0,4212.508809411669,0.0,72.0,3187.0,192.0,1840.0,0.0,72.0,0.282,True,
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_07_MVAU_rtl_1_wstrm,MVAU_rtl_wstrm,wstrm,125.0,0.0,0.0,0.0,1146.0,1142.0,1150.0,0.0,0.0,0.018,True,
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_08_Thresholding_rtl_1,Thresholding_rtl,rtl,125.0,104.0,0.0,0.0,124.0,8.0,328.0,0.0,0.0,0.008,True,
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_09_FMPadding_rtl_2,FMPadding_rtl,rtl,125.0,95.71428571428571,0.0,0.0,80.0,0.0,193.0,0.0,0.0,0.003,True,
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_10_ConvolutionInputGenerator_rtl_2,ConvolutionInputGenerator_rtl,rtl,125.0,315.54871642382795,0.0,0.0,365.0,172.0,143.0,0.0,0.0,0.006,True,
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_11_MVAU_rtl_2,MVAU_rtl,rtl,125.0,4212.508809411669,0.0,72.0,3187.0,192.0,1840.0,0.0,72.0,0.282,True,
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_11_MVAU_rtl_2_wstrm,MVAU_rtl_wstrm,wstrm,125.0,0.0,0.0,0.0,1146.0,1142.0,1150.0,0.0,0.0,0.018,True,
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_12_Thresholding_rtl_2,Thresholding_rtl,rtl,125.0,104.0,0.0,0.0,126.0,8.0,332.0,0.0,0.0,0.008,True,
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_13_AddStreams_hls_0,AddStreams_hls,hls,125.0,56.0,0.0,0.0,65.0,0.0,93.0,0.0,0.0,0.002,True,65.0
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_14_Thresholding_rtl_3,Thresholding_rtl,rtl,125.0,40.0,0.0,0.0,38.0,12.0,113.0,0.0,0.0,0.002,True,
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_15_DuplicateStreams_hls_1,DuplicateStreams_hls,hls,125.0,55.55555555555556,0.0,0.0,62.0,0.0,87.0,0.0,0.0,0.002,True,62.0
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_16_FMPadding_rtl_3,FMPadding_rtl,rtl,125.0,95.71428571428571,0.0,0.0,80.0,0.0,193.0,0.0,0.0,0.003,True,
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_17_DownSampler_hls_0,DownSampler_hls,hls,125.0,159.8181818181818,0.0,0.0,75.0,0.0,94.0,0.0,0.0,0.001,True,75.0
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_18_ConvolutionInputGenerator_rtl_3,ConvolutionInputGenerator_rtl,rtl,125.0,221.17900683913174,1.0,0.0,163.0,0.0,92.0,1.0,0.0,0.003,True,
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_19_MVAU_hls_0,MVAU_hls,hls,125.0,383.02025221180315,0.0,0.0,325.0,0.0,488.0,0.0,0.0,0.009,True,325.0
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_19_MVAU_hls_0_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,37.0,32.0,44.0,0.0,0.0,0.001,True,
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_20_MVAU_hls_1,MVAU_hls,hls,125.0,2295.985134395846,0.0,0.0,2249.0,0.0,4025.0,0.0,0.0,0.049,True,2249.0
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_20_MVAU_hls_1_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,285.0,280.0,292.0,0.0,0.0,0.009,True,
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_21_Thresholding_rtl_4,Thresholding_rtl,rtl,125.0,64.0,0.0,0.0,84.0,4.0,153.0,0.0,0.0,0.004,True,
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_22_Thresholding_rtl_5,Thresholding_rtl,rtl,125.0,80.0,0.0,0.0,94.0,4.0,171.0,0.0,0.0,0.004,True,
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_23_FMPadding_rtl_4,FMPadding_rtl,rtl,125.0,95.71428571428571,0.0,0.0,104.0,0.0,312.0,0.0,0.0,0.005,True,
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_24_ConvolutionInputGenerator_rtl_4,ConvolutionInputGenerator_rtl,rtl,125.0,221.17900683913174,1.0,0.0,154.0,0.0,84.0,1.0,0.0,0.004,True,
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_25_MVAU_hls_2,MVAU_hls,hls,125.0,4447.594137972303,0.0,0.0,4431.0,0.0,7902.0,0.0,0.0,0.078,True,4431.0
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_25_MVAU_hls_2_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,555.0,550.0,562.0,0.0,0.0,0.01,True,
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_26_Thresholding_rtl_6,Thresholding_rtl,rtl,125.0,88.0,0.0,0.0,94.0,4.0,180.0,0.0,0.0,0.004,True,
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_27_AddStreams_hls_1,AddStreams_hls,hls,125.0,56.0,0.0,0.0,55.0,0.0,62.0,0.0,0.0,0.001,True,55.0
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_28_Thresholding_rtl_7,Thresholding_rtl,rtl,125.0,40.0,0.0,0.0,27.0,6.0,66.0,0.0,0.0,0.002,True,
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_29_DuplicateStreams_hls_2,DuplicateStreams_hls,hls,125.0,55.55555555555556,0.0,0.0,56.0,0.0,59.0,0.0,0.0,0.001,True,56.0
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_30_FMPadding_rtl_5,FMPadding_rtl,rtl,125.0,95.71428571428571,0.0,0.0,104.0,0.0,312.0,0.0,0.0,0.005,True,
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_31_DownSampler_hls_1,DownSampler_hls,hls,125.0,159.8181818181818,0.0,0.0,209.0,0.0,216.0,0.0,0.0,0.003,True,209.0
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_32_ConvolutionInputGenerator_rtl_5,ConvolutionInputGenerator_rtl,rtl,125.0,221.17900683913174,1.0,0.0,178.0,0.0,96.0,1.0,0.0,0.004,True,
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_33_MVAU_hls_3,MVAU_hls,hls,125.0,568.8038073576522,1.0,0.0,449.0,0.0,609.0,0.0,0.0,0.015,True,449.0
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_33_MVAU_hls_3_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,7.0,0.0,16.0,1.0,0.0,0.002,True,
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_34_MVAU_hls_4,MVAU_hls,hls,125.0,2641.4186789295563,6.0,0.0,2317.0,0.0,3261.0,0.0,0.0,0.047,True,2317.0
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_34_MVAU_hls_4_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,13.0,0.0,19.0,6.0,0.0,0.015,True,
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_35_Thresholding_rtl_8,Thresholding_rtl,rtl,125.0,27.0,0.0,0.0,46.0,2.0,76.0,0.0,0.0,0.002,True,
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_36_Thresholding_rtl_9,Thresholding_rtl,rtl,125.0,33.0,0.0,0.0,49.0,2.0,82.0,0.0,0.0,0.002,True,
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_37_FMPadding_rtl_6,FMPadding_rtl,rtl,125.0,95.71428571428571,0.0,0.0,98.0,0.0,303.0,0.0,0.0,0.005,True,
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_38_ConvolutionInputGenerator_rtl_6,ConvolutionInputGenerator_rtl,rtl,125.0,221.17900683913174,1.0,0.0,156.0,0.0,88.0,1.0,0.0,0.003,True,
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_39_MVAU_hls_5,MVAU_hls,hls,125.0,3279.4779510962826,11.0,0.0,2828.0,0.0,3824.0,0.0,0.0,0.065,True,2828.0
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_39_MVAU_hls_5_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,13.0,0.0,19.0,11.0,0.0,0.027,True,
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_40_Thresholding_rtl_10,Thresholding_rtl,rtl,125.0,27.0,0.0,0.0,41.0,2.0,73.0,0.0,0.0,0.002,True,
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_41_AddStreams_hls_2,AddStreams_hls,hls,125.0,56.0,0.0,0.0,59.0,0.0,47.0,0.0,0.0,0.001,True,59.0
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_42_Thresholding_rtl_11,Thresholding_rtl,rtl,125.0,9.0,0.0,0.0,17.0,2.0,28.0,0.0,0.0,0.001,True,
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_43_ConvolutionInputGenerator_rtl_7,ConvolutionInputGenerator_rtl,rtl,125.0,221.17900683913174,1.0,0.0,145.0,0.0,92.0,1.0,0.0,0.003,True,
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_44_Pool_hls_0,Pool_hls,hls,125.0,121.66666666666667,0.0,0.0,107.0,0.0,88.0,0.0,0.0,0.002,True,107.0
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_45_MVAU_rtl_3,MVAU_rtl,rtl,125.0,97.79867899737297,0.0,1.0,66.0,12.0,118.0,0.0,1.0,0.004,True,
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_45_MVAU_rtl_3_wstrm,MVAU_rtl_wstrm,wstrm,125.0,0.0,0.0,0.0,51.0,40.0,27.0,0.0,0.0,0.001,True,
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_46_ChannelwiseOp_hls_0,ChannelwiseOp_hls,hls,125.0,78.0,0.0,0.0,84.0,0.0,165.0,0.0,0.0,0.003,True,84.0
+vd3,44242248_dsp4c_14286,"A' margin 3, 3-seed verified pick",d1_47_LabelSelect_hls_0,LabelSelect_hls,hls,125.0,200.0,0.0,0.0,170.0,0.0,213.0,0.0,0.0,0.005,True,170.0
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_00_FMPadding_rtl_0,FMPadding_rtl,rtl,125.0,95.71428571428571,0.0,0.0,60.0,0.0,113.0,0.0,0.0,0.001,True,
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_01_ConvolutionInputGenerator_rtl_0,ConvolutionInputGenerator_rtl,rtl,125.0,256.56764793339283,0.0,0.0,237.0,64.0,103.0,0.0,0.0,0.003,True,
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_02_MVAU_rtl_0,MVAU_rtl,rtl,125.0,828.3061246836367,0.0,27.0,739.0,144.0,522.0,0.0,27.0,0.057,True,
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_02_MVAU_rtl_0_wstrm,MVAU_rtl_wstrm,wstrm,125.0,0.0,0.0,0.0,220.0,216.0,224.0,0.0,0.0,0.006,True,
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_03_Thresholding_rtl_0,Thresholding_rtl,rtl,125.0,60.0,0.0,0.0,60.0,4.0,144.0,0.0,0.0,0.003,True,
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_04_DuplicateStreams_hls_0,DuplicateStreams_hls,hls,125.0,55.55555555555556,0.0,0.0,56.0,0.0,59.0,0.0,0.0,0.001,True,56.0
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_05_FMPadding_rtl_1,FMPadding_rtl,rtl,125.0,95.71428571428571,0.0,0.0,64.0,0.0,129.0,0.0,0.0,0.002,True,
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_06_ConvolutionInputGenerator_rtl_1,ConvolutionInputGenerator_rtl,rtl,125.0,268.36386163147984,0.0,0.0,265.0,88.0,111.0,0.0,0.0,0.004,True,
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_07_MVAU_hls_0,MVAU_hls,hls,125.0,6035.778503511739,0.0,0.0,3780.0,0.0,6484.0,0.0,0.0,0.087,True,3780.0
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_07_MVAU_hls_0_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,1144.0,1140.0,1148.0,0.0,0.0,0.018,True,
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_08_Thresholding_rtl_1,Thresholding_rtl,rtl,125.0,44.0,0.0,0.0,53.0,4.0,120.0,0.0,0.0,0.002,True,
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_09_FMPadding_rtl_2,FMPadding_rtl,rtl,125.0,95.71428571428571,0.0,0.0,64.0,0.0,129.0,0.0,0.0,0.002,True,
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_10_ConvolutionInputGenerator_rtl_2,ConvolutionInputGenerator_rtl,rtl,125.0,268.36386163147984,0.0,0.0,265.0,88.0,111.0,0.0,0.0,0.004,True,
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_11_MVAU_hls_1,MVAU_hls,hls,125.0,6035.778503511739,0.0,0.0,3780.0,0.0,6484.0,0.0,0.0,0.087,True,3780.0
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_11_MVAU_hls_1_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,1145.0,1141.0,1149.0,0.0,0.0,0.018,True,
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_12_Thresholding_rtl_2,Thresholding_rtl,rtl,125.0,44.0,0.0,0.0,52.0,4.0,119.0,0.0,0.0,0.002,True,
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_13_AddStreams_hls_0,AddStreams_hls,hls,125.0,56.0,0.0,0.0,54.0,0.0,65.0,0.0,0.0,0.001,True,54.0
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_14_Thresholding_rtl_3,Thresholding_rtl,rtl,125.0,12.0,0.0,0.0,21.0,4.0,43.0,0.0,0.0,0.001,True,
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_15_DuplicateStreams_hls_1,DuplicateStreams_hls,hls,125.0,55.55555555555556,0.0,0.0,56.0,0.0,59.0,0.0,0.0,0.001,True,56.0
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_16_FMPadding_rtl_3,FMPadding_rtl,rtl,125.0,95.71428571428571,0.0,0.0,64.0,0.0,129.0,0.0,0.0,0.002,True,
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_17_DownSampler_hls_0,DownSampler_hls,hls,125.0,159.8181818181818,0.0,0.0,96.0,0.0,94.0,0.0,0.0,0.001,True,96.0
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_18_ConvolutionInputGenerator_rtl_3,ConvolutionInputGenerator_rtl,rtl,125.0,221.17900683913174,1.0,0.0,163.0,0.0,92.0,1.0,0.0,0.003,True,
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_19_MVAU_hls_2,MVAU_hls,hls,125.0,332.51243086904634,0.0,0.0,257.0,0.0,303.0,0.0,0.0,0.007,True,257.0
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_19_MVAU_hls_2_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,37.0,32.0,44.0,0.0,0.0,0.001,True,
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_20_MVAU_hls_3,MVAU_hls,hls,125.0,1843.3206978334028,0.0,0.0,1453.0,0.0,2322.0,0.0,0.0,0.034,True,1453.0
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_20_MVAU_hls_3_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,285.0,280.0,292.0,0.0,0.0,0.009,True,
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_21_Thresholding_rtl_4,Thresholding_rtl,rtl,125.0,12.0,0.0,0.0,28.0,2.0,64.0,0.0,0.0,0.001,True,
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_22_Thresholding_rtl_5,Thresholding_rtl,rtl,125.0,16.0,0.0,0.0,31.0,2.0,70.0,0.0,0.0,0.002,True,
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_23_FMPadding_rtl_4,FMPadding_rtl,rtl,125.0,95.71428571428571,0.0,0.0,72.0,0.0,184.0,0.0,0.0,0.003,True,
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_24_ConvolutionInputGenerator_rtl_4,ConvolutionInputGenerator_rtl,rtl,125.0,221.17900683913174,1.0,0.0,154.0,0.0,84.0,1.0,0.0,0.003,True,
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_25_MVAU_hls_4,MVAU_hls,hls,125.0,3541.788775966824,0.0,0.0,2779.0,0.0,4577.0,0.0,0.0,0.061,True,2779.0
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_25_MVAU_hls_4_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,555.0,550.0,562.0,0.0,0.0,0.01,True,
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_26_Thresholding_rtl_6,Thresholding_rtl,rtl,125.0,16.0,0.0,0.0,31.0,2.0,70.0,0.0,0.0,0.002,True,
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_27_AddStreams_hls_1,AddStreams_hls,hls,125.0,56.0,0.0,0.0,60.0,0.0,48.0,0.0,0.0,0.001,True,60.0
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_28_Thresholding_rtl_7,Thresholding_rtl,rtl,125.0,6.0,0.0,0.0,17.0,2.0,28.0,0.0,0.0,0.001,True,
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_29_DuplicateStreams_hls_2,DuplicateStreams_hls,hls,125.0,55.55555555555556,0.0,0.0,60.0,0.0,45.0,0.0,0.0,0.001,True,60.0
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_30_FMPadding_rtl_5,FMPadding_rtl,rtl,125.0,95.71428571428571,0.0,0.0,72.0,0.0,184.0,0.0,0.0,0.003,True,
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_31_DownSampler_hls_1,DownSampler_hls,hls,125.0,159.8181818181818,0.0,0.0,212.0,0.0,144.0,0.0,0.0,0.003,True,212.0
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_32_ConvolutionInputGenerator_rtl_5,ConvolutionInputGenerator_rtl,rtl,125.0,221.17900683913174,1.0,0.0,178.0,0.0,96.0,1.0,0.0,0.004,True,
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_33_MVAU_hls_5,MVAU_hls,hls,125.0,414.16596400167487,1.0,0.0,354.0,0.0,411.0,0.0,0.0,0.011,True,354.0
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_33_MVAU_hls_5_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,7.0,0.0,16.0,1.0,0.0,0.002,True,
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_34_MVAU_hls_6,MVAU_hls,hls,125.0,1716.9270409578362,6.0,0.0,1513.0,0.0,2028.0,0.0,0.0,0.034,True,1513.0
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_34_MVAU_hls_6_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,13.0,0.0,19.0,6.0,0.0,0.015,True,
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_35_Thresholding_rtl_8,Thresholding_rtl,rtl,125.0,42.0,1.0,0.0,62.0,7.0,122.0,1.0,0.0,0.004,True,
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_36_Thresholding_rtl_9,Thresholding_rtl,rtl,125.0,56.0,1.0,0.0,71.0,7.0,139.0,1.0,0.0,0.004,True,
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_37_FMPadding_rtl_6,FMPadding_rtl,rtl,125.0,95.71428571428571,0.0,0.0,162.0,0.0,559.0,0.0,0.0,0.011,True,
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_38_ConvolutionInputGenerator_rtl_6,ConvolutionInputGenerator_rtl,rtl,125.0,221.17900683913174,1.0,0.0,156.0,0.0,88.0,1.0,0.0,0.003,True,
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_39_MVAU_hls_7,MVAU_hls,hls,125.0,5127.508249278539,11.0,0.0,4106.0,0.0,6166.0,0.0,0.0,0.094,True,4106.0
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_39_MVAU_hls_7_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,13.0,0.0,19.0,11.0,0.0,0.027,True,
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_40_Thresholding_rtl_10,Thresholding_rtl,rtl,125.0,77.0,1.0,0.0,91.0,7.0,164.0,1.0,0.0,0.005,True,
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_41_AddStreams_hls_2,AddStreams_hls,hls,125.0,56.0,0.0,0.0,54.0,0.0,61.0,0.0,0.0,0.001,True,54.0
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_42_Thresholding_rtl_11,Thresholding_rtl,rtl,125.0,75.0,0.0,0.0,27.0,6.0,66.0,0.0,0.0,0.002,True,
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_43_ConvolutionInputGenerator_rtl_7,ConvolutionInputGenerator_rtl,rtl,125.0,221.17900683913174,1.0,0.0,145.0,0.0,92.0,1.0,0.0,0.004,True,
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_44_Pool_hls_0,Pool_hls,hls,125.0,121.66666666666667,0.0,0.0,122.0,0.0,102.0,0.0,0.0,0.002,True,122.0
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_45_MVAU_rtl_1,MVAU_rtl,rtl,125.0,97.79867899737297,0.0,1.0,66.0,12.0,118.0,0.0,1.0,0.004,True,
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_45_MVAU_rtl_1_wstrm,MVAU_rtl_wstrm,wstrm,125.0,0.0,0.0,0.0,51.0,40.0,27.0,0.0,0.0,0.001,True,
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_46_ChannelwiseOp_hls_0,ChannelwiseOp_hls,hls,125.0,78.0,0.0,0.0,78.0,0.0,167.0,0.0,0.0,0.003,True,78.0
+vd3,42222448_dspc_14286,"A' margin 5, verified pick",d2_47_LabelSelect_hls_0,LabelSelect_hls,hls,125.0,200.0,0.0,0.0,170.0,0.0,213.0,0.0,0.0,0.005,True,170.0
+vd3,22222448_dspc_14286,A' margin 8,d3_00_FMPadding_rtl_0,FMPadding_rtl,rtl,125.0,95.71428571428571,0.0,0.0,60.0,0.0,113.0,0.0,0.0,0.001,True,
+vd3,22222448_dspc_14286,A' margin 8,d3_01_ConvolutionInputGenerator_rtl_0,ConvolutionInputGenerator_rtl,rtl,125.0,256.56764793339283,0.0,0.0,237.0,64.0,103.0,0.0,0.0,0.003,True,
+vd3,22222448_dspc_14286,A' margin 8,d3_02_MVAU_hls_0,MVAU_hls,hls,125.0,1857.2731136063358,0.0,0.0,1227.0,0.0,1898.0,0.0,0.0,0.029,True,1227.0
+vd3,22222448_dspc_14286,A' margin 8,d3_02_MVAU_hls_0_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,94.0,90.0,98.0,0.0,0.0,0.002,True,
+vd3,22222448_dspc_14286,A' margin 8,d3_03_Thresholding_rtl_0,Thresholding_rtl,rtl,125.0,48.0,0.0,0.0,47.0,4.0,116.0,0.0,0.0,0.002,True,
+vd3,22222448_dspc_14286,A' margin 8,d3_04_DuplicateStreams_hls_0,DuplicateStreams_hls,hls,125.0,55.55555555555556,0.0,0.0,56.0,0.0,59.0,0.0,0.0,0.001,True,56.0
+vd3,22222448_dspc_14286,A' margin 8,d3_05_FMPadding_rtl_1,FMPadding_rtl,rtl,125.0,95.71428571428571,0.0,0.0,64.0,0.0,129.0,0.0,0.0,0.002,True,
+vd3,22222448_dspc_14286,A' margin 8,d3_06_ConvolutionInputGenerator_rtl_1,ConvolutionInputGenerator_rtl,rtl,125.0,268.36386163147984,0.0,0.0,265.0,88.0,111.0,0.0,0.0,0.004,True,
+vd3,22222448_dspc_14286,A' margin 8,d3_07_MVAU_hls_1,MVAU_hls,hls,125.0,3543.694731489192,0.0,0.0,2570.0,0.0,3700.0,0.0,0.0,0.061,True,2570.0
+vd3,22222448_dspc_14286,A' margin 8,d3_07_MVAU_hls_1_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,352.0,348.0,356.0,0.0,0.0,0.012,True,
+vd3,22222448_dspc_14286,A' margin 8,d3_08_Thresholding_rtl_1,Thresholding_rtl,rtl,125.0,32.0,0.0,0.0,39.0,4.0,91.0,0.0,0.0,0.002,True,
+vd3,22222448_dspc_14286,A' margin 8,d3_09_FMPadding_rtl_2,FMPadding_rtl,rtl,125.0,95.71428571428571,0.0,0.0,64.0,0.0,129.0,0.0,0.0,0.002,True,
+vd3,22222448_dspc_14286,A' margin 8,d3_10_ConvolutionInputGenerator_rtl_2,ConvolutionInputGenerator_rtl,rtl,125.0,268.36386163147984,0.0,0.0,265.0,88.0,111.0,0.0,0.0,0.004,True,
+vd3,22222448_dspc_14286,A' margin 8,d3_11_MVAU_hls_2,MVAU_hls,hls,125.0,3543.694731489192,0.0,0.0,2570.0,0.0,3700.0,0.0,0.0,0.061,True,2570.0
+vd3,22222448_dspc_14286,A' margin 8,d3_11_MVAU_hls_2_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,341.0,337.0,345.0,0.0,0.0,0.011,True,
+vd3,22222448_dspc_14286,A' margin 8,d3_12_Thresholding_rtl_2,Thresholding_rtl,rtl,125.0,32.0,0.0,0.0,41.0,4.0,95.0,0.0,0.0,0.002,True,
+vd3,22222448_dspc_14286,A' margin 8,d3_13_AddStreams_hls_0,AddStreams_hls,hls,125.0,56.0,0.0,0.0,54.0,0.0,65.0,0.0,0.0,0.001,True,54.0
+vd3,22222448_dspc_14286,A' margin 8,d3_14_Thresholding_rtl_3,Thresholding_rtl,rtl,125.0,12.0,0.0,0.0,21.0,4.0,43.0,0.0,0.0,0.001,True,
+vd3,22222448_dspc_14286,A' margin 8,d3_15_DuplicateStreams_hls_1,DuplicateStreams_hls,hls,125.0,55.55555555555556,0.0,0.0,56.0,0.0,59.0,0.0,0.0,0.001,True,56.0
+vd3,22222448_dspc_14286,A' margin 8,d3_16_FMPadding_rtl_3,FMPadding_rtl,rtl,125.0,95.71428571428571,0.0,0.0,64.0,0.0,129.0,0.0,0.0,0.002,True,
+vd3,22222448_dspc_14286,A' margin 8,d3_17_DownSampler_hls_0,DownSampler_hls,hls,125.0,159.8181818181818,0.0,0.0,96.0,0.0,94.0,0.0,0.0,0.001,True,96.0
+vd3,22222448_dspc_14286,A' margin 8,d3_18_ConvolutionInputGenerator_rtl_3,ConvolutionInputGenerator_rtl,rtl,125.0,221.17900683913174,1.0,0.0,163.0,0.0,92.0,1.0,0.0,0.003,True,
+vd3,22222448_dspc_14286,A' margin 8,d3_19_MVAU_hls_3,MVAU_hls,hls,125.0,332.51243086904634,0.0,0.0,257.0,0.0,303.0,0.0,0.0,0.007,True,257.0
+vd3,22222448_dspc_14286,A' margin 8,d3_19_MVAU_hls_3_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,37.0,32.0,44.0,0.0,0.0,0.001,True,
+vd3,22222448_dspc_14286,A' margin 8,d3_20_MVAU_hls_4,MVAU_hls,hls,125.0,1843.3206978334028,0.0,0.0,1453.0,0.0,2322.0,0.0,0.0,0.034,True,1453.0
+vd3,22222448_dspc_14286,A' margin 8,d3_20_MVAU_hls_4_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,285.0,280.0,292.0,0.0,0.0,0.009,True,
+vd3,22222448_dspc_14286,A' margin 8,d3_21_Thresholding_rtl_4,Thresholding_rtl,rtl,125.0,12.0,0.0,0.0,28.0,2.0,64.0,0.0,0.0,0.001,True,
+vd3,22222448_dspc_14286,A' margin 8,d3_22_Thresholding_rtl_5,Thresholding_rtl,rtl,125.0,16.0,0.0,0.0,31.0,2.0,70.0,0.0,0.0,0.002,True,
+vd3,22222448_dspc_14286,A' margin 8,d3_23_FMPadding_rtl_4,FMPadding_rtl,rtl,125.0,95.71428571428571,0.0,0.0,72.0,0.0,184.0,0.0,0.0,0.003,True,
+vd3,22222448_dspc_14286,A' margin 8,d3_24_ConvolutionInputGenerator_rtl_4,ConvolutionInputGenerator_rtl,rtl,125.0,221.17900683913174,1.0,0.0,154.0,0.0,84.0,1.0,0.0,0.003,True,
+vd3,22222448_dspc_14286,A' margin 8,d3_25_MVAU_hls_5,MVAU_hls,hls,125.0,3541.788775966824,0.0,0.0,2779.0,0.0,4577.0,0.0,0.0,0.061,True,2779.0
+vd3,22222448_dspc_14286,A' margin 8,d3_25_MVAU_hls_5_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,555.0,550.0,562.0,0.0,0.0,0.01,True,
+vd3,22222448_dspc_14286,A' margin 8,d3_26_Thresholding_rtl_6,Thresholding_rtl,rtl,125.0,16.0,0.0,0.0,31.0,2.0,70.0,0.0,0.0,0.002,True,
+vd3,22222448_dspc_14286,A' margin 8,d3_27_AddStreams_hls_1,AddStreams_hls,hls,125.0,56.0,0.0,0.0,60.0,0.0,48.0,0.0,0.0,0.001,True,60.0
+vd3,22222448_dspc_14286,A' margin 8,d3_28_Thresholding_rtl_7,Thresholding_rtl,rtl,125.0,6.0,0.0,0.0,17.0,2.0,28.0,0.0,0.0,0.001,True,
+vd3,22222448_dspc_14286,A' margin 8,d3_29_DuplicateStreams_hls_2,DuplicateStreams_hls,hls,125.0,55.55555555555556,0.0,0.0,60.0,0.0,45.0,0.0,0.0,0.001,True,60.0
+vd3,22222448_dspc_14286,A' margin 8,d3_30_FMPadding_rtl_5,FMPadding_rtl,rtl,125.0,95.71428571428571,0.0,0.0,72.0,0.0,184.0,0.0,0.0,0.003,True,
+vd3,22222448_dspc_14286,A' margin 8,d3_31_DownSampler_hls_1,DownSampler_hls,hls,125.0,159.8181818181818,0.0,0.0,212.0,0.0,144.0,0.0,0.0,0.003,True,212.0
+vd3,22222448_dspc_14286,A' margin 8,d3_32_ConvolutionInputGenerator_rtl_5,ConvolutionInputGenerator_rtl,rtl,125.0,221.17900683913174,1.0,0.0,178.0,0.0,96.0,1.0,0.0,0.004,True,
+vd3,22222448_dspc_14286,A' margin 8,d3_33_MVAU_hls_6,MVAU_hls,hls,125.0,414.16596400167487,1.0,0.0,354.0,0.0,411.0,0.0,0.0,0.011,True,354.0
+vd3,22222448_dspc_14286,A' margin 8,d3_33_MVAU_hls_6_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,7.0,0.0,16.0,1.0,0.0,0.002,True,
+vd3,22222448_dspc_14286,A' margin 8,d3_34_MVAU_hls_7,MVAU_hls,hls,125.0,1716.9270409578362,6.0,0.0,1513.0,0.0,2028.0,0.0,0.0,0.034,True,1513.0
+vd3,22222448_dspc_14286,A' margin 8,d3_34_MVAU_hls_7_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,13.0,0.0,19.0,6.0,0.0,0.015,True,
+vd3,22222448_dspc_14286,A' margin 8,d3_35_Thresholding_rtl_8,Thresholding_rtl,rtl,125.0,42.0,1.0,0.0,62.0,7.0,122.0,1.0,0.0,0.004,True,
+vd3,22222448_dspc_14286,A' margin 8,d3_36_Thresholding_rtl_9,Thresholding_rtl,rtl,125.0,56.0,1.0,0.0,71.0,7.0,139.0,1.0,0.0,0.004,True,
+vd3,22222448_dspc_14286,A' margin 8,d3_37_FMPadding_rtl_6,FMPadding_rtl,rtl,125.0,95.71428571428571,0.0,0.0,162.0,0.0,559.0,0.0,0.0,0.011,True,
+vd3,22222448_dspc_14286,A' margin 8,d3_38_ConvolutionInputGenerator_rtl_6,ConvolutionInputGenerator_rtl,rtl,125.0,221.17900683913174,1.0,0.0,156.0,0.0,88.0,1.0,0.0,0.003,True,
+vd3,22222448_dspc_14286,A' margin 8,d3_39_MVAU_hls_8,MVAU_hls,hls,125.0,5127.508249278539,11.0,0.0,4106.0,0.0,6166.0,0.0,0.0,0.094,True,4106.0
+vd3,22222448_dspc_14286,A' margin 8,d3_39_MVAU_hls_8_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,13.0,0.0,19.0,11.0,0.0,0.027,True,
+vd3,22222448_dspc_14286,A' margin 8,d3_40_Thresholding_rtl_10,Thresholding_rtl,rtl,125.0,77.0,1.0,0.0,91.0,7.0,164.0,1.0,0.0,0.005,True,
+vd3,22222448_dspc_14286,A' margin 8,d3_41_AddStreams_hls_2,AddStreams_hls,hls,125.0,56.0,0.0,0.0,54.0,0.0,61.0,0.0,0.0,0.001,True,54.0
+vd3,22222448_dspc_14286,A' margin 8,d3_42_Thresholding_rtl_11,Thresholding_rtl,rtl,125.0,75.0,0.0,0.0,27.0,6.0,66.0,0.0,0.0,0.002,True,
+vd3,22222448_dspc_14286,A' margin 8,d3_43_ConvolutionInputGenerator_rtl_7,ConvolutionInputGenerator_rtl,rtl,125.0,221.17900683913174,1.0,0.0,145.0,0.0,92.0,1.0,0.0,0.004,True,
+vd3,22222448_dspc_14286,A' margin 8,d3_44_Pool_hls_0,Pool_hls,hls,125.0,121.66666666666667,0.0,0.0,122.0,0.0,102.0,0.0,0.0,0.002,True,122.0
+vd3,22222448_dspc_14286,A' margin 8,d3_45_MVAU_rtl_0,MVAU_rtl,rtl,125.0,97.79867899737297,0.0,1.0,66.0,12.0,118.0,0.0,1.0,0.004,True,
+vd3,22222448_dspc_14286,A' margin 8,d3_45_MVAU_rtl_0_wstrm,MVAU_rtl_wstrm,wstrm,125.0,0.0,0.0,0.0,51.0,40.0,27.0,0.0,0.0,0.001,True,
+vd3,22222448_dspc_14286,A' margin 8,d3_46_ChannelwiseOp_hls_0,ChannelwiseOp_hls,hls,125.0,78.0,0.0,0.0,78.0,0.0,167.0,0.0,0.0,0.003,True,78.0
+vd3,22222448_dspc_14286,A' margin 8,d3_47_LabelSelect_hls_0,LabelSelect_hls,hls,125.0,200.0,0.0,0.0,170.0,0.0,213.0,0.0,0.0,0.005,True,170.0
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_00_FMPadding_rtl_0,FMPadding_rtl,rtl,125.0,95.71428571428571,0.0,0.0,60.0,0.0,113.0,0.0,0.0,0.001,True,
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_01_ConvolutionInputGenerator_rtl_0,ConvolutionInputGenerator_rtl,rtl,125.0,221.17900683913174,1.0,0.0,159.0,0.0,79.0,1.0,0.0,0.004,True,
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_02_MVAU_hls_0,MVAU_hls,hls,125.0,1307.0027329715483,6.0,54.0,1049.0,0.0,1569.0,0.0,54.0,0.102,True,1049.0
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_02_MVAU_hls_0_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,4.0,0.0,8.0,6.0,0.0,0.012,True,
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_03_DuplicateStreams_hls_0,DuplicateStreams_hls,hls,125.0,55.55555555555556,0.0,0.0,62.0,0.0,87.0,0.0,0.0,0.002,True,62.0
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_04_FMPadding_rtl_1,FMPadding_rtl,rtl,125.0,95.71428571428571,0.0,0.0,80.0,0.0,193.0,0.0,0.0,0.003,True,
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_05_ConvolutionInputGenerator_rtl_1,ConvolutionInputGenerator_rtl,rtl,125.0,221.17900683913174,2.0,0.0,159.0,0.0,79.0,2.0,0.0,0.005,True,
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_06_MVAU_hls_1,MVAU_hls,hls,125.0,8623.733460786272,32.0,0.0,8741.0,0.0,8856.0,0.0,0.0,0.115,True,8741.0
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_06_MVAU_hls_1_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,21.0,0.0,53.0,32.0,0.0,0.062,True,
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_07_FMPadding_rtl_2,FMPadding_rtl,rtl,125.0,95.71428571428571,0.0,0.0,80.0,0.0,193.0,0.0,0.0,0.003,True,
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_08_ConvolutionInputGenerator_rtl_2,ConvolutionInputGenerator_rtl,rtl,125.0,221.17900683913174,2.0,0.0,159.0,0.0,79.0,2.0,0.0,0.005,True,
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_09_MVAU_hls_2,MVAU_hls,hls,125.0,8623.733460786272,32.0,0.0,8745.0,0.0,8888.0,0.0,0.0,0.116,True,8745.0
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_09_MVAU_hls_2_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,21.0,0.0,53.0,32.0,0.0,0.062,True,
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_10_AddStreams_hls_0,AddStreams_hls,hls,125.0,56.0,0.0,0.0,65.0,0.0,93.0,0.0,0.0,0.002,True,65.0
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_11_Thresholding_rtl_0,Thresholding_rtl,rtl,125.0,40.0,0.0,0.0,38.0,12.0,113.0,0.0,0.0,0.002,True,
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_12_DuplicateStreams_hls_1,DuplicateStreams_hls,hls,125.0,55.55555555555556,0.0,0.0,62.0,0.0,87.0,0.0,0.0,0.002,True,62.0
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_13_FMPadding_rtl_3,FMPadding_rtl,rtl,125.0,95.71428571428571,0.0,0.0,80.0,0.0,193.0,0.0,0.0,0.003,True,
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_14_DownSampler_hls_0,DownSampler_hls,hls,125.0,159.8181818181818,0.0,0.0,75.0,0.0,94.0,0.0,0.0,0.001,True,75.0
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_15_ConvolutionInputGenerator_rtl_3,ConvolutionInputGenerator_rtl,rtl,125.0,221.17900683913174,1.0,0.0,163.0,0.0,92.0,1.0,0.0,0.003,True,
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_16_MVAU_hls_3,MVAU_hls,hls,125.0,461.23496992066725,2.0,16.0,480.0,0.0,563.0,0.0,16.0,0.039,True,480.0
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_16_MVAU_hls_3_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,5.0,0.0,12.0,2.0,0.0,0.004,True,
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_17_MVAU_hls_4,MVAU_hls,hls,125.0,1567.1656617748054,16.0,144.0,2031.0,0.0,3613.0,0.0,144.0,0.185,True,2031.0
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_17_MVAU_hls_4_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,5.0,0.0,12.0,16.0,0.0,0.031,True,
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_18_FMPadding_rtl_4,FMPadding_rtl,rtl,125.0,95.71428571428571,0.0,0.0,104.0,0.0,312.0,0.0,0.0,0.005,True,
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_19_ConvolutionInputGenerator_rtl_4,ConvolutionInputGenerator_rtl,rtl,125.0,221.17900683913174,1.0,0.0,154.0,0.0,84.0,1.0,0.0,0.004,True,
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_20_MVAU_hls_5,MVAU_hls,hls,125.0,8432.661419668862,32.0,0.0,8680.0,0.0,10371.0,0.0,0.0,0.122,True,8680.0
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_20_MVAU_hls_5_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,22.0,0.0,87.0,32.0,0.0,0.062,True,
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_21_AddStreams_hls_1,AddStreams_hls,hls,125.0,56.0,0.0,0.0,55.0,0.0,62.0,0.0,0.0,0.001,True,55.0
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_22_Thresholding_rtl_1,Thresholding_rtl,rtl,125.0,10.0,2.0,0.0,39.0,14.0,82.0,2.0,0.0,0.005,True,
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_23_DuplicateStreams_hls_2,DuplicateStreams_hls,hls,125.0,55.55555555555556,0.0,0.0,56.0,0.0,59.0,0.0,0.0,0.001,True,56.0
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_24_FMPadding_rtl_5,FMPadding_rtl,rtl,125.0,95.71428571428571,0.0,0.0,104.0,0.0,312.0,0.0,0.0,0.005,True,
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_25_DownSampler_hls_1,DownSampler_hls,hls,125.0,159.8181818181818,0.0,0.0,209.0,0.0,216.0,0.0,0.0,0.003,True,209.0
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_26_ConvolutionInputGenerator_rtl_5,ConvolutionInputGenerator_rtl,rtl,125.0,221.17900683913174,1.0,0.0,178.0,0.0,96.0,1.0,0.0,0.004,True,
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_27_MVAU_hls_6,MVAU_hls,hls,125.0,998.4447248671429,2.0,0.0,916.0,0.0,969.0,0.0,0.0,0.035,True,916.0
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_27_MVAU_hls_6_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,7.0,0.0,16.0,2.0,0.0,0.004,True,
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_28_MVAU_hls_7,MVAU_hls,hls,125.0,4305.358511010957,11.0,0.0,4002.0,0.0,4141.0,0.0,0.0,0.081,True,4002.0
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_28_MVAU_hls_7_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,13.0,0.0,19.0,11.0,0.0,0.027,True,
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_29_FMPadding_rtl_6,FMPadding_rtl,rtl,125.0,95.71428571428571,0.0,0.0,162.0,0.0,559.0,0.0,0.0,0.011,True,
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_30_ConvolutionInputGenerator_rtl_6,ConvolutionInputGenerator_rtl,rtl,125.0,221.17900683913174,1.0,0.0,156.0,0.0,88.0,1.0,0.0,0.003,True,
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_31_MVAU_hls_8,MVAU_hls,hls,125.0,8250.974183667351,22.0,0.0,7595.0,0.0,7888.0,0.0,0.0,0.149,True,7595.0
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_31_MVAU_hls_8_wstrm,MVAU_hls_wstrm,wstrm,125.0,0.0,0.0,0.0,13.0,0.0,19.0,22.0,0.0,0.053,True,
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_32_AddStreams_hls_2,AddStreams_hls,hls,125.0,56.0,0.0,0.0,54.0,0.0,61.0,0.0,0.0,0.001,True,54.0
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_33_Thresholding_rtl_2,Thresholding_rtl,rtl,125.0,5.0,3.0,0.0,34.0,7.0,104.0,3.0,0.0,0.006,True,
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_34_ConvolutionInputGenerator_rtl_7,ConvolutionInputGenerator_rtl,rtl,125.0,221.17900683913174,1.0,0.0,145.0,0.0,92.0,1.0,0.0,0.004,True,
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_35_Pool_hls_0,Pool_hls,hls,125.0,121.66666666666667,0.0,0.0,120.0,0.0,90.0,0.0,0.0,0.002,True,120.0
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_36_MVAU_rtl_0,MVAU_rtl,rtl,125.0,67.79867899737297,1.0,1.0,58.0,6.0,98.0,0.0,1.0,0.003,True,
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_36_MVAU_rtl_0_wstrm,MVAU_rtl_wstrm,wstrm,125.0,0.0,0.0,0.0,7.0,0.0,23.0,1.0,0.0,0.001,True,
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_37_ChannelwiseOp_hls_0,ChannelwiseOp_hls,hls,125.0,78.0,0.0,0.0,68.0,0.0,139.0,0.0,0.0,0.002,True,68.0
+vd4,44444444_lut_14286,B1 margin 2-3 at the fast level: fewest-LUT variants (v2.1 predicts 109% of the LUT budget),d0_38_LabelSelect_hls_0,LabelSelect_hls,hls,125.0,200.0,0.0,0.0,217.0,0.0,172.0,0.0,0.0,0.004,True,217.0

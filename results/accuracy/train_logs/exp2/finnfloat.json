@@ -1,0 +1,274 @@
+{
+ "args": {
+  "model": "finnfloat",
+  "bits": [
+   8,
+   8,
+   8,
+   8,
+   8,
+   8,
+   8,
+   8
+  ],
+  "recipe": "default",
+  "epochs": 40,
+  "batch": 128,
+  "lr": 0.1,
+  "wd": 0.0001,
+  "data": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/cifar_hf/cifar10.npz",
+  "init": null,
+  "reinit_act": false,
+  "teacher": null,
+  "kd_alpha": 0.7,
+  "kd_t": 4.0,
+  "seed": 0,
+  "save": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp1\\finnfloat.pt",
+  "log": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp1\\finnfloat.json"
+ },
+ "history": [
+  {
+   "epoch": 1,
+   "sec": 6.3,
+   "loss": 1.573,
+   "test_acc": 34.44
+  },
+  {
+   "epoch": 2,
+   "sec": 2.8,
+   "loss": 1.533,
+   "test_acc": 43.97
+  },
+  {
+   "epoch": 3,
+   "sec": 2.8,
+   "loss": 1.264,
+   "test_acc": 50.21
+  },
+  {
+   "epoch": 4,
+   "sec": 2.8,
+   "loss": 0.97,
+   "test_acc": 61.02
+  },
+  {
+   "epoch": 5,
+   "sec": 2.8,
+   "loss": 0.762,
+   "test_acc": 55.39
+  },
+  {
+   "epoch": 6,
+   "sec": 2.8,
+   "loss": 0.969,
+   "test_acc": 63.71
+  },
+  {
+   "epoch": 7,
+   "sec": 2.8,
+   "loss": 0.755,
+   "test_acc": 60.87
+  },
+  {
+   "epoch": 8,
+   "sec": 2.8,
+   "loss": 0.741,
+   "test_acc": 61.18
+  },
+  {
+   "epoch": 9,
+   "sec": 2.8,
+   "loss": 0.787,
+   "test_acc": 70.57
+  },
+  {
+   "epoch": 10,
+   "sec": 2.8,
+   "loss": 0.668,
+   "test_acc": 67.93
+  },
+  {
+   "epoch": 11,
+   "sec": 2.9,
+   "loss": 0.65,
+   "test_acc": 69.81
+  },
+  {
+   "epoch": 12,
+   "sec": 2.9,
+   "loss": 0.648,
+   "test_acc": 74.33
+  },
+  {
+   "epoch": 13,
+   "sec": 2.8,
+   "loss": 0.636,
+   "test_acc": 69.71
+  },
+  {
+   "epoch": 14,
+   "sec": 2.9,
+   "loss": 0.626,
+   "test_acc": 71.72
+  },
+  {
+   "epoch": 15,
+   "sec": 2.9,
+   "loss": 0.541,
+   "test_acc": 74.98
+  },
+  {
+   "epoch": 16,
+   "sec": 2.9,
+   "loss": 0.635,
+   "test_acc": 77.09
+  },
+  {
+   "epoch": 17,
+   "sec": 2.9,
+   "loss": 0.456,
+   "test_acc": 76.37
+  },
+  {
+   "epoch": 18,
+   "sec": 2.9,
+   "loss": 0.484,
+   "test_acc": 76.53
+  },
+  {
+   "epoch": 19,
+   "sec": 2.9,
+   "loss": 0.572,
+   "test_acc": 77.92
+  },
+  {
+   "epoch": 20,
+   "sec": 2.9,
+   "loss": 0.513,
+   "test_acc": 80.34
+  },
+  {
+   "epoch": 21,
+   "sec": 3.0,
+   "loss": 0.471,
+   "test_acc": 78.78
+  },
+  {
+   "epoch": 22,
+   "sec": 3.1,
+   "loss": 0.571,
+   "test_acc": 71.96
+  },
+  {
+   "epoch": 23,
+   "sec": 3.2,
+   "loss": 0.416,
+   "test_acc": 76.9
+  },
+  {
+   "epoch": 24,
+   "sec": 3.2,
+   "loss": 0.472,
+   "test_acc": 74.79
+  },
+  {
+   "epoch": 25,
+   "sec": 3.2,
+   "loss": 0.484,
+   "test_acc": 78.21
+  },
+  {
+   "epoch": 26,
+   "sec": 3.2,
+   "loss": 0.394,
+   "test_acc": 80.46
+  },
+  {
+   "epoch": 27,
+   "sec": 3.2,
+   "loss": 0.278,
+   "test_acc": 81.01
+  },
+  {
+   "epoch": 28,
+   "sec": 3.2,
+   "loss": 0.483,
+   "test_acc": 83.15
+  },
+  {
+   "epoch": 29,
+   "sec": 3.2,
+   "loss": 0.388,
+   "test_acc": 81.69
+  },
+  {
+   "epoch": 30,
+   "sec": 3.2,
+   "loss": 0.43,
+   "test_acc": 81.54
+  },
+  {
+   "epoch": 31,
+   "sec": 3.3,
+   "loss": 0.412,
+   "test_acc": 83.21
+  },
+  {
+   "epoch": 32,
+   "sec": 3.2,
+   "loss": 0.427,
+   "test_acc": 83.79
+  },
+  {
+   "epoch": 33,
+   "sec": 3.2,
+   "loss": 0.288,
+   "test_acc": 85.3
+  },
+  {
+   "epoch": 34,
+   "sec": 3.4,
+   "loss": 0.423,
+   "test_acc": 84.29
+  },
+  {
+   "epoch": 35,
+   "sec": 3.4,
+   "loss": 0.35,
+   "test_acc": 84.81
+  },
+  {
+   "epoch": 36,
+   "sec": 3.3,
+   "loss": 0.38,
+   "test_acc": 85.65
+  },
+  {
+   "epoch": 37,
+   "sec": 3.3,
+   "loss": 0.361,
+   "test_acc": 85.76
+  },
+  {
+   "epoch": 38,
+   "sec": 3.4,
+   "loss": 0.289,
+   "test_acc": 85.81
+  },
+  {
+   "epoch": 39,
+   "sec": 3.3,
+   "loss": 0.27,
+   "test_acc": 85.81
+  },
+  {
+   "epoch": 40,
+   "sec": 3.4,
+   "loss": 0.414,
+   "test_acc": 86.01
+  }
+ ],
+ "final_acc": 86.01,
+ "best_acc": 86.01,
+ "wall_sec": 130.7
+}

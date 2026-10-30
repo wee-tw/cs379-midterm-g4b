@@ -1,0 +1,125 @@
+{
+ "args": {
+  "model": "brevitas",
+  "bits": [
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   8,
+   8
+  ],
+  "recipe": "lowbit",
+  "amid": null,
+  "epochs": 15,
+  "batch": 256,
+  "lr": 0.05,
+  "wd": 0.0001,
+  "data": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/cifar_hf/cifar10.npz",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp2/finnfloat.pt",
+  "reinit_act": false,
+  "teacher": null,
+  "kd_alpha": 0.7,
+  "kd_t": 4.0,
+  "seed": 0,
+  "save": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3\\abl_w2a2_lowbit.pt",
+  "log": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3\\abl_w2a2_lowbit.json"
+ },
+ "history": [
+  {
+   "epoch": 1,
+   "sec": 92.5,
+   "loss": 0.941,
+   "test_acc": 37.5
+  },
+  {
+   "epoch": 2,
+   "sec": 47.2,
+   "loss": 1.002,
+   "test_acc": 45.68
+  },
+  {
+   "epoch": 3,
+   "sec": 23.0,
+   "loss": 0.932,
+   "test_acc": 46.52
+  },
+  {
+   "epoch": 4,
+   "sec": 23.5,
+   "loss": 0.866,
+   "test_acc": 53.0
+  },
+  {
+   "epoch": 5,
+   "sec": 25.2,
+   "loss": 0.711,
+   "test_acc": 57.76
+  },
+  {
+   "epoch": 6,
+   "sec": 23.7,
+   "loss": 0.873,
+   "test_acc": 57.69
+  },
+  {
+   "epoch": 7,
+   "sec": 21.6,
+   "loss": 0.664,
+   "test_acc": 58.61
+  },
+  {
+   "epoch": 8,
+   "sec": 21.6,
+   "loss": 0.652,
+   "test_acc": 55.3
+  },
+  {
+   "epoch": 9,
+   "sec": 21.6,
+   "loss": 0.74,
+   "test_acc": 57.63
+  },
+  {
+   "epoch": 10,
+   "sec": 21.5,
+   "loss": 0.768,
+   "test_acc": 57.51
+  },
+  {
+   "epoch": 11,
+   "sec": 21.5,
+   "loss": 0.722,
+   "test_acc": 58.69
+  },
+  {
+   "epoch": 12,
+   "sec": 22.0,
+   "loss": 0.715,
+   "test_acc": 61.98
+  },
+  {
+   "epoch": 13,
+   "sec": 21.8,
+   "loss": 0.694,
+   "test_acc": 70.3
+  },
+  {
+   "epoch": 14,
+   "sec": 22.1,
+   "loss": 0.644,
+   "test_acc": 51.55
+  },
+  {
+   "epoch": 15,
+   "sec": 21.3,
+   "loss": 0.652,
+   "test_acc": 75.39
+  }
+ ],
+ "final_acc": 75.39,
+ "best_acc": 75.39,
+ "wall_sec": 447.9
+}

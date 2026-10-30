@@ -1,0 +1,14 @@
+{
+ "net": "cnv_1w1a",
+ "folding": "D:\\115-1\\embedded sys midterm report\\code\\board\\finn_examples_folding\\cnv-w1a1_folding_config.json",
+ "clk_ns": 5.0,
+ "estimate_finn_v0101": {
+  "LUT": 23159.0,
+  "BRAM_18K": 147.0,
+  "DSP": 0.0,
+  "latency_ms": 1.24681,
+  "throughput_fps": 6103.515625,
+  "max_cycles": 32768,
+  "critical_path_cycles": 249362
+ }
+}
