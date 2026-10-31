@@ -130,7 +130,7 @@ repo：https://github.com/wee-tw/cs379-midterm-g4b（下面的路徑都相對於
 | 成本模型：閾值、乘法器 | 10/30 晚上 | 已完成，用合成驗證（1.1 節） | notes 12.21、12.27、12.31 | 無 |
 | 成本模型：line/skip buffer、貪婪法 | 10/31 13:00 | 已完成：滑動窗口用合成校正；skip FIFO 估過；寬度轉換器全部合成；摺疊用 FINN 的 SetFolding 加兩種重新摺疊，不是貪婪法 | `results/timing/fifo_dwc_estimate.txt`；notes 12.46 | 無 |
 | 延遲、能耗 | 10/31 14:00 | 已完成：延遲用 FINN 的關鍵路徑；能耗四組整板參數，另用 Vivado 功耗交叉檢查 | `code/latency_check.py`、`code/energy_search.py`；notes 12.45 | 無 |
-| 算 729 種的硬體成本（⑤） | 10/31 18:00 | 計算已完成：我的成本涵蓋 6,561 種 × 每種摺疊、實作、時脈，729 種是其中一部分 | 成本表在我本機（1 節的「追溯」） | 篩出 729 種、轉成 18 欄格式 |
+| 算 729 種的硬體成本（⑤） | 10/31 18:00 | 已交（10/31 17:20）：`results/plan_d/hw_729.csv`、`hw_729_README.md`，自我檢查在 `hw_729_checks.txt` | `code/plan_d/hw_729.py`；成本表在 `code/cost/` | 無 |
 | 「模型 vs FINN（vs 合成）」對照 | 10/31 18:00 | 資料已完成：159 個 RTL 節點、52 個 HLS 節點、27 個設計逐節點合成 | `results/audit_dataset/`；`results/figs/calibration_validation.png`、`estimator_audit_vivado.png` | 排成 W8A8、W4A4 那張表 |
 | 閾值記憶體圖 | 10/31 19:00 | 資料已完成：49 個 RTL 閾值節點的 FINN 估計和 Vivado 合成 | `results/audit_dataset/rtl_nodes.csv`；`results/plan_d/plan_d_checks.txt` | 畫圖 |
 | 能耗拆解圖 | 11/1 上午 | 模型已完成 | `code/energy_search.py` | 畫圖（你們那 5 列要等⑥） |
@@ -471,7 +471,7 @@ Plan D 裡你們負責的部分，我這邊很多已經有實驗或數據，可�
 
 | 交接 | 時間 |
 |---|---|
-| ⑤ `hw_729.csv` ＋ `hw_729_README.md`（`results/plan_d/`） | 10/31 18:00 前（Plan D 的期限） |
+| ⑤ `hw_729.csv` ＋ `hw_729_README.md`（`results/plan_d/`） | 已交（10/31 17:20） |
 | ⑧(a)、(c) 主結果表硬體欄、能耗拆解圖 | 收到⑥（10/31 19:00）後 30 分鐘 |
 | ⑧(b) W8A8、W4A4 的合成與對照表 | 10/31 23:00 前 |
 | ⑧(d) 閾值記憶體圖 | 10/31 23:00 前 |

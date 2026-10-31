@@ -1,0 +1,12 @@
+hw_729.csv checks (code/plan_d/hw_729.py)
+
+rows 729; distinct bit settings 729; bit values ['2', '4', '8']; feasible: main 729, f100 729, margin10 729
+largest LUT (main): 28284488 42558 (dspc, 105 DSP), 28284888 42558 (dspc, 153 DSP), 48442288 42558 (lut, 81 DSP)
+88888888 (main): 12766 LUT, 203 DSP, 196 BRAM18, dsp4c, 125.0 MHz, 0.623518 mJ
+smallest BOPs: 22222288 55353344
+main clock classes used: 111.11 MHz x 599, 125.0 MHz x 130
+f100 energy vs rq2_729_energies.csv: max |difference| 5e-06 mJ
+f100 latency cycles vs latency_tsr_v1218_f100.npz: 0 of 729 differ
+spot check 44444488: 15174 LUT, 203 DSP, 42 BRAM18, 125.0 MHz, 0.304203 mJ nominal, 0.233846 mJ z2_anchor, split 0.209715 + 0.049152 + 0.042264 + 0.003072
+spot check 22222288: 22359 LUT, 1 DSP, 24 BRAM18, 111.11 MHz, 0.241022 mJ nominal, 0.187622 mJ z2_anchor, split 0.176949 + 0.036864 + 0.025893 + 0.001317
+spot check 84242488: 22844 LUT, 163 DSP, 22 BRAM18, 111.11 MHz, 0.337043 mJ nominal, 0.257375 mJ z2_anchor, split 0.235932 + 0.049152 + 0.05035 + 0.001609

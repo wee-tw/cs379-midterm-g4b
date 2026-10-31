@@ -15,6 +15,7 @@ python code/verify_from_github.py
 | 主結果表（9 個時脈等級、5 個 seed） | `results/search/main_table_tsr_v1218_m0.json` |
 | 主結果表，繞線餘裕 +10 % | `results/search/main_table_tsr_v1218_m0.1.json` |
 | Plan D 的 729 種能耗和排名分析 | `results/plan_d/plan_d_checks.txt`、`results/plan_d/rq2_729_energies.csv` |
+| 交接⑤ 的 729 種硬體欄 | `results/plan_d/hw_729.csv`、`results/plan_d/hw_729_checks.txt` |
 
 ## 2. 資料在哪
 

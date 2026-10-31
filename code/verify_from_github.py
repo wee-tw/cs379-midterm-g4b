@@ -3,6 +3,7 @@
   1. Main result tables (timing_safe.py table, 9 PYNQ clock classes, 5 seeds), without and with the
      +10 % routing margin -> results/search/main_table_tsr_v1218_m0{,.1}.json
   2. Plan D checks (plan_d/plan_d_checks.py) -> results/plan_d/plan_d_checks.txt, rq2_729_energies.csv
+  3. Handover 5 (plan_d/hw_729.py) -> results/plan_d/hw_729.csv, hw_729_checks.txt
 
 Needs Python 3 with numpy and scipy. Nothing has to be unpacked first. Run from anywhere:
 
@@ -72,7 +73,8 @@ def main():
             ok &= diff is None
 
         rc = run([sys.executable, os.path.join("plan_d", "plan_d_checks.py"), "--points-dir", os.path.join(CODE, "cost"), "--out", tmp])
-        for name in ("plan_d_checks.txt", "rq2_729_energies.csv"):
+        rc |= run([sys.executable, os.path.join("plan_d", "hw_729.py"), "--out", tmp])
+        for name in ("plan_d_checks.txt", "rq2_729_energies.csv", "hw_729.csv", "hw_729_checks.txt"):
             ref = open(os.path.join(ROOT, "results", "plan_d", name), encoding="utf-8").read().replace("\r\n", "\n")
             new = "" if rc else open(os.path.join(tmp, name), encoding="utf-8").read().replace("\r\n", "\n")
             good = rc == 0 and ref == new
