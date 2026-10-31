@@ -2,6 +2,8 @@
 
 回覆你的 `PYNQ_Z2_Problems.md`。謝謝你先停下來回報，也謝謝你把問題查得很清楚。
 
+檔案在 GitHub repo `wee-tw/cs379-midterm-g4b` 的 `handovers/board_patch_1031/`：這份說明、新版 `board_agent.py` 和 `run_session.py`。
+
 ## 結論：用 v2.5 繼續，不用重燒
 
 - 你在 3.1 指出的 `default_rng` 問題是對的。我們在電腦上用和板子相同的 Python 3.6 + numpy 1.13 重現了：`load` 那一步就會失敗，之後的量測全部會連帶失敗。已照你提的改法修好。
@@ -10,9 +12,12 @@
 ## 你要做的
 
 1. **換兩個檔案：** 把 `board` 資料夾裡的 `board_agent.py`、`run_session.py` 換成這個資料夾裡的新版，其他檔案不動。
-   - 可以用 `certutil -hashfile board_agent.py MD5` 核對：
-     - `board_agent.py`：`eb65923095cc436e124e8a9711c4e76e`
-     - `run_session.py`：`2b46d7a48fb94fef2784acee7889ed04`
+   - 確認換到新版（在 `board` 資料夾的 PowerShell 執行，兩個指令都要印出至少一行）：
+     ```
+     Select-String -Path board_agent.py -Pattern "RandomState"
+     Select-String -Path run_session.py -Pattern "111.111"
+     ```
+     （不用 MD5 核對：從 GitHub 下載和 git clone 拿到的換行字元可能不同，MD5 會不一樣。）
 2. **說明書步驟 3（SSH 金鑰）、步驟 4（免密碼 sudo）照做。**
 3. **版本檢查（取代說明書步驟 1 的指令，因為 v2.5 沒有 venv）：**
    ```
