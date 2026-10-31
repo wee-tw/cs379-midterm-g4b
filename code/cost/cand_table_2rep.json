@@ -1,0 +1,467 @@
+{
+ "by_w2": [
+  {
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "model": "1rep",
+   "w2_groups": 0,
+   "errors": [
+    0.35999999999999943,
+    -0.043333333333336554,
+    -0.1700000000000017,
+    -0.01999999999999602
+   ]
+  },
+  {
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "model": "1rep",
+   "w2_groups": 1,
+   "errors": [
+    1.3900000000000006,
+    0.2050000000000125,
+    -0.5099999999999909,
+    -1.019999999999996,
+    0.3500000000000085
+   ]
+  },
+  {
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "model": "1rep",
+   "w2_groups": 2,
+   "errors": [
+    -0.5700000000000074,
+    -0.1599999999999966,
+    0.7600000000000051,
+    -0.7800000000000011
+   ]
+  },
+  {
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "model": "1rep",
+   "w2_groups": 3,
+   "errors": [
+    -3.299999999999997,
+    0.5400000000000063,
+    0.35999999999999943
+   ]
+  },
+  {
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "model": "1rep",
+   "w2_groups": 4,
+   "errors": [
+    -0.09999999999999432
+   ]
+  },
+  {
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "model": "2rep",
+   "w2_groups": 0,
+   "errors": [
+    0.2600000000000051,
+    -0.0033333333333303017,
+    0.010000000000005116,
+    -0.03999999999999204
+   ]
+  },
+  {
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "model": "2rep",
+   "w2_groups": 1,
+   "errors": [
+    1.2399999999999949,
+    -0.014999999999986358,
+    -0.2599999999999909,
+    -1.25,
+    -0.009999999999990905
+   ]
+  },
+  {
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "model": "2rep",
+   "w2_groups": 2,
+   "errors": [
+    -1.0600000000000023,
+    -0.5899999999999892,
+    0.6400000000000006,
+    -0.4299999999999926
+   ]
+  },
+  {
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "model": "2rep",
+   "w2_groups": 3,
+   "errors": [
+    -3.990000000000009,
+    -0.12000000000000455,
+    -0.14000000000000057
+   ]
+  },
+  {
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "model": "2rep",
+   "w2_groups": 4,
+   "errors": [
+    -1.0300000000000011
+   ]
+  },
+  {
+   "protocol": "float\u219230 ep KD lr 0.05",
+   "model": "1rep",
+   "w2_groups": 0,
+   "errors": [
+    -1.8799999999999955,
+    -0.04000000000000625,
+    0.5749999999999886,
+    1.0400000000000063,
+    -1.1500000000000057,
+    -0.7150000000000034,
+    0.44000000000001194
+   ]
+  },
+  {
+   "protocol": "float\u219230 ep KD lr 0.05",
+   "model": "1rep",
+   "w2_groups": 1,
+   "errors": [
+    0.04999999999999716
+   ]
+  },
+  {
+   "protocol": "float\u219230 ep KD lr 0.05",
+   "model": "1rep",
+   "w2_groups": 2,
+   "errors": [
+    -1.9500000000000028,
+    -1.440000000000012,
+    -1.1149999999999949
+   ]
+  },
+  {
+   "protocol": "float\u219230 ep KD lr 0.05",
+   "model": "1rep",
+   "w2_groups": 3,
+   "errors": [
+    -8.719999999999999
+   ]
+  },
+  {
+   "protocol": "float\u219230 ep KD lr 0.05",
+   "model": "1rep",
+   "w2_groups": 4,
+   "errors": [
+    -21.550000000000004,
+    -10.939999999999998,
+    -17.770000000000003
+   ]
+  },
+  {
+   "protocol": "float\u219230 ep KD lr 0.05",
+   "model": "2rep",
+   "w2_groups": 0,
+   "errors": [
+    -1.7099999999999937,
+    0.0,
+    0.41499999999999204,
+    0.4300000000000068,
+    -0.8200000000000074,
+    -0.855000000000004,
+    0.21000000000000796
+   ]
+  },
+  {
+   "protocol": "float\u219230 ep KD lr 0.05",
+   "model": "2rep",
+   "w2_groups": 1,
+   "errors": [
+    -0.23000000000000398
+   ]
+  },
+  {
+   "protocol": "float\u219230 ep KD lr 0.05",
+   "model": "2rep",
+   "w2_groups": 2,
+   "errors": [
+    -2.450000000000003,
+    -1.8599999999999994,
+    -1.8049999999999926
+   ]
+  },
+  {
+   "protocol": "float\u219230 ep KD lr 0.05",
+   "model": "2rep",
+   "w2_groups": 3,
+   "errors": [
+    -8.77000000000001
+   ]
+  },
+  {
+   "protocol": "float\u219230 ep KD lr 0.05",
+   "model": "2rep",
+   "w2_groups": 4,
+   "errors": [
+    -22.110000000000007,
+    -11.870000000000005,
+    -17.57999999999999
+   ]
+  },
+  {
+   "protocol": "float\u219260 ep KD lr 0.05",
+   "model": "1rep",
+   "w2_groups": 0,
+   "errors": [
+    0.8999999999999915
+   ]
+  },
+  {
+   "protocol": "float\u219260 ep KD lr 0.05",
+   "model": "2rep",
+   "w2_groups": 0,
+   "errors": [
+    0.7399999999999949
+   ]
+  }
+ ],
+ "runs": [
+  {
+   "config": "22222222",
+   "protocol": "float\u219230 ep KD lr 0.05",
+   "acc": [
+    50.4
+   ]
+  },
+  {
+   "config": "22888288",
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "acc": [
+    80.14
+   ]
+  },
+  {
+   "config": "24242424",
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "acc": [
+    79.76
+   ]
+  },
+  {
+   "config": "24242424",
+   "protocol": "float\u219230 ep KD lr 0.05",
+   "acc": [
+    68.92
+   ]
+  },
+  {
+   "config": "24242444",
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "acc": [
+    77.41
+   ]
+  },
+  {
+   "config": "24244444",
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "acc": [
+    80.85
+   ]
+  },
+  {
+   "config": "24442444",
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "acc": [
+    81.23
+   ]
+  },
+  {
+   "config": "24444444",
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "acc": [
+    82.38,
+    82.23
+   ]
+  },
+  {
+   "config": "28282828",
+   "protocol": "float\u219230 ep KD lr 0.05",
+   "acc": [
+    62.74
+   ]
+  },
+  {
+   "config": "28284882",
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "acc": [
+    78.83
+   ]
+  },
+  {
+   "config": "42228244",
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "acc": [
+    78.87
+   ]
+  },
+  {
+   "config": "42228428",
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "acc": [
+    80.12
+   ]
+  },
+  {
+   "config": "42424242",
+   "protocol": "float\u219230 ep KD lr 0.05",
+   "acc": [
+    75.5
+   ]
+  },
+  {
+   "config": "42482282",
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "acc": [
+    76.48
+   ]
+  },
+  {
+   "config": "44242424",
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "acc": [
+    82.17
+   ]
+  },
+  {
+   "config": "44242428",
+   "protocol": "float\u219230 ep KD lr 0.05",
+   "acc": [
+    73.91
+   ]
+  },
+  {
+   "config": "44242888",
+   "protocol": "float\u219230 ep KD lr 0.05",
+   "acc": [
+    81.65,
+    81.47
+   ]
+  },
+  {
+   "config": "44442488",
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "acc": [
+    84.26
+   ]
+  },
+  {
+   "config": "44444442",
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "acc": [
+    81.01
+   ]
+  },
+  {
+   "config": "44444444",
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "acc": [
+    83.97,
+    83.65,
+    83.86
+   ]
+  },
+  {
+   "config": "44444444",
+   "protocol": "float\u219230 ep KD lr 0.05",
+   "acc": [
+    83.83
+   ]
+  },
+  {
+   "config": "44444488",
+   "protocol": "float\u219230 ep KD lr 0.05",
+   "acc": [
+    85.14,
+    85.25
+   ]
+  },
+  {
+   "config": "44444488",
+   "protocol": "float\u219260 ep KD lr 0.05",
+   "acc": [
+    85.52
+   ]
+  },
+  {
+   "config": "44448444",
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "acc": [
+    84.22,
+    84.06
+   ]
+  },
+  {
+   "config": "48282224",
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "acc": [
+    81.21
+   ]
+  },
+  {
+   "config": "48484848",
+   "protocol": "float\u219230 ep KD lr 0.05",
+   "acc": [
+    85.62,
+    85.71,
+    85.53
+   ]
+  },
+  {
+   "config": "82828282",
+   "protocol": "float\u219230 ep KD lr 0.05",
+   "acc": [
+    76.66
+   ]
+  },
+  {
+   "config": "84242444",
+   "protocol": "float\u219230 ep KD lr 0.05",
+   "acc": [
+    81.24
+   ]
+  },
+  {
+   "config": "84248488",
+   "protocol": "float\u219230 ep KD lr 0.05",
+   "acc": [
+    84.63
+   ]
+  },
+  {
+   "config": "84848484",
+   "protocol": "float\u219230 ep KD lr 0.05",
+   "acc": [
+    84.1,
+    84.21
+   ]
+  },
+  {
+   "config": "88242488",
+   "protocol": "float\u219230 ep KD lr 0.05",
+   "acc": [
+    82.87,
+    82.34
+   ]
+  },
+  {
+   "config": "88444444",
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "acc": [
+    84.34
+   ]
+  },
+  {
+   "config": "88888888",
+   "protocol": "float\u219230 ep KD lr 0.05",
+   "acc": [
+    85.9
+   ]
+  }
+ ]
+}

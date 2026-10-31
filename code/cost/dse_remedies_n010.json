@@ -1,0 +1,188 @@
+{
+ "budget": {
+  "LUT": 42560.0,
+  "BRAM": 196.0,
+  "DSP": 220.0
+ },
+ "margins": {
+  "2.0": {
+   "reject": {
+    "syntheses": 29,
+    "regret_pct": 0.0
+   },
+   "top10": {
+    "syntheses": 10,
+    "found_feasible": false,
+    "regret_pct": null
+   },
+   "top30": {
+    "syntheses": 30,
+    "found_feasible": true,
+    "regret_pct": 0.0
+   },
+   "margin20": {
+    "syntheses": 29,
+    "regret_pct": 0.0
+   },
+   "margin35": {
+    "syntheses": 1,
+    "regret_pct": 0.0
+   },
+   "margin50": {
+    "syntheses": 1,
+    "regret_pct": 0.0
+   },
+   "learned": {
+    "n0": 10,
+    "seeds": 10,
+    "syntheses_to_1pct": {
+     "median": 13.0,
+     "max": 15
+    },
+    "median_regret_pct_by_budget": {
+     "20": 0.0,
+     "50": 0.0
+    },
+    "share_found_within_1pct": {
+     "20": 1.0,
+     "50": 1.0
+    }
+   },
+   "calibrated": {
+    "sigma": 0.05,
+    "seeds": 10,
+    "median_syntheses": 1.0,
+    "max_syntheses": 1,
+    "median_regret_pct": 0.0
+   }
+  },
+  "3.0": {
+   "reject": {
+    "syntheses": 57,
+    "regret_pct": 0.0
+   },
+   "top10": {
+    "syntheses": 10,
+    "found_feasible": false,
+    "regret_pct": null
+   },
+   "top30": {
+    "syntheses": 30,
+    "found_feasible": false,
+    "regret_pct": null
+   },
+   "margin20": {
+    "syntheses": 57,
+    "regret_pct": 0.0
+   },
+   "margin35": {
+    "syntheses": 1,
+    "regret_pct": 0.0
+   },
+   "margin50": {
+    "syntheses": 1,
+    "regret_pct": 0.0
+   },
+   "learned": {
+    "n0": 10,
+    "seeds": 10,
+    "syntheses_to_1pct": {
+     "median": 13.0,
+     "max": 15
+    },
+    "median_regret_pct_by_budget": {
+     "20": 0.0,
+     "50": 0.0
+    },
+    "share_found_within_1pct": {
+     "20": 1.0,
+     "50": 1.0
+    }
+   },
+   "calibrated": {
+    "sigma": 0.05,
+    "seeds": 10,
+    "median_syntheses": 1.0,
+    "max_syntheses": 1,
+    "median_regret_pct": 0.0
+   }
+  },
+  "5.0": {
+   "reject": {
+    "syntheses": 13,
+    "regret_pct": 0.37332443556081785
+   },
+   "top10": {
+    "syntheses": 10,
+    "found_feasible": false,
+    "regret_pct": null
+   },
+   "top30": {
+    "syntheses": 30,
+    "found_feasible": true,
+    "regret_pct": 0.0
+   },
+   "margin20": {
+    "syntheses": 13,
+    "regret_pct": 0.37332443556081785
+   },
+   "margin35": {
+    "syntheses": 1,
+    "regret_pct": 0.37332443556081785
+   },
+   "margin50": {
+    "syntheses": 1,
+    "regret_pct": 0.37332443556081785
+   },
+   "learned": {
+    "n0": 10,
+    "seeds": 10,
+    "syntheses_to_1pct": {
+     "median": 12.0,
+     "max": 13
+    },
+    "median_regret_pct_by_budget": {
+     "20": 0.0,
+     "50": 0.0
+    },
+    "share_found_within_1pct": {
+     "20": 1.0,
+     "50": 1.0
+    }
+   },
+   "calibrated": {
+    "sigma": 0.05,
+    "seeds": 10,
+    "median_syntheses": 1.0,
+    "max_syntheses": 1,
+    "median_regret_pct": 0.0
+   }
+  }
+ },
+ "mechanism": {
+  "tree": "|--- logcyc <= 10\n|   |--- DSP_est <= 92\n|   |   |--- class: False\n|   |--- DSP_est >  92\n|   |   |--- mode_dspc <= 0\n|   |   |   |--- class: False\n|   |   |--- mode_dspc >  0\n|   |   |   |--- class: True\n|--- logcyc >  10\n|   |--- class: False\n",
+  "by_dsp_slack": {
+   "0-20": {
+    "n": 2143,
+    "misjudged_pct": 3.7797480167988797
+   },
+   "20-50": {
+    "n": 4259,
+    "misjudged_pct": 14.369570321671754
+   },
+   "50-100": {
+    "n": 6616,
+    "misjudged_pct": 2.5846432889963724
+   },
+   "100-inf": {
+    "n": 118616,
+    "misjudged_pct": 0.022762527820867337
+   }
+  },
+  "by_mode": {
+   "lut": 0.0,
+   "lut_finn": 0.0,
+   "dspc": 1.8348812784447783
+  }
+ }
+}

@@ -1,0 +1,62 @@
+== nominal
+  margin 1: A'v 44244448 lut_finn T16667 111.11 MHz 0.3460 mJ (model opt 44444448 -2.6%) [84.63 n=3 PASS]
+      B1_uniform  84848484 +119.0%  [84.39 n=3 PASS]
+      B2_proxy    44444448 +10.2%  [84.92 n=3 PASS]
+      B1_measured 84848484 +119.0%  [84.39 n=3 PASS]
+      B2_measured 44444448 +10.2%  [84.92 n=3 PASS]  (failed before it: -)
+      B3_measured 44444448 +3.4%  (same bits, our folding)
+  margin 2: A'v 44242448 lut_finn T16667 111.11 MHz 0.3362 mJ (model opt 44242448 -0.0%) [83.75 n=3 PASS]
+      B1_uniform  44444444 +5.7%  [84.35 n=5 PASS]
+      B2_proxy    44242448 +7.8%  [83.75 n=3 PASS]
+      B1_measured 44444444 +5.7%  [84.35 n=5 PASS]
+      B2_measured 44242448 +7.8%  [83.75 n=3 PASS]  (failed before it: -)
+      B3_measured 44242448 +485.5%  (same bits, our folding)
+  margin 3: A'v 44242248 lut_finn T16667 111.11 MHz 0.3320 mJ (model opt 24244448 +22.2%) [82.99 n=3 PASS]
+      B1_uniform  44444444 +7.0%  [84.35 n=5 PASS]
+      B2_proxy    42442448 +8.3%  [83.04 n=3 PASS]
+      B1_measured 44444444 +7.0%  [84.35 n=5 PASS]
+      B2_measured 42442448 +8.3%  [83.04 n=3 PASS]  (failed before it: -)
+      B3_measured 42442448 +492.8%  (same bits, our folding)
+  margin 5: A'v 24244448 dsp4c T14286 100 MHz 0.2717 mJ (model opt 24222448 +5.6%) [82.16 n=3 PASS]
+      B1_uniform  24242424 -2.8%  [79.65 n=3 FAIL]
+      B2_proxy    24222448 +2.1%  [80.16 n=3 FAIL]
+      B1_measured 44444444 +30.7%  [84.35 n=5 PASS]
+      B2_measured 42222448 +27.7%  [81.20 n=3 PASS]  (failed before it: ['24222448', '24222488'])
+      B3_measured 42222448 +621.6%  (same bits, our folding)
+  margin 8: A'v 22222448 lut_finn T14286 111.11 MHz 0.2511 mJ (model opt 22222448 -0.0%) [78.70 n=3 PASS]
+      B1_uniform  24242424 +5.1%  [79.65 n=3 PASS]
+      B2_proxy    22222448 +7.8%  [78.70 n=3 PASS]
+      B1_measured 24242424 +5.1%  [79.65 n=3 PASS]
+      B2_measured 22222448 +7.8%  [78.70 n=3 PASS]  (failed before it: -)
+      B3_measured 22222448 +678.9%  (same bits, our folding)
+== z2_anchor
+  margin 1: A'v 44244448 lut_finn T16667 111.11 MHz 0.2615 mJ (model opt 44444448 -1.6%) [84.63 n=3 PASS]
+      B1_uniform  84848484 +124.4%  [84.39 n=3 PASS]
+      B2_proxy    44444448 +9.4%  [84.92 n=3 PASS]
+      B1_measured 84848484 +124.4%  [84.39 n=3 PASS]
+      B2_measured 44444448 +9.4%  [84.92 n=3 PASS]  (failed before it: -)
+      B3_measured 44444448 +5.3%  (same bits, our folding)
+  margin 2: A'v 44242448 lut_finn T16667 111.11 MHz 0.2570 mJ (model opt 44242448 -0.0%) [83.75 n=3 PASS]
+      B1_uniform  44444444 +3.4%  [84.35 n=5 PASS]
+      B2_proxy    44242448 +8.0%  [83.75 n=3 PASS]
+      B1_measured 44444444 +3.4%  [84.35 n=5 PASS]
+      B2_measured 44242448 +8.0%  [83.75 n=3 PASS]  (failed before it: -)
+      B3_measured 44242448 +510.9%  (same bits, our folding)
+  margin 3: A'v 44242248 lut_finn T16667 111.11 MHz 0.2550 mJ (model opt 24244448 +22.6%) [82.99 n=3 PASS]
+      B1_uniform  44444444 +4.2%  [84.35 n=5 PASS]
+      B2_proxy    42442448 +8.3%  [83.04 n=3 PASS]
+      B1_measured 44444444 +4.2%  [84.35 n=5 PASS]
+      B2_measured 42442448 +8.3%  [83.04 n=3 PASS]  (failed before it: -)
+      B3_measured 42442448 +515.5%  (same bits, our folding)
+  margin 5: A'v 24244448 dsp4c T14286 100 MHz 0.2080 mJ (model opt 24222448 +6.7%) [82.16 n=3 PASS]
+      B1_uniform  24242424 -4.8%  [79.65 n=3 FAIL]
+      B2_proxy    24222448 +1.0%  [80.16 n=3 FAIL]
+      B1_measured 44444444 +27.7%  [84.35 n=5 PASS]
+      B2_measured 42222448 +29.9%  [81.20 n=3 PASS]  (failed before it: ['24222448', '24222488'])
+      B3_measured 42222448 +652.9%  (same bits, our folding)
+  margin 8: A'v 22222448 lut_finn T10000 111.11 MHz 0.1918 mJ (model opt 22222448 +0.0%) [78.70 n=3 PASS]
+      B1_uniform  24242424 +3.2%  [79.65 n=3 PASS]
+      B2_proxy    22222448 +8.0%  [78.70 n=3 PASS]
+      B1_measured 24242424 +3.2%  [79.65 n=3 PASS]
+      B2_measured 22222448 +8.0%  [78.70 n=3 PASS]  (failed before it: -)
+      B3_measured 22222448 +715.4%  (same bits, our folding)

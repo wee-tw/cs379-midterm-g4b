@@ -1,0 +1,236 @@
+saved C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/cost/points_thr_hi.npz 155682 points
+155682 rows; critical path / bottleneck cycles: min 6.85 median 12.01 max 22.90
+== [hi] main search (3-replicate model, margin 1)
+== power params: nominal
+   continuous
+     A_prime        E=0.3159 mJ  FPS=7629.4  f=125.0  bits=[4, 4, 4, 4, 4, 4, 4, 8] mode=dsp4c LUT=22172 BRAM18=43.0 DSP=212 acc=84.68
+     B1_uniform     E=0.6237 mJ  FPS=3814.7  f=125.0  bits=[8, 4, 8, 4, 8, 4, 8, 4] mode=dsp4c LUT=18358 BRAM18=68.0 DSP=212 acc=84.8
+     B4_latency     E=0.3159 mJ  FPS=7629.4  f=125.0  bits=[4, 4, 4, 4, 4, 4, 4, 8] mode=dsp4c LUT=22172 BRAM18=43.0 DSP=212 acc=84.68
+     B2_proxy       E=2.1069 mJ  FPS=1017.3  f=100.0  bits=[4, 4, 4, 4, 4, 4, 4, 8] mode=lut_finn LUT=24298 BRAM18=32.0 DSP=1 acc=84.68
+     B3_sequential  E=0.3159 mJ  FPS=7629.4  f=125.0  bits=[4, 4, 4, 4, 4, 4, 4, 8] mode=dsp4c LUT=22172 BRAM18=43.0 DSP=212 acc=84.68
+== [hi] threshold sweep with latency-aware policies
+== margin 1.0 (threshold 84.37, 315 configs pass)
+  nominal   cont vs A': A +0.0%, B1 +97.4%, B4 +0.0%, B2 +567.0%, B3 +0.0%   bits A'=44444448 B2=44444448
+     R=  300 jit: A'=44444448; B1 +1.8%, B4 +0.0%, B4L +0.3%, B2 +8.1%, B3 +0.0%, B5 +15.6%
+     R= 3000 jit: A'=44444448; B1 +15.5%, B4 +0.0%, B4L +2.8%, B3 +0.0%, B5 +15.8%
+  z2_anchor cont vs A': A +0.0%, B1 +98.5%, B4 +0.0%, B2 +583.0%, B3 +0.0%   bits A'=44444448 B2=44444448
+     R=  300 jit: A'=44444448; B1 +1.7%, B4 +0.0%, B4L +0.2%, B2 +8.0%, B3 +0.0%, B5 +18.3%
+     R= 3000 jit: A'=44444448; B1 +14.7%, B4 +0.0%, B4L +1.7%, B3 +0.0%, B5 +18.7%
+== margin 2.0 (threshold 83.37, 970 configs pass)
+  nominal   cont vs A': A +0.0%, B1 +26.4%, B4 +0.9%, B2 +190.1%, B3 +0.9%   bits A'=44242448 B2=44242448
+     R=  300 jit: A'=44242448; B1 +0.2%, B4 +0.1%, B4L +0.1%, B2 +2.0%, B3 +0.1%, B5 +11.9%
+     R= 3000 jit: A'=44242448; B1 +2.3%, B4 +0.5%, B4L +0.5%, B2 +17.6%, B3 +0.5%, B5 +21.4%
+  z2_anchor cont vs A': A +0.0%, B1 +29.0%, B4 +0.3%, B2 +199.3%, B3 +0.3%   bits A'=44242448 B2=44242448
+     R=  300 jit: A'=44242448; B1 +0.3%, B4 +0.0%, B4L +0.0%, B2 +2.0%, B3 +0.0%, B5 +13.6%
+     R= 3000 jit: A'=44242448; B1 +2.9%, B4 +0.3%, B4L +0.3%, B2 +17.7%, B3 +0.3%, B5 +24.6%
+== margin 3.0 (threshold 82.37, 1895 configs pass)
+  nominal   cont vs A': A +0.0%, B1 +28.8%, B4 +1.4%, B2 +189.8%, B3 +1.4%   bits A'=24244448 B2=42442448
+     R=  300 jit: A'=24244448; B1 +0.3%, B4 +0.1%, B4L +0.2%, B2 +1.8%, B3 +0.1%, B5 +11.7%
+     R= 3000 jit: A'=24244448; B1 +3.1%, B4 +0.7%, B4L +1.4%, B2 +16.1%, B3 +0.7%, B5 +21.3%
+  z2_anchor cont vs A': A +0.0%, B1 +30.6%, B4 +0.6%, B2 +199.3%, B3 +0.6%   bits A'=24244448 B2=42442448
+     R=  300 jit: A'=24244448; B1 +0.4%, B4 +0.0%, B4L +0.1%, B2 +1.9%, B3 +0.0%, B5 +13.4%
+     R= 3000 jit: A'=24244448; B1 +3.3%, B4 +0.4%, B4L +0.8%, B2 +16.8%, B3 +0.4%, B5 +24.5%
+== margin 5.0 (threshold 80.37, 3879 configs pass)
+  nominal   cont vs A': A +0.0%, B1 +1.4%, B4 +0.8%, B2 +53.9%, B3 +0.8%   bits A'=24222448 B2=24222448
+     R=  300 jit: A'=24222448; B1 +0.1%, B4 +0.1%, B4L +0.1%, B2 +0.4%, B3 +0.1%, B5 +11.0%
+     R= 3000 jit: A'=24222448; B1 +0.5%, B4 +0.5%, B4L +0.7%, B2 +3.8%, B3 +0.5%, B5 +20.2%
+  z2_anchor cont vs A': A +0.0%, B1 +0.8%, B4 +0.3%, B2 +55.2%, B3 +0.3%   bits A'=24222448 B2=24222448
+     R=  300 jit: A'=24222448; B1 +0.0%, B4 +0.0%, B4L +0.0%, B2 +0.4%, B3 +0.0%, B5 +12.8%
+     R= 3000 jit: A'=24222448; B1 +0.3%, B4 +0.3%, B4L +0.4%, B2 +3.8%, B3 +0.3%, B5 +23.5%
+== margin 8.0 (threshold 77.37, 6004 configs pass)
+  nominal   cont vs A': A +0.0%, B1 +4.0%, B4 +0.9%, B2 +24.2%, B3 +0.9%   bits A'=22222448 B2=22222448
+     R=  300 jit: A'=22222448; B1 +0.2%, B4 +0.1%, B4L +0.3%, B2 +0.3%, B3 +0.1%, B5 +10.7%
+     R= 3000 jit: A'=22222448; B1 +1.5%, B4 +0.5%, B4L +2.6%, B2 +2.7%, B3 +0.5%, B5 +19.7%
+  z2_anchor cont vs A': A +0.0%, B1 +2.4%, B4 +0.3%, B2 +21.7%, B3 +0.3%   bits A'=22222448 B2=22222448
+     R=  300 jit: A'=22222448; B1 +0.1%, B4 +0.0%, B4L +0.2%, B2 +0.2%, B3 +0.0%, B5 +12.5%
+     R= 3000 jit: A'=22222448; B1 +0.9%, B4 +0.3%, B4L +1.6%, B2 +1.6%, B3 +0.3%, B5 +23.0%
+== [hi] latency-aware idle analysis
+  R=  300: streaming: jit 4.9845 ([4, 4, 4, 4, 4, 4, 4, 8] cyc 16384 f 4.926) = II-bound +0.0%; lowclk +0.0%, halt +0.0%, B5 +27.8% | deadline: gated 6.2085 [4, 4, 4, 4, 4, 4, 4, 8] cyc 16384, jit +0.4%, F_EXT running +4.7%, B5 +2.6%, B4L +
+  R= 3000: streaming: jit 0.6511 ([4, 4, 4, 4, 4, 4, 4, 8] cyc 16384 f 50.000) = II-bound +0.3%; lowclk +0.0%, halt +0.0%, B5 +25.4% | deadline: infeasible
+== nominal
+  R=  300: streaming: jit 5.4397 ([4, 4, 4, 4, 4, 4, 4, 8] cyc 16384 f 4.926) = II-bound +0.0%; lowclk +0.0%, halt +0.0%, B5 +15.6% | deadline: gated 6.1790 [4, 4, 4, 4, 4, 4, 4, 8] cyc 16384, jit +0.3%, F_EXT running +2.9%, B5 +1.8%, B4L +
+  R= 3000: streaming: jit 0.6407 ([4, 4, 4, 4, 4, 4, 4, 8] cyc 16384 f 50.000) = II-bound +0.2%; lowclk +0.0%, halt +0.0%, B5 +15.8% | deadline: infeasible
+  R=  300: streaming: jit 6.0312 ([4, 4, 4, 4, 4, 4, 4, 8] cyc 16384 f 4.926) = II-bound +0.0%; lowclk +0.0%, halt +0.0%, B5 +3.5% | deadline: gated 6.2010 [4, 4, 4, 4, 4, 4, 4, 8] cyc 16384, jit +0.1%, F_EXT running +0.7%, B5 +0.6%, B4L +0
+  R= 3000: streaming: jit 0.6315 ([4, 4, 4, 4, 4, 4, 4, 8] cyc 16384 f 50.000) = II-bound +0.0%; lowclk +0.0%, halt +0.0%, B5 +4.0% | deadline: infeasible
+== z2_anchor
+  R=  300: streaming: jit 4.2422 ([4, 4, 4, 4, 4, 4, 4, 8] cyc 16384 f 4.926) = II-bound +0.0%; lowclk +0.0%, halt +0.0%, B5 +18.3% | deadline: gated 4.8966 [4, 4, 4, 4, 4, 4, 4, 8] cyc 16384, jit +0.3%, F_EXT running +3.2%, B5 +2.5%, B4L +
+  R= 3000: streaming: jit 0.4931 ([4, 4, 4, 4, 4, 4, 4, 8] cyc 16384 f 50.000) = II-bound +0.2%; lowclk +0.0%, halt +0.0%, B5 +18.7% | deadline: infeasible
+== [hi] proxies
+  tau(BOPs                      , energy) = +0.723
+  tau(weight bits               , energy) = +0.300
+  tau(BOPs + threshold bit-ops  , energy) = +0.670
+  margin 1 (thr 84.37, 315 pass) A' 44444448 | BOPs: 44444448 +0.0% | weight bits: 48442848 +95.0% | threshold compares: 84848484 +97.4% | BOPs + threshold bit-ops: 44444448 +0.0% | weight + threshold bits: 84444484 +60.0%
+  margin 2 (thr 83.37, 970 pass) A' 44242448 | BOPs: 44242448 +0.0% | weight bits: 48242848 +33.3% | threshold compares: 84828484 +109.8% | BOPs + threshold bit-ops: 44242448 +0.0% | weight + threshold bits: 44442484 +24.2%
+  margin 3 (thr 82.37, 1895 pass) A' 24244448 | BOPs: 42442448 +0.4% | weight bits: 48242828 +35.8% | threshold compares: 82848484 +41.6% | BOPs + threshold bit-ops: 42442448 +0.4% | weight + threshold bits: 44242444 +1.9%
+  margin 5 (thr 80.37, 3879 pass) A' 24222448 | BOPs: 24222448 +0.0% | weight bits: 24242828 +6.1% | threshold compares: 82824284 +40.4% | BOPs + threshold bit-ops: 42242284 +0.7% | weight + threshold bits: 44222284 +3.6%
+  margin 8 (thr 77.37, 6004 pass) A' 22222448 | BOPs: 22222448 +0.0% | weight bits: 24242828 +8.8% | threshold compares: 82824282 +44.0% | BOPs + threshold bit-ops: 22222484 +0.0% | weight + threshold bits: 24222224 +1.7%
+  tau(BOPs                      , energy) = +0.723
+  tau(weight bits               , energy) = +0.300
+  tau(BOPs + threshold bit-ops  , energy) = +0.670
+  margin 1 (thr 84.37, 315 pass) A' 44444448 | BOPs: 44444448 +0.0% | weight bits: 48442848 +96.9% | threshold compares: 84848484 +98.4% | BOPs + threshold bit-ops: 44444448 +0.0% | weight + threshold bits: 84444484 +56.1%
+  margin 2 (thr 83.37, 970 pass) A' 44242448 | BOPs: 44242448 +0.0% | weight bits: 48242848 +33.3% | threshold compares: 84828484 +106.1% | BOPs + threshold bit-ops: 44242448 +0.0% | weight + threshold bits: 44442484 +27.7%
+  margin 3 (thr 82.37, 1895 pass) A' 24244448 | BOPs: 42442448 +0.3% | weight bits: 48242828 +34.9% | threshold compares: 82848484 +38.4% | BOPs + threshold bit-ops: 42442448 +0.3% | weight + threshold bits: 44242444 +1.2%
+  margin 5 (thr 80.37, 3879 pass) A' 24222448 | BOPs: 24222448 +0.0% | weight bits: 24242828 +3.7% | threshold compares: 82824284 +37.6% | BOPs + threshold bit-ops: 42242284 +0.4% | weight + threshold bits: 44222284 +2.2%
+  margin 8 (thr 77.37, 6004 pass) A' 22222448 | BOPs: 22222448 +0.0% | weight bits: 24242828 +5.3% | threshold compares: 82824282 +39.7% | BOPs + threshold bit-ops: 22222484 +0.0% | weight + threshold bits: 24222224 +1.0%
+== [hi] key designs
+== 44444448: 26 design points; best 4 by continuous energy (nominal, 125 MHz)
+   E 0.3159 mJ  mode dsp4c    T  16667 II  16384 FPS    7629 LUT  22172 BRAM18  43.0 DSP 212 U 0.696
+   E 0.3336 mJ  mode lut      T  16667 II  16384 FPS    7629 LUT  42515 BRAM18  91.0 DSP  28 U 0.912
+   E 0.3793 mJ  mode dsp4c    T  20000 II  19680 FPS    6352 LUT  22172 BRAM18  41.0 DSP 212 U 0.694
+   E 0.4005 mJ  mode lut      T  20000 II  19680 FPS    6352 LUT  42515 BRAM18  89.0 DSP  28 U 0.910
+   reachable II levels: [16384, 19680, 24576, 32768, 49152, 98304, 196608, 442368, 786432]
+== 44444488: 26 design points; best 4 by continuous energy (nominal, 125 MHz)
+   E 0.3159 mJ  mode dsp4c    T  16667 II  16384 FPS    7629 LUT  22149 BRAM18  44.0 DSP 212 U 0.697
+   E 0.3336 mJ  mode lut      T  16667 II  16384 FPS    7629 LUT  42523 BRAM18  91.0 DSP  28 U 0.912
+   E 0.3793 mJ  mode dsp4c    T  20000 II  19680 FPS    6352 LUT  22149 BRAM18  42.0 DSP 212 U 0.695
+   E 0.4005 mJ  mode lut      T  20000 II  19680 FPS    6352 LUT  42523 BRAM18  89.0 DSP  28 U 0.911
+   reachable II levels: [16384, 19680, 24576, 32768, 49152, 98304, 196608, 442368, 786432]
+== 44242448: 33 design points; best 4 by continuous energy (nominal, 125 MHz)
+   E 0.2499 mJ  mode dsp4c    T  14286 II  12288 FPS   10173 LUT  36379 BRAM18  31.0 DSP 172 U 0.907
+   E 0.2499 mJ  mode dsp4c    T  12500 II  12288 FPS   10173 LUT  36379 BRAM18  31.0 DSP 172 U 0.907
+   E 0.2521 mJ  mode dsp4c    T  10000 II  12217 FPS   10232 LUT  39229 BRAM18  38.0 DSP 172 U 0.967
+   E 0.3051 mJ  mode dsp4c    T  16667 II  16384 FPS    7629 LUT  22729 BRAM18  26.0 DSP 100 U 0.564
+   reachable II levels: [12217, 12288, 16384, 19680, 24576, 32768, 49152, 98304, 196608, 442368, 786432]
+== 84242448: 28 design points; best 4 by continuous energy (nominal, 125 MHz)
+   E 0.3181 mJ  mode dsp4c    T  16667 II  16384 FPS    7629 LUT  26804 BRAM18  26.0 DSP 172 U 0.723
+   E 0.3261 mJ  mode lut      T  16667 II  16384 FPS    7629 LUT  40870 BRAM18  23.0 DSP  28 U 0.821
+   E 0.3819 mJ  mode dsp4c    T  20000 II  19680 FPS    6352 LUT  26804 BRAM18  24.0 DSP 172 U 0.721
+   E 0.3915 mJ  mode lut      T  20000 II  19680 FPS    6352 LUT  40870 BRAM18  21.0 DSP  28 U 0.819
+   reachable II levels: [16384, 19680, 24576, 32768, 49152, 98304, 196608, 442368, 786432]
+== 44224448: 31 design points; best 4 by continuous energy (nominal, 125 MHz)
+   E 0.2513 mJ  mode dsp4c    T  12500 II  12288 FPS   10173 LUT  33795 BRAM18  50.0 DSP 220 U 0.930
+   E 0.2513 mJ  mode dsp4c    T  14286 II  12288 FPS   10173 LUT  33795 BRAM18  50.0 DSP 220 U 0.930
+   E 0.3071 mJ  mode dsp4c    T  16667 II  16384 FPS    7629 LUT  21201 BRAM18  40.0 DSP 136 U 0.589
+   E 0.3163 mJ  mode lut      T  16667 II  16384 FPS    7629 LUT  35559 BRAM18  35.0 DSP   1 U 0.701
+   reachable II levels: [12288, 16384, 19680, 24576, 32768, 49152, 98304, 196608, 442368, 786432]
+== 42442448: 38 design points; best 4 by continuous energy (nominal, 125 MHz)
+   E 0.2463 mJ  mode dsp4c    T  14286 II  12288 FPS   10173 LUT  37678 BRAM18  30.0 DSP 100 U 0.849
+   E 0.2463 mJ  mode dsp4c    T  12500 II  12288 FPS   10173 LUT  37678 BRAM18  30.0 DSP 100 U 0.849
+   E 0.2485 mJ  mode dsp4c    T  10000 II  12217 FPS   10232 LUT  40528 BRAM18  37.0 DSP 100 U 0.908
+   E 0.2552 mJ  mode lut      T  12500 II  12288 FPS   10173 LUT  42545 BRAM18 148.0 DSP  55 U 0.994
+   reachable II levels: [12217, 12288, 16384, 19680, 24576, 32768, 49152, 98304, 196608, 442368, 786432]
+== 48484848: 10 design points; best 4 by continuous energy (nominal, 125 MHz)
+   E 0.6338 mJ  mode dsp4c    T  33333 II  32768 FPS    3815 LUT  17559 BRAM18 154.0 DSP 212 U 0.708
+   E 0.9109 mJ  mode dsp4c    T  50000 II  49152 FPS    2543 LUT  13651 BRAM18 154.0 DSP 134 U 0.546
+   E 1.7546 mJ  mode dsp4c    T 100000 II  98304 FPS    1272 LUT   9993 BRAM18 157.0 DSP  72 U 0.410
+   E 1.7889 mJ  mode dspc     T 100000 II  98304 FPS    1272 LUT   9950 BRAM18 157.0 DSP 134 U 0.479
+   reachable II levels: [32768, 49152, 98304, 196608, 442368, 786432]
+== [hi] done 11:03:31
+saved C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/cost/points_thr_lo.npz 157395 points
+157395 rows; critical path / bottleneck cycles: min 6.85 median 12.01 max 22.90
+== [lo] main search (3-replicate model, margin 1)
+== power params: nominal
+   continuous
+     A_prime        E=0.2899 mJ  FPS=7629.4  f=125.0  bits=[4, 4, 4, 4, 4, 4, 4, 8] mode=dsp4c LUT=5294 BRAM18=43.0 DSP=212 acc=84.68
+     B1_uniform     E=0.5812 mJ  FPS=3814.7  f=125.0  bits=[8, 4, 8, 4, 8, 4, 8, 4] mode=dsp4c LUT=4571 BRAM18=68.0 DSP=212 acc=84.8
+     B4_latency     E=0.2899 mJ  FPS=7629.4  f=125.0  bits=[4, 4, 4, 4, 4, 4, 4, 8] mode=dsp4c LUT=5294 BRAM18=43.0 DSP=212 acc=84.68
+     B2_proxy       E=2.1069 mJ  FPS=1017.3  f=100.0  bits=[4, 4, 4, 4, 4, 4, 4, 8] mode=lut_finn LUT=24298 BRAM18=32.0 DSP=1 acc=84.68
+     B3_sequential  E=0.2899 mJ  FPS=7629.4  f=125.0  bits=[4, 4, 4, 4, 4, 4, 4, 8] mode=dsp4c LUT=5294 BRAM18=43.0 DSP=212 acc=84.68
+== [lo] threshold sweep with latency-aware policies
+== margin 1.0 (threshold 84.37, 315 configs pass)
+  nominal   cont vs A': A +0.0%, B1 +100.5%, B4 +0.0%, B2 +626.8%, B3 +0.0%   bits A'=44444448 B2=44444448
+     R=  300 jit: A'=44444448; B1 +1.5%, B4 +0.0%, B4L +0.8%, B2 +8.6%, B3 +0.0%, B5 +13.8%
+     R= 3000 jit: A'=44444448; B1 +13.5%, B4 +0.0%, B4L +7.1%, B3 +0.0%, B5 +14.5%
+  z2_anchor cont vs A': A +0.0%, B1 +100.3%, B4 +0.0%, B2 +618.7%, B3 +0.0%   bits A'=44444448 B2=44444448
+     R=  300 jit: A'=44444448; B1 +1.6%, B4 +0.0%, B4L +0.5%, B2 +8.3%, B3 +0.0%, B5 +16.7%
+     R= 3000 jit: A'=44444448; B1 +13.5%, B4 +0.0%, B4L +4.2%, B3 +0.0%, B5 +17.6%
+== margin 2.0 (threshold 83.37, 970 configs pass)
+  nominal   cont vs A': A +0.0%, B1 +23.4%, B4 +1.0%, B2 +208.5%, B3 +1.0%   bits A'=44242448 B2=44242448
+     R=  300 jit: A'=44242448; B1 +0.0%, B4 +0.1%, B4L +0.1%, B2 +2.3%, B3 +0.1%, B5 +11.0%
+     R= 3000 jit: A'=44242448; B1 +0.5%, B4 +0.6%, B4L +0.6%, B2 +20.4%, B3 +0.6%, B5 +20.2%
+  z2_anchor cont vs A': A +0.0%, B1 +27.3%, B4 +0.3%, B2 +210.8%, B3 +0.3%   bits A'=44242448 B2=44242448
+     R=  300 jit: A'=44242448; B1 +0.2%, B4 +0.0%, B4L +0.0%, B2 +2.2%, B3 +0.0%, B5 +12.8%
+     R= 3000 jit: A'=44242448; B1 +1.8%, B4 +0.3%, B4L +0.3%, B2 +19.4%, B3 +0.3%, B5 +23.4%
+== margin 3.0 (threshold 82.37, 1895 configs pass)
+  nominal   cont vs A': A +0.0%, B1 +24.9%, B4 +1.1%, B2 +206.0%, B3 +3.4%   bits A'=44224448 B2=42442448
+     R=  300 jit: A'=44224448; B1 +0.1%, B4 +0.1%, B4L +0.4%, B2 +2.1%, B3 +0.2%, B5 +10.8%
+     R= 3000 jit: A'=44224448; B1 +1.0%, B4 +0.6%, B4L +3.6%, B2 +18.6%, B3 +1.5%, B5 +20.0%
+  z2_anchor cont vs A': A +0.0%, B1 +28.3%, B4 +0.4%, B2 +209.4%, B3 +1.8%   bits A'=44224448 B2=42442448
+     R=  300 jit: A'=44224448; B1 +0.2%, B4 +0.0%, B4L +0.2%, B2 +2.0%, B3 +0.1%, B5 +12.7%
+     R= 3000 jit: A'=44224448; B1 +2.1%, B4 +0.4%, B4L +2.1%, B2 +18.3%, B3 +0.9%, B5 +23.3%
+== margin 5.0 (threshold 80.37, 3879 configs pass)
+  nominal   cont vs A': A +0.0%, B1 +4.2%, B4 +0.5%, B2 +58.2%, B3 +3.4%   bits A'=44222248 B2=24222448
+     R=  300 jit: A'=44222248; B1 +0.1%, B4 +0.0%, B4L +0.2%, B2 +0.5%, B3 +0.2%, B5 +10.6%
+     R= 3000 jit: A'=44222248; B1 +1.4%, B4 +0.4%, B4L +1.8%, B2 +4.9%, B3 +1.5%, B5 +19.4%
+  z2_anchor cont vs A': A +0.0%, B1 +2.5%, B4 +0.1%, B2 +57.8%, B3 +1.8%   bits A'=44222248 B2=24222448
+     R=  300 jit: A'=44222248; B1 +0.1%, B4 +0.0%, B4L +0.1%, B2 +0.5%, B3 +0.1%, B5 +12.4%
+     R= 3000 jit: A'=44222248; B1 +0.9%, B4 +0.2%, B4L +1.1%, B2 +4.4%, B3 +0.9%, B5 +22.8%
+== margin 8.0 (threshold 77.37, 6004 configs pass)
+  nominal   cont vs A': A +0.0%, B1 +4.2%, B4 +0.5%, B2 +24.4%, B3 +0.9%   bits A'=44222244 B2=22222448
+     R=  300 jit: A'=44222244; B1 +0.1%, B4 +0.0%, B4L +0.3%, B2 +0.3%, B3 +0.1%, B5 +10.6%
+     R= 3000 jit: A'=44222244; B1 +1.4%, B4 +0.4%, B4L +2.7%, B2 +2.8%, B3 +0.5%, B5 +19.4%
+  z2_anchor cont vs A': A +0.0%, B1 +2.5%, B4 +0.1%, B2 +21.8%, B3 +0.3%   bits A'=44222244 B2=22222448
+     R=  300 jit: A'=44222244; B1 +0.1%, B4 +0.0%, B4L +0.2%, B2 +0.2%, B3 +0.0%, B5 +12.4%
+     R= 3000 jit: A'=44222244; B1 +0.9%, B4 +0.2%, B4L +1.6%, B2 +1.6%, B3 +0.3%, B5 +22.8%
+== [lo] latency-aware idle analysis
+  R=  300: streaming: jit 4.9423 ([4, 4, 4, 4, 4, 4, 4, 8] cyc 16384 f 4.926) = II-bound +0.0%; lowclk +0.0%, halt +0.0%, B5 +24.1% | deadline: gated 6.1347 [4, 4, 4, 4, 4, 4, 4, 8] cyc 16384, jit +1.1%, F_EXT running +6.0%, B5 +0.0%, B4L +
+  R= 3000: streaming: jit 0.6087 ([4, 4, 4, 4, 4, 4, 4, 8] cyc 16384 f 50.000) = II-bound +0.3%; lowclk +0.0%, halt +0.0%, B5 +23.4% | deadline: infeasible
+== nominal
+  R=  300: streaming: jit 5.4136 ([4, 4, 4, 4, 4, 4, 4, 8] cyc 16384 f 4.926) = II-bound +0.0%; lowclk +0.0%, halt +0.0%, B5 +13.8% | deadline: gated 6.1616 [4, 4, 4, 4, 4, 4, 4, 8] cyc 16384, jit +0.5%, F_EXT running +3.2%, B5 +0.0%, B4L +
+  R= 3000: streaming: jit 0.6145 ([4, 4, 4, 4, 4, 4, 4, 8] cyc 16384 f 50.000) = II-bound +0.2%; lowclk +0.0%, halt +0.0%, B5 +14.5% | deadline: infeasible
+  R=  300: streaming: jit 6.0245 ([4, 4, 4, 4, 4, 4, 4, 8] cyc 16384 f 4.926) = II-bound +0.0%; lowclk +0.0%, halt +0.0%, B5 +3.5% | deadline: gated 6.2010 [4, 4, 4, 4, 4, 4, 4, 8] cyc 16384, jit +0.1%, F_EXT running +0.7%, B5 +0.5%, B4L +0
+  R= 3000: streaming: jit 0.6247 ([4, 4, 4, 4, 4, 4, 4, 8] cyc 16384 f 50.000) = II-bound +0.0%; lowclk +0.0%, halt +0.0%, B5 +4.0% | deadline: infeasible
+== z2_anchor
+  R=  300: streaming: jit 4.2302 ([4, 4, 4, 4, 4, 4, 4, 8] cyc 16384 f 4.926) = II-bound +0.0%; lowclk +0.0%, halt +0.0%, B5 +16.7% | deadline: gated 4.8966 [4, 4, 4, 4, 4, 4, 4, 8] cyc 16384, jit +0.3%, F_EXT running +3.2%, B5 +0.9%, B4L +
+  R= 3000: streaming: jit 0.4810 ([4, 4, 4, 4, 4, 4, 4, 8] cyc 16384 f 50.000) = II-bound +0.2%; lowclk +0.0%, halt +0.0%, B5 +17.6% | deadline: infeasible
+== [lo] proxies
+  tau(BOPs                      , energy) = +0.608
+  tau(weight bits               , energy) = +0.248
+  tau(BOPs + threshold bit-ops  , energy) = +0.598
+  margin 1 (thr 84.37, 315 pass) A' 44444448 | BOPs: 44444448 +0.0% | weight bits: 48442848 +102.9% | threshold compares: 84848484 +100.5% | BOPs + threshold bit-ops: 44444448 +0.0% | weight + threshold bits: 84444484 +74.4%
+  margin 2 (thr 83.37, 970 pass) A' 44242448 | BOPs: 44242448 +0.0% | weight bits: 48242848 +35.5% | threshold compares: 84828484 +123.0% | BOPs + threshold bit-ops: 44242448 +0.0% | weight + threshold bits: 44442484 +24.2%
+  margin 3 (thr 82.37, 1895 pass) A' 44224448 | BOPs: 42442448 +2.4% | weight bits: 48242828 +37.3% | threshold compares: 82848484 +41.2% | BOPs + threshold bit-ops: 42442448 +2.4% | weight + threshold bits: 44242444 +1.2%
+  margin 5 (thr 80.37, 3879 pass) A' 44222248 | BOPs: 24222448 +2.6% | weight bits: 24242828 +9.1% | threshold compares: 82824284 +43.0% | BOPs + threshold bit-ops: 42242284 +2.4% | weight + threshold bits: 44222284 +0.0%
+  margin 8 (thr 77.37, 6004 pass) A' 44222244 | BOPs: 22222448 +0.0% | weight bits: 24242828 +9.1% | threshold compares: 82824282 +43.2% | BOPs + threshold bit-ops: 22222484 +0.0% | weight + threshold bits: 24222224 +1.9%
+  tau(BOPs                      , energy) = +0.608
+  tau(weight bits               , energy) = +0.248
+  tau(BOPs + threshold bit-ops  , energy) = +0.598
+  margin 1 (thr 84.37, 315 pass) A' 44444448 | BOPs: 44444448 +0.0% | weight bits: 48442848 +101.7% | threshold compares: 84848484 +100.3% | BOPs + threshold bit-ops: 44444448 +0.0% | weight + threshold bits: 84444484 +64.3%
+  margin 2 (thr 83.37, 970 pass) A' 44242448 | BOPs: 44242448 +0.0% | weight bits: 48242848 +34.6% | threshold compares: 84828484 +113.9% | BOPs + threshold bit-ops: 44242448 +0.0% | weight + threshold bits: 44442484 +27.8%
+  margin 3 (thr 82.37, 1895 pass) A' 44224448 | BOPs: 42442448 +1.4% | weight bits: 48242828 +35.7% | threshold compares: 82848484 +38.1% | BOPs + threshold bit-ops: 42442448 +1.4% | weight + threshold bits: 44242444 +0.7%
+  margin 5 (thr 80.37, 3879 pass) A' 44222248 | BOPs: 24222448 +1.6% | weight bits: 24242828 +5.4% | threshold compares: 82824284 +39.2% | BOPs + threshold bit-ops: 42242284 +1.5% | weight + threshold bits: 44222284 +0.0%
+  margin 8 (thr 77.37, 6004 pass) A' 44222244 | BOPs: 22222448 +0.0% | weight bits: 24242828 +5.4% | threshold compares: 82824282 +39.3% | BOPs + threshold bit-ops: 22222484 +0.0% | weight + threshold bits: 24222224 +1.2%
+== [lo] key designs
+== 44444448: 26 design points; best 4 by continuous energy (nominal, 125 MHz)
+   E 0.2899 mJ  mode dsp4c    T  16667 II  16384 FPS    7629 LUT   5294 BRAM18  43.0 DSP 212 U 0.379
+   E 0.3336 mJ  mode lut      T  16667 II  16384 FPS    7629 LUT  42515 BRAM18  91.0 DSP  28 U 0.912
+   E 0.3480 mJ  mode dsp4c    T  20000 II  19680 FPS    6352 LUT   5294 BRAM18  41.0 DSP 212 U 0.377
+   E 0.4005 mJ  mode lut      T  20000 II  19680 FPS    6352 LUT  42515 BRAM18  89.0 DSP  28 U 0.910
+   reachable II levels: [16384, 19680, 24576, 32768, 49152, 98304, 196608, 442368, 786432]
+== 44444488: 26 design points; best 4 by continuous energy (nominal, 125 MHz)
+   E 0.2899 mJ  mode dsp4c    T  16667 II  16384 FPS    7629 LUT   5262 BRAM18  44.0 DSP 212 U 0.379
+   E 0.3336 mJ  mode lut      T  16667 II  16384 FPS    7629 LUT  42523 BRAM18  91.0 DSP  28 U 0.912
+   E 0.3481 mJ  mode dsp4c    T  20000 II  19680 FPS    6352 LUT   5262 BRAM18  42.0 DSP 212 U 0.377
+   E 0.4005 mJ  mode lut      T  20000 II  19680 FPS    6352 LUT  42523 BRAM18  89.0 DSP  28 U 0.911
+   reachable II levels: [16384, 19680, 24576, 32768, 49152, 98304, 196608, 442368, 786432]
+== 44242448: 33 design points; best 4 by continuous energy (nominal, 125 MHz)
+   E 0.2350 mJ  mode dsp4c    T  14286 II  12288 FPS   10173 LUT  23536 BRAM18  31.0 DSP 172 U 0.666
+   E 0.2350 mJ  mode dsp4c    T  12500 II  12288 FPS   10173 LUT  23536 BRAM18  31.0 DSP 172 U 0.666
+   E 0.2373 mJ  mode dsp4c    T  10000 II  12217 FPS   10232 LUT  26386 BRAM18  38.0 DSP 172 U 0.725
+   E 0.2942 mJ  mode dsp4c    T  16667 II  16384 FPS    7629 LUT  15670 BRAM18  26.0 DSP 100 U 0.431
+   reachable II levels: [12217, 12288, 16384, 19680, 24576, 32768, 49152, 98304, 196608, 442368, 786432]
+== 84242448: 28 design points; best 4 by continuous energy (nominal, 125 MHz)
+   E 0.3030 mJ  mode dsp4c    T  16667 II  16384 FPS    7629 LUT  16995 BRAM18  26.0 DSP 172 U 0.538
+   E 0.3261 mJ  mode lut      T  16667 II  16384 FPS    7629 LUT  40870 BRAM18  23.0 DSP  28 U 0.821
+   E 0.3637 mJ  mode dsp4c    T  20000 II  19680 FPS    6352 LUT  16995 BRAM18  24.0 DSP 172 U 0.536
+   E 0.3915 mJ  mode lut      T  20000 II  19680 FPS    6352 LUT  40870 BRAM18  21.0 DSP  28 U 0.819
+   reachable II levels: [16384, 19680, 24576, 32768, 49152, 98304, 196608, 442368, 786432]
+== 44224448: 31 design points; best 4 by continuous energy (nominal, 125 MHz)
+   E 0.2322 mJ  mode dsp4c    T  12500 II  12288 FPS   10173 LUT  17242 BRAM18  50.0 DSP 220 U 0.619
+   E 0.2322 mJ  mode dsp4c    T  14286 II  12288 FPS   10173 LUT  17242 BRAM18  50.0 DSP 220 U 0.619
+   E 0.2918 mJ  mode dsp4c    T  16667 II  16384 FPS    7629 LUT  11277 BRAM18  40.0 DSP 136 U 0.402
+   E 0.3163 mJ  mode lut      T  16667 II  16384 FPS    7629 LUT  35559 BRAM18  35.0 DSP   1 U 0.701
+   reachable II levels: [12288, 16384, 19680, 24576, 32768, 49152, 98304, 196608, 442368, 786432]
+== 42442448: 38 design points; best 4 by continuous energy (nominal, 125 MHz)
+   E 0.2377 mJ  mode dsp4c    T  14286 II  12288 FPS   10173 LUT  30220 BRAM18  30.0 DSP 100 U 0.708
+   E 0.2377 mJ  mode dsp4c    T  12500 II  12288 FPS   10173 LUT  30220 BRAM18  30.0 DSP 100 U 0.708
+   E 0.2400 mJ  mode dsp4c    T  10000 II  12217 FPS   10232 LUT  33070 BRAM18  37.0 DSP 100 U 0.768
+   E 0.2552 mJ  mode lut      T  12500 II  12288 FPS   10173 LUT  42545 BRAM18 148.0 DSP  55 U 0.994
+   reachable II levels: [12217, 12288, 16384, 19680, 24576, 32768, 49152, 98304, 196608, 442368, 786432]
+== 48484848: 10 design points; best 4 by continuous energy (nominal, 125 MHz)
+   E 0.5921 mJ  mode dsp4c    T  33333 II  32768 FPS    3815 LUT   4010 BRAM18 154.0 DSP 212 U 0.454
+   E 0.8651 mJ  mode dsp4c    T  50000 II  49152 FPS    2543 LUT   3746 BRAM18 154.0 DSP 134 U 0.360
+   E 1.6934 mJ  mode dsp4c    T 100000 II  98304 FPS    1272 LUT   3362 BRAM18 157.0 DSP  72 U 0.285
+   E 1.7280 mJ  mode dspc     T 100000 II  98304 FPS    1272 LUT   3362 BRAM18 157.0 DSP 134 U 0.356
+   reachable II levels: [32768, 49152, 98304, 196608, 442368, 786432]
+== [lo] done 11:21:03

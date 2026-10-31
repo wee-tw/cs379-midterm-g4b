@@ -10,12 +10,13 @@
 | [estimator_harm/](estimator_harm/) | 照 FINN 的估計做設計搜尋會怎樣：最佳解放不下、白跑次數、regret、補救策略、±10% 穩健性 | 估計＋工具驗證 | C2 |
 | [search/](search/) | 主結果：每個準確率門檻下 A′ 和 B1–B5 的每張能耗、資源預算掃描、固定速率的時脈策略、功耗參數和成本模型的敏感度 | 估計 | C3、C4 |
 | [accuracy/](accuracy/) | 準確率：所有訓練紀錄、準確率模型、被選中配置的實測表 | 實測 | C3 |
-| `checkpoints/` | 訓練好的模型權重（.pt，共 80 MB），依實驗分資料夾。只在本機，不上 GitHub | — | — |
+| [checkpoints/](checkpoints/) | 訓練好的模型權重（.pt，exp1–exp18，共 93 MB），依實驗分資料夾。[README](checkpoints/README.md) | 實測 | C3 |
+| [raw/](raw/) | 原始檔：合成報告、稽核資料夾、執行紀錄（12 個 `.tar.gz`，共 92 MB）。上面各資料夾的表格都是從這些解析出來的。[README](raw/README.md) | 工具驗證 | C1–C4 |
 | [logs_v21/](logs_v21/) | 產生 v2.1 結果的完整執行紀錄 | — | — |
 | [timing/](timing/) | 時序：RTL 節點的合成後時序（合成時有給時脈和沒給兩種）、UltraScale+ 的 DSP 數、寬度轉換器與殘差 FIFO 的估算、HLS 時序摘要 | 工具驗證 | C1、C3 |
-| [plan_d/](plan_d/) | 給組員 Plan D 的交件和追溯檔：`plan_d_checks.txt`（回報 `docs/handoff5_8_reply.md` 裡從本機成本表算出的數字）、`rq2_729_energies.csv`（729 種的 BOPs 和兩種時脈下的能耗）；之後的 `hw_729.csv` 也放這裡。程式在 `code/plan_d/` | 估計＋工具驗證 | C1、C3 |
+| [plan_d/](plan_d/) | 給組員 Plan D 的交件和追溯檔：`plan_d_checks.txt`（回報 `docs/handoff5_8_reply.md` 裡從 `code/cost/` 成本表算出的數字）、`rq2_729_energies.csv`（729 種的 BOPs 和兩種時脈下的能耗）；之後的 `hw_729.csv` 也放這裡。程式在 `code/plan_d/` | 估計＋工具驗證 | C1、C3 |
 
-產生這些結果的輸入（成本表、搜尋點、準確率模型）在 [`../code/cost/`](../code/cost/)，實際執行的腳本在 [`../code/pipelines_v21/`](../code/pipelines_v21/)。
+產生這些結果的輸入（成本表、搜尋點、準確率模型）在 [`../code/cost/`](../code/cost/)，實際執行的腳本在 [`../code/pipelines_v21/`](../code/pipelines_v21/)、`../code/pipelines_timing/` 和 `../code/scratch/`。`python code/verify_from_github.py` 會用 GitHub 上的資料重算主結果表和 Plan D 的數字並逐項比對，說明見 [`../docs/data_availability.md`](../docs/data_availability.md)。
 
 ## 重要檔案怎麼看
 

@@ -2,7 +2,8 @@
 
 10/29 已在 Windows + RTX 3060 上全部跑過。詳細結果見 `../docs/implementation_notes.md` 第 5 節。
 
-- **資料在哪：** 最終版（v2.1）的輸入在 [`cost/`](cost/README.md)，產生的結果在 [`../results/`](../results/README.md)，實際執行的腳本在 [`pipelines_v21/`](pipelines_v21/README.md)。上板用的程式在 [`board/`](board/README_board.md)。
+- **資料在哪：** 成本表、設計點等輸入在 [`cost/`](cost/README.md)（全部在 GitHub；`.json.gz` 用 `cost/unpack.py` 解開），產生的結果在 [`../results/`](../results/README.md)，實際執行的腳本在 [`pipelines_v21/`](pipelines_v21/README.md)、`pipelines_timing/`，做實驗時的一次性腳本在 [`scratch/`](scratch/README.md)。上板用的程式在 [`board/`](board/README_board.md)。
+- **自己驗證數字：** `python verify_from_github.py` 用 GitHub 上的資料重算主結果表和 Plan D 的數字，並和 `../results/` 逐項比對（約 20 秒，只需要 numpy、scipy）。說明見 [`../docs/data_availability.md`](../docs/data_availability.md)。
 - **只想跑訓練：** 用 `resnet8_brevitas.py`、`train_cifar.py`、`verify_resnet8.py` 三支就夠，說明在 `../handovers/handover1_1030/for_1131517/README_training.md`。其他程式大多要 FINN v0.10.1，合成相關的還要 Vivado / Vitis HLS 2022.2。
 
 | 檔案 | 做什麼 |
@@ -24,7 +25,7 @@
 | `make_figures.py`、`summarize_runs.py` | 圖表和結果表 |
 | `board/measure_power.py` | 給期末上板用：在 PYNQ-Z2 上產生待機、連續、固定速率的計時量測區間 |
 | `board/run_session.py`、`board/analyze_timing.py` | 上板量測：`--plan timing` 不需要功率計，量吞吐量、單張延遲、停時脈和各固定幀率策略跟不跟得上，再用 `analyze_timing.py` 對照 FINN 的週期估計 |
-| `plan_d/plan_d_checks.py` | 組員 Plan D 的追溯檔：用本機的最終成本點算 729 種的 BOPs 與能耗、排名分析、FC 位元比較、BRAM 階梯、閾值分組、敏感度，輸出到 `../results/plan_d/` |
+| `plan_d/plan_d_checks.py` | 組員 Plan D 的追溯檔：用 `cost/` 的最終成本點算 729 種的 BOPs 與能耗、排名分析、FC 位元比較、BRAM 階梯、閾值分組、敏感度，輸出到 `../results/plan_d/` |
 
 ### 完整流程（10/29 實際跑過的順序）
 1. 訓練：`train_cifar.py --model finnfloat`（浮點起點）→ `run_queue.py` 跑 QAT。recipe 用 `lowbit`，再加 `--teacher` 做 KD。

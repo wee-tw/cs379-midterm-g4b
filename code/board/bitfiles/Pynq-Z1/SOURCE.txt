@@ -1,0 +1,1 @@
+finn-examples v0.0.7a Pynq-Z1 release (Pynq-Z1.zip md5 402ab9dfa4612ae340715bf80e4717bd), https://github.com/Xilinx/finn-examples/releases/tag/v0.0.7a ; Apache-2.0

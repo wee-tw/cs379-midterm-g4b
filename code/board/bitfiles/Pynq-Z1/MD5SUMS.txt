@@ -1,0 +1,5 @@
+33a8943177123998c7b888ce208ddf42 *cnv-w1a1.bit
+f464fddae00bdb64f6c24267b0270221 *cnv-w1a2.bit
+a3f0ddfbef8d0f869da02f53a2f2c007 *cnv-w2a2.bit
+91c6e11658ddfee85f8d0e8c99777424 *kwsmlp-w3a3.bit
+ba0f65df4afd058c38091ffffd345310 *tfc-w1a1.bit

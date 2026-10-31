@@ -6,16 +6,16 @@ papers/
 # 舊檔
 archive/
 
-# 模型權重（80 MB）；需要時另外傳。訓練用的老師模型在 handovers/handover1_1030/ 裡
-results/checkpoints/
-
-# 大型資料：成本表和搜尋點（約 110 MB），只在本機，需要時跟 1133311 拿
-code/cost/*.npz
+# 成本表在 GitHub 上是 .json.gz；python code/cost/unpack.py 解開的 .json 不上傳
 code/cost/tables_*.json
-code/cost/v0/
+code/cost/v0/tables.json
 
-# 上板用的 bitfile（21 MB），給朋友的上板包裡有
-code/board/bitfiles/
+# results/raw/*.tar.gz 解開後的資料夾
+results/raw/*/
+
+# 打包時的暫存檔
+*.tmp
+*.tmp.npz
 
 # 已經交出去的壓縮檔和給朋友的上板包（內容和 code/board/ 重複）
 handovers/*.zip

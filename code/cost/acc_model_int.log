@@ -1,0 +1,14 @@
+runs with >=2 W2 groups: 8
+  2,8,2,8,4,8,8,2: additive residual +0.76, pairwise fit -0.31
+  4,2,2,2,8,4,2,8: additive residual -0.78, pairwise fit -0.07
+  4,8,2,8,2,2,2,4: additive residual +0.36, pairwise fit +0.23
+  2,4,2,4,2,4,2,4: additive residual -0.10, pairwise fit -0.34
+  2,4,2,4,2,4,4,4: additive residual -3.30, pairwise fit -2.10
+  2,4,2,4,4,4,4,4: additive residual -0.57, pairwise fit -0.31
+  2,4,4,4,2,4,4,4: additive residual -0.16, pairwise fit -0.75
+  4,4,2,4,2,4,2,4: additive residual +0.54, pairwise fit +0.23
+gamma: {'g1g2': -0.31, 'g1g3': -0.75, 'g1g4': 0.48, 'g2g3': -1.05, 'g2g4': -0.07, 'g3g4': 1.35}
+  out-of-sample w2a2: measured 50.40, additive 71.95, pairwise 71.61
+  out-of-sample w2a4: measured 68.92, additive 79.86, pairwise 79.52
+  out-of-sample w2a8: measured 62.74, additive 80.51, pairwise 80.17
+threshold 84.46: 294 configs pass (additive: 255)

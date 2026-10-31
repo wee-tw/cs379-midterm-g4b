@@ -1,0 +1,352 @@
+{
+ "0.1": {
+  "nominal": {
+   "A_prime": {
+    "bits": [
+     4,
+     4,
+     2,
+     4,
+     2,
+     4,
+     4,
+     8
+    ],
+    "mode": "dsp4c",
+    "T_target": 14286,
+    "cycles": 12288,
+    "f_MHz": 125.0,
+    "FPS": 10172.5,
+    "LUT": 23536,
+    "BRAM18": 31.0,
+    "DSP": 172,
+    "U": 0.548,
+    "BOPs_M": 148.4,
+    "wmem_kbit": 166.08,
+    "acc_est": 83.52,
+    "E_continuous_mJ": 0.2278,
+    "idle_share_continuous": 0.897
+   },
+   "gaps_pct": {
+    "B1_uniform": 22.0,
+    "B4_latency": 1.1,
+    "B2_proxy": 218.2,
+    "B3_sequential": 1.1
+   }
+  },
+  "z2_anchor": {
+   "A_prime": {
+    "bits": [
+     4,
+     4,
+     2,
+     4,
+     2,
+     4,
+     4,
+     8
+    ],
+    "mode": "dsp4c",
+    "T_target": 14286,
+    "cycles": 12288,
+    "f_MHz": 125.0,
+    "FPS": 10172.5,
+    "LUT": 23536,
+    "BRAM18": 31.0,
+    "DSP": 172,
+    "U": 0.548,
+    "BOPs_M": 148.4,
+    "wmem_kbit": 166.08,
+    "acc_est": 83.52,
+    "E_continuous_mJ": 0.1752,
+    "idle_share_continuous": 0.95
+   },
+   "gaps_pct": {
+    "B1_uniform": 26.6,
+    "B4_latency": 0.4,
+    "B2_proxy": 216.7,
+    "B3_sequential": 0.4
+   }
+  }
+ },
+ "0.25": {
+  "nominal": {
+   "A_prime": {
+    "bits": [
+     4,
+     4,
+     2,
+     4,
+     2,
+     4,
+     4,
+     8
+    ],
+    "mode": "dsp4c",
+    "T_target": 14286,
+    "cycles": 12288,
+    "f_MHz": 125.0,
+    "FPS": 10172.5,
+    "LUT": 23536,
+    "BRAM18": 31.0,
+    "DSP": 172,
+    "U": 0.666,
+    "BOPs_M": 148.4,
+    "wmem_kbit": 166.08,
+    "acc_est": 83.52,
+    "E_continuous_mJ": 0.235,
+    "idle_share_continuous": 0.878
+   },
+   "gaps_pct": {
+    "B1_uniform": 23.4,
+    "B4_latency": 1.0,
+    "B2_proxy": 208.5,
+    "B3_sequential": 1.0
+   }
+  },
+  "z2_anchor": {
+   "A_prime": {
+    "bits": [
+     4,
+     4,
+     2,
+     4,
+     2,
+     4,
+     4,
+     8
+    ],
+    "mode": "dsp4c",
+    "T_target": 14286,
+    "cycles": 12288,
+    "f_MHz": 125.0,
+    "FPS": 10172.5,
+    "LUT": 23536,
+    "BRAM18": 31.0,
+    "DSP": 172,
+    "U": 0.666,
+    "BOPs_M": 148.4,
+    "wmem_kbit": 166.08,
+    "acc_est": 83.52,
+    "E_continuous_mJ": 0.1786,
+    "idle_share_continuous": 0.94
+   },
+   "gaps_pct": {
+    "B1_uniform": 27.3,
+    "B4_latency": 0.3,
+    "B2_proxy": 210.8,
+    "B3_sequential": 0.3
+   }
+  }
+ },
+ "0.5": {
+  "nominal": {
+   "A_prime": {
+    "bits": [
+     4,
+     4,
+     2,
+     4,
+     2,
+     4,
+     4,
+     8
+    ],
+    "mode": "dsp4c",
+    "T_target": 14286,
+    "cycles": 12288,
+    "f_MHz": 125.0,
+    "FPS": 10172.5,
+    "LUT": 23536,
+    "BRAM18": 31.0,
+    "DSP": 172,
+    "U": 0.861,
+    "BOPs_M": 148.4,
+    "wmem_kbit": 166.08,
+    "acc_est": 83.52,
+    "E_continuous_mJ": 0.247,
+    "idle_share_continuous": 0.85
+   },
+   "gaps_pct": {
+    "B1_uniform": 25.3,
+    "B4_latency": 0.9,
+    "B2_proxy": 193.6,
+    "B3_sequential": 0.9
+   }
+  },
+  "z2_anchor": {
+   "A_prime": {
+    "bits": [
+     4,
+     4,
+     2,
+     4,
+     2,
+     4,
+     4,
+     8
+    ],
+    "mode": "dsp4c",
+    "T_target": 14286,
+    "cycles": 12288,
+    "f_MHz": 125.0,
+    "FPS": 10172.5,
+    "LUT": 23536,
+    "BRAM18": 31.0,
+    "DSP": 172,
+    "U": 0.861,
+    "BOPs_M": 148.4,
+    "wmem_kbit": 166.08,
+    "acc_est": 83.52,
+    "E_continuous_mJ": 0.1841,
+    "idle_share_continuous": 0.925
+   },
+   "gaps_pct": {
+    "B1_uniform": 28.4,
+    "B4_latency": 0.3,
+    "B2_proxy": 201.5,
+    "B3_sequential": 0.3
+   }
+  }
+ },
+ "1.0": {
+  "nominal": {
+   "A_prime": {
+    "bits": [
+     4,
+     4,
+     2,
+     4,
+     2,
+     4,
+     4,
+     8
+    ],
+    "mode": "dsp4c",
+    "T_target": 14286,
+    "cycles": 12288,
+    "f_MHz": 125.0,
+    "FPS": 10172.5,
+    "LUT": 23536,
+    "BRAM18": 31.0,
+    "DSP": 172,
+    "U": 1.252,
+    "BOPs_M": 148.4,
+    "wmem_kbit": 166.08,
+    "acc_est": 83.52,
+    "E_continuous_mJ": 0.2711,
+    "idle_share_continuous": 0.801
+   },
+   "gaps_pct": {
+    "B1_uniform": 25.9,
+    "B4_latency": 0.8,
+    "B2_proxy": 167.6,
+    "B3_sequential": 0.8
+   }
+  },
+  "z2_anchor": {
+   "A_prime": {
+    "bits": [
+     4,
+     4,
+     2,
+     4,
+     2,
+     4,
+     4,
+     8
+    ],
+    "mode": "dsp4c",
+    "T_target": 14286,
+    "cycles": 12288,
+    "f_MHz": 125.0,
+    "FPS": 10172.5,
+    "LUT": 23536,
+    "BRAM18": 31.0,
+    "DSP": 172,
+    "U": 1.252,
+    "BOPs_M": 148.4,
+    "wmem_kbit": 166.08,
+    "acc_est": 83.52,
+    "E_continuous_mJ": 0.1951,
+    "idle_share_continuous": 0.898
+   },
+   "gaps_pct": {
+    "B1_uniform": 28.7,
+    "B4_latency": 0.3,
+    "B2_proxy": 184.6,
+    "B3_sequential": 0.3
+   }
+  }
+ },
+ "2.0": {
+  "nominal": {
+   "A_prime": {
+    "bits": [
+     4,
+     4,
+     2,
+     4,
+     2,
+     4,
+     4,
+     8
+    ],
+    "mode": "lut",
+    "T_target": 16667,
+    "cycles": 16384,
+    "f_MHz": 125.0,
+    "FPS": 7629.4,
+    "LUT": 33676,
+    "BRAM18": 23.0,
+    "DSP": 1,
+    "U": 0.663,
+    "BOPs_M": 148.4,
+    "wmem_kbit": 166.08,
+    "acc_est": 83.52,
+    "E_continuous_mJ": 0.3132,
+    "idle_share_continuous": 0.879
+   },
+   "gaps_pct": {
+    "B1_uniform": 12.3,
+    "B4_latency": 2.5,
+    "B2_proxy": 131.9,
+    "B3_sequential": 2.5
+   }
+  },
+  "z2_anchor": {
+   "A_prime": {
+    "bits": [
+     4,
+     4,
+     2,
+     4,
+     2,
+     4,
+     4,
+     8
+    ],
+    "mode": "dsp4c",
+    "T_target": 14286,
+    "cycles": 12288,
+    "f_MHz": 125.0,
+    "FPS": 10172.5,
+    "LUT": 23536,
+    "BRAM18": 31.0,
+    "DSP": 172,
+    "U": 2.034,
+    "BOPs_M": 148.4,
+    "wmem_kbit": 166.08,
+    "acc_est": 83.52,
+    "E_continuous_mJ": 0.2172,
+    "idle_share_continuous": 0.85
+   },
+   "gaps_pct": {
+    "B1_uniform": 17.8,
+    "B4_latency": 0.2,
+    "B2_proxy": 155.8,
+    "B3_sequential": 0.2
+   }
+  }
+ }
+}

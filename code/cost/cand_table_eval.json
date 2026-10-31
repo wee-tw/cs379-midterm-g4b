@@ -1,0 +1,530 @@
+{
+ "by_w2": [
+  {
+   "protocol": "W4A4\u219230 ep KD lr 0.02",
+   "model": "eval",
+   "w2_groups": 0,
+   "errors": [
+    0.5499999999999972,
+    0.6800000000000068
+   ]
+  },
+  {
+   "protocol": "W4A4\u219230 ep KD lr 0.02",
+   "model": "eval",
+   "w2_groups": 1,
+   "errors": [
+    1.039999999999992
+   ]
+  },
+  {
+   "protocol": "W4A4\u219230 ep KD lr 0.02",
+   "model": "eval",
+   "w2_groups": 2,
+   "errors": [
+    0.28000000000000114,
+    0.3499999999999943,
+    0.4099999999999966,
+    0.0799999999999983,
+    0.75,
+    0.28000000000000114
+   ]
+  },
+  {
+   "protocol": "W4A4\u219230 ep KD lr 0.02",
+   "model": "eval",
+   "w2_groups": 3,
+   "errors": [
+    -0.3500000000000085
+   ]
+  },
+  {
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "model": "eval",
+   "w2_groups": 0,
+   "errors": [
+    0.269999999999996,
+    -0.030000000000001137,
+    0.0799999999999983,
+    -0.10000000000000853
+   ]
+  },
+  {
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "model": "eval",
+   "w2_groups": 1,
+   "errors": [
+    0.9699999999999989,
+    -0.09000000000000341,
+    -0.1700000000000017,
+    -1.1899999999999977,
+    0.14000000000000057
+   ]
+  },
+  {
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "model": "eval",
+   "w2_groups": 2,
+   "errors": [
+    -0.8299999999999983,
+    -0.39000000000000057,
+    0.47999999999998977,
+    -0.030000000000001137,
+    -0.46999999999999886,
+    -0.10000000000000853,
+    -0.3100000000000023
+   ]
+  },
+  {
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "model": "eval",
+   "w2_groups": 3,
+   "errors": [
+    -3.780000000000001,
+    0.060000000000002274,
+    0.5299999999999869,
+    0.25
+   ]
+  },
+  {
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "model": "eval",
+   "w2_groups": 4,
+   "errors": [
+    -0.5600000000000023
+   ]
+  },
+  {
+   "protocol": "float\u219230 ep KD lr 0.05",
+   "model": "eval",
+   "w2_groups": 0,
+   "errors": [
+    -1.1899999999999977,
+    -0.09000000000000341,
+    0.480000000000004,
+    0.6600000000000108,
+    -0.5099999999999909,
+    -0.6399999999999864,
+    0.5300000000000011
+   ]
+  },
+  {
+   "protocol": "float\u219230 ep KD lr 0.05",
+   "model": "eval",
+   "w2_groups": 1,
+   "errors": [
+    0.3100000000000023
+   ]
+  },
+  {
+   "protocol": "float\u219230 ep KD lr 0.05",
+   "model": "eval",
+   "w2_groups": 2,
+   "errors": [
+    -2.0450000000000017,
+    -1.6749999999999972,
+    -1.3800000000000097
+   ]
+  },
+  {
+   "protocol": "float\u219230 ep KD lr 0.05",
+   "model": "eval",
+   "w2_groups": 3,
+   "errors": [
+    -7.555000000000007
+   ]
+  },
+  {
+   "protocol": "float\u219230 ep KD lr 0.05",
+   "model": "eval",
+   "w2_groups": 4,
+   "errors": [
+    -22.130000000000003,
+    -11.489999999999995,
+    -17.550000000000004
+   ]
+  },
+  {
+   "protocol": "float\u219230 ep lr 0.05",
+   "model": "eval",
+   "w2_groups": 0,
+   "errors": [
+    1.4299999999999926,
+    1.4300000000000068
+   ]
+  },
+  {
+   "protocol": "float\u219260 ep KD lr 0.05",
+   "model": "eval",
+   "w2_groups": 0,
+   "errors": [
+    0.75,
+    0.9700000000000131
+   ]
+  }
+ ],
+ "runs": [
+  {
+   "config": "22222222",
+   "protocol": "float\u219230 ep KD lr 0.05",
+   "acc": [
+    50.4
+   ]
+  },
+  {
+   "config": "22888288",
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "acc": [
+    80.14
+   ]
+  },
+  {
+   "config": "24242424",
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "acc": [
+    79.77
+   ]
+  },
+  {
+   "config": "24242424",
+   "protocol": "float\u219230 ep KD lr 0.05",
+   "acc": [
+    68.84
+   ]
+  },
+  {
+   "config": "24242444",
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "acc": [
+    77.28
+   ]
+  },
+  {
+   "config": "24244444",
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "acc": [
+    80.83
+   ]
+  },
+  {
+   "config": "24442444",
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "acc": [
+    81.32
+   ]
+  },
+  {
+   "config": "24444444",
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "acc": [
+    82.07,
+    82.35
+   ]
+  },
+  {
+   "config": "28282828",
+   "protocol": "float\u219230 ep KD lr 0.05",
+   "acc": [
+    62.74
+   ]
+  },
+  {
+   "config": "28284882",
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "acc": [
+    78.82
+   ]
+  },
+  {
+   "config": "42228244",
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "acc": [
+    78.86
+   ]
+  },
+  {
+   "config": "42228428",
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "acc": [
+    80.08
+   ]
+  },
+  {
+   "config": "42424242",
+   "protocol": "float\u219230 ep KD lr 0.05",
+   "acc": [
+    75.51
+   ]
+  },
+  {
+   "config": "42442488",
+   "protocol": "W4A4\u219230 ep KD lr 0.02",
+   "acc": [
+    83.46
+   ]
+  },
+  {
+   "config": "42482282",
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "acc": [
+    76.41
+   ]
+  },
+  {
+   "config": "44242424",
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "acc": [
+    82.04
+   ]
+  },
+  {
+   "config": "44242428",
+   "protocol": "W4A4\u219230 ep KD lr 0.02",
+   "acc": [
+    82.08
+   ]
+  },
+  {
+   "config": "44242428",
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "acc": [
+    82.96
+   ]
+  },
+  {
+   "config": "44242428",
+   "protocol": "float\u219230 ep KD lr 0.05",
+   "acc": [
+    73.91,
+    75.84
+   ]
+  },
+  {
+   "config": "44242448",
+   "protocol": "W4A4\u219230 ep KD lr 0.02",
+   "acc": [
+    83.73
+   ]
+  },
+  {
+   "config": "44242888",
+   "protocol": "W4A4\u219230 ep KD lr 0.02",
+   "acc": [
+    84.0
+   ]
+  },
+  {
+   "config": "44242888",
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "acc": [
+    83.18
+   ]
+  },
+  {
+   "config": "44242888",
+   "protocol": "float\u219230 ep KD lr 0.05",
+   "acc": [
+    81.67,
+    81.54
+   ]
+  },
+  {
+   "config": "44442488",
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "acc": [
+    84.27
+   ]
+  },
+  {
+   "config": "44444442",
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "acc": [
+    81.02
+   ]
+  },
+  {
+   "config": "44444444",
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "acc": [
+    84.17,
+    83.68,
+    83.91
+   ]
+  },
+  {
+   "config": "44444444",
+   "protocol": "float\u219230 ep KD lr 0.05",
+   "acc": [
+    83.86
+   ]
+  },
+  {
+   "config": "44444488",
+   "protocol": "W4A4\u219230 ep KD lr 0.02",
+   "acc": [
+    85.28
+   ]
+  },
+  {
+   "config": "44444488",
+   "protocol": "float\u219230 ep KD lr 0.05",
+   "acc": [
+    85.19,
+    85.23
+   ]
+  },
+  {
+   "config": "44444488",
+   "protocol": "float\u219230 ep lr 0.05",
+   "acc": [
+    86.16
+   ]
+  },
+  {
+   "config": "44444488",
+   "protocol": "float\u219260 ep KD lr 0.05",
+   "acc": [
+    85.48
+   ]
+  },
+  {
+   "config": "44448444",
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "acc": [
+    84.12,
+    84.1
+   ]
+  },
+  {
+   "config": "48282224",
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "acc": [
+    81.32
+   ]
+  },
+  {
+   "config": "48484848",
+   "protocol": "W4A4\u219230 ep KD lr 0.02",
+   "acc": [
+    85.64
+   ]
+  },
+  {
+   "config": "48484848",
+   "protocol": "float\u219230 ep KD lr 0.05",
+   "acc": [
+    85.62,
+    85.73,
+    85.51
+   ]
+  },
+  {
+   "config": "48484848",
+   "protocol": "float\u219230 ep lr 0.05",
+   "acc": [
+    86.39
+   ]
+  },
+  {
+   "config": "48484848",
+   "protocol": "float\u219260 ep KD lr 0.05",
+   "acc": [
+    85.93
+   ]
+  },
+  {
+   "config": "82828282",
+   "protocol": "float\u219230 ep KD lr 0.05",
+   "acc": [
+    76.68
+   ]
+  },
+  {
+   "config": "84242248",
+   "protocol": "W4A4\u219230 ep KD lr 0.02",
+   "acc": [
+    82.97
+   ]
+  },
+  {
+   "config": "84242444",
+   "protocol": "W4A4\u219230 ep KD lr 0.02",
+   "acc": [
+    83.0
+   ]
+  },
+  {
+   "config": "84242444",
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "acc": [
+    82.82
+   ]
+  },
+  {
+   "config": "84242444",
+   "protocol": "float\u219230 ep KD lr 0.05",
+   "acc": [
+    81.14,
+    81.35
+   ]
+  },
+  {
+   "config": "84242448",
+   "protocol": "W4A4\u219230 ep KD lr 0.02",
+   "acc": [
+    84.41
+   ]
+  },
+  {
+   "config": "84248488",
+   "protocol": "float\u219230 ep KD lr 0.05",
+   "acc": [
+    84.69
+   ]
+  },
+  {
+   "config": "84848484",
+   "protocol": "float\u219230 ep KD lr 0.05",
+   "acc": [
+    83.93,
+    84.29
+   ]
+  },
+  {
+   "config": "88242488",
+   "protocol": "W4A4\u219230 ep KD lr 0.02",
+   "acc": [
+    84.26
+   ]
+  },
+  {
+   "config": "88242488",
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "acc": [
+    83.67
+   ]
+  },
+  {
+   "config": "88242488",
+   "protocol": "float\u219230 ep KD lr 0.05",
+   "acc": [
+    82.89,
+    82.31
+   ]
+  },
+  {
+   "config": "88444444",
+   "protocol": "W4A4\u21928 ep KD lr 0.02",
+   "acc": [
+    84.33
+   ]
+  },
+  {
+   "config": "88888888",
+   "protocol": "float\u219230 ep KD lr 0.05",
+   "acc": [
+    85.9
+   ]
+  }
+ ]
+}

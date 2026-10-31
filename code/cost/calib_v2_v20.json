@@ -1,0 +1,22 @@
+{
+ "k_rtl": 10.46355709211974,
+ "b_rtl": 47.13488452450598,
+ "c_hls": [
+  0.48127204135413326,
+  3.204265745191123,
+  1.7220945053834416
+ ],
+ "f_swg": 0.7327605321507761,
+ "small": {
+  "AddStreams_hls": 56.214285714285715,
+  "DuplicateStreams_hls": 56.0,
+  "DownSampler_hls": 159.0,
+  "Pool_hls": 121.6,
+  "LabelSelect_hls": 188.0,
+  "FMPadding_rtl": 95.71428571428571,
+  "ChannelwiseOp_hls": 78.0
+ },
+ "n_rtl": 70,
+ "n_hls": 73,
+ "n_swg": 86
+}

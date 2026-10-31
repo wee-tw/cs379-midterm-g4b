@@ -1,0 +1,270 @@
+{
+ "misjudged_profile": {
+  "n": 1417,
+  "median_II_misjudged": 12288.0,
+  "median_II_others": 98304.0,
+  "share_at_fastest_two_II_levels": 0.659,
+  "median_DSP_estimate_misjudged": 171.0,
+  "modes": {
+   "dspc": 1417
+  }
+ },
+ "all (2/4/8)": {
+  "configs": 6561,
+  "biased_points": 152997,
+  "misjudged_pct": 0.93,
+  "margins": {
+   "1": {
+    "biased_opt_feasible": true,
+    "failed_builds": 0,
+    "regret_pct": 0.0,
+    "surprise_pct": 0.0
+   },
+   "2": {
+    "biased_opt_feasible": false,
+    "failed_builds": 28,
+    "regret_pct": 0.0,
+    "surprise_pct": 32.3
+   },
+   "3": {
+    "biased_opt_feasible": false,
+    "failed_builds": 58,
+    "regret_pct": 4.65,
+    "surprise_pct": 13.47
+   },
+   "5": {
+    "biased_opt_feasible": false,
+    "failed_builds": 78,
+    "regret_pct": 0.55,
+    "surprise_pct": 4.13
+   },
+   "8": {
+    "biased_opt_feasible": false,
+    "failed_builds": 42,
+    "regret_pct": 0.0,
+    "surprise_pct": 1.03
+   }
+  },
+  "misjudged_top10_pct": 100.0,
+  "misjudged_top100_pct": 45.0,
+  "kendall_tau": 0.9828,
+  "front": {
+   "biased": 25,
+   "infeasible": 8,
+   "ADRS_pct": 15.82
+  }
+ },
+ "{4, 8}": {
+  "configs": 256,
+  "biased_points": 4292,
+  "misjudged_pct": 0.0,
+  "margins": {
+   "1": {
+    "biased_opt_feasible": true,
+    "failed_builds": 0,
+    "regret_pct": 0.0,
+    "surprise_pct": 0.0
+   },
+   "2": {
+    "biased_opt_feasible": true,
+    "failed_builds": 0,
+    "regret_pct": 0.0,
+    "surprise_pct": 0.0
+   },
+   "3": {
+    "biased_opt_feasible": true,
+    "failed_builds": 0,
+    "regret_pct": 0.0,
+    "surprise_pct": 0.0
+   },
+   "5": {
+    "biased_opt_feasible": true,
+    "failed_builds": 0,
+    "regret_pct": 0.0,
+    "surprise_pct": 0.0
+   },
+   "8": {
+    "biased_opt_feasible": true,
+    "failed_builds": 0,
+    "regret_pct": 0.0,
+    "surprise_pct": 0.0
+   }
+  },
+  "misjudged_top10_pct": 0.0,
+  "misjudged_top100_pct": 0.0,
+  "kendall_tau": 0.9705,
+  "front": {
+   "biased": 14,
+   "infeasible": 0,
+   "ADRS_pct": 0.0
+  }
+ },
+ "{2, 4}": {
+  "configs": 256,
+  "biased_points": 7948,
+  "misjudged_pct": 0.0,
+  "margins": {
+   "2": {
+    "biased_opt_feasible": true,
+    "failed_builds": 0,
+    "regret_pct": 0.0,
+    "surprise_pct": 0.0
+   },
+   "3": {
+    "biased_opt_feasible": true,
+    "failed_builds": 0,
+    "regret_pct": 0.0,
+    "surprise_pct": 0.0
+   },
+   "5": {
+    "biased_opt_feasible": true,
+    "failed_builds": 0,
+    "regret_pct": 0.66,
+    "surprise_pct": 1.13
+   },
+   "8": {
+    "biased_opt_feasible": true,
+    "failed_builds": 0,
+    "regret_pct": 0.0,
+    "surprise_pct": 0.0
+   }
+  },
+  "misjudged_top10_pct": 0.0,
+  "misjudged_top100_pct": 0.0,
+  "kendall_tau": 0.9738,
+  "front": {
+   "biased": 16,
+   "infeasible": 0,
+   "ADRS_pct": 0.04
+  }
+ },
+ "{2, 8}": {
+  "configs": 256,
+  "biased_points": 5835,
+  "misjudged_pct": 2.4,
+  "margins": {
+   "1": {
+    "biased_opt_feasible": true,
+    "failed_builds": 0,
+    "regret_pct": 0.0,
+    "surprise_pct": 0.0
+   },
+   "2": {
+    "biased_opt_feasible": true,
+    "failed_builds": 0,
+    "regret_pct": 0.0,
+    "surprise_pct": 0.0
+   },
+   "3": {
+    "biased_opt_feasible": false,
+    "failed_builds": 2,
+    "regret_pct": 0.0,
+    "surprise_pct": 38.14
+   },
+   "5": {
+    "biased_opt_feasible": false,
+    "failed_builds": 14,
+    "regret_pct": 0.0,
+    "surprise_pct": 34.12
+   },
+   "8": {
+    "biased_opt_feasible": true,
+    "failed_builds": 0,
+    "regret_pct": 0.0,
+    "surprise_pct": 0.0
+   }
+  },
+  "misjudged_top10_pct": 0.0,
+  "misjudged_top100_pct": 12.0,
+  "kendall_tau": 0.9935,
+  "front": {
+   "biased": 11,
+   "infeasible": 3,
+   "ADRS_pct": 5.96
+  }
+ },
+ "INT8 only": {
+  "configs": 1,
+  "biased_points": 14,
+  "misjudged_pct": 0.0,
+  "margins": {
+   "1": {
+    "biased_opt_feasible": true,
+    "failed_builds": 0,
+    "regret_pct": 0.0,
+    "surprise_pct": 0.0
+   },
+   "2": {
+    "biased_opt_feasible": true,
+    "failed_builds": 0,
+    "regret_pct": 0.0,
+    "surprise_pct": 0.0
+   },
+   "3": {
+    "biased_opt_feasible": true,
+    "failed_builds": 0,
+    "regret_pct": 0.0,
+    "surprise_pct": 0.0
+   },
+   "5": {
+    "biased_opt_feasible": true,
+    "failed_builds": 0,
+    "regret_pct": 0.0,
+    "surprise_pct": 0.0
+   },
+   "8": {
+    "biased_opt_feasible": true,
+    "failed_builds": 0,
+    "regret_pct": 0.0,
+    "surprise_pct": 0.0
+   }
+  },
+  "misjudged_top10_pct": 0.0,
+  "misjudged_top100_pct": 0.0,
+  "kendall_tau": 1.0,
+  "front": {
+   "biased": 1,
+   "infeasible": 0,
+   "ADRS_pct": 0.0
+  }
+ },
+ "INT4 only": {
+  "configs": 1,
+  "biased_points": 22,
+  "misjudged_pct": 0.0,
+  "margins": {
+   "2": {
+    "biased_opt_feasible": true,
+    "failed_builds": 0,
+    "regret_pct": 0.0,
+    "surprise_pct": 0.0
+   },
+   "3": {
+    "biased_opt_feasible": true,
+    "failed_builds": 0,
+    "regret_pct": 0.0,
+    "surprise_pct": 0.0
+   },
+   "5": {
+    "biased_opt_feasible": true,
+    "failed_builds": 0,
+    "regret_pct": 0.0,
+    "surprise_pct": 0.0
+   },
+   "8": {
+    "biased_opt_feasible": true,
+    "failed_builds": 0,
+    "regret_pct": 0.0,
+    "surprise_pct": 0.0
+   }
+  },
+  "misjudged_top10_pct": 0.0,
+  "misjudged_top100_pct": 0.0,
+  "kendall_tau": 0.9304,
+  "front": {
+   "biased": 1,
+   "infeasible": 0,
+   "ADRS_pct": 0.0
+  }
+ }
+}

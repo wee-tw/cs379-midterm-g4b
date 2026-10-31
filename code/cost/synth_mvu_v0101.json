@@ -1,0 +1,254 @@
+[
+ {
+  "top": "MVAU_rtl_0",
+  "returncode": 0,
+  "nodsp": true,
+  "counts": {
+   "DSP48E1": 27,
+   "LUT2": 150,
+   "LUT3": 577,
+   "LUT4": 109,
+   "LUT5": 401,
+   "LUT6": 164,
+   "LUT6_2": 27,
+   "CARRY4": 20,
+   "FDRE": 521,
+   "FDSE": 1,
+   "RAM32M": 36,
+   "MUXF7": 2,
+   "MUXF8": 1
+  },
+  "stderr": "",
+  "case": "w4a4_MVAU_rtl_0"
+ },
+ {
+  "top": "MVAU_rtl_0",
+  "returncode": 0,
+  "nodsp": false,
+  "counts": {
+   "DSP48E1": 27,
+   "LUT2": 150,
+   "LUT3": 577,
+   "LUT4": 109,
+   "LUT5": 401,
+   "LUT6": 164,
+   "LUT6_2": 27,
+   "CARRY4": 20,
+   "FDRE": 521,
+   "FDSE": 1,
+   "RAM32M": 36,
+   "MUXF7": 2,
+   "MUXF8": 1
+  },
+  "stderr": "",
+  "case": "w4a4_MVAU_rtl_0"
+ },
+ {
+  "top": "MVAU_rtl_1",
+  "returncode": 0,
+  "nodsp": true,
+  "counts": {
+   "DSP48E1": 144,
+   "LUT2": 818,
+   "LUT3": 2507,
+   "LUT4": 508,
+   "LUT5": 2176,
+   "LUT6": 470,
+   "LUT6_2": 144,
+   "CARRY4": 20,
+   "FDRE": 1570,
+   "FDSE": 1,
+   "RAM32M": 96
+  },
+  "stderr": "",
+  "case": "w4a4_MVAU_rtl_1"
+ },
+ {
+  "top": "MVAU_rtl_1",
+  "returncode": 0,
+  "nodsp": false,
+  "counts": {
+   "DSP48E1": 144,
+   "LUT2": 818,
+   "LUT3": 2507,
+   "LUT4": 508,
+   "LUT5": 2176,
+   "LUT6": 470,
+   "LUT6_2": 144,
+   "CARRY4": 20,
+   "FDRE": 1570,
+   "FDSE": 1,
+   "RAM32M": 96
+  },
+  "stderr": "",
+  "case": "w4a4_MVAU_rtl_1"
+ },
+ {
+  "top": "MVAU_rtl_0",
+  "returncode": 0,
+  "nodsp": true,
+  "counts": {
+   "DSP48E1": 27,
+   "LUT2": 150,
+   "LUT3": 577,
+   "LUT4": 109,
+   "LUT5": 401,
+   "LUT6": 164,
+   "LUT6_2": 27,
+   "CARRY4": 20,
+   "FDRE": 521,
+   "FDSE": 1,
+   "RAM32M": 36,
+   "MUXF7": 2,
+   "MUXF8": 1
+  },
+  "stderr": "",
+  "case": "w4a4_refold_MVAU_rtl_0"
+ },
+ {
+  "top": "MVAU_rtl_0",
+  "returncode": 0,
+  "nodsp": false,
+  "counts": {
+   "DSP48E1": 27,
+   "LUT2": 150,
+   "LUT3": 577,
+   "LUT4": 109,
+   "LUT5": 401,
+   "LUT6": 164,
+   "LUT6_2": 27,
+   "CARRY4": 20,
+   "FDRE": 521,
+   "FDSE": 1,
+   "RAM32M": 36,
+   "MUXF7": 2,
+   "MUXF8": 1
+  },
+  "stderr": "",
+  "case": "w4a4_refold_MVAU_rtl_0"
+ },
+ {
+  "top": "MVAU_rtl_1",
+  "returncode": 0,
+  "nodsp": true,
+  "counts": {
+   "DSP48E1": 72,
+   "LUT2": 989,
+   "LUT3": 2285,
+   "LUT4": 661,
+   "LUT5": 2195,
+   "LUT6": 576,
+   "LUT6_2": 216,
+   "CARRY4": 45,
+   "FDRE": 1834,
+   "FDSE": 1,
+   "RAM32M": 48,
+   "MUXF7": 5,
+   "MUXF8": 2
+  },
+  "stderr": "",
+  "case": "w4a4_refold_MVAU_rtl_1"
+ },
+ {
+  "top": "MVAU_rtl_1",
+  "returncode": 0,
+  "nodsp": false,
+  "counts": {
+   "DSP48E1": 72,
+   "LUT2": 994,
+   "LUT3": 2269,
+   "LUT4": 605,
+   "LUT5": 2242,
+   "LUT6": 587,
+   "LUT6_2": 216,
+   "CARRY4": 45,
+   "FDRE": 1834,
+   "FDSE": 1,
+   "RAM32M": 48
+  },
+  "stderr": "",
+  "case": "w4a4_refold_MVAU_rtl_1"
+ },
+ {
+  "top": "MVAU_rtl_0",
+  "returncode": 0,
+  "nodsp": true,
+  "counts": {
+   "DSP48E1": 27,
+   "LUT2": 164,
+   "LUT3": 794,
+   "LUT4": 118,
+   "LUT5": 518,
+   "LUT6": 189,
+   "LUT6_2": 27,
+   "CARRY4": 23,
+   "FDRE": 562,
+   "FDSE": 1,
+   "RAM32M": 36
+  },
+  "stderr": "",
+  "case": "w8a4_MVAU_rtl_0"
+ },
+ {
+  "top": "MVAU_rtl_0",
+  "returncode": 0,
+  "nodsp": false,
+  "counts": {
+   "DSP48E1": 27,
+   "LUT2": 164,
+   "LUT3": 794,
+   "LUT4": 118,
+   "LUT5": 518,
+   "LUT6": 189,
+   "LUT6_2": 27,
+   "CARRY4": 23,
+   "FDRE": 562,
+   "FDSE": 1,
+   "RAM32M": 36
+  },
+  "stderr": "",
+  "case": "w8a4_MVAU_rtl_0"
+ },
+ {
+  "top": "MVAU_rtl_1",
+  "returncode": 0,
+  "nodsp": true,
+  "counts": {
+   "DSP48E1": 144,
+   "LUT2": 964,
+   "LUT3": 3397,
+   "LUT4": 770,
+   "LUT5": 2513,
+   "LUT6": 668,
+   "LUT6_2": 144,
+   "CARRY4": 44,
+   "FDRE": 1458,
+   "FDSE": 1,
+   "RAM32M": 48,
+   "MUXF7": 2
+  },
+  "stderr": "",
+  "case": "w8a4_MVAU_rtl_1"
+ },
+ {
+  "top": "MVAU_rtl_1",
+  "returncode": 0,
+  "nodsp": false,
+  "counts": {
+   "DSP48E1": 144,
+   "LUT2": 964,
+   "LUT3": 3397,
+   "LUT4": 770,
+   "LUT5": 2513,
+   "LUT6": 668,
+   "LUT6_2": 144,
+   "CARRY4": 44,
+   "FDRE": 1458,
+   "FDSE": 1,
+   "RAM32M": 48,
+   "MUXF7": 2
+  },
+  "stderr": "",
+  "case": "w8a4_MVAU_rtl_1"
+ }
+]

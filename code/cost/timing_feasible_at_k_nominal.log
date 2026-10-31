@@ -1,0 +1,6 @@
+power nominal; timing-blind clock set (50.0, 66.67, 100.0, 125.0)
+margin 1: Feasible@1 0% Feasible@10 0% Feasible@100 0% | pick 44444448 dsp4c T16667: model 0.3053 mJ at 125 MHz, class 100 MHz -> 0.3578 mJ (model optimistic by 14.7%) | vs timing-aware optimum 0.3312 mJ: +8.0%
+margin 2: Feasible@1 0% Feasible@10 0% Feasible@100 0% | pick 44242448 dsp4c T12500: model 0.2416 mJ at 125 MHz, class 71.43 MHz -> 0.3596 mJ (model optimistic by 32.8%) | vs timing-aware optimum 0.2577 mJ: +39.5%
+margin 3: Feasible@1 0% Feasible@10 0% Feasible@100 0% | pick 24244448 dsp4c T12500: model 0.2324 mJ at 125 MHz, class 100 MHz -> 0.2717 mJ (model optimistic by 14.5%) | vs timing-aware optimum 0.2519 mJ: +7.9%
+margin 5: Feasible@1 0% Feasible@10 0% Feasible@100 0% | pick 24222448 dspc T14286: model 0.2287 mJ at 125 MHz, class 71.43 MHz -> 0.3467 mJ (model optimistic by 34.0%) | vs timing-aware optimum 0.2454 mJ: +41.3%
+margin 8: Feasible@1 0% Feasible@10 0% Feasible@100 0% | pick 22222448 dsp4c T12500: model 0.2257 mJ at 125 MHz, class 71.43 MHz -> 0.3437 mJ (model optimistic by 34.3%) | vs timing-aware optimum 0.2424 mJ: +41.8%

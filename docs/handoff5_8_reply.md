@@ -24,7 +24,7 @@ repo：https://github.com/wee-tw/cs379-midterm-g4b（下面的路徑都相對於
 
 總覽：`README.md`（白話版）、`docs/research_overview.md`、`docs/results_digest.md` 第 0 節。每個數字都標明是「實測」、「工具驗證」或「估計」。名詞看不懂可以查 `docs/glossary.md`。下面的「notes」指 `docs/implementation_notes.md`，後面的數字是節次。
 
-**追溯：** 這份回報的數字都能在 repo 裡找到來源。少數是從只在我本機的大型成本表（約 110 MB，`.gitignore` 排除）算出來的，例如 729 種的排名分析；這些我用 `code/plan_d/plan_d_checks.py` 重算後，把結果放在 `results/plan_d/`（`plan_d_checks.txt` 是摘要，`rq2_729_energies.csv` 是 729 種每一種的數字），可以直接拿來重算。
+**追溯：** 這份回報的數字都能在 repo 裡找到來源。所有實驗資料和程式都已放上 GitHub：成本表和設計點（`code/cost/`）、訓練權重（`results/checkpoints/`）、合成報告和執行紀錄的原始檔（`results/raw/`）、做實驗時的腳本（`code/scratch/`），對照和用法見 `docs/data_availability.md`。`python code/verify_from_github.py` 會用 GitHub 上的資料重算主結果表和 729 種的數字（`results/plan_d/`：`plan_d_checks.txt` 是摘要，`rq2_729_energies.csv` 是 729 種每一種的數字），並和 repo 裡的結果逐項比對，約 20 秒。
 
 ### 1.1 C1：FINN v0.10.1 的資源估計器有系統性缺陷（工具驗證）
 
@@ -489,4 +489,4 @@ Plan D 裡你們負責的部分，我這邊很多已經有實驗或數據，可�
 - **時脈：** A′ 的 125 MHz 是合成後的等級；繞線後有一層超過 0.13 ns，兩種時脈都報。
 - **margin 1 的 B1：** 取決於統一 W4A4 差的 0.02 點，寫成範圍。
 - **範圍：** 只有一個網路（ResNet-8）、一塊板子。上板量的是 finn-examples 的 bitstream，不是 ResNet-8。
-- **重現：** 大型成本表（約 110 MB）只在我本機，不在 GitHub。回報用到的數字已另存在 `results/plan_d/`；要從頭重跑整個搜尋，再跟我拿成本表。
+- **重現：** 成本表、設計點、權重和原始報告都在 GitHub（見 `docs/data_availability.md`）。從頭重做合成需要 Vivado / Vitis HLS 2022.2 和 FINN v0.10.1，但不重做也能用原始報告核對每個數字。

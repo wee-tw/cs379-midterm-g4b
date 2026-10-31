@@ -1,0 +1,64 @@
+{
+ "n_designs": 151580,
+ "rate": 0.0093,
+ "tau_target": 0.983,
+ "A_random_misjudgment": {
+  "1": {
+   "P_optimum_infeasible": 0.01,
+   "mean_failed_builds": 0.01,
+   "max_failed_builds": 1,
+   "mean_regret_pct": 0.0
+  },
+  "2": {
+   "P_optimum_infeasible": 0.015,
+   "mean_failed_builds": 0.015,
+   "max_failed_builds": 1,
+   "mean_regret_pct": 0.0
+  },
+  "3": {
+   "P_optimum_infeasible": 0.025,
+   "mean_failed_builds": 0.025,
+   "max_failed_builds": 1,
+   "mean_regret_pct": 0.0
+  },
+  "5": {
+   "P_optimum_infeasible": 0.005,
+   "mean_failed_builds": 0.005,
+   "max_failed_builds": 1,
+   "mean_regret_pct": 0.0
+  },
+  "8": {
+   "P_optimum_infeasible": 0.005,
+   "mean_failed_builds": 0.005,
+   "max_failed_builds": 1,
+   "mean_regret_pct": 0.0
+  },
+  "ADRS_pct_mean": 0.007,
+  "front_infeasible_mean": 0.34
+ },
+ "B_sigma": 0.0051,
+ "B_random_noise": {
+  "1": {
+   "mean_regret_pct": 0.062,
+   "p90_regret_pct": 0.004
+  },
+  "2": {
+   "mean_regret_pct": 0.056,
+   "p90_regret_pct": 0.004
+  },
+  "3": {
+   "mean_regret_pct": 0.076,
+   "p90_regret_pct": 0.432
+  },
+  "5": {
+   "mean_regret_pct": 0.204,
+   "p90_regret_pct": 0.559
+  },
+  "8": {
+   "mean_regret_pct": 0.22,
+   "p90_regret_pct": 0.687
+  },
+  "tau_mean": 0.983,
+  "ADRS_pct_mean": 0.07
+ }
+}

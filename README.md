@@ -61,7 +61,7 @@ CS379 期中專題，題目 1，G4_B。最後更新：2026-10-31 中午。
 | 資料夾 | 內容 |
 |---|---|
 | [docs/](docs/) | 所有文件。先看 [docs/README.md](docs/README.md)，裡面有閱讀順序 |
-| [results/](results/) | 所有結果：圖、搜尋結果、合成資料、訓練紀錄。說明在 [results/README.md](results/README.md) |
+| [results/](results/) | 所有結果：圖、搜尋結果、合成資料、訓練紀錄、訓練權重、合成報告原始檔。說明在 [results/README.md](results/README.md) |
 | [code/](code/) | 程式。[code/README.md](code/README.md) 有每支程式的用途和執行順序 |
 | [handovers/](handovers/) | 已經交出去的檔案包：給組員的訓練程式（交接①）、給朋友的上板包（只在本機） |
 | `papers/` | 參考論文 PDF。有版權，只放本機，組員從 Drive 拿 |
@@ -72,6 +72,7 @@ CS379 期中專題，題目 1，G4_B。最後更新：2026-10-31 中午。
 | 想要 | 去哪裡 |
 |---|---|
 | 搞懂名詞 | [docs/glossary.md](docs/glossary.md) |
+| 自己驗證數字、找原始資料 | [docs/data_availability.md](docs/data_availability.md)；`python code/verify_from_github.py` |
 | 了解整個研究 | [docs/research_overview.md](docs/research_overview.md)（[HTML 版](docs/research_overview.html) 是 10/30 晚上的舊版，沒有時序結果） |
 | 論文、簡報要用的數字 | [docs/results_digest.md](docs/results_digest.md) 第 0 節 |
 | 圖 | [results/figs/](results/figs/)，每張圖的說明在 [results/figs/README.md](results/figs/README.md) |

@@ -1,0 +1,16 @@
+budget {'LUT': 47880.0, 'BRAM_18K': 224.0, 'DSP': 220.0}
+0/6561 configs, 36 feasible points, 0 s
+500/6561 configs, 15547 feasible points, 11 s
+1000/6561 configs, 30485 feasible points, 23 s
+1500/6561 configs, 43327 feasible points, 38 s
+2000/6561 configs, 55315 feasible points, 54 s
+2500/6561 configs, 69290 feasible points, 66 s
+3000/6561 configs, 82899 feasible points, 80 s
+3500/6561 configs, 94479 feasible points, 95 s
+4000/6561 configs, 105213 feasible points, 111 s
+4500/6561 configs, 116095 feasible points, 125 s
+5000/6561 configs, 129138 feasible points, 136 s
+5500/6561 configs, 141110 feasible points, 147 s
+6000/6561 configs, 152042 feasible points, 163 s
+6500/6561 configs, 161373 feasible points, 178 s
+saved C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/cost/points_lut0.9_bram0.8.npz 162288 points

@@ -14,8 +14,9 @@
 | 6 | [implementation_notes.md](implementation_notes.md) | 實驗日誌：每個實驗的做法、指令、結果和踩過的坑。第 12 節是 10/30–31 的實驗（12.35 起是時序） | 很長，用搜尋 |
 
 其他：
+- [data_availability.md](data_availability.md)：所有實驗資料和程式在 GitHub 的哪裡、文件裡的本機路徑怎麼對照、怎麼自己重算驗證。
 - [handoff5_8_reply.md](handoff5_8_reply.md)：回覆組員的交接⑤、⑧（10/31）。已完成的實驗、`hw_729.csv` 等交件的各項取捨和原因、做與不做、對論文的建議、時程。
 - [finn_issues/](finn_issues/)：準備回報給 FINN 官方的 bug 草稿（DSP 估計、時序、門檻記憶體、寬度轉換器估計），還沒發布，要先經過你核准。
 - [literature/](literature/)：文獻筆記（`literature_notes.md`）和文獻地圖（`literature_landscape.md`）。論文 PDF 在專案根目錄的 `papers/`，只在本機。
 
-文件裡的 `$S/...` 是 1133311 電腦上的暫存工作資料夾。重要的結果已經複製進 [`../results/`](../results/) 和 [`../code/cost/`](../code/cost/)。
+文件裡的 `$S/...` 是 1133311 電腦上的暫存工作資料夾，`D:/v*` 是合成資料夾。內容都已放上 GitHub，路徑對照見 [data_availability.md](data_availability.md)。

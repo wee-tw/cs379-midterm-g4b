@@ -1,0 +1,2406 @@
+{
+ "bismo_fit": {
+  "continuous": {
+   "gap_B4_vs_opt_pct": 1.77,
+   "bound_pct": 29.8
+  },
+  "30": {
+   "running": {
+    "A_prime": {
+     "E_mJ": 56.6252,
+     "f_MHz": 50.0,
+     "cycles": 196608,
+     "U": 0.138,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "lut"
+    },
+    "B1_uniform": {
+     "E_mJ": 56.638,
+     "f_MHz": 50.0,
+     "cycles": 442368,
+     "U": 0.115,
+     "bits": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+     ],
+     "mode": "dsp"
+    },
+    "B4_latency_mJ": 74.5167,
+    "B2_proxy_mJ": 69.7023,
+    "B3_sequential_mJ": 74.5167
+   },
+   "lowclk": {
+    "A_prime": {
+     "E_mJ": 49.0751,
+     "f_MHz": 5.0,
+     "cycles": 49152,
+     "U": 0.194,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "lut"
+    },
+    "B1_uniform": {
+     "E_mJ": 49.0788,
+     "f_MHz": 5.0,
+     "cycles": 49152,
+     "U": 0.199,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 74.5167,
+    "B2_proxy_mJ": 69.7023,
+    "B3_sequential_mJ": 74.5167
+   },
+   "gated": {
+    "A_prime": {
+     "E_mJ": 48.2763,
+     "f_MHz": 125.0,
+     "cycles": 12288,
+     "U": 0.535,
+     "bits": [
+      8,
+      4,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "dsp"
+    },
+    "B1_uniform": {
+     "E_mJ": 48.2781,
+     "f_MHz": 125.0,
+     "cycles": 12288,
+     "U": 0.553,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 48.2816,
+    "B2_proxy_mJ": 48.2862,
+    "B3_sequential_mJ": 48.2816
+   }
+  },
+  "300": {
+   "running": {
+    "A_prime": {
+     "E_mJ": 5.7251,
+     "f_MHz": 50.0,
+     "cycles": 49152,
+     "U": 0.194,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "lut"
+    },
+    "B1_uniform": {
+     "E_mJ": 5.7288,
+     "f_MHz": 50.0,
+     "cycles": 49152,
+     "U": 0.199,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 7.4857,
+    "B2_proxy_mJ": 7.0069,
+    "B3_sequential_mJ": 7.4857
+   },
+   "lowclk": {
+    "A_prime": {
+     "E_mJ": 4.9396,
+     "f_MHz": 5.0,
+     "cycles": 16384,
+     "U": 0.348,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "lut"
+    },
+    "B1_uniform": {
+     "E_mJ": 4.9403,
+     "f_MHz": 5.0,
+     "cycles": 16384,
+     "U": 0.353,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 7.4857,
+    "B2_proxy_mJ": 7.0069,
+    "B3_sequential_mJ": 7.4857
+   },
+   "gated": {
+    "A_prime": {
+     "E_mJ": 4.9263,
+     "f_MHz": 125.0,
+     "cycles": 12288,
+     "U": 0.535,
+     "bits": [
+      8,
+      4,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "dsp"
+    },
+    "B1_uniform": {
+     "E_mJ": 4.9281,
+     "f_MHz": 125.0,
+     "cycles": 12288,
+     "U": 0.553,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 4.9316,
+    "B2_proxy_mJ": 4.9362,
+    "B3_sequential_mJ": 4.9316
+   }
+  },
+  "1000": {
+   "running": {
+    "A_prime": {
+     "E_mJ": 1.7512,
+     "f_MHz": 50.0,
+     "cycles": 32768,
+     "U": 0.243,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "lut"
+    },
+    "B1_uniform": {
+     "E_mJ": 1.7527,
+     "f_MHz": 50.0,
+     "cycles": 32768,
+     "U": 0.248,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 2.2722,
+    "B2_proxy_mJ": 2.1306,
+    "B3_sequential_mJ": 2.2722
+   },
+   "lowclk": {
+    "A_prime": {
+     "E_mJ": 1.5866,
+     "f_MHz": 20.0,
+     "cycles": 16384,
+     "U": 0.348,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "lut"
+    },
+    "B1_uniform": {
+     "E_mJ": 1.5873,
+     "f_MHz": 20.0,
+     "cycles": 16384,
+     "U": 0.353,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 2.2722,
+    "B2_proxy_mJ": 2.1306,
+    "B3_sequential_mJ": 2.2722
+   },
+   "gated": {
+    "A_prime": {
+     "E_mJ": 1.5547,
+     "f_MHz": 125.0,
+     "cycles": 12288,
+     "U": 0.535,
+     "bits": [
+      8,
+      4,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "dsp"
+    },
+    "B1_uniform": {
+     "E_mJ": 1.5564,
+     "f_MHz": 125.0,
+     "cycles": 12288,
+     "U": 0.553,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 1.5599,
+    "B2_proxy_mJ": 1.5645,
+    "B3_sequential_mJ": 1.5599
+   }
+  },
+  "3000": {
+   "running": {
+    "A_prime": {
+     "E_mJ": 0.6046,
+     "f_MHz": 50.0,
+     "cycles": 16384,
+     "U": 0.348,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "lut"
+    },
+    "B1_uniform": {
+     "E_mJ": 0.6053,
+     "f_MHz": 50.0,
+     "cycles": 16384,
+     "U": 0.353,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 0.7826,
+    "B2_proxy_mJ": 0.7373,
+    "B3_sequential_mJ": 0.7826
+   },
+   "lowclk": {
+    "A_prime": {
+     "E_mJ": 0.5977,
+     "f_MHz": 40.0,
+     "cycles": 12288,
+     "U": 0.535,
+     "bits": [
+      8,
+      4,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "dsp"
+    },
+    "B1_uniform": {
+     "E_mJ": 0.5996,
+     "f_MHz": 40.0,
+     "cycles": 12288,
+     "U": 0.553,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 0.7826,
+    "B2_proxy_mJ": 0.7373,
+    "B3_sequential_mJ": 0.7826
+   },
+   "gated": {
+    "A_prime": {
+     "E_mJ": 0.5913,
+     "f_MHz": 125.0,
+     "cycles": 12288,
+     "U": 0.535,
+     "bits": [
+      8,
+      4,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "dsp"
+    },
+    "B1_uniform": {
+     "E_mJ": 0.5931,
+     "f_MHz": 125.0,
+     "cycles": 12288,
+     "U": 0.553,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 0.5966,
+    "B2_proxy_mJ": 0.6012,
+    "B3_sequential_mJ": 0.5966
+   }
+  },
+  "5000": {
+   "running": {
+    "A_prime": {
+     "E_mJ": 0.4051,
+     "f_MHz": 66.67,
+     "cycles": 12288,
+     "U": 0.535,
+     "bits": [
+      8,
+      4,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "dsp"
+    },
+    "B1_uniform": {
+     "E_mJ": 0.4069,
+     "f_MHz": 66.67,
+     "cycles": 12288,
+     "U": 0.553,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 0.4847,
+    "B2_proxy_mJ": 0.4587,
+    "B3_sequential_mJ": 0.4847
+   },
+   "lowclk": {
+    "A_prime": {
+     "E_mJ": 0.4051,
+     "f_MHz": 66.67,
+     "cycles": 12288,
+     "U": 0.535,
+     "bits": [
+      8,
+      4,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "dsp"
+    },
+    "B1_uniform": {
+     "E_mJ": 0.4069,
+     "f_MHz": 66.67,
+     "cycles": 12288,
+     "U": 0.553,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 0.4847,
+    "B2_proxy_mJ": 0.4587,
+    "B3_sequential_mJ": 0.4847
+   },
+   "gated": {
+    "A_prime": {
+     "E_mJ": 0.3987,
+     "f_MHz": 125.0,
+     "cycles": 12288,
+     "U": 0.535,
+     "bits": [
+      8,
+      4,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "dsp"
+    },
+    "B1_uniform": {
+     "E_mJ": 0.4004,
+     "f_MHz": 125.0,
+     "cycles": 12288,
+     "U": 0.553,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 0.4039,
+    "B2_proxy_mJ": 0.4085,
+    "B3_sequential_mJ": 0.4039
+   }
+  }
+ },
+ "nominal": {
+  "continuous": {
+   "gap_B4_vs_opt_pct": 1.03,
+   "bound_pct": 18.8
+  },
+  "30": {
+   "running": {
+    "A_prime": {
+     "E_mJ": 58.7736,
+     "f_MHz": 50.0,
+     "cycles": 196608,
+     "U": 0.138,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "lut"
+    },
+    "B1_uniform": {
+     "E_mJ": 58.7893,
+     "f_MHz": 50.0,
+     "cycles": 196608,
+     "U": 0.143,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 69.5763,
+    "B2_proxy_mJ": 66.565,
+    "B3_sequential_mJ": 69.5763
+   },
+   "lowclk": {
+    "A_prime": {
+     "E_mJ": 53.9153,
+     "f_MHz": 5.0,
+     "cycles": 49152,
+     "U": 0.194,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "lut"
+    },
+    "B1_uniform": {
+     "E_mJ": 53.9174,
+     "f_MHz": 5.0,
+     "cycles": 49152,
+     "U": 0.199,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 69.5763,
+    "B2_proxy_mJ": 66.565,
+    "B3_sequential_mJ": 69.5763
+   },
+   "gated": {
+    "A_prime": {
+     "E_mJ": 53.4031,
+     "f_MHz": 125.0,
+     "cycles": 12288,
+     "U": 0.535,
+     "bits": [
+      8,
+      4,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "dsp"
+    },
+    "B1_uniform": {
+     "E_mJ": 53.4042,
+     "f_MHz": 125.0,
+     "cycles": 12288,
+     "U": 0.553,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 53.4063,
+    "B2_proxy_mJ": 53.4091,
+    "B3_sequential_mJ": 53.4063
+   }
+  },
+  "300": {
+   "running": {
+    "A_prime": {
+     "E_mJ": 5.9153,
+     "f_MHz": 50.0,
+     "cycles": 49152,
+     "U": 0.194,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "lut"
+    },
+    "B1_uniform": {
+     "E_mJ": 5.9174,
+     "f_MHz": 50.0,
+     "cycles": 49152,
+     "U": 0.199,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 6.9805,
+    "B2_proxy_mJ": 6.6812,
+    "B3_sequential_mJ": 6.9805
+   },
+   "lowclk": {
+    "A_prime": {
+     "E_mJ": 5.412,
+     "f_MHz": 5.0,
+     "cycles": 16384,
+     "U": 0.348,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "lut"
+    },
+    "B1_uniform": {
+     "E_mJ": 5.4124,
+     "f_MHz": 5.0,
+     "cycles": 16384,
+     "U": 0.353,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 6.9805,
+    "B2_proxy_mJ": 6.6812,
+    "B3_sequential_mJ": 6.9805
+   },
+   "gated": {
+    "A_prime": {
+     "E_mJ": 5.4031,
+     "f_MHz": 125.0,
+     "cycles": 12288,
+     "U": 0.535,
+     "bits": [
+      8,
+      4,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "dsp"
+    },
+    "B1_uniform": {
+     "E_mJ": 5.4042,
+     "f_MHz": 125.0,
+     "cycles": 12288,
+     "U": 0.553,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 5.4063,
+    "B2_proxy_mJ": 5.4091,
+    "B3_sequential_mJ": 5.4063
+   }
+  },
+  "1000": {
+   "running": {
+    "A_prime": {
+     "E_mJ": 1.7961,
+     "f_MHz": 50.0,
+     "cycles": 16384,
+     "U": 0.348,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "lut"
+    },
+    "B1_uniform": {
+     "E_mJ": 1.7967,
+     "f_MHz": 50.0,
+     "cycles": 16384,
+     "U": 0.353,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 2.112,
+    "B2_proxy_mJ": 2.0235,
+    "B3_sequential_mJ": 2.112
+   },
+   "lowclk": {
+    "A_prime": {
+     "E_mJ": 1.6904,
+     "f_MHz": 20.0,
+     "cycles": 16384,
+     "U": 0.348,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "lut"
+    },
+    "B1_uniform": {
+     "E_mJ": 1.6908,
+     "f_MHz": 20.0,
+     "cycles": 16384,
+     "U": 0.353,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 2.112,
+    "B2_proxy_mJ": 2.0235,
+    "B3_sequential_mJ": 2.112
+   },
+   "gated": {
+    "A_prime": {
+     "E_mJ": 1.6697,
+     "f_MHz": 125.0,
+     "cycles": 12288,
+     "U": 0.535,
+     "bits": [
+      8,
+      4,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "dsp"
+    },
+    "B1_uniform": {
+     "E_mJ": 1.6708,
+     "f_MHz": 125.0,
+     "cycles": 12288,
+     "U": 0.553,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 1.673,
+    "B2_proxy_mJ": 1.6758,
+    "B3_sequential_mJ": 1.673
+   }
+  },
+  "3000": {
+   "running": {
+    "A_prime": {
+     "E_mJ": 0.612,
+     "f_MHz": 50.0,
+     "cycles": 16384,
+     "U": 0.348,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "lut"
+    },
+    "B1_uniform": {
+     "E_mJ": 0.6124,
+     "f_MHz": 50.0,
+     "cycles": 16384,
+     "U": 0.353,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 0.7209,
+    "B2_proxy_mJ": 0.6928,
+    "B3_sequential_mJ": 0.7209
+   },
+   "lowclk": {
+    "A_prime": {
+     "E_mJ": 0.607,
+     "f_MHz": 40.0,
+     "cycles": 12288,
+     "U": 0.535,
+     "bits": [
+      8,
+      4,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "dsp"
+    },
+    "B1_uniform": {
+     "E_mJ": 0.6082,
+     "f_MHz": 40.0,
+     "cycles": 12288,
+     "U": 0.553,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 0.7209,
+    "B2_proxy_mJ": 0.6928,
+    "B3_sequential_mJ": 0.7209
+   },
+   "gated": {
+    "A_prime": {
+     "E_mJ": 0.6031,
+     "f_MHz": 125.0,
+     "cycles": 12288,
+     "U": 0.535,
+     "bits": [
+      8,
+      4,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "dsp"
+    },
+    "B1_uniform": {
+     "E_mJ": 0.6042,
+     "f_MHz": 125.0,
+     "cycles": 12288,
+     "U": 0.553,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 0.6063,
+    "B2_proxy_mJ": 0.6091,
+    "B3_sequential_mJ": 0.6063
+   }
+  },
+  "5000": {
+   "running": {
+    "A_prime": {
+     "E_mJ": 0.3937,
+     "f_MHz": 66.67,
+     "cycles": 12288,
+     "U": 0.535,
+     "bits": [
+      8,
+      4,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "dsp"
+    },
+    "B1_uniform": {
+     "E_mJ": 0.3948,
+     "f_MHz": 66.67,
+     "cycles": 12288,
+     "U": 0.553,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 0.4427,
+    "B2_proxy_mJ": 0.4266,
+    "B3_sequential_mJ": 0.4427
+   },
+   "lowclk": {
+    "A_prime": {
+     "E_mJ": 0.3937,
+     "f_MHz": 66.67,
+     "cycles": 12288,
+     "U": 0.535,
+     "bits": [
+      8,
+      4,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "dsp"
+    },
+    "B1_uniform": {
+     "E_mJ": 0.3948,
+     "f_MHz": 66.67,
+     "cycles": 12288,
+     "U": 0.553,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 0.4427,
+    "B2_proxy_mJ": 0.4266,
+    "B3_sequential_mJ": 0.4427
+   },
+   "gated": {
+    "A_prime": {
+     "E_mJ": 0.3897,
+     "f_MHz": 125.0,
+     "cycles": 12288,
+     "U": 0.535,
+     "bits": [
+      8,
+      4,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "dsp"
+    },
+    "B1_uniform": {
+     "E_mJ": 0.3908,
+     "f_MHz": 125.0,
+     "cycles": 12288,
+     "U": 0.553,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 0.393,
+    "B2_proxy_mJ": 0.3958,
+    "B3_sequential_mJ": 0.393
+   }
+  }
+ },
+ "flat": {
+  "continuous": {
+   "gap_B4_vs_opt_pct": 0.14,
+   "bound_pct": 5.0
+  },
+  "30": {
+   "running": {
+    "A_prime": {
+     "E_mJ": 61.6741,
+     "f_MHz": 50.0,
+     "cycles": 16384,
+     "U": 0.348,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "lut"
+    },
+    "B1_uniform": {
+     "E_mJ": 61.6742,
+     "f_MHz": 50.0,
+     "cycles": 16384,
+     "U": 0.353,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 64.1761,
+    "B2_proxy_mJ": 63.3435,
+    "B3_sequential_mJ": 64.1761
+   },
+   "lowclk": {
+    "A_prime": {
+     "E_mJ": 60.1741,
+     "f_MHz": 5.0,
+     "cycles": 16384,
+     "U": 0.348,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "lut"
+    },
+    "B1_uniform": {
+     "E_mJ": 60.1742,
+     "f_MHz": 5.0,
+     "cycles": 16384,
+     "U": 0.353,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 64.1761,
+    "B2_proxy_mJ": 63.3435,
+    "B3_sequential_mJ": 64.1761
+   },
+   "gated": {
+    "A_prime": {
+     "E_mJ": 60.0208,
+     "f_MHz": 125.0,
+     "cycles": 12288,
+     "U": 0.535,
+     "bits": [
+      8,
+      4,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "dsp"
+    },
+    "B1_uniform": {
+     "E_mJ": 60.0211,
+     "f_MHz": 125.0,
+     "cycles": 12288,
+     "U": 0.553,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 60.0217,
+    "B2_proxy_mJ": 60.0224,
+    "B3_sequential_mJ": 60.0217
+   }
+  },
+  "300": {
+   "running": {
+    "A_prime": {
+     "E_mJ": 6.1741,
+     "f_MHz": 50.0,
+     "cycles": 16384,
+     "U": 0.348,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "lut"
+    },
+    "B1_uniform": {
+     "E_mJ": 6.1742,
+     "f_MHz": 50.0,
+     "cycles": 16384,
+     "U": 0.353,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 6.4261,
+    "B2_proxy_mJ": 6.3435,
+    "B3_sequential_mJ": 6.4261
+   },
+   "lowclk": {
+    "A_prime": {
+     "E_mJ": 6.0241,
+     "f_MHz": 5.0,
+     "cycles": 16384,
+     "U": 0.348,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "lut"
+    },
+    "B1_uniform": {
+     "E_mJ": 6.0242,
+     "f_MHz": 5.0,
+     "cycles": 16384,
+     "U": 0.353,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 6.4261,
+    "B2_proxy_mJ": 6.3435,
+    "B3_sequential_mJ": 6.4261
+   },
+   "gated": {
+    "A_prime": {
+     "E_mJ": 6.0208,
+     "f_MHz": 125.0,
+     "cycles": 12288,
+     "U": 0.535,
+     "bits": [
+      8,
+      4,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "dsp"
+    },
+    "B1_uniform": {
+     "E_mJ": 6.0211,
+     "f_MHz": 125.0,
+     "cycles": 12288,
+     "U": 0.553,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 6.0217,
+    "B2_proxy_mJ": 6.0224,
+    "B3_sequential_mJ": 6.0217
+   }
+  },
+  "1000": {
+   "running": {
+    "A_prime": {
+     "E_mJ": 1.8574,
+     "f_MHz": 50.0,
+     "cycles": 16384,
+     "U": 0.348,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "lut"
+    },
+    "B1_uniform": {
+     "E_mJ": 1.8575,
+     "f_MHz": 50.0,
+     "cycles": 16384,
+     "U": 0.353,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 1.9344,
+    "B2_proxy_mJ": 1.9102,
+    "B3_sequential_mJ": 1.9344
+   },
+   "lowclk": {
+    "A_prime": {
+     "E_mJ": 1.8274,
+     "f_MHz": 20.0,
+     "cycles": 16384,
+     "U": 0.348,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "lut"
+    },
+    "B1_uniform": {
+     "E_mJ": 1.8275,
+     "f_MHz": 20.0,
+     "cycles": 16384,
+     "U": 0.353,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 1.9344,
+    "B2_proxy_mJ": 1.9102,
+    "B3_sequential_mJ": 1.9344
+   },
+   "gated": {
+    "A_prime": {
+     "E_mJ": 1.8208,
+     "f_MHz": 125.0,
+     "cycles": 12288,
+     "U": 0.535,
+     "bits": [
+      8,
+      4,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "dsp"
+    },
+    "B1_uniform": {
+     "E_mJ": 1.8211,
+     "f_MHz": 125.0,
+     "cycles": 12288,
+     "U": 0.553,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 1.8217,
+    "B2_proxy_mJ": 1.8224,
+    "B3_sequential_mJ": 1.8217
+   }
+  },
+  "3000": {
+   "running": {
+    "A_prime": {
+     "E_mJ": 0.6241,
+     "f_MHz": 50.0,
+     "cycles": 16384,
+     "U": 0.348,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "lut"
+    },
+    "B1_uniform": {
+     "E_mJ": 0.6242,
+     "f_MHz": 50.0,
+     "cycles": 16384,
+     "U": 0.353,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 0.6511,
+    "B2_proxy_mJ": 0.6435,
+    "B3_sequential_mJ": 0.6511
+   },
+   "lowclk": {
+    "A_prime": {
+     "E_mJ": 0.6219,
+     "f_MHz": 40.0,
+     "cycles": 12288,
+     "U": 0.535,
+     "bits": [
+      8,
+      4,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "dsp"
+    },
+    "B1_uniform": {
+     "E_mJ": 0.6222,
+     "f_MHz": 40.0,
+     "cycles": 12288,
+     "U": 0.553,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 0.6511,
+    "B2_proxy_mJ": 0.6435,
+    "B3_sequential_mJ": 0.6511
+   },
+   "gated": {
+    "A_prime": {
+     "E_mJ": 0.6208,
+     "f_MHz": 125.0,
+     "cycles": 12288,
+     "U": 0.535,
+     "bits": [
+      8,
+      4,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "dsp"
+    },
+    "B1_uniform": {
+     "E_mJ": 0.6211,
+     "f_MHz": 125.0,
+     "cycles": 12288,
+     "U": 0.553,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 0.6217,
+    "B2_proxy_mJ": 0.6224,
+    "B3_sequential_mJ": 0.6217
+   }
+  },
+  "5000": {
+   "running": {
+    "A_prime": {
+     "E_mJ": 0.3819,
+     "f_MHz": 66.67,
+     "cycles": 12288,
+     "U": 0.535,
+     "bits": [
+      8,
+      4,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "dsp"
+    },
+    "B1_uniform": {
+     "E_mJ": 0.3822,
+     "f_MHz": 66.67,
+     "cycles": 12288,
+     "U": 0.553,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 0.3944,
+    "B2_proxy_mJ": 0.3902,
+    "B3_sequential_mJ": 0.3944
+   },
+   "lowclk": {
+    "A_prime": {
+     "E_mJ": 0.3819,
+     "f_MHz": 66.67,
+     "cycles": 12288,
+     "U": 0.535,
+     "bits": [
+      8,
+      4,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "dsp"
+    },
+    "B1_uniform": {
+     "E_mJ": 0.3822,
+     "f_MHz": 66.67,
+     "cycles": 12288,
+     "U": 0.553,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 0.3944,
+    "B2_proxy_mJ": 0.3902,
+    "B3_sequential_mJ": 0.3944
+   },
+   "gated": {
+    "A_prime": {
+     "E_mJ": 0.3808,
+     "f_MHz": 125.0,
+     "cycles": 12288,
+     "U": 0.535,
+     "bits": [
+      8,
+      4,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "dsp"
+    },
+    "B1_uniform": {
+     "E_mJ": 0.3811,
+     "f_MHz": 125.0,
+     "cycles": 12288,
+     "U": 0.553,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 0.3817,
+    "B2_proxy_mJ": 0.3824,
+    "B3_sequential_mJ": 0.3817
+   }
+  }
+ },
+ "z2_anchor": {
+  "continuous": {
+   "gap_B4_vs_opt_pct": 0.38,
+   "bound_pct": 10.5
+  },
+  "30": {
+   "running": {
+    "A_prime": {
+     "E_mJ": 46.9248,
+     "f_MHz": 50.0,
+     "cycles": 442368,
+     "U": 0.115,
+     "bits": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+     ],
+     "mode": "dsp"
+    },
+    "B1_uniform": {
+     "E_mJ": 46.9248,
+     "f_MHz": 50.0,
+     "cycles": 442368,
+     "U": 0.115,
+     "bits": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+     ],
+     "mode": "dsp"
+    },
+    "B4_latency_mJ": 56.6545,
+    "B2_proxy_mJ": 53.813,
+    "B3_sequential_mJ": 56.6545
+   },
+   "lowclk": {
+    "A_prime": {
+     "E_mJ": 42.2114,
+     "f_MHz": 5.0,
+     "cycles": 49152,
+     "U": 0.194,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "lut"
+    },
+    "B1_uniform": {
+     "E_mJ": 42.2126,
+     "f_MHz": 5.0,
+     "cycles": 49152,
+     "U": 0.199,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 56.6545,
+    "B2_proxy_mJ": 53.813,
+    "B3_sequential_mJ": 56.6545
+   },
+   "gated": {
+    "A_prime": {
+     "E_mJ": 41.7187,
+     "f_MHz": 125.0,
+     "cycles": 12288,
+     "U": 0.535,
+     "bits": [
+      8,
+      4,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "dsp"
+    },
+    "B1_uniform": {
+     "E_mJ": 41.7192,
+     "f_MHz": 125.0,
+     "cycles": 12288,
+     "U": 0.553,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 41.72,
+    "B2_proxy_mJ": 41.7213,
+    "B3_sequential_mJ": 41.72
+   }
+  },
+  "300": {
+   "running": {
+    "A_prime": {
+     "E_mJ": 4.7114,
+     "f_MHz": 50.0,
+     "cycles": 49152,
+     "U": 0.194,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "lut"
+    },
+    "B1_uniform": {
+     "E_mJ": 4.7126,
+     "f_MHz": 50.0,
+     "cycles": 49152,
+     "U": 0.199,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 5.6739,
+    "B2_proxy_mJ": 5.3905,
+    "B3_sequential_mJ": 5.6739
+   },
+   "lowclk": {
+    "A_prime": {
+     "E_mJ": 4.2299,
+     "f_MHz": 5.0,
+     "cycles": 16384,
+     "U": 0.348,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "lut"
+    },
+    "B1_uniform": {
+     "E_mJ": 4.2301,
+     "f_MHz": 5.0,
+     "cycles": 16384,
+     "U": 0.353,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 5.6739,
+    "B2_proxy_mJ": 5.3905,
+    "B3_sequential_mJ": 5.6739
+   },
+   "gated": {
+    "A_prime": {
+     "E_mJ": 4.2187,
+     "f_MHz": 125.0,
+     "cycles": 12288,
+     "U": 0.535,
+     "bits": [
+      8,
+      4,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "dsp"
+    },
+    "B1_uniform": {
+     "E_mJ": 4.2192,
+     "f_MHz": 125.0,
+     "cycles": 12288,
+     "U": 0.553,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 4.22,
+    "B2_proxy_mJ": 4.2213,
+    "B3_sequential_mJ": 4.22
+   }
+  },
+  "1000": {
+   "running": {
+    "A_prime": {
+     "E_mJ": 1.4221,
+     "f_MHz": 50.0,
+     "cycles": 49152,
+     "U": 0.194,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "lut"
+    },
+    "B1_uniform": {
+     "E_mJ": 1.4227,
+     "f_MHz": 50.0,
+     "cycles": 49152,
+     "U": 0.199,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 1.7088,
+    "B2_proxy_mJ": 1.6243,
+    "B3_sequential_mJ": 1.7088
+   },
+   "lowclk": {
+    "A_prime": {
+     "E_mJ": 1.3244,
+     "f_MHz": 20.0,
+     "cycles": 16384,
+     "U": 0.348,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "lut"
+    },
+    "B1_uniform": {
+     "E_mJ": 1.3246,
+     "f_MHz": 20.0,
+     "cycles": 16384,
+     "U": 0.353,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 1.7088,
+    "B2_proxy_mJ": 1.6243,
+    "B3_sequential_mJ": 1.7088
+   },
+   "gated": {
+    "A_prime": {
+     "E_mJ": 1.302,
+     "f_MHz": 125.0,
+     "cycles": 12288,
+     "U": 0.535,
+     "bits": [
+      8,
+      4,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "dsp"
+    },
+    "B1_uniform": {
+     "E_mJ": 1.3025,
+     "f_MHz": 125.0,
+     "cycles": 12288,
+     "U": 0.553,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 1.3034,
+    "B2_proxy_mJ": 1.3047,
+    "B3_sequential_mJ": 1.3034
+   }
+  },
+  "3000": {
+   "running": {
+    "A_prime": {
+     "E_mJ": 0.4799,
+     "f_MHz": 50.0,
+     "cycles": 16384,
+     "U": 0.348,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "lut"
+    },
+    "B1_uniform": {
+     "E_mJ": 0.4801,
+     "f_MHz": 50.0,
+     "cycles": 16384,
+     "U": 0.353,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 0.5759,
+    "B2_proxy_mJ": 0.5482,
+    "B3_sequential_mJ": 0.5759
+   },
+   "lowclk": {
+    "A_prime": {
+     "E_mJ": 0.4723,
+     "f_MHz": 40.0,
+     "cycles": 12288,
+     "U": 0.535,
+     "bits": [
+      8,
+      4,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "dsp"
+    },
+    "B1_uniform": {
+     "E_mJ": 0.4729,
+     "f_MHz": 40.0,
+     "cycles": 12288,
+     "U": 0.553,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 0.5759,
+    "B2_proxy_mJ": 0.5482,
+    "B3_sequential_mJ": 0.5759
+   },
+   "gated": {
+    "A_prime": {
+     "E_mJ": 0.4687,
+     "f_MHz": 125.0,
+     "cycles": 12288,
+     "U": 0.535,
+     "bits": [
+      8,
+      4,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "dsp"
+    },
+    "B1_uniform": {
+     "E_mJ": 0.4692,
+     "f_MHz": 125.0,
+     "cycles": 12288,
+     "U": 0.553,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 0.47,
+    "B2_proxy_mJ": 0.4713,
+    "B3_sequential_mJ": 0.47
+   }
+  },
+  "5000": {
+   "running": {
+    "A_prime": {
+     "E_mJ": 0.3057,
+     "f_MHz": 66.67,
+     "cycles": 12288,
+     "U": 0.535,
+     "bits": [
+      8,
+      4,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "dsp"
+    },
+    "B1_uniform": {
+     "E_mJ": 0.3062,
+     "f_MHz": 66.67,
+     "cycles": 12288,
+     "U": 0.553,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 0.3493,
+    "B2_proxy_mJ": 0.333,
+    "B3_sequential_mJ": 0.3493
+   },
+   "lowclk": {
+    "A_prime": {
+     "E_mJ": 0.3057,
+     "f_MHz": 66.67,
+     "cycles": 12288,
+     "U": 0.535,
+     "bits": [
+      8,
+      4,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "dsp"
+    },
+    "B1_uniform": {
+     "E_mJ": 0.3062,
+     "f_MHz": 66.67,
+     "cycles": 12288,
+     "U": 0.553,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 0.3493,
+    "B2_proxy_mJ": 0.333,
+    "B3_sequential_mJ": 0.3493
+   },
+   "gated": {
+    "A_prime": {
+     "E_mJ": 0.302,
+     "f_MHz": 125.0,
+     "cycles": 12288,
+     "U": 0.535,
+     "bits": [
+      8,
+      4,
+      2,
+      2,
+      2,
+      2,
+      4,
+      4
+     ],
+     "mode": "dsp"
+    },
+    "B1_uniform": {
+     "E_mJ": 0.3025,
+     "f_MHz": 125.0,
+     "cycles": 12288,
+     "U": 0.553,
+     "bits": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "mode": "lut"
+    },
+    "B4_latency_mJ": 0.3034,
+    "B2_proxy_mJ": 0.3047,
+    "B3_sequential_mJ": 0.3034
+   }
+  }
+ }
+}

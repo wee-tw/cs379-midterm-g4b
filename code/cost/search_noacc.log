@@ -1,0 +1,124 @@
+== power params: bismo_fit
+   continuous
+     A_prime        E=0.2517 mJ  FPS=10172.5  f=125.0  bits=[8, 4, 2, 2, 2, 2, 4, 4] mode=dsp LUT=16733 BRAM18=28.0 DSP=172 acc=100.0
+     B1_uniform     E=0.2535 mJ  FPS=10172.5  f=125.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=28174 BRAM18=26.0 DSP=0 acc=100.0
+     B4_latency     E=0.2562 mJ  FPS=10231.6  f=125.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=30076 BRAM18=33.0 DSP=0 acc=100.0
+     B2_proxy       E=0.296 mJ  FPS=8185.3  f=100.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut_finn LUT=29961 BRAM18=87.0 DSP=0 acc=100.0
+     B3_sequential  E=0.2562 mJ  FPS=10231.6  f=125.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=30076 BRAM18=33.0 DSP=0 acc=100.0
+   fixed R=30
+     A_prime        E=56.6252 mJ  FPS=254.3  f=50.0  bits=[2, 2, 2, 2, 2, 2, 4, 4] mode=lut LUT=6193 BRAM18=23.0 DSP=1 acc=100.0
+     B1_uniform     E=56.638 mJ  FPS=113.0  f=50.0  bits=[4, 4, 4, 4, 4, 4, 4, 4] mode=dsp LUT=3690 BRAM18=8.0 DSP=34 acc=100.0
+     B4_latency     E=74.5167 mJ  FPS=10231.6  f=125.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=30076 BRAM18=33.0 DSP=0 acc=100.0
+     B2_proxy       E=69.7023 mJ  FPS=8185.3  f=100.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut_finn LUT=29961 BRAM18=87.0 DSP=0 acc=100.0
+     B3_sequential  E=74.5167 mJ  FPS=10231.6  f=125.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=30076 BRAM18=33.0 DSP=0 acc=100.0
+   fixed R=300
+     A_prime        E=5.7251 mJ  FPS=1017.3  f=50.0  bits=[2, 2, 2, 2, 2, 2, 4, 4] mode=lut LUT=9175 BRAM18=23.0 DSP=1 acc=100.0
+     B1_uniform     E=5.7288 mJ  FPS=1017.3  f=50.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=9499 BRAM18=23.0 DSP=0 acc=100.0
+     B4_latency     E=7.4857 mJ  FPS=10231.6  f=125.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=30076 BRAM18=33.0 DSP=0 acc=100.0
+     B2_proxy       E=7.0069 mJ  FPS=8185.3  f=100.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut_finn LUT=29961 BRAM18=87.0 DSP=0 acc=100.0
+     B3_sequential  E=7.4857 mJ  FPS=10231.6  f=125.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=30076 BRAM18=33.0 DSP=0 acc=100.0
+   fixed R=1000
+     A_prime        E=1.7512 mJ  FPS=1525.9  f=50.0  bits=[2, 2, 2, 2, 2, 2, 4, 4] mode=lut LUT=11877 BRAM18=21.0 DSP=1 acc=100.0
+     B1_uniform     E=1.7527 mJ  FPS=1525.9  f=50.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=12201 BRAM18=21.0 DSP=0 acc=100.0
+     B4_latency     E=2.2722 mJ  FPS=10231.6  f=125.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=30076 BRAM18=33.0 DSP=0 acc=100.0
+     B2_proxy       E=2.1306 mJ  FPS=8185.3  f=100.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut_finn LUT=29961 BRAM18=87.0 DSP=0 acc=100.0
+     B3_sequential  E=2.2722 mJ  FPS=10231.6  f=125.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=30076 BRAM18=33.0 DSP=0 acc=100.0
+   fixed R=3000
+     A_prime        E=0.6046 mJ  FPS=3051.8  f=50.0  bits=[2, 2, 2, 2, 2, 2, 4, 4] mode=lut LUT=17455 BRAM18=21.0 DSP=1 acc=100.0
+     B1_uniform     E=0.6053 mJ  FPS=3051.8  f=50.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=17779 BRAM18=21.0 DSP=0 acc=100.0
+     B4_latency     E=0.7826 mJ  FPS=10231.6  f=125.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=30076 BRAM18=33.0 DSP=0 acc=100.0
+     B2_proxy       E=0.7373 mJ  FPS=8185.3  f=100.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut_finn LUT=29961 BRAM18=87.0 DSP=0 acc=100.0
+     B3_sequential  E=0.7826 mJ  FPS=10231.6  f=125.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=30076 BRAM18=33.0 DSP=0 acc=100.0
+== power params: nominal
+   continuous
+     A_prime        E=0.227 mJ  FPS=10172.5  f=125.0  bits=[8, 4, 2, 2, 2, 2, 4, 4] mode=dsp LUT=16733 BRAM18=28.0 DSP=172 acc=100.0
+     B1_uniform     E=0.2281 mJ  FPS=10172.5  f=125.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=28174 BRAM18=26.0 DSP=0 acc=100.0
+     B4_latency     E=0.2294 mJ  FPS=10231.6  f=125.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=30076 BRAM18=33.0 DSP=0 acc=100.0
+     B2_proxy       E=0.2713 mJ  FPS=8185.3  f=100.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut_finn LUT=29961 BRAM18=87.0 DSP=0 acc=100.0
+     B3_sequential  E=0.2294 mJ  FPS=10231.6  f=125.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=30076 BRAM18=33.0 DSP=0 acc=100.0
+   fixed R=30
+     A_prime        E=58.7736 mJ  FPS=254.3  f=50.0  bits=[2, 2, 2, 2, 2, 2, 4, 4] mode=lut LUT=6193 BRAM18=23.0 DSP=1 acc=100.0
+     B1_uniform     E=58.7893 mJ  FPS=254.3  f=50.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=6517 BRAM18=23.0 DSP=0 acc=100.0
+     B4_latency     E=69.5763 mJ  FPS=10231.6  f=125.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=30076 BRAM18=33.0 DSP=0 acc=100.0
+     B2_proxy       E=66.565 mJ  FPS=8185.3  f=100.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut_finn LUT=29961 BRAM18=87.0 DSP=0 acc=100.0
+     B3_sequential  E=69.5763 mJ  FPS=10231.6  f=125.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=30076 BRAM18=33.0 DSP=0 acc=100.0
+   fixed R=300
+     A_prime        E=5.9153 mJ  FPS=1017.3  f=50.0  bits=[2, 2, 2, 2, 2, 2, 4, 4] mode=lut LUT=9175 BRAM18=23.0 DSP=1 acc=100.0
+     B1_uniform     E=5.9174 mJ  FPS=1017.3  f=50.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=9499 BRAM18=23.0 DSP=0 acc=100.0
+     B4_latency     E=6.9805 mJ  FPS=10231.6  f=125.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=30076 BRAM18=33.0 DSP=0 acc=100.0
+     B2_proxy       E=6.6812 mJ  FPS=8185.3  f=100.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut_finn LUT=29961 BRAM18=87.0 DSP=0 acc=100.0
+     B3_sequential  E=6.9805 mJ  FPS=10231.6  f=125.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=30076 BRAM18=33.0 DSP=0 acc=100.0
+   fixed R=1000
+     A_prime        E=1.7961 mJ  FPS=3051.8  f=50.0  bits=[2, 2, 2, 2, 2, 2, 4, 4] mode=lut LUT=17455 BRAM18=21.0 DSP=1 acc=100.0
+     B1_uniform     E=1.7967 mJ  FPS=3051.8  f=50.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=17779 BRAM18=21.0 DSP=0 acc=100.0
+     B4_latency     E=2.112 mJ  FPS=10231.6  f=125.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=30076 BRAM18=33.0 DSP=0 acc=100.0
+     B2_proxy       E=2.0235 mJ  FPS=8185.3  f=100.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut_finn LUT=29961 BRAM18=87.0 DSP=0 acc=100.0
+     B3_sequential  E=2.112 mJ  FPS=10231.6  f=125.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=30076 BRAM18=33.0 DSP=0 acc=100.0
+   fixed R=3000
+     A_prime        E=0.612 mJ  FPS=3051.8  f=50.0  bits=[2, 2, 2, 2, 2, 2, 4, 4] mode=lut LUT=17455 BRAM18=21.0 DSP=1 acc=100.0
+     B1_uniform     E=0.6124 mJ  FPS=3051.8  f=50.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=17779 BRAM18=21.0 DSP=0 acc=100.0
+     B4_latency     E=0.7209 mJ  FPS=10231.6  f=125.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=30076 BRAM18=33.0 DSP=0 acc=100.0
+     B2_proxy       E=0.6928 mJ  FPS=8185.3  f=100.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut_finn LUT=29961 BRAM18=87.0 DSP=0 acc=100.0
+     B3_sequential  E=0.7209 mJ  FPS=10231.6  f=125.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=30076 BRAM18=33.0 DSP=0 acc=100.0
+== power params: flat
+   continuous
+     A_prime        E=0.1973 mJ  FPS=10231.6  f=125.0  bits=[8, 4, 2, 2, 2, 2, 4, 4] mode=dsp LUT=18635 BRAM18=35.0 DSP=172 acc=100.0
+     B1_uniform     E=0.1976 mJ  FPS=10231.6  f=125.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=30076 BRAM18=33.0 DSP=0 acc=100.0
+     B4_latency     E=0.1976 mJ  FPS=10231.6  f=125.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=30076 BRAM18=33.0 DSP=0 acc=100.0
+     B2_proxy       E=0.2423 mJ  FPS=8185.3  f=100.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut_finn LUT=29961 BRAM18=87.0 DSP=0 acc=100.0
+     B3_sequential  E=0.1976 mJ  FPS=10231.6  f=125.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=30076 BRAM18=33.0 DSP=0 acc=100.0
+   fixed R=30
+     A_prime        E=61.6741 mJ  FPS=3051.8  f=50.0  bits=[2, 2, 2, 2, 2, 2, 4, 4] mode=lut LUT=17455 BRAM18=21.0 DSP=1 acc=100.0
+     B1_uniform     E=61.6742 mJ  FPS=3051.8  f=50.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=17779 BRAM18=21.0 DSP=0 acc=100.0
+     B4_latency     E=64.1761 mJ  FPS=10231.6  f=125.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=30076 BRAM18=33.0 DSP=0 acc=100.0
+     B2_proxy       E=63.3435 mJ  FPS=8185.3  f=100.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut_finn LUT=29961 BRAM18=87.0 DSP=0 acc=100.0
+     B3_sequential  E=64.1761 mJ  FPS=10231.6  f=125.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=30076 BRAM18=33.0 DSP=0 acc=100.0
+   fixed R=300
+     A_prime        E=6.1741 mJ  FPS=3051.8  f=50.0  bits=[2, 2, 2, 2, 2, 2, 4, 4] mode=lut LUT=17455 BRAM18=21.0 DSP=1 acc=100.0
+     B1_uniform     E=6.1742 mJ  FPS=3051.8  f=50.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=17779 BRAM18=21.0 DSP=0 acc=100.0
+     B4_latency     E=6.4261 mJ  FPS=10231.6  f=125.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=30076 BRAM18=33.0 DSP=0 acc=100.0
+     B2_proxy       E=6.3435 mJ  FPS=8185.3  f=100.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut_finn LUT=29961 BRAM18=87.0 DSP=0 acc=100.0
+     B3_sequential  E=6.4261 mJ  FPS=10231.6  f=125.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=30076 BRAM18=33.0 DSP=0 acc=100.0
+   fixed R=1000
+     A_prime        E=1.8574 mJ  FPS=3051.8  f=50.0  bits=[2, 2, 2, 2, 2, 2, 4, 4] mode=lut LUT=17455 BRAM18=21.0 DSP=1 acc=100.0
+     B1_uniform     E=1.8575 mJ  FPS=3051.8  f=50.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=17779 BRAM18=21.0 DSP=0 acc=100.0
+     B4_latency     E=1.9344 mJ  FPS=10231.6  f=125.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=30076 BRAM18=33.0 DSP=0 acc=100.0
+     B2_proxy       E=1.9102 mJ  FPS=8185.3  f=100.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut_finn LUT=29961 BRAM18=87.0 DSP=0 acc=100.0
+     B3_sequential  E=1.9344 mJ  FPS=10231.6  f=125.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=30076 BRAM18=33.0 DSP=0 acc=100.0
+   fixed R=3000
+     A_prime        E=0.6241 mJ  FPS=3051.8  f=50.0  bits=[2, 2, 2, 2, 2, 2, 4, 4] mode=lut LUT=17455 BRAM18=21.0 DSP=1 acc=100.0
+     B1_uniform     E=0.6242 mJ  FPS=3051.8  f=50.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=17779 BRAM18=21.0 DSP=0 acc=100.0
+     B4_latency     E=0.6511 mJ  FPS=10231.6  f=125.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=30076 BRAM18=33.0 DSP=0 acc=100.0
+     B2_proxy       E=0.6435 mJ  FPS=8185.3  f=100.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut_finn LUT=29961 BRAM18=87.0 DSP=0 acc=100.0
+     B3_sequential  E=0.6511 mJ  FPS=10231.6  f=125.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=30076 BRAM18=33.0 DSP=0 acc=100.0
+== power params: z2_anchor
+   continuous
+     A_prime        E=0.1749 mJ  FPS=10172.5  f=125.0  bits=[8, 4, 2, 2, 2, 2, 4, 4] mode=dsp LUT=16733 BRAM18=28.0 DSP=172 acc=100.0
+     B1_uniform     E=0.1754 mJ  FPS=10172.5  f=125.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=28174 BRAM18=26.0 DSP=0 acc=100.0
+     B4_latency     E=0.1755 mJ  FPS=10231.6  f=125.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=30076 BRAM18=33.0 DSP=0 acc=100.0
+     B2_proxy       E=0.2074 mJ  FPS=8185.3  f=100.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut_finn LUT=29961 BRAM18=87.0 DSP=0 acc=100.0
+     B3_sequential  E=0.1755 mJ  FPS=10231.6  f=125.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=30076 BRAM18=33.0 DSP=0 acc=100.0
+   fixed R=30
+     A_prime        E=46.9248 mJ  FPS=113.0  f=50.0  bits=[4, 4, 4, 4, 4, 4, 4, 4] mode=dsp LUT=3690 BRAM18=8.0 DSP=34 acc=100.0
+     B1_uniform     E=46.9248 mJ  FPS=113.0  f=50.0  bits=[4, 4, 4, 4, 4, 4, 4, 4] mode=dsp LUT=3690 BRAM18=8.0 DSP=34 acc=100.0
+     B4_latency     E=56.6545 mJ  FPS=10231.6  f=125.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=30076 BRAM18=33.0 DSP=0 acc=100.0
+     B2_proxy       E=53.813 mJ  FPS=8185.3  f=100.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut_finn LUT=29961 BRAM18=87.0 DSP=0 acc=100.0
+     B3_sequential  E=56.6545 mJ  FPS=10231.6  f=125.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=30076 BRAM18=33.0 DSP=0 acc=100.0
+   fixed R=300
+     A_prime        E=4.7114 mJ  FPS=1017.3  f=50.0  bits=[2, 2, 2, 2, 2, 2, 4, 4] mode=lut LUT=9175 BRAM18=23.0 DSP=1 acc=100.0
+     B1_uniform     E=4.7126 mJ  FPS=1017.3  f=50.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=9499 BRAM18=23.0 DSP=0 acc=100.0
+     B4_latency     E=5.6739 mJ  FPS=10231.6  f=125.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=30076 BRAM18=33.0 DSP=0 acc=100.0
+     B2_proxy       E=5.3905 mJ  FPS=8185.3  f=100.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut_finn LUT=29961 BRAM18=87.0 DSP=0 acc=100.0
+     B3_sequential  E=5.6739 mJ  FPS=10231.6  f=125.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=30076 BRAM18=33.0 DSP=0 acc=100.0
+   fixed R=1000
+     A_prime        E=1.4221 mJ  FPS=1017.3  f=50.0  bits=[2, 2, 2, 2, 2, 2, 4, 4] mode=lut LUT=9175 BRAM18=23.0 DSP=1 acc=100.0
+     B1_uniform     E=1.4227 mJ  FPS=1017.3  f=50.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=9499 BRAM18=23.0 DSP=0 acc=100.0
+     B4_latency     E=1.7088 mJ  FPS=10231.6  f=125.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=30076 BRAM18=33.0 DSP=0 acc=100.0
+     B2_proxy       E=1.6243 mJ  FPS=8185.3  f=100.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut_finn LUT=29961 BRAM18=87.0 DSP=0 acc=100.0
+     B3_sequential  E=1.7088 mJ  FPS=10231.6  f=125.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=30076 BRAM18=33.0 DSP=0 acc=100.0
+   fixed R=3000
+     A_prime        E=0.4799 mJ  FPS=3051.8  f=50.0  bits=[2, 2, 2, 2, 2, 2, 4, 4] mode=lut LUT=17455 BRAM18=21.0 DSP=1 acc=100.0
+     B1_uniform     E=0.4801 mJ  FPS=3051.8  f=50.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=17779 BRAM18=21.0 DSP=0 acc=100.0
+     B4_latency     E=0.5759 mJ  FPS=10231.6  f=125.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=30076 BRAM18=33.0 DSP=0 acc=100.0
+     B2_proxy       E=0.5482 mJ  FPS=8185.3  f=100.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut_finn LUT=29961 BRAM18=87.0 DSP=0 acc=100.0
+     B3_sequential  E=0.5759 mJ  FPS=10231.6  f=125.0  bits=[2, 2, 2, 2, 2, 2, 2, 2] mode=lut LUT=30076 BRAM18=33.0 DSP=0 acc=100.0

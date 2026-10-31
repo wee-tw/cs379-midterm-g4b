@@ -1,0 +1,10 @@
+2,2,8,8,8,2,8,8: predicted 79.17  measured 80.14  error -0.97
+2,8,2,8,4,8,8,2: predicted 78.34  measured 78.82  error -0.48
+4,2,2,2,8,2,4,4: predicted 79.03  measured 78.86  error +0.17
+4,2,2,2,8,4,2,8: predicted 80.11  measured 80.08  error +0.03
+4,2,4,8,2,2,8,2: predicted 77.60  measured 76.41  error +1.19
+4,4,4,4,2,4,8,8: predicted 84.13  measured 84.27  error -0.14
+4,8,2,8,2,2,2,4: predicted 81.07  measured 81.32  error -0.25
+8,8,4,4,4,4,4,4: predicted 84.43  measured 84.33  error +0.10
+additive model MAE over 8 configs: 0.42 points
+base 83.95, reference 85.37, threshold 84.37, 279/6561 configs pass

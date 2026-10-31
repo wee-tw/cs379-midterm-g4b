@@ -1,0 +1,137 @@
+[
+ {
+  "run": "exp3/b1_w2a2",
+  "bits": "22222222",
+  "init": "C:\\Users\\wee\\AppData\\Local\\Temp\\claude\\D--115-1-embedded-sys-midterm-report\\0ab647fd-9b9f-46c9-8993-886b1139c5f2\\scratchpad\\exp2\\finnfloat.pt",
+  "epochs": 30,
+  "logged": 50.4,
+  "before": 50.4,
+  "after": 50.9
+ },
+ {
+  "run": "exp3/b1_w2a4",
+  "bits": "24242424",
+  "init": "C:\\Users\\wee\\AppData\\Local\\Temp\\claude\\D--115-1-embedded-sys-midterm-report\\0ab647fd-9b9f-46c9-8993-886b1139c5f2\\scratchpad\\exp2\\finnfloat.pt",
+  "epochs": 30,
+  "logged": 68.92,
+  "before": 68.84,
+  "after": 69.01
+ },
+ {
+  "run": "exp3/b1_w2a8",
+  "bits": "28282828",
+  "init": "C:\\Users\\wee\\AppData\\Local\\Temp\\claude\\D--115-1-embedded-sys-midterm-report\\0ab647fd-9b9f-46c9-8993-886b1139c5f2\\scratchpad\\exp2\\finnfloat.pt",
+  "epochs": 30,
+  "logged": 62.74,
+  "before": 62.74,
+  "after": 64.99
+ },
+ {
+  "run": "exp3/b1_w4a2",
+  "bits": "42424242",
+  "init": "C:\\Users\\wee\\AppData\\Local\\Temp\\claude\\D--115-1-embedded-sys-midterm-report\\0ab647fd-9b9f-46c9-8993-886b1139c5f2\\scratchpad\\exp2\\finnfloat.pt",
+  "epochs": 30,
+  "logged": 75.5,
+  "before": 75.51,
+  "after": 75.23
+ },
+ {
+  "run": "exp4/cand_4_4_2_4_2_4_2_8",
+  "bits": "44242428",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp2/finnfloat.pt",
+  "epochs": 30,
+  "logged": 73.91,
+  "before": 73.91,
+  "after": 73.58
+ },
+ {
+  "run": "exp4/cand_4_4_2_4_2_8_8_8",
+  "bits": "44242888",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp2/finnfloat.pt",
+  "epochs": 30,
+  "logged": 81.65,
+  "before": 81.67,
+  "after": 81.86
+ },
+ {
+  "run": "exp4/cand_4_4_4_4_4_4_8_8",
+  "bits": "44444488",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp2/finnfloat.pt",
+  "epochs": 30,
+  "logged": 85.14,
+  "before": 85.19,
+  "after": 85.47
+ },
+ {
+  "run": "exp4/cand_8_4_2_4_2_4_4_4",
+  "bits": "84242444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp2/finnfloat.pt",
+  "epochs": 30,
+  "logged": 81.24,
+  "before": 81.14,
+  "after": 80.92
+ },
+ {
+  "run": "exp4/cand_8_8_2_4_2_4_8_8",
+  "bits": "88242488",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp2/finnfloat.pt",
+  "epochs": 30,
+  "logged": 82.87,
+  "before": 82.89,
+  "after": 82.96
+ },
+ {
+  "run": "exp5/int_2_4_2_4_2_4_2_4",
+  "bits": "24242424",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 79.76,
+  "before": 79.77,
+  "after": 80.17
+ },
+ {
+  "run": "exp5/int_2_4_2_4_2_4_4_4",
+  "bits": "24242444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 77.41,
+  "before": 77.28,
+  "after": 80.35
+ },
+ {
+  "run": "exp7/ft30_cand_44242428",
+  "bits": "44242428",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 30,
+  "logged": 81.88,
+  "before": 82.08,
+  "after": 82.26
+ },
+ {
+  "run": "exp7/ft30_cand_88242488",
+  "bits": "88242488",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 30,
+  "logged": 84.28,
+  "before": 84.26,
+  "after": 84.64
+ },
+ {
+  "run": "exp7/ft8_cand_44242428",
+  "bits": "44242428",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 82.85,
+  "before": 82.96,
+  "after": 83.12
+ },
+ {
+  "run": "exp7/seed_cand_44242428_s1",
+  "bits": "44242428",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp2/finnfloat.pt",
+  "epochs": 30,
+  "logged": 75.84,
+  "before": 75.84,
+  "after": 76.07
+ }
+]

@@ -1,0 +1,97 @@
+nodes left outside fpgadataflow: ['Transpose']
+[2, 4, 4, 8, 2, 8, 2, 8] lut 20000 direct {'LUT': 40919.0, 'BRAM_18K': 57.0, 'DSP': 0.0} 19680 assembled {'LUT': 40919.0, 'BRAM_18K': 57.0, 'DSP': 0.0} 19680 OK
+[2, 4, 4, 8, 2, 8, 2, 8] lut 10000 direct {'LUT': 73525.0, 'BRAM_18K': 111.0, 'DSP': 0.0} 12217 assembled {'LUT': 73525.0, 'BRAM_18K': 111.0, 'DSP': 0.0} 12217 OK
+[2, 4, 4, 8, 2, 8, 2, 8] lut 25000 direct {'LUT': 32735.0, 'BRAM_18K': 47.0, 'DSP': 0.0} 24576 assembled {'LUT': 32735.0, 'BRAM_18K': 47.0, 'DSP': 0.0} 24576 OK
+nodes left outside fpgadataflow: ['Transpose']
+[2, 4, 4, 8, 2, 8, 2, 8] dsp 100000 direct {'LUT': 25442.0, 'BRAM_18K': 23.0, 'DSP': 38.0} 98304 assembled {'LUT': 25442.0, 'BRAM_18K': 23.0, 'DSP': 38.0} 98304 OK
+[2, 4, 4, 8, 2, 8, 2, 8] dsp 500000 direct {'LUT': 22750.0, 'BRAM_18K': 21.0, 'DSP': 10.0} 442368 assembled {'LUT': 22750.0, 'BRAM_18K': 21.0, 'DSP': 10.0} 442368 OK
+[2, 4, 4, 8, 2, 8, 2, 8] dsp 20000 direct {'LUT': 41466.0, 'BRAM_18K': 57.0, 'DSP': 224.0} 19680 assembled {'LUT': 41466.0, 'BRAM_18K': 57.0, 'DSP': 224.0} 19680 OK
+nodes left outside fpgadataflow: ['Transpose']
+[2, 4, 4, 8, 2, 8, 2, 8] lut_finn 1000000 direct {'LUT': 9169.0, 'BRAM_18K': 20.0, 'DSP': 0.0} 786432 assembled {'LUT': 9169.0, 'BRAM_18K': 20.0, 'DSP': 0.0} 786432 OK
+[2, 4, 4, 8, 2, 8, 2, 8] lut_finn 25000 direct {'LUT': 41175.0, 'BRAM_18K': 57.0, 'DSP': 0.0} 19680 assembled {'LUT': 41175.0, 'BRAM_18K': 57.0, 'DSP': 0.0} 19680 OK
+[2, 4, 4, 8, 2, 8, 2, 8] lut_finn 12500 direct {'LUT': 73071.0, 'BRAM_18K': 110.0, 'DSP': 0.0} 12288 assembled {'LUT': 73071.0, 'BRAM_18K': 110.0, 'DSP': 0.0} 12288 OK
+nodes left outside fpgadataflow: ['Transpose']
+[8, 2, 4, 8, 4, 8, 2, 2] lut 14286 direct {'LUT': 88768.0, 'BRAM_18K': 226.0, 'DSP': 0.0} 12288 assembled {'LUT': 88768.0, 'BRAM_18K': 226.0, 'DSP': 0.0} 12288 OK
+[8, 2, 4, 8, 4, 8, 2, 2] lut 1000000 direct {'LUT': 9172.0, 'BRAM_18K': 30.0, 'DSP': 0.0} 786432 assembled {'LUT': 9172.0, 'BRAM_18K': 30.0, 'DSP': 0.0} 786432 OK
+[8, 2, 4, 8, 4, 8, 2, 2] lut 20000 direct {'LUT': 53145.0, 'BRAM_18K': 121.0, 'DSP': 0.0} 19680 assembled {'LUT': 53145.0, 'BRAM_18K': 121.0, 'DSP': 0.0} 19680 OK
+nodes left outside fpgadataflow: ['Transpose']
+[8, 2, 4, 8, 4, 8, 2, 2] dsp 50000 direct {'LUT': 24403.0, 'BRAM_18K': 53.0, 'DSP': 133.0} 49152 assembled {'LUT': 24403.0, 'BRAM_18K': 53.0, 'DSP': 133.0} 49152 OK
+[8, 2, 4, 8, 4, 8, 2, 2] dsp 100000 direct {'LUT': 21470.0, 'BRAM_18K': 40.0, 'DSP': 71.0} 98304 assembled {'LUT': 21470.0, 'BRAM_18K': 40.0, 'DSP': 71.0} 98304 OK
+[8, 2, 4, 8, 4, 8, 2, 2] dsp 14286 direct {'LUT': 53627.0, 'BRAM_18K': 226.0, 'DSP': 619.0} 12288 assembled {'LUT': 53627.0, 'BRAM_18K': 226.0, 'DSP': 619.0} 12288 OK
+nodes left outside fpgadataflow: ['Transpose']
+[8, 2, 4, 8, 4, 8, 2, 2] lut_finn 500000 direct {'LUT': 9983.0, 'BRAM_18K': 32.0, 'DSP': 0.0} 442368 assembled {'LUT': 9983.0, 'BRAM_18K': 32.0, 'DSP': 0.0} 442368 OK
+[8, 2, 4, 8, 4, 8, 2, 2] lut_finn 33333 direct {'LUT': 31373.0, 'BRAM_18K': 63.0, 'DSP': 0.0} 36864 assembled {'LUT': 31373.0, 'BRAM_18K': 63.0, 'DSP': 0.0} 36864 OK
+[8, 2, 4, 8, 4, 8, 2, 2] lut_finn 1000000 direct {'LUT': 9172.0, 'BRAM_18K': 30.0, 'DSP': 0.0} 786432 assembled {'LUT': 9172.0, 'BRAM_18K': 30.0, 'DSP': 0.0} 786432 OK
+nodes left outside fpgadataflow: ['Transpose']
+[8, 8, 8, 8, 2, 4, 2, 4] lut 1000000 direct {'LUT': 10007.0, 'BRAM_18K': 26.0, 'DSP': 0.0} 786432 assembled {'LUT': 10007.0, 'BRAM_18K': 26.0, 'DSP': 0.0} 786432 OK
+[8, 8, 8, 8, 2, 4, 2, 4] lut 10000 direct {'LUT': 167816.0, 'BRAM_18K': 288.0, 'DSP': 0.0} 12217 assembled {'LUT': 167816.0, 'BRAM_18K': 288.0, 'DSP': 0.0} 12217 OK
+[8, 8, 8, 8, 2, 4, 2, 4] lut 16667 direct {'LUT': 81960.0, 'BRAM_18K': 134.0, 'DSP': 0.0} 16384 assembled {'LUT': 81960.0, 'BRAM_18K': 134.0, 'DSP': 0.0} 16384 OK
+nodes left outside fpgadataflow: ['Transpose']
+[8, 8, 8, 8, 2, 4, 2, 4] dsp 1000000 direct {'LUT': 19128.0, 'BRAM_18K': 26.0, 'DSP': 13.0} 786432 assembled {'LUT': 19128.0, 'BRAM_18K': 26.0, 'DSP': 13.0} 786432 OK
+[8, 8, 8, 8, 2, 4, 2, 4] dsp 25000 direct {'LUT': 23953.0, 'BRAM_18K': 116.0, 'DSP': 467.0} 24576 assembled {'LUT': 23953.0, 'BRAM_18K': 116.0, 'DSP': 467.0} 24576 OK
+[8, 8, 8, 8, 2, 4, 2, 4] dsp 100000 direct {'LUT': 20149.0, 'BRAM_18K': 36.0, 'DSP': 95.0} 98304 assembled {'LUT': 20149.0, 'BRAM_18K': 36.0, 'DSP': 95.0} 98304 OK
+nodes left outside fpgadataflow: ['Transpose']
+[8, 8, 8, 8, 2, 4, 2, 4] lut_finn 25000 direct {'LUT': 59404.0, 'BRAM_18K': 96.0, 'DSP': 0.0} 36864 assembled {'LUT': 59404.0, 'BRAM_18K': 96.0, 'DSP': 0.0} 36864 OK
+[8, 8, 8, 8, 2, 4, 2, 4] lut_finn 1000000 direct {'LUT': 10007.0, 'BRAM_18K': 26.0, 'DSP': 0.0} 786432 assembled {'LUT': 10007.0, 'BRAM_18K': 26.0, 'DSP': 0.0} 786432 OK
+[8, 8, 8, 8, 2, 4, 2, 4] lut_finn 16667 direct {'LUT': 70425.0, 'BRAM_18K': 115.0, 'DSP': 0.0} 36864 assembled {'LUT': 70425.0, 'BRAM_18K': 115.0, 'DSP': 0.0} 36864 OK
+nodes left outside fpgadataflow: ['Transpose']
+[2, 2, 8, 2, 8, 2, 4, 2] lut 100000 direct {'LUT': 11506.0, 'BRAM_18K': 51.0, 'DSP': 0.0} 98304 assembled {'LUT': 11506.0, 'BRAM_18K': 51.0, 'DSP': 0.0} 98304 OK
+[2, 2, 8, 2, 8, 2, 4, 2] lut 20000 direct {'LUT': 36142.0, 'BRAM_18K': 119.0, 'DSP': 0.0} 19680 assembled {'LUT': 36142.0, 'BRAM_18K': 119.0, 'DSP': 0.0} 19680 OK
+[2, 2, 8, 2, 8, 2, 4, 2] lut 12500 direct {'LUT': 52914.0, 'BRAM_18K': 184.0, 'DSP': 0.0} 12288 assembled {'LUT': 52914.0, 'BRAM_18K': 184.0, 'DSP': 0.0} 12288 OK
+nodes left outside fpgadataflow: ['Transpose']
+[2, 2, 8, 2, 8, 2, 4, 2] dsp 16667 direct {'LUT': 36438.0, 'BRAM_18K': 119.0, 'DSP': 0.0} 16384 assembled {'LUT': 36438.0, 'BRAM_18K': 119.0, 'DSP': 0.0} 16384 OK
+[2, 2, 8, 2, 8, 2, 4, 2] dsp 100000 direct {'LUT': 11788.0, 'BRAM_18K': 51.0, 'DSP': 0.0} 98304 assembled {'LUT': 11788.0, 'BRAM_18K': 51.0, 'DSP': 0.0} 98304 OK
+[2, 2, 8, 2, 8, 2, 4, 2] dsp 33333 direct {'LUT': 22202.0, 'BRAM_18K': 61.0, 'DSP': 0.0} 32768 assembled {'LUT': 22202.0, 'BRAM_18K': 61.0, 'DSP': 0.0} 32768 OK
+nodes left outside fpgadataflow: ['Transpose']
+[2, 2, 8, 2, 8, 2, 4, 2] lut_finn 100000 direct {'LUT': 12963.0, 'BRAM_18K': 66.0, 'DSP': 0.0} 98304 assembled {'LUT': 12963.0, 'BRAM_18K': 66.0, 'DSP': 0.0} 98304 OK
+[2, 2, 8, 2, 8, 2, 4, 2] lut_finn 12500 direct {'LUT': 54003.0, 'BRAM_18K': 187.0, 'DSP': 0.0} 18432 assembled {'LUT': 54003.0, 'BRAM_18K': 187.0, 'DSP': 0.0} 18432 OK
+[2, 2, 8, 2, 8, 2, 4, 2] lut_finn 10000 direct {'LUT': 55992.0, 'BRAM_18K': 189.0, 'DSP': 0.0} 18432 assembled {'LUT': 55992.0, 'BRAM_18K': 189.0, 'DSP': 0.0} 18432 OK
+nodes left outside fpgadataflow: ['Transpose']
+[2, 8, 8, 8, 8, 4, 2, 4] lut 20000 direct {'LUT': 72531.0, 'BRAM_18K': 119.0, 'DSP': 0.0} 19680 assembled {'LUT': 72531.0, 'BRAM_18K': 119.0, 'DSP': 0.0} 19680 OK
+[2, 8, 8, 8, 8, 4, 2, 4] lut 50000 direct {'LUT': 29978.0, 'BRAM_18K': 60.0, 'DSP': 0.0} 49152 assembled {'LUT': 29978.0, 'BRAM_18K': 60.0, 'DSP': 0.0} 49152 OK
+[2, 8, 8, 8, 8, 4, 2, 4] lut 1000000 direct {'LUT': 9873.0, 'BRAM_18K': 48.0, 'DSP': 0.0} 786432 assembled {'LUT': 9873.0, 'BRAM_18K': 48.0, 'DSP': 0.0} 786432 OK
+nodes left outside fpgadataflow: ['Transpose']
+[2, 8, 8, 8, 8, 4, 2, 4] dsp 25000 direct {'LUT': 35194.0, 'BRAM_18K': 89.0, 'DSP': 304.0} 24576 assembled {'LUT': 35194.0, 'BRAM_18K': 89.0, 'DSP': 304.0} 24576 OK
+[2, 8, 8, 8, 8, 4, 2, 4] dsp 16667 direct {'LUT': 35250.0, 'BRAM_18K': 119.0, 'DSP': 448.0} 16384 assembled {'LUT': 35250.0, 'BRAM_18K': 119.0, 'DSP': 448.0} 16384 OK
+[2, 8, 8, 8, 8, 4, 2, 4] dsp 500000 direct {'LUT': 18516.0, 'BRAM_18K': 46.0, 'DSP': 20.0} 442368 assembled {'LUT': 18516.0, 'BRAM_18K': 46.0, 'DSP': 20.0} 442368 OK
+nodes left outside fpgadataflow: ['Transpose']
+[2, 8, 8, 8, 8, 4, 2, 4] lut_finn 200000 direct {'LUT': 14460.0, 'BRAM_18K': 50.0, 'DSP': 0.0} 196608 assembled {'LUT': 14460.0, 'BRAM_18K': 50.0, 'DSP': 0.0} 196608 OK
+[2, 8, 8, 8, 8, 4, 2, 4] lut_finn 12500 direct {'LUT': 111652.0, 'BRAM_18K': 187.0, 'DSP': 0.0} 18432 assembled {'LUT': 111652.0, 'BRAM_18K': 187.0, 'DSP': 0.0} 18432 OK
+[2, 8, 8, 8, 8, 4, 2, 4] lut_finn 50000 direct {'LUT': 37942.0, 'BRAM_18K': 79.0, 'DSP': 0.0} 49152 assembled {'LUT': 37942.0, 'BRAM_18K': 79.0, 'DSP': 0.0} 49152 OK
+nodes left outside fpgadataflow: ['Transpose']
+[2, 4, 4, 2, 4, 8, 2, 8] lut 500000 direct {'LUT': 8676.0, 'BRAM_18K': 30.0, 'DSP': 0.0} 442368 assembled {'LUT': 8676.0, 'BRAM_18K': 30.0, 'DSP': 0.0} 442368 OK
+[2, 4, 4, 2, 4, 8, 2, 8] lut 33333 direct {'LUT': 20713.0, 'BRAM_18K': 37.0, 'DSP': 0.0} 32768 assembled {'LUT': 20713.0, 'BRAM_18K': 37.0, 'DSP': 0.0} 32768 OK
+[2, 4, 4, 2, 4, 8, 2, 8] lut 16667 direct {'LUT': 32310.0, 'BRAM_18K': 69.0, 'DSP': 0.0} 16384 assembled {'LUT': 32310.0, 'BRAM_18K': 69.0, 'DSP': 0.0} 16384 OK
+nodes left outside fpgadataflow: ['Transpose']
+[2, 4, 4, 2, 4, 8, 2, 8] dsp 25000 direct {'LUT': 25342.0, 'BRAM_18K': 55.0, 'DSP': 152.0} 24576 assembled {'LUT': 25342.0, 'BRAM_18K': 55.0, 'DSP': 152.0} 24576 OK
+[2, 4, 4, 2, 4, 8, 2, 8] dsp 16667 direct {'LUT': 26785.0, 'BRAM_18K': 69.0, 'DSP': 224.0} 16384 assembled {'LUT': 26785.0, 'BRAM_18K': 69.0, 'DSP': 224.0} 16384 OK
+[2, 4, 4, 2, 4, 8, 2, 8] dsp 100000 direct {'LUT': 17308.0, 'BRAM_18K': 31.0, 'DSP': 38.0} 98304 assembled {'LUT': 17308.0, 'BRAM_18K': 31.0, 'DSP': 38.0} 98304 OK
+nodes left outside fpgadataflow: ['Transpose']
+[2, 4, 4, 2, 4, 8, 2, 8] lut_finn 50000 direct {'LUT': 19862.0, 'BRAM_18K': 36.0, 'DSP': 0.0} 49152 assembled {'LUT': 19862.0, 'BRAM_18K': 36.0, 'DSP': 0.0} 49152 OK
+[2, 4, 4, 2, 4, 8, 2, 8] lut_finn 10000 direct {'LUT': 58700.0, 'BRAM_18K': 137.0, 'DSP': 0.0} 12217 assembled {'LUT': 58700.0, 'BRAM_18K': 137.0, 'DSP': 0.0} 12217 OK
+[2, 4, 4, 2, 4, 8, 2, 8] lut_finn 14286 direct {'LUT': 56711.0, 'BRAM_18K': 135.0, 'DSP': 0.0} 12288 assembled {'LUT': 56711.0, 'BRAM_18K': 135.0, 'DSP': 0.0} 12288 OK
+nodes left outside fpgadataflow: ['Transpose']
+[4, 8, 8, 4, 2, 2, 8, 8] lut 20000 direct {'LUT': 50662.0, 'BRAM_18K': 99.0, 'DSP': 1.0} 19680 assembled {'LUT': 50662.0, 'BRAM_18K': 99.0, 'DSP': 1.0} 19680 OK
+[4, 8, 8, 4, 2, 2, 8, 8] lut 16667 direct {'LUT': 50698.0, 'BRAM_18K': 99.0, 'DSP': 1.0} 16384 assembled {'LUT': 50698.0, 'BRAM_18K': 99.0, 'DSP': 1.0} 16384 OK
+[4, 8, 8, 4, 2, 2, 8, 8] lut 25000 direct {'LUT': 43428.0, 'BRAM_18K': 81.0, 'DSP': 1.0} 24576 assembled {'LUT': 43428.0, 'BRAM_18K': 81.0, 'DSP': 1.0} 24576 OK
+nodes left outside fpgadataflow: ['Transpose']
+[4, 8, 8, 4, 2, 2, 8, 8] dsp 14286 direct {'LUT': 14187.0, 'BRAM_18K': 168.0, 'DSP': 572.0} 12288 assembled {'LUT': 14187.0, 'BRAM_18K': 168.0, 'DSP': 572.0} 12288 OK
+[4, 8, 8, 4, 2, 2, 8, 8] dsp 1000000 direct {'LUT': 8983.0, 'BRAM_18K': 24.0, 'DSP': 14.0} 786432 assembled {'LUT': 8983.0, 'BRAM_18K': 24.0, 'DSP': 14.0} 786432 OK
+[4, 8, 8, 4, 2, 2, 8, 8] dsp 20000 direct {'LUT': 12422.0, 'BRAM_18K': 99.0, 'DSP': 540.0} 19680 assembled {'LUT': 12422.0, 'BRAM_18K': 99.0, 'DSP': 540.0} 19680 OK
+nodes left outside fpgadataflow: ['Transpose']
+[4, 8, 8, 4, 2, 2, 8, 8] lut_finn 100000 direct {'LUT': 17340.0, 'BRAM_18K': 34.0, 'DSP': 1.0} 98304 assembled {'LUT': 17340.0, 'BRAM_18K': 34.0, 'DSP': 1.0} 98304 OK
+[4, 8, 8, 4, 2, 2, 8, 8] lut_finn 25000 direct {'LUT': 49128.0, 'BRAM_18K': 95.0, 'DSP': 1.0} 19680 assembled {'LUT': 49128.0, 'BRAM_18K': 95.0, 'DSP': 1.0} 19680 OK
+[4, 8, 8, 4, 2, 2, 8, 8] lut_finn 12500 direct {'LUT': 62604.0, 'BRAM_18K': 124.0, 'DSP': 1.0} 18432 assembled {'LUT': 62604.0, 'BRAM_18K': 124.0, 'DSP': 1.0} 18432 OK
+nodes left outside fpgadataflow: ['Transpose']
+[8, 8, 8, 4, 8, 2, 4, 8] lut 12500 direct {'LUT': 135380.0, 'BRAM_18K': 289.0, 'DSP': 1.0} 12288 assembled {'LUT': 135380.0, 'BRAM_18K': 289.0, 'DSP': 1.0} 12288 OK
+[8, 8, 8, 4, 8, 2, 4, 8] lut 200000 direct {'LUT': 13073.0, 'BRAM_18K': 46.0, 'DSP': 1.0} 196608 assembled {'LUT': 13073.0, 'BRAM_18K': 46.0, 'DSP': 1.0} 196608 OK
+[8, 8, 8, 4, 8, 2, 4, 8] lut 33333 direct {'LUT': 44371.0, 'BRAM_18K': 89.0, 'DSP': 1.0} 32768 assembled {'LUT': 44371.0, 'BRAM_18K': 89.0, 'DSP': 1.0} 32768 OK
+nodes left outside fpgadataflow: ['Transpose']
+[8, 8, 8, 4, 8, 2, 4, 8] dsp 16667 direct {'LUT': 17190.0, 'BRAM_18K': 171.0, 'DSP': 620.0} 16384 assembled {'LUT': 17190.0, 'BRAM_18K': 171.0, 'DSP': 620.0} 16384 OK
+[8, 8, 8, 4, 8, 2, 4, 8] dsp 12500 direct {'LUT': 20339.0, 'BRAM_18K': 289.0, 'DSP': 540.0} 12288 assembled {'LUT': 20339.0, 'BRAM_18K': 289.0, 'DSP': 540.0} 12288 OK
+[8, 8, 8, 4, 8, 2, 4, 8] dsp 33333 direct {'LUT': 13194.0, 'BRAM_18K': 89.0, 'DSP': 324.0} 32768 assembled {'LUT': 13194.0, 'BRAM_18K': 89.0, 'DSP': 324.0} 32768 OK
+nodes left outside fpgadataflow: ['Transpose']
+[8, 8, 8, 4, 8, 2, 4, 8] lut_finn 500000 direct {'LUT': 10055.0, 'BRAM_18K': 48.0, 'DSP': 1.0} 442368 assembled {'LUT': 10055.0, 'BRAM_18K': 48.0, 'DSP': 1.0} 442368 OK
+[8, 8, 8, 4, 8, 2, 4, 8] lut_finn 20000 direct {'LUT': 55682.0, 'BRAM_18K': 129.0, 'DSP': 1.0} 36864 assembled {'LUT': 55682.0, 'BRAM_18K': 129.0, 'DSP': 1.0} 36864 OK
+[8, 8, 8, 4, 8, 2, 4, 8] lut_finn 16667 direct {'LUT': 78299.0, 'BRAM_18K': 190.0, 'DSP': 1.0} 36864 assembled {'LUT': 78299.0, 'BRAM_18K': 190.0, 'DSP': 1.0} 36864 OK
+mismatches: 0

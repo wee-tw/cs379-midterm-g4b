@@ -1,0 +1,1523 @@
+[
+ {
+  "run": "exp3/abl_w2a2_default",
+  "bits": "22222288",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp2/finnfloat.pt",
+  "epochs": 15,
+  "logged": 69.96,
+  "before": 70.09,
+  "after": 73.2
+ },
+ {
+  "run": "exp3/abl_w2a2_lowbit",
+  "bits": "22222288",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp2/finnfloat.pt",
+  "epochs": 15,
+  "logged": 75.39,
+  "before": 75.44,
+  "after": 76.59
+ },
+ {
+  "run": "exp3/abl_w2a4_default",
+  "bits": "24242488",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp2/finnfloat.pt",
+  "epochs": 15,
+  "logged": 81.67,
+  "before": 81.66,
+  "after": 82.1
+ },
+ {
+  "run": "exp3/abl_w2a4_lowbit",
+  "bits": "24242488",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp2/finnfloat.pt",
+  "epochs": 15,
+  "logged": 80.44,
+  "before": 80.18,
+  "after": 81.11
+ },
+ {
+  "run": "exp3/abl_w2a4mid2_lowbit",
+  "bits": "24242488",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp2/finnfloat.pt",
+  "epochs": 15,
+  "logged": 78.76,
+  "before": 78.75,
+  "after": 79.91
+ },
+ {
+  "run": "exp3/abl_w4a4_default",
+  "bits": "44444488",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp2/finnfloat.pt",
+  "epochs": 15,
+  "logged": 84.96,
+  "before": 84.91,
+  "after": 84.98
+ },
+ {
+  "run": "exp3/abl_w4a4_lowbit",
+  "bits": "44444488",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp2/finnfloat.pt",
+  "epochs": 15,
+  "logged": 85.24,
+  "before": 85.21,
+  "after": 85.44
+ },
+ {
+  "run": "exp3/b1_w2a2",
+  "bits": "22222222",
+  "init": "C:\\Users\\wee\\AppData\\Local\\Temp\\claude\\D--115-1-embedded-sys-midterm-report\\0ab647fd-9b9f-46c9-8993-886b1139c5f2\\scratchpad\\exp2\\finnfloat.pt",
+  "epochs": 30,
+  "logged": 50.4,
+  "before": 50.4,
+  "after": 50.9
+ },
+ {
+  "run": "exp3/b1_w2a4",
+  "bits": "24242424",
+  "init": "C:\\Users\\wee\\AppData\\Local\\Temp\\claude\\D--115-1-embedded-sys-midterm-report\\0ab647fd-9b9f-46c9-8993-886b1139c5f2\\scratchpad\\exp2\\finnfloat.pt",
+  "epochs": 30,
+  "logged": 68.92,
+  "before": 68.84,
+  "after": 69.01
+ },
+ {
+  "run": "exp3/b1_w2a8",
+  "bits": "28282828",
+  "init": "C:\\Users\\wee\\AppData\\Local\\Temp\\claude\\D--115-1-embedded-sys-midterm-report\\0ab647fd-9b9f-46c9-8993-886b1139c5f2\\scratchpad\\exp2\\finnfloat.pt",
+  "epochs": 30,
+  "logged": 62.74,
+  "before": 62.74,
+  "after": 64.99
+ },
+ {
+  "run": "exp3/b1_w4a2",
+  "bits": "42424242",
+  "init": "C:\\Users\\wee\\AppData\\Local\\Temp\\claude\\D--115-1-embedded-sys-midterm-report\\0ab647fd-9b9f-46c9-8993-886b1139c5f2\\scratchpad\\exp2\\finnfloat.pt",
+  "epochs": 30,
+  "logged": 75.5,
+  "before": 75.51,
+  "after": 75.23
+ },
+ {
+  "run": "exp3/b1_w4a8",
+  "bits": "48484848",
+  "init": "C:\\Users\\wee\\AppData\\Local\\Temp\\claude\\D--115-1-embedded-sys-midterm-report\\0ab647fd-9b9f-46c9-8993-886b1139c5f2\\scratchpad\\exp2\\finnfloat.pt",
+  "epochs": 30,
+  "logged": 85.62,
+  "before": 85.62,
+  "after": 85.84
+ },
+ {
+  "run": "exp3/b1_w8a2",
+  "bits": "82828282",
+  "init": "C:\\Users\\wee\\AppData\\Local\\Temp\\claude\\D--115-1-embedded-sys-midterm-report\\0ab647fd-9b9f-46c9-8993-886b1139c5f2\\scratchpad\\exp2\\finnfloat.pt",
+  "epochs": 30,
+  "logged": 76.66,
+  "before": 76.68,
+  "after": 76.47
+ },
+ {
+  "run": "exp3/b1_w8a4",
+  "bits": "84848484",
+  "init": "C:\\Users\\wee\\AppData\\Local\\Temp\\claude\\D--115-1-embedded-sys-midterm-report\\0ab647fd-9b9f-46c9-8993-886b1139c5f2\\scratchpad\\exp2\\finnfloat.pt",
+  "epochs": 30,
+  "logged": 84.1,
+  "before": 83.93,
+  "after": 84.25
+ },
+ {
+  "run": "exp3/b1_w8a8",
+  "bits": "88888888",
+  "init": "C:\\Users\\wee\\AppData\\Local\\Temp\\claude\\D--115-1-embedded-sys-midterm-report\\0ab647fd-9b9f-46c9-8993-886b1139c5f2\\scratchpad\\exp2\\finnfloat.pt",
+  "epochs": 30,
+  "logged": 85.9,
+  "before": 85.9,
+  "after": 86.0
+ },
+ {
+  "run": "exp3/sens_base",
+  "bits": "44444444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 83.87,
+  "before": 83.87,
+  "after": 83.96
+ },
+ {
+  "run": "exp3/sens_base0",
+  "bits": "44444444",
+  "init": "C:\\Users\\wee\\AppData\\Local\\Temp\\claude\\D--115-1-embedded-sys-midterm-report\\0ab647fd-9b9f-46c9-8993-886b1139c5f2\\scratchpad\\exp2\\finnfloat.pt",
+  "epochs": 30,
+  "logged": 83.94,
+  "before": 84.14,
+  "after": 84.06
+ },
+ {
+  "run": "exp3/sens_g1_w2a2",
+  "bits": "22444444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 78.9,
+  "before": 78.77,
+  "after": 80.85
+ },
+ {
+  "run": "exp3/sens_g1_w2a4",
+  "bits": "24444444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 82.1,
+  "before": 82.08,
+  "after": 82.88
+ },
+ {
+  "run": "exp3/sens_g1_w2a8",
+  "bits": "28444444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 81.5,
+  "before": 81.43,
+  "after": 82.28
+ },
+ {
+  "run": "exp3/sens_g1_w4a2",
+  "bits": "42444444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 82.33,
+  "before": 82.33,
+  "after": 82.27
+ },
+ {
+  "run": "exp3/sens_g1_w4a8",
+  "bits": "48444444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 84.19,
+  "before": 84.0,
+  "after": 84.36
+ },
+ {
+  "run": "exp3/sens_g1_w8a2",
+  "bits": "82444444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 82.25,
+  "before": 82.21,
+  "after": 82.62
+ },
+ {
+  "run": "exp3/sens_g1_w8a4",
+  "bits": "84444444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 84.07,
+  "before": 84.34,
+  "after": 84.22
+ },
+ {
+  "run": "exp3/sens_g1_w8a8",
+  "bits": "88444444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 84.36,
+  "before": 84.35,
+  "after": 84.33
+ },
+ {
+  "run": "exp3/sens_g2_w2a2",
+  "bits": "44224444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 81.85,
+  "before": 81.89,
+  "after": 82.53
+ },
+ {
+  "run": "exp3/sens_g2_w2a4",
+  "bits": "44244444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 83.19,
+  "before": 83.24,
+  "after": 83.51
+ },
+ {
+  "run": "exp3/sens_g2_w2a8",
+  "bits": "44284444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 83.16,
+  "before": 83.18,
+  "after": 83.42
+ },
+ {
+  "run": "exp3/sens_g2_w4a2",
+  "bits": "44424444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 82.83,
+  "before": 82.84,
+  "after": 82.85
+ },
+ {
+  "run": "exp3/sens_g2_w4a8",
+  "bits": "44484444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 83.67,
+  "before": 83.63,
+  "after": 84.13
+ },
+ {
+  "run": "exp3/sens_g2_w8a2",
+  "bits": "44824444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 83.21,
+  "before": 82.83,
+  "after": 83.09
+ },
+ {
+  "run": "exp3/sens_g2_w8a4",
+  "bits": "44844444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 84.1,
+  "before": 84.21,
+  "after": 84.35
+ },
+ {
+  "run": "exp3/sens_g2_w8a8",
+  "bits": "44884444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 83.9,
+  "before": 83.99,
+  "after": 84.34
+ },
+ {
+  "run": "exp3/sens_g3_w2a2",
+  "bits": "44442244",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 82.09,
+  "before": 82.08,
+  "after": 82.33
+ },
+ {
+  "run": "exp3/sens_g3_w2a4",
+  "bits": "44442444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 83.16,
+  "before": 83.19,
+  "after": 83.23
+ },
+ {
+  "run": "exp3/sens_g3_w2a8",
+  "bits": "44442844",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 83.44,
+  "before": 83.44,
+  "after": 83.66
+ },
+ {
+  "run": "exp3/sens_g3_w4a2",
+  "bits": "44444244",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 83.18,
+  "before": 83.08,
+  "after": 83.09
+ },
+ {
+  "run": "exp3/sens_g3_w4a8",
+  "bits": "44444844",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 84.0,
+  "before": 84.14,
+  "after": 84.33
+ },
+ {
+  "run": "exp3/sens_g3_w8a2",
+  "bits": "44448244",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 82.94,
+  "before": 82.94,
+  "after": 83.01
+ },
+ {
+  "run": "exp3/sens_g3_w8a4",
+  "bits": "44448444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 84.31,
+  "before": 84.07,
+  "after": 83.95
+ },
+ {
+  "run": "exp3/sens_g3_w8a8",
+  "bits": "44448844",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 84.19,
+  "before": 84.27,
+  "after": 84.43
+ },
+ {
+  "run": "exp3/sens_g4_w2a2",
+  "bits": "44444422",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 80.72,
+  "before": 80.72,
+  "after": 80.43
+ },
+ {
+  "run": "exp3/sens_g4_w2a4",
+  "bits": "44444424",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 83.02,
+  "before": 82.99,
+  "after": 83.1
+ },
+ {
+  "run": "exp3/sens_g4_w2a8",
+  "bits": "44444428",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 84.02,
+  "before": 84.0,
+  "after": 84.24
+ },
+ {
+  "run": "exp3/sens_g4_w4a2",
+  "bits": "44444442",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 80.65,
+  "before": 80.59,
+  "after": 81.22
+ },
+ {
+  "run": "exp3/sens_g4_w4a8",
+  "bits": "44444448",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 84.33,
+  "before": 84.33,
+  "after": 84.81
+ },
+ {
+  "run": "exp3/sens_g4_w8a2",
+  "bits": "44444482",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 81.02,
+  "before": 81.05,
+  "after": 81.15
+ },
+ {
+  "run": "exp3/sens_g4_w8a4",
+  "bits": "44444484",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 84.0,
+  "before": 84.0,
+  "after": 83.94
+ },
+ {
+  "run": "exp3/sens_g4_w8a8",
+  "bits": "44444488",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 84.62,
+  "before": 84.72,
+  "after": 84.57
+ },
+ {
+  "run": "exp3/val_2_2_8_8_8_2_8_8",
+  "bits": "22888288",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 80.14,
+  "before": 80.14,
+  "after": 80.87
+ },
+ {
+  "run": "exp3/val_2_8_2_8_4_8_8_2",
+  "bits": "28284882",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 78.83,
+  "before": 78.82,
+  "after": 78.56
+ },
+ {
+  "run": "exp3/val_4_2_2_2_8_2_4_4",
+  "bits": "42228244",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 78.87,
+  "before": 78.86,
+  "after": 78.75
+ },
+ {
+  "run": "exp3/val_4_2_2_2_8_4_2_8",
+  "bits": "42228428",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 80.12,
+  "before": 80.08,
+  "after": 80.16
+ },
+ {
+  "run": "exp3/val_4_2_4_8_2_2_8_2",
+  "bits": "42482282",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 76.48,
+  "before": 76.41,
+  "after": 75.86
+ },
+ {
+  "run": "exp3/val_4_4_4_4_2_4_8_8",
+  "bits": "44442488",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 84.26,
+  "before": 84.27,
+  "after": 83.96
+ },
+ {
+  "run": "exp3/val_4_8_2_8_2_2_2_4",
+  "bits": "48282224",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 81.21,
+  "before": 81.32,
+  "after": 81.27
+ },
+ {
+  "run": "exp3/val_8_8_4_4_4_4_4_4",
+  "bits": "88444444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 84.34,
+  "before": 84.33,
+  "after": 84.11
+ },
+ {
+  "run": "exp4/cand_4_4_2_4_2_4_2_8",
+  "bits": "44242428",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp2/finnfloat.pt",
+  "epochs": 30,
+  "logged": 73.91,
+  "before": 73.91,
+  "after": 73.58
+ },
+ {
+  "run": "exp4/cand_4_4_2_4_2_8_8_8",
+  "bits": "44242888",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp2/finnfloat.pt",
+  "epochs": 30,
+  "logged": 81.65,
+  "before": 81.67,
+  "after": 81.86
+ },
+ {
+  "run": "exp4/cand_4_4_4_4_4_4_8_8",
+  "bits": "44444488",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp2/finnfloat.pt",
+  "epochs": 30,
+  "logged": 85.14,
+  "before": 85.19,
+  "after": 85.47
+ },
+ {
+  "run": "exp4/cand_4_8_4_8_4_8_4_8",
+  "bits": "48484848",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp2/finnfloat.pt",
+  "epochs": 30,
+  "logged": 85.71,
+  "before": 85.73,
+  "after": 85.84
+ },
+ {
+  "run": "exp4/cand_8_4_2_4_2_4_4_4",
+  "bits": "84242444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp2/finnfloat.pt",
+  "epochs": 30,
+  "logged": 81.24,
+  "before": 81.14,
+  "after": 80.92
+ },
+ {
+  "run": "exp4/cand_8_4_2_4_8_4_8_8",
+  "bits": "84248488",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp2/finnfloat.pt",
+  "epochs": 30,
+  "logged": 84.63,
+  "before": 84.69,
+  "after": 84.91
+ },
+ {
+  "run": "exp4/cand_8_4_8_4_8_4_8_4",
+  "bits": "84848484",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp2/finnfloat.pt",
+  "epochs": 30,
+  "logged": 84.21,
+  "before": 84.29,
+  "after": 84.38
+ },
+ {
+  "run": "exp4/cand_8_8_2_4_2_4_8_8",
+  "bits": "88242488",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp2/finnfloat.pt",
+  "epochs": 30,
+  "logged": 82.87,
+  "before": 82.89,
+  "after": 82.96
+ },
+ {
+  "run": "exp5/int_2_4_2_4_2_4_2_4",
+  "bits": "24242424",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 79.76,
+  "before": 79.77,
+  "after": 80.17
+ },
+ {
+  "run": "exp5/int_2_4_2_4_2_4_4_4",
+  "bits": "24242444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 77.41,
+  "before": 77.28,
+  "after": 80.35
+ },
+ {
+  "run": "exp5/int_2_4_2_4_4_4_4_4",
+  "bits": "24244444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 80.85,
+  "before": 80.83,
+  "after": 81.66
+ },
+ {
+  "run": "exp5/int_2_4_4_4_2_4_4_4",
+  "bits": "24442444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 81.23,
+  "before": 81.32,
+  "after": 81.46
+ },
+ {
+  "run": "exp5/int_4_4_2_4_2_4_2_4",
+  "bits": "44242424",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 82.17,
+  "before": 82.04,
+  "after": 81.86
+ },
+ {
+  "run": "exp5/long_cand_44444488_e60",
+  "bits": "44444488",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp2/finnfloat.pt",
+  "epochs": 60,
+  "logged": 85.52,
+  "before": 85.48,
+  "after": 85.7
+ },
+ {
+  "run": "exp5/seed_b1_w4a4_s1",
+  "bits": "44444444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp2/finnfloat.pt",
+  "epochs": 30,
+  "logged": 83.83,
+  "before": 83.86,
+  "after": 84.09
+ },
+ {
+  "run": "exp5/seed_base_s1",
+  "bits": "44444444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 83.97,
+  "before": 84.17,
+  "after": 84.27
+ },
+ {
+  "run": "exp5/seed_base_s2",
+  "bits": "44444444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 83.65,
+  "before": 83.68,
+  "after": 84.09
+ },
+ {
+  "run": "exp5/seed_base_s3",
+  "bits": "44444444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 83.86,
+  "before": 83.91,
+  "after": 83.99
+ },
+ {
+  "run": "exp5/seed_cand_44444488_s1",
+  "bits": "44444488",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp2/finnfloat.pt",
+  "epochs": 30,
+  "logged": 85.25,
+  "before": 85.23,
+  "after": 85.35
+ },
+ {
+  "run": "exp5/seed_g1_w2a4_s1",
+  "bits": "24444444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 82.38,
+  "before": 82.07,
+  "after": 82.84
+ },
+ {
+  "run": "exp5/seed_g1_w2a4_s2",
+  "bits": "24444444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 82.23,
+  "before": 82.35,
+  "after": 82.39
+ },
+ {
+  "run": "exp5/seed_g3_w8a4_s1",
+  "bits": "44448444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 84.22,
+  "before": 84.12,
+  "after": 84.17
+ },
+ {
+  "run": "exp5/seed_g3_w8a4_s2",
+  "bits": "44448444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 84.06,
+  "before": 84.1,
+  "after": 84.03
+ },
+ {
+  "run": "exp5/seed_g4_w4a2_s1",
+  "bits": "44444442",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 81.01,
+  "before": 81.02,
+  "after": 81.09
+ },
+ {
+  "run": "exp6/seed_cand_44242888_s1",
+  "bits": "44242888",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp2/finnfloat.pt",
+  "epochs": 30,
+  "logged": 81.47,
+  "before": 81.54,
+  "after": 81.42
+ },
+ {
+  "run": "exp6/seed_cand_48484848_s1",
+  "bits": "48484848",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp2/finnfloat.pt",
+  "epochs": 30,
+  "logged": 85.53,
+  "before": 85.51,
+  "after": 85.59
+ },
+ {
+  "run": "exp6/seed_cand_88242488_s1",
+  "bits": "88242488",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp2/finnfloat.pt",
+  "epochs": 30,
+  "logged": 82.34,
+  "before": 82.31,
+  "after": 82.93
+ },
+ {
+  "run": "exp6/sens_base",
+  "bits": "44444444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 83.78,
+  "before": 83.89,
+  "after": 84.18
+ },
+ {
+  "run": "exp6/sens_g1_w2a2",
+  "bits": "22444444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 79.47,
+  "before": 79.46,
+  "after": 79.96
+ },
+ {
+  "run": "exp6/sens_g1_w2a4",
+  "bits": "24444444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 82.55,
+  "before": 82.42,
+  "after": 82.87
+ },
+ {
+  "run": "exp6/sens_g1_w2a8",
+  "bits": "28444444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 81.4,
+  "before": 81.36,
+  "after": 82.63
+ },
+ {
+  "run": "exp6/sens_g1_w4a2",
+  "bits": "42444444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 82.25,
+  "before": 82.22,
+  "after": 82.31
+ },
+ {
+  "run": "exp6/sens_g1_w4a8",
+  "bits": "48444444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 84.06,
+  "before": 84.05,
+  "after": 84.6
+ },
+ {
+  "run": "exp6/sens_g1_w8a2",
+  "bits": "82444444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 82.52,
+  "before": 82.38,
+  "after": 82.52
+ },
+ {
+  "run": "exp6/sens_g1_w8a4",
+  "bits": "84444444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 83.99,
+  "before": 84.08,
+  "after": 84.47
+ },
+ {
+  "run": "exp6/sens_g1_w8a8",
+  "bits": "88444444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 84.4,
+  "before": 84.39,
+  "after": 84.62
+ },
+ {
+  "run": "exp6/sens_g2_w2a2",
+  "bits": "44224444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 82.15,
+  "before": 82.17,
+  "after": 82.64
+ },
+ {
+  "run": "exp6/sens_g2_w2a4",
+  "bits": "44244444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 83.62,
+  "before": 83.62,
+  "after": 83.71
+ },
+ {
+  "run": "exp6/sens_g2_w2a8",
+  "bits": "44284444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 83.36,
+  "before": 83.4,
+  "after": 83.65
+ },
+ {
+  "run": "exp6/sens_g2_w4a2",
+  "bits": "44424444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 82.67,
+  "before": 82.65,
+  "after": 82.86
+ },
+ {
+  "run": "exp6/sens_g2_w4a8",
+  "bits": "44484444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 83.95,
+  "before": 83.91,
+  "after": 84.36
+ },
+ {
+  "run": "exp6/sens_g2_w8a2",
+  "bits": "44824444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 83.19,
+  "before": 83.12,
+  "after": 83.1
+ },
+ {
+  "run": "exp6/sens_g2_w8a4",
+  "bits": "44844444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 83.95,
+  "before": 83.95,
+  "after": 84.43
+ },
+ {
+  "run": "exp6/sens_g2_w8a8",
+  "bits": "44884444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 83.95,
+  "before": 84.01,
+  "after": 84.57
+ },
+ {
+  "run": "exp6/sens_g3_w2a2",
+  "bits": "44442244",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 82.36,
+  "before": 82.39,
+  "after": 82.54
+ },
+ {
+  "run": "exp6/sens_g3_w2a4",
+  "bits": "44442444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 83.48,
+  "before": 83.48,
+  "after": 83.53
+ },
+ {
+  "run": "exp6/sens_g3_w2a8",
+  "bits": "44442844",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 83.52,
+  "before": 83.55,
+  "after": 83.58
+ },
+ {
+  "run": "exp6/sens_g3_w4a2",
+  "bits": "44444244",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 82.61,
+  "before": 82.61,
+  "after": 82.78
+ },
+ {
+  "run": "exp6/sens_g3_w4a8",
+  "bits": "44444844",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 84.16,
+  "before": 84.16,
+  "after": 84.12
+ },
+ {
+  "run": "exp6/sens_g3_w8a2",
+  "bits": "44448244",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 82.04,
+  "before": 82.24,
+  "after": 82.72
+ },
+ {
+  "run": "exp6/sens_g3_w8a4",
+  "bits": "44448444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 83.95,
+  "before": 83.92,
+  "after": 83.9
+ },
+ {
+  "run": "exp6/sens_g3_w8a8",
+  "bits": "44448844",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 83.99,
+  "before": 83.96,
+  "after": 84.53
+ },
+ {
+  "run": "exp6/sens_g4_w2a2",
+  "bits": "44444422",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 80.43,
+  "before": 80.44,
+  "after": 80.44
+ },
+ {
+  "run": "exp6/sens_g4_w2a4",
+  "bits": "44444424",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 83.42,
+  "before": 83.27,
+  "after": 83.67
+ },
+ {
+  "run": "exp6/sens_g4_w2a8",
+  "bits": "44444428",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 83.19,
+  "before": 83.19,
+  "after": 83.76
+ },
+ {
+  "run": "exp6/sens_g4_w4a2",
+  "bits": "44444442",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 80.85,
+  "before": 80.87,
+  "after": 80.96
+ },
+ {
+  "run": "exp6/sens_g4_w4a8",
+  "bits": "44444448",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 84.98,
+  "before": 84.99,
+  "after": 84.88
+ },
+ {
+  "run": "exp6/sens_g4_w8a2",
+  "bits": "44444482",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 80.74,
+  "before": 81.05,
+  "after": 80.57
+ },
+ {
+  "run": "exp6/sens_g4_w8a4",
+  "bits": "44444484",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 84.6,
+  "before": 84.37,
+  "after": 84.18
+ },
+ {
+  "run": "exp6/sens_g4_w8a8",
+  "bits": "44444488",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 84.93,
+  "before": 84.98,
+  "after": 84.95
+ },
+ {
+  "run": "exp7/ft30_cand_44242428",
+  "bits": "44242428",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 30,
+  "logged": 81.88,
+  "before": 82.08,
+  "after": 82.26
+ },
+ {
+  "run": "exp7/ft30_cand_44242888",
+  "bits": "44242888",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 30,
+  "logged": 83.98,
+  "before": 84.0,
+  "after": 84.09
+ },
+ {
+  "run": "exp7/ft30_cand_84242444",
+  "bits": "84242444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 30,
+  "logged": 83.04,
+  "before": 83.0,
+  "after": 83.29
+ },
+ {
+  "run": "exp7/ft30_cand_88242488",
+  "bits": "88242488",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 30,
+  "logged": 84.28,
+  "before": 84.26,
+  "after": 84.64
+ },
+ {
+  "run": "exp7/ft8_cand_44242428",
+  "bits": "44242428",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 82.85,
+  "before": 82.96,
+  "after": 83.12
+ },
+ {
+  "run": "exp7/ft8_cand_44242888",
+  "bits": "44242888",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 83.25,
+  "before": 83.18,
+  "after": 83.63
+ },
+ {
+  "run": "exp7/ft8_cand_84242444",
+  "bits": "84242444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 82.83,
+  "before": 82.82,
+  "after": 82.77
+ },
+ {
+  "run": "exp7/ft8_cand_88242488",
+  "bits": "88242488",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 83.67,
+  "before": 83.67,
+  "after": 83.75
+ },
+ {
+  "run": "exp7/long_b1_w4a8_e60",
+  "bits": "48484848",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp2/finnfloat.pt",
+  "epochs": 60,
+  "logged": 85.93,
+  "before": 85.93,
+  "after": 85.97
+ },
+ {
+  "run": "exp7/nokd_cand_44444488",
+  "bits": "44444488",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp2/finnfloat.pt",
+  "epochs": 30,
+  "logged": 86.16,
+  "before": 86.16,
+  "after": 86.02
+ },
+ {
+  "run": "exp7/nokd_cand_48484848",
+  "bits": "48484848",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp2/finnfloat.pt",
+  "epochs": 30,
+  "logged": 86.44,
+  "before": 86.39,
+  "after": 86.19
+ },
+ {
+  "run": "exp7/seed_cand_44242428_s1",
+  "bits": "44242428",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp2/finnfloat.pt",
+  "epochs": 30,
+  "logged": 75.84,
+  "before": 75.84,
+  "after": 76.07
+ },
+ {
+  "run": "exp7/seed_cand_84242444_s1",
+  "bits": "84242444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp2/finnfloat.pt",
+  "epochs": 30,
+  "logged": 81.44,
+  "before": 81.35,
+  "after": 80.88
+ },
+ {
+  "run": "exp7/sens_base",
+  "bits": "44444444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 84.08,
+  "before": 84.08,
+  "after": 84.14
+ },
+ {
+  "run": "exp7/sens_g1_w2a2",
+  "bits": "22444444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 80.73,
+  "before": 80.78,
+  "after": 80.52
+ },
+ {
+  "run": "exp7/sens_g1_w2a4",
+  "bits": "24444444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 82.39,
+  "before": 82.41,
+  "after": 82.63
+ },
+ {
+  "run": "exp7/sens_g1_w2a8",
+  "bits": "28444444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 82.18,
+  "before": 82.19,
+  "after": 82.89
+ },
+ {
+  "run": "exp7/sens_g1_w4a2",
+  "bits": "42444444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 82.13,
+  "before": 82.16,
+  "after": 82.33
+ },
+ {
+  "run": "exp7/sens_g1_w4a8",
+  "bits": "48444444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 84.39,
+  "before": 84.4,
+  "after": 84.35
+ },
+ {
+  "run": "exp7/sens_g1_w8a2",
+  "bits": "82444444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 82.48,
+  "before": 82.48,
+  "after": 82.5
+ },
+ {
+  "run": "exp7/sens_g1_w8a4",
+  "bits": "84444444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 84.14,
+  "before": 84.05,
+  "after": 84.02
+ },
+ {
+  "run": "exp7/sens_g1_w8a8",
+  "bits": "88444444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 84.51,
+  "before": 84.56,
+  "after": 84.61
+ },
+ {
+  "run": "exp7/sens_g2_w2a2",
+  "bits": "44224444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 81.98,
+  "before": 81.99,
+  "after": 82.31
+ },
+ {
+  "run": "exp7/sens_g2_w2a4",
+  "bits": "44244444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 83.09,
+  "before": 83.05,
+  "after": 83.65
+ },
+ {
+  "run": "exp7/sens_g2_w2a8",
+  "bits": "44284444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 83.34,
+  "before": 83.31,
+  "after": 83.64
+ },
+ {
+  "run": "exp7/sens_g2_w4a2",
+  "bits": "44424444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 82.63,
+  "before": 82.65,
+  "after": 82.69
+ },
+ {
+  "run": "exp7/sens_g2_w4a8",
+  "bits": "44484444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 84.02,
+  "before": 84.0,
+  "after": 84.65
+ },
+ {
+  "run": "exp7/sens_g2_w8a2",
+  "bits": "44824444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 82.91,
+  "before": 82.73,
+  "after": 83.01
+ },
+ {
+  "run": "exp7/sens_g2_w8a4",
+  "bits": "44844444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 84.3,
+  "before": 84.29,
+  "after": 84.26
+ },
+ {
+  "run": "exp7/sens_g2_w8a8",
+  "bits": "44884444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 83.95,
+  "before": 83.82,
+  "after": 84.45
+ },
+ {
+  "run": "exp7/sens_g3_w2a2",
+  "bits": "44442244",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 82.3,
+  "before": 82.28,
+  "after": 82.52
+ },
+ {
+  "run": "exp7/sens_g3_w2a4",
+  "bits": "44442444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 83.44,
+  "before": 83.38,
+  "after": 83.14
+ },
+ {
+  "run": "exp7/sens_g3_w2a8",
+  "bits": "44442844",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 83.52,
+  "before": 83.53,
+  "after": 83.51
+ },
+ {
+  "run": "exp7/sens_g3_w4a2",
+  "bits": "44444244",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 82.84,
+  "before": 82.83,
+  "after": 83.18
+ },
+ {
+  "run": "exp7/sens_g3_w4a8",
+  "bits": "44444844",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 84.0,
+  "before": 84.05,
+  "after": 84.33
+ },
+ {
+  "run": "exp7/sens_g3_w8a2",
+  "bits": "44448244",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 82.69,
+  "before": 82.84,
+  "after": 82.98
+ },
+ {
+  "run": "exp7/sens_g3_w8a4",
+  "bits": "44448444",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 83.82,
+  "before": 84.1,
+  "after": 84.44
+ },
+ {
+  "run": "exp7/sens_g3_w8a8",
+  "bits": "44448844",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 84.06,
+  "before": 84.1,
+  "after": 84.44
+ },
+ {
+  "run": "exp7/sens_g4_w2a2",
+  "bits": "44444422",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 80.14,
+  "before": 80.13,
+  "after": 80.34
+ },
+ {
+  "run": "exp7/sens_g4_w2a4",
+  "bits": "44444424",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 83.37,
+  "before": 83.39,
+  "after": 83.95
+ },
+ {
+  "run": "exp7/sens_g4_w2a8",
+  "bits": "44444428",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 83.83,
+  "before": 83.81,
+  "after": 84.2
+ },
+ {
+  "run": "exp7/sens_g4_w4a2",
+  "bits": "44444442",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 81.07,
+  "before": 80.8,
+  "after": 81.13
+ },
+ {
+  "run": "exp7/sens_g4_w4a8",
+  "bits": "44444448",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 84.72,
+  "before": 84.75,
+  "after": 84.88
+ },
+ {
+  "run": "exp7/sens_g4_w8a2",
+  "bits": "44444482",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 81.14,
+  "before": 81.22,
+  "after": 81.2
+ },
+ {
+  "run": "exp7/sens_g4_w8a4",
+  "bits": "44444484",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 84.36,
+  "before": 84.39,
+  "after": 84.38
+ },
+ {
+  "run": "exp7/sens_g4_w8a8",
+  "bits": "44444488",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 8,
+  "logged": 84.44,
+  "before": 84.49,
+  "after": 85.08
+ },
+ {
+  "run": "exp8/ft30_cand_42442488",
+  "bits": "42442488",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 30,
+  "logged": 83.44,
+  "before": 83.46,
+  "after": 83.41
+ },
+ {
+  "run": "exp8/ft30_cand_44242448",
+  "bits": "44242448",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 30,
+  "logged": 83.72,
+  "before": 83.73,
+  "after": 83.99
+ },
+ {
+  "run": "exp8/ft30_cand_44444488",
+  "bits": "44444488",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 30,
+  "logged": 85.27,
+  "before": 85.28,
+  "after": 85.18
+ },
+ {
+  "run": "exp8/ft30_cand_48484848",
+  "bits": "48484848",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 30,
+  "logged": 85.62,
+  "before": 85.64,
+  "after": 85.67
+ },
+ {
+  "run": "exp8/ft30_cand_84242248",
+  "bits": "84242248",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 30,
+  "logged": 83.19,
+  "before": 82.97,
+  "after": 83.51
+ },
+ {
+  "run": "exp8/ft30_cand_84242448",
+  "bits": "84242448",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "epochs": 30,
+  "logged": 84.5,
+  "before": 84.41,
+  "after": 84.72
+ }
+]

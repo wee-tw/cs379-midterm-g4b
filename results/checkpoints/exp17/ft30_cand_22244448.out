@@ -1,0 +1,33 @@
+C:\Users\wee\AppData\Local\Temp\claude\D--115-1-embedded-sys-midterm-report\0ab647fd-9b9f-46c9-8993-886b1139c5f2\scratchpad\venv_finn010\lib\site-packages\torch\_tensor.py:1255: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at ..\c10/core/TensorImpl.h:1761.)
+  return super(Tensor, self).rename(names)
+<All keys matched successfully>
+{'epoch': 1, 'sec': 16.5, 'loss': 1.477, 'test_acc': 43.12}
+{'epoch': 2, 'sec': 10.8, 'loss': 1.141, 'test_acc': 63.3}
+{'epoch': 3, 'sec': 11.1, 'loss': 1.137, 'test_acc': 65.13}
+{'epoch': 4, 'sec': 11.3, 'loss': 1.193, 'test_acc': 47.09}
+{'epoch': 5, 'sec': 11.0, 'loss': 0.982, 'test_acc': 70.34}
+{'epoch': 6, 'sec': 11.0, 'loss': 1.046, 'test_acc': 54.0}
+{'epoch': 7, 'sec': 11.0, 'loss': 0.882, 'test_acc': 74.18}
+{'epoch': 8, 'sec': 11.2, 'loss': 1.145, 'test_acc': 55.78}
+{'epoch': 9, 'sec': 11.0, 'loss': 0.981, 'test_acc': 58.48}
+{'epoch': 10, 'sec': 11.3, 'loss': 1.051, 'test_acc': 71.01}
+{'epoch': 11, 'sec': 11.0, 'loss': 1.011, 'test_acc': 56.55}
+{'epoch': 12, 'sec': 10.6, 'loss': 0.957, 'test_acc': 71.51}
+{'epoch': 13, 'sec': 10.4, 'loss': 0.952, 'test_acc': 73.59}
+{'epoch': 14, 'sec': 10.5, 'loss': 0.846, 'test_acc': 51.66}
+{'epoch': 15, 'sec': 10.0, 'loss': 0.962, 'test_acc': 62.32}
+{'epoch': 16, 'sec': 10.1, 'loss': 1.04, 'test_acc': 71.25}
+{'epoch': 17, 'sec': 10.2, 'loss': 0.947, 'test_acc': 70.85}
+{'epoch': 18, 'sec': 10.3, 'loss': 0.935, 'test_acc': 76.32}
+{'epoch': 19, 'sec': 10.5, 'loss': 0.92, 'test_acc': 72.91}
+{'epoch': 20, 'sec': 10.4, 'loss': 0.929, 'test_acc': 66.8}
+{'epoch': 21, 'sec': 10.3, 'loss': 0.919, 'test_acc': 74.26}
+{'epoch': 22, 'sec': 10.5, 'loss': 0.796, 'test_acc': 71.63}
+{'epoch': 23, 'sec': 10.7, 'loss': 1.066, 'test_acc': 70.6}
+{'epoch': 24, 'sec': 12.0, 'loss': 0.851, 'test_acc': 70.69}
+{'epoch': 25, 'sec': 11.7, 'loss': 0.873, 'test_acc': 74.72}
+{'epoch': 26, 'sec': 11.7, 'loss': 0.87, 'test_acc': 76.19}
+{'epoch': 27, 'sec': 12.3, 'loss': 0.76, 'test_acc': 74.7}
+{'epoch': 28, 'sec': 11.7, 'loss': 0.777, 'test_acc': 75.94}
+{'epoch': 29, 'sec': 11.7, 'loss': 0.8, 'test_acc': 78.73}
+{'epoch': 30, 'sec': 12.3, 'loss': 0.626, 'test_acc': 79.98}

@@ -1,0 +1,608 @@
+{
+ "1.0": {
+  "nominal": {
+   "threshold": 84.37,
+   "A_verified": {
+    "bits": "44244448",
+    "mode": "lut_finn",
+    "T_target": 16667,
+    "f_MHz": 111.11,
+    "E_mJ": 0.346,
+    "measured": "84.63 n=3 PASS",
+    "rel_to_model_opt": -0.0259
+   },
+   "B1_uniform": {
+    "rel_to_A": 1.1896,
+    "E_mJ": 0.7576,
+    "bits": "84848484",
+    "mode": "dsp4c",
+    "f_MHz": 90.91,
+    "FPS": 2774.4,
+    "LUT": 10352,
+    "BRAM18": 77.0,
+    "DSP": 212,
+    "T_target": 33333,
+    "class_MHz": 90.91,
+    "measured": "84.39 n=3 PASS"
+   },
+   "B2_proxy": {
+    "rel_to_A": 0.1023,
+    "E_mJ": 0.3814,
+    "bits": "44444448",
+    "mode": "lut_finn",
+    "f_MHz": 100.0,
+    "FPS": 6103.5,
+    "LUT": 41388,
+    "BRAM18": 86.0,
+    "DSP": 1,
+    "T_target": 16667,
+    "class_MHz": 100.0,
+    "measured": "84.92 n=3 PASS"
+   },
+   "B1_measured": {
+    "bits": "84848484",
+    "E_mJ": 0.7576,
+    "rel_to_A": 1.1897,
+    "measured": "84.39 n=3 PASS"
+   },
+   "B2_measured": {
+    "bits": "44444448",
+    "E_mJ": 0.3814,
+    "rel_to_A": 0.1023,
+    "measured": "84.92 n=3 PASS",
+    "failed": []
+   },
+   "B3_measured": {
+    "bits": "44444448",
+    "E_mJ": 0.3578,
+    "rel_to_A": 0.034,
+    "measured": "84.92 n=3 PASS"
+   }
+  },
+  "z2_anchor": {
+   "threshold": 84.37,
+   "A_verified": {
+    "bits": "44244448",
+    "mode": "lut_finn",
+    "T_target": 16667,
+    "f_MHz": 111.11,
+    "E_mJ": 0.2615,
+    "measured": "84.63 n=3 PASS",
+    "rel_to_model_opt": -0.0158
+   },
+   "B1_uniform": {
+    "rel_to_A": 1.2444,
+    "E_mJ": 0.5869,
+    "bits": "84848484",
+    "mode": "dsp4c",
+    "f_MHz": 90.91,
+    "FPS": 2774.4,
+    "LUT": 10352,
+    "BRAM18": 77.0,
+    "DSP": 212,
+    "T_target": 33333,
+    "class_MHz": 90.91,
+    "measured": "84.39 n=3 PASS"
+   },
+   "B2_proxy": {
+    "rel_to_A": 0.0945,
+    "E_mJ": 0.2862,
+    "bits": "44444448",
+    "mode": "lut_finn",
+    "f_MHz": 100.0,
+    "FPS": 6103.5,
+    "LUT": 41388,
+    "BRAM18": 86.0,
+    "DSP": 1,
+    "T_target": 16667,
+    "class_MHz": 100.0,
+    "measured": "84.92 n=3 PASS"
+   },
+   "B1_measured": {
+    "bits": "84848484",
+    "E_mJ": 0.5869,
+    "rel_to_A": 1.2443,
+    "measured": "84.39 n=3 PASS"
+   },
+   "B2_measured": {
+    "bits": "44444448",
+    "E_mJ": 0.2862,
+    "rel_to_A": 0.0945,
+    "measured": "84.92 n=3 PASS",
+    "failed": []
+   },
+   "B3_measured": {
+    "bits": "44444448",
+    "E_mJ": 0.2753,
+    "rel_to_A": 0.0529,
+    "measured": "84.92 n=3 PASS"
+   }
+  }
+ },
+ "2.0": {
+  "nominal": {
+   "threshold": 83.37,
+   "A_verified": {
+    "bits": "44242448",
+    "mode": "lut_finn",
+    "T_target": 16667,
+    "f_MHz": 111.11,
+    "E_mJ": 0.3362,
+    "measured": "83.75 n=3 PASS",
+    "rel_to_model_opt": -0.0001
+   },
+   "B1_uniform": {
+    "rel_to_A": 0.0566,
+    "E_mJ": 0.3552,
+    "bits": "44444444",
+    "mode": "lut_finn",
+    "f_MHz": 111.11,
+    "FPS": 6781.6,
+    "LUT": 41388,
+    "BRAM18": 86.0,
+    "DSP": 1,
+    "T_target": 16667,
+    "class_MHz": 111.11,
+    "measured": "84.36 n=3 PASS"
+   },
+   "B2_proxy": {
+    "rel_to_A": 0.078,
+    "E_mJ": 0.3624,
+    "bits": "44242448",
+    "mode": "lut_finn",
+    "f_MHz": 100.0,
+    "FPS": 6103.5,
+    "LUT": 30166,
+    "BRAM18": 62.0,
+    "DSP": 1,
+    "T_target": 16667,
+    "class_MHz": 100.0,
+    "measured": "83.75 n=3 PASS"
+   },
+   "B1_measured": {
+    "bits": "44444444",
+    "E_mJ": 0.3552,
+    "rel_to_A": 0.0566,
+    "measured": "84.36 n=3 PASS"
+   },
+   "B2_measured": {
+    "bits": "44242448",
+    "E_mJ": 0.3624,
+    "rel_to_A": 0.078,
+    "measured": "83.75 n=3 PASS",
+    "failed": []
+   },
+   "B3_measured": {
+    "bits": "44242448",
+    "E_mJ": 1.9682,
+    "rel_to_A": 4.855,
+    "measured": "83.75 n=3 PASS"
+   }
+  },
+  "z2_anchor": {
+   "threshold": 83.37,
+   "A_verified": {
+    "bits": "44242448",
+    "mode": "lut_finn",
+    "T_target": 16667,
+    "f_MHz": 111.11,
+    "E_mJ": 0.257,
+    "measured": "83.75 n=3 PASS",
+    "rel_to_model_opt": -0.0001
+   },
+   "B1_uniform": {
+    "rel_to_A": 0.034,
+    "E_mJ": 0.2657,
+    "bits": "44444444",
+    "mode": "lut_finn",
+    "f_MHz": 111.11,
+    "FPS": 6781.6,
+    "LUT": 41388,
+    "BRAM18": 86.0,
+    "DSP": 1,
+    "T_target": 16667,
+    "class_MHz": 111.11,
+    "measured": "84.36 n=3 PASS"
+   },
+   "B2_proxy": {
+    "rel_to_A": 0.0795,
+    "E_mJ": 0.2774,
+    "bits": "44242448",
+    "mode": "lut_finn",
+    "f_MHz": 100.0,
+    "FPS": 6103.5,
+    "LUT": 30166,
+    "BRAM18": 62.0,
+    "DSP": 1,
+    "T_target": 16667,
+    "class_MHz": 100.0,
+    "measured": "83.75 n=3 PASS"
+   },
+   "B1_measured": {
+    "bits": "44444444",
+    "E_mJ": 0.2657,
+    "rel_to_A": 0.0341,
+    "measured": "84.36 n=3 PASS"
+   },
+   "B2_measured": {
+    "bits": "44242448",
+    "E_mJ": 0.2774,
+    "rel_to_A": 0.0797,
+    "measured": "83.75 n=3 PASS",
+    "failed": []
+   },
+   "B3_measured": {
+    "bits": "44242448",
+    "E_mJ": 1.5699,
+    "rel_to_A": 5.1093,
+    "measured": "83.75 n=3 PASS"
+   }
+  }
+ },
+ "3.0": {
+  "nominal": {
+   "threshold": 82.37,
+   "A_verified": {
+    "bits": "44242248",
+    "mode": "lut_finn",
+    "T_target": 16667,
+    "f_MHz": 111.11,
+    "E_mJ": 0.332,
+    "measured": "82.99 n=3 PASS",
+    "rel_to_model_opt": 0.2218
+   },
+   "B1_uniform": {
+    "rel_to_A": 0.07,
+    "E_mJ": 0.3552,
+    "bits": "44444444",
+    "mode": "lut_finn",
+    "f_MHz": 111.11,
+    "FPS": 6781.6,
+    "LUT": 41388,
+    "BRAM18": 86.0,
+    "DSP": 1,
+    "T_target": 16667,
+    "class_MHz": 111.11,
+    "measured": "84.36 n=3 PASS"
+   },
+   "B2_proxy": {
+    "rel_to_A": 0.083,
+    "E_mJ": 0.3595,
+    "bits": "42442448",
+    "mode": "lut_finn",
+    "f_MHz": 100.0,
+    "FPS": 6103.5,
+    "LUT": 27721,
+    "BRAM18": 74.0,
+    "DSP": 1,
+    "T_target": 16667,
+    "class_MHz": 100.0,
+    "measured": "83.04 n=3 PASS"
+   },
+   "B1_measured": {
+    "bits": "44444444",
+    "E_mJ": 0.3552,
+    "rel_to_A": 0.07,
+    "measured": "84.36 n=3 PASS"
+   },
+   "B2_measured": {
+    "bits": "42442448",
+    "E_mJ": 0.3595,
+    "rel_to_A": 0.0829,
+    "measured": "83.04 n=3 PASS",
+    "failed": []
+   },
+   "B3_measured": {
+    "bits": "42442448",
+    "E_mJ": 1.9677,
+    "rel_to_A": 4.9277,
+    "measured": "83.04 n=3 PASS"
+   }
+  },
+  "z2_anchor": {
+   "threshold": 82.37,
+   "A_verified": {
+    "bits": "44242248",
+    "mode": "lut_finn",
+    "T_target": 16667,
+    "f_MHz": 111.11,
+    "E_mJ": 0.255,
+    "measured": "82.99 n=3 PASS",
+    "rel_to_model_opt": 0.2261
+   },
+   "B1_uniform": {
+    "rel_to_A": 0.0418,
+    "E_mJ": 0.2657,
+    "bits": "44444444",
+    "mode": "lut_finn",
+    "f_MHz": 111.11,
+    "FPS": 6781.6,
+    "LUT": 41388,
+    "BRAM18": 86.0,
+    "DSP": 1,
+    "T_target": 16667,
+    "class_MHz": 111.11,
+    "measured": "84.36 n=3 PASS"
+   },
+   "B2_proxy": {
+    "rel_to_A": 0.0826,
+    "E_mJ": 0.2761,
+    "bits": "42442448",
+    "mode": "lut_finn",
+    "f_MHz": 100.0,
+    "FPS": 6103.5,
+    "LUT": 27721,
+    "BRAM18": 74.0,
+    "DSP": 1,
+    "T_target": 16667,
+    "class_MHz": 100.0,
+    "measured": "83.04 n=3 PASS"
+   },
+   "B1_measured": {
+    "bits": "44444444",
+    "E_mJ": 0.2657,
+    "rel_to_A": 0.0419,
+    "measured": "84.36 n=3 PASS"
+   },
+   "B2_measured": {
+    "bits": "42442448",
+    "E_mJ": 0.2761,
+    "rel_to_A": 0.0827,
+    "measured": "83.04 n=3 PASS",
+    "failed": []
+   },
+   "B3_measured": {
+    "bits": "42442448",
+    "E_mJ": 1.5697,
+    "rel_to_A": 5.1548,
+    "measured": "83.04 n=3 PASS"
+   }
+  }
+ },
+ "5.0": {
+  "nominal": {
+   "threshold": 80.37,
+   "A_verified": {
+    "bits": "22244448",
+    "mode": "dsp4c",
+    "T_target": 14286,
+    "f_MHz": 100.0,
+    "E_mJ": 0.2687,
+    "measured": "80.70 n=3 PASS",
+    "rel_to_model_opt": 0.0446
+   },
+   "B1_uniform": {
+    "rel_to_A": -0.0174,
+    "E_mJ": 0.264,
+    "bits": "24242424",
+    "mode": "lut_finn",
+    "f_MHz": 111.11,
+    "FPS": 9042.2,
+    "LUT": 39377,
+    "BRAM18": 85.0,
+    "DSP": 0,
+    "T_target": 14286,
+    "class_MHz": 111.11,
+    "measured": "79.65 n=3 FAIL"
+   },
+   "B2_proxy": {
+    "rel_to_A": 0.0329,
+    "E_mJ": 0.2775,
+    "bits": "24222448",
+    "mode": "lut_finn",
+    "f_MHz": 100.0,
+    "FPS": 8185.3,
+    "LUT": 35283,
+    "BRAM18": 87.0,
+    "DSP": 1,
+    "T_target": 10000,
+    "class_MHz": 100.0,
+    "measured": "80.16 n=3 FAIL"
+   },
+   "B1_measured": {
+    "bits": "44444444",
+    "E_mJ": 0.3552,
+    "rel_to_A": 0.3221,
+    "measured": "84.36 n=3 PASS"
+   },
+   "B2_measured": {
+    "bits": "42222448",
+    "E_mJ": 0.3469,
+    "rel_to_A": 0.2911,
+    "measured": "81.20 n=3 PASS",
+    "failed": [
+     "24222448",
+     "24222488"
+    ]
+   },
+   "B3_measured": {
+    "bits": "42222448",
+    "E_mJ": 1.9603,
+    "rel_to_A": 6.2966,
+    "measured": "81.20 n=3 PASS"
+   }
+  },
+  "z2_anchor": {
+   "threshold": 80.37,
+   "A_verified": {
+    "bits": "22244448",
+    "mode": "dsp4c",
+    "T_target": 14286,
+    "f_MHz": 100.0,
+    "E_mJ": 0.2067,
+    "measured": "80.70 n=3 PASS",
+    "rel_to_model_opt": 0.0603
+   },
+   "B1_uniform": {
+    "rel_to_A": -0.0419,
+    "E_mJ": 0.198,
+    "bits": "24242424",
+    "mode": "lut_finn",
+    "f_MHz": 111.11,
+    "FPS": 9094.7,
+    "LUT": 41206,
+    "BRAM18": 87.0,
+    "DSP": 0,
+    "T_target": 10000,
+    "class_MHz": 111.11,
+    "measured": "79.65 n=3 FAIL"
+   },
+   "B2_proxy": {
+    "rel_to_A": 0.0172,
+    "E_mJ": 0.2102,
+    "bits": "24222448",
+    "mode": "lut_finn",
+    "f_MHz": 100.0,
+    "FPS": 8185.3,
+    "LUT": 35283,
+    "BRAM18": 87.0,
+    "DSP": 1,
+    "T_target": 10000,
+    "class_MHz": 100.0,
+    "measured": "80.16 n=3 FAIL"
+   },
+   "B1_measured": {
+    "bits": "44444444",
+    "E_mJ": 0.2657,
+    "rel_to_A": 0.2859,
+    "measured": "84.36 n=3 PASS"
+   },
+   "B2_measured": {
+    "bits": "42222448",
+    "E_mJ": 0.2703,
+    "rel_to_A": 0.308,
+    "measured": "81.20 n=3 PASS",
+    "failed": [
+     "24222448",
+     "24222488"
+    ]
+   },
+   "B3_measured": {
+    "bits": "42222448",
+    "E_mJ": 1.5663,
+    "rel_to_A": 6.5794,
+    "measured": "81.20 n=3 PASS"
+   }
+  }
+ },
+ "8.0": {
+  "nominal": {
+   "threshold": 77.37,
+   "A_verified": {
+    "bits": "22222448",
+    "mode": "lut_finn",
+    "T_target": 14286,
+    "f_MHz": 111.11,
+    "E_mJ": 0.2511,
+    "measured": "78.70 n=3 PASS",
+    "rel_to_model_opt": -0.0001
+   },
+   "B1_uniform": {
+    "rel_to_A": 0.0515,
+    "E_mJ": 0.264,
+    "bits": "24242424",
+    "mode": "lut_finn",
+    "f_MHz": 111.11,
+    "FPS": 9042.2,
+    "LUT": 39377,
+    "BRAM18": 85.0,
+    "DSP": 0,
+    "T_target": 14286,
+    "class_MHz": 111.11,
+    "measured": "79.65 n=3 PASS"
+   },
+   "B2_proxy": {
+    "rel_to_A": 0.0782,
+    "E_mJ": 0.2707,
+    "bits": "22222448",
+    "mode": "lut_finn",
+    "f_MHz": 100.0,
+    "FPS": 8185.3,
+    "LUT": 29393,
+    "BRAM18": 87.0,
+    "DSP": 1,
+    "T_target": 10000,
+    "class_MHz": 100.0,
+    "measured": "78.70 n=3 PASS"
+   },
+   "B1_measured": {
+    "bits": "24242424",
+    "E_mJ": 0.264,
+    "rel_to_A": 0.0513,
+    "measured": "79.65 n=3 PASS"
+   },
+   "B2_measured": {
+    "bits": "22222448",
+    "E_mJ": 0.2707,
+    "rel_to_A": 0.0781,
+    "measured": "78.70 n=3 PASS",
+    "failed": []
+   },
+   "B3_measured": {
+    "bits": "22222448",
+    "E_mJ": 1.9556,
+    "rel_to_A": 6.7889,
+    "measured": "78.70 n=3 PASS"
+   }
+  },
+  "z2_anchor": {
+   "threshold": 77.37,
+   "A_verified": {
+    "bits": "22222448",
+    "mode": "lut_finn",
+    "T_target": 10000,
+    "f_MHz": 111.11,
+    "E_mJ": 0.1918,
+    "measured": "78.70 n=3 PASS",
+    "rel_to_model_opt": 0.0002
+   },
+   "B1_uniform": {
+    "rel_to_A": 0.0321,
+    "E_mJ": 0.198,
+    "bits": "24242424",
+    "mode": "lut_finn",
+    "f_MHz": 111.11,
+    "FPS": 9094.7,
+    "LUT": 41206,
+    "BRAM18": 87.0,
+    "DSP": 0,
+    "T_target": 10000,
+    "class_MHz": 111.11,
+    "measured": "79.65 n=3 PASS"
+   },
+   "B2_proxy": {
+    "rel_to_A": 0.0796,
+    "E_mJ": 0.2071,
+    "bits": "22222448",
+    "mode": "lut_finn",
+    "f_MHz": 100.0,
+    "FPS": 8185.3,
+    "LUT": 29393,
+    "BRAM18": 87.0,
+    "DSP": 1,
+    "T_target": 10000,
+    "class_MHz": 100.0,
+    "measured": "78.70 n=3 PASS"
+   },
+   "B1_measured": {
+    "bits": "24242424",
+    "E_mJ": 0.198,
+    "rel_to_A": 0.0324,
+    "measured": "79.65 n=3 PASS"
+   },
+   "B2_measured": {
+    "bits": "22222448",
+    "E_mJ": 0.2071,
+    "rel_to_A": 0.0796,
+    "measured": "78.70 n=3 PASS",
+    "failed": []
+   },
+   "B3_measured": {
+    "bits": "22222448",
+    "E_mJ": 1.5641,
+    "rel_to_A": 7.1535,
+    "measured": "78.70 n=3 PASS"
+   }
+  }
+ }
+}

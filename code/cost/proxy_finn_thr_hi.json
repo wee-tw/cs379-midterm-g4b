@@ -1,0 +1,308 @@
+{
+ "acc_model": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/cost/acc_model_3rep.json",
+ "reference_acc": 85.37,
+ "power": {
+  "nominal": {
+   "kendall_tau": {
+    "BOPs": 0.723,
+    "weight bits": 0.3,
+    "threshold compares": 0.449,
+    "BOPs + threshold bit-ops": 0.67,
+    "weight + threshold bits": 0.464
+   },
+   "margins": {
+    "1": {
+     "threshold": 84.37,
+     "n_pass": 315,
+     "A_prime": "44444448",
+     "E_A_prime_mJ": 0.3159,
+     "proxies": {
+      "BOPs": {
+       "bits": "44444448",
+       "regret_pct": 0.0
+      },
+      "weight bits": {
+       "bits": "48442848",
+       "regret_pct": 95.0
+      },
+      "threshold compares": {
+       "bits": "84848484",
+       "regret_pct": 97.4
+      },
+      "BOPs + threshold bit-ops": {
+       "bits": "44444448",
+       "regret_pct": 0.0
+      },
+      "weight + threshold bits": {
+       "bits": "84444484",
+       "regret_pct": 60.0
+      }
+     }
+    },
+    "2": {
+     "threshold": 83.37,
+     "n_pass": 970,
+     "A_prime": "44242448",
+     "E_A_prime_mJ": 0.2499,
+     "proxies": {
+      "BOPs": {
+       "bits": "44242448",
+       "regret_pct": 0.0
+      },
+      "weight bits": {
+       "bits": "48242848",
+       "regret_pct": 33.3
+      },
+      "threshold compares": {
+       "bits": "84828484",
+       "regret_pct": 109.8
+      },
+      "BOPs + threshold bit-ops": {
+       "bits": "44242448",
+       "regret_pct": 0.0
+      },
+      "weight + threshold bits": {
+       "bits": "44442484",
+       "regret_pct": 24.2
+      }
+     }
+    },
+    "3": {
+     "threshold": 82.37,
+     "n_pass": 1895,
+     "A_prime": "24244448",
+     "E_A_prime_mJ": 0.2452,
+     "proxies": {
+      "BOPs": {
+       "bits": "42442448",
+       "regret_pct": 0.4
+      },
+      "weight bits": {
+       "bits": "48242828",
+       "regret_pct": 35.8
+      },
+      "threshold compares": {
+       "bits": "82848484",
+       "regret_pct": 41.6
+      },
+      "BOPs + threshold bit-ops": {
+       "bits": "42442448",
+       "regret_pct": 0.4
+      },
+      "weight + threshold bits": {
+       "bits": "44242444",
+       "regret_pct": 1.9
+      }
+     }
+    },
+    "5": {
+     "threshold": 80.37,
+     "n_pass": 3879,
+     "A_prime": "24222448",
+     "E_A_prime_mJ": 0.2363,
+     "proxies": {
+      "BOPs": {
+       "bits": "24222448",
+       "regret_pct": 0.0
+      },
+      "weight bits": {
+       "bits": "24242828",
+       "regret_pct": 6.1
+      },
+      "threshold compares": {
+       "bits": "82824284",
+       "regret_pct": 40.4
+      },
+      "BOPs + threshold bit-ops": {
+       "bits": "42242284",
+       "regret_pct": 0.7
+      },
+      "weight + threshold bits": {
+       "bits": "44222284",
+       "regret_pct": 3.6
+      }
+     }
+    },
+    "8": {
+     "threshold": 77.37,
+     "n_pass": 6004,
+     "A_prime": "22222448",
+     "E_A_prime_mJ": 0.2303,
+     "proxies": {
+      "BOPs": {
+       "bits": "22222448",
+       "regret_pct": 0.0
+      },
+      "weight bits": {
+       "bits": "24242828",
+       "regret_pct": 8.8
+      },
+      "threshold compares": {
+       "bits": "82824282",
+       "regret_pct": 44.0
+      },
+      "BOPs + threshold bit-ops": {
+       "bits": "22222484",
+       "regret_pct": 0.0
+      },
+      "weight + threshold bits": {
+       "bits": "24222224",
+       "regret_pct": 1.7
+      }
+     }
+    }
+   }
+  },
+  "z2_anchor": {
+   "kendall_tau": {
+    "BOPs": 0.723,
+    "weight bits": 0.3,
+    "threshold compares": 0.449,
+    "BOPs + threshold bit-ops": 0.67,
+    "weight + threshold bits": 0.464
+   },
+   "margins": {
+    "1": {
+     "threshold": 84.37,
+     "n_pass": 315,
+     "A_prime": "44444448",
+     "E_A_prime_mJ": 0.2392,
+     "proxies": {
+      "BOPs": {
+       "bits": "44444448",
+       "regret_pct": 0.0
+      },
+      "weight bits": {
+       "bits": "48442848",
+       "regret_pct": 96.9
+      },
+      "threshold compares": {
+       "bits": "84848484",
+       "regret_pct": 98.4
+      },
+      "BOPs + threshold bit-ops": {
+       "bits": "44444448",
+       "regret_pct": 0.0
+      },
+      "weight + threshold bits": {
+       "bits": "84444484",
+       "regret_pct": 56.1
+      }
+     }
+    },
+    "2": {
+     "threshold": 83.37,
+     "n_pass": 970,
+     "A_prime": "44242448",
+     "E_A_prime_mJ": 0.1854,
+     "proxies": {
+      "BOPs": {
+       "bits": "44242448",
+       "regret_pct": 0.0
+      },
+      "weight bits": {
+       "bits": "48242848",
+       "regret_pct": 33.3
+      },
+      "threshold compares": {
+       "bits": "84828484",
+       "regret_pct": 106.1
+      },
+      "BOPs + threshold bit-ops": {
+       "bits": "44242448",
+       "regret_pct": 0.0
+      },
+      "weight + threshold bits": {
+       "bits": "44442484",
+       "regret_pct": 27.7
+      }
+     }
+    },
+    "3": {
+     "threshold": 82.37,
+     "n_pass": 1895,
+     "A_prime": "24244448",
+     "E_A_prime_mJ": 0.1832,
+     "proxies": {
+      "BOPs": {
+       "bits": "42442448",
+       "regret_pct": 0.3
+      },
+      "weight bits": {
+       "bits": "48242828",
+       "regret_pct": 34.9
+      },
+      "threshold compares": {
+       "bits": "82848484",
+       "regret_pct": 38.4
+      },
+      "BOPs + threshold bit-ops": {
+       "bits": "42442448",
+       "regret_pct": 0.3
+      },
+      "weight + threshold bits": {
+       "bits": "44242444",
+       "regret_pct": 1.2
+      }
+     }
+    },
+    "5": {
+     "threshold": 80.37,
+     "n_pass": 3879,
+     "A_prime": "24222448",
+     "E_A_prime_mJ": 0.1791,
+     "proxies": {
+      "BOPs": {
+       "bits": "24222448",
+       "regret_pct": 0.0
+      },
+      "weight bits": {
+       "bits": "24242828",
+       "regret_pct": 3.7
+      },
+      "threshold compares": {
+       "bits": "82824284",
+       "regret_pct": 37.6
+      },
+      "BOPs + threshold bit-ops": {
+       "bits": "42242284",
+       "regret_pct": 0.4
+      },
+      "weight + threshold bits": {
+       "bits": "44222284",
+       "regret_pct": 2.2
+      }
+     }
+    },
+    "8": {
+     "threshold": 77.37,
+     "n_pass": 6004,
+     "A_prime": "22222448",
+     "E_A_prime_mJ": 0.1764,
+     "proxies": {
+      "BOPs": {
+       "bits": "22222448",
+       "regret_pct": 0.0
+      },
+      "weight bits": {
+       "bits": "24242828",
+       "regret_pct": 5.3
+      },
+      "threshold compares": {
+       "bits": "82824282",
+       "regret_pct": 39.7
+      },
+      "BOPs + threshold bit-ops": {
+       "bits": "22222484",
+       "regret_pct": 0.0
+      },
+      "weight + threshold bits": {
+       "bits": "24222224",
+       "regret_pct": 1.0
+      }
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,41 @@
+{
+ "args": {
+  "model": "brevitas",
+  "bits": [
+   4,
+   4,
+   2,
+   4,
+   4,
+   4,
+   4,
+   8
+  ],
+  "recipe": "lowbit",
+  "amid": null,
+  "epochs": 1,
+  "batch": 256,
+  "lr": 0.02,
+  "wd": 0.0001,
+  "data": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/cifar_hf/cifar10.npz",
+  "init": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp3/sens_base0.pt",
+  "reinit_act": false,
+  "teacher": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/runs/float_rn8.pt",
+  "kd_alpha": 0.7,
+  "kd_t": 4.0,
+  "seed": 9,
+  "save": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp17_smoke\\ft1_cand_44244448_s9.pt",
+  "log": "C:/Users/wee/AppData/Local/Temp/claude/D--115-1-embedded-sys-midterm-report/0ab647fd-9b9f-46c9-8993-886b1139c5f2/scratchpad/exp17_smoke\\ft1_cand_44244448_s9.json"
+ },
+ "history": [
+  {
+   "epoch": 1,
+   "sec": 13.4,
+   "loss": 0.623,
+   "test_acc": 83.3
+  }
+ ],
+ "final_acc": 83.3,
+ "best_acc": 83.3,
+ "wall_sec": 14.1
+}

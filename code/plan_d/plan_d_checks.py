@@ -3,8 +3,7 @@ can trace them on GitHub (results/plan_d/).
 
 Inputs:
   * the final cost points (timing-safe refold RTL <= 12 / HLS <= 18, clock classes from
-    post-synthesis timing): points_tsr_v1218_f{125,111.11,100}.npz. They are large and stay on
-    1133311's machine (.gitignore); pass their folder with --points-dir.
+    post-synthesis timing): code/cost/points_tsr_v1218_f{125,111.11,100}.npz (the default --points-dir).
   * results/accuracy/acc_model_3rep.json and results/audit_dataset/rtl_nodes.csv (on GitHub).
 Outputs:
   * results/plan_d/rq2_729_energies.csv: one row per Plan D configuration (FC at W8A8) with model
@@ -13,7 +12,7 @@ Outputs:
     The ranking numbers below can be recomputed from this file alone.
   * results/plan_d/plan_d_checks.txt: the summary quoted in the reply.
 
-  python plan_d/plan_d_checks.py --points-dir <folder with points_tsr_v1218_f*.npz>
+  python plan_d/plan_d_checks.py
 """
 
 import argparse
@@ -84,7 +83,7 @@ def plan_d_bram(n, p, w):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--points-dir", required=True)
+    ap.add_argument("--points-dir", default=os.path.join(ROOT, "code", "cost"))
     ap.add_argument("--out", default=os.path.join(ROOT, "results", "plan_d"))
     args = ap.parse_args()
     os.makedirs(args.out, exist_ok=True)

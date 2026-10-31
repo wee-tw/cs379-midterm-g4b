@@ -1,0 +1,35 @@
+== margin 1.0 (threshold 84.46, 294 configs pass)
+  nominal   cont vs A': A +0.0%, B1 +61.3%, B4 +0.0%, B2 +17.5%, B3 +0.0%   bits A'=44442428 B2=44442428
+     R=  300 running vs A': A +0.0%, B1 +0.1%, B4 +18.4%, B2 +13.1%, B3 +18.4% | gated vs A'(gated): B1 +1.6%, B4 +0.0%, B2 +0.1%, B3 +0.0% | A'(gated) vs A'(running) -8.8%
+     R= 3000 running vs A': A +0.0%, B1 +15.4%, B4 +15.8%, B2 +11.2%, B3 +15.8% | gated vs A'(gated): B1 +14.0%, B4 +0.0%, B2 +0.5%, B3 +0.0% | A'(gated) vs A'(running) -0.2%
+  z2_anchor cont vs A': A +0.0%, B1 +56.9%, B4 +0.0%, B2 +17.7%, B3 +0.0%   bits A'=44442428 B2=44442428
+     R=  300 running vs A': A +0.0%, B1 +0.1%, B4 +21.0%, B2 +14.8%, B3 +21.0% | gated vs A'(gated): B1 +1.3%, B4 +0.0%, B2 +0.0%, B3 +0.0% | A'(gated) vs A'(running) -10.3%
+     R= 3000 running vs A': A +0.0%, B1 +14.7%, B4 +18.8%, B2 +12.9%, B3 +18.8% | gated vs A'(gated): B1 +11.1%, B4 +0.0%, B2 +0.3%, B3 +0.0% | A'(gated) vs A'(running) -0.2%
+== margin 2.0 (threshold 83.46, 975 configs pass)
+  nominal   cont vs A': A +0.0%, B1 +4.8%, B4 +7.1%, B2 +17.8%, B3 +0.0%   bits A'=44422428 B2=44422428
+     R=  300 running vs A': A +0.0%, B1 +0.2%, B4 +20.8%, B2 +12.5%, B3 +17.7% | gated vs A'(gated): B1 +0.3%, B4 +0.4%, B2 +0.1%, B3 +0.0% | A'(gated) vs A'(running) -8.8%
+     R= 3000 running vs A': A +0.0%, B1 +2.4%, B4 +20.6%, B2 +10.9%, B3 +15.5% | gated vs A'(gated): B1 +2.4%, B4 +3.5%, B2 +0.4%, B3 +0.0% | A'(gated) vs A'(running) -0.2%
+  z2_anchor cont vs A': A +0.0%, B1 +2.9%, B4 +4.3%, B2 +17.9%, B3 +0.0%   bits A'=44422428 B2=44422428
+     R=  300 running vs A': A +0.0%, B1 +0.1%, B4 +22.9%, B2 +14.2%, B3 +20.4% | gated vs A'(gated): B1 +0.2%, B4 +0.2%, B2 +0.0%, B3 +0.0% | A'(gated) vs A'(running) -10.3%
+     R= 3000 running vs A': A +0.0%, B1 +1.4%, B4 +22.0%, B2 +12.7%, B3 +18.5% | gated vs A'(gated): B1 +1.4%, B4 +2.1%, B2 +0.3%, B3 +0.0% | A'(gated) vs A'(running) -0.2%
+== margin 3.0 (threshold 82.46, 1796 configs pass)
+  nominal   cont vs A': A +0.0%, B1 +39.9%, B4 +6.8%, B2 +54.0%, B3 +13.2%   bits A'=84242428 B2=42442428
+     R=  300 running vs A': A +0.0%, B1 +0.4%, B4 +20.9%, B2 +11.9%, B3 +23.7% | gated vs A'(gated): B1 +0.8%, B4 +0.3%, B2 +0.4%, B3 +0.6% | A'(gated) vs A'(running) -9.0%
+     R= 3000 running vs A': A +0.0%, B1 +3.9%, B4 +20.4%, B2 +11.0%, B3 +24.6% | gated vs A'(gated): B1 +6.7%, B4 +2.8%, B2 +3.4%, B3 +5.2% | A'(gated) vs A'(running) -2.8%
+  z2_anchor cont vs A': A +0.0%, B1 +37.3%, B4 +3.9%, B2 +55.3%, B3 +7.8%   bits A'=84242428 B2=42442428
+     R=  300 running vs A': A +0.0%, B1 +0.2%, B4 +23.0%, B2 +13.7%, B3 +25.2% | gated vs A'(gated): B1 +0.6%, B4 +0.2%, B2 +0.4%, B3 +0.3% | A'(gated) vs A'(running) -10.7%
+     R= 3000 running vs A': A +0.0%, B1 +2.2%, B4 +21.9%, B2 +12.5%, B3 +24.8% | gated vs A'(gated): B1 +5.3%, B4 +1.6%, B2 +3.4%, B3 +3.1% | A'(gated) vs A'(running) -3.2%
+== margin 5.0 (threshold 80.46, 3754 configs pass)
+  nominal   cont vs A': A +0.0%, B1 +43.2%, B4 +9.2%, B2 +53.8%, B3 +5.7%   bits A'=84222228 B2=42422228
+     R=  300 running vs A': A +0.0%, B1 +0.7%, B4 +21.2%, B2 +11.2%, B3 +19.8% | gated vs A'(gated): B1 +0.9%, B4 +0.4%, B2 +0.3%, B3 +0.3% | A'(gated) vs A'(running) -8.9%
+     R= 3000 running vs A': A +0.0%, B1 +5.0%, B4 +21.7%, B2 +10.4%, B3 +19.5% | gated vs A'(gated): B1 +7.6%, B4 +3.6%, B2 +2.9%, B3 +2.3% | A'(gated) vs A'(running) -2.6%
+  z2_anchor cont vs A': A +0.0%, B1 +39.3%, B4 +5.3%, B2 +55.3%, B3 +3.2%   bits A'=84222228 B2=42422228
+     R=  300 running vs A': A +0.0%, B1 +0.3%, B4 +23.1%, B2 +13.0%, B3 +21.9% | gated vs A'(gated): B1 +0.7%, B4 +0.2%, B2 +0.4%, B3 +0.1% | A'(gated) vs A'(running) -10.6%
+     R= 3000 running vs A': A +0.0%, B1 +3.0%, B4 +22.9%, B2 +12.2%, B3 +21.3% | gated vs A'(gated): B1 +5.9%, B4 +2.1%, B2 +3.1%, B3 +1.3% | A'(gated) vs A'(running) -3.0%
+== margin 8.0 (threshold 77.46, 5815 configs pass)
+  nominal   cont vs A': A +0.0%, B1 +5.1%, B4 +6.0%, B2 +22.9%, B3 +4.0%   bits A'=84222244 B2=22422428
+     R=  300 running vs A': A +0.0%, B1 +0.2%, B4 +20.0%, B2 +14.0%, B3 +19.1% | gated vs A'(gated): B1 +0.2%, B4 +0.3%, B2 +0.2%, B3 +0.2% | A'(gated) vs A'(running) -8.8%
+     R= 3000 running vs A': A +0.0%, B1 +0.7%, B4 +20.2%, B2 +14.4%, B3 +19.0% | gated vs A'(gated): B1 +1.9%, B4 +2.4%, B2 +2.3%, B3 +1.7% | A'(gated) vs A'(running) -2.1%
+  z2_anchor cont vs A': A +0.0%, B1 +3.0%, B4 +3.4%, B2 +20.6%, B3 +2.1%   bits A'=84222244 B2=22422428
+     R=  300 running vs A': A +0.0%, B1 +0.1%, B4 +22.1%, B2 +15.3%, B3 +21.4% | gated vs A'(gated): B1 +0.1%, B4 +0.2%, B2 +0.1%, B3 +0.1% | A'(gated) vs A'(running) -10.5%
+     R= 3000 running vs A': A +0.0%, B1 +0.4%, B4 +21.8%, B2 +15.1%, B3 +20.9% | gated vs A'(gated): B1 +1.1%, B4 +1.4%, B2 +1.3%, B3 +0.9% | A'(gated) vs A'(running) -2.7%

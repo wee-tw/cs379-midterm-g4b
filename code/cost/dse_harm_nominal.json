@@ -1,0 +1,436 @@
+{
+ "nominal": {
+  "finn": {
+   "margins": {
+    "1": {
+     "threshold": 84.37,
+     "biased_opt": {
+      "bits": "44444448",
+      "mode": "lut",
+      "T": 16667,
+      "E_promised_mJ": 0.3256,
+      "feasible_in_truth": true
+     },
+     "truth_opt": {
+      "bits": "44444448",
+      "mode": "lut",
+      "E_mJ": 0.3256
+     },
+     "failed_builds": 0,
+     "after_rejects": {
+      "bits": "44444448",
+      "mode": "lut",
+      "E_true_mJ": 0.3256,
+      "regret_pct": 0.0,
+      "surprise_pct": 0.0
+     },
+     "top1_overlap": 1.0,
+     "top10_overlap": 1.0,
+     "top100_overlap": 1.0
+    },
+    "2": {
+     "threshold": 83.37,
+     "biased_opt": {
+      "bits": "84242448",
+      "mode": "dspc",
+      "T": 12500,
+      "E_promised_mJ": 0.2323,
+      "feasible_in_truth": false
+     },
+     "truth_opt": {
+      "bits": "44242448",
+      "mode": "lut",
+      "E_mJ": 0.3074
+     },
+     "failed_builds": 28,
+     "after_rejects": {
+      "bits": "44242448",
+      "mode": "lut",
+      "E_true_mJ": 0.3074,
+      "regret_pct": 0.0,
+      "surprise_pct": 32.3
+     },
+     "top1_overlap": 0.0,
+     "top10_overlap": 0.0,
+     "top100_overlap": 0.72
+    },
+    "3": {
+     "threshold": 82.37,
+     "biased_opt": {
+      "bits": "84222448",
+      "mode": "dspc",
+      "T": 12500,
+      "E_promised_mJ": 0.2289,
+      "feasible_in_truth": false
+     },
+     "truth_opt": {
+      "bits": "24244448",
+      "mode": "lut",
+      "E_mJ": 0.2482
+     },
+     "failed_builds": 58,
+     "after_rejects": {
+      "bits": "24248448",
+      "mode": "dspc",
+      "E_true_mJ": 0.2598,
+      "regret_pct": 4.65,
+      "surprise_pct": 13.47
+     },
+     "top1_overlap": 0.0,
+     "top10_overlap": 0.0,
+     "top100_overlap": 0.2
+    },
+    "5": {
+     "threshold": 80.37,
+     "biased_opt": {
+      "bits": "84222244",
+      "mode": "dspc",
+      "T": 14286,
+      "E_promised_mJ": 0.227,
+      "feasible_in_truth": false
+     },
+     "truth_opt": {
+      "bits": "24222448",
+      "mode": "lut",
+      "E_mJ": 0.2351
+     },
+     "failed_builds": 78,
+     "after_rejects": {
+      "bits": "42222448",
+      "mode": "dspc",
+      "E_true_mJ": 0.2364,
+      "regret_pct": 0.55,
+      "surprise_pct": 4.13
+     },
+     "top1_overlap": 0.0,
+     "top10_overlap": 0.0,
+     "top100_overlap": 0.16
+    },
+    "8": {
+     "threshold": 77.37,
+     "biased_opt": {
+      "bits": "84222244",
+      "mode": "dspc",
+      "T": 14286,
+      "E_promised_mJ": 0.227,
+      "feasible_in_truth": false
+     },
+     "truth_opt": {
+      "bits": "22222448",
+      "mode": "lut",
+      "E_mJ": 0.2294
+     },
+     "failed_builds": 42,
+     "after_rejects": {
+      "bits": "22222448",
+      "mode": "lut",
+      "E_true_mJ": 0.2294,
+      "regret_pct": 0.0,
+      "surprise_pct": 1.03
+     },
+     "top1_overlap": 0.0,
+     "top10_overlap": 0.0,
+     "top100_overlap": 0.18
+    }
+   },
+   "kendall_tau_all": 0.9828,
+   "kendall_tau_dsp_designs": 0.9752,
+   "biased_feasible_points": 152997,
+   "of_which_infeasible_in_truth": 1417,
+   "pareto": {
+    "truth_front": 36,
+    "biased_front": 25,
+    "biased_front_infeasible": 8,
+    "ADRS_pct": 15.82
+   }
+  },
+  "lut_fixed": {
+   "margins": {
+    "1": {
+     "threshold": 84.37,
+     "biased_opt": {
+      "bits": "44444448",
+      "mode": "lut",
+      "T": 16667,
+      "E_promised_mJ": 0.3256,
+      "feasible_in_truth": true
+     },
+     "truth_opt": {
+      "bits": "44444448",
+      "mode": "lut",
+      "E_mJ": 0.3256
+     },
+     "failed_builds": 0,
+     "after_rejects": {
+      "bits": "44444448",
+      "mode": "lut",
+      "E_true_mJ": 0.3256,
+      "regret_pct": 0.0,
+      "surprise_pct": 0.0
+     },
+     "top1_overlap": 1.0,
+     "top10_overlap": 1.0,
+     "top100_overlap": 1.0
+    },
+    "2": {
+     "threshold": 83.37,
+     "biased_opt": {
+      "bits": "84242448",
+      "mode": "dspc",
+      "T": 12500,
+      "E_promised_mJ": 0.2603,
+      "feasible_in_truth": false
+     },
+     "truth_opt": {
+      "bits": "44242448",
+      "mode": "lut",
+      "E_mJ": 0.3074
+     },
+     "failed_builds": 6,
+     "after_rejects": {
+      "bits": "44242448",
+      "mode": "lut",
+      "E_true_mJ": 0.3074,
+      "regret_pct": 0.0,
+      "surprise_pct": 18.09
+     },
+     "top1_overlap": 0.0,
+     "top10_overlap": 0.4,
+     "top100_overlap": 0.94
+    },
+    "3": {
+     "threshold": 82.37,
+     "biased_opt": {
+      "bits": "24244448",
+      "mode": "lut",
+      "T": 12500,
+      "E_promised_mJ": 0.2482,
+      "feasible_in_truth": true
+     },
+     "truth_opt": {
+      "bits": "24244448",
+      "mode": "lut",
+      "E_mJ": 0.2482
+     },
+     "failed_builds": 0,
+     "after_rejects": {
+      "bits": "24244448",
+      "mode": "lut",
+      "E_true_mJ": 0.2482,
+      "regret_pct": 0.0,
+      "surprise_pct": 0.0
+     },
+     "top1_overlap": 0.0,
+     "top10_overlap": 1.0,
+     "top100_overlap": 0.76
+    },
+    "5": {
+     "threshold": 80.37,
+     "biased_opt": {
+      "bits": "24222448",
+      "mode": "lut",
+      "T": 12500,
+      "E_promised_mJ": 0.2351,
+      "feasible_in_truth": true
+     },
+     "truth_opt": {
+      "bits": "24222448",
+      "mode": "lut",
+      "E_mJ": 0.2351
+     },
+     "failed_builds": 0,
+     "after_rejects": {
+      "bits": "24222448",
+      "mode": "lut",
+      "E_true_mJ": 0.2351,
+      "regret_pct": 0.0,
+      "surprise_pct": 0.0
+     },
+     "top1_overlap": 1.0,
+     "top10_overlap": 1.0,
+     "top100_overlap": 1.0
+    },
+    "8": {
+     "threshold": 77.37,
+     "biased_opt": {
+      "bits": "22222448",
+      "mode": "lut",
+      "T": 12500,
+      "E_promised_mJ": 0.2294,
+      "feasible_in_truth": true
+     },
+     "truth_opt": {
+      "bits": "22222448",
+      "mode": "lut",
+      "E_mJ": 0.2294
+     },
+     "failed_builds": 0,
+     "after_rejects": {
+      "bits": "22222448",
+      "mode": "lut",
+      "E_true_mJ": 0.2294,
+      "regret_pct": 0.0,
+      "surprise_pct": 0.0
+     },
+     "top1_overlap": 1.0,
+     "top10_overlap": 1.0,
+     "top100_overlap": 1.0
+    }
+   },
+   "kendall_tau_all": 1.0,
+   "kendall_tau_dsp_designs": 1.0,
+   "biased_feasible_points": 151721,
+   "of_which_infeasible_in_truth": 141,
+   "pareto": {
+    "truth_front": 36,
+    "biased_front": 36,
+    "biased_front_infeasible": 3,
+    "ADRS_pct": 0.11
+   }
+  },
+  "dsp_fixed": {
+   "margins": {
+    "1": {
+     "threshold": 84.37,
+     "biased_opt": {
+      "bits": "44444448",
+      "mode": "lut",
+      "T": 16667,
+      "E_promised_mJ": 0.3256,
+      "feasible_in_truth": true
+     },
+     "truth_opt": {
+      "bits": "44444448",
+      "mode": "lut",
+      "E_mJ": 0.3256
+     },
+     "failed_builds": 0,
+     "after_rejects": {
+      "bits": "44444448",
+      "mode": "lut",
+      "E_true_mJ": 0.3256,
+      "regret_pct": 0.0,
+      "surprise_pct": 0.0
+     },
+     "top1_overlap": 1.0,
+     "top10_overlap": 1.0,
+     "top100_overlap": 1.0
+    },
+    "2": {
+     "threshold": 83.37,
+     "biased_opt": {
+      "bits": "44242448",
+      "mode": "lut",
+      "T": 16667,
+      "E_promised_mJ": 0.3074,
+      "feasible_in_truth": true
+     },
+     "truth_opt": {
+      "bits": "44242448",
+      "mode": "lut",
+      "E_mJ": 0.3074
+     },
+     "failed_builds": 0,
+     "after_rejects": {
+      "bits": "44242448",
+      "mode": "lut",
+      "E_true_mJ": 0.3074,
+      "regret_pct": 0.0,
+      "surprise_pct": 0.0
+     },
+     "top1_overlap": 1.0,
+     "top10_overlap": 0.9,
+     "top100_overlap": 1.0
+    },
+    "3": {
+     "threshold": 82.37,
+     "biased_opt": {
+      "bits": "24248448",
+      "mode": "dspc",
+      "T": 14286,
+      "E_promised_mJ": 0.2452,
+      "feasible_in_truth": true
+     },
+     "truth_opt": {
+      "bits": "24244448",
+      "mode": "lut",
+      "E_mJ": 0.2482
+     },
+     "failed_builds": 0,
+     "after_rejects": {
+      "bits": "24248448",
+      "mode": "dspc",
+      "E_true_mJ": 0.2598,
+      "regret_pct": 4.65,
+      "surprise_pct": 5.93
+     },
+     "top1_overlap": 0.0,
+     "top10_overlap": 0.2,
+     "top100_overlap": 0.88
+    },
+    "5": {
+     "threshold": 80.37,
+     "biased_opt": {
+      "bits": "42222448",
+      "mode": "dspc",
+      "T": 14286,
+      "E_promised_mJ": 0.2337,
+      "feasible_in_truth": true
+     },
+     "truth_opt": {
+      "bits": "24222448",
+      "mode": "lut",
+      "E_mJ": 0.2351
+     },
+     "failed_builds": 0,
+     "after_rejects": {
+      "bits": "42222448",
+      "mode": "dspc",
+      "E_true_mJ": 0.2364,
+      "regret_pct": 0.55,
+      "surprise_pct": 1.15
+     },
+     "top1_overlap": 0.0,
+     "top10_overlap": 0.2,
+     "top100_overlap": 0.84
+    },
+    "8": {
+     "threshold": 77.37,
+     "biased_opt": {
+      "bits": "22222484",
+      "mode": "lut",
+      "T": 12500,
+      "E_promised_mJ": 0.2294,
+      "feasible_in_truth": true
+     },
+     "truth_opt": {
+      "bits": "22222448",
+      "mode": "lut",
+      "E_mJ": 0.2294
+     },
+     "failed_builds": 0,
+     "after_rejects": {
+      "bits": "22222484",
+      "mode": "lut",
+      "E_true_mJ": 0.2294,
+      "regret_pct": 0.0,
+      "surprise_pct": 0.0
+     },
+     "top1_overlap": 0.0,
+     "top10_overlap": 1.0,
+     "top100_overlap": 0.82
+    }
+   },
+   "kendall_tau_all": 0.9828,
+   "kendall_tau_dsp_designs": 0.9752,
+   "biased_feasible_points": 152547,
+   "of_which_infeasible_in_truth": 967,
+   "pareto": {
+    "truth_front": 36,
+    "biased_front": 39,
+    "biased_front_infeasible": 1,
+    "ADRS_pct": 0.14
+   }
+  }
+ }
+}

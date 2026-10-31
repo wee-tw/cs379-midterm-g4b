@@ -1,0 +1,58 @@
+== margin 1: true optimum 0.2558 mJ
+   reject     {'syntheses': 1, 'regret_pct': 0.0}
+   top10      {'syntheses': 10, 'found_feasible': True, 'regret_pct': 0.0}
+   top30      {'syntheses': 30, 'found_feasible': True, 'regret_pct': 0.0}
+   margin20   {'syntheses': 1, 'regret_pct': 0.0}
+   margin35   {'syntheses': 1, 'regret_pct': 0.0}
+   margin50   {'syntheses': 1, 'regret_pct': 0.0}
+   learned    {'n0': 10, 'seeds': 10, 'median_regret_pct_by_budget': {20: 0.0, 50: 0.0}, 'share_found_within_1pct': {20: 1.0, 50: 1.0}}
+   calibrated {'sigma': 0.05, 'seeds': 10, 'median_syntheses': 1.0, 'max_syntheses': 4, 'median_regret_pct': 0.0}
+== margin 2: true optimum 0.2373 mJ
+   reject     {'syntheses': 29, 'regret_pct': 0.0}
+   top10      {'syntheses': 10, 'found_feasible': False, 'regret_pct': None}
+   top30      {'syntheses': 30, 'found_feasible': True, 'regret_pct': 0.0}
+   margin20   {'syntheses': 29, 'regret_pct': 0.0}
+   margin35   {'syntheses': 1, 'regret_pct': 0.0}
+   margin50   {'syntheses': 1, 'regret_pct': 0.0}
+   learned    {'n0': 10, 'seeds': 10, 'median_regret_pct_by_budget': {20: 0.0, 50: 0.0}, 'share_found_within_1pct': {20: 1.0, 50: 1.0}}
+   calibrated {'sigma': 0.05, 'seeds': 10, 'median_syntheses': 1.0, 'max_syntheses': 1, 'median_regret_pct': 0.0}
+== margin 3: true optimum 0.2316 mJ
+   reject     {'syntheses': 57, 'regret_pct': 0.0}
+   top10      {'syntheses': 10, 'found_feasible': False, 'regret_pct': None}
+   top30      {'syntheses': 30, 'found_feasible': False, 'regret_pct': None}
+   margin20   {'syntheses': 57, 'regret_pct': 0.0}
+   margin35   {'syntheses': 1, 'regret_pct': 0.0}
+   margin50   {'syntheses': 1, 'regret_pct': 0.0}
+   learned    {'n0': 10, 'seeds': 10, 'median_regret_pct_by_budget': {20: 0.0, 50: 0.0}, 'share_found_within_1pct': {20: 1.0, 50: 1.0}}
+   calibrated {'sigma': 0.05, 'seeds': 10, 'median_syntheses': 1.0, 'max_syntheses': 1, 'median_regret_pct': 0.0}
+== margin 5: true optimum 0.2219 mJ
+   reject     {'syntheses': 13, 'regret_pct': 0.37332443556081785}
+   top10      {'syntheses': 10, 'found_feasible': False, 'regret_pct': None}
+   top30      {'syntheses': 30, 'found_feasible': True, 'regret_pct': 0.0}
+   margin20   {'syntheses': 13, 'regret_pct': 0.37332443556081785}
+   margin35   {'syntheses': 1, 'regret_pct': 0.37332443556081785}
+   margin50   {'syntheses': 1, 'regret_pct': 0.37332443556081785}
+   learned    {'n0': 10, 'seeds': 10, 'median_regret_pct_by_budget': {20: 0.0, 50: 0.0}, 'share_found_within_1pct': {20: 1.0, 50: 1.0}}
+   calibrated {'sigma': 0.05, 'seeds': 10, 'median_syntheses': 1.0, 'max_syntheses': 1, 'median_regret_pct': 0.0}
+== margin 8: true optimum 0.2183 mJ
+   reject     {'syntheses': 1, 'regret_pct': 0.0039684904688419564}
+   top10      {'syntheses': 10, 'found_feasible': True, 'regret_pct': 0.0}
+   top30      {'syntheses': 30, 'found_feasible': True, 'regret_pct': 0.0}
+   margin20   {'syntheses': 1, 'regret_pct': 0.0039684904688419564}
+   margin35   {'syntheses': 1, 'regret_pct': 0.0039684904688419564}
+   margin50   {'syntheses': 1, 'regret_pct': 0.0039684904688419564}
+   learned    {'n0': 10, 'seeds': 10, 'median_regret_pct_by_budget': {20: 0.0, 50: 0.0}, 'share_found_within_1pct': {20: 1.0, 50: 1.0}}
+   calibrated {'sigma': 0.05, 'seeds': 10, 'median_syntheses': 1.0, 'max_syntheses': 1, 'median_regret_pct': 0.0}
+|--- logcyc <= 10
+|   |--- DSP_est <= 92
+|   |   |--- class: False
+|   |--- DSP_est >  92
+|   |   |--- mode_dspc <= 0
+|   |   |   |--- class: False
+|   |   |--- mode_dspc >  0
+|   |   |   |--- class: True
+|--- logcyc >  10
+|   |--- class: False
+
+misjudged by DSP slack: {'0-20': {'n': 2143, 'misjudged_pct': 3.7797480167988797}, '20-50': {'n': 4259, 'misjudged_pct': 14.369570321671754}, '50-100': {'n': 6616, 'misjudged_pct': 2.5846432889963724}, '100-inf': {'n': 118616, 'misjudged_pct': 0.022762527820867337}}
+misjudged by mode: {'lut': 0.0, 'lut_finn': 0.0, 'dspc': 1.8348812784447783}

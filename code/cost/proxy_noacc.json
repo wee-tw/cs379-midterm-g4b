@@ -1,0 +1,433 @@
+{
+ "n_configs": 6561,
+ "fps_target": 2000.0,
+ "rate": 300.0,
+ "bismo_fit": {
+  "min_LUT_at_target": {
+   "n": 6561,
+   "BOPs": {
+    "kendall_tau": 0.295,
+    "spearman_rho": 0.434,
+    "proxy_best_config": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "its_cost_rank": 905,
+    "cost_ratio_vs_best": 2.169
+   },
+   "weight_bits": {
+    "kendall_tau": 0.097,
+    "spearman_rho": 0.145,
+    "proxy_best_config": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "its_cost_rank": 905,
+    "cost_ratio_vs_best": 2.169
+   }
+  },
+  "E_continuous": {
+   "n": 6561,
+   "BOPs": {
+    "kendall_tau": 0.76,
+    "spearman_rho": 0.898,
+    "proxy_best_config": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "its_cost_rank": 13,
+    "cost_ratio_vs_best": 1.007
+   },
+   "weight_bits": {
+    "kendall_tau": 0.331,
+    "spearman_rho": 0.474,
+    "proxy_best_config": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "its_cost_rank": 13,
+    "cost_ratio_vs_best": 1.007
+   }
+  },
+  "E_fixed_rate": {
+   "n": 6561,
+   "BOPs": {
+    "kendall_tau": 0.744,
+    "spearman_rho": 0.904,
+    "proxy_best_config": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "its_cost_rank": 4,
+    "cost_ratio_vs_best": 1.001
+   },
+   "weight_bits": {
+    "kendall_tau": 0.339,
+    "spearman_rho": 0.485,
+    "proxy_best_config": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "its_cost_rank": 4,
+    "cost_ratio_vs_best": 1.001
+   }
+  }
+ },
+ "nominal": {
+  "min_LUT_at_target": {
+   "n": 6561,
+   "BOPs": {
+    "kendall_tau": 0.295,
+    "spearman_rho": 0.434,
+    "proxy_best_config": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "its_cost_rank": 905,
+    "cost_ratio_vs_best": 2.169
+   },
+   "weight_bits": {
+    "kendall_tau": 0.097,
+    "spearman_rho": 0.145,
+    "proxy_best_config": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "its_cost_rank": 905,
+    "cost_ratio_vs_best": 2.169
+   }
+  },
+  "E_continuous": {
+   "n": 6561,
+   "BOPs": {
+    "kendall_tau": 0.76,
+    "spearman_rho": 0.898,
+    "proxy_best_config": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "its_cost_rank": 13,
+    "cost_ratio_vs_best": 1.005
+   },
+   "weight_bits": {
+    "kendall_tau": 0.331,
+    "spearman_rho": 0.474,
+    "proxy_best_config": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "its_cost_rank": 13,
+    "cost_ratio_vs_best": 1.005
+   }
+  },
+  "E_fixed_rate": {
+   "n": 6561,
+   "BOPs": {
+    "kendall_tau": 0.746,
+    "spearman_rho": 0.906,
+    "proxy_best_config": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "its_cost_rank": 4,
+    "cost_ratio_vs_best": 1.0
+   },
+   "weight_bits": {
+    "kendall_tau": 0.341,
+    "spearman_rho": 0.487,
+    "proxy_best_config": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "its_cost_rank": 4,
+    "cost_ratio_vs_best": 1.0
+   }
+  }
+ },
+ "flat": {
+  "min_LUT_at_target": {
+   "n": 6561,
+   "BOPs": {
+    "kendall_tau": 0.295,
+    "spearman_rho": 0.434,
+    "proxy_best_config": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "its_cost_rank": 905,
+    "cost_ratio_vs_best": 2.169
+   },
+   "weight_bits": {
+    "kendall_tau": 0.097,
+    "spearman_rho": 0.145,
+    "proxy_best_config": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "its_cost_rank": 905,
+    "cost_ratio_vs_best": 2.169
+   }
+  },
+  "E_continuous": {
+   "n": 6561,
+   "BOPs": {
+    "kendall_tau": 0.759,
+    "spearman_rho": 0.897,
+    "proxy_best_config": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "its_cost_rank": 13,
+    "cost_ratio_vs_best": 1.001
+   },
+   "weight_bits": {
+    "kendall_tau": 0.332,
+    "spearman_rho": 0.474,
+    "proxy_best_config": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "its_cost_rank": 13,
+    "cost_ratio_vs_best": 1.001
+   }
+  },
+  "E_fixed_rate": {
+   "n": 6561,
+   "BOPs": {
+    "kendall_tau": 0.776,
+    "spearman_rho": 0.916,
+    "proxy_best_config": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "its_cost_rank": 4,
+    "cost_ratio_vs_best": 1.0
+   },
+   "weight_bits": {
+    "kendall_tau": 0.358,
+    "spearman_rho": 0.512,
+    "proxy_best_config": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "its_cost_rank": 4,
+    "cost_ratio_vs_best": 1.0
+   }
+  }
+ },
+ "z2_anchor": {
+  "min_LUT_at_target": {
+   "n": 6561,
+   "BOPs": {
+    "kendall_tau": 0.295,
+    "spearman_rho": 0.434,
+    "proxy_best_config": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "its_cost_rank": 905,
+    "cost_ratio_vs_best": 2.169
+   },
+   "weight_bits": {
+    "kendall_tau": 0.097,
+    "spearman_rho": 0.145,
+    "proxy_best_config": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "its_cost_rank": 905,
+    "cost_ratio_vs_best": 2.169
+   }
+  },
+  "E_continuous": {
+   "n": 6561,
+   "BOPs": {
+    "kendall_tau": 0.76,
+    "spearman_rho": 0.898,
+    "proxy_best_config": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "its_cost_rank": 13,
+    "cost_ratio_vs_best": 1.003
+   },
+   "weight_bits": {
+    "kendall_tau": 0.331,
+    "spearman_rho": 0.474,
+    "proxy_best_config": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "its_cost_rank": 13,
+    "cost_ratio_vs_best": 1.003
+   }
+  },
+  "E_fixed_rate": {
+   "n": 6561,
+   "BOPs": {
+    "kendall_tau": 0.741,
+    "spearman_rho": 0.902,
+    "proxy_best_config": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "its_cost_rank": 4,
+    "cost_ratio_vs_best": 1.0
+   },
+   "weight_bits": {
+    "kendall_tau": 0.339,
+    "spearman_rho": 0.485,
+    "proxy_best_config": [
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2
+    ],
+    "its_cost_rank": 4,
+    "cost_ratio_vs_best": 1.0
+   }
+  }
+ }
+}

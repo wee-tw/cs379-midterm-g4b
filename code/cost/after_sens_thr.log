@@ -1,0 +1,48 @@
+== dsp weight sensitivity lo margin 1
+w_DSP 0.25 nominal   A' 44444448 dsp4c  LUT   5294 DSP 212 U 0.379 E 0.2899 mJ | B1 +100.5%, B4 +0.0%, B2 +626.8%, B3 +0.0%
+w_DSP 0.25 z2_anchor A' 44444448 dsp4c  LUT   5294 DSP 212 U 0.379 E 0.2273 mJ | B1 +100.3%, B4 +0.0%, B2 +618.7%, B3 +0.0%
+w_DSP 0.5  nominal   A' 44444448 dsp4c  LUT   5294 DSP 212 U 0.620 E 0.3096 mJ | B1 +100.5%, B4 +0.0%, B2 +580.7%, B3 +0.0%
+w_DSP 0.5  z2_anchor A' 44444448 dsp4c  LUT   5294 DSP 212 U 0.620 E 0.2363 mJ | B1 +100.3%, B4 +0.0%, B2 +591.5%, B3 +0.0%
+w_DSP 1.0  nominal   A' 44444448 lut    LUT  42515 DSP  28 U 1.008 E 0.3414 mJ | B1 +93.7%, B4 +0.0%, B2 +517.6%, B3 +0.0%
+w_DSP 1.0  z2_anchor A' 44444448 lut    LUT  42515 DSP  28 U 1.008 E 0.2510 mJ | B1 +96.0%, B4 +0.0%, B2 +551.2%, B3 +0.0%
+w_DSP 2.0  nominal   A' 44444448 lut    LUT  42515 DSP  28 U 1.135 E 0.3518 mJ | B1 +93.9%, B4 +0.0%, B2 +500.0%, B3 +0.0%
+w_DSP 2.0  z2_anchor A' 44444448 lut    LUT  42515 DSP  28 U 1.135 E 0.2558 mJ | B1 +96.1%, B4 +0.0%, B2 +539.4%, B3 +0.0%
+== dsp weight sensitivity lo margin 2
+w_DSP 0.25 nominal   A' 44242448 dsp4c  LUT  23536 DSP 172 U 0.666 E 0.2350 mJ | B1 +23.4%, B4 +1.0%, B2 +208.5%, B3 +1.0%
+w_DSP 0.25 z2_anchor A' 44242448 dsp4c  LUT  23536 DSP 172 U 0.666 E 0.1786 mJ | B1 +27.3%, B4 +0.3%, B2 +210.8%, B3 +0.3%
+w_DSP 0.5  nominal   A' 44242448 dsp4c  LUT  23536 DSP 172 U 0.861 E 0.2470 mJ | B1 +25.3%, B4 +0.9%, B2 +193.6%, B3 +0.9%
+w_DSP 0.5  z2_anchor A' 44242448 dsp4c  LUT  23536 DSP 172 U 0.861 E 0.1841 mJ | B1 +28.4%, B4 +0.3%, B2 +201.5%, B3 +0.3%
+w_DSP 1.0  nominal   A' 44242448 dsp4c  LUT  23536 DSP 172 U 1.252 E 0.2711 mJ | B1 +25.9%, B4 +0.8%, B2 +167.6%, B3 +0.8%
+w_DSP 1.0  z2_anchor A' 44242448 dsp4c  LUT  23536 DSP 172 U 1.252 E 0.1951 mJ | B1 +28.7%, B4 +0.3%, B2 +184.6%, B3 +0.3%
+w_DSP 2.0  nominal   A' 44242448 lut    LUT  33676 DSP   1 U 0.663 E 0.3132 mJ | B1 +12.3%, B4 +2.5%, B2 +131.9%, B3 +2.5%
+w_DSP 2.0  z2_anchor A' 44242448 dsp4c  LUT  23536 DSP 172 U 2.034 E 0.2172 mJ | B1 +17.8%, B4 +0.2%, B2 +155.8%, B3 +0.2%
+== dsp weight sensitivity hi margin 1
+w_DSP 0.25 nominal   A' 44444448 dsp4c  LUT  22172 DSP 212 U 0.696 E 0.3159 mJ | B1 +97.4%, B4 +0.0%, B2 +567.0%, B3 +0.0%
+w_DSP 0.25 z2_anchor A' 44444448 dsp4c  LUT  22172 DSP 212 U 0.696 E 0.2392 mJ | B1 +98.5%, B4 +0.0%, B2 +583.0%, B3 +0.0%
+w_DSP 0.5  nominal   A' 44444448 dsp4c  LUT  22172 DSP 212 U 0.937 E 0.3356 mJ | B1 +94.0%, B4 +0.0%, B2 +527.9%, B3 +0.0%
+w_DSP 0.5  z2_anchor A' 44444448 dsp4c  LUT  22172 DSP 212 U 0.937 E 0.2483 mJ | B1 +96.2%, B4 +0.0%, B2 +558.1%, B3 +0.0%
+w_DSP 1.0  nominal   A' 44444448 lut    LUT  42515 DSP  28 U 1.008 E 0.3414 mJ | B1 +93.7%, B4 +0.0%, B2 +517.6%, B3 +0.0%
+w_DSP 1.0  z2_anchor A' 44444448 lut    LUT  42515 DSP  28 U 1.008 E 0.2510 mJ | B1 +96.0%, B4 +0.0%, B2 +551.2%, B3 +0.0%
+w_DSP 2.0  nominal   A' 44444448 lut    LUT  42515 DSP  28 U 1.135 E 0.3518 mJ | B1 +93.9%, B4 +0.0%, B2 +500.0%, B3 +0.0%
+w_DSP 2.0  z2_anchor A' 44444448 lut    LUT  42515 DSP  28 U 1.135 E 0.2558 mJ | B1 +96.1%, B4 +0.0%, B2 +539.4%, B3 +0.0%
+== dsp weight sensitivity hi margin 2
+w_DSP 0.25 nominal   A' 44242448 dsp4c  LUT  36379 DSP 172 U 0.907 E 0.2499 mJ | B1 +26.4%, B4 +0.9%, B2 +190.1%, B3 +0.9%
+w_DSP 0.25 z2_anchor A' 44242448 dsp4c  LUT  36379 DSP 172 U 0.907 E 0.1854 mJ | B1 +29.0%, B4 +0.3%, B2 +199.4%, B3 +0.3%
+w_DSP 0.5  nominal   A' 44242448 dsp4c  LUT  36379 DSP 172 U 1.102 E 0.2619 mJ | B1 +28.1%, B4 +0.8%, B2 +176.9%, B3 +0.8%
+w_DSP 0.5  z2_anchor A' 44242448 dsp4c  LUT  36379 DSP 172 U 1.102 E 0.1909 mJ | B1 +30.1%, B4 +0.3%, B2 +190.8%, B3 +0.3%
+w_DSP 1.0  nominal   A' 44242448 dsp4c  LUT  36379 DSP 172 U 1.493 E 0.2859 mJ | B1 +19.4%, B4 +0.7%, B2 +153.8%, B3 +0.7%
+w_DSP 1.0  z2_anchor A' 44242448 dsp4c  LUT  36379 DSP 172 U 1.493 E 0.2019 mJ | B1 +24.3%, B4 +0.3%, B2 +175.0%, B3 +0.3%
+w_DSP 2.0  nominal   A' 44242448 lut    LUT  33676 DSP   1 U 0.663 E 0.3132 mJ | B1 +12.3%, B4 +7.2%, B2 +131.9%, B3 +7.2%
+w_DSP 2.0  z2_anchor A' 44242448 dsp4c  LUT  36379 DSP 172 U 2.275 E 0.2240 mJ | B1 +14.2%, B4 +0.2%, B2 +148.0%, B3 +0.2%
+== families
+misjudged designs: {'n': 1208, 'median_II_misjudged': 12288.0, 'median_II_others': 98304.0, 'share_at_fastest_two_II_levels': 0.939, 'median_DSP_estimate_misjudged': 171.0, 'modes': {'dspc': 1208}}
+all (2/4/8)   6561 configs  99172 pts | misjudged 1.22% (top10 100.0%, top100 45.0%) tau 0.9717 | front 9/22 infeasible, ADRS 25.92% | m1: ok fails 0 regret 0.0%; m2: INFEASIBLE fails 54 regret 0.0%; m3: INFEASIBLE fails 78 regret 2.16%; m5
+{4, 8}         256 configs   1843 pts | misjudged 0.0% (top10 0.0%, top100 0.0%) tau 0.9541 | front 0/14 infeasible, ADRS 0.0% | m1: ok fails 0 regret 0.0%; m2: ok fails 0 regret 0.0%; m3: ok fails 0 regret 0.0%; m5: ok fails 0 regret 0.0%;
+{2, 4}         256 configs   7166 pts | misjudged 0.0% (top10 0.0%, top100 0.0%) tau 0.9803 | front 0/15 infeasible, ADRS 0.13% | m2: ok fails 0 regret 0.0%; m3: ok fails 0 regret 0.0%; m5: ok fails 0 regret 0.06%; m8: ok fails 0 regret 0.0
+{2, 8}         256 configs   3504 pts | misjudged 3.54% (top10 0.0%, top100 16.0%) tau 0.9837 | front 3/9 infeasible, ADRS 10.17% | m1: ok fails 0 regret 0.0%; m2: ok fails 0 regret 0.0%; m3: INFEASIBLE fails 10 regret 0.38%; m5: INFEASIBLE
+INT8 only        1 configs      4 pts | misjudged 0.0% (top10 0.0%, top100 0.0%) tau 1.0 | front 0/1 infeasible, ADRS 0.0% | m1: ok fails 0 regret 0.0%; m2: ok fails 0 regret 0.0%; m3: ok fails 0 regret 0.0%; m5: ok fails 0 regret 0.0%; m8:
+INT4 only        1 configs     17 pts | misjudged 0.0% (top10 0.0%, top100 0.0%) tau 0.9853 | front 0/1 infeasible, ADRS 0.0% | m2: ok fails 0 regret 0.0%; m3: ok fails 0 regret 0.0%; m5: ok fails 0 regret 0.0%; m8: ok fails 0 regret 0.0%
+== controls (misjudged rate and tau of the consistent FINN model)
+A (random 0.93% misjudged): {"1": {"P_optimum_infeasible": 0.025, "mean_failed_builds": 0.025, "max_failed_builds": 1, "mean_regret_pct": 0.0}, "2": {"P_optimum_infeasible": 0.005, "mean_failed_builds": 0.005, "max_failed_builds": 1, "mean_
+B (noise sigma 0.0128, tau 0.9717): {"1": {"mean_regret_pct": 0.175, "p90_regret_pct": 0.004}, "2": {"mean_regret_pct": 0.122, "p90_regret_pct": 0.004}, "3": {"mean_regret_pct": 0.387, "p90_regret_pct": 0.977}, "5": {"mean_regret_pct": 0.75
+== done 11:36:40
