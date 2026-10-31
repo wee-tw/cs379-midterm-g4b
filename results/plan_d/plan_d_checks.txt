@@ -1,0 +1,36 @@
+Plan D checks (code/plan_d/plan_d_checks.py); energy = nominal parameters, per frame
+
+729 configurations feasible: Plan D budget at 100 MHz 729; Plan D budget, clock classes 729; our budget (LUT 80 %), clock classes 729
+
+RQ2 on the 729 configurations (Plan D budget):
+  Spearman(BOPs, energy): fixed 100 MHz 0.880 | best clock class 0.842
+  pairs ranked the other way by BOPs (all 265356 pairs): fixed 100 MHz 14.7 % | clock classes 17.2 %
+  energy saved by the best clock class vs fixed 100 MHz: median 7.2 %, range 6.7 to 15.2 %
+
+FC precision (fixed 100 MHz, Plan D budget):
+  44444448 0.3566 mJ (dsp4c, 15204 LUT, 41 BRAM18, 203 DSP)
+  44444488 0.3566 mJ (dsp4c, 15174 LUT, 42 BRAM18, 203 DSP)
+
+88888888 with our settings (clock classes, LUT 80 %): 0.6235 mJ at 125 MHz, dsp4c, 12766 LUT, 196 BRAM18, 203 DSP
+
+Uniform configurations: model size (bits), BOPs (input activations; stem input 8-bit), BOPs (each layer's own group A)
+  88888888 618880 | 800104448 | 800104448
+  44444488 312000 | 207134720 | 200056832
+  22222288 158560 | 55353344 | 50044928
+
+BRAM ladder, s3c2 (36,864 weights), P = PE x SIMD: FINN v0.10.1 bram_estimation vs Plan D 5.4 (4)
+  W2: P=16 FINN 6 Plan D 5 | P=64 FINN 8 Plan D 8 | P=256 FINN 15 Plan D 15
+  W4: P=16 FINN 12 Plan D 10 | P=64 FINN 15 Plan D 15 | P=256 FINN 29 Plan D 29
+  W8: P=16 FINN 24 Plan D 20 | P=64 FINN 29 Plan D 29 | P=256 FINN 57 Plan D 57
+
+RTL threshold nodes by output width (results/audit_dataset/rtl_nodes.csv):
+  UINT2: 13 nodes | FINN 250 LUT, 0 BRAM18 | Vivado 391 LUT, 0 BRAM18
+  UINT4: 22 nodes | FINN 2388 LUT, 0 BRAM18 | Vivado 1629 LUT, 30 BRAM18
+  UINT8: 14 nodes | FINN 31440 LUT, 0 BRAM18 | Vivado 2373 LUT, 170 BRAM18
+  example, 64 channels, UINT8 (Thresholding_rtl_124): FINN 5100.0 LUT, 0.0 BRAM18 | Vivado 123.0 LUT, 24.0 BRAM18
+
+Sensitivity, W4A4 base 83.91 %, 3 seeds: mean change (max - min over seeds)
+  g1: w2a4 -1.56 (0.54) | w8a4 +0.16 (0.15) | w4a8 +0.30 (0.04) | w4a2 -1.67 (0.42)
+  g2: w2a4 -0.61 (0.83) | w8a4 +0.21 (0.06) | w4a8 -0.03 (0.37) | w4a2 -1.20 (0.41)
+  g3: w2a4 -0.55 (0.41) | w8a4 +0.12 (0.70) | w4a8 +0.14 (0.46) | w4a2 -1.03 (0.55)
+  g4: w2a4 -0.64 (0.49) | w8a4 +0.41 (0.69) | w4a8 +0.77 (0.74) | w4a2 -3.05 (0.29)

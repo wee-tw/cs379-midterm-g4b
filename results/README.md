@@ -13,6 +13,7 @@
 | `checkpoints/` | 訓練好的模型權重（.pt，共 80 MB），依實驗分資料夾。只在本機，不上 GitHub | — | — |
 | [logs_v21/](logs_v21/) | 產生 v2.1 結果的完整執行紀錄 | — | — |
 | [timing/](timing/) | 時序：RTL 節點的合成後時序（合成時有給時脈和沒給兩種）、UltraScale+ 的 DSP 數、寬度轉換器與殘差 FIFO 的估算、HLS 時序摘要 | 工具驗證 | C1、C3 |
+| [plan_d/](plan_d/) | 給組員 Plan D 的交件和追溯檔：`plan_d_checks.txt`（回報 `docs/handoff5_8_reply.md` 裡從本機成本表算出的數字）、`rq2_729_energies.csv`（729 種的 BOPs 和兩種時脈下的能耗）；之後的 `hw_729.csv` 也放這裡。程式在 `code/plan_d/` | 估計＋工具驗證 | C1、C3 |
 
 產生這些結果的輸入（成本表、搜尋點、準確率模型）在 [`../code/cost/`](../code/cost/)，實際執行的腳本在 [`../code/pipelines_v21/`](../code/pipelines_v21/)。
 

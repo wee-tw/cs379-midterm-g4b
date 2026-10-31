@@ -14,6 +14,7 @@
 | 6 | [implementation_notes.md](implementation_notes.md) | 實驗日誌：每個實驗的做法、指令、結果和踩過的坑。第 12 節是 10/30–31 的實驗（12.35 起是時序） | 很長，用搜尋 |
 
 其他：
+- [handoff5_8_reply.md](handoff5_8_reply.md)：回覆組員的交接⑤、⑧（10/31）。已完成的實驗、`hw_729.csv` 等交件的各項取捨和原因、做與不做、對論文的建議、時程。
 - [finn_issues/](finn_issues/)：準備回報給 FINN 官方的 bug 草稿（DSP 估計、時序、門檻記憶體、寬度轉換器估計），還沒發布，要先經過你核准。
 - [literature/](literature/)：文獻筆記（`literature_notes.md`）和文獻地圖（`literature_landscape.md`）。論文 PDF 在專案根目錄的 `papers/`，只在本機。
 

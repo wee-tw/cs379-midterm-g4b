@@ -24,6 +24,7 @@
 | `make_figures.py`、`summarize_runs.py` | 圖表和結果表 |
 | `board/measure_power.py` | 給期末上板用：在 PYNQ-Z2 上產生待機、連續、固定速率的計時量測區間 |
 | `board/run_session.py`、`board/analyze_timing.py` | 上板量測：`--plan timing` 不需要功率計，量吞吐量、單張延遲、停時脈和各固定幀率策略跟不跟得上，再用 `analyze_timing.py` 對照 FINN 的週期估計 |
+| `plan_d/plan_d_checks.py` | 組員 Plan D 的追溯檔：用本機的最終成本點算 729 種的 BOPs 與能耗、排名分析、FC 位元比較、BRAM 階梯、閾值分組、敏感度，輸出到 `../results/plan_d/` |
 
 ### 完整流程（10/29 實際跑過的順序）
 1. 訓練：`train_cifar.py --model finnfloat`（浮點起點）→ `run_queue.py` 跑 QAT。recipe 用 `lowbit`，再加 `--teacher` 做 KD。
