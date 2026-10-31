@@ -30,8 +30,11 @@ CASES = [(144, 16, 4, 72, 8, 4), (144, 16, 2, 144, 4, 4), (144, 16, 4, 72, 4, 4)
          (27, 16, 2, 27, 8, 8), (144, 16, 1, 144, 8, 4)]
 
 
-def core(w, a):
-    return "mvu_4sx4u_dsp48e1" if (w <= 4 and a <= 4) else "mvu_8sx8u_dsp48"
+def core(w, a, version=1):
+    """MVAU_rtl._resolve_impl_style: the 4-bit core for the part's DSP48 version, else the
+    8-bit core, which v0.10.1 instantiates without VERSION (so DSP48E1 cells, which Vivado
+    retargets one-to-one on UltraScale+)."""
+    return f"mvu_4sx4u_dsp48e{version}" if (w <= 4 and a <= 4) else "mvu_8sx8u_dsp48"
 
 
 def elaborate(files, params):
@@ -74,27 +77,32 @@ def main():
     p.add_argument("rtl_dir")
     p.add_argument("--dev", action="store_true")
     p.add_argument("--json", default=None)
+    p.add_argument("--dsp-version", type=int, default=1, choices=[1, 2],
+                   help="1 = DSP48E1 (Zynq-7000), 2 = DSP48E2 (UltraScale+, e.g. AUP-ZU3)")
     args = p.parse_args()
     files = sorted(glob.glob(os.path.join(args.rtl_dir, "*.sv")))
     rows = []
-    print("| MW | MH | PE | SIMD | W | A | core | DSP48E1 instantiated | FINN estimate ceil(PE/4)*SIMD "
-          "| LUT6_2 instantiated | other cells | errors |")
+    v = args.dsp_version
+    print(f"| MW | MH | PE | SIMD | W | A | core | DSP48 cells instantiated (E{v} part) | FINN estimate "
+          "ceil(PE/4)*SIMD | LUT6_2 instantiated | other cells | errors |")
     print("|---|---|---|---|---|---|---|---|---|---|---|---|")
     for mw, mh, pe, simd, w, a in CASES:
-        sel = {"VERSION": 1} if args.dev else {"COMPUTE_CORE": f'"{core(w, a)}"'}
+        sel = {"VERSION": v} if args.dev else {"COMPUTE_CORE": f'"{core(w, a, v)}"'}
         params = {"IS_MVU": 1, **sel, "MW": mw, "MH": mh, "PE": pe,
                   "SIMD": simd, "ACTIVATION_WIDTH": a, "WEIGHT_WIDTH": w,
                   "ACCU_WIDTH": w + a + math.ceil(math.log2(mw)), "NARROW_WEIGHTS": 1,
                   "SIGNED_ACTIVATIONS": 0, "PUMPED_COMPUTE": 0, "FORCE_BEHAVIORAL": 0}
         counts, errors = elaborate(files, params)
         est = math.ceil(pe / 4) * simd
-        other = {k: v for k, v in counts.items() if k not in ("DSP48E1", "LUT6_2")}
+        dsps = counts.get("DSP48E1", 0) + counts.get("DSP48E2", 0)
+        other = {k: n for k, n in counts.items() if k not in ("DSP48E1", "DSP48E2", "LUT6_2")}
         rows.append({"MW": mw, "MH": mh, "PE": pe, "SIMD": simd, "W": w, "A": a,
-                     "core": core(w, a), "counts": counts, "finn_dsp_estimate": est,
+                     "core": "mvu" if args.dev else core(w, a, v), "dsp_version": v,
+                     "counts": counts, "finn_dsp_estimate": est,
                      "errors": [str(e.code) for e in errors]})
-        print(f"| {mw} | {mh} | {pe} | {simd} | {w} | {a} | {core(w, a)} | "
-              f"{counts.get('DSP48E1', 0)} | {est} | {counts.get('LUT6_2', 0)} | {other} | "
-              f"{len(errors)} |")
+        print(f"| {mw} | {mh} | {pe} | {simd} | {w} | {a} | {rows[-1]['core']} | "
+              f"{dsps} {sorted(k for k in counts if k.startswith('DSP'))} | {est} | "
+              f"{counts.get('LUT6_2', 0)} | {other} | {len(errors)} |")
     if args.json:
         json.dump(rows, open(args.json, "w"), indent=1)
 

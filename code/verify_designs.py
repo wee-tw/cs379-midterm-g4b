@@ -106,6 +106,10 @@ def cmd_generate(args):
         m = m.transform(SetFolding(T, mvau_wwidth_max=wwidth, two_pass_relaxation=False))
         if mode in ct.DSP_AWARE:
             m = ct.dsp_aware_refold(m, mode in ct.DSP_CORRECTED)
+        if args.ts_refold and mode != "lut_finn":   # as cost_tables.py --ts-refold built the table
+            if args.ts_hls_simd:
+                os.environ["COST_TS_HLS_SIMD"] = str(args.ts_hls_simd)
+            m = ct.timing_safe_refold(m, args.ts_rtl_simd, mode in ct.DSP_CORRECTED)
         m = m.transform(MinimizeWeightBitWidth()).transform(MinimizeAccumulatorWidth())
         m = m.transform(InferDataTypes())
         groups = ct.assign_groups(m)
@@ -176,15 +180,31 @@ def run_vivado(c, args):
     else:
         srcs = a.case_sources(d, c["op"], args.mvu_rtl)
         top = a.top_module(d, c["op"])
+    timed = getattr(args, "timing", False)
+    if timed:   # the clock is known to synthesis (timing-driven, as in FINN's own build)
+        open(os.path.join(d, "clock.xdc"), "w").write(
+            f"create_clock -period {1e3 / c['f_MHz']:.3f} -name ap_clk [get_ports ap_clk]\n")
     with open(os.path.join(d, "vivado_synth.tcl"), "w") as f:
         for s in srcs:
             f.write(f"read_verilog {'-sv ' if s.endswith('.sv') else ''}{{{s}}}\n")
+        if timed:
+            f.write("read_xdc -mode out_of_context clock.xdc\n")
         f.write(f"synth_design -top {top} -part {PART} -mode out_of_context\n")
         f.write("report_utilization -file vivado_util.rpt\n")
-        f.write(vivado_power_tcl(c["f_MHz"]))
+        if timed:
+            f.write("report_timing_summary -file vivado_timing.rpt\nreport_power -file vivado_power.rpt\n")
+        else:
+            f.write(vivado_power_tcl(c["f_MHz"]))
     r = subprocess.run([args.vivado, "-mode", "batch", "-nojournal", "-log", "vivado.log",
                         "-source", "vivado_synth.tcl"], cwd=d, capture_output=True, text=True)
-    return parse_reports(d, src, r.returncode, "vivado_util.rpt")
+    v = parse_reports(d, src, r.returncode, "vivado_util.rpt")
+    if timed:
+        from rtl_timing import wns
+        w = wns(os.path.join(d, "vivado_timing.rpt"))
+        v["period_ns"] = None if w is None else round(1e3 / c["f_MHz"] - w, 3)
+        if os.path.exists(os.path.join(d, "vivado_timing.rpt")):
+            shutil.copy(os.path.join(d, "vivado_timing.rpt"), src)
+    return v
 
 
 def run_hls(c, args):
@@ -203,6 +223,15 @@ def run_hls(c, args):
     v["power_W"] = parse_power(open(p).read()) if os.path.exists(p) else None
     if os.path.exists(p):
         shutil.copy(p, os.path.abspath(os.path.join(args.out, c["case"])))
+    src = os.path.abspath(os.path.join(args.out, c["case"]))
+    for f in glob.glob(os.path.join(d, "project_*", "sol1", "**", "*_timing_synth.rpt"), recursive=True):
+        shutil.copy(f, src)   # keep Vivado's own timing report with the case (the workdir is reused)
+    e = os.path.join(src, "export_syn.rpt")   # Vitis HLS: period = target - WNS of Vivado's synthesis
+    if os.path.exists(e):
+        t = open(e, encoding="utf-8", errors="ignore").read()
+        t = t[t.find("RTL Synthesis Timing Summary"):][:700]
+        m = re.search(r"Post-(?:Route|Synthesis)\s*\|\s*([\d.]+)", t)
+        v["period_ns"] = float(m.group(1)) if m else None
     return v
 
 
@@ -241,6 +270,8 @@ def cmd_run(args):
     done_path = os.path.join(args.out, "results.json")
     done = json.load(open(done_path)) if os.path.exists(done_path) else {}
     todo = [c for c in cases if c["case"] not in done or done[c["case"]].get("returncode") != 0]
+    if args.only:
+        todo = [c for c in todo if any(s in c["case"] for s in args.only)]
     first, dup = {}, {}
     for c in todo:
         k = code_hash(args, c)
@@ -261,7 +292,7 @@ def cmd_run(args):
                     done[k] = dict(v, same_as=src)
             json.dump(done, open(done_path, "w"), indent=1)
             print(f"{c['case']:48s} rc={v.get('returncode')} LUT {v.get('LUT')} BRAM18 {v.get('BRAM18')} "
-                  f"DSP {v.get('DSP')} P {v.get('power_W')} | pred LUT {c['predicted']['LUT']:.0f} "
+                  f"DSP {v.get('DSP')} P {v.get('power_W')} T {v.get('period_ns')} ns | pred LUT {c['predicted']['LUT']:.0f} "
                   f"BRAM18 {c['predicted']['BRAM_18K']:.0f} DSP {c['predicted']['DSP']:.0f}", flush=True)
 
 
@@ -276,9 +307,12 @@ def cmd_report(args):
         syn = {k: sum(res[c["case"]].get(k) or 0 for c in ok) for k in ("LUT", "BRAM18", "DSP")}
         missing = [c["case"] for c in cs if c not in ok]
         pw = sum(res[c["case"]].get("power_W") or 0 for c in ok)
+        per = [(res[c["case"]]["period_ns"], c["case"]) for c in ok if res[c["case"]].get("period_ns")]
+        worst = max(per) if per else None
         print(f"== {tag(d)} ({d[4]}): {len(ok)}/{len(cs)} synthesized | LUT pred {pred['LUT']:.0f} synth "
               f"{syn['LUT']:.0f} | BRAM18 pred {pred['BRAM_18K']:.0f} synth {syn['BRAM18']:.0f} | DSP pred "
               f"{pred['DSP']:.0f} synth {syn['DSP']:.0f} | dynamic power {pw:.3f} W at {d[3]:.0f} MHz"
+              + (f" | slowest node {worst[0]:.3f} ns ({worst[1]}, {len(per)} timed)" if worst else "")
               + (f" | not synthesized: {missing}" if missing else ""))
         ops = sorted({c["op"] for c in cs})
         for op in ops:
@@ -303,6 +337,14 @@ def main():
     p.add_argument("--jobs", type=int, default=3)
     p.add_argument("--workdir", default="D:/vw")
     p.add_argument("--designs-json", help="design list replacing DESIGNS (see cmd_generate)")
+    p.add_argument("--ts-refold", action="store_true",
+                   help="generate: timing-safe refold, as cost_tables.py --ts-refold built the table")
+    p.add_argument("--ts-rtl-simd", type=int, default=None, help="generate: with --ts-refold")
+    p.add_argument("--ts-hls-simd", type=int, default=None,
+                   help="generate: with --ts-refold, the folded MVAU_hls cap (cost_tables.py --ts-hls-simd)")
+    p.add_argument("--timing", action="store_true",
+                   help="run: give RTL synthesis the clock and report its timing")
+    p.add_argument("--only", nargs="+", default=None, help="run: only cases whose name contains one of these")
     args = p.parse_args()
     {"generate": cmd_generate, "run": cmd_run, "report": cmd_report}[args.cmd](args)
 

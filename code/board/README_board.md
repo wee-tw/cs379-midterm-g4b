@@ -2,6 +2,10 @@
 
 > **10/30 21:45 更新：沒有功率計，改成只量時間。** 板子交給朋友跑：`python run_session.py --host xilinx@192.168.2.99 --push --plan quick`，再 `python run_session.py --host xilinx@192.168.2.99 --plan timing`（約 20 分鐘，不需要功率計）。分析：`python analyze_timing.py sessions/<時間>`。交接說明在 `handovers/board_handover_1030.zip`（`HANDOVER_zh.html`）。下面的功率量測計畫（`--plan h2prime`）保留給之後有功率計時用。
 
+> **10/31 更新：板子是 PYNQ v2.5 也可以跑。** 組員的 SD 卡是 v2.5（Python 3.6、numpy 1.13）。`board_agent.py` 原本用 numpy 1.17 才有的 `default_rng`，在 v2.5 上 `load` 就會失敗，已改掉；`run_session.py` 的遠端指令改成兩種映像檔都適用。用 v2.5 原始碼加上模擬底層測過（`compat_v25/`，`implementation_notes.md` 13.2），見最後的「PYNQ 版本」。給組員的修正包在 `handovers/board_patch_1031/`。
+
+> **10/31 加量：** `--plan timing` 的時脈加上論文能耗模型用的 PYNQ 時脈等級 90.9、111.1、125 MHz（`1000/11`、`1000/9`、`1000/8`），在板子上確認每張圖的週期數不隨時脈改變，也就是這些時脈真的設得出來。量測窗從 12 分鐘變成約 17 分鐘（`--no-throttle` 約 15 分鐘）。
+
 ## 這次要回答什麼
 1. **H2′：** 待機時把 PL 時脈停掉，或降到最低頻率，實際能省多少？固定速率下，race-to-halt（B5，跑完就停時脈）是不是真的比「時脈一直跑」省？延遲修正後的模型還預測「剛好夠用的時脈（jit）連續串流」比 B5 更省，這次一起量（`implementation_notes.md` 12.18）。
 2. **功耗模型參數：** 用實測值擬合 P0、k_f、k_fU、k_act，取代文獻參數。
@@ -10,7 +14,7 @@
 > **注意：** 這次量的是 finn-examples 現成的 5 個 bitstream：CNV W1A1/W1A2/W2A2、TFC-W1A1、KWS MLP W3A3，**不是 ResNet-8**。ResNet-8 的 bitstream 要有 Vivado 才能 build。論文裡要寫成「平台實測（finn-examples）」。
 
 ## 需要準備的東西
-- **PYNQ-Z2**，加上燒好 **PYNQ v3.0.1** 的 microSD。
+- **PYNQ-Z2**，加上燒好 **PYNQ v3.0.1 或 v2.5** 的 microSD（兩者的差別見最後的「PYNQ 版本」）。
   - 沒有的話：到 pynq.io 下載 PYNQ-Z2 v3.0.1 映像檔，用 balenaEtcher 燒錄。
 - **網路線：** 板子直接接電腦，或接到路由器。
 - **功率計：** 串在 5 V 供電上，整個量測期間固定用同一種供電方式。
@@ -113,3 +117,22 @@
   - `finn_driver/`：FINN v0.10.1 的 driver 檔，來源和授權見其中的 README。
   - `bitfiles/Pynq-Z1/`：finn-examples v0.0.7a，md5 已核對。
   - `data/cifar10_test_1000.npz`：測試資料。
+
+## PYNQ 版本（10/31）
+| | v3.0.1（原本的假設） | v2.5（組員的板子） |
+|---|---|---|
+| 系統 | Ubuntu 22.04、kernel 5.15 | Ubuntu 18.04、kernel 4.19 |
+| pynq 在哪裡 | venv（`/etc/profile.d/pynq_venv.sh`） | 系統的 Python 3.6.5，要 root |
+| numpy | 1.21 以上（Python 3.10 需要） | 1.13.3（沒有 `default_rng`，1.17 才有） |
+| 連續記憶體 | XRT | xlnk（`/dev/xlnk`） |
+| 另外要有 | — | `pl_server` 服務在跑（開機自動啟動） |
+
+- 兩者的 `pynq.allocate`、`Overlay`、`MMIO`、`Clocks` 用法一樣；能設定的 PL 時脈也一樣（兩版都從 1000 MHz 的 IO PLL 取最接近的除頻乘積）。
+- v2.5 的版本檢查（取代說明書步驟 1 的指令，要先做完步驟 3、4）：
+  ```
+  ssh -i ~/.ssh/id_ed25519_pynq -o BatchMode=yes xilinx@192.168.2.99 "systemctl is-active pl_server; sudo -n python3 -c 'import sys, numpy, pynq; print(sys.version.split()[0], numpy.__version__, pynq.__version__)'"
+  ```
+  正常印出 `active` 和 `3.6.5 1.13.3 2.5`。
+- 每次 `info` 都會記錄板子的 Python、numpy、pynq、kernel 和 os 版本（`responses.jsonl`），論文的平台描述用它。
+- 量到的週期數（II、L）只取決於 bitstream 和 PL 時脈；PYNQ 版本只影響每次呼叫的軟體開銷（`t = a + c/f` 的截距 a），論文不用它。
+

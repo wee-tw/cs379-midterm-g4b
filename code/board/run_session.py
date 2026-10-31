@@ -6,12 +6,13 @@
   python run_session.py --host xilinx@192.168.2.99 --plan timing  # no power meter
 
 Plans: quick (setup check), h2prime (power session, needs a meter log or --meter manual),
-timing (no meter: throughput and single-image latency at each clock, whether race-to-halt,
+timing (no meter: throughput and single-image latency at each clock, including the PYNQ clock
+classes 90.9 / 111.1 / 125 MHz of the paper's energy model, whether race-to-halt,
 the slowest-divider policy and the just-in-time clocks keep up with the rate, and the policy-map
 clocks; analysed by analyze_timing.py).
 
 Needs key-based ssh login and passwordless sudo on the board (set up once by the user;
-see README_board.md). Every window is recorded with the PC timestamps around the command
+see README_board.md). Works on the PYNQ v3.0.1 and v2.5 images (board_agent.py, compat_v25/). Every window is recorded with the PC timestamps around the command
 (pc_t0/pc_t1) and the board's own t0/t1, so a power-meter log kept on the PC clock, or
 readings typed in with --meter manual, can be matched by analyze_session.py.
 """
@@ -181,10 +182,13 @@ def plan_steps(name, models, clocks, rates, secs, reps, npz, throttle=True):
 class Agent:
     def __init__(self, args):
         if args.mock:
-            cmd = [sys.executable, "-u", os.path.join(HERE, "board_agent.py"), "--mock"]
+            cmd = [args.mock_python or sys.executable, "-u", os.path.join(HERE, "board_agent.py"),
+                   "--mock"]
         else:
-            remote = ("sudo -n bash -lc 'source /etc/profile.d/pynq_venv.sh; "
-                      "source /etc/profile.d/xrt_setup.sh; "
+            # PYNQ v3.0.1 runs pynq in a venv (the two profile scripts); PYNQ v2.5 has neither
+            # script and runs pynq in the system Python 3.6, as root
+            remote = ("sudo -n bash -lc 'for f in /etc/profile.d/pynq_venv.sh "
+                      "/etc/profile.d/xrt_setup.sh; do [ -f $f ] && source $f; done; "
                       f"cd {REMOTE_DIR} && python3 -u board_agent.py'")
             cmd = ["ssh", "-i", args.key] + SSH_OPTS + [args.host, remote]
         self.p = subprocess.Popen(cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE,
@@ -224,6 +228,9 @@ def main():
     p = argparse.ArgumentParser()
     p.add_argument("--host", default="xilinx@192.168.2.99")
     p.add_argument("--mock", action="store_true")
+    p.add_argument("--mock-python", default=None,
+                   help="interpreter for the --mock agent, e.g. a Python 3.6 + numpy 1.13 one to "
+                        "match the PYNQ v2.5 image (default: this Python)")
     p.add_argument("--key", default=KEY, help="ssh private key (default ~/.ssh/id_ed25519_pynq)")
     p.add_argument("--push", action="store_true", help="copy agent/driver/bitfiles/data first")
     p.add_argument("--bitdir", default=os.path.join(HERE, "bitfiles", "Pynq-Z1"))
@@ -232,7 +239,9 @@ def main():
     p.add_argument("--models", nargs="+",
                    default=["cnv-w1a1", "cnv-w1a2", "cnv-w2a2", "tfc-w1a1", "kwsmlp-w3a3"],
                    help="TFC/KWS widen the utilisation range for the k_f / k_fU fit")
-    p.add_argument("--clocks", type=float, nargs="+", default=[25.0, 50.0, 100.0, 200.0])
+    p.add_argument("--clocks", type=float, nargs="+", default=None,
+                   help="PL clocks of the sweep (MHz; default 25 50 100 200, and the timing plan adds "
+                        "the clock classes of the paper's model, 1000/11, 1000/9 and 1000/8 MHz)")
     p.add_argument("--rates", type=float, nargs="+", default=[100.0, 1000.0])
     p.add_argument("--seconds", type=float, default=None, help="window length (12 s; timing: 6 s)")
     p.add_argument("--reps", type=int, default=None, help="repeats per state (3; timing: 2)")
@@ -242,6 +251,10 @@ def main():
                    help="manual: type the meter's average power after each window")
     p.add_argument("--out", default=os.path.join(HERE, "sessions"))
     args = p.parse_args()
+    if args.clocks is None:   # timing: the cycles per image at 90.9 / 111.1 / 125 MHz check on the
+        # board that the PYNQ clock classes of the energy model are real
+        args.clocks = ([25.0, 50.0, 90.909, 100.0, 111.111, 125.0, 200.0] if args.plan == "timing"
+                       else [25.0, 50.0, 100.0, 200.0])
     if args.seconds is None:
         args.seconds = 6.0 if args.plan == "timing" else 12.0
     if args.reps is None:

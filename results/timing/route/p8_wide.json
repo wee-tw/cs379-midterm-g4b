@@ -1,0 +1,42 @@
+[
+ {
+  "case": "MVAU_rtl_037",
+  "kind": "rtl",
+  "returncode": 0,
+  "synth_ns": 9.655,
+  "route_ns": 9.849,
+  "route_over_synth": 0.0201
+ },
+ {
+  "case": "MVAU_rtl_137",
+  "kind": "rtl",
+  "returncode": 0,
+  "synth_ns": 10.183,
+  "route_ns": 10.901,
+  "route_over_synth": 0.0705
+ },
+ {
+  "case": "MVAU_rtl_146",
+  "kind": "rtl",
+  "returncode": 0,
+  "synth_ns": 10.56,
+  "route_ns": 12.572,
+  "route_over_synth": 0.1905
+ },
+ {
+  "case": "MVAU_rtl_047",
+  "kind": "rtl",
+  "returncode": 0,
+  "synth_ns": 11.852,
+  "route_ns": 13.669,
+  "route_over_synth": 0.1533
+ },
+ {
+  "case": "MVAU_rtl_054",
+  "kind": "rtl",
+  "returncode": 1,
+  "synth_ns": 12.589,
+  "route_ns": null,
+  "route_over_synth": null
+ }
+]

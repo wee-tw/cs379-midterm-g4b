@@ -1,0 +1,58 @@
+[
+ {
+  "case": "d0_02_MVAU_rtl_0",
+  "kind": "rtl",
+  "returncode": 0,
+  "synth_ns": 8.384,
+  "route_ns": 9.667,
+  "route_over_synth": 0.153
+ },
+ {
+  "case": "d0_25_MVAU_rtl_5",
+  "kind": "rtl",
+  "returncode": 0,
+  "synth_ns": 8.29,
+  "route_ns": 9.977,
+  "route_over_synth": 0.2035
+ },
+ {
+  "case": "d0_07_MVAU_rtl_1",
+  "kind": "rtl",
+  "returncode": 0,
+  "synth_ns": 8.193,
+  "route_ns": 9.76,
+  "route_over_synth": 0.1913
+ },
+ {
+  "case": "d1_07_MVAU_rtl_1",
+  "kind": "rtl",
+  "returncode": 0,
+  "synth_ns": 8.193,
+  "route_ns": 10.129,
+  "route_over_synth": 0.2363
+ },
+ {
+  "case": "d0_18_ConvolutionInputGenerator_rtl_3",
+  "kind": "rtl",
+  "returncode": 0,
+  "synth_ns": 7.208,
+  "route_ns": 7.281,
+  "route_over_synth": 0.0101
+ },
+ {
+  "case": "d1_20_MVAU_hls_1",
+  "kind": "hls",
+  "returncode": 0,
+  "synth_ns": 7.495,
+  "route_ns": 7.422,
+  "route_over_synth": -0.0097
+ },
+ {
+  "case": "d1_19_MVAU_hls_0",
+  "kind": "hls",
+  "returncode": 0,
+  "synth_ns": 7.139,
+  "route_ns": 7.963,
+  "route_over_synth": 0.1154
+ }
+]

@@ -1,0 +1,906 @@
+[
+ {
+  "case": "d0_00_FMPadding_rtl_0",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "FMPadding_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 95.71428571428571,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d0_01_ConvolutionInputGenerator_rtl_0",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "ConvolutionInputGenerator_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 256.56764793339283,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "distributed"
+  }
+ },
+ {
+  "case": "d0_02_MVAU_hls_0",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "MVAU_hls",
+  "kind": "hls",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 1857.2731136063358,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "resType": "lut",
+   "ram_style": "distributed",
+   "ram_style_thresholds": "distributed"
+  }
+ },
+ {
+  "case": "d0_02_MVAU_hls_0_wstrm",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "MVAU_hls_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "distributed"
+  }
+ },
+ {
+  "case": "d0_03_Thresholding_rtl_0",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "Thresholding_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 96.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "depth_trigger_bram": "0"
+  }
+ },
+ {
+  "case": "d0_04_DuplicateStreams_hls_0",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "DuplicateStreams_hls",
+  "kind": "hls",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 55.55555555555556,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d0_05_FMPadding_rtl_1",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "FMPadding_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 95.71428571428571,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d0_06_ConvolutionInputGenerator_rtl_1",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "ConvolutionInputGenerator_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 315.54871642382795,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "distributed"
+  }
+ },
+ {
+  "case": "d0_07_MVAU_hls_1",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "MVAU_hls",
+  "kind": "hls",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 4449.50009349467,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "resType": "lut",
+   "ram_style": "distributed",
+   "ram_style_thresholds": "distributed"
+  }
+ },
+ {
+  "case": "d0_07_MVAU_hls_1_wstrm",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "MVAU_hls_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "distributed"
+  }
+ },
+ {
+  "case": "d0_08_Thresholding_rtl_1",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "Thresholding_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 80.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "depth_trigger_bram": "0"
+  }
+ },
+ {
+  "case": "d0_09_FMPadding_rtl_2",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "FMPadding_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 95.71428571428571,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d0_10_ConvolutionInputGenerator_rtl_2",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "ConvolutionInputGenerator_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 315.54871642382795,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "distributed"
+  }
+ },
+ {
+  "case": "d0_11_MVAU_hls_2",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "MVAU_hls",
+  "kind": "hls",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 4449.50009349467,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "resType": "lut",
+   "ram_style": "distributed",
+   "ram_style_thresholds": "distributed"
+  }
+ },
+ {
+  "case": "d0_11_MVAU_hls_2_wstrm",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "MVAU_hls_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "distributed"
+  }
+ },
+ {
+  "case": "d0_12_Thresholding_rtl_2",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "Thresholding_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 80.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "depth_trigger_bram": "0"
+  }
+ },
+ {
+  "case": "d0_13_AddStreams_hls_0",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "AddStreams_hls",
+  "kind": "hls",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 56.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d0_14_Thresholding_rtl_3",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "Thresholding_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 40.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "depth_trigger_bram": "0"
+  }
+ },
+ {
+  "case": "d0_15_DuplicateStreams_hls_1",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "DuplicateStreams_hls",
+  "kind": "hls",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 55.55555555555556,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d0_16_FMPadding_rtl_3",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "FMPadding_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 95.71428571428571,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d0_17_DownSampler_hls_0",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "DownSampler_hls",
+  "kind": "hls",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 159.8181818181818,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d0_18_ConvolutionInputGenerator_rtl_3",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "ConvolutionInputGenerator_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 221.17900683913174,
+   "BRAM_18K": 1.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "block"
+  }
+ },
+ {
+  "case": "d0_19_MVAU_hls_3",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "MVAU_hls",
+  "kind": "hls",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 383.02025221180315,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "resType": "lut",
+   "ram_style": "distributed",
+   "ram_style_thresholds": "distributed"
+  }
+ },
+ {
+  "case": "d0_19_MVAU_hls_3_wstrm",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "MVAU_hls_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "distributed"
+  }
+ },
+ {
+  "case": "d0_20_MVAU_hls_4",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "MVAU_hls",
+  "kind": "hls",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 2295.985134395846,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "resType": "lut",
+   "ram_style": "distributed",
+   "ram_style_thresholds": "distributed"
+  }
+ },
+ {
+  "case": "d0_20_MVAU_hls_4_wstrm",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "MVAU_hls_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "distributed"
+  }
+ },
+ {
+  "case": "d0_21_Thresholding_rtl_4",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "Thresholding_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 64.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "depth_trigger_bram": "0"
+  }
+ },
+ {
+  "case": "d0_22_Thresholding_rtl_5",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "Thresholding_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 80.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "depth_trigger_bram": "0"
+  }
+ },
+ {
+  "case": "d0_23_FMPadding_rtl_4",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "FMPadding_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 95.71428571428571,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d0_24_ConvolutionInputGenerator_rtl_4",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "ConvolutionInputGenerator_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 221.17900683913174,
+   "BRAM_18K": 1.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "block"
+  }
+ },
+ {
+  "case": "d0_25_MVAU_hls_5",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "MVAU_hls",
+  "kind": "hls",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 4447.594137972303,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "resType": "lut",
+   "ram_style": "distributed",
+   "ram_style_thresholds": "distributed"
+  }
+ },
+ {
+  "case": "d0_25_MVAU_hls_5_wstrm",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "MVAU_hls_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "distributed"
+  }
+ },
+ {
+  "case": "d0_26_Thresholding_rtl_6",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "Thresholding_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 88.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "depth_trigger_bram": "0"
+  }
+ },
+ {
+  "case": "d0_27_AddStreams_hls_1",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "AddStreams_hls",
+  "kind": "hls",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 56.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d0_28_Thresholding_rtl_7",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "Thresholding_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 40.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "depth_trigger_bram": "0"
+  }
+ },
+ {
+  "case": "d0_29_DuplicateStreams_hls_2",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "DuplicateStreams_hls",
+  "kind": "hls",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 55.55555555555556,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d0_30_FMPadding_rtl_5",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "FMPadding_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 95.71428571428571,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d0_31_DownSampler_hls_1",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "DownSampler_hls",
+  "kind": "hls",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 159.8181818181818,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d0_32_ConvolutionInputGenerator_rtl_5",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "ConvolutionInputGenerator_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 221.17900683913174,
+   "BRAM_18K": 1.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "block"
+  }
+ },
+ {
+  "case": "d0_33_MVAU_rtl_0",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "MVAU_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 224.7347485312212,
+   "BRAM_18K": 2.0,
+   "DSP": 4.0
+  },
+  "attrs": {
+   "ram_style": "block"
+  }
+ },
+ {
+  "case": "d0_33_MVAU_rtl_0_wstrm",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "MVAU_rtl_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "block"
+  }
+ },
+ {
+  "case": "d0_34_MVAU_rtl_1",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "MVAU_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 1061.7271193784115,
+   "BRAM_18K": 13.0,
+   "DSP": 24.0
+  },
+  "attrs": {
+   "ram_style": "block"
+  }
+ },
+ {
+  "case": "d0_34_MVAU_rtl_1_wstrm",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "MVAU_rtl_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "block"
+  }
+ },
+ {
+  "case": "d0_35_Thresholding_rtl_8",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "Thresholding_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 36.0,
+   "BRAM_18K": 2.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "depth_trigger_bram": "256"
+  }
+ },
+ {
+  "case": "d0_36_Thresholding_rtl_9",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "Thresholding_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 42.0,
+   "BRAM_18K": 2.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "depth_trigger_bram": "256"
+  }
+ },
+ {
+  "case": "d0_37_FMPadding_rtl_6",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "FMPadding_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 95.71428571428571,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d0_38_ConvolutionInputGenerator_rtl_6",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "ConvolutionInputGenerator_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 221.17900683913174,
+   "BRAM_18K": 1.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "block"
+  }
+ },
+ {
+  "case": "d0_39_MVAU_rtl_2",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "MVAU_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 2066.11796439504,
+   "BRAM_18K": 24.0,
+   "DSP": 48.0
+  },
+  "attrs": {
+   "ram_style": "block"
+  }
+ },
+ {
+  "case": "d0_39_MVAU_rtl_2_wstrm",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "MVAU_rtl_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "block"
+  }
+ },
+ {
+  "case": "d0_40_Thresholding_rtl_10",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "Thresholding_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 45.0,
+   "BRAM_18K": 2.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "depth_trigger_bram": "256"
+  }
+ },
+ {
+  "case": "d0_41_AddStreams_hls_2",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "AddStreams_hls",
+  "kind": "hls",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 56.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d0_42_Thresholding_rtl_11",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "Thresholding_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 75.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "depth_trigger_bram": "0"
+  }
+ },
+ {
+  "case": "d0_43_ConvolutionInputGenerator_rtl_7",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "ConvolutionInputGenerator_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 221.17900683913174,
+   "BRAM_18K": 1.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "block"
+  }
+ },
+ {
+  "case": "d0_44_Pool_hls_0",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "Pool_hls",
+  "kind": "hls",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 121.66666666666667,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d0_45_MVAU_rtl_3",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "MVAU_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 97.79867899737297,
+   "BRAM_18K": 0.0,
+   "DSP": 1.0
+  },
+  "attrs": {
+   "ram_style": "distributed"
+  }
+ },
+ {
+  "case": "d0_45_MVAU_rtl_3_wstrm",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "MVAU_rtl_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "distributed"
+  }
+ },
+ {
+  "case": "d0_46_ChannelwiseOp_hls_0",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "ChannelwiseOp_hls",
+  "kind": "hls",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 78.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d0_47_LabelSelect_hls_0",
+  "design": "24244448_dspc_14286",
+  "role": "A' m5 (5 seeds)",
+  "op": "LabelSelect_hls",
+  "kind": "hls",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 200.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ }
+]

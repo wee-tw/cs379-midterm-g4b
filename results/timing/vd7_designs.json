@@ -1,0 +1,50 @@
+[
+ [
+  "44242448",
+  "lut_finn",
+  16667,
+  100.0,
+  "B2 m2 (resType lut)",
+  {
+   "MVAU_hls": {
+    "resType": "lut"
+   }
+  }
+ ],
+ [
+  "42442448",
+  "lut_finn",
+  16667,
+  100.0,
+  "B2 m3 (resType lut)",
+  {
+   "MVAU_hls": {
+    "resType": "lut"
+   }
+  }
+ ],
+ [
+  "42222448",
+  "lut_finn",
+  16667,
+  100.0,
+  "B2 m5 (resType lut)",
+  {
+   "MVAU_hls": {
+    "resType": "lut"
+   }
+  }
+ ],
+ [
+  "22222448",
+  "lut_finn",
+  10000,
+  100.0,
+  "B2 m8 (resType lut)",
+  {
+   "MVAU_hls": {
+    "resType": "lut"
+   }
+  }
+ ]
+]

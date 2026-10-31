@@ -1,6 +1,6 @@
 # A′ 研究總覽
 
-CS379 期中 · 題目 1 · G4_B · 2026-10-30 21:45 版（9 個設計逐節點合成、第二版校正；不量功率）
+CS379 期中 · 題目 1 · G4_B · 2026-10-31 版（加入時序；27 個設計逐節點合成、第二版校正；不量功率）
 
 MLPerf Tiny ResNet-8 在 PYNQ-Z2（Zynq-7020）上的能耗感知混合精度：工具鏈是 Brevitas 加 FINN v0.10.1。這份文件整理目前的研究曲線、主要貢獻、動機、主張、細節和下一步，給隊長規劃論文與簡報用。
 
@@ -14,7 +14,7 @@ MLPerf Tiny ResNet-8 在 PYNQ-Z2（Zynq-7020）上的能耗感知混合精度：
 
 ## 一頁摘要
 
-1. **我們做什麼：** 在準確率門檻下，同時選每個 block 的權重和 activation 位元數、FINN 的平行度（folding）、記憶體與 DSP 的實作方式，以及 PL 時脈，讓每張圖的能耗最低。設計空間是 6,561 種位元組合 × 12 種 folding × 多種實作。
+1. **我們做什麼：** 在準確率門檻下，同時選 4 組（G1 = 第一層卷積加第 1 段，G2、G3 = 第 2、3 段，G4 = 分類層）的權重和 activation 位元數、FINN 的平行度（folding）、記憶體與 DSP 的實作方式，以及 PL 時脈，讓每張圖的能耗最低。設計空間是 6,561 種位元組合 × 12 種 folding × 多種實作。
 2. **最強的發現：** FINN v0.10.1 的資源估計器和它自己產生的硬體不一致。我們用 Vivado 2022.2 合成 159 個 RTL 節點、Vitis HLS 合成 52 個 HLS 節點，再把 5 個被選中的設計逐節點合成（312 個 case），確認了以下幾點，上游和相關論文都沒有回報過。【工具驗證】
    - RTL MVU 少算一半 DSP（53 個單元全部吻合我們的規則）。
    - RTL MVU 的 LUT 估 0，實際是 40,255。
@@ -22,7 +22,7 @@ MLPerf Tiny ResNet-8 在 PYNQ-Z2（Zynq-7020）上的能耗感知混合精度：
    - 門檻記憶體有 4 個缺陷。
    - HLS MVU 預設的 resType auto：FINN 估 0 個 DSP，Vitis HLS 實際每個乘法用 1 個 DSP。FINN 預設流程產生的 ResNet-8 要 764 個 DSP，晶片只有 220 個。
 3. **這些誤差會讓 DSE 失敗：** 用合成校正的成本當真值（v2.1，5 個設計的留一設計誤差在 ±6.3% 內），FINN 的估計排序幾乎一樣（Kendall τ = 0.99）。但 5 個準確率門檻中有 3 個的「最佳設計」做不出來：Vivado 合成要 316 個 DSP，晶片只有 220 個，每個門檻要白跑 25–36 次綜合。被誤判的設計只佔 0.7%，卻是準確率限制內能耗前 10 名的全部（Feasible@10 = 0%）。【估計】【工具驗證】
-4. **校正後的設計結果：** margin 1 的 A′ 是 `44444448` 的 DSP 實作，每張 0.305 mJ；5 個 margin 的 A′ 都逐節點合成過，確定放得下。能耗是模型估計，參數取自已發表的整板實測。最好的統一精度在 margin 1–3 多耗 16–31%，FINN 預設流程（B2）多耗 20–55%。選位元數用 BOPs 就夠（只差 0–5.4%），真正的代價來自硬體配置。【估計】【工具驗證】【準確率實測】
+4. **校正後的設計結果（加入時序）：** 寬 SIMD 的乘法模組跑不到 125 MHz（v0.10.1 的 RTL 加法樹沒有切管線，FINN dev 已修正）。我們依節點時序替設計分時脈等級，並把太寬的模組重新摺疊成 RTL SIMD ≤ 12、HLS SIMD ≤ 18（28 個關鍵節點的佈局繞線支持這個分級），5 個 margin 的驗證後 A′ 在合成後的分級都是 125 MHz（margin 1–3 是 `44244448`、每張 0.237 mJ；margin 5 是 `24244448`、0.232 mJ；margin 8 是 `22244448`、0.229 mJ）；繞線後最慢的一層是 8.13 ns，實際是 111 MHz（0.256 / 0.252 / 0.249 mJ），結論不變。實測通過的統一精度在 margin 2–5 多耗 29–31%（margin 1 視 W4A4 差的 0.02 點是 28.5% 或 129.5%），FINN 預設流程（B2）多耗 18–61%。重新摺疊本身省 9–32%。加入時序後，用 BOPs 選位元會多耗 6–13%，位元、摺疊、時脈要一起選。能耗是模型估計，準確率是 3 個 seed 實測（兩個邊界配置 5 個）。【估計】【工具驗證】【準確率實測】
 5. **時脈策略：** 導出可停時脈的 FINN 加速器在「幀率 R、延遲上限 D」下的最省策略地圖，並事先寫下預測。沒有功率計，這部分是模型推導；板子只量時間（單張延遲和吞吐量的比值 L/II、各策略跟不跟得上）。【模型推導】
 
 ---
@@ -52,6 +52,13 @@ MLPerf Tiny ResNet-8 在 PYNQ-Z2（Zynq-7020）上的能耗感知混合精度：
 | 10/30 12:00–15:00 | **Vivado 與 Vitis HLS 驗證。** 159 個 RTL 節點和 52 個 HLS 節點全部合成。DSP 規則 53/53 吻合；FINN 選的三個設計在 Vivado 要 316 個 DSP；另外發現 replay buffer 的 BRAM 沒算。用合成結果校正成本後，重跑主結果和 DSE 傷害：結論方向不變，數字變得比較保守（B1 +28%、B2 +49%、ADRS 2.55%）。新選的配置用 QAT 實測，seed 0 都通過。 |
 | 10/30 18:00–20:00 | **被選中的設計逐節點合成，第二版校正。** 5 個設計、312 個 case：v1 成本的 BRAM、DSP 完全對，LUT 低估 12–28%（FINN 估 0 的小運算子、DSP-aware refold 的 RTL MVU、HLS MVU 的輸入緩衝區）。找到第 6 個缺口：HLS resType auto 會用 DSP。第二版校正的第一版在完全沒用過的 B2 設計上高估 12%，查出原因（常數門檻）後補一項，5 個設計的留一設計誤差在 −5.2% 到 +6.3%。重跑主結果、DSE 傷害和敏感度：A′ 的位元數不變，margin 1 改用 DSP 實作。 |
 | 10/30 21:00–21:45 | **第三批合成；決定不量功率。** margin 3、5、8 的 A′ 都放得下；margin 1 的 B1 合成是 LUT 預算的 101.9%，差距改寫成範圍；v2.1 對 2-bit 權重為主的設計高估 16–17%。沒有功率計，能耗維持模型估計，C4 改成模型推導，板子交給朋友只量時間。 |
+| 10/31 00:00–03:00 | **時序。** 整理 330 次 HLS 合成和 58 個 RTL 節點的合成後時序：寬 SIMD 的乘法模組跑不到 125 MHz（v0.10.1 的 RTL 把各 lane 相加的加法樹沒有切管線；有輸入摺疊的 HLS 也一樣）。加入時脈等級和時序安全的重新摺疊後重跑：A′ 的位元不變，能耗高 6–9%，結論方向不變。基準也改用實測準確率檢查。 |
+| 10/31 03:00–04:10 | **繞線與補強。** 28 個關鍵節點用 Vivado 預設流程做 OOC 佈局繞線：25 個繞線後的時脈等級和合成後的分級一致，3 個寬節點慢一級。FINN dev 分支已修正 RTL 的時序問題（同參數繞線後 4.9–6.8 ns）。另外完成：繞線餘裕 +10%、+20% 的敏感度、時序版 Feasible@K、啟發式搜尋（模擬退火、基因演算法）也被估計器誤導、基準補測準確率（B1、B2 在 margin 5 的原始選擇實測沒過）。 |
+| 10/31 04:10–06:05 | **依繞線結果收緊摺疊，最終主結果。** 重新摺疊上限改成 RTL SIMD ≤ 12、HLS SIMD ≤ 18，重算成本表和搜尋（逐筆檢查、另一種寫法重算都一致）。新的模型最佳解補訓練 3 個 seed 後全部通過，5 個 margin 的 A′ 都跑 125 MHz（0.229–0.237 mJ）。消融：重新摺疊本身省 9–32%。加入時序後 BOPs 選位元多耗 6–13%。最終設計的逐節點合成進行中。 |
+| 10/31 06:05–07:40 | **最終設計驗證。** 最終 A′、B1 的 5 個設計和 B2 的 4 個設計逐節點合成：DSP 全部一致，LUT 誤差 −9.1% 到 +17%。改用 Vivado 的動態功耗時，B2 仍多耗 10–40%，B1 在 margin 1–5 多耗 26–109%、margin 8 幾乎一樣。最終 A′ 的關鍵節點繞線：MW 576 那一層 8.13 ns，實際 111 MHz。 |
+| 10/31 11:00–11:15 | **最慢一層改窄的代價。** 改成 PE 64、SIMD 3 繞線後 7.45 ns，不重跑搜尋（當時算 +0.2%，含寬度轉換器後是 +0.7%）。 |
+| 10/31 11:20–12:00 | **寬度轉換器、數值一致性、文獻。** 10 個最終設計的 225 個寬度轉換器全部合成：FINN 的估計不分轉換方向，窄轉寬高估約 13 倍、寬轉窄低估約 6 倍；含轉換器後 A′ 能耗 +0.5–1.2%，結論不變。兩個最終 A′ 的 FINN 轉換數值檢查。新穎性完整再查（`contributions.md` 第九節）。 |
+| 10/31 12:47–14:30 | **邊界配置補到 5 個 seed，margin 5 的新 A′ 補驗證。** 44444444 和 22244448 各補 2 個 seed（判定規則事先寫下）：W4A4 仍差 0.02 點；22244448 平均 80.12，沒過 margin 5，A′ 改成 24244448（+1.3%），margin 8 不變。新 A′ 逐節點合成（BRAM、DSP 和預測相同，LUT −3.0%）、22 個寬度轉換器、Vivado 功耗（B1 +40.2%、B2 +34.1%）、FINN 數值檢查，結論不變（12.49、12.50）。 |
 
 ---
 
@@ -70,13 +77,17 @@ MLPerf Tiny ResNet-8 在 PYNQ-Z2（Zynq-7020）上的能耗感知混合精度：
      - auto 和 distributed 合成出來一樣，而 FINN 的 distributed 公式高估 1.7 倍。
      - block 每個節點要 15–255 個 BRAM18。margin 1 的 B2 設計合計 570 個，晶片只有 280 個。
 - **HLS MVU 的 DSP（第 6 個缺口）：** resType 預設是 auto。FINN 估 0 個 DSP，LUT 照「乘法器用 LUT 做」來估；產生的程式交給 Vitis HLS 預設綁定，每個乘法都用 1 個 DSP48E1，4×4-bit 也一樣。FINN 預設流程的 B2 設計，9 個 HLS MVU 剛好用 PE × SIMD 個 DSP，加起來 764 個，晶片只有 220 個。
+- **寬度轉換器（DWC，10/31 加入，12.46）：** FINN 的 DWC LUT 估計只算輸出（或 LCM）寬度，不分轉換方向。11 個最終設計的 247 個 DWC 全部合成：窄轉寬 RTL 估 5,599、實際 426（高估約 13 倍）；寬轉窄 RTL 估 432、實際 2,628（低估約 6 倍）；原因是 `dwc.sv` 的寬轉窄每個輸入位元要一個 2 選 1。最新 dev 和 FINN+ 的公式相同；FINN #1708 量過寬轉窄的實際成本，但沒有提到估計。
 - **設計層級驗證：** 5 個被選中的設計逐節點合成。BRAM、DSP 和我們修正後的成本完全一致；LUT 剩下的誤差來自 FINN 估 0 的小運算子（每個 56–200 LUT）、HLS MVU 的輸入緩衝區和常數門檻。第二版校正（v2.1）的留一設計誤差在 −5.2% 到 +6.3%。
 - **證據：** slang 展開計數、FINN 自己的估計函式、Yosys 和 Vivado 2022.2 合成 159 個 RTL 節點、Vitis HLS 2022.2 合成 52 個 HLS 節點（三種門檻設定）、5 個被選中設計的逐節點合成（312 個 case）。圖：`results/figs/estimator_audit_vivado.png`。
-- **新穎性：** Xilinx/finn 的 issue 和 PR、FINN+、FINNAS（ICECS 2026）、Arend 2025、Jentzsch & Platzner（ICFPT 2025）、Berganski 2026 都沒有提過。
+- **新穎性：** Xilinx/finn 的 issue 和 PR、FINN+、FINNAS（ICECS 2026）、Arend 2025、Jentzsch & Platzner（ICFPT 2025）、Berganski 2026 都沒有提過這些具體缺陷。
+  - 10/31 補查到 Diaconu 等（IPDPSW 2022，FINN 團隊）：已經指出 FINN 用固定大小門檻判斷 LUTRAM 還是 BRAM 是弱點，並改用決策樹預測。所以「記憶體種類判斷有問題」是已知的，要引用；我們的新意是 v0.10.1 門檻記憶體的 4 個具體缺陷、replay buffer 的 BRAM、DSP 規則（`related_work.md`）。
   - DSP 缺口、replay buffer 和門檻缺陷 3、4 在目前的 dev 和 FINN+ 仍然存在；缺陷 2 在 PR #1586 改寫時被順手修掉。
   - finn-plus#303 回報過 Zynq-7000 上 BRAM 總數少估，但原因是 FIFO 和其他記憶體，不是這幾個。
+  - 10/31 再查最新 dev（`e5a1fb0e3`，10/30）：RTL MVU 的 LUT 仍估 0，DSP 仍是 ⌈PE/4⌉ × SIMD，沒有 replay buffer 的 BRAM，SetFolding 沒有任何時序項。
+  - **時序部分要引用 Alam 2022**：同一顆 XC7Z020 上已經報告過關鍵路徑隨 PE、SIMD 變長。我們的新意是 SetFolding 不看時序，以及 lane 數和 DSP 數相同時，SIMD/PE 的分配就決定時脈等級（`contributions.md` 第九節）。
 
-> We show that FINN's resource estimates disagree with the hardware FINN itself generates. Out-of-context Vivado and Vitis HLS synthesis of 159 RTL and 52 HLS operators confirms that the DSP count of its RTL matrix-vector unit is halved for operands wider than 4 bits, its LUT count is zero, the BRAM of its input replay buffer is not estimated at all, and threshold storage is mis-estimated in four ways. HLS units left at the default resource type bind every product to a DSP slice that FINN does not count, so FINN's default ResNet-8 needs 764 DSPs on a 220-DSP device. The LUT errors largely cancel in aggregate, which hides them from whole-design checks.
+> We show that FINN's resource estimates disagree with the hardware FINN itself generates. Out-of-context Vivado and Vitis HLS synthesis of 159 RTL and 52 HLS operators confirms that the DSP count of its RTL matrix-vector unit is halved for operands wider than 4 bits, its LUT count is zero, the BRAM of its input replay buffer is not estimated at all, and threshold storage is mis-estimated in four ways. HLS units left at the default resource type bind every product to a DSP slice that FINN does not count, so FINN's default ResNet-8 needs 764 DSPs on a 220-DSP device. Its width-converter estimate ignores the conversion direction: across the 225 converters of our final designs it overestimates up-converters about 13-fold and underestimates down-converters about 6-fold. The LUT errors largely cancel in aggregate, which hides them from whole-design checks.
 
 ### C2：估計誤差如何讓設計空間探索失敗【估計】【工具驗證】
 
@@ -95,21 +106,26 @@ MLPerf Tiny ResNet-8 在 PYNQ-Z2（Zynq-7020）上的能耗感知混合精度：
 ### C3：校正成本後的能耗感知聯合選擇（A′）【估計】【準確率實測】
 
 - **成本（v2.1）：** DSP 照 RTL 規則，補上 replay buffer 的 BRAM。LUT 用逐節點合成擬合：RTL MVU 依通道數，HLS MVU 用四項模型，稽核過的組態直接用合成值；SWG、小運算子、權重記憶體也都校正。5 個被選中的設計輪流拿掉，整體 LUT 誤差在 −5.2% 到 +6.3%。
-- **A′（margin 1）：** `44444448`。
-  - DSP 實作，125 MHz 時 7,629 FPS，每張 0.305 mJ。逐節點合成：15,297 LUT、53 BRAM18、212 DSP，放得下。
-  - LUT 實作（10,173 FPS，0.256 mJ）合成要 48,405 LUT，超過 LUT 預算 42,560，所以不能選。這是 v1 成本看不到的。
-  - margin 2 的 A′（`44242448` DSP 實作）也合成過：28,485 LUT、172 DSP。
-- **和統一精度比：** margin 2–3 多耗 26–32%，margin 5–8 只多 1–3%，這些主要由吞吐量決定，換功耗參數差不到 3 個百分點。margin 2–3 的差距有合成支持：統一 W4A4 要跑到快一級最少要 45,512 LUT，是預算的 106.9%，放不下（預算放寬到晶片的 86% 以上時差距降到約 +11%）。margin 1 的 B1 合成要 LUT 預算的 101.9%，卡在預算邊緣：接受的話是 +9.5% 到 +19%（看功耗參數），照嚴格預算要降速，約 +64%。
+- **時序（10/31 加入）：** 每個節點依合成後的時序分到 PYNQ 能設定的時脈等級，設計取最慢節點的等級；28 個關鍵節點做了佈局繞線，25 個的等級一致。太寬的乘法模組重新摺疊成 RTL SIMD ≤ 12、HLS SIMD ≤ 18（上限依繞線結果），PE 加大，週期數和 DSP 數大致不變。27 個設計逐節點合成（10/30 的 9 個、上限 27 的 8 個、最終 A′ 和 B1 的 5 個、B2 的 4 個、margin 5 的新 A′ 1 個）：DSP 全部和預測一致，BRAM 只有 B2 的 4 個設計多 1–3 個（FINN 預設的記憶體配置）。
+- **最終主結果（5 個 margin 的 A′ 都跑 125 MHz，nominal / z2_anchor）：**
+  - margin 1–3：A′ 是 `44244448`（實測 84.63%），每張 0.237 / 0.179 mJ。B1 多耗 28.5–30.4%（margin 1 嚴格照門檻時 125–130%），B2 多耗 52–61%。
+  - margin 5：A′ 是 `24244448`（實測 82.16%），每張 0.232 / 0.177 mJ，B1、B2 多耗 31–32%、50–53%。
+  - margin 8：A′ 是 `22244448`（5 個 seed 80.12%），每張 0.229 / 0.176 mJ，B1、B2 多耗 8%、18%。
+  - 22244448 原本也是 margin 5 的 A′，補到 5 個 seed 後平均低於 margin 5 的門檻，改用 24244448（12.49）。
+  - margin 1 的 `44244448` 模型預測略低於門檻，是實測才過的（原本 margin 5 的 `22244448` 也是）；margin 1 的模型自己的選擇是 `44444448`（0.304 mJ）。
+- **時序安全的摺疊是聯合選擇的關鍵（消融，同一個時脈模型、同一組實測）：** 不重新摺疊時，A′ 只能用 FINN 預設摺疊、111 MHz；上限 27 時多停在 111 MHz；收緊到 RTL ≤ 12、HLS ≤ 18 後全部 125 MHz。和不重新摺疊相比省 9–32%。
+- **LUT 實作放不下：** margin 1 的 `44444448` LUT 實作合成要 48,405 LUT，超過預算 42,560。這是 v1 成本看不到的。
+- **繞線後的實際時脈：** 最終 A′ 裡 MW 576、PE 16、SIMD 12 的 RTL MVU 繞線後 8.13 ns，實際跑 111 MHz。這一層改成 PE 64、SIMD 3（DSP 一樣）繞線後 7.45 ns，連同前後的寬度轉換器，A′ 每張能耗約多 0.7%（12.46），各基準的差距仍成立，所以 125 MHz 那一欄也做得到（沒有重跑搜尋）。合成後週期加 10% 的那一欄（A′ 111 MHz）和這個結果一致：B1 仍多耗 7–127%，B2 多耗 9–49%。動態功耗改用 Vivado 的估計時（最終設計逐節點），B2 仍多耗 10–40%（模型 18–61%），B1 在 margin 1–5 多耗 26–108%、margin 8 幾乎一樣，論文寫成範圍（12.45、12.50）。
 - **能耗怎麼來：** 沒有功率計，能耗是模型估計。四組功耗參數都取自已發表的整板實測，其中 z2_anchor 用 MLPerf Tiny 在同一塊 PYNQ-Z2 上的 CNV-W1A1 實測值校準（1.67 W，模型 1.70 W）。
-- **H3（代理指標）：** 用 BOPs 選位元數只比最佳差 0–5.4%。
-  - 代理指標真正吃虧的是硬體配置：FINN 預設 folding（B2，resType 改成 lut）多耗 20–55%。
+- **H3（代理指標）：** 加入時序後，用 BOPs 選位元、再做我們的硬體搜尋（B3）在 margin 2–8 多耗 6–13%（不考慮時序時是 0–5.4%）。BOPs 的位元把 2-bit 放在必須有輸入摺疊的大層，只能 111 MHz；A′ 選的位元讓 2-bit 層可以不摺疊、跑 125 MHz。
+  - FINN 預設 folding（B2，resType 改成 lut）的代價最大：多耗 18–61%。
   - FINN 預設流程原封不動（resType auto）時要 764 個 DSP，根本做不出來。
-  - B2 在 margin 1 合成 41,558 LUT，剛好放得下。只用模型的話會以為放不下，差距會被誇大成 +134%。
 - **H1：** 連續推論時，能耗最佳 ≈ 最快的設計中資源最少的那個（差 0–1.6%）。
-- **準確率驗證：** margin 3、5 的模型最佳解，三個 seed 平均都沒過門檻。改選三個 seed 都通過的配置：margin 3 的 `44242248` 多 2.9%，margin 5 的 `42222448` 多 1.5%。
-- **敏感度：** 所有 LUT 一起 ×0.90–1.10 時，A′ 的位元數 5 個門檻都不變。margin 1 的 B1、B2 卡在預算邊緣，差距會在 +14–65%、+24–134% 之間跳，所以用合成值定案。
+- **準確率驗證：** A′ 全部是 3–5 個 seed 實測通過的配置。模型最佳解在 G1 權重 2-bit 時偏樂觀（margin 3 的 `24244448` 82.16%、margin 5 的 `24222448` 80.16% 都沒過）。基準照同一個標準：margin 5 的 B1（24242424，79.65%）和 B2（24222448；下一個 24222488 80.15%）都沒過，改用實測通過的配置。
+- **敏感度：** 所有 LUT 一起 ×0.90–1.10 時，A′ 的位元數 5 個門檻都不變（v2.1）。
+- **時序部分的新穎性（10/31 文獻檢查，`contributions.md` 第八節）：** 平行度和時脈一起最佳化已有 Suda 2016、Lu 2017（目標是吞吐量，時脈是整個設計一條擬合曲線），MVU 關鍵路徑隨 SIMD 變長也有 Alam 2022，論文要引用。新的是 FINN 裡「lane 數和 DSP 數相同時，SIMD/PE 的分配決定時脈等級」，以及把它和位元數、實作方式放進同一個能耗與實測準確率的選擇。
 
-> With costs calibrated by per-node synthesis (design-level LUT error within ±6.3% in leave-one-design-out validation), joint selection saves 14–24% energy against the best uniform precision at strict accuracy targets. Choosing bit widths by BOPs is near-optimal (0–5.4% regret), while FINN's default folding of the same bits costs 20–55% more energy, and FINN's untouched default flow does not fit at all (764 DSPs on a 220-DSP device).
+> With costs calibrated by per-node synthesis and every design clocked at the PYNQ clock its slowest node reaches (checked by place and route of 28 critical nodes), joint selection of bit widths, folding and clock runs every verified design at 125 MHz and saves 22–25% energy per frame against the best uniform precision that meets the accuracy target at margins 2–5 (7–8% at the loosest), and 15–38% against FINN's default folding of BOPs-chosen bits. Timing-safe refolding (narrow SIMD, more PE, same lanes and DSPs) is what makes this possible: without it the optimum falls back to FINN's folding at 111 MHz and costs 10–46% more. With timing, choosing bits by BOPs is no longer near-optimal (6–13% regret), and FINN's untouched default flow does not fit at all (764 DSPs on a 220-DSP device).
 
 ### C4：可停時脈 FINN 加速器的時脈策略地圖（H2′）【模型推導】
 
@@ -142,9 +158,9 @@ MLPerf Tiny ResNet-8 在 PYNQ-Z2（Zynq-7020）上的能耗感知混合精度：
 | 高排序相關不代表 DSE 結果可信 | 成立 | τ 0.99，3/5 個門檻的最佳解做不出來（Vivado 證明），白跑 25–36 次；Feasible@10 = 0%；隨機對照組無害 | 【估計】【工具驗證】 |
 | H1：連續推論時，能耗最佳 ≈ 延遲最佳 | 成立（平手時取資源最少） | B4 和 A′ 差 0–1.6% | 【估計】 |
 | H2：固定幀率時 race-to-halt 最省 | 修正成 H2′ | 考慮單張延遲後 jit 最省；一次一張停時脈多耗 10–24%；有延遲上限時看策略地圖 | 【估計】（模型推導；板上只驗證時間） |
-| H3：代理指標會選錯位元數 | 推翻 | BOPs 只差 0–5.4%；FINN 預設 folding 多耗 20–55%，代價在硬體配置 | 【估計】 |
-| 混合精度比統一精度省 | 嚴格門檻下成立 | margin 1–3 省 14–24%（統一精度多耗 16–31%）；margin 5–8 只差 1–3%；LUT 誤差 ±10% 時 A′ 不變 | 【估計】【準確率實測】 |
-| 被選中的配置真的達到準確率門檻 | 大多成立 | 實測 11 個被選中的配置，9 個達到。兩個 G1 權重 2-bit 的選擇，三個 seed 平均都沒過（82.16 對 82.37、80.16 對 80.37）；改選三個 seed 都通過的配置，能耗多 1.5–2.9% | 【實測】 |
+| H3：代理指標會選錯位元數 | 加入時序後部分成立 | 不考慮時序時 BOPs 只差 0–5.4%；加入時序後 BOPs 的位元配我們的摺疊多耗 6–13%（2-bit 放在必須摺疊的大層，只能 111 MHz）；FINN 預設 folding 多耗 18–61% | 【估計】 |
+| 混合精度比統一精度省 | margin 1–5 成立 | 最終版（125 MHz）：margin 2–5 省 22–24%（統一精度多耗 28.5–32%），margin 1 視 W4A4 差的 0.02 點省 22% 或 56%，margin 8 省 7–8%；繞線餘裕 +10%、LUT 誤差 ±10%、改用 Vivado 動態功耗時結論不變 | 【估計】【準確率實測】 |
+| 被選中的配置真的達到準確率門檻 | A′ 成立 | 最終 A′（44244448 84.63%、24244448 82.16%、22244448 80.12%）都是 3–5 個 seed 平均通過。G1 權重 2-bit 的模型最佳解偏樂觀（82.16 對 82.37、80.16 對 80.37）。基準照同一標準：margin 5 的 B1（79.65）、B2（80.16、80.15）沒過，改用實測通過的配置 | 【實測】 |
 
 ---
 
@@ -184,19 +200,22 @@ MLPerf Tiny ResNet-8 在 PYNQ-Z2（Zynq-7020）上的能耗感知混合精度：
 | B4 | 同樣的搜尋空間，但最大化吞吐量 |
 | B5 | 最快設計，一次一張、做完就停時脈 |
 
-### 主結果（連續推論，nominal 參數，成本用 v2.1 校正）【估計】
+### 主結果（連續推論，成本用 v2.1 校正，時脈用時序等級，重新摺疊 RTL ≤ 12、HLS ≤ 18）【估計】【準確率實測】
 
-| margin | 門檻 | A′（模型最佳） | A′ 能耗（mJ） | B1 多耗 | B2 多耗 | B3 / B4 | 驗證後的 A′（實測） |
+| margin | 門檻 | 驗證後的 A′（3–5 個 seed 實測通過） | 時脈 | A′ 能耗（mJ，nominal） | B1 多耗（nominal / z2_anchor） | B2 多耗（nominal / z2_anchor） | 繞線餘裕 +10% 時的 B1、B2（nominal） |
 |---|---|---|---|---|---|---|---|
-| 1 | 84.37% | `44444448`（DSP 實作，已合成） | 0.305 | 15.8% | 24.9% | 0% | 同左（三個 seed 84.92%） |
-| 2 | 83.37% | `44242448`（DSP 實作，已合成） | 0.242 | 26.4% | 50.0% | 1.4% | 同左（三個 seed 83.75%） |
-| 3 | 82.37% | `24244448`（沒過） | 0.232 | 31.4% | 54.7% | 1.6–5.4% | `44242248`，+2.9%（三個 seed 82.99%） |
-| 5 | 80.37% | `24222448`（沒過） | 0.229 | 1.2% | 21.3% | 1.1–1.3% | `42222448`，+1.5%（三個 seed 81.20%） |
-| 8 | 77.37% | `22222448` | 0.226 | 2.5% | 19.9% | 1.0–1.3% | 同左（79.02%） |
+| 1 | 84.37% | `44244448` dspc（84.63%） | 125 MHz | 0.237 | 129.5% / 125.0%（接受 W4A4 時 28.5% / 30.4%） | 61.1% / 59.6% | B1 127%；B2 49% |
+| 2 | 83.37% | `44244448` dspc | 125 MHz | 0.237 | 28.5% / 30.4% | 53.1% / 54.7% | B1 19%；B2 41% |
+| 3 | 82.37% | `44244448` dspc | 125 MHz | 0.237 | 28.5% / 30.4% | 51.8% / 54.0% | B1 19%；B2 40% |
+| 5 | 80.37% | `24244448` dspc（82.16%） | 125 MHz | 0.232 | 31.1% / 32.0%（實測重選的 44444444） | 49.5% / 52.5%（實測重選的 42222448） | B1 21%；B2 38% |
+| 8 | 77.37% | `22244448` dspc | 125 MHz | 0.229 | 7.9% / 8.3% | 18.2% / 17.8% | B1 7%；B2 9% |
 
-- margin 1 的 LUT 實作（0.256 mJ）合成要 48,405 LUT，超過預算，所以 A′ 改用 DSP 實作。B2 本身的能耗沒變，差距從 +49% 變 +24.9% 是因為 A′ 變貴。
-- B1 在 margin 1 的設計合成要 LUT 預算的 101.9%（晶片的 81.5%），差距寫成 +9.5% 到 +64% 的範圍。margin 3、5、8 的 A′ 都合成過、放得下。
-- 固定幀率（jit，整板，margin 1）：300 FPS 時 B1 +0.9%、B2 +0.4%；3000 FPS 時 B1 +7.7%、B2 +3.8%。一次一張停時脈的 B5 多耗 10–24%。
+- B1 是「實測準確率過門檻的統一精度」中最省的。margin 1 的統一 W4A4 是 84.35%（5 個 seed），只差門檻 0.02 點，所以 margin 1 寫成範圍；margin 5 照準確率模型選的 24242424 實測 79.65%，沒過。
+- B2 沿 BOPs 排序取第一個實測通過的位元，配 FINN 預設摺疊、100 MHz。margin 5 的 24222448、24222488 實測 80.16%、80.15%，都沒過，下一個是 42222448。
+- 演進：10/30 假設 125 MHz 時 A′ 是 0.305 / 0.242 / 0.232 / 0.229 / 0.226 mJ；時序第一版（上限 27，111 MHz）是 0.331 / 0.258 / 0.256 / 0.249 / 0.242 mJ；最終版 0.237 / 0.237 / 0.237 / 0.232 / 0.229 mJ。
+- margin 1 的 LUT 實作合成要 48,405 LUT，超過預算，所以 A′ 用 DSP 實作。
+- B1 在 margin 1 的設計（84848484）合成要 LUT 預算的 101.9–102.1%，卡在預算邊緣。
+- 固定幀率（jit，整板，100 MHz 以內的設計）：300 FPS 時各基準在 A′ 的 0–1.6% 內；3000 FPS 時 B1 +0.3–13.6%、B2 +1.4–4.3%。一次一張停時脈的 B5 多耗 9.5–17.8%。
 - 用 Vivado 功耗擬合的資源權重（w_BRAM 0.59、w_DSP 0.34）重跑：margin 1–3 的 A′ 位元數不變，B1、B2 最多差 3.2 點。
 - 和之前的版本比：v1 校正時 margin 1 是 LUT 實作 0.256 mJ、B1 +28%、B2 +49%；用 LUT 上界（hi）時 B1 是 +97–101%；B2 用門檻公式時是 +567–627%，都不要再用。
 
@@ -262,21 +281,26 @@ A4 的節點，FINN 高估乘加邏輯，剛好抵掉沒算的門檻，所以 FI
 | `44242448`（margin 2 的 A′） | W4A4 → 30 epoch，KD，3 個 seed | 83.75 ± 0.09% |
 | W2A2，G4 保持 8-bit | 修正兩個陷阱後 | 74.53% |
 
-#### 被選中配置的實測（W4A4 → 30 epoch，KD；沒註明的是 1 個 seed）【實測】
+#### 被選中配置的實測（W4A4 → 30 epoch，KD，3 個 seed；沒註明的是 1 個 seed）【實測】
 
-| 配置 | 角色（校正後的成本） | 門檻 | 預測 | 實測 | 結果 |
-|---|---|---|---|---|---|
-| `44444448` | margin 1 的 A′ | 84.37 | 84.68 | 84.92 ± 0.13（3 seed） | 通過 |
-| `84848484` | margin 1 的 B1 | 84.37 | 84.80 | 84.39 ± 0.20（3 seed） | 平均勉強通過（seed 2 是 84.17） |
-| `44242448` | margin 2 的 A′ | 83.37 | 83.52 | 83.75 ± 0.09（3 seed） | 通過 |
-| `24244448` | margin 3 的模型最佳解 | 82.37 | 82.50 | 82.16 ± 0.21（3 seed） | 沒過 |
-| `44242248` | margin 3 驗證後的 A′（+2.9%） | 82.37 | 82.41 | 82.99 ± 0.17（3 seed） | 通過 |
-| `42442488` | margin 3 的候選（+4.0%） | 82.37 | 82.44 | 83.44 | 通過 |
-| `24222448` | margin 5 的模型最佳解 | 80.37 | 80.65 | 80.16 ± 0.40（3 seed） | 沒過 |
-| `42222448` | margin 5 驗證後的 A′（+1.5%） | 80.37 | 80.54 | 81.20 ± 0.21（3 seed） | 通過 |
-| `22222448` | margin 8 的 A′ | 77.37 | 78.00 | 79.02 | 通過 |
+| 配置 | 角色 | 預測 | 實測 | 通過的門檻 |
+|---|---|---|---|---|
+| `44244448` | **最終 A′（margin 1–3）**，margin 2 的模型最佳解（exp17） | 84.07 | 84.63 ± 0.17 | margin 1（84.37）以下全部 |
+| `22244448` | **最終 A′（margin 8）**，margin 8 的模型最佳解（exp17、exp18） | 79.86 | 80.12 ± 1.34（5 seed） | margin 8（margin 5 沒過） |
+| `44444448` | margin 1 的模型最佳解；時序第一版的 A′ | 84.68 | 84.92 ± 0.13 | margin 1 以下 |
+| `44242448` | 時序第一版 margin 2 的 A′；B2 在 margin 2 的位元 | 83.52 | 83.75 ± 0.09 | margin 2 以下 |
+| `44242248` | 時序第一版 margin 3 的 A′ | 82.41 | 82.99 ± 0.17 | margin 3 以下 |
+| `24244448` | margin 3 的模型最佳解（第一版） | 82.50 | 82.16 ± 0.21 | 沒過 margin 3；過 5、8 |
+| `42222448` | 時序第一版 margin 5 的 A′；B2 在 margin 5 的實測重選 | 80.54 | 81.20 ± 0.21 | margin 5 以下 |
+| `22222448` | 時序第一版 margin 8 的 A′；B2 在 margin 8 的位元（exp13） | 78.00 | 78.70 ± 0.64 | margin 8 |
+| `84848484` | B1，margin 1 | 84.80 | 84.39 ± 0.20 | margin 1（只多 0.02 點） |
+| `44444444` | B1，margin 2–5（exp16，從 W4A4 再微調） | 83.91 | 84.35 ± 0.13（5 seed） | margin 2 以下；**margin 1 差 0.02 點** |
+| `24242424` | 準確率模型選的 B1，margin 5–8（exp14） | 80.55 | 79.65 ± 0.38 | 沒過 margin 5；過 8 |
+| `42442448` | B2，margin 3（exp14） | 82.45 | 83.04 ± 0.32 | margin 3 以下 |
+| `24222448` | 準確率模型選的 B2，margin 5 | 80.65 | 80.16 ± 0.40 | 沒過 margin 5 |
+| `24222488` | B2 在 margin 5 的下一個（exp15） | 80.63 | 80.15 ± 0.64 | 沒過 margin 5 |
 
-相加的準確率模型在實測過的被選中配置上平均偏保守，但 G1 權重是 2-bit 時偏樂觀。margin 3、5 的模型最佳解正好是這種配置，三個 seed 平均都沒過。附近的能耗很平，所以改選三個 seed 都通過的配置只多 1.5–2.9%。舊成本模型選的 `44224448`、`44222248`、`44222244` 也都實測通過。
+相加的準確率模型對 23 個 ft30 實測配置平均偏保守 0.26 點（MAE 0.54），但 G1 權重是 2-bit 時偏樂觀。所有 A′ 都是 3–5 個 seed 平均通過；margin 1 的 `44244448` 模型預測略低於門檻，是實測才過的。margin 5 原本的 `22244448` 也是這樣，但補到 5 個 seed 後沒過，改用 `24244448`。
 
 ### 檔案在哪裡
 

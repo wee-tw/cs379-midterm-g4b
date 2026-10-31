@@ -1,0 +1,20 @@
+== 84848484 lut T16667
+   DWCs: 19, FINN LUT 4009, BRAM18 0
+   skip FIFO stack 1: ~1928 elements, 7.5 kbit, 1 BRAM18
+   skip FIFO stack 2: ~1393 elements, 5.4 kbit, 1 BRAM18
+   skip FIFO stack 3: ~1275 elements, 5.0 kbit, 1 BRAM18
+== 44242448 dsp4c T14286
+   DWCs: 21, FINN LUT 5933, BRAM18 0
+   skip FIFO stack 1: ~1928 elements, 7.5 kbit, 1 BRAM18
+   skip FIFO stack 2: ~1393 elements, 5.4 kbit, 1 BRAM18
+   skip FIFO stack 3: ~1275 elements, 5.0 kbit, 1 BRAM18
+== 22222448 dspc T14286
+   DWCs: 19, FINN LUT 3277, BRAM18 0
+   skip FIFO stack 1: ~1928 elements, 3.8 kbit, 1 BRAM18
+   skip FIFO stack 2: ~1393 elements, 2.7 kbit, 1 BRAM18
+   skip FIFO stack 3: ~1275 elements, 5.0 kbit, 1 BRAM18
+== 44444448 lut_finn T16667
+   DWCs: 21, FINN LUT 3105, BRAM18 0
+   skip FIFO stack 1: ~1928 elements, 7.5 kbit, 1 BRAM18
+   skip FIFO stack 2: ~1393 elements, 5.4 kbit, 1 BRAM18
+   skip FIFO stack 3: ~1275 elements, 5.0 kbit, 1 BRAM18

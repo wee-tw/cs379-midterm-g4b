@@ -1,0 +1,62 @@
+== nominal
+  margin 1: A'v 44244448 dspc T14286 111.11 MHz 0.2564 mJ (model opt 44444448 -15.7%) [84.63 n=3 PASS]
+      B1_uniform  84848484 +127.3%  [84.39 n=3 PASS]
+      B2_proxy    44444448 +48.8%  [84.92 n=3 PASS]
+      B1_measured 84848484 +127.3%  [84.39 n=3 PASS]
+      B2_measured 44444448 +48.8%  [84.92 n=3 PASS]  (failed before it: -)
+      B3_measured 44444448 +18.6%  (same bits, our folding)
+  margin 2: A'v 44244448 dspc T14286 111.11 MHz 0.2564 mJ (model opt 44244448 +0.0%) [84.63 n=3 PASS]
+      B1_uniform  44444444 +18.6%  [84.35 n=5 PASS]
+      B2_proxy    44242448 +41.3%  [83.75 n=3 PASS]
+      B1_measured 44444444 +18.6%  [84.35 n=5 PASS]
+      B2_measured 44242448 +41.3%  [83.75 n=3 PASS]  (failed before it: -)
+      B3_measured 44242448 +11.9%  (same bits, our folding)
+  margin 3: A'v 44244448 dspc T14286 111.11 MHz 0.2564 mJ (model opt 24244448 +1.9%) [84.63 n=3 PASS]
+      B1_uniform  44444444 +18.6%  [84.35 n=5 PASS]
+      B2_proxy    42442448 +40.2%  [83.04 n=3 PASS]
+      B1_measured 44444444 +18.6%  [84.35 n=5 PASS]
+      B2_measured 42442448 +40.2%  [83.04 n=3 PASS]  (failed before it: -)
+      B3_measured 42442448 +8.7%  (same bits, our folding)
+  margin 5: A'v 24244448 dspc T14286 111.11 MHz 0.2517 mJ (model opt 24244444 +0.0%) [82.16 n=3 PASS]
+      B1_uniform  24242424 +6.0%  [79.65 n=3 FAIL]
+      B2_proxy    24222448 +10.2%  [80.16 n=3 FAIL]
+      B1_measured 44444444 +20.8%  [84.35 n=5 PASS]
+      B2_measured 42222448 +37.8%  [81.20 n=3 PASS]  (failed before it: ['24222448', '24222488'])
+      B3_measured 42222448 +7.3%  (same bits, our folding)
+  margin 8: A'v 22244448 dspc T14286 111.11 MHz 0.2487 mJ (model opt 22244444 +0.0%) [80.12 n=5 PASS]
+      B1_uniform  24242424 +7.3%  [79.65 n=3 PASS]
+      B2_proxy    22222448 +8.8%  [78.70 n=3 PASS]
+      B1_measured 24242424 +7.3%  [79.65 n=3 PASS]
+      B2_measured 22222448 +8.8%  [78.70 n=3 PASS]  (failed before it: -)
+      B3_measured 22222448 +5.7%  (same bits, our folding)
+== z2_anchor
+  margin 1: A'v 44244448 dspc T14286 111.11 MHz 0.1947 mJ (model opt 44444448 -16.7%) [84.63 n=3 PASS]
+      B1_uniform  84848484 +123.0%  [84.39 n=3 PASS]
+      B2_proxy    44444448 +47.0%  [84.92 n=3 PASS]
+      B1_measured 84848484 +123.0%  [84.39 n=3 PASS]
+      B2_measured 44444448 +47.0%  [84.92 n=3 PASS]  (failed before it: -)
+      B3_measured 44444448 +20.1%  (same bits, our folding)
+  margin 2: A'v 44244448 dspc T14286 111.11 MHz 0.1947 mJ (model opt 44244448 -0.0%) [84.63 n=3 PASS]
+      B1_uniform  44444444 +20.1%  [84.35 n=5 PASS]
+      B2_proxy    44242448 +42.5%  [83.75 n=3 PASS]
+      B1_measured 44444444 +20.1%  [84.35 n=5 PASS]
+      B2_measured 44242448 +42.5%  [83.75 n=3 PASS]  (failed before it: -)
+      B3_measured 44242448 +10.2%  (same bits, our folding)
+  margin 3: A'v 44244448 dspc T14286 111.11 MHz 0.1947 mJ (model opt 24244448 +1.1%) [84.63 n=3 PASS]
+      B1_uniform  44444444 +20.1%  [84.35 n=5 PASS]
+      B2_proxy    42442448 +41.8%  [83.04 n=3 PASS]
+      B1_measured 44444444 +20.1%  [84.35 n=5 PASS]
+      B2_measured 42442448 +41.8%  [83.04 n=3 PASS]  (failed before it: -)
+      B3_measured 42442448 +8.3%  (same bits, our folding)
+  margin 5: A'v 24244448 dspc T14286 111.11 MHz 0.1926 mJ (model opt 24244444 -0.0%) [82.16 n=3 PASS]
+      B1_uniform  24242424 +6.9%  [79.65 n=3 FAIL]
+      B2_proxy    24222448 +9.2%  [80.16 n=3 FAIL]
+      B1_measured 44444444 +21.4%  [84.35 n=5 PASS]
+      B2_measured 42222448 +40.4%  [81.20 n=3 PASS]  (failed before it: ['24222448', '24222488'])
+      B3_measured 42222448 +7.4%  (same bits, our folding)
+  margin 8: A'v 22244448 dspc T14286 111.11 MHz 0.1912 mJ (model opt 22244444 -0.0%) [80.12 n=5 PASS]
+      B1_uniform  24242424 +7.6%  [79.65 n=3 PASS]
+      B2_proxy    22222448 +8.3%  [78.70 n=3 PASS]
+      B1_measured 24242424 +7.6%  [79.65 n=3 PASS]
+      B2_measured 22222448 +8.3%  [78.70 n=3 PASS]  (failed before it: -)
+      B3_measured 22222448 +6.4%  (same bits, our folding)

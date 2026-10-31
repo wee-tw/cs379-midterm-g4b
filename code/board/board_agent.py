@@ -1,4 +1,5 @@
-"""Measurement agent for PYNQ-Z2 (runs ON THE BOARD as root, inside the PYNQ venv).
+"""Measurement agent for PYNQ-Z2 (runs ON THE BOARD as root: inside the venv on PYNQ v3.0.1, or
+with the system Python 3.6 / numpy 1.13 on PYNQ v2.5; compat_v25/ tests the latter).
 
 Reads one JSON command per line on stdin and answers one JSON line on stdout, so the PC
 can drive a whole session over ssh (code/board/run_session.py). Board timestamps are
@@ -229,12 +230,32 @@ class MockBoard(Board):
 
 
 def make_input(board, seed=0):
-    """Fixed random input in the accelerator's input range (UINT8 images, INT8 for KWS)."""
-    rng = np.random.default_rng(seed)
+    """Fixed random input in the accelerator's input range (UINT8 images, INT8 for KWS).
+    RandomState, not default_rng: the PYNQ v2.5 image has numpy 1.13 (default_rng is 1.17+)."""
+    rng = np.random.RandomState(seed)
     dt = board.idt()
     lo, hi = (0, 255) if dt is None else (int(dt.min()), int(dt.max()))
     t = np.int8 if lo < 0 and hi <= 127 else np.uint8 if hi <= 255 else np.int32
-    return rng.integers(lo, hi + 1, size=board.ishape()).astype(t)
+    return rng.randint(lo, hi + 1, size=board.ishape()).astype(t)
+
+
+def platform_info():
+    """Software stack of the board, recorded with every session (PYNQ v2.5 and v3.0.1 differ)."""
+    import platform
+    info = {"python": platform.python_version(), "numpy": np.__version__,
+            "kernel": platform.release(), "board": os.environ.get("BOARD")}
+    try:
+        import pynq
+        info["pynq"] = getattr(pynq, "__version__", None)
+    except Exception as e:   # mock on a PC, or pynq without root
+        info["pynq"] = "unavailable (%s)" % type(e).__name__
+    try:
+        for line in open("/etc/os-release"):
+            if line.startswith("PRETTY_NAME="):
+                info["os"] = line.split("=", 1)[1].strip().strip('"')
+    except OSError:
+        info["os"] = None
+    return info
 
 
 class Agent:
@@ -293,7 +314,7 @@ class Agent:
     # ---- commands -------------------------------------------------------------------
     def cmd_info(self, c):
         return {"t": time.time(), "fclk0_mhz": self.b.get_mhz(), "temp_c": die_temp_c(),
-                "regs": self.regs(),
+                "regs": self.regs(), "platform": platform_info(),
                 "stop_seq": self.stop_seq, "start_seq": self.start_seq,
                 "halt_verified": self.halt_verified, "stuck": self.stuck}
 

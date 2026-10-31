@@ -29,8 +29,12 @@ def main():
     p.add_argument("--rates", nargs="+", default=["300", "3000"])
     p.add_argument("--latency", help="latency.npz: also report the latency-aware policies")
     p.add_argument("--lat-scale", type=float, default=0.6024)
+    p.add_argument("--fmax", type=float, default=None,
+                   help="cap every clock grid (MHz), e.g. 100 for a timing-safe design space")
     p.add_argument("--out", required=True)
     args = p.parse_args()
+    if args.fmax:
+        es.set_fmax(args.fmax)
     rows = np.load(args.points)["rows"]
     a = json.load(open(args.acc))
     acc = [a["acc"][",".join(map(str, b))] for b in es.ALL_CONFIGS]

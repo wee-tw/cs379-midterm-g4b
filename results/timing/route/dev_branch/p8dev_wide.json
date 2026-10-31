@@ -1,0 +1,26 @@
+[
+ {
+  "case": "dev_144x32_pe1_s48_8x8",
+  "kind": "rtl",
+  "returncode": 0,
+  "synth_ns": 3.788,
+  "route_ns": 4.865,
+  "route_over_synth": 0.2843
+ },
+ {
+  "case": "dev_144x16_pe4_s72_8x8",
+  "kind": "rtl",
+  "returncode": 0,
+  "synth_ns": 3.788,
+  "route_ns": 6.809,
+  "route_over_synth": 0.7975
+ },
+ {
+  "case": "dev_144x16_pe2_s144_4x4",
+  "kind": "rtl",
+  "returncode": 0,
+  "synth_ns": 3.788,
+  "route_ns": 5.848,
+  "route_over_synth": 0.5438
+ }
+]

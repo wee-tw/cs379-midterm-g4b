@@ -1,0 +1,66 @@
+[
+ {
+  "case": "MVAU_rtl_002",
+  "kind": "rtl",
+  "returncode": 0,
+  "synth_ns": 5.775,
+  "route_ns": 6.945,
+  "route_over_synth": 0.2026
+ },
+ {
+  "case": "MVAU_rtl_011",
+  "kind": "rtl",
+  "returncode": 0,
+  "synth_ns": 5.984,
+  "route_ns": 7.67,
+  "route_over_synth": 0.2818
+ },
+ {
+  "case": "MVAU_rtl_113",
+  "kind": "rtl",
+  "returncode": 0,
+  "synth_ns": 6.218,
+  "route_ns": 7.71,
+  "route_over_synth": 0.2399
+ },
+ {
+  "case": "MVAU_rtl_051",
+  "kind": "rtl",
+  "returncode": 0,
+  "synth_ns": 7.315,
+  "route_ns": 7.881,
+  "route_over_synth": 0.0774
+ },
+ {
+  "case": "MVAU_rtl_150",
+  "kind": "rtl",
+  "returncode": 0,
+  "synth_ns": 7.843,
+  "route_ns": 7.721,
+  "route_over_synth": -0.0156
+ },
+ {
+  "case": "MVAU_rtl_032",
+  "kind": "rtl",
+  "returncode": 0,
+  "synth_ns": 7.728,
+  "route_ns": 7.929,
+  "route_over_synth": 0.026
+ },
+ {
+  "case": "ConvolutionInputGenerator_rtl_145",
+  "kind": "rtl",
+  "returncode": 0,
+  "synth_ns": 7.084,
+  "route_ns": 7.335,
+  "route_over_synth": 0.0354
+ },
+ {
+  "case": "ConvolutionInputGenerator_rtl_152",
+  "kind": "rtl",
+  "returncode": 0,
+  "synth_ns": 7.004,
+  "route_ns": 7.478,
+  "route_over_synth": 0.0677
+ }
+]

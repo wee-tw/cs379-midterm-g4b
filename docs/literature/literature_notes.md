@@ -1153,12 +1153,12 @@ How these differ from A′, in brief:
 - **Chauffour, Li, Floros, Shanker, "FINNAS: FINN-Guided Hardware-Aware NAS and Pruning for FPGA Jet Substructure Classification"**
   - ICECS 2026 (arXiv 2609.16367); read in full.
   - FINN estimates vs OOC Vivado 2022.2 synthesis on 20 finalists (xcvu9p): LUT Spearman ρ = 0.854; cycle latency ρ = 0.781.
-  - "Substantial absolute error, with LUT usage systematically overestimated"; the estimates are used for ranking only.
+  - "Substantial absolute error, with LUT usage systematically overestimated"; the authors find that the estimates still preserve enough relative ordering to guide candidate ranking during search (re-checked 10/31).
   - No DSP or RTL-MVU discussion.
 - **Arend, Ely, Kastensmidt, Recamonde-Mendoza, "Predicting Hardware Resource Allocation of MVAU Modules in FINN-Generated FPGA Accelerators"**
   - ERAMIA-RS 2025, pp. 308–311, DOI 10.5753/eramiars.2025.16671; 4-page PDF read in full.
   - Regression on 832 synthesized MVAU instances (213 builds, SAT-6 CNNs), predicting LUT/FF/RAMB/DSP with R² > 0.99.
-  - PE (38%) and "is RTL" (30%) dominate feature importance.
+  - Feature importance is dominated by the number of PEs and by "is RTL" (no percentages in the text; corrected 10/31).
   - No comparison with FINN's analytical estimators.
 - **Jentzsch & Platzner, "Empirical QoR Estimation Flow for Fast Design Space Exploration of DNN Dataflow Accelerators"**
   - ICFPT 2025, pp. 231–232, DOI 10.1109/icfpt67023.2025.00044; closed access, not read.
@@ -1182,7 +1182,7 @@ Full texts are in `papers/lit_1030/` (PDF plus extracted .txt). For each paper t
 
 ### Closest work to C1 (estimator defects)
 - **Jentzsch & Platzner, "Empirical QoR Estimation Flow for Fast Design Space Exploration of DNN Dataflow Accelerators"**, ICFPT 2025, DOI 10.1109/icfpt67023.2025.00044 (IEEE Xplore 11363887). Full text read.
-  - FINN's analytical MVAU LUT estimate has a MAPE of 110%; the Vitis HLS estimate has 209%. The authors call both "insufficient to reliably guide DSE".
+  - FINN's analytical MVAU LUT estimate has a MAPE of 108% (Table I, n = 7,828; 115% on the 714 sparse ones; corrected from 110% on 10/31 after re-reading the full text); the Vitis HLS estimate has 209%. The authors call both "insufficient to reliably guide DSE".
   - Micro-benchmark pipeline in FINN+ (GitLab CI): single-operator builds with an LFSR input shell, FPGA power measured on Zynq boards, results stored with DVC.
   - Dataset: 7,828 MVAU configurations, 714 of them sparse, 14 features. Histogram gradient boosting reaches 5.1% MAPE for LUT and 18.5% for power.
   - On ten example DNNs (TFC, KWS, CNV, VGG-10, MobileNetV1): 12% LUT error, against 49% for FINN and 62% for HLS; 32% for power.
@@ -1192,7 +1192,7 @@ Full texts are in `papers/lit_1030/` (PDF plus extracted .txt). For each paper t
 - **Colbert et al., "A2Q: Accumulator-Aware Quantization with Guaranteed Overflow Avoidance"**, arXiv 2301.13376 (AMD; ICCV 2023), Section 7.5.
   - They validate FINN LUT estimates against post-synthesis RTL with a single correlation figure ("94% correlation"), then draw Pareto frontiers from FINN estimates.
   - Their compute is forced onto LUTs, so neither the RTL MVU nor DSPs are involved.
-  - With FINNAS (Spearman 0.854, "used for ranking only"), this is the validation practice C2 questions.
+  - With FINNAS (Spearman 0.854; estimates judged good enough for ranking), this is the validation practice C2 questions.
 - **Bornträger et al. 2026** (arXiv 2606.11065; AMD, including the RTL MVU author), re-read for estimation remarks.
   - No discussion of FINN's `dsp_estimation`.
   - States that "the amount of additional resources external to the DSPs is equally important", and that LUTs "strongly correlate with the number of DSPs".
@@ -1209,8 +1209,8 @@ Full texts are in `papers/lit_1030/` (PDF plus extracted .txt). For each paper t
   - **Closest precedent for C2:** predictor error degrades constrained search and Pareto discovery. It concerns the measured latency of models on CPUs and GPUs, compares learned and cheap predictors, and reports accuracy loss. It does not cover infeasible (unbuildable) designs, systematic compiler mismatches, concentration at the top, or controls.
 - **Ning et al., "Evaluating Efficient Performance Estimators of Neural Architectures"**, NeurIPS 2021, arXiv 2008.03064, Sec. 3.
   - Defines P@topK and P@bottomK because "the ability of differentiating between good architectures matters more than differentiating between bad ones".
-  - The estimators separate bad architectures better than good ones: on NAS-Bench-201, P@top5% is about 0.47 and P@bottom5% about 0.88.
-- **White et al., "How Powerful are Performance Predictors in NAS?"**, NeurIPS 2021, arXiv 2104.01177. Evaluates 31 predictors with Pearson, Spearman, Kendall, sparse Kendall and precision@T, because no single metric captures usefulness for search.
+  - The estimators separate bad architectures better than good ones: on NAS-Bench-201 their P@top5% is lower than their P@bottom5% (the exact values were not re-confirmed from the table on 10/31; cite qualitatively).
+- **White et al., "How Powerful are Performance Predictors in NAS?"**, NeurIPS 2021, arXiv 2104.01177. Evaluates 31 predictors with Pearson, Spearman, Kendall and sparse Kendall (no precision@T in the text; corrected 10/31), because no single metric captures usefulness for search.
 - **Zhang et al., "On the Limits of Machine-Learned Ranking for Modern Microarchitectural Policies"**, arXiv 2608.01041 (NVIDIA and UW–Madison, 2026).
   - Quote: "high cycle or aggregate ranking accuracy can reflect mastery of easy, high-margin cases while missing the local reversals that carry the most architectural insight".
   - 22.4% of windows are counter-intuitive while aggregate ranking stays strong. An information-theoretic bound shows that trace-based predictors cannot resolve them.
@@ -1225,7 +1225,7 @@ Full texts are in `papers/lit_1030/` (PDF plus extracted .txt). For each paper t
 
 ### Closest work to C3 (joint precision, folding, mapping and clock for energy on FINN)
 - **FPGA-QNN** (Tasci, Istanbullu, Tumen, Kosunalp; Applied Sciences 15(2):688, 2025).
-  - FINN on PYNQ-Z1, MLP and LeNet, 12 hand-picked quantization × folding combinations; folding tuned by hand for throughput and energy; measured power 2.05 W.
+  - FINN on PYNQ-Z1, MLP and LeNet, 12 hand-picked quantization × folding combinations; folding tuned by hand for throughput and energy; reports 2.05 W for its MLP accelerator in the comparison table and at most 2.85 W (W2A2); its board measurement is about 0.5 W above Vivado (corrected 10/31).
   - No joint search, no ResNet, no estimator check.
 - **Layer-specific folding** (Tasci & Istanbullu; J. Electrical Eng. 77(3), 2026): 9 folding combinations (L/M/H) for a W1A2 LeNet. Same limitations as FPGA-QNN.
 - **SEADA** (Fiorin, Ronzani, Silvano; arXiv 2606.27884; 2026): an analytical cost model and mapper for multi-precision spatial (ASIC-style) accelerators, with per-layer precision chosen by bit-level entropy. Not FPGA dataflow; no check of the model's error.
@@ -1269,10 +1269,10 @@ PDFs and extracted text are in `papers/lit_1030/`.
 - **Xu et al., "AutoDNNchip"**, FPGA 2020, arXiv 2001.03535, Sec. 6. The Chip Predictor's energy is compared with measurements on Ultra96 (FPGA), Edge TPU and Jetson TX2 for 15 DNNs. Maximum error 9.17%; average 5.20% on the FPGA. It is also compared with Eyeriss and ShiDianNao (within 5%).
 - **Venieris & Bouganis, fpgaConvNet** (arXiv 1711.08740, NeurIPS-W 2017): SDF analytical throughput and latency models plus parameterized resource models, with DSE posed as optimization. The short paper reports no model error.
 - **Venieris et al., "Power-aware FPGA mapping of CNNs"**, FPT 2019 (PDF from the author's site): per-module dynamic and static power models inside the toolflow, trading accuracy for speed.
-- **HW-NAS-Bench** (Li et al., ICLR 2021, arXiv 2103.10584): its FPGA and ASIC costs come from simulators and estimators (Accelergy + Timeloop, DNN-Chip Predictor), not from synthesis. Benchmarks used by HW-NAS therefore inherit estimator fidelity.
+- **HW-NAS-Bench** (Li et al., ICLR 2021, arXiv 2103.10584): its ASIC costs come from simulators (Accelergy + Timeloop, DNN-Chip Predictor), not from synthesis. Its FPGA costs come from a chunk-based pipeline compiled with Vivado HLS and obtained on a ZC706; the paper does not say whether these are measured or estimated (corrected 10/31: an earlier version said simulators for FPGA too). Its ASIC numbers therefore inherit simulator fidelity.
 
 ### Power estimation fidelity
-- **Lin et al., "PowerGear"**, DATE 2022, arXiv 2201.10114, Table I. Against on-board measurement, Vivado's power estimate (with simulation activity) has 21.82% average total-power error; the GNN reaches 3.60% (total) and 8.81% (dynamic).
+- **Lin et al., "PowerGear"**, DATE 2022, arXiv 2201.10114, Table I. Against on-board measurement, Vivado's power estimate has 21.82% average total-power error; the GNN reaches 3.60% (total) and 8.81% (dynamic).
 - A 2026 SNN accelerator paper (arXiv 2608.00595) calls Vivado vectorless (12.5% toggle) a conservative upper bound.
 - **For us:** per-resource power weights fitted to Vivado vectorless reports are a tool estimate, perhaps 20% off. They can only check the ordering of LUT against DSP cost, not absolute energy.
 
@@ -1296,3 +1296,121 @@ PDFs and extracted text are in `papers/lit_1030/`.
 - C2 also applies to feasibility-learning DSE (HyperMapper) and to surrogate-plus-top-10 verification (GNN-DSE), because both take feasibility from tool estimates.
 - No paper found measures what systematic compiler-estimator bias does to the feasibility of the selected designs, or compares remedies (synthesize-and-reject, learned feasibility, safety margins, root-cause calibration) on equal synthesis budgets.
 - That comparison is the strengthening experiment E4 (`contributions.md`).
+
+## Tenth pass (2026-10-31, 11:20–11:35): the clock as a design variable (novelty of the timing work)
+Searches: FINN folding vs timing, frequency-aware DSE for CNN accelerators, joint precision / folding / clock, timing-aware HLS DSE, FINN issues and PRs on MVAU timing. The Lu et al. PDF is in `papers/lit_1031/`; the rest is from abstracts, PR pages and search snippets (marked).
+- **Suda et al., "Throughput-Optimized OpenCL-based FPGA Accelerator for Large-Scale CNNs"**, FPGA 2016: throughput DSE under resource and bandwidth limits. Lu et al. describe it as considering parallelism and frequency together, with the kernel frequency taken from synthesis data. Full text not read.
+- **Lu, Lu, Ye, Hu, Li, "Leveraging PVT-Margins in Design Space Exploration for FPGA-based CNN Accelerators"**, FPL 2017 (full text read). Pipelined AlexNet, 16-bit fixed point, DE5a-Net (Arria 10).
+  - Maximizes throughput f / Ncycle under resource, bandwidth and maximum-frequency constraints.
+  - The maximum frequency is one fitted curve of the global cycle budget: more parallelism, more utilization, routing congestion, lower fmax. It is measured on the board above the tool's frequency (PVT margins, i.e. beyond signoff).
+  - 1.39× throughput over a parallelism-only baseline.
+  - **Differences from ours:** one utilization-driven frequency curve for the whole design, not per-node structural timing; throughput objective, no energy, one precision, no accuracy constraint; overclocking beyond signoff instead of signoff clock classes; no refolding at fixed lanes.
+- **HLS DSE with frequency:** Wang et al. 2015 (core-level fmax model for model-based DSE); Lina (Perina, Becker, Bonato; timing-constrained HLS estimation, frequency as a knob); GRASP-based DSE (UFRGS 2025; HLS directives plus target frequency); Pyramid (Makrani et al.; ML fmax prediction). General HLS kernels, not dataflow NN compilers, no precision. From abstracts and snippets.
+- **Alam, Gregg, Gambardella, Preusser, Blott, "On the RTL Implementation of FINN Matrix Vector Compute Unit"**, arXiv 2201.11409 (2022). RTL vs HLS MVU; RTL gives up to 80% faster circuits; the delay grows with PE and SIMD for both (confirmed in the full text, eleventh pass). **For us:** that the MVU critical path grows with SIMD is known; cite it.
+- **FINN PR #1560 "compressor integration"** (S. Gerber; opened 2026-04-15, closed 2026-07-29 and replaced by #1648). LUT compressor trees replace the binary tree that adds the SIMD partial outputs of the DSP lanes; benchmarks report critical-path delay. Upstream is reworking the lane-sum path, which agrees with our dev-branch routing (pipelined lane adder 4.9–6.8 ns vs 8.4–13.7 ns in v0.10.1). Nothing on SIMD vs PE folding or on SetFolding.
+- **Ling, Qian, Schiele, arXiv 2410.03294 (MobiQuitous 2024; read in full earlier, see its entry above).** Adding 8-bit components capped the clock at 100 MHz instead of 125 MHz (uniform 6-bit); inference took 25% longer and power fell 12.85%, so energy per inference rose. (A search summary said "doubled"; the paper's doubling is the sequence-length effect, not this one.) Its precision search ranks fitting configurations by a bit-sum proxy, with no clock term. **For us:** precision changes the clock and the energy, observed but not optimized; supports H3.
+- **Habermann & Kumm, "Data-Rate-Aware High-Speed CNN Inference on FPGAs"** (arXiv 2603.08726, 2026): DSE over parallelism pairs for data-rate matching. fmax is only reported, not modeled; 8-bit only; not FINN.
+- **Borras et al., "Open-source FPGA-ML codesign for the MLPerf Tiny Benchmark"** (arXiv 2206.11791, 2022): hls4ml and FINN on Pynq-Z2 and Arty; nothing on folding vs timing in what was read.
+- FINN #1187 (the proposed folding optimizer) has an optional DWC LUT heuristic of its own; it looks at DWC LUT, not at timing (read in the eleventh pass below).
+
+### Net effect on novelty (timing)
+- **Not new:** fmax depends on parallelism; joint parallelism–frequency DSE for throughput (Suda 2016, Lu 2017); the MVU critical path grows with SIMD (Alam 2022); upstream is reworking the lane-sum adder (PR #1560 / #1648, the dev `mvu.sv`).
+- **New as far as found:**
+  1. In FINN, at equal lanes (same cycles) and equal DSPs, the SIMD/PE split alone sets the clock class. SetFolding raises SIMD first and ignores timing, so it picks the slow split; refolding to narrow SIMD moves the design up a PYNQ clock class at no cycle or DSP cost.
+  2. Per-node clock classes from post-synthesis timing, checked by place and route, inside a joint selection of per-layer bits, folding, LUT/DSP mapping and clock, with an energy objective under measured accuracy.
+  3. With timing, bits chosen by BOPs cost 6–13% more.
+- **Paper wording:** do not claim frequency-aware DSE as new; cite Suda 2016 and Lu 2017, and state the FINN-specific mechanism (SIMD/PE split at fixed lanes) and the joint energy-accuracy selection as ours.
+
+## Eleventh pass (2026-10-31, 11:36–12:00): deep re-check after the timing, DWC and numerics work
+PDFs and extracted text are in `papers/lit_1031/<paper>/` (one folder per download). Sweeps: OpenAlex keyword queries (2023–2026) and forward citations of Lu 2017, Suda 2016 and Alam 2022; GitHub issue search in Xilinx/finn and eki-project/finn-plus; FINN dev source at `e5a1fb0e3` (2026-10-30).
+
+### Read in full or in the relevant sections
+- **Alam, Gregg, Gambardella, Preußer, Blott, "On the RTL Implementation of FINN Matrix Vector Compute Unit"** (arXiv 2201.11409, 2022; `alam2022_rtl_mvu/`), Sec. 6.3 and Table 5.
+  - Same device as ours (XC7Z020, Pynq-Z1).
+  - The critical path "is proportional to the number of PEs and SIMDs" for both HLS and RTL (adder tree or SIMD elements, control logic for small RTL designs); RTL is 45–80% faster than HLS.
+  - This is a LUT-based RTL MVU of 2022, not the DSP-packed `mvu_vvu_axi` of v0.10.1. It does not separate SIMD from PE at a fixed lane count and does not link timing to folding choices or to clock classes.
+  - **For us:** the growth of the MVU critical path with folding is known on this exact device; cite it.
+- **Pham, Prost-Boucle, Muller, Pétrot, "Network Folding for Resource-Efficient Implementation of Stream-Dataflow DNN Inference on FPGAs"** (ACM Computing Frontiers 2026; Zenodo 10.5281/zenodo.19367306; `pham2026_network_folding/`).
+  - NNawaq framework (own RTL, not FINN). It reuses one physical block for repeated ResNet blocks (iteration and block folding), with a throughput-driven parallelism balance and off-chip weight streaming.
+  - Fixed precision (w4a4 hidden, w8a8 first and last), fixed clocks (250 MHz on VC709/VCU128, 125 MHz on Zynq boards). The unfolded designs are reported functional at those clocks. Their *network* folding, one physical block shared by repeated blocks, is said not to affect critical paths, so each physical module is assumed to reach the same clock.
+  - Memory resources are estimated, logic comes from synthesis; no energy.
+  - **For us:** a 2026 dataflow-folding paper with fixed clocks and throughput-driven parallelism; the clock is not a design variable. Its "folding" is block reuse, not PE/SIMD folding, so its timing remark is not a counter-claim to ours (corrected 10/31 12:00).
+- **Kratos** (Dai, Chen, Abdelfattah, Cornell; FPL 2024, arXiv 2407.06033; `kratos2024/`): a benchmark of unrolled DNN kernels on Arria 10. Area falls super-linearly with bit width. fmax depends on the implementation style: heavily pipelined fully unrolled kernels reach the device maximum, while row-parallel and pixelwise kernels lose speed in control and buffering. No DSE.
+- **Latotzke, Ciesielski, Gemmeke, "Design of High-Throughput Mixed-Precision CNN Accelerators on FPGA"** (FPL 2022, arXiv 2208.04854; `latotzke2022_mpq_dse/`).
+  - Holistic DSE for bit-serial/bit-parallel mixed-precision PE arrays on Stratix V, from the PE to the system level.
+  - Energy per frame from gate-level timing simulation (scaled from Stratix IV); DSP hard macros 1.7× more energy-efficient than LUT-based PEs of identical word length (gate-level simulation); their DSE uses only logic, DSP mapping left for future work.
+  - Clock frequencies are reported per design, not chosen; not a dataflow compiler.
+  - **For us:** the closest energy-aware mixed-precision FPGA DSE in architecture terms. Its energy is also model-based, and it does not search the LUT/DSP mapping or the clock.
+- **HASS** (Yu et al., FPL 2024, arXiv 2406.03088; `hass2024/`): hardware-aware sparsity search for dataflow accelerators (fpgaConvNet line) with resource estimates and a TPE search; fixed 250 MHz; no estimator check, no timing.
+- **"Exploring FINN Neural Network Accelerators with ARM Hardcore and RISC-V Softcore Processors in SRAM-based FPGA"** (J. Integrated Circuits and Systems 21(1), 2026; `jics2026_finn_sat/`): FINN on a Zynq-7000 board with uniform w8/w4/w2, FINN's automatic folding at 500 / 5,000 / 50,000 FPS, and Vivado post-implementation power. A manual trade-off study like FPGA-QNN: no joint search, no mixed precision, no timing, no estimator check.
+
+### Not obtainable in full (abstract or secondary description only)
+- **Suda et al., FPGA 2016** (ACM DL behind a bot check; not bypassed). Lu et al. 2017 describe it as considering parallelism and frequency together with the kernel frequency taken from synthesis data.
+- **Urso et al., "NN2FPGA"** (IEEE TCAD 44(5), 2025; postprint server returns 403). Abstract: a binary integer program assigns FPGA resources to layers to maximize throughput, for ResNets and MobileNetV2 with skip connections. Its predecessor (Minnella et al. 2023) is read above.
+
+### Upstream code and issues (read on 10/31)
+- **FINN dev `e5a1fb0e3` (2026-10-30):**
+  - `MVAU_rtl.lut_estimation` returns 0.
+  - `MVAU_rtl.dsp_estimation` is still `ceil(PE/4) * SIMD` on DSP48.
+  - Neither `MVAU_rtl` nor the MVAU base class estimates the replay-buffer BRAM.
+  - `SetFolding` has no clock or timing term.
+  - `StreamingDataWidthConverter.lut_estimation` is direction-blind (control-set LUTs = the LCM width and/or the output width).
+  - The same DWC formula is in v0.10.1 and in FINN+ `main`.
+- **Xilinx/finn#1708** (F. Jentzsch, 2026-09-26, closed after #1710).
+  - Synthesized cost of integer down-converters: old `dwc.sv` 230 LUT at 256→64, 444 at 480→96, 454 at 512→128, i.e. about one LUT per input bit. The DWC consolidation (#1660) raised this 2.3–2.8×; the fix restores it.
+  - Reports hardware cost only; FINN's DWC estimate is not discussed.
+  - **For us:** our synthesized v0.10.1 down-converters agree (960→15: 971 LUT); the estimator's 21 LUT is the gap we report.
+- **Xilinx/finn#1187 "New Folding Optimizer"** (open since 2024-09).
+  - Notes that a two-parameter node folded as (X, Y) or (Y, X) has the same throughput but different stream widths, so DWCs, FIFOs and node resources change.
+  - Its optional `enable_folding_dwc_heuristic` (code read in the PR diff) adds (inWidth + outWidth) LUT per RTL converter and 8× that per HLS (non-integer) converter. It is its own heuristic, not `lut_estimation()`, and it is also direction-blind: close for down-converters (960→15: 975 vs 971 synthesized), far too high for up-converters (32→1152: 1,184 vs 25).
+  - Nothing on timing. **For us:** the equal-throughput PE/SIMD choice is recognized upstream for resources, not for the clock.
+- **Xilinx/finn#338** (2021, open): exhaustive resource-aware folding (`SetFoldingExhaustive`); no timing.
+- **eki-project/finn-plus#72** (2025-05, open): PYNQ/Zynq PL clocks are discrete (the IOPLL turns 200 MHz into 187.5 MHz in Vivado and 214 MHz in the driver). This supports modeling the clock as a set of classes (1000/n MHz).
+- **Searched without hits:** "timing", "SIMD", "critical path", "fmax", "dsp_estimation", "width converter" in FINN+ issues and the corresponding FINN issues. No report of the DSP rule, the replay-buffer BRAM, SetFolding's blindness to timing, or the DWC estimate.
+
+### Sweeps with nothing that overlaps
+- **Joint parallelism and frequency (2022–2026):** only Lu 2017 and Suda 2016. Lu 2017 has one irrelevant citing work; Suda 2016's 556 citing works were screened by abstract for frequency × parallelism, with no DSE that models per-node timing.
+- **Clock gating / DVFS for FPGA CNN inference (2023–2026):** nothing beyond PowerFlow-DNN, Nunez-Yanez and Jiang et al. (earlier passes).
+- **Estimator or surrogate bias in hardware DSE (2023–2026):** CONQuER (arXiv 2607.25884, 2026) couples NSGA-II with surrogate prescreening for compiler-integrated mixed precision on CPU-class targets; OASI (IEEE ESL 2026) is surrogate initialization for TinyML BO; Statistical Hardware Design (TCAD 2023) is active learning. None measures what a systematically biased compiler estimator does to feasibility.
+
+## Twelfth pass (2026-10-31, 11:58–12:20): rigorous re-check for the related-work section
+Goal: every statement about prior work that may enter the paper is checked against the full text. The comparison matrix, the draft text, the statements to avoid and the correction log are in **`docs/related_work.md`**. Texts used here: `papers/lit_1031/<paper>/`. Two papers were read on IEEE Xplore through the institution's license (Yuan Ze University) by extracting the PDF text in the browser; only the facts are noted here.
+
+### Newly found and read
+- **Diaconu, Petrica, Blott, Leeser, "Machine Learning Aided Hardware Resource Estimation for FPGA DNN Implementations"**, IPDPSW 2022, DOI 10.1109/IPDPSW55747.2022.00022 (full text).
+  - SVR models for LUT and BRAM of FINN's fully connected, thresholding and convolutional layers. A hybrid analytical + SVR model improves LUT estimates; the BRAM SVR underperforms FINN and HLS.
+  - FINN decides LUTRAM vs BRAM by memory size with a fixed threshold; Vivado's mapping "appeared random"; a decision-tree classifier on memory width and height predicts it better.
+  - FINN's LUT estimates are more accurate than HLS's, while for BRAM HLS is closer to the ground truth.
+  - No DSP, no replay buffer, no timing.
+  - **For us:** the general LUTRAM-vs-BRAM weakness of FINN's estimates is known since 2022 and must be cited; our threshold-memory contribution narrows to the four code-level defects of v0.10.1.
+- **Jentzsch & Platzner, ICFPT 2025** (full text re-read).
+  - Table I: FINN MAPE 108% (n = 7,828), 115% on the sparse subset; Vitis HLS 209% and 89%; theirs 5% and 9%.
+  - Power MAPE 18.5%. On ten example accelerators: MVAU LUT error 12% vs 49% (FINN) and 62% (HLS); power 32%.
+  - The abstract additionally gives the overall LUT error falling from 39% to 7% on the example DNNs.
+  - 14 features. Power is measured on ZYNQ boards through the on-board voltage infrastructure. The analytical FINN estimates are the fallback where no learned model exists.
+  - Earlier notes said 110%; corrected.
+- **SHQ: Hu et al., "Single-Step Hardware-Aware Neural Network Quantization With Mixed Precision"**, IEEE TC 75(5):1809–1819, 2026, DOI 10.1109/TC.2026.3666546. Abstract and the public code (github.com/hujie369/SHQ) only.
+  - Genetic-algorithm search of per-layer bit widths with analytical DSP and BRAM formulas for a full-pipeline FPGA accelerator (MobileNet).
+  - In the code, per-layer folding ("dilution") is fixed and the DSP reuse factor depends on the weight bits. There is no LUT, clock or implementation choice, and the code also holds a MAC/memory-bit energy proxy.
+  - The abstract reports 39% fewer DSPs and 59% fewer BRAMs than full 8-bit on MobileNet for a 0.56% accuracy drop.
+  - **For us:** the closest hardware-aware mixed-precision search for a pipelined FPGA accelerator; it does not search folding, mapping or clock, and its objective is resources, not energy.
+- **Balaskas et al., "Hardware-Aware DNN Compression via Diverse Pruning and Mixed-Precision Quantization"** (arXiv 2312.15322; IEEE TETC). RL over pruning and mixed precision with a custom energy model of an Eyeriss-like ASIC accelerator. Not FPGA.
+- **CONQuER** (arXiv 2607.25884, 2026): compiler-integrated mixed precision at the TOSA level with NSGA-II and surrogate prescreening, for commodity CPU/GPU-class targets. Its related-work table is where SHQ and Balaskas were found.
+- **Tasci et al., "FPGA-QNN"** (Appl. Sci. 15(2):688, 2025; full text via the MDPI HTML page).
+  - FINN on PYNQ-Z1 at 100 MHz; MLP and LeNet; W1A1 / W1A2 / W2A2 × two folding levels, i.e. 12 accelerators.
+  - Vivado 2021.2 power plus a board measurement, about 0.5 W above Vivado. W2A2 is the highest at 2.85 W; the MLP accelerator is listed at 2.05 W in the comparison table.
+- **Dellel et al.** (Electronics 2025; re-read).
+  - Differentiable bit width and numeric format with a bit penalty as a soft regularizer; no hardware cost model in the loop.
+  - One CIFAR-10 model deployed with FINN on Pynq-Z2. Its Table 7 lists a 16-bit baseline of 4.8 M LUTs, more than the device has.
+- **Arend et al.** (ERAMIA-RS 2025; downloaded from SBC OpenLib).
+  - 213 builds, 832 MVAU instances, two SAT-6 topologies, 10-fold CV, R² > 0.99, XGBoost best.
+  - Importance dominated by PE count and RTL implementation, with no percentages in the text (corrected).
+- **Toupas et al., HARFLOW3D** (FCCM 2023): they call their DSP and BRAM models highly accurate because those resources are set deterministically by resource-type annotations. Useful contrast: in FINN v0.10.1 the DSP estimate of the RTL MVU is systematically wrong.
+- **Petrica et al.** (FPT 2020; re-read). Memory packing costs at most 32% of top frequency; RN50-W1A2 on U280 lost 32% of its compute clock at 99% LUT use. The cause is memory packing and density, not the PE/SIMD choice.
+- **Zhong et al.** (DATE 2017): learned resource model for HLS DSE with 12.7–19.8% average error. No statement that estimator error prunes or admits wrong designs (a search snippet suggested otherwise).
+
+### Found but not used (checked and irrelevant, or not obtainable)
+- **"Breaking the DSP Wall"** (Electronics 15(8):1586, 2026): a zero-DSP MAC on XC7Z020. The full text has no FINN, although a search summary claimed FINN 0.10.1. Usable only to support "DSPs are scarce on the XC7Z020".
+- **Kroes et al.** (arXiv 2003.12449): no 32% frequency statement (a search summary conflated it with Petrica 2020).
+- **FINN-HPC** (HEART 2025) and **NN2FPGA** (TCAD 2025): no accessible full text; abstract-level only.
+- **HMSA** (ACM TECS 2025): mixed-precision systolic array with a resource–performance cost model. Seen in the abstract only; not a dataflow design; not cited unless read.

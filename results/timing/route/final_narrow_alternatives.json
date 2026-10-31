@@ -1,0 +1,18 @@
+[
+ {
+  "case": "r576x64_pe32_s6_4x4",
+  "kind": "rtl",
+  "returncode": 0,
+  "synth_ns": 5.857,
+  "route_ns": 7.988,
+  "route_over_synth": 0.3638
+ },
+ {
+  "case": "r576x64_pe64_s3_4x4",
+  "kind": "rtl",
+  "returncode": 0,
+  "synth_ns": 3.824,
+  "route_ns": 7.45,
+  "route_over_synth": 0.9482
+ }
+]

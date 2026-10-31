@@ -1,0 +1,10 @@
+[
+ {
+  "case": "d0_39_MVAU_rtl_5",
+  "kind": "rtl",
+  "returncode": 0,
+  "synth_ns": 7.119,
+  "route_ns": 8.128,
+  "route_over_synth": 0.1417
+ }
+]

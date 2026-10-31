@@ -52,6 +52,25 @@
 
 順序：`audit_rtl_ops.py vivado` → `audit_hls_thresholds.py` → v1 校正 → `replay_bram.py tables` → `verify_designs.py generate / run`（被選中的設計）→ `calib_v2.py fit` → `calib_v2.py tables --override` → `energy_search.py points` → `threshold_sweep.py`、`budget_sweep.py`、`robust_select.py` → `dse_harm.py`、`feasible_at_k.py`、`dse_remedies.py` → `make_figures.py`。Windows 上 Vivado 的路徑長度上限是 260 字元，工作目錄要用短路徑（例如 `D:/vw`）。
 
+### 時序與補強實驗（10/31，需要 Vivado / Vitis HLS 2022.2；`../docs/implementation_notes.md` 12.35–12.40）
+| 檔案 | 做什麼 |
+|---|---|
+| `hls_timing_scan.py` | 掃過所有 Vitis HLS 合成報告，整理 MVAU_hls 的合成後時序（依 SF、SIMD 分組） |
+| `rtl_timing.py` | RTL 節點的 Vivado OOC 合成後時序；`--constrain-synth` 在合成前給時脈（和 FINN 自己的建置一樣） |
+| `route_timing.py` | 單一節點 OOC 佈局繞線，比較合成後和繞線後的時序 |
+| `count_mvu_primitives.py` | 展開 RTL MVU 數 DSP 數；`--dsp-version 2` 是 UltraScale+ 的 DSP48E2 |
+| `fifo_dwc_estimate.py` | FINN 會插入的寬度轉換器（FINN 估計）和殘差 FIFO（解析估算） |
+| `cost_tables.py --ts-refold --ts-rtl-simd 12 --ts-hls-simd 18` | 時序安全的重新摺疊：太寬的 MVU 改窄（RTL SIMD ≤ 12、有摺疊的 HLS SIMD ≤ 18，依繞線結果）、PE 加大，週期數和 DSP 數大致不變。第一版用 `--ts-rtl-simd 27`（HLS 預設 27） |
+| `timing_safe.py` | `tables`：依節點時序把成本表分成各時脈等級；`sweep`：各等級搜尋再合併；`rank`：列出能耗最低的配置和實測準確率；`table`：用實測準確率產生主表（驗證後的 A′、用實測重選的 B1 和 B2） |
+| `timing_feasible_at_k.py` | 不考慮時序的成本模型，排前 K 名的設計有多少跑得到它假設的時脈 |
+| `dse_heuristic.py` | 模擬退火和基因演算法用偏差模型搜尋，看會不會和窮舉一樣選到放不下的設計 |
+| `export_timing_dataset.py`、`make_timing_figure.py` | 匯出時序資料集（`results/audit_dataset/timing_*.csv`）和畫時序對 SIMD 的圖 |
+| `make_main_figure.py` | 主結果圖：各準確率門檻下 B1、B2 比驗證後的 A′ 多耗多少，每個主表一格（例如繞線餘裕 0、+10%） |
+| `make_ablation_figure.py` | 時序安全摺疊的消融圖：不重新摺疊、上限 27、RTL ≤ 12 / HLS ≤ 18，驗證後 A′ 的能耗和時脈 |
+| `make_route_figure.py` | 繞線後對合成後的關鍵路徑，標出時脈等級邊界和模型判斷錯的節點 |
+
+順序（最終版在 `pipelines_timing/run_ts_v5.sh`）：`cost_tables.py --ts-refold --ts-rtl-simd 12 --ts-hls-simd 18` → 校正鏈（`pipelines_timing/calib_chain.sh`：LUT_hi → `threshold_consistent.py` → `calib_mvu_vivado.py` → `calib_mvau_hls.py --override` → `replay_bram.py` → `calib_v2.py --override`）→ `timing_safe.py tables`（`--margin` 是繞線餘裕）→ 各等級 `energy_search.py points` → `timing_safe.py sweep` → `timing_safe.py table` → `make_main_figure.py`。
+
 `--bits` 一律依序給 8 個數字：`W1 A1 W2 A2 W3 A3 W4 A4`，分別對應 G1 = stem + Stack 1、G2 = Stack 2、G3 = Stack 3、G4 = FC。G4 的 A 是池化後送進 FC 的位元數。
 
 ## 環境（版本全部照 FINN v0.10.1 的 Docker）

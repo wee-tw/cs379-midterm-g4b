@@ -1,0 +1,66 @@
+== 44244448_dspc_14286 (A' m1): 58/58 synthesized | LUT pred 21869 synth 24054 | BRAM18 pred 50 synth 50 | DSP pred 209 synth 209 | dynamic power 1.312 W at 125 MHz | slowest node 7.495 ns (d0_25_MVAU_hls_2, 58 timed)
+   AddStreams_hls                     n= 3 LUT pred     168 synth     174 | BRAM18 pred     0 synth     0 | DSP    0 /    0 | P 0.004 W
+   ChannelwiseOp_hls                  n= 1 LUT pred      78 synth      78 | BRAM18 pred     0 synth     0 | DSP    0 /    0 | P 0.003 W
+   ConvolutionInputGenerator_rtl      n= 8 LUT pred    1994 synth    1743 | BRAM18 pred     5 synth     5 | DSP    0 /    0 | P 0.033 W
+   DownSampler_hls                    n= 2 LUT pred     320 synth     284 | BRAM18 pred     0 synth     0 | DSP    0 /    0 | P 0.004 W
+   DuplicateStreams_hls               n= 3 LUT pred     167 synth     180 | BRAM18 pred     0 synth     0 | DSP    0 /    0 | P 0.005 W
+   FMPadding_rtl                      n= 7 LUT pred     670 synth     670 | BRAM18 pred     0 synth     0 | DSP    0 /    0 | P 0.031 W
+   LabelSelect_hls                    n= 1 LUT pred     200 synth     170 | BRAM18 pred     0 synth     0 | DSP    0 /    0 | P 0.005 W
+   MVAU_hls                           n= 3 LUT pred    7127 synth    7005 | BRAM18 pred     0 synth     0 | DSP    0 /    0 | P 0.136 W
+   MVAU_hls_wstrm                     n= 3 LUT pred       0 synth     877 | BRAM18 pred     0 synth     0 | DSP    0 /    0 | P 0.020 W
+   MVAU_rtl                           n= 7 LUT pred   10187 synth    9853 | BRAM18 pred    39 synth     4 | DSP  209 /  209 | P 0.886 W
+   MVAU_rtl_wstrm                     n= 7 LUT pred       0 synth    1922 | BRAM18 pred     0 synth    35 | DSP    0 /    0 | P 0.120 W
+   Pool_hls                           n= 1 LUT pred     122 synth     122 | BRAM18 pred     0 synth     0 | DSP    0 /    0 | P 0.002 W
+   Thresholding_rtl                   n=12 LUT pred     838 synth     976 | BRAM18 pred     6 synth     6 | DSP    0 /    0 | P 0.063 W
+== 84848484_lut_25000 (B1 m1): 49/49 synthesized | LUT pred 42523 synth 41720 | BRAM18 pred 114 synth 114 | DSP pred 36 synth 36 | dynamic power 1.110 W at 111 MHz | slowest node 8.238 ns (d1_20_MVAU_hls_5, 49 timed)
+   AddStreams_hls                     n= 3 LUT pred     168 synth     165 | BRAM18 pred     0 synth     0 | DSP    0 /    0 | P 0.003 W
+   ChannelwiseOp_hls                  n= 1 LUT pred      78 synth      78 | BRAM18 pred     0 synth     0 | DSP    0 /    0 | P 0.003 W
+   ConvolutionInputGenerator_rtl      n= 8 LUT pred    1805 synth    1390 | BRAM18 pred     7 synth     7 | DSP    0 /    0 | P 0.027 W
+   DownSampler_hls                    n= 2 LUT pred     320 synth     327 | BRAM18 pred     0 synth     0 | DSP    0 /    0 | P 0.003 W
+   DuplicateStreams_hls               n= 3 LUT pred     167 synth     160 | BRAM18 pred     0 synth     0 | DSP    0 /    0 | P 0.003 W
+   FMPadding_rtl                      n= 7 LUT pred     670 synth     670 | BRAM18 pred     0 synth     0 | DSP    0 /    0 | P 0.031 W
+   LabelSelect_hls                    n= 1 LUT pred     200 synth     259 | BRAM18 pred     0 synth     0 | DSP    0 /    0 | P 0.005 W
+   MVAU_hls                           n= 9 LUT pred   38786 synth   37096 | BRAM18 pred   106 synth     0 | DSP   35 /   35 | P 0.809 W
+   MVAU_hls_wstrm                     n= 9 LUT pred       0 synth    1307 | BRAM18 pred     0 synth   106 | DSP    0 /    0 | P 0.215 W
+   MVAU_rtl                           n= 1 LUT pred      68 synth      60 | BRAM18 pred     1 synth     0 | DSP    1 /    1 | P 0.003 W
+   MVAU_rtl_wstrm                     n= 1 LUT pred       0 synth       7 | BRAM18 pred     0 synth     1 | DSP    0 /    0 | P 0.001 W
+   Pool_hls                           n= 1 LUT pred     122 synth     120 | BRAM18 pred     0 synth     0 | DSP    0 /    0 | P 0.002 W
+   Thresholding_rtl                   n= 3 LUT pred     140 synth      81 | BRAM18 pred     0 synth     0 | DSP    0 /    0 | P 0.005 W
+== 44444444_dsp4c_16667 (B1 m2): 58/58 synthesized | LUT pred 15204 synth 16265 | BRAM18 pred 41 synth 41 | DSP pred 203 synth 203 | dynamic power 1.121 W at 125 MHz | slowest node 7.208 ns (d2_18_ConvolutionInputGenerator_rtl_3, 58 timed)
+   AddStreams_hls                     n= 3 LUT pred     168 synth     165 | BRAM18 pred     0 synth     0 | DSP    0 /    0 | P 0.003 W
+   ChannelwiseOp_hls                  n= 1 LUT pred      78 synth      68 | BRAM18 pred     0 synth     0 | DSP    0 /    0 | P 0.002 W
+   ConvolutionInputGenerator_rtl      n= 8 LUT pred    1994 synth    1743 | BRAM18 pred     5 synth     5 | DSP    0 /    0 | P 0.033 W
+   DownSampler_hls                    n= 2 LUT pred     320 synth     327 | BRAM18 pred     0 synth     0 | DSP    0 /    0 | P 0.004 W
+   DuplicateStreams_hls               n= 3 LUT pred     167 synth     160 | BRAM18 pred     0 synth     0 | DSP    0 /    0 | P 0.003 W
+   FMPadding_rtl                      n= 7 LUT pred     670 synth     670 | BRAM18 pred     0 synth     0 | DSP    0 /    0 | P 0.031 W
+   LabelSelect_hls                    n= 1 LUT pred     200 synth     217 | BRAM18 pred     0 synth     0 | DSP    0 /    0 | P 0.004 W
+   MVAU_rtl                           n=10 LUT pred   10823 synth    9631 | BRAM18 pred    28 synth     3 | DSP  203 /  203 | P 0.877 W
+   MVAU_rtl_wstrm                     n=10 LUT pred       0 synth    2302 | BRAM18 pred     0 synth    25 | DSP    0 /    0 | P 0.105 W
+   Pool_hls                           n= 1 LUT pred     122 synth     120 | BRAM18 pred     0 synth     0 | DSP    0 /    0 | P 0.002 W
+   Thresholding_rtl                   n=12 LUT pred     664 synth     862 | BRAM18 pred     8 synth     8 | DSP    0 /    0 | P 0.057 W
+== 22244448_dspc_14286 (A' m5): 58/58 synthesized | LUT pred 23204 synth 22283 | BRAM18 pred 50 synth 50 | DSP pred 77 synth 77 | dynamic power 0.882 W at 125 MHz | slowest node 7.622 ns (d3_19_MVAU_hls_3, 58 timed)
+   AddStreams_hls                     n= 3 LUT pred     168 synth     163 | BRAM18 pred     0 synth     0 | DSP    0 /    0 | P 0.003 W
+   ChannelwiseOp_hls                  n= 1 LUT pred      78 synth      78 | BRAM18 pred     0 synth     0 | DSP    0 /    0 | P 0.003 W
+   ConvolutionInputGenerator_rtl      n= 8 LUT pred    1899 synth    1543 | BRAM18 pred     5 synth     5 | DSP    0 /    0 | P 0.029 W
+   DownSampler_hls                    n= 2 LUT pred     320 synth     305 | BRAM18 pred     0 synth     0 | DSP    0 /    0 | P 0.004 W
+   DuplicateStreams_hls               n= 3 LUT pred     167 synth     168 | BRAM18 pred     0 synth     0 | DSP    0 /    0 | P 0.003 W
+   FMPadding_rtl                      n= 7 LUT pred     670 synth     622 | BRAM18 pred     0 synth     0 | DSP    0 /    0 | P 0.028 W
+   LabelSelect_hls                    n= 1 LUT pred     200 synth     170 | BRAM18 pred     0 synth     0 | DSP    0 /    0 | P 0.005 W
+   MVAU_hls                           n= 6 LUT pred   15568 synth   12508 | BRAM18 pred     0 synth     0 | DSP    0 /    0 | P 0.270 W
+   MVAU_hls_wstrm                     n= 6 LUT pred       0 synth    1664 | BRAM18 pred     0 synth     0 | DSP    0 /    0 | P 0.045 W
+   MVAU_rtl                           n= 4 LUT pred    3450 synth    4183 | BRAM18 pred    39 synth     4 | DSP   77 /   77 | P 0.363 W
+   MVAU_rtl_wstrm                     n= 4 LUT pred       0 synth      84 | BRAM18 pred     0 synth    35 | DSP    0 /    0 | P 0.085 W
+   Pool_hls                           n= 1 LUT pred     122 synth     122 | BRAM18 pred     0 synth     0 | DSP    0 /    0 | P 0.002 W
+   Thresholding_rtl                   n=12 LUT pred     562 synth     673 | BRAM18 pred     6 synth     6 | DSP    0 /    0 | P 0.042 W
+== 24242424_dspc_14286 (B1 m8): 58/58 synthesized | LUT pred 27626 synth 27398 | BRAM18 pred 26 synth 26 | DSP pred 0 synth 0 | dynamic power 0.638 W at 111 MHz | slowest node 8.519 ns (d4_33_MVAU_hls_6, 58 timed)
+   AddStreams_hls                     n= 3 LUT pred     168 synth     174 | BRAM18 pred     0 synth     0 | DSP    0 /    0 | P 0.004 W
+   ChannelwiseOp_hls                  n= 1 LUT pred      78 synth      61 | BRAM18 pred     0 synth     0 | DSP    0 /    0 | P 0.002 W
+   ConvolutionInputGenerator_rtl      n= 8 LUT pred    1994 synth    1743 | BRAM18 pred     5 synth     5 | DSP    0 /    0 | P 0.033 W
+   DownSampler_hls                    n= 2 LUT pred     320 synth     284 | BRAM18 pred     0 synth     0 | DSP    0 /    0 | P 0.003 W
+   DuplicateStreams_hls               n= 3 LUT pred     167 synth     180 | BRAM18 pred     0 synth     0 | DSP    0 /    0 | P 0.003 W
+   FMPadding_rtl                      n= 7 LUT pred     670 synth     670 | BRAM18 pred     0 synth     0 | DSP    0 /    0 | P 0.031 W
+   LabelSelect_hls                    n= 1 LUT pred     200 synth     192 | BRAM18 pred     0 synth     0 | DSP    0 /    0 | P 0.003 W
+   MVAU_hls                           n=10 LUT pred   23048 synth   21336 | BRAM18 pred    18 synth     0 | DSP    0 /    0 | P 0.424 W
+   MVAU_hls_wstrm                     n=10 LUT pred       0 synth    1726 | BRAM18 pred     0 synth    18 | DSP    0 /    0 | P 0.085 W
+   Pool_hls                           n= 1 LUT pred     122 synth     120 | BRAM18 pred     0 synth     0 | DSP    0 /    0 | P 0.002 W
+   Thresholding_rtl                   n=12 LUT pred     860 synth     912 | BRAM18 pred     3 synth     3 | DSP    0 /    0 | P 0.048 W

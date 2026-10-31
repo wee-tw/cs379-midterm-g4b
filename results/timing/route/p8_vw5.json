@@ -1,0 +1,66 @@
+[
+ {
+  "case": "d0_02_MVAU_rtl_0",
+  "kind": "rtl",
+  "returncode": 0,
+  "synth_ns": 7.728,
+  "route_ns": 7.929,
+  "route_over_synth": 0.026
+ },
+ {
+  "case": "d0_25_MVAU_rtl_5",
+  "kind": "rtl",
+  "returncode": 0,
+  "synth_ns": 7.986,
+  "route_ns": 8.44,
+  "route_over_synth": 0.0568
+ },
+ {
+  "case": "d0_07_MVAU_rtl_1",
+  "kind": "rtl",
+  "returncode": 0,
+  "synth_ns": 7.914,
+  "route_ns": 8.576,
+  "route_over_synth": 0.0836
+ },
+ {
+  "case": "d1_07_MVAU_rtl_1",
+  "kind": "rtl",
+  "returncode": 0,
+  "synth_ns": 7.914,
+  "route_ns": 8.175,
+  "route_over_synth": 0.033
+ },
+ {
+  "case": "d0_18_ConvolutionInputGenerator_rtl_3",
+  "kind": "rtl",
+  "returncode": 0,
+  "synth_ns": 7.208,
+  "route_ns": 6.8,
+  "route_over_synth": -0.0566
+ },
+ {
+  "case": "d1_20_MVAU_hls_1",
+  "kind": "hls",
+  "returncode": 0,
+  "synth_ns": 7.495,
+  "route_ns": 7.361,
+  "route_over_synth": -0.0179
+ },
+ {
+  "case": "d1_19_MVAU_hls_0",
+  "kind": "hls",
+  "returncode": 0,
+  "synth_ns": 7.139,
+  "route_ns": 7.523,
+  "route_over_synth": 0.0538
+ },
+ {
+  "case": "d1_39_MVAU_hls_5",
+  "kind": "hls",
+  "returncode": 0,
+  "synth_ns": 8.539,
+  "route_ns": 9.445,
+  "route_over_synth": 0.1061
+ }
+]

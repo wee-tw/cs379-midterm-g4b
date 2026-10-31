@@ -1,0 +1,129 @@
+[
+ {
+  "MW": 144,
+  "MH": 16,
+  "PE": 4,
+  "SIMD": 72,
+  "W": 8,
+  "A": 4,
+  "core": "mvu_8sx8u_dsp48",
+  "dsp_version": 1,
+  "counts": {
+   "LUT6_2": 144,
+   "DSP48E1": 144
+  },
+  "finn_dsp_estimate": 72,
+  "errors": []
+ },
+ {
+  "MW": 144,
+  "MH": 16,
+  "PE": 2,
+  "SIMD": 144,
+  "W": 4,
+  "A": 4,
+  "core": "mvu_4sx4u_dsp48e1",
+  "dsp_version": 1,
+  "counts": {
+   "LUT6_2": 144,
+   "DSP48E1": 144
+  },
+  "finn_dsp_estimate": 144,
+  "errors": []
+ },
+ {
+  "MW": 144,
+  "MH": 16,
+  "PE": 4,
+  "SIMD": 72,
+  "W": 4,
+  "A": 4,
+  "core": "mvu_4sx4u_dsp48e1",
+  "dsp_version": 1,
+  "counts": {
+   "LUT6_2": 216,
+   "DSP48E1": 72
+  },
+  "finn_dsp_estimate": 72,
+  "errors": []
+ },
+ {
+  "MW": 144,
+  "MH": 16,
+  "PE": 8,
+  "SIMD": 36,
+  "W": 8,
+  "A": 8,
+  "core": "mvu_8sx8u_dsp48",
+  "dsp_version": 1,
+  "counts": {
+   "LUT6_2": 144,
+   "DSP48E1": 144
+  },
+  "finn_dsp_estimate": 72,
+  "errors": []
+ },
+ {
+  "MW": 144,
+  "MH": 16,
+  "PE": 16,
+  "SIMD": 9,
+  "W": 8,
+  "A": 8,
+  "core": "mvu_8sx8u_dsp48",
+  "dsp_version": 1,
+  "counts": {
+   "LUT6_2": 72,
+   "DSP48E1": 72
+  },
+  "finn_dsp_estimate": 36,
+  "errors": []
+ },
+ {
+  "MW": 288,
+  "MH": 32,
+  "PE": 8,
+  "SIMD": 36,
+  "W": 4,
+  "A": 8,
+  "core": "mvu_8sx8u_dsp48",
+  "dsp_version": 1,
+  "counts": {
+   "LUT6_2": 144,
+   "DSP48E1": 144
+  },
+  "finn_dsp_estimate": 72,
+  "errors": []
+ },
+ {
+  "MW": 27,
+  "MH": 16,
+  "PE": 2,
+  "SIMD": 27,
+  "W": 8,
+  "A": 8,
+  "core": "mvu_8sx8u_dsp48",
+  "dsp_version": 1,
+  "counts": {
+   "LUT6_2": 27,
+   "DSP48E1": 27
+  },
+  "finn_dsp_estimate": 27,
+  "errors": []
+ },
+ {
+  "MW": 144,
+  "MH": 16,
+  "PE": 1,
+  "SIMD": 144,
+  "W": 8,
+  "A": 4,
+  "core": "mvu_8sx8u_dsp48",
+  "dsp_version": 1,
+  "counts": {
+   "DSP48E1": 144
+  },
+  "finn_dsp_estimate": 144,
+  "errors": []
+ }
+]

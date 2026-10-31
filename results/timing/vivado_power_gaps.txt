@@ -1,0 +1,10 @@
+nominal   margin 1: A' 44244448_dspc_14286 0.3231 mJ | B1 84848484: model +129.5% -> Vivado +108.3% | B2 44444448: model +61.1% -> Vivado +39.6%
+nominal   margin 2: A' 44244448_dspc_14286 0.3231 mJ | B1 44444444: model +28.5% -> Vivado +25.6% | B2 44242448: model +53.1% -> Vivado +26.8%
+nominal   margin 3: A' 44244448_dspc_14286 0.3231 mJ | B1 44444444: model +28.5% -> Vivado +25.6% | B2 42442448: model +51.8% -> Vivado +28.1%
+nominal   margin 5: A' 24244448_dspc_14286 0.2895 mJ | B1 44444444: model +31.1% -> Vivado +40.2% | B2 42222448: model +49.5% -> Vivado +34.1%
+nominal   margin 8: A' 22244448_dspc_14286 0.2809 mJ | B1 24242424: model +7.9% -> Vivado +1.3% | B2 22222448: model +18.2% -> Vivado +11.4%
+z2_anchor margin 1: A' 44244448_dspc_14286 0.2887 mJ | B1 84848484: model +125.0% -> Vivado +106.3% | B2 44444448: model +59.6% -> Vivado +36.4%
+z2_anchor margin 2: A' 44244448_dspc_14286 0.2887 mJ | B1 44444444: model +30.4% -> Vivado +24.7% | B2 44242448: model +54.7% -> Vivado +22.1%
+z2_anchor margin 3: A' 44244448_dspc_14286 0.2887 mJ | B1 44444444: model +30.4% -> Vivado +24.7% | B2 42442448: model +54.0% -> Vivado +23.5%
+z2_anchor margin 5: A' 24244448_dspc_14286 0.2551 mJ | B1 44444444: model +32.0% -> Vivado +41.1% | B2 42222448: model +52.5% -> Vivado +29.7%
+z2_anchor margin 8: A' 22244448_dspc_14286 0.2464 mJ | B1 24242424: model +8.3% -> Vivado -0.3% | B2 22222448: model +17.8% -> Vivado +9.6%

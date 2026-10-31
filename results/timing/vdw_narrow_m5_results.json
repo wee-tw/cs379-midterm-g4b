@@ -1,0 +1,23 @@
+{
+ "d0_w20_StreamingDataWidthConverter_hls_0": {
+  "returncode": 0,
+  "LUT": 266.0,
+  "LUT_logic": 266.0,
+  "LUT_mem": 0.0,
+  "FF": 352.0,
+  "BRAM18": 0.0,
+  "DSP": 0.0,
+  "power_W": 0.005,
+  "period_ns": 7.011
+ },
+ "d0_w21_StreamingDataWidthConverter_rtl_20": {
+  "returncode": 0,
+  "LUT": 971.0,
+  "LUT_mem": 0.0,
+  "FF": 1007.0,
+  "BRAM18": 0.0,
+  "DSP": 0.0,
+  "power_W": 0.015,
+  "period_ns": 2.286
+ }
+}

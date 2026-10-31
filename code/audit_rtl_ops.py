@@ -90,7 +90,8 @@ def cmd_generate(args):
 
 def top_module(case_dir, op):
     pat = {"Thresholding_rtl": "*_axi_wrapper.v", "ConvolutionInputGenerator_rtl": "*_wrapper.v",
-           "FMPadding_rtl": "FMPadding_rtl_*.v", "MVAU_rtl": "*_wrapper.v"}[op]
+           "FMPadding_rtl": "FMPadding_rtl_*.v", "MVAU_rtl": "*_wrapper.v",
+           "StreamingDataWidthConverter_rtl": "StreamingDataWidthConverter_rtl_*.v"}[op]
     files = [f for f in glob.glob(os.path.join(case_dir, pat)) if not f.endswith("_sim.v")]
     m = re.search(r"^\s*module\s+(\w+)", open(files[0], encoding="utf-8").read(), re.M)
     return m.group(1)

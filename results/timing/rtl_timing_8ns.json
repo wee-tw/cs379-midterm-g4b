@@ -1,0 +1,1037 @@
+[
+ {
+  "case": "MVAU_rtl_047",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "2",
+   "SIMD": "144",
+   "MW": "144",
+   "MH": "16",
+   "ram_style": "auto",
+   "inputDataType": "UINT4",
+   "outputDataType": "INT13",
+   "weightDataType": "INT4"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": -4.533,
+  "achieved_ns": 12.533
+ },
+ {
+  "case": "MVAU_rtl_054",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "1",
+   "SIMD": "288",
+   "MW": "288",
+   "MH": "32",
+   "ram_style": "auto",
+   "inputDataType": "UINT4",
+   "outputDataType": "INT14",
+   "weightDataType": "INT4"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": -5.318,
+  "achieved_ns": 13.318
+ },
+ {
+  "case": "MVAU_rtl_072",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "4",
+   "SIMD": "72",
+   "MW": "144",
+   "MH": "16",
+   "ram_style": "auto",
+   "inputDataType": "UINT4",
+   "outputDataType": "INT17",
+   "weightDataType": "INT8"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": -3.099,
+  "achieved_ns": 11.099
+ },
+ {
+  "case": "MVAU_rtl_146",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "4",
+   "SIMD": "72",
+   "MW": "144",
+   "MH": "16",
+   "ram_style": "auto",
+   "inputDataType": "UINT8",
+   "outputDataType": "INT21",
+   "weightDataType": "INT8"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": -3.216,
+  "achieved_ns": 11.216
+ },
+ {
+  "case": "Thresholding_rtl_124",
+  "op": "Thresholding_rtl",
+  "attrs": {
+   "PE": "1",
+   "NumChannels": "64",
+   "inputDataType": "INT20",
+   "outputDataType": "UINT8",
+   "weightDataType": "INT20"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": 3.633,
+  "achieved_ns": 4.367
+ },
+ {
+  "case": "Thresholding_rtl_125",
+  "op": "Thresholding_rtl",
+  "attrs": {
+   "PE": "1",
+   "NumChannels": "64",
+   "inputDataType": "INT22",
+   "outputDataType": "UINT8",
+   "weightDataType": "INT22"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": 3.576,
+  "achieved_ns": 4.424
+ },
+ {
+  "case": "Thresholding_rtl_129",
+  "op": "Thresholding_rtl",
+  "attrs": {
+   "PE": "1",
+   "NumChannels": "64",
+   "inputDataType": "INT23",
+   "outputDataType": "UINT8",
+   "weightDataType": "INT23"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": 3.9,
+  "achieved_ns": 4.1
+ },
+ {
+  "case": "ConvolutionInputGenerator_rtl_145",
+  "op": "ConvolutionInputGenerator_rtl",
+  "attrs": {
+   "SIMD": "16",
+   "ram_style": "distributed",
+   "inputDataType": "UINT8",
+   "outputDataType": "UINT8",
+   "IFMDim": "[34, 34]",
+   "OFMDim": "[32, 32]",
+   "ConvKernelDim": "[3, 3]",
+   "Stride": "[1, 1]"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": 0.907,
+  "achieved_ns": 7.093
+ },
+ {
+  "case": "ConvolutionInputGenerator_rtl_152",
+  "op": "ConvolutionInputGenerator_rtl",
+  "attrs": {
+   "SIMD": "8",
+   "ram_style": "distributed",
+   "inputDataType": "UINT8",
+   "outputDataType": "UINT8",
+   "IFMDim": "[18, 18]",
+   "OFMDim": "[16, 16]",
+   "ConvKernelDim": "[3, 3]",
+   "Stride": "[1, 1]"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": 1.138,
+  "achieved_ns": 6.862
+ },
+ {
+  "case": "MVAU_rtl_030",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "1",
+   "SIMD": "1",
+   "MW": "64",
+   "MH": "10",
+   "ram_style": "auto",
+   "inputDataType": "UINT8",
+   "outputDataType": "INT17",
+   "weightDataType": "INT4"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": 4.087,
+  "achieved_ns": 3.913
+ },
+ {
+  "case": "MVAU_rtl_132",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "1",
+   "SIMD": "1",
+   "MW": "64",
+   "MH": "10",
+   "ram_style": "auto",
+   "inputDataType": "UINT8",
+   "outputDataType": "INT21",
+   "weightDataType": "INT8"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": 4.087,
+  "achieved_ns": 3.913
+ },
+ {
+  "case": "MVAU_rtl_010",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "1",
+   "SIMD": "2",
+   "MW": "16",
+   "MH": "32",
+   "ram_style": "auto",
+   "inputDataType": "UINT4",
+   "outputDataType": "INT11",
+   "weightDataType": "INT4"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": 4.207,
+  "achieved_ns": 3.793
+ },
+ {
+  "case": "MVAU_rtl_020",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "1",
+   "SIMD": "2",
+   "MW": "32",
+   "MH": "64",
+   "ram_style": "auto",
+   "inputDataType": "UINT4",
+   "outputDataType": "INT12",
+   "weightDataType": "INT4"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": 4.228,
+  "achieved_ns": 3.772
+ },
+ {
+  "case": "MVAU_rtl_112",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "1",
+   "SIMD": "2",
+   "MW": "16",
+   "MH": "32",
+   "ram_style": "auto",
+   "inputDataType": "UINT8",
+   "outputDataType": "INT19",
+   "weightDataType": "INT8"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": 4.194,
+  "achieved_ns": 3.806
+ },
+ {
+  "case": "MVAU_rtl_122",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "1",
+   "SIMD": "2",
+   "MW": "32",
+   "MH": "64",
+   "ram_style": "auto",
+   "inputDataType": "UINT8",
+   "outputDataType": "INT20",
+   "weightDataType": "INT8"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": 4.215,
+  "achieved_ns": 3.785
+ },
+ {
+  "case": "MVAU_rtl_036",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "1",
+   "SIMD": "8",
+   "MW": "16",
+   "MH": "32",
+   "ram_style": "auto",
+   "inputDataType": "UINT4",
+   "outputDataType": "INT11",
+   "weightDataType": "INT4"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": 2.248,
+  "achieved_ns": 5.752
+ },
+ {
+  "case": "MVAU_rtl_040",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "1",
+   "SIMD": "8",
+   "MW": "32",
+   "MH": "64",
+   "ram_style": "auto",
+   "inputDataType": "UINT4",
+   "outputDataType": "INT12",
+   "weightDataType": "INT4"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": 2.248,
+  "achieved_ns": 5.752
+ },
+ {
+  "case": "MVAU_rtl_136",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "1",
+   "SIMD": "8",
+   "MW": "16",
+   "MH": "32",
+   "ram_style": "auto",
+   "inputDataType": "UINT8",
+   "outputDataType": "INT19",
+   "weightDataType": "INT8"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": 2.014,
+  "achieved_ns": 5.986
+ },
+ {
+  "case": "MVAU_rtl_140",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "1",
+   "SIMD": "8",
+   "MW": "32",
+   "MH": "64",
+   "ram_style": "auto",
+   "inputDataType": "UINT8",
+   "outputDataType": "INT20",
+   "weightDataType": "INT8"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": 2.014,
+  "achieved_ns": 5.986
+ },
+ {
+  "case": "MVAU_rtl_002",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "1",
+   "SIMD": "9",
+   "MW": "27",
+   "MH": "16",
+   "ram_style": "auto",
+   "inputDataType": "UINT8",
+   "outputDataType": "INT15",
+   "weightDataType": "INT4"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": 2.225,
+  "achieved_ns": 5.775
+ },
+ {
+  "case": "MVAU_rtl_060",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "1",
+   "SIMD": "9",
+   "MW": "27",
+   "MH": "16",
+   "ram_style": "auto",
+   "inputDataType": "UINT8",
+   "outputDataType": "INT20",
+   "weightDataType": "INT8"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": 2.108,
+  "achieved_ns": 5.892
+ },
+ {
+  "case": "MVAU_rtl_011",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "1",
+   "SIMD": "12",
+   "MW": "144",
+   "MH": "32",
+   "ram_style": "auto",
+   "inputDataType": "UINT4",
+   "outputDataType": "INT13",
+   "weightDataType": "INT4"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": 2.016,
+  "achieved_ns": 5.984
+ },
+ {
+  "case": "MVAU_rtl_021",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "1",
+   "SIMD": "12",
+   "MW": "288",
+   "MH": "64",
+   "ram_style": "auto",
+   "inputDataType": "UINT4",
+   "outputDataType": "INT14",
+   "weightDataType": "INT4"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": 1.911,
+  "achieved_ns": 6.089
+ },
+ {
+  "case": "MVAU_rtl_113",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "1",
+   "SIMD": "12",
+   "MW": "144",
+   "MH": "32",
+   "ram_style": "auto",
+   "inputDataType": "UINT8",
+   "outputDataType": "INT21",
+   "weightDataType": "INT8"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": 1.782,
+  "achieved_ns": 6.218
+ },
+ {
+  "case": "MVAU_rtl_123",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "1",
+   "SIMD": "12",
+   "MW": "288",
+   "MH": "64",
+   "ram_style": "auto",
+   "inputDataType": "UINT8",
+   "outputDataType": "INT22",
+   "weightDataType": "INT8"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": 1.677,
+  "achieved_ns": 6.323
+ },
+ {
+  "case": "MVAU_rtl_051",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "1",
+   "SIMD": "16",
+   "MW": "16",
+   "MH": "32",
+   "ram_style": "auto",
+   "inputDataType": "UINT4",
+   "outputDataType": "INT11",
+   "weightDataType": "INT4"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": 0.37,
+  "achieved_ns": 7.63
+ },
+ {
+  "case": "MVAU_rtl_056",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "1",
+   "SIMD": "16",
+   "MW": "32",
+   "MH": "64",
+   "ram_style": "auto",
+   "inputDataType": "UINT4",
+   "outputDataType": "INT12",
+   "weightDataType": "INT4"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": 0.299,
+  "achieved_ns": 7.701
+ },
+ {
+  "case": "MVAU_rtl_150",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "1",
+   "SIMD": "16",
+   "MW": "16",
+   "MH": "32",
+   "ram_style": "auto",
+   "inputDataType": "UINT8",
+   "outputDataType": "INT19",
+   "weightDataType": "INT8"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": -0.244,
+  "achieved_ns": 8.244
+ },
+ {
+  "case": "MVAU_rtl_155",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "1",
+   "SIMD": "16",
+   "MW": "32",
+   "MH": "64",
+   "ram_style": "auto",
+   "inputDataType": "UINT8",
+   "outputDataType": "INT20",
+   "weightDataType": "INT8"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": -0.244,
+  "achieved_ns": 8.244
+ },
+ {
+  "case": "MVAU_rtl_006",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "1",
+   "SIMD": "24",
+   "MW": "144",
+   "MH": "16",
+   "ram_style": "auto",
+   "inputDataType": "UINT4",
+   "outputDataType": "INT13",
+   "weightDataType": "INT4"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": -0.373,
+  "achieved_ns": 8.373
+ },
+ {
+  "case": "MVAU_rtl_016",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "1",
+   "SIMD": "24",
+   "MW": "288",
+   "MH": "32",
+   "ram_style": "auto",
+   "inputDataType": "UINT4",
+   "outputDataType": "INT14",
+   "weightDataType": "INT4"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": -0.478,
+  "achieved_ns": 8.478
+ },
+ {
+  "case": "MVAU_rtl_026",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "1",
+   "SIMD": "24",
+   "MW": "576",
+   "MH": "64",
+   "ram_style": "auto",
+   "inputDataType": "UINT4",
+   "outputDataType": "INT15",
+   "weightDataType": "INT4"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": -0.478,
+  "achieved_ns": 8.478
+ },
+ {
+  "case": "MVAU_rtl_062",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "1",
+   "SIMD": "24",
+   "MW": "144",
+   "MH": "16",
+   "ram_style": "auto",
+   "inputDataType": "UINT4",
+   "outputDataType": "INT17",
+   "weightDataType": "INT8"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": -0.49,
+  "achieved_ns": 8.49
+ },
+ {
+  "case": "MVAU_rtl_108",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "1",
+   "SIMD": "24",
+   "MW": "144",
+   "MH": "16",
+   "ram_style": "auto",
+   "inputDataType": "UINT8",
+   "outputDataType": "INT21",
+   "weightDataType": "INT8"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": -0.607,
+  "achieved_ns": 8.607
+ },
+ {
+  "case": "MVAU_rtl_118",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "1",
+   "SIMD": "24",
+   "MW": "288",
+   "MH": "32",
+   "ram_style": "auto",
+   "inputDataType": "UINT8",
+   "outputDataType": "INT22",
+   "weightDataType": "INT8"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": -0.712,
+  "achieved_ns": 8.712
+ },
+ {
+  "case": "MVAU_rtl_128",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "1",
+   "SIMD": "24",
+   "MW": "576",
+   "MH": "64",
+   "ram_style": "auto",
+   "inputDataType": "UINT8",
+   "outputDataType": "INT23",
+   "weightDataType": "INT8"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": -0.712,
+  "achieved_ns": 8.712
+ },
+ {
+  "case": "MVAU_rtl_032",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "1",
+   "SIMD": "27",
+   "MW": "27",
+   "MH": "16",
+   "ram_style": "auto",
+   "inputDataType": "UINT8",
+   "outputDataType": "INT15",
+   "weightDataType": "INT4"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": -0.384,
+  "achieved_ns": 8.384
+ },
+ {
+  "case": "MVAU_rtl_044",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "2",
+   "SIMD": "27",
+   "MW": "27",
+   "MH": "16",
+   "ram_style": "auto",
+   "inputDataType": "UINT8",
+   "outputDataType": "INT15",
+   "weightDataType": "INT4"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": -0.384,
+  "achieved_ns": 8.384
+ },
+ {
+  "case": "MVAU_rtl_068",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "1",
+   "SIMD": "27",
+   "MW": "27",
+   "MH": "16",
+   "ram_style": "auto",
+   "inputDataType": "UINT8",
+   "outputDataType": "INT20",
+   "weightDataType": "INT8"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": -0.501,
+  "achieved_ns": 8.501
+ },
+ {
+  "case": "MVAU_rtl_070",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "2",
+   "SIMD": "27",
+   "MW": "27",
+   "MH": "16",
+   "ram_style": "auto",
+   "inputDataType": "UINT8",
+   "outputDataType": "INT20",
+   "weightDataType": "INT8"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": -0.501,
+  "achieved_ns": 8.501
+ },
+ {
+  "case": "MVAU_rtl_037",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "1",
+   "SIMD": "48",
+   "MW": "144",
+   "MH": "32",
+   "ram_style": "auto",
+   "inputDataType": "UINT4",
+   "outputDataType": "INT13",
+   "weightDataType": "INT4"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": -2.232,
+  "achieved_ns": 10.232
+ },
+ {
+  "case": "MVAU_rtl_041",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "1",
+   "SIMD": "48",
+   "MW": "288",
+   "MH": "64",
+   "ram_style": "auto",
+   "inputDataType": "UINT4",
+   "outputDataType": "INT14",
+   "weightDataType": "INT4"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": -2.337,
+  "achieved_ns": 10.337
+ },
+ {
+  "case": "MVAU_rtl_137",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "1",
+   "SIMD": "48",
+   "MW": "144",
+   "MH": "32",
+   "ram_style": "auto",
+   "inputDataType": "UINT8",
+   "outputDataType": "INT21",
+   "weightDataType": "INT8"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": -2.865,
+  "achieved_ns": 10.865
+ },
+ {
+  "case": "MVAU_rtl_141",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "1",
+   "SIMD": "48",
+   "MW": "288",
+   "MH": "64",
+   "ram_style": "auto",
+   "inputDataType": "UINT8",
+   "outputDataType": "INT22",
+   "weightDataType": "INT8"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": -2.97,
+  "achieved_ns": 10.97
+ },
+ {
+  "case": "MVAU_rtl_039",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "1",
+   "SIMD": "96",
+   "MW": "288",
+   "MH": "32",
+   "ram_style": "auto",
+   "inputDataType": "UINT4",
+   "outputDataType": "INT14",
+   "weightDataType": "INT4"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": -3.106,
+  "achieved_ns": 11.106
+ },
+ {
+  "case": "MVAU_rtl_043",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "1",
+   "SIMD": "96",
+   "MW": "576",
+   "MH": "64",
+   "ram_style": "auto",
+   "inputDataType": "UINT4",
+   "outputDataType": "INT15",
+   "weightDataType": "INT4"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": -3.157,
+  "achieved_ns": 11.157
+ },
+ {
+  "case": "MVAU_rtl_057",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "1",
+   "SIMD": "96",
+   "MW": "288",
+   "MH": "64",
+   "ram_style": "auto",
+   "inputDataType": "UINT4",
+   "outputDataType": "INT14",
+   "weightDataType": "INT4"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": -3.106,
+  "achieved_ns": 11.106
+ },
+ {
+  "case": "MVAU_rtl_139",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "1",
+   "SIMD": "96",
+   "MW": "288",
+   "MH": "32",
+   "ram_style": "auto",
+   "inputDataType": "UINT8",
+   "outputDataType": "INT22",
+   "weightDataType": "INT8"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": -3.541,
+  "achieved_ns": 11.541
+ },
+ {
+  "case": "MVAU_rtl_143",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "1",
+   "SIMD": "96",
+   "MW": "576",
+   "MH": "64",
+   "ram_style": "auto",
+   "inputDataType": "UINT8",
+   "outputDataType": "INT23",
+   "weightDataType": "INT8"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": -3.541,
+  "achieved_ns": 11.541
+ },
+ {
+  "case": "MVAU_rtl_153",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "2",
+   "SIMD": "96",
+   "MW": "288",
+   "MH": "32",
+   "ram_style": "auto",
+   "inputDataType": "UINT8",
+   "outputDataType": "INT22",
+   "weightDataType": "INT8"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": -3.541,
+  "achieved_ns": 11.541
+ },
+ {
+  "case": "MVAU_rtl_156",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "1",
+   "SIMD": "96",
+   "MW": "288",
+   "MH": "64",
+   "ram_style": "auto",
+   "inputDataType": "UINT8",
+   "outputDataType": "INT22",
+   "weightDataType": "INT8"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": -3.541,
+  "achieved_ns": 11.541
+ },
+ {
+  "case": "MVAU_rtl_158",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "2",
+   "SIMD": "96",
+   "MW": "576",
+   "MH": "64",
+   "ram_style": "auto",
+   "inputDataType": "UINT8",
+   "outputDataType": "INT23",
+   "weightDataType": "INT8"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": -3.905,
+  "achieved_ns": 11.905
+ },
+ {
+  "case": "MVAU_rtl_034",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "1",
+   "SIMD": "144",
+   "MW": "144",
+   "MH": "16",
+   "ram_style": "auto",
+   "inputDataType": "UINT4",
+   "outputDataType": "INT13",
+   "weightDataType": "INT4"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": -4.533,
+  "achieved_ns": 12.533
+ },
+ {
+  "case": "MVAU_rtl_052",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "1",
+   "SIMD": "144",
+   "MW": "144",
+   "MH": "32",
+   "ram_style": "auto",
+   "inputDataType": "UINT4",
+   "outputDataType": "INT13",
+   "weightDataType": "INT4"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": -4.533,
+  "achieved_ns": 12.533
+ },
+ {
+  "case": "MVAU_rtl_069",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "1",
+   "SIMD": "144",
+   "MW": "144",
+   "MH": "16",
+   "ram_style": "auto",
+   "inputDataType": "UINT4",
+   "outputDataType": "INT17",
+   "weightDataType": "INT8"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": -4.958,
+  "achieved_ns": 12.958
+ },
+ {
+  "case": "MVAU_rtl_134",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "1",
+   "SIMD": "144",
+   "MW": "144",
+   "MH": "16",
+   "ram_style": "auto",
+   "inputDataType": "UINT8",
+   "outputDataType": "INT21",
+   "weightDataType": "INT8"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": -5.276,
+  "achieved_ns": 13.276
+ },
+ {
+  "case": "MVAU_rtl_151",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "1",
+   "SIMD": "144",
+   "MW": "144",
+   "MH": "32",
+   "ram_style": "auto",
+   "inputDataType": "UINT8",
+   "outputDataType": "INT21",
+   "weightDataType": "INT8"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": -5.276,
+  "achieved_ns": 13.276
+ },
+ {
+  "case": "MVAU_rtl_059",
+  "op": "MVAU_rtl",
+  "attrs": {
+   "PE": "1",
+   "SIMD": "192",
+   "MW": "576",
+   "MH": "64",
+   "ram_style": "auto",
+   "inputDataType": "UINT4",
+   "outputDataType": "INT15",
+   "weightDataType": "INT4"
+  },
+  "returncode": 0,
+  "period_ns": 8.0,
+  "WNS_ns": -5.296,
+  "achieved_ns": 13.296
+ }
+]

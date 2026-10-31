@@ -56,5 +56,7 @@ Compute `lanes` as the selected core does: 4 or 2 on v0.10.1, or `NUM_LANES` on 
   - A fix could estimate `auto` as `dsp` (PE × SIMD × ceil((W+A)/48)), or resolve `auto` to `lut` or `dsp` before code generation, so that the estimate and the hardware agree.
   - Unchanged on the current `dev` branch (checked 2026-10-30) and in FINN+ (8d9e18e): `"auto"` still maps to `ap_resource_dflt()` and `dsp_estimation` returns 0 unless `resType == "dsp"`.
 
+- **DSP48E2 parts (UltraScale+, e.g. the AUP-ZU3 the FINN notebooks now default to):** elaborating the same eight configurations with the DSP48E2 cores gives the same counts as on DSP48E1. On v0.10.1 the 4-bit core instantiates DSP48E2. The 8-bit core is instantiated without `VERSION`, so it uses DSP48E1 cells, which Vivado retargets one-to-one. On dev with `VERSION = 2`, W4A8 packs 3 lanes per DSP (27-bit A port): 288 x 32, PE 8, SIMD 36 instantiates 108 DSPs against an estimate of 72. The other seven configurations match the DSP48E1 counts.
+
 ## Not verified
 - The DSP58 path.

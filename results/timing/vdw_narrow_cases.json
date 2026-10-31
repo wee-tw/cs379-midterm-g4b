@@ -1,0 +1,801 @@
+[
+ {
+  "case": "d0_w00_StreamingDataWidthConverter_rtl_0",
+  "design": "44244448_dspc_14286",
+  "role": "A' m1",
+  "op": "StreamingDataWidthConverter_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 73.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "inWidth": "24",
+   "outWidth": "72"
+  }
+ },
+ {
+  "case": "d0_w01_StreamingDataWidthConverter_rtl_1",
+  "design": "44244448_dspc_14286",
+  "role": "A' m1",
+  "op": "StreamingDataWidthConverter_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 32.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "inWidth": "120",
+   "outWidth": "30"
+  }
+ },
+ {
+  "case": "d0_w02_StreamingDataWidthConverter_rtl_2",
+  "design": "44244448_dspc_14286",
+  "role": "A' m1",
+  "op": "StreamingDataWidthConverter_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 67.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "inWidth": "8",
+   "outWidth": "64"
+  }
+ },
+ {
+  "case": "d0_w03_StreamingDataWidthConverter_hls_0",
+  "design": "44244448_dspc_14286",
+  "role": "A' m1",
+  "op": "StreamingDataWidthConverter_hls",
+  "kind": "hls",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 243.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "inWidth": "64",
+   "outWidth": "48"
+  }
+ },
+ {
+  "case": "d0_w04_StreamingDataWidthConverter_rtl_3",
+  "design": "44244448_dspc_14286",
+  "role": "A' m1",
+  "op": "StreamingDataWidthConverter_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 29.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "inWidth": "208",
+   "outWidth": "26"
+  }
+ },
+ {
+  "case": "d0_w05_StreamingDataWidthConverter_rtl_4",
+  "design": "44244448_dspc_14286",
+  "role": "A' m1",
+  "op": "StreamingDataWidthConverter_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 67.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "inWidth": "8",
+   "outWidth": "64"
+  }
+ },
+ {
+  "case": "d0_w06_StreamingDataWidthConverter_hls_1",
+  "design": "44244448_dspc_14286",
+  "role": "A' m1",
+  "op": "StreamingDataWidthConverter_hls",
+  "kind": "hls",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 243.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "inWidth": "64",
+   "outWidth": "48"
+  }
+ },
+ {
+  "case": "d0_w07_StreamingDataWidthConverter_rtl_5",
+  "design": "44244448_dspc_14286",
+  "role": "A' m1",
+  "op": "StreamingDataWidthConverter_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 29.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "inWidth": "208",
+   "outWidth": "26"
+  }
+ },
+ {
+  "case": "d0_w08_StreamingDataWidthConverter_rtl_6",
+  "design": "44244448_dspc_14286",
+  "role": "A' m1",
+  "op": "StreamingDataWidthConverter_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 67.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "inWidth": "8",
+   "outWidth": "64"
+  }
+ },
+ {
+  "case": "d0_w09_StreamingDataWidthConverter_rtl_7",
+  "design": "44244448_dspc_14286",
+  "role": "A' m1",
+  "op": "StreamingDataWidthConverter_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 67.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "inWidth": "8",
+   "outWidth": "64"
+  }
+ },
+ {
+  "case": "d0_w10_StreamingDataWidthConverter_rtl_8",
+  "design": "44244448_dspc_14286",
+  "role": "A' m1",
+  "op": "StreamingDataWidthConverter_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 18.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "inWidth": "64",
+   "outWidth": "16"
+  }
+ },
+ {
+  "case": "d0_w11_StreamingDataWidthConverter_rtl_9",
+  "design": "44244448_dspc_14286",
+  "role": "A' m1",
+  "op": "StreamingDataWidthConverter_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 581.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "inWidth": "16",
+   "outWidth": "576"
+  }
+ },
+ {
+  "case": "d0_w12_StreamingDataWidthConverter_rtl_10",
+  "design": "44244448_dspc_14286",
+  "role": "A' m1",
+  "op": "StreamingDataWidthConverter_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 133.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "inWidth": "4",
+   "outWidth": "128"
+  }
+ },
+ {
+  "case": "d0_w13_StreamingDataWidthConverter_rtl_11",
+  "design": "44244448_dspc_14286",
+  "role": "A' m1",
+  "op": "StreamingDataWidthConverter_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 34.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "inWidth": "128",
+   "outWidth": "32"
+  }
+ },
+ {
+  "case": "d0_w14_StreamingDataWidthConverter_rtl_12",
+  "design": "44244448_dspc_14286",
+  "role": "A' m1",
+  "op": "StreamingDataWidthConverter_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 1157.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "inWidth": "32",
+   "outWidth": "1152"
+  }
+ },
+ {
+  "case": "d0_w15_StreamingDataWidthConverter_rtl_13",
+  "design": "44244448_dspc_14286",
+  "role": "A' m1",
+  "op": "StreamingDataWidthConverter_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 133.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "inWidth": "4",
+   "outWidth": "128"
+  }
+ },
+ {
+  "case": "d0_w16_StreamingDataWidthConverter_rtl_14",
+  "design": "44244448_dspc_14286",
+  "role": "A' m1",
+  "op": "StreamingDataWidthConverter_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 18.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "inWidth": "4",
+   "outWidth": "16"
+  }
+ },
+ {
+  "case": "d0_w17_StreamingDataWidthConverter_rtl_15",
+  "design": "44244448_dspc_14286",
+  "role": "A' m1",
+  "op": "StreamingDataWidthConverter_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 12.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "inWidth": "128",
+   "outWidth": "8"
+  }
+ },
+ {
+  "case": "d0_w18_StreamingDataWidthConverter_rtl_16",
+  "design": "44244448_dspc_14286",
+  "role": "A' m1",
+  "op": "StreamingDataWidthConverter_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 14.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "inWidth": "48",
+   "outWidth": "12"
+  }
+ },
+ {
+  "case": "d0_w19_StreamingDataWidthConverter_rtl_17",
+  "design": "44244448_dspc_14286",
+  "role": "A' m1",
+  "op": "StreamingDataWidthConverter_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 50.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "inWidth": "8",
+   "outWidth": "48"
+  }
+ },
+ {
+  "case": "d0_w20_StreamingDataWidthConverter_rtl_18",
+  "design": "44244448_dspc_14286",
+  "role": "A' m1",
+  "op": "StreamingDataWidthConverter_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 17.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "inWidth": "112",
+   "outWidth": "14"
+  }
+ },
+ {
+  "case": "d0_w21_StreamingDataWidthConverter_rtl_19",
+  "design": "44244448_dspc_14286",
+  "role": "A' m1",
+  "op": "StreamingDataWidthConverter_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 262.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "inWidth": "4",
+   "outWidth": "256"
+  }
+ },
+ {
+  "case": "d0_w22_StreamingDataWidthConverter_rtl_20",
+  "design": "44244448_dspc_14286",
+  "role": "A' m1",
+  "op": "StreamingDataWidthConverter_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 20.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "inWidth": "256",
+   "outWidth": "16"
+  }
+ },
+ {
+  "case": "d0_w23_StreamingDataWidthConverter_hls_2",
+  "design": "44244448_dspc_14286",
+  "role": "A' m1",
+  "op": "StreamingDataWidthConverter_hls",
+  "kind": "hls",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 63.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "inWidth": "16",
+   "outWidth": "12"
+  }
+ },
+ {
+  "case": "d0_w24_StreamingDataWidthConverter_rtl_21",
+  "design": "44244448_dspc_14286",
+  "role": "A' m1",
+  "op": "StreamingDataWidthConverter_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 21.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "inWidth": "960",
+   "outWidth": "15"
+  }
+ },
+ {
+  "case": "d1_w00_StreamingDataWidthConverter_rtl_0",
+  "design": "22244448_dspc_14286",
+  "role": "A' m5",
+  "op": "StreamingDataWidthConverter_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 219.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "inWidth": "24",
+   "outWidth": "216"
+  }
+ },
+ {
+  "case": "d1_w01_StreamingDataWidthConverter_rtl_1",
+  "design": "22244448_dspc_14286",
+  "role": "A' m5",
+  "op": "StreamingDataWidthConverter_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 35.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "inWidth": "4",
+   "outWidth": "32"
+  }
+ },
+ {
+  "case": "d1_w02_StreamingDataWidthConverter_rtl_2",
+  "design": "22244448_dspc_14286",
+  "role": "A' m5",
+  "op": "StreamingDataWidthConverter_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 291.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "inWidth": "32",
+   "outWidth": "288"
+  }
+ },
+ {
+  "case": "d1_w03_StreamingDataWidthConverter_rtl_3",
+  "design": "22244448_dspc_14286",
+  "role": "A' m5",
+  "op": "StreamingDataWidthConverter_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 35.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "inWidth": "4",
+   "outWidth": "32"
+  }
+ },
+ {
+  "case": "d1_w04_StreamingDataWidthConverter_rtl_4",
+  "design": "22244448_dspc_14286",
+  "role": "A' m5",
+  "op": "StreamingDataWidthConverter_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 291.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "inWidth": "32",
+   "outWidth": "288"
+  }
+ },
+ {
+  "case": "d1_w05_StreamingDataWidthConverter_rtl_5",
+  "design": "22244448_dspc_14286",
+  "role": "A' m5",
+  "op": "StreamingDataWidthConverter_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 35.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "inWidth": "4",
+   "outWidth": "32"
+  }
+ },
+ {
+  "case": "d1_w06_StreamingDataWidthConverter_rtl_6",
+  "design": "22244448_dspc_14286",
+  "role": "A' m5",
+  "op": "StreamingDataWidthConverter_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 35.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "inWidth": "4",
+   "outWidth": "32"
+  }
+ },
+ {
+  "case": "d1_w07_StreamingDataWidthConverter_rtl_7",
+  "design": "22244448_dspc_14286",
+  "role": "A' m5",
+  "op": "StreamingDataWidthConverter_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 10.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "inWidth": "32",
+   "outWidth": "8"
+  }
+ },
+ {
+  "case": "d1_w08_StreamingDataWidthConverter_rtl_8",
+  "design": "22244448_dspc_14286",
+  "role": "A' m5",
+  "op": "StreamingDataWidthConverter_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 293.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "inWidth": "8",
+   "outWidth": "288"
+  }
+ },
+ {
+  "case": "d1_w09_StreamingDataWidthConverter_rtl_9",
+  "design": "22244448_dspc_14286",
+  "role": "A' m5",
+  "op": "StreamingDataWidthConverter_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 133.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "inWidth": "4",
+   "outWidth": "128"
+  }
+ },
+ {
+  "case": "d1_w10_StreamingDataWidthConverter_rtl_10",
+  "design": "22244448_dspc_14286",
+  "role": "A' m5",
+  "op": "StreamingDataWidthConverter_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 34.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "inWidth": "128",
+   "outWidth": "32"
+  }
+ },
+ {
+  "case": "d1_w11_StreamingDataWidthConverter_rtl_11",
+  "design": "22244448_dspc_14286",
+  "role": "A' m5",
+  "op": "StreamingDataWidthConverter_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 1157.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "inWidth": "32",
+   "outWidth": "1152"
+  }
+ },
+ {
+  "case": "d1_w12_StreamingDataWidthConverter_rtl_12",
+  "design": "22244448_dspc_14286",
+  "role": "A' m5",
+  "op": "StreamingDataWidthConverter_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 133.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "inWidth": "4",
+   "outWidth": "128"
+  }
+ },
+ {
+  "case": "d1_w13_StreamingDataWidthConverter_rtl_13",
+  "design": "22244448_dspc_14286",
+  "role": "A' m5",
+  "op": "StreamingDataWidthConverter_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 18.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "inWidth": "4",
+   "outWidth": "16"
+  }
+ },
+ {
+  "case": "d1_w14_StreamingDataWidthConverter_rtl_14",
+  "design": "22244448_dspc_14286",
+  "role": "A' m5",
+  "op": "StreamingDataWidthConverter_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 12.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "inWidth": "128",
+   "outWidth": "8"
+  }
+ },
+ {
+  "case": "d1_w15_StreamingDataWidthConverter_rtl_15",
+  "design": "22244448_dspc_14286",
+  "role": "A' m5",
+  "op": "StreamingDataWidthConverter_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 14.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "inWidth": "48",
+   "outWidth": "12"
+  }
+ },
+ {
+  "case": "d1_w16_StreamingDataWidthConverter_rtl_16",
+  "design": "22244448_dspc_14286",
+  "role": "A' m5",
+  "op": "StreamingDataWidthConverter_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 50.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "inWidth": "8",
+   "outWidth": "48"
+  }
+ },
+ {
+  "case": "d1_w17_StreamingDataWidthConverter_rtl_17",
+  "design": "22244448_dspc_14286",
+  "role": "A' m5",
+  "op": "StreamingDataWidthConverter_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 17.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "inWidth": "112",
+   "outWidth": "14"
+  }
+ },
+ {
+  "case": "d1_w18_StreamingDataWidthConverter_rtl_18",
+  "design": "22244448_dspc_14286",
+  "role": "A' m5",
+  "op": "StreamingDataWidthConverter_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 262.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "inWidth": "4",
+   "outWidth": "256"
+  }
+ },
+ {
+  "case": "d1_w19_StreamingDataWidthConverter_rtl_19",
+  "design": "22244448_dspc_14286",
+  "role": "A' m5",
+  "op": "StreamingDataWidthConverter_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 20.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "inWidth": "256",
+   "outWidth": "16"
+  }
+ },
+ {
+  "case": "d1_w20_StreamingDataWidthConverter_hls_0",
+  "design": "22244448_dspc_14286",
+  "role": "A' m5",
+  "op": "StreamingDataWidthConverter_hls",
+  "kind": "hls",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 63.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "inWidth": "16",
+   "outWidth": "12"
+  }
+ },
+ {
+  "case": "d1_w21_StreamingDataWidthConverter_rtl_20",
+  "design": "22244448_dspc_14286",
+  "role": "A' m5",
+  "op": "StreamingDataWidthConverter_rtl",
+  "kind": "rtl",
+  "f_MHz": 125.0,
+  "predicted": {
+   "LUT": 21.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "inWidth": "960",
+   "outWidth": "15"
+  }
+ }
+]

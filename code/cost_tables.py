@@ -23,7 +23,10 @@ Modes (how the network is converted and folded):
   dspc      as dsp, but MVAU_rtl DSPs counted as the RTL instantiates them (rtl_mvu_dsps)
   dsp4c     as dsp4 with that count, refolded for it
 
-  python cost_tables.py --out tables.json --workers 5 [--modes dsp4]
+  python cost_tables.py --out tables.json --workers 5 [--modes dsp4] [--ts-refold]
+
+--ts-refold refolds every MVAU_hls to a timing-safe SIMD after SetFolding (timing_safe_refold);
+--ts-rtl-simd N also narrows the MVAU_rtl to SIMD <= N.
 """
 
 import argparse
@@ -190,6 +193,49 @@ def dsp_aware_refold(m, corrected=False):
     return m
 
 
+TS_SIMD_MAX = 27   # widest folded MVAU_hls seen to meet 10 ns (timing_safe.py, notes 12.35)
+
+
+def narrow(inst, smax, rtl, corrected):
+    """Refold to SIMD <= smax (or SIMD = MW for MVAU_hls, which is safe at any width) with PE
+    dividing MH and PE*SIMD at least the current lanes, so the node is not slower. Among those,
+    the fewest DSPs for MVAU_rtl (as cost_tables counts them) and the fewest lanes for
+    MVAU_hls, then the widest SIMD. If no folding keeps the lanes, the most lanes possible."""
+    mw, mh = inst.get_nodeattr("MW"), inst.get_nodeattr("MH")
+    lanes = inst.get_nodeattr("PE") * inst.get_nodeattr("SIMD")
+    simds = [d for d in range(1, mw + 1) if mw % d == 0 and (d <= smax or (d == mw and not rtl))]
+    opts = [(pe, s) for s in simds for pe in range(1, mh + 1) if mh % pe == 0 and pe * s >= lanes]
+    if not opts:
+        opts = [(mh, max(simds))]
+    per = rtl_pack(inst, corrected) if rtl else None
+    cost = (lambda o: (math.ceil(o[0] / per) * o[1], o[0] * o[1], -o[1])) if rtl else (
+        lambda o: (o[0] * o[1], -o[1]))
+    pe, simd = min(opts, key=cost)
+    inst.set_nodeattr("SIMD", simd)
+    inst.set_nodeattr("PE", pe)
+
+
+def timing_safe_refold(m, rtl_smax=None, corrected=True):
+    """Folded MVAU_hls (SIMD < MW) wider than SIMD 27 miss 100 MHz after synthesis: narrow
+    them to SIMD <= 27 (COST_TS_HLS_SIMD sets another cap: 18 keeps them at 111 MHz after
+    routing, route_timing.py). With rtl_smax, also narrow every MVAU_rtl wider than that: the v0.10.1
+    RTL cores add the DSP lanes in an unpipelined LUT tree that grows with SIMD (11-13 ns at
+    SIMD 72-288, 8.4-8.7 ns at SIMD 24; rtl_timing.py). With the lanes kept, ceil(PE/lanes)*SIMD
+    DSPs do not grow (8-bit core) or shrink (4-bit core, whose 4 lanes per DSP narrow PEs waste)."""
+    from qonnx.custom_op.registry import getCustomOp
+    for n in m.graph.node:
+        if n.op_type not in ("MVAU_hls", "MVAU_rtl"):
+            continue
+        inst = getCustomOp(n)
+        simd, mw = inst.get_nodeattr("SIMD"), inst.get_nodeattr("MW")
+        hls_smax = int(os.environ.get("COST_TS_HLS_SIMD", "0")) or TS_SIMD_MAX
+        if n.op_type == "MVAU_hls" and simd != mw and simd > hls_smax:
+            narrow(inst, hls_smax, False, corrected)
+        elif n.op_type == "MVAU_rtl" and rtl_smax and simd > rtl_smax:
+            narrow(inst, rtl_smax, True, corrected)
+    return m
+
+
 def fold_and_estimate(m0, T, wwidth, dsp_aware=False, corrected=False):
     from qonnx.core.modelwrapper import ModelWrapper
     from qonnx.custom_op.registry import getCustomOp
@@ -210,6 +256,8 @@ def fold_and_estimate(m0, T, wwidth, dsp_aware=False, corrected=False):
     m = m.transform(SetFolding(T, mvau_wwidth_max=wwidth, two_pass_relaxation=False))
     if dsp_aware:
         m = dsp_aware_refold(m, corrected)
+    if os.environ.get("COST_TS_REFOLD"):   # env var: Windows workers are spawned, not forked
+        m = timing_safe_refold(m, int(os.environ.get("COST_TS_RTL_SIMD", "0")) or None, corrected)
     m = m.transform(MinimizeWeightBitWidth())
     m = m.transform(MinimizeAccumulatorWidth())
     m = m.transform(InferDataTypes())
@@ -283,9 +331,21 @@ def main():
     p.add_argument("--workers", type=int, default=4)
     p.add_argument("--limit", type=int, default=None, help="only the first N configs (test)")
     p.add_argument("--modes", default=None, help="comma-separated subset of MODES")
+    p.add_argument("--ts-refold", action="store_true",
+                   help="refold MVAU_hls to timing-safe SIMD (timing_safe_refold)")
+    p.add_argument("--ts-rtl-simd", type=int, default=None,
+                   help="with --ts-refold, also narrow MVAU_rtl to SIMD <= this")
+    p.add_argument("--ts-hls-simd", type=int, default=None,
+                   help=f"with --ts-refold, the SIMD cap of folded MVAU_hls (default {TS_SIMD_MAX})")
     args = p.parse_args()
     if args.modes:
         os.environ["COST_MODES"] = args.modes
+    if args.ts_refold:
+        os.environ["COST_TS_REFOLD"] = "1"
+    if args.ts_rtl_simd:
+        os.environ["COST_TS_RTL_SIMD"] = str(args.ts_rtl_simd)
+    if args.ts_hls_simd:
+        os.environ["COST_TS_HLS_SIMD"] = str(args.ts_hls_simd)
     cfgs = covering_configs()[:args.limit]
     table, mismatches, t0 = {}, [], time.time()
     with mp.Pool(args.workers) as pool:

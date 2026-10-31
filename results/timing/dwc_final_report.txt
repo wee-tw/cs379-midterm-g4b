@@ -1,0 +1,31 @@
+design                      role                    DWCs  hls  FINN LUT  synth LUT  synth FF  BRAM18 | design LUT  +DWC
+44244448_dspc_14286         A' m1                     25    2      3434       2416      6984       0 |      21869 +11.0% | slowest DWC 6.95 ns (clock 8.00 ns)
+84848484_lut_25000          B1 m1                     23    0      2509        837      3628       0 |      42523  +2.0% | slowest DWC 2.82 ns (clock 9.00 ns)
+44444444_dsp4c_16667        B1 m2                     28    6      3105       6528     11749       0 |      15204 +42.9% | slowest DWC 7.37 ns (clock 8.00 ns)
+22244448_dspc_14286         A' m5                     22    0      3162       1019      4457       0 |      23203  +4.4% | slowest DWC 2.82 ns (clock 8.00 ns)
+24242424_dspc_14286         B1 m8                     21    0      4191        928      5454       0 |      27625  +3.4% | slowest DWC 2.82 ns (clock 9.00 ns)
+44444448_lut_finn_16667     B2 m1 (resType lut)       21    6      3105       5503     10609       0 |      41388 +13.3% | slowest DWC 7.37 ns (clock 10.00 ns)
+44242448_lut_finn_16667     B2 m2 (resType lut)       21    5      3173       5289     10250       0 |      30166 +17.5% | slowest DWC 7.37 ns (clock 10.00 ns)
+42442448_lut_finn_16667     B2 m3 (resType lut)       21    5      2311       2945      7224       0 |      27721 +10.6% | slowest DWC 7.37 ns (clock 10.00 ns)
+42222448_lut_finn_16667     B2 m5 (resType lut)       21    5      1981       2712      6200       0 |      20088 +13.5% | slowest DWC 7.37 ns (clock 10.00 ns)
+22222448_lut_finn_10000     B2 m8 (resType lut)       22    5      1907       2780      6229       0 |      29393  +9.5% | slowest DWC 7.37 ns (clock 10.00 ns)
+24244448_dspc_14286         A' m5 (5 seeds)           22    0      4162       1079      5585       0 |      25816  +4.2% | slowest DWC 2.82 ns (clock 8.00 ns)
+DWC narrow -> wide  rtl:  28 width pairs, FINN LUT    5599, synthesis     426
+DWC narrow -> wide  hls:   6 width pairs, FINN LUT    1307, synthesis    2510
+DWC wide -> narrow  rtl:  27 width pairs, FINN LUT     432, synthesis    2628
+DWC wide -> narrow  hls:   3 width pairs, FINN LUT    1175, synthesis    2587
+narrowed 44244448: DWC LUT 2416 -> 3395; 16->48 (14) => 16->12 (266), 240->15 (244) => 960->15 (971); MVU LUT +436
+narrowed 22244448: DWC LUT 1019 -> 1998; 16->48 (14) => 16->12 (266), 240->15 (244) => 960->15 (971); MVU LUT +436
+narrowed 24244448: DWC LUT 1079 -> 2058; 16->48 (14) => 16->12 (266), 240->15 (244) => 960->15 (971); MVU LUT +436
+
+energy per frame (mJ) with the synthesized DWC LUT and BRAM added; baseline above A' before -> after; [narrowed A': its MVU and DWC LUT change added]
+nominal   margin 1: A' 44244448 0.2367 -> 0.2395 (+1.2%) [narrowed 0.2412, +1.9%] | B1 84848484 +129.5 -> +127.7% [+126.1%] (table +129.5%) | B2 44444448 +61.1 -> +62.8% [+61.7%] (table +61.1%)
+nominal   margin 2: A' 44244448 0.2367 -> 0.2395 (+1.2%) [narrowed 0.2412, +1.9%] | B1 44444444 +28.5 -> +31.2% [+30.3%] (table +28.5%) | B2 44242448 +53.1 -> +54.7% [+53.6%] (table +53.1%)
+nominal   margin 3: A' 44244448 0.2367 -> 0.2395 (+1.2%) [narrowed 0.2412, +1.9%] | B1 44444444 +28.5 -> +31.2% [+30.3%] (table +28.5%) | B2 42442448 +51.8 -> +52.0% [+50.9%] (table +51.8%)
+nominal   margin 5: A' 24244448 0.2321 -> 0.2333 (+0.5%) [narrowed 0.2350, +1.2%] | B1 44444444 +31.1 -> +34.7% [+33.7%] (table +31.1%) | B2 42222448 +49.5 -> +50.4% [+49.4%] (table +49.5%)
+nominal   margin 8: A' 22244448 0.2291 -> 0.2302 (+0.5%) [narrowed 0.2319, +1.2%] | B1 24242424 +7.9 -> +7.8% [+7.0%] (table +7.9%) | B2 22222448 +18.2 -> +19.0% [+18.1%] (table +18.2%)
+z2_anchor margin 1: A' 44244448 0.1793 -> 0.1806 (+0.7%) [narrowed 0.1814, +1.1%] | B1 84848484 +125.0 -> +123.9% [+122.9%] (table +125.0%) | B2 44444448 +59.6 -> +60.6% [+59.9%] (table +59.6%)
+z2_anchor margin 2: A' 44244448 0.1793 -> 0.1806 (+0.7%) [narrowed 0.1814, +1.1%] | B1 44444444 +30.4 -> +32.0% [+31.5%] (table +30.4%) | B2 44242448 +54.7 -> +55.7% [+55.0%] (table +54.7%)
+z2_anchor margin 3: A' 44244448 0.1793 -> 0.1806 (+0.7%) [narrowed 0.1814, +1.1%] | B1 44444444 +30.4 -> +32.0% [+31.5%] (table +30.4%) | B2 42442448 +54.0 -> +54.0% [+53.4%] (table +54.0%)
+z2_anchor margin 5: A' 24244448 0.1772 -> 0.1778 (+0.3%) [narrowed 0.1785, +0.7%] | B1 44444444 +32.0 -> +34.1% [+33.6%] (table +32.0%) | B2 42222448 +52.6 -> +53.1% [+52.5%] (table +52.5%)
+z2_anchor margin 8: A' 22244448 0.1758 -> 0.1763 (+0.3%) [narrowed 0.1771, +0.7%] | B1 24242424 +8.3 -> +8.3% [+7.8%] (table +8.3%) | B2 22222448 +17.8 -> +18.3% [+17.8%] (table +17.8%)

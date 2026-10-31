@@ -1,0 +1,2898 @@
+[
+ {
+  "case": "d0_00_FMPadding_rtl_0",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "FMPadding_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 95.71428571428571,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d0_01_ConvolutionInputGenerator_rtl_0",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "ConvolutionInputGenerator_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 256.56764793339283,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d0_02_MVAU_hls_0",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "MVAU_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 1577.0,
+   "BRAM_18K": 3.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "resType": "lut"
+  }
+ },
+ {
+  "case": "d0_02_MVAU_hls_0_wstrm",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "MVAU_hls_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "auto"
+  }
+ },
+ {
+  "case": "d0_03_DuplicateStreams_hls_0",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "DuplicateStreams_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 55.55555555555556,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d0_04_FMPadding_rtl_1",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "FMPadding_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 95.71428571428571,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d0_05_ConvolutionInputGenerator_rtl_1",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "ConvolutionInputGenerator_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 315.54871642382795,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d0_06_MVAU_hls_1",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "MVAU_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 6099.0,
+   "BRAM_18K": 16.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "resType": "lut"
+  }
+ },
+ {
+  "case": "d0_06_MVAU_hls_1_wstrm",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "MVAU_hls_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "auto"
+  }
+ },
+ {
+  "case": "d0_07_FMPadding_rtl_2",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "FMPadding_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 95.71428571428571,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d0_08_ConvolutionInputGenerator_rtl_2",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "ConvolutionInputGenerator_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 315.54871642382795,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d0_09_MVAU_hls_2",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "MVAU_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 6099.0,
+   "BRAM_18K": 16.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "resType": "lut"
+  }
+ },
+ {
+  "case": "d0_09_MVAU_hls_2_wstrm",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "MVAU_hls_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "auto"
+  }
+ },
+ {
+  "case": "d0_10_AddStreams_hls_0",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "AddStreams_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 56.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d0_11_Thresholding_rtl_0",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "Thresholding_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 25.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d0_12_DuplicateStreams_hls_1",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "DuplicateStreams_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 55.55555555555556,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d0_13_FMPadding_rtl_3",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "FMPadding_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 95.71428571428571,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d0_14_DownSampler_hls_0",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "DownSampler_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 159.8181818181818,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d0_15_ConvolutionInputGenerator_rtl_3",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "ConvolutionInputGenerator_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 350.937357518089,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d0_16_MVAU_hls_3",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "MVAU_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 433.0,
+   "BRAM_18K": 1.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "resType": "lut"
+  }
+ },
+ {
+  "case": "d0_16_MVAU_hls_3_wstrm",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "MVAU_hls_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "auto"
+  }
+ },
+ {
+  "case": "d0_17_MVAU_hls_4",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "MVAU_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 1767.0,
+   "BRAM_18K": 4.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "resType": "lut"
+  }
+ },
+ {
+  "case": "d0_17_MVAU_hls_4_wstrm",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "MVAU_hls_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "auto"
+  }
+ },
+ {
+  "case": "d0_18_FMPadding_rtl_4",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "FMPadding_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 95.71428571428571,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d0_19_ConvolutionInputGenerator_rtl_4",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "ConvolutionInputGenerator_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 339.141143820002,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d0_20_MVAU_hls_5",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "MVAU_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 3225.0,
+   "BRAM_18K": 8.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "resType": "lut"
+  }
+ },
+ {
+  "case": "d0_20_MVAU_hls_5_wstrm",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "MVAU_hls_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "auto"
+  }
+ },
+ {
+  "case": "d0_21_AddStreams_hls_1",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "AddStreams_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 56.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d0_22_Thresholding_rtl_1",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "Thresholding_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 40.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d0_23_DuplicateStreams_hls_2",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "DuplicateStreams_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 55.55555555555556,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d0_24_FMPadding_rtl_5",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "FMPadding_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 95.71428571428571,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d0_25_DownSampler_hls_1",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "DownSampler_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 159.8181818181818,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d0_26_ConvolutionInputGenerator_rtl_5",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "ConvolutionInputGenerator_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 345.03925066904554,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d0_27_MVAU_hls_6",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "MVAU_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 512.0,
+   "BRAM_18K": 1.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "resType": "lut"
+  }
+ },
+ {
+  "case": "d0_27_MVAU_hls_6_wstrm",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "MVAU_hls_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "auto"
+  }
+ },
+ {
+  "case": "d0_28_MVAU_hls_7",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "MVAU_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 2079.0,
+   "BRAM_18K": 4.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "resType": "lut"
+  }
+ },
+ {
+  "case": "d0_28_MVAU_hls_7_wstrm",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "MVAU_hls_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "auto"
+  }
+ },
+ {
+  "case": "d0_29_FMPadding_rtl_6",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "FMPadding_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 95.71428571428571,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d0_30_ConvolutionInputGenerator_rtl_6",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "ConvolutionInputGenerator_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 339.141143820002,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d0_31_MVAU_hls_8",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "MVAU_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 3642.0,
+   "BRAM_18K": 8.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "resType": "lut"
+  }
+ },
+ {
+  "case": "d0_31_MVAU_hls_8_wstrm",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "MVAU_hls_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "auto"
+  }
+ },
+ {
+  "case": "d0_32_AddStreams_hls_2",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "AddStreams_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 56.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d0_33_Thresholding_rtl_2",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "Thresholding_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 75.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d0_34_ConvolutionInputGenerator_rtl_7",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "ConvolutionInputGenerator_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 539.6767766874815,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d0_35_Pool_hls_0",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "Pool_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 121.66666666666667,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d0_36_MVAU_rtl_0",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "MVAU_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 67.79867899737297,
+   "BRAM_18K": 1.0,
+   "DSP": 1.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d0_36_MVAU_rtl_0_wstrm",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "MVAU_rtl_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "auto"
+  }
+ },
+ {
+  "case": "d0_37_ChannelwiseOp_hls_0",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "ChannelwiseOp_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 78.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d0_38_LabelSelect_hls_0",
+  "design": "44242448_lut_finn_16667",
+  "role": "B2 m2 (resType lut)",
+  "op": "LabelSelect_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 200.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d1_00_FMPadding_rtl_0",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "FMPadding_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 95.71428571428571,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d1_01_ConvolutionInputGenerator_rtl_0",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "ConvolutionInputGenerator_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 256.56764793339283,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d1_02_MVAU_hls_0",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "MVAU_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 1239.900233761006,
+   "BRAM_18K": 3.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "resType": "lut"
+  }
+ },
+ {
+  "case": "d1_02_MVAU_hls_0_wstrm",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "MVAU_hls_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "auto"
+  }
+ },
+ {
+  "case": "d1_03_DuplicateStreams_hls_0",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "DuplicateStreams_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 55.55555555555556,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d1_04_FMPadding_rtl_1",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "FMPadding_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 95.71428571428571,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d1_05_ConvolutionInputGenerator_rtl_1",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "ConvolutionInputGenerator_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 268.36386163147984,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d1_06_MVAU_hls_1",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "MVAU_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 2838.981727393357,
+   "BRAM_18K": 16.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "resType": "lut"
+  }
+ },
+ {
+  "case": "d1_06_MVAU_hls_1_wstrm",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "MVAU_hls_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "auto"
+  }
+ },
+ {
+  "case": "d1_07_FMPadding_rtl_2",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "FMPadding_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 95.71428571428571,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d1_08_ConvolutionInputGenerator_rtl_2",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "ConvolutionInputGenerator_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 268.36386163147984,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d1_09_MVAU_hls_2",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "MVAU_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 2838.981727393357,
+   "BRAM_18K": 16.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "resType": "lut"
+  }
+ },
+ {
+  "case": "d1_09_MVAU_hls_2_wstrm",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "MVAU_hls_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "auto"
+  }
+ },
+ {
+  "case": "d1_10_AddStreams_hls_0",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "AddStreams_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 56.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d1_11_Thresholding_rtl_0",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "Thresholding_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 6.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d1_12_DuplicateStreams_hls_1",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "DuplicateStreams_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 55.55555555555556,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d1_13_FMPadding_rtl_3",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "FMPadding_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 95.71428571428571,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d1_14_DownSampler_hls_0",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "DownSampler_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 159.8181818181818,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d1_15_ConvolutionInputGenerator_rtl_3",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "ConvolutionInputGenerator_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 286.05818217861037,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d1_16_MVAU_hls_3",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "MVAU_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 462.8783512402822,
+   "BRAM_18K": 1.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "resType": "lut"
+  }
+ },
+ {
+  "case": "d1_16_MVAU_hls_3_wstrm",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "MVAU_hls_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "auto"
+  }
+ },
+ {
+  "case": "d1_17_MVAU_hls_4",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "MVAU_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 2799.6003675216753,
+   "BRAM_18K": 8.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "resType": "lut"
+  }
+ },
+ {
+  "case": "d1_17_MVAU_hls_4_wstrm",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "MVAU_hls_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "auto"
+  }
+ },
+ {
+  "case": "d1_18_FMPadding_rtl_4",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "FMPadding_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 95.71428571428571,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d1_19_ConvolutionInputGenerator_rtl_4",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "ConvolutionInputGenerator_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 339.141143820002,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d1_20_MVAU_hls_5",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "MVAU_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 6753.0,
+   "BRAM_18K": 16.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "resType": "lut"
+  }
+ },
+ {
+  "case": "d1_20_MVAU_hls_5_wstrm",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "MVAU_hls_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "auto"
+  }
+ },
+ {
+  "case": "d1_21_AddStreams_hls_1",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "AddStreams_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 56.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d1_22_Thresholding_rtl_1",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "Thresholding_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 40.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d1_23_DuplicateStreams_hls_2",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "DuplicateStreams_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 55.55555555555556,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d1_24_FMPadding_rtl_5",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "FMPadding_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 95.71428571428571,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d1_25_DownSampler_hls_1",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "DownSampler_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 159.8181818181818,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d1_26_ConvolutionInputGenerator_rtl_5",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "ConvolutionInputGenerator_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 345.03925066904554,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d1_27_MVAU_hls_6",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "MVAU_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 512.0,
+   "BRAM_18K": 1.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "resType": "lut"
+  }
+ },
+ {
+  "case": "d1_27_MVAU_hls_6_wstrm",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "MVAU_hls_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "auto"
+  }
+ },
+ {
+  "case": "d1_28_MVAU_hls_7",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "MVAU_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 2079.0,
+   "BRAM_18K": 4.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "resType": "lut"
+  }
+ },
+ {
+  "case": "d1_28_MVAU_hls_7_wstrm",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "MVAU_hls_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "auto"
+  }
+ },
+ {
+  "case": "d1_29_FMPadding_rtl_6",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "FMPadding_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 95.71428571428571,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d1_30_ConvolutionInputGenerator_rtl_6",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "ConvolutionInputGenerator_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 339.141143820002,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d1_31_MVAU_hls_8",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "MVAU_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 3642.0,
+   "BRAM_18K": 8.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "resType": "lut"
+  }
+ },
+ {
+  "case": "d1_31_MVAU_hls_8_wstrm",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "MVAU_hls_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "auto"
+  }
+ },
+ {
+  "case": "d1_32_AddStreams_hls_2",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "AddStreams_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 56.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d1_33_Thresholding_rtl_2",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "Thresholding_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 75.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d1_34_ConvolutionInputGenerator_rtl_7",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "ConvolutionInputGenerator_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 539.6767766874815,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d1_35_Pool_hls_0",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "Pool_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 121.66666666666667,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d1_36_MVAU_rtl_0",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "MVAU_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 67.79867899737297,
+   "BRAM_18K": 1.0,
+   "DSP": 1.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d1_36_MVAU_rtl_0_wstrm",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "MVAU_rtl_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "auto"
+  }
+ },
+ {
+  "case": "d1_37_ChannelwiseOp_hls_0",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "ChannelwiseOp_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 78.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d1_38_LabelSelect_hls_0",
+  "design": "42442448_lut_finn_16667",
+  "role": "B2 m3 (resType lut)",
+  "op": "LabelSelect_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 200.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d2_00_FMPadding_rtl_0",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "FMPadding_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 95.71428571428571,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d2_01_ConvolutionInputGenerator_rtl_0",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "ConvolutionInputGenerator_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 256.56764793339283,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d2_02_MVAU_hls_0",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "MVAU_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 1239.900233761006,
+   "BRAM_18K": 3.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "resType": "lut"
+  }
+ },
+ {
+  "case": "d2_02_MVAU_hls_0_wstrm",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "MVAU_hls_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "auto"
+  }
+ },
+ {
+  "case": "d2_03_DuplicateStreams_hls_0",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "DuplicateStreams_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 55.55555555555556,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d2_04_FMPadding_rtl_1",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "FMPadding_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 95.71428571428571,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d2_05_ConvolutionInputGenerator_rtl_1",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "ConvolutionInputGenerator_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 268.36386163147984,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d2_06_MVAU_hls_1",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "MVAU_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 2838.981727393357,
+   "BRAM_18K": 16.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "resType": "lut"
+  }
+ },
+ {
+  "case": "d2_06_MVAU_hls_1_wstrm",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "MVAU_hls_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "auto"
+  }
+ },
+ {
+  "case": "d2_07_FMPadding_rtl_2",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "FMPadding_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 95.71428571428571,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d2_08_ConvolutionInputGenerator_rtl_2",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "ConvolutionInputGenerator_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 268.36386163147984,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d2_09_MVAU_hls_2",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "MVAU_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 2838.981727393357,
+   "BRAM_18K": 16.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "resType": "lut"
+  }
+ },
+ {
+  "case": "d2_09_MVAU_hls_2_wstrm",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "MVAU_hls_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "auto"
+  }
+ },
+ {
+  "case": "d2_10_AddStreams_hls_0",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "AddStreams_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 56.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d2_11_Thresholding_rtl_0",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "Thresholding_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 6.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d2_12_DuplicateStreams_hls_1",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "DuplicateStreams_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 55.55555555555556,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d2_13_FMPadding_rtl_3",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "FMPadding_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 95.71428571428571,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d2_14_DownSampler_hls_0",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "DownSampler_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 159.8181818181818,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d2_15_ConvolutionInputGenerator_rtl_3",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "ConvolutionInputGenerator_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 286.05818217861037,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d2_16_MVAU_hls_3",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "MVAU_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 283.0,
+   "BRAM_18K": 1.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "resType": "lut"
+  }
+ },
+ {
+  "case": "d2_16_MVAU_hls_3_wstrm",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "MVAU_hls_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "auto"
+  }
+ },
+ {
+  "case": "d2_17_MVAU_hls_4",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "MVAU_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 1083.6686372338136,
+   "BRAM_18K": 4.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "resType": "lut"
+  }
+ },
+ {
+  "case": "d2_17_MVAU_hls_4_wstrm",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "MVAU_hls_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "auto"
+  }
+ },
+ {
+  "case": "d2_18_FMPadding_rtl_4",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "FMPadding_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 95.71428571428571,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d2_19_ConvolutionInputGenerator_rtl_4",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "ConvolutionInputGenerator_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 280.1600753295669,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d2_20_MVAU_hls_5",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "MVAU_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 1897.7803855158068,
+   "BRAM_18K": 8.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "resType": "lut"
+  }
+ },
+ {
+  "case": "d2_20_MVAU_hls_5_wstrm",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "MVAU_hls_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "auto"
+  }
+ },
+ {
+  "case": "d2_21_AddStreams_hls_1",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "AddStreams_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 56.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d2_22_Thresholding_rtl_1",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "Thresholding_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 6.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d2_23_DuplicateStreams_hls_2",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "DuplicateStreams_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 55.55555555555556,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d2_24_FMPadding_rtl_5",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "FMPadding_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 95.71428571428571,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d2_25_DownSampler_hls_1",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "DownSampler_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 159.8181818181818,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d2_26_ConvolutionInputGenerator_rtl_5",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "ConvolutionInputGenerator_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 283.1091287540886,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d2_27_MVAU_hls_6",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "MVAU_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 378.1393568871653,
+   "BRAM_18K": 1.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "resType": "lut"
+  }
+ },
+ {
+  "case": "d2_27_MVAU_hls_6_wstrm",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "MVAU_hls_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "auto"
+  }
+ },
+ {
+  "case": "d2_28_MVAU_hls_7",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "MVAU_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 1486.3017413340924,
+   "BRAM_18K": 4.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "resType": "lut"
+  }
+ },
+ {
+  "case": "d2_28_MVAU_hls_7_wstrm",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "MVAU_hls_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "auto"
+  }
+ },
+ {
+  "case": "d2_29_FMPadding_rtl_6",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "FMPadding_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 95.71428571428571,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d2_30_ConvolutionInputGenerator_rtl_6",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "ConvolutionInputGenerator_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 339.141143820002,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d2_31_MVAU_hls_8",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "MVAU_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 3642.0,
+   "BRAM_18K": 8.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "resType": "lut"
+  }
+ },
+ {
+  "case": "d2_31_MVAU_hls_8_wstrm",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "MVAU_hls_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "auto"
+  }
+ },
+ {
+  "case": "d2_32_AddStreams_hls_2",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "AddStreams_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 56.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d2_33_Thresholding_rtl_2",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "Thresholding_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 75.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d2_34_ConvolutionInputGenerator_rtl_7",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "ConvolutionInputGenerator_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 539.6767766874815,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d2_35_Pool_hls_0",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "Pool_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 121.66666666666667,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d2_36_MVAU_rtl_0",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "MVAU_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 67.79867899737297,
+   "BRAM_18K": 1.0,
+   "DSP": 1.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d2_36_MVAU_rtl_0_wstrm",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "MVAU_rtl_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "auto"
+  }
+ },
+ {
+  "case": "d2_37_ChannelwiseOp_hls_0",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "ChannelwiseOp_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 78.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d2_38_LabelSelect_hls_0",
+  "design": "42222448_lut_finn_16667",
+  "role": "B2 m5 (resType lut)",
+  "op": "LabelSelect_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 200.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d3_00_FMPadding_rtl_0",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "FMPadding_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 95.71428571428571,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d3_01_ConvolutionInputGenerator_rtl_0",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "ConvolutionInputGenerator_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 256.56764793339283,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d3_02_MVAU_hls_0",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "MVAU_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 2835.5887001999217,
+   "BRAM_18K": 4.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "resType": "lut"
+  }
+ },
+ {
+  "case": "d3_02_MVAU_hls_0_wstrm",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "MVAU_hls_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "auto"
+  }
+ },
+ {
+  "case": "d3_03_DuplicateStreams_hls_0",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "DuplicateStreams_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 55.55555555555556,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d3_04_FMPadding_rtl_1",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "FMPadding_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 95.71428571428571,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d3_05_ConvolutionInputGenerator_rtl_1",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "ConvolutionInputGenerator_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 268.36386163147984,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d3_06_MVAU_hls_1",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "MVAU_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 3132.4988778380575,
+   "BRAM_18K": 16.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "resType": "lut"
+  }
+ },
+ {
+  "case": "d3_06_MVAU_hls_1_wstrm",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "MVAU_hls_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "auto"
+  }
+ },
+ {
+  "case": "d3_07_FMPadding_rtl_2",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "FMPadding_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 95.71428571428571,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d3_08_ConvolutionInputGenerator_rtl_2",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "ConvolutionInputGenerator_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 268.36386163147984,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d3_09_MVAU_hls_2",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "MVAU_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 3132.4988778380575,
+   "BRAM_18K": 16.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "resType": "lut"
+  }
+ },
+ {
+  "case": "d3_09_MVAU_hls_2_wstrm",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "MVAU_hls_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "auto"
+  }
+ },
+ {
+  "case": "d3_10_AddStreams_hls_0",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "AddStreams_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 56.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d3_11_Thresholding_rtl_0",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "Thresholding_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 12.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d3_12_DuplicateStreams_hls_1",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "DuplicateStreams_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 55.55555555555556,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d3_13_FMPadding_rtl_3",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "FMPadding_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 95.71428571428571,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d3_14_DownSampler_hls_0",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "DownSampler_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 159.8181818181818,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d3_15_ConvolutionInputGenerator_rtl_3",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "ConvolutionInputGenerator_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 286.05818217861037,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d3_16_MVAU_hls_3",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "MVAU_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 329.57198609272814,
+   "BRAM_18K": 1.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "resType": "lut"
+  }
+ },
+ {
+  "case": "d3_16_MVAU_hls_3_wstrm",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "MVAU_hls_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "auto"
+  }
+ },
+ {
+  "case": "d3_17_MVAU_hls_4",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "MVAU_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 1897.7803855158068,
+   "BRAM_18K": 8.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "resType": "lut"
+  }
+ },
+ {
+  "case": "d3_17_MVAU_hls_4_wstrm",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "MVAU_hls_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "auto"
+  }
+ },
+ {
+  "case": "d3_18_FMPadding_rtl_4",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "FMPadding_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 95.71428571428571,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d3_19_ConvolutionInputGenerator_rtl_4",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "ConvolutionInputGenerator_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 280.1600753295669,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d3_20_MVAU_hls_5",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "MVAU_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 3526.480370960384,
+   "BRAM_18K": 16.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "resType": "lut"
+  }
+ },
+ {
+  "case": "d3_20_MVAU_hls_5_wstrm",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "MVAU_hls_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "auto"
+  }
+ },
+ {
+  "case": "d3_21_AddStreams_hls_1",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "AddStreams_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 56.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d3_22_Thresholding_rtl_1",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "Thresholding_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 6.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d3_23_DuplicateStreams_hls_2",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "DuplicateStreams_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 55.55555555555556,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d3_24_FMPadding_rtl_5",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "FMPadding_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 95.71428571428571,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d3_25_DownSampler_hls_1",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "DownSampler_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 159.8181818181818,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d3_26_ConvolutionInputGenerator_rtl_5",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "ConvolutionInputGenerator_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 283.1091287540886,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d3_27_MVAU_hls_6",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "MVAU_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 508.5107623588999,
+   "BRAM_18K": 1.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "resType": "lut"
+  }
+ },
+ {
+  "case": "d3_27_MVAU_hls_6_wstrm",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "MVAU_hls_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "auto"
+  }
+ },
+ {
+  "case": "d3_28_MVAU_hls_7",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "MVAU_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 2703.0465937163635,
+   "BRAM_18K": 8.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "resType": "lut"
+  }
+ },
+ {
+  "case": "d3_28_MVAU_hls_7_wstrm",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "MVAU_hls_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "auto"
+  }
+ },
+ {
+  "case": "d3_29_FMPadding_rtl_6",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "FMPadding_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 95.71428571428571,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d3_30_ConvolutionInputGenerator_rtl_6",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "ConvolutionInputGenerator_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 339.141143820002,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d3_31_MVAU_hls_8",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "MVAU_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 6921.810583088458,
+   "BRAM_18K": 16.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "resType": "lut"
+  }
+ },
+ {
+  "case": "d3_31_MVAU_hls_8_wstrm",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "MVAU_hls_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "auto"
+  }
+ },
+ {
+  "case": "d3_32_AddStreams_hls_2",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "AddStreams_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 56.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d3_33_Thresholding_rtl_2",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "Thresholding_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 75.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d3_34_ConvolutionInputGenerator_rtl_7",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "ConvolutionInputGenerator_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 539.6767766874815,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d3_35_Pool_hls_0",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "Pool_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 121.66666666666667,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d3_36_MVAU_rtl_0",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "MVAU_rtl",
+  "kind": "rtl",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 67.79867899737297,
+   "BRAM_18K": 1.0,
+   "DSP": 1.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d3_36_MVAU_rtl_0_wstrm",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "MVAU_rtl_wstrm",
+  "kind": "wstrm",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 0.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {
+   "ram_style": "auto"
+  }
+ },
+ {
+  "case": "d3_37_ChannelwiseOp_hls_0",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "ChannelwiseOp_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 78.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ },
+ {
+  "case": "d3_38_LabelSelect_hls_0",
+  "design": "22222448_lut_finn_10000",
+  "role": "B2 m8 (resType lut)",
+  "op": "LabelSelect_hls",
+  "kind": "hls",
+  "f_MHz": 100.0,
+  "predicted": {
+   "LUT": 200.0,
+   "BRAM_18K": 0.0,
+   "DSP": 0.0
+  },
+  "attrs": {}
+ }
+]

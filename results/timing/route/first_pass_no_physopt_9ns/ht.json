@@ -1,0 +1,10 @@
+[
+ {
+  "case": "MVAU_hls_7_24_block",
+  "kind": "hls",
+  "returncode": 1,
+  "synth_ns": 8.805,
+  "route_ns": null,
+  "route_over_synth": null
+ }
+]

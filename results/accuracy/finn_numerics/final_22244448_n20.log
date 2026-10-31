@@ -1,0 +1,8 @@
+== 22244448 n=20 start 11:20:17
+nodes left outside fpgadataflow: ['Transpose']
+images=20  brevitas top-1 correct=18  distinct predicted classes=9
+max |QONNX - Brevitas| logit difference = 1.91e-06
+qonnx        predicts the same class as Brevitas on 20/20 images
+streamlined  predicts the same class as Brevitas on 20/20 images
+hw           predicts the same class as Brevitas on 20/20 images
+== 22244448 n=20 end 11:23:10 rc=0

@@ -1,0 +1,9 @@
+same record set: True
+raw: {'records': 3240, 'same cycles': 3216, 'slower': 24}
+nodes slower than before (mode, op, old fold -> new fold): count
+   ('dspc', 'MVAU_rtl', "{'PE': 16, 'SIMD': 18}", "{'PE': 16, 'SIMD': 12}") 24
+   ('dsp4c', 'MVAU_rtl', "{'PE': 16, 'SIMD': 18}", "{'PE': 16, 'SIMD': 12}") 24
+nodes with more DSPs (op, old fold, new fold, old DSP, new DSP): count
+   ('MVAU_rtl', "{'PE': 2, 'SIMD': 27}", "{'PE': 8, 'SIMD': 9}", 27.0, 36.0) 36
+folded MVAU_hls wider than the HLS cap: 42
+calibrated, unchanged nodes: 32714 identical, 0 different

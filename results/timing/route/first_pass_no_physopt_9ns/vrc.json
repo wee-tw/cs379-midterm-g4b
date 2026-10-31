@@ -1,0 +1,10 @@
+[
+ {
+  "case": "r144x16_pe16_s9_4x4",
+  "kind": "rtl",
+  "returncode": 0,
+  "synth_ns": 6.077,
+  "route_ns": 7.897,
+  "route_over_synth": 0.2995
+ }
+]

@@ -94,7 +94,7 @@ def cmd_points(args):
     print("budget", budget, flush=True)
     rows = []
     t0 = time.time()
-    for ci, b in enumerate(ALL_CONFIGS):
+    for ci, b in enumerate(ALL_CONFIGS[:args.limit]):
         for mi, mode in enumerate(MODES):
             for T in grid:
                 nodes = assemble(table, list(b), mode, T)
@@ -186,11 +186,14 @@ def search(rows, acc, thr, p):
         # B4: fastest design (max FPS at the highest clock), energy reported for it
         fmax = max(F_SET)
         sel["B4_latency"] = (fastest(feas), fmax)
+        # B2 runs at FINN's default 100 MHz, or at the cap of a timing class below it
+        # (timing_safe.py: a set capped under 100 MHz holds designs that cannot reach it)
+        f_b2 = 100.0 if 100.0 in F_SET else fmax
         if b2 is not None:
             m_b2 = (cfg == b2) & (rows[:, 1] == MODES.index("lut_finn"))
             if m_b2.any():
-                fps100 = np.where(m_b2, per_f[100.0][0], -np.inf)
-                sel["B2_proxy"] = (int(np.argmax(fps100)), 100.0)
+                fps_b2 = np.where(m_b2, per_f[f_b2][0], -np.inf)
+                sel["B2_proxy"] = (int(np.argmax(fps_b2)), f_b2)
             m_b3 = (cfg == b2) & (rows[:, 1] != MODES.index("lut_finn"))
             if m_b3.any():
                 sel["B3_sequential"] = (fastest(m_b3), fmax)
@@ -243,6 +246,15 @@ def cmd_search(args):
 F_EXT = (5.0, 10.0, 20.0, 25.0, 33.33, 40.0, 50.0, 66.67, 100.0, 125.0)  # 1000 MHz / divisors
 # every FCLK0 a PYNQ-Z2 can generate: IO PLL 1000 MHz / (DIVISOR0 * DIVISOR1), each 1..63
 F_JIT = np.unique([1000.0 / (a * b) for a in range(1, 64) for b in range(1, 64)])
+F_SET_FULL, F_EXT_FULL = F_SET, F_EXT
+
+
+def set_fmax(fmax):
+    """Cap the clock grids at fmax MHz and add fmax itself (an FCLK0 setting a timing class
+    allows, timing_safe.py). F_JIT is already capped at max(F_SET) where it is used."""
+    global F_SET, F_EXT
+    F_SET = tuple(sorted({f for f in F_SET_FULL if f <= fmax} | {fmax}))
+    F_EXT = tuple(sorted({f for f in F_EXT_FULL if f <= fmax} | {fmax}))
 
 
 def cmd_idle(args):
@@ -460,6 +472,7 @@ if __name__ == "__main__":
     p.add_argument("--fset", type=float, nargs="+", default=None,
                    help="override the clock set (MHz), e.g. 50 66.67 100 125 142.86")
     p.add_argument("--tables")
+    p.add_argument("--limit", type=int, default=None, help="points: only the first N configs (test)")
     p.add_argument("--latency", help="idle: latency.npz from latency_check.py points "
                    "(adds the one-frame-at-a-time gated policy 'gated_lat')")
     p.add_argument("--lat-scale", type=float, default=1.0,

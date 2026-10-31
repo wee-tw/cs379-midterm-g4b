@@ -1,0 +1,10 @@
+[
+ {
+  "case": "dev_288x32_pe8_s18_4x4",
+  "kind": "rtl",
+  "returncode": 0,
+  "synth_ns": 3.788,
+  "route_ns": 5.853,
+  "route_over_synth": 0.5451
+ }
+]

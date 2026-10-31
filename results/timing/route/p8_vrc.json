@@ -1,0 +1,42 @@
+[
+ {
+  "case": "r144x16_pe16_s9_4x4",
+  "kind": "rtl",
+  "returncode": 0,
+  "synth_ns": 6.077,
+  "route_ns": 7.897,
+  "route_over_synth": 0.2995
+ },
+ {
+  "case": "r288x32_pe32_s9_4x4",
+  "kind": "rtl",
+  "returncode": 0,
+  "synth_ns": 6.081,
+  "route_ns": 7.855,
+  "route_over_synth": 0.2917
+ },
+ {
+  "case": "r27x16_pe4_s9_w4a8",
+  "kind": "rtl",
+  "returncode": 0,
+  "synth_ns": 5.775,
+  "route_ns": 7.003,
+  "route_over_synth": 0.2126
+ },
+ {
+  "case": "r288x32_pe16_s9_4x4",
+  "kind": "rtl",
+  "returncode": 0,
+  "synth_ns": 6.137,
+  "route_ns": 7.466,
+  "route_over_synth": 0.2166
+ },
+ {
+  "case": "r144x16_pe16_s12_4x4",
+  "kind": "rtl",
+  "returncode": 0,
+  "synth_ns": 6.679,
+  "route_ns": 7.927,
+  "route_over_synth": 0.1869
+ }
+]
